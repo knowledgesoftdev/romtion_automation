@@ -1,0 +1,138 @@
+[
+  {
+    "id": "01",
+    "texto": "Symbian tenía multitarea real, soporte de hardware nativo y 32 millones de líneas de código. iOS llegó con 12 millones. Nokia perdió igual."
+  },
+  {
+    "id": "02",
+    "texto": "Nokia controló el 40% del mercado global de móviles en 2007. Symbian, su sistema operativo, corría en 250 millones de dispositivos activos ese mismo año. Era un RTOS — sistema operativo de tiempo real — diseñado para hardware con 64MB de RAM y sin unidad de gestión de memoria moderna. Funcionaba. Era eficiente. Era el estándar. El iPhone se anunció en enero de 2007. En 2013, Nokia vendió su división de móviles a Microsoft por 5,440 millones de dólares. Seis años. Eso tardó el colapso."
+  },
+  {
+    "id": "03",
+    "texto": "DECISIÓN 1: Arquitectura monolítica con ownership de objetos manual"
+  },
+  {
+    "id": "04",
+    "texto": "QUÉ ERA: Symbian usaba un modelo de gestión de memoria basado en cleanup stacks — pilas de limpieza manuales que el programador debía construir explícitamente para evitar memory leaks. No había garbage collector. No había RAII moderno. Cada objeto tenía un dueño explícito definido por convención, no por el compilador."
+  },
+  {
+    "id": "05",
+    "texto": "POR QUÉ SE TOMÓ: En 2000, los teléfonos tenían entre 4MB y 16MB de RAM. Un garbage collector consumía ciclos de CPU y memoria que no existían. El modelo manual era la única forma de garantizar determinismo en tiempo real con ese hardware. Era una decisión de ingeniería correcta para las restricciones del momento."
+  },
+  {
+    "id": "06",
+    "texto": "DÓNDE FALLÓ: El modelo exigía que cada función que pudiera fallar terminara en la letra L por convención — eran las leaving functions. Si una función podía lanzar una excepción, su nombre debía terminar en L. Si asignabas memoria en el heap, debías registrar el puntero en el cleanup stack antes de cualquier operación que pudiera fallar. Una omisión silenciosa generaba un memory leak que el compilador no detectaba. En 2007, Nokia tenía más de 3,000 ingenieros trabajando en Symbian. La tasa de errores por esta convención era sistemática. Los nuevos desarrolladores tardaban entre seis y doce meses en escribir código Symbian sin introducir leaks. No era un problema de talento. Era fricción estructural acumulada en millones de líneas de código."
+  },
+  {
+    "id": "07",
+    "texto": "IMPACTO REAL: Nokia necesitaba entre 5 y 8 ingenieros para producir el equivalente funcional de lo que 1 ingeniero de iOS producía en el mismo tiempo. El costo por feature era entre 4 y 6 veces mayor. En 2008, el ciclo de desarrollo de una actualización mayor de Symbian tomaba 18 meses. iOS lanzaba versiones mayores cada 12 meses con equipos más pequeños."
+  },
+  {
+    "id": "08",
+    "texto": "DECISIÓN 2: Modelo de seguridad basado en capabilities firmadas en binario"
+  },
+  {
+    "id": "09",
+    "texto": "QUÉ ERA: Symbian implementaba un sistema de seguridad por capabilities — capacidades — que se firmaban criptográficamente en el binario de cada aplicación durante la compilación. Para distribuir una app que usara red, Bluetooth o acceso a contactos, el desarrollador debía obtener un certificado firmado por Symbian Signed, la autoridad certificadora controlada por Nokia y sus socios."
+  },
+  {
+    "id": "10",
+    "texto": "POR QUÉ SE TOMÓ: Los teléfonos móviles de 2003 eran vectores activos de malware por Bluetooth. Cabir, el primer gusano para móviles, apareció en 2004 y corría en Symbian. El modelo de capabilities firmadas era una respuesta directa a una amenaza real. Criptográficamente, era sólido."
+  },
+  {
+    "id": "11",
+    "texto": "DÓNDE FALLÓ: El proceso de certificación tomaba entre 4 y 12 semanas y costaba entre 200 y 3,000 dólares dependiendo del nivel de capabilities requeridas. Una app que necesitara acceso a red, escritura en disco y acceso a contactos simultáneamente requería el nivel AllFiles — que exigía auditoría manual de código. En 2008, la App Store de Apple lanzó con revisión en 1 a 2 semanas y costo cero para el desarrollador. En 2009, la App Store tenía 50,000 aplicaciones. La tienda oficial de Nokia — Ovi Store — tenía 2,000. No porque los desarrolladores prefirieran iOS. Sino porque el costo de entrada a Symbian era entre 10 y 50 veces mayor en tiempo y dinero."
+  },
+  {
+    "id": "12",
+    "texto": "IMPACTO REAL: En 2010, el 75% de los desarrolladores móviles encuestados por Evans Data Corp reportaron que no desarrollaban para Symbian por fricción en el proceso de distribución. Nokia perdió el ecosistema de terceros tres años antes de perder el mercado de hardware."
+  },
+  {
+    "id": "13",
+    "texto": "DECISIÓN 3: Separación entre Symbian OS y la UI layer — S60"
+  },
+  {
+    "id": "14",
+    "texto": "QUÉ ERA: Symbian OS era el kernel y las APIs del sistema. S60 — Series 60 — era la capa de interfaz gráfica construida sobre él por Nokia. Eran dos proyectos con dos equipos, dos bases de código y dos ciclos de release distintos. Un desarrollador que quisiera acceder a funcionalidades del sistema debía navegar dos capas de APIs parcialmente superpuestas y frecuentemente inconsistentes."
+  },
+  {
+    "id": "15",
+    "texto": "POR QUÉ SE TOMÓ: Symbian OS era un proyecto compartido entre Nokia, Ericsson, Motorola y Psion a través de Symbian Ltd, una joint venture fundada en 1998. La separación de OS y UI permitía que cada fabricante construyera su propia interfaz sobre el mismo kernel. Era un modelo de licenciamiento que tenía sentido comercial para distribuir el costo de desarrollo entre múltiples empresas."
+  },
+  {
+    "id": "16",
+    "texto": "DÓNDE FALLÓ: Cuando Nokia intentó modernizar la interfaz en 2006 con S60 3rd Edition, los cambios en las APIs rompieron la compatibilidad binaria con todas las aplicaciones existentes. Una app compilada para S60 2nd Edition no corría en S60 3rd Edition sin recompilación y frecuentemente sin reescritura parcial. El ecosistema de aplicaciones se fragmentó en versiones incompatibles. Los desarrolladores debían mantener múltiples builds para el mismo sistema operativo del mismo fabricante. En iOS, la compatibilidad binaria se mantuvo desde el lanzamiento de la App Store en 2008 hasta iOS 11 en 2017 — nueve años."
+  },
+  {
+    "id": "17",
+    "texto": "IMPACTO REAL: En 2007, existían cuatro versiones activas e incompatibles de S60 en el mercado simultáneamente. Cada actualización de Nokia fragmentaba su propio ecosistema. El costo de mantenimiento para un desarrollador third-party con presencia en Symbian era equivalente a mantener cuatro productos distintos."
+  },
+  {
+    "id": "18",
+    "texto": "DECISIÓN 4: Qt como pivot tecnológico — demasiado tarde"
+  },
+  {
+    "id": "19",
+    "texto": "QUÉ ERA: Qt era un framework de desarrollo multiplataforma en C++ con su propio sistema de señales y slots para manejo de eventos, desarrollado originalmente por Trolltech. Nokia lo adquirió en 2008 por 104 millones de dólares con la intención de reemplazar la arquitectura de S60 y ofrecer a los desarrolladores un modelo unificado y moderno para escribir aplicaciones Symbian."
+  },
+  {
+    "id": "20",
+    "texto": "POR QUÉ SE TOMÓ: Qt era técnicamente superior a las APIs de S60. Tenía documentación coherente, un modelo de eventos limpio y compatibilidad multiplataforma real. La adquisición fue una respuesta directa al lanzamiento de la App Store. Nokia reconoció el problema y ejecutó una solución técnicamente correcta."
+  },
+  {
+    "id": "21",
+    "texto": "DÓNDE FALLÓ: Qt para Symbian estuvo disponible para desarrolladores en 2010 — dos años después de la adquisición y tres años después del iPhone. Para ese momento, iOS tenía 225,000 aplicaciones y Android tenía 70,000. El pipeline de adopción de Qt requería que los desarrolladores aprendieran un nuevo framework para una plataforma en declive visible. En febrero de 2011, el CEO Stephen Elop publicó el memo interno conocido como \"burning platform\" — plataforma en llamas — donde describía a Symbian como una plataforma condenada. Ese memo fue filtrado el mismo día. Los desarrolladores que evaluaban adoptar Qt para Symbian leyeron ese memo. La adopción se detuvo."
+  },
+  {
+    "id": "22",
+    "texto": "IMPACTO REAL: Nokia invirtió 104 millones en Qt y entre 2008 y 2011 destinó aproximadamente 1,500 ingenieros al proyecto de migración. El resultado fue cero tracción en el ecosistema de desarrolladores. En 2011, Nokia anunció el acuerdo con Microsoft para adoptar Windows Phone, abandonando Qt como plataforma principal para móviles. Qt sobrevivió como proyecto open source pero fuera de Nokia."
+  },
+  {
+    "id": "23",
+    "texto": "DECISIÓN 5: Cultura de gestión orientada a hardware en una guerra de software"
+  },
+  {
+    "id": "24",
+    "texto": "QUÉ ERA: El liderazgo ejecutivo de Nokia entre 2006 y 2010 — incluyendo al CEO Olli-Pekka Kallasvuo — provenía de operaciones, ventas y manufactura de hardware. Las decisiones sobre el roadmap de software se tomaban con criterios de ciclo de vida de producto físico: planificación a 18-24 meses, optimización de costos de producción, gestión de proveedores de componentes."
+  },
+  {
+    "id": "25",
+    "texto": "POR QUÉ SE TOMÓ: Nokia había construido su dominio de mercado sobre excelencia en hardware. Sus teléfonos eran mecánicamente superiores, con antenas diseñadas para condiciones extremas y baterías optimizadas para semanas de uso. Esa competencia era real y había funcionado durante quince años. Era razonable que el liderazgo que la construyó tomara las decisiones de la siguiente etapa."
+  },
+  {
+    "id": "26",
+    "texto": "DÓNDE FALLÓ: El software no tiene ciclos de manufactura. Una decisión de arquitectura incorrecta no cuesta más materiales — cuesta tiempo de ingenieros, y ese tiempo se acumula con interés compuesto. Kallasvuo declaró en 2007 que el iPhone era \"interesante\" pero que Nokia respondería con hardware superior. Internamente, los ingenieros de software que reportaban problemas estructurales en Symbian eran reubicados o ignorados según testimonios documentados en el libro \"Operation Elop\" de los periodistas Merina Salminen y Pekka Nykänen, publicado en 2014. La organización penalizaba la señal de alarma técnica. El resultado fue que los problemas reales de Symbian no llegaron al nivel de decisión hasta 2010."
+  },
+  {
+    "id": "27",
+    "texto": "IMPACTO REAL: Entre 2007 y 2010, Nokia lanzó 39 modelos de teléfonos nuevos. Apple lanzó 4. Nokia ganó en variedad de hardware. Perdió porque ninguno de esos 39 modelos resolvía el problema de fondo: que Symbian era intrínsecamente más costoso de desarrollar que iOS o Android, y ese costo se trasladaba al ecosistema de aplicaciones, y ese ecosistema era lo que el usuario compraba."
+  },
+  {
+    "id": "28",
+    "texto": "DECISIÓN 6: Transición a Windows Phone como solución externa"
+  },
+  {
+    "id": "29",
+    "texto": "QUÉ ERA: En febrero de 2011, Stephen Elop — ex ejecutivo de Microsoft nombrado CEO de Nokia en septiembre de 2010 — anunció que Nokia abandonaba Symbian y MeeGo para adoptar Windows Phone como sistema operativo principal. El acuerdo incluía pagos de Microsoft a Nokia estimados entre 1,000 y 2,000 millones de dólares anuales como subsidio de transición."
+  },
+  {
+    "id": "30",
+    "texto": "POR QUÉ SE TOMÓ: MeeGo — el sucesor planeado de Symbian desarrollado en colaboración con Intel — tenía un solo dispositivo lanzado al mercado en 2011: el Nokia N9. Internamente, el equipo de MeeGo reportaba que necesitaba entre 18 y 24 meses adicionales para alcanzar paridad de ecosistema. Windows Phone ofrecía un sistema operativo moderno inmediatamente disponible, con el respaldo financiero de Microsoft y potencial acceso al ecosistema de desarrolladores Windows."
+  },
+  {
+    "id": "31",
+    "texto": "DÓNDE FALLÓ: El anuncio de abandono de Symbian en febrero de 2011 destruyó las ventas de teléfonos Symbian antes de que hubiera un reemplazo disponible. Los consumidores dejaron de comprar Nokia Symbian porque Nokia mismo había declarado que era una plataforma muerta. Windows Phone no tuvo dispositivos Nokia disponibles hasta finales de 2011 — nueve meses de vacío comercial. En ese intervalo, Android consolidó su posición. El Nokia N9 con MeeGo, lanzado en agosto de 2011, recibió críticas técnicas superiores a cualquier Windows Phone Nokia de ese año. Nokia lo descontinuó sin darle continuidad. En 2013, Microsoft adquirió la división de dispositivos de Nokia. Windows Phone nunca superó el 4% de market share global."
+  },
+  {
+    "id": "32",
+    "texto": "IMPACTO REAL: Nokia pasó de 40% de market share en 2007 a menos del 3% en 2013. La valoración de la división de móviles pasó de aproximadamente 30,000 millones de dólares implícitos en 2007 a 5,440 millones en la venta a Microsoft en 2013. Una destrucción de valor de más del 80% en seis años."
+  },
+  {
+    "id": "33",
+    "texto": "El modelo de cleanup stacks de Symbian influyó directamente en el diseño de Rust. La gestión determinista de memoria sin garbage collector que Symbian necesitaba por restricciones de hardware es exactamente el problema que Rust resuelve con ownership y lifetimes, pero con verificación en tiempo de compilación. El problema no era la idea. Era que Symbian lo implementaba por convención mientras Rust lo implementa por contrato con el compilador. Qt sobrevivió como framework open source y hoy corre en sistemas embebidos, automotive y dispositivos industriales. La arquitectura que Nokia no pudo escalar en móviles encontró su dominio correcto en sistemas donde el ciclo de vida del software se mide en décadas."
+  },
+  {
+    "id": "34",
+    "texto": "La próxima vez que evalúes adoptar o mantener una arquitectura de sistema, pregúntate cuánto tiempo tarda un ingeniero nuevo en escribir código correcto sin supervisión. Eso es lo que separa una plataforma que escala su ecosistema de una que lo erosiona desde adentro."
+  }
+]

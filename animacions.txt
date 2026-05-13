@@ -1,0 +1,103 @@
+ESCENA 1 — ID 01 | 0s → 9.3s
+Typewriter de 3 frases con partículas binarias de fondo. Ya está hecha y aprobada.
+Crea src/scenes/Contexto.tsx para el párrafo ID 02 con esta escena:
+
+- Fondo #0a0a0f
+- Lado izquierdo (60% del ancho): el texto del contexto aparece línea por línea desde arriba con fade-in, 
+  una línea cada 1.5 segundos, 28px Inter #e2e8f0
+- Lado derecho (40% del ancho): línea de tiempo vertical con 3 nodos que aparecen sincronizados con el texto:
+  Nodo 1 — "2007: 40% mercado global" en #00d4ff
+  Nodo 2 — "2007: 250M dispositivos Symbian" en #00d4ff  
+  Nodo 3 — "2013: vendido a Microsoft $5,440M" en #ef4444
+  Cada nodo conectado por línea vertical punteada #334155
+  Cada nodo es un círculo con borde cyan y número dentro
+- Duración: sincronizada exactamente con timing.json parrafo-02
+- TypeScript sin errores
+
+
+ESCENA 2 — ID 02 | 9.3s → 45.43s | 36 segundos
+Panel izquierdo: texto aparece línea por línea. Panel derecho: 3 métricas grandes aparecen como contadores animados — "40% mercado", "250M dispositivos", "$5,440M venta" — cada una en su momento exacto sincronizado con la narración. Fondo con mapa de Europa y Asia en líneas muy sutiles #1a1a2e.
+
+ESCENA 3 — IDs 03,08,13,18,23,28 | Títulos de decisión
+Cada título de decisión usa la misma plantilla: número de decisión enorme en #8b5cf6 opacity 0.15 como fondo, texto del título aparece con efecto glitch en #00d4ff, línea horizontal que se expande desde el centro. Duración exacta de cada uno según timing.
+
+ESCENA 4 — ID 04 | 50.05s → 67.84s | 17.7s
+Diagrama de memoria animado. Tres cajas aparecen secuencialmente representando el heap, el cleanup stack y los punteros. Flechas muestran cómo el programador debe registrar manualmente cada objeto. Código en JetBrains Mono aparece línea por línea a la derecha.
+
+ESCENA 5 — ID 05 | 67.84s → 88.53s | 20.7s
+Comparativa de hardware de época. Barra de RAM: "4MB — 16MB" en #ef4444 vs requerimientos de un garbage collector moderno. Reloj animado mostrando "determinismo en tiempo real". Todo aparece progresivamente.
+
+ESCENA 6 — ID 06 | 88.53s → 134.27s | 45.7s
+Esta es la más larga. Código Symbian aparece en pantalla completa con JetBrains Mono. Las funciones terminadas en L se van iluminando en #ef4444 una por una. Contador en esquina: "3,000 ingenieros". Barra de progreso mostrando "6-12 meses para escribir código sin leaks".
+
+ESCENA 7 — ID 07 | 134.27s → 156.37s | 22.1s
+Dos columnas con iconos de personas. Izquierda: 5-8 figuras humanas #8b5cf6 con etiqueta "Nokia". Derecha: 1 figura #00d4ff con etiqueta "iOS". Debajo: barra comparativa "18 meses vs 12 meses" animada de izquierda a derecha.
+
+ESCENA 8 — ID 09 | 160.99s → 183.64s | 22.6s
+Diagrama de firma criptográfica. Ícono de app → flecha → certificado → firma binaria. Íconos SVG de red, Bluetooth y contactos aparecen como capabilities requeridas, cada uno con candado animado.
+
+ESCENA 9 — ID 11 | 200.7s → 244.09s | 43.4s
+La más impactante visualmente. Pantalla dividida: izquierda Symbian Signed con countdown de 12 semanas y contador de dinero $3,000. Derecha App Store con countdown de 2 semanas y $0. Debajo: barras creciendo — "Ovi Store: 2,000 apps" vs "App Store: 50,000 apps".
+
+ESCENA 10 — ID 14 | 266.79s → 290.85s | 24s
+Diagrama de arquitectura en capas. Kernel abajo, S60 arriba, línea roja punteada entre ambos con etiqueta "2 equipos — 2 ciclos de release — 2 bases de código". Flechas mostrando al desarrollador navegando ambas capas simultáneamente.
+
+ESCENA 11 — ID 16 | 313.31s → 351.19s | 37.9s
+Línea de tiempo de versiones S60. S60 v1 → v2 → v3 → v5 aparecen de izquierda a derecha. Entre cada versión una X roja grande con "incompatible". A la derecha: iOS 1.0 → iOS 11 con una sola flecha verde "9 años compatible".
+
+ESCENA 12 — ID 21 | 414.82s → 453.64s | 38.8s
+Carrera de barras en tiempo real. Tres barras crecen simultáneamente: "App Store" llegando a 225,000, "Android" a 70,000, "Qt/Symbian" quedándose en casi cero. Línea vertical roja aparece marcando "2011 — memo filtrado". Las barras de Qt se detienen abruptamente.
+
+ESCENA 13 — ID 26 | 527.36s → 566.07s | 38.7s
+Organigrama corporativo. CEO arriba en caja #334155. Ingenieros de software abajo enviando alertas rojas hacia arriba. Las alertas se bloquean en una capa intermedia etiquetada "gestión de hardware". Frase aparece: "La organización penalizaba la señal de alarma técnica."
+
+ESCENA 14 — ID 31 | 647.16s → 691.07s | 43.9s
+Línea de tiempo crítica. Febrero 2011: "Symbian declarado muerto" — pantalla en rojo. Agosto 2011: "Nokia N9 MeeGo — mejores reviews" — pantalla en cyan. Fin 2011: "Windows Phone disponible" — 9 meses después. 2013: "Microsoft compra Nokia" — pantalla se apaga lentamente.
+
+ESCENA 15 — ID 34 | 755.54s → 770s | 14.5s
+Criterio final. Fondo negro puro. Una sola pregunta aparece palabra por palabra en blanco grande. La última frase "una plataforma que escala su ecosistema" aparece en #00d4ff. Línea cyan se expande. Fade out total.
+
+ESCENA 16 — ID 10 | 183.64s → 200.7s | 17s
+Pantalla dividida en dos momentos. Izquierda: ícono de teléfono 2003 con señal Bluetooth radiando en rojo, etiqueta "Cabir — primer gusano móvil 2004". Derecha: escudo con candado en #00d4ff, etiqueta "capabilities firmadas — respuesta correcta". Flecha conectando ambos lados. Texto inferior: "La amenaza era real. La solución también."
+
+ESCENA 17 — ID 12 | 244.09s → 260.55s | 16.5s
+Métrica grande centrada. Número "75%" aparece contando desde 0 en #ef4444, enorme, 120px. Debajo: "de desarrolladores móviles evitaban Symbian". Segunda línea aparece: "Nokia perdió el ecosistema 3 años antes que el hardware." en #e2e8f0 con fade-in.
+
+ESCENA 18 — ID 15 | 290.85s → 313.31s | 22.5s
+Diagrama de joint venture. Cuatro cajas aparecen en esquinas — Nokia, Ericsson, Motorola, Psion — todas conectadas al centro con flechas hacia "Symbian Ltd" en #8b5cf6. Año "1998" aparece sobre el nodo central. Debajo: "Cada fabricante construía su UI sobre el mismo kernel." en #e2e8f0.
+
+ESCENA 19 — ID 17 | 351.19s → 370.39s | 19.2s
+Cuatro versiones S60 aparecen como cajas separadas lado a lado — S60 v1, v2, v3, v5 — cada una con color ligeramente distinto. Encima de cada una: ícono de desarrollador. Texto aparece: "Un desarrollador. Cuatro productos distintos." Contador de costo en esquina: "4x mantenimiento".
+
+ESCENA 20 — ID 19 | 374.54s → 396.98s | 22.4s
+Diagrama de arquitectura Qt. Caja central "Qt Framework" en #00d4ff con señales y slots representados como flechas bidireccionales. Debajo: plataformas conectadas — Symbian, Linux, Windows — apareciendo una por una. Precio "$104M" aparece en #f59e0b con fade-in. JetBrains Mono para el código de señales.
+
+ESCENA 21 — ID 20 | 396.98s → 414.82s | 17.8s
+Comparativa técnica. Tres columnas aparecen: "Documentación", "Modelo de eventos", "Compatibilidad multiplataforma". Cada columna tiene dos filas — S60 con X roja y Qt con check verde #00d4ff. Todo aparece con stagger de 0.5s entre columnas.
+
+ESCENA 22 — ID 22 | 453.64s → 480.73s | 27s
+Infografía de inversión perdida. Ícono de dinero "$104M" en #f59e0b aparece primero. Luego "1,500 ingenieros" como figuras humanas en grid. Flecha hacia resultado: "0 tracción en ecosistema" en #ef4444. Línea de tiempo corta: 2008 inversión → 2011 abandono. Todo con fade-in secuencial.
+
+ESCENA 23 — ID 24 | 485.25s → 506.75s | 21.5s
+Organigrama ejecutivo. CEO "Kallasvuo" en caja superior #334155. Tres cajas debajo: "Operaciones", "Ventas", "Manufactura" — todas en gris. Caja "Software" aparece al lado en #8b5cf6 con borde punteado, más pequeña, desconectada. Texto: "Las decisiones de software se tomaban con criterios de hardware."
+
+ESCENA 24 — ID 25 | 506.75s → 527.36s | 20.6s
+Línea de tiempo de éxito Nokia. 1990 → 2007 con hitos apareciendo: "Primer GSM", "Líder europeo", "40% mercado global". Cada hito en #00d4ff. Barra de progreso verde creciendo. Texto final: "15 años de competencia real en hardware." La barra se congela en 2007.
+
+ESCENA 25 — ID 27 | 566.07s → 592.72s | 26.6s
+Comparativa de modelos. Izquierda: grid de 39 rectángulos grises apareciendo rápido uno por uno con contador. Derecha: 4 rectángulos #00d4ff apareciendo lentamente. Debajo de cada lado: flecha de market share — Nokia bajando, Apple subiendo. Texto: "39 modelos. Ninguno resolvía el problema de fondo."
+
+ESCENA 26 — ID 29 | 597.16s → 619.7s | 22.5s
+Diagrama de transición. Tres cajas en fila: "Symbian" tachada en rojo, "MeeGo" tachada en rojo, "Windows Phone" en #00d4ff con check. Flecha de Microsoft hacia Nokia con etiqueta "$1,000-2,000M/año". Fecha "Febrero 2011" aparece arriba en #f59e0b.
+
+ESCENA 27 — ID 30 | 619.7s → 647.16s | 27.5s
+Diagrama de opciones descartadas. Centro: Nokia con interrogante. Tres flechas saliendo — hacia MeeGo con etiqueta "18-24 meses más", hacia Symbian con X roja, hacia Windows Phone con check y "$". Nokia N9 aparece como ícono en #00d4ff con etiqueta "único dispositivo MeeGo 2011". Borde punteado indicando descontinuado.
+
+ESCENA 28 — ID 32 | 691.07s → 714.45s | 23.4s
+Dos métricas gigantes aparecen secuencialmente. Primera: "40% → 3%" en market share, número contando hacia abajo en #ef4444. Segunda: "$30,000M → $5,440M" valoración, número contando hacia abajo. Texto final: "Destrucción de valor del 80% en 6 años." Pantalla pulsa en rojo una vez.
+
+ESCENA 29 — ID 33 | 714.45s → 755.54s | 41s
+Diagrama de legado tecnológico. Nodo central "Symbian" en #8b5cf6 con líneas saliendo hacia dos nodos. Nodo 1: "Rust" en #00d4ff — flecha etiquetada "ownership sin GC → verificado por compilador". Nodo 2: "Qt" en #f59e0b — flecha etiquetada "sistemas embebidos, automotive". Texto aparece párrafo por párrafo sincronizado con el audio de 41 segundos.
+
+ESCENA 30 — ID 34 | 755.54s → 770s | 14.5s
+Ya diseñada como ESCENA 15. Criterio final tipográfico con fade out total.

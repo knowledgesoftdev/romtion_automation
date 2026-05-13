@@ -7,10 +7,14 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.460",
+    "@remotion/google-fonts": "^4.0.460",
+    "@remotion/tailwind-v4": "4.0.460",
+    "dotenv": "^17.4.2",
+    "fish-audio-sdk": "^2025.11.29",
+    "music-metadata": "^11.12.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.460",
-    "@remotion/tailwind-v4": "4.0.460",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {
