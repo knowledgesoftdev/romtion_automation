@@ -1,0 +1,26 @@
+{
+  "mainQuery": "early web 1990s internet",
+  "subQueries": [
+    "vintage computer crt monitor",
+    "old website homepage design"
+  ],
+  "keywords": [
+    "1994",
+    "WEB TEMPRANO",
+    "CLASIFICACIÓN MANUAL"
+  ],
+  "eyebrow": "CONTEXTO HISTÓRICO",
+  "headline": "En 1994 el web tenía menos de 3 mil sitios",
+  "bullets": [
+    "Clasificación manual era viable y precisa",
+    "Internet en etapa embrionaria"
+  ],
+  "stat": {
+    "value": "3000",
+    "unit": "sitios",
+    "label": "Sitios web existentes en 1994"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

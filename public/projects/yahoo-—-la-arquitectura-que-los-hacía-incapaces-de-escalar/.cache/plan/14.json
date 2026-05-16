@@ -1,0 +1,23 @@
+{
+  "mainQuery": "person frustrated computer search results",
+  "subQueries": [
+    "google search engine interface",
+    "user leaving website analytics"
+  ],
+  "keywords": [
+    "BÚSQUEDA INSATISFECHA",
+    "GOOGLE CAPTURA",
+    "ABANDONO"
+  ],
+  "eyebrow": "PROBLEMA CRÍTICO",
+  "headline": "Google capturó el tráfico insatisfecho de usuarios",
+  "bullets": [
+    "Usuarios no hallaban información específica",
+    "Tasa de abandono post-búsqueda aumentó",
+    "Google retuvo ese tráfico perdido"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

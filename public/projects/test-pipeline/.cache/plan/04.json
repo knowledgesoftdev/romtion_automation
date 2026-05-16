@@ -1,0 +1,26 @@
+{
+  "mainQuery": "ChatGPT artificial intelligence interface",
+  "subQueries": [
+    "AI chatbot conversation screen",
+    "Google Gemini Anthropic comparison"
+  ],
+  "keywords": [
+    "CHATGPT",
+    "200M USUARIOS",
+    "IA GENERATIVA"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "ChatGPT alcanzó 200 millones de usuarios semanales en 2024",
+  "bullets": [
+    "Mercado de IA generativa creció 80% anual",
+    "Google y Anthropic compiten con Gemini y Claude"
+  ],
+  "stat": {
+    "value": "200",
+    "unit": "millones",
+    "label": "Usuarios semanales de ChatGPT en 2024"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "dataSplit"
+}

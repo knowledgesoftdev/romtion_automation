@@ -1,0 +1,26 @@
+{
+  "mainQuery": "yahoo website 2000s display ads",
+  "subQueries": [
+    "banner advertisement computer screen",
+    "early internet advertising interface"
+  ],
+  "keywords": [
+    "DISPLAY ADS",
+    "YAHOO 2000",
+    "INGRESOS PREDECIBLES"
+  ],
+  "eyebrow": "MODELO PUBLICITARIO",
+  "headline": "Display ads generaban ingresos predecibles y escalables",
+  "bullets": [
+    "Anunciantes entendían formato impreso",
+    "Yahoo proyectaba ingresos anuales"
+  ],
+  "stat": {
+    "value": "2000",
+    "unit": "",
+    "label": "Año de despegue del modelo display"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

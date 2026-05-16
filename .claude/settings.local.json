@@ -3,7 +3,32 @@
     "allow": [
       "Bash(npm install *)",
       "Bash(node *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "PowerShell(Copy-Item *)",
+      "Bash(curl -s http://localhost:5000/api/active-project)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(npx remotion *)",
+      "Bash(ffprobe -v error -show_entries format=duration,size,bit_rate out/test-pipeline-full.mp4)",
+      "Bash(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,nb_frames out/test-pipeline-full.mp4)",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Skill(claude-api)",
+      "Bash(curl *)",
+      "Bash(ffprobe -v error -show_entries format=duration,size out/test-pipeline-v2.mp4)",
+      "Skill(remotion-best-practices)",
+      "Bash(ffprobe -v error -show_entries format=duration,size out/test-pipeline-v3.mp4)",
+      "PowerShell($src = Get-Item \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\src\\\\SceneEngine.tsx\"; $yahoo = Get-Item \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\public\\\\projects\\\\yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\\\\SceneEngine.tsx\"; Write-Output \"src: $\\($src.Length\\) bytes, mod $\\($src.LastWriteTime\\)\"; Write-Output \"yahoo: $\\($yahoo.Length\\) bytes, mod $\\($yahoo.LastWriteTime\\)\")",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\dashboard\\\\src\" -Recurse | Where-Object { -not $_.PSIsContainer } | Select-Object FullName, Length)",
+      "PowerShell(node scripts/build-scene-plan.js \"yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\" --force)",
+      "PowerShell(node fetch-pexels.js \"yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\")",
+      "PowerShell($plan = Get-Content \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\public\\\\projects\\\\yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\\\\scene-plan.json\" -Raw | ConvertFrom-Json; $plan.paragraphs | ForEach-Object { \"{0,3}  {1,-12}  {2}\" -f $_.id, $_.media.type, $_.media.query } | Group-Object | Where-Object Count -gt 1 | Select-Object Count, Name | Format-Table -Wrap -AutoSize)",
+      "PowerShell($plan = Get-Content \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\public\\\\projects\\\\yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\\\\scene-plan.json\" -Raw | ConvertFrom-Json; $byq = $plan.paragraphs | Group-Object { $_.media.query }; $dups = $byq | Where-Object Count -gt 1; foreach \\($g in $dups\\) { Write-Output \\(\"DUP \\({0}x\\) [{1}]: `\"{2}`\"\" -f $g.Count, \\($g.Group.id -join ','\\), $g.Name\\) })",
+      "PowerShell($plan = Get-Content \"C:\\\\Users\\\\BrayanDeveloper\\\\Desktop\\\\prueba-remo-claude\\\\public\\\\projects\\\\yahoo-—-la-arquitectura-que-los-hacía-incapaces-de-escalar\\\\scene-plan.json\" -Raw | ConvertFrom-Json; Write-Output \"=== Queries que comparten palabras clave \\(potenciales 'visualmente similares'\\) ===\"; $plan.paragraphs | ForEach-Object { \"{0,3}  {1,-7}  {2}\" -f $_.id, $_.media.type, $_.media.query.ToLower\\(\\) } | Sort-Object | ForEach-Object { Write-Output $_ })",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(npx tsc --noEmit -p . 2>&1 | Select-Object -First 50)",
+      "PowerShell($out = npx tsc --noEmit -p . 2>&1; if \\($LASTEXITCODE -eq 0\\) { Write-Output \"OK: tsc paso sin errores\" } else { Write-Output \"Errores \\($LASTEXITCODE\\):\"; $out | Select-Object -First 30 })",
+      "PowerShell($out = npx tsc --noEmit -p . 2>&1; Write-Output \\(\"tsc exit code: \" + $LASTEXITCODE\\); if \\($LASTEXITCODE -ne 0\\) { $out | Select-Object -First 20 })",
+      "PowerShell(npm *)"
     ]
   }
 }

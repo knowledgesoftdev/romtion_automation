@@ -1,0 +1,138 @@
+[
+  {
+    "id": "01",
+    "texto": "Facebook no ganó por ser mejor. Ganó porque MySpace no podía actualizarse sin destruirse."
+  },
+  {
+    "id": "02",
+    "texto": "MySpace fue la red social dominante entre 2004 y 2008. En su pico, 2006, superaba a Google como el sitio más visitado de Estados Unidos. 100 millones de usuarios registrados. News Corp lo compró en 2005 por 580 millones de dólares, convencida de haber adquirido el futuro de internet. No era una startup sin recursos. Era una plataforma con respaldo corporativo masivo, ingenieros competentes y una base de usuarios que parecía inamovible. El problema no estaba en el equipo. Estaba en el código. Y en las decisiones que lo convirtieron en una trampa. Cuando Facebook los alcanzó, MySpace no pudo responder. No porque no quisiera. Sino porque literalmente no podía mover el sistema sin romperlo."
+  },
+  {
+    "id": "03",
+    "texto": "DECISIÓN 1: Perl sobre arquitectura — la fundación de arena"
+  },
+  {
+    "id": "04",
+    "texto": "MySpace fue construido originalmente en Perl sobre Cold Fusion, luego migrado parcialmente a ASP clásico con Microsoft SQL Server. No existía una arquitectura diseñada para crecer. El stack técnico fue elegido por velocidad de desarrollo inicial, no por escalabilidad."
+  },
+  {
+    "id": "05",
+    "texto": "En 2003, el equipo fundador —Tom Anderson y Chris DeWolfe— necesitaba lanzar rápido. El mercado de redes sociales no existía aún como categoría definida. Moverse rápido tenía más valor que construir bien. Esa decisión era razonable en ese contexto."
+  },
+  {
+    "id": "06",
+    "texto": "Cuando la base de usuarios explotó, el sistema respondió con caídas en cascada. La lógica de negocio estaba mezclada con la lógica de presentación. No había separación de capas. Los módulos se llamaban entre sí sin contratos claros. Cambiar una función de perfiles rompía el sistema de mensajes. Cambiar el sistema de mensajes rompía las páginas de artistas. El código tenía acoplamiento circular: módulo A dependía de B, B de C, C de A. Romper el ciclo requería reescribir los tres."
+  },
+  {
+    "id": "07",
+    "texto": "MySpace sufrió caídas de servicio documentadas en 2006 y 2007 cuando su tráfico se triplicó. El tiempo de carga promedio de página subía por encima de 8 segundos en horas pico. Ingenieros declararon posteriormente que desplegar un cambio tomaba semanas de pruebas manuales porque las pruebas automatizadas eran prácticamente inexistentes. El costo de cada feature nueva no era de desarrollo: era de estabilización post-despliegue."
+  },
+  {
+    "id": "08",
+    "texto": "DECISIÓN 2: Permitir CSS y JavaScript arbitrario en perfiles de usuario"
+  },
+  {
+    "id": "09",
+    "texto": "MySpace permitía a cualquier usuario insertar HTML, CSS y JavaScript directamente en su perfil. Era una feature deliberada, no un bug. Buscaba diferenciación: \"tu perfil es tuyo, personalízalo como quieras\". Esta libertad creativa fue un factor clave de adopción temprana entre músicos y adolescentes."
+  },
+  {
+    "id": "10",
+    "texto": "La personalización extrema era el argumento de venta central de MySpace frente a competidores más rígidos. En 2004 y 2005, era genuinamente una ventaja competitiva. Los perfiles de bandas con reproductores de música embebidos, fondos animados y tipografías personalizadas eran imposibles en cualquier otra plataforma masiva."
+  },
+  {
+    "id": "11",
+    "texto": "El JavaScript sin sanitizar creó un vector de ataque sistemático. El gusano Samy, desplegado en octubre de 2005 por Samy Kamkar, explotó exactamente esta superficie. Utilizó XSS —Cross-Site Scripting— para replicarse entre perfiles: cualquier usuario que visitaba un perfil infectado ejecutaba código que modificaba su propio perfil y agregaba a Samy como amigo. En menos de 20 horas infectó más de un millón de perfiles. MySpace tuvo que desconectar el sitio para contenerlo. Más allá de la seguridad, la consecuencia estructural fue peor. Con CSS arbitrario, MySpace no podía rediseñar su interfaz. Si actualizaban el DOM o renombraban clases CSS, rompían los perfiles de millones de usuarios. El sistema visual estaba capturado por el contenido generado por usuarios. Hacer mobile-first era imposible sin destruir años de personalización acumulada."
+  },
+  {
+    "id": "12",
+    "texto": "El gusano Samy es el primer gusano XSS masivo documentado en internet. Infectó 1,002,580 perfiles en 24 horas según datos de Kamkar. Más críticamente: cuando Facebook lanzó su diseño limpio y consistente en 2006, MySpace no podía responder con un rediseño. Los intentos de unificar la experiencia visual entre 2007 y 2009 generaron protestas masivas de usuarios que habían invertido horas en sus perfiles personalizados."
+  },
+  {
+    "id": "13",
+    "texto": "DECISIÓN 3: Base de datos monolítica sin sharding — el cuello de botella central"
+  },
+  {
+    "id": "14",
+    "texto": "MySpace utilizaba Microsoft SQL Server con una base de datos monolítica central. Sharding es la práctica de particionar horizontalmente una base de datos en múltiples instancias independientes para distribuir la carga. MySpace no implementó sharding hasta que el problema era ya una crisis de producción."
+  },
+  {
+    "id": "15",
+    "texto": "Con un equipo pequeño y crecimiento inicial modesto, una base de datos centralizada simplificaba el desarrollo. Las queries relacionales eran más simples. El equipo conocía el stack. Y en 2003-2004, los patrones de sharding para redes sociales no eran conocimiento común —Facebook, que los sistematizaría, aún no existía como referencia pública."
+  },
+  {
+    "id": "16",
+    "texto": "La base de datos se convirtió en el único punto de fallo del sistema completo. En 2006, con 100 millones de usuarios activos, cada acción —ver un perfil, enviar un mensaje, agregar un amigo— requería múltiples queries a la misma instancia central. El patrón de lectura de redes sociales es radialmente intensivo: cuando un artista con 50,000 seguidores publica algo, eso genera 50,000 notificaciones simultáneas que golpean la misma tabla. La base de datos no tenía mecanismo para distribuir esa carga. MySpace implementó eventualmente una solución de sharding manual, pero fue construida encima de la arquitectura existente como una capa de indirección. Cada query tenía que pasar por una capa de routing que determinaba en qué shard físico vivían los datos. Esa capa se convirtió en otro punto único de fallo."
+  },
+  {
+    "id": "17",
+    "texto": "En 2007, MySpace contrató a ingenieros específicamente para estabilizar la capa de base de datos. Documentos internos filtrados posteriormente describían semanas donde el equipo completo estaba en \"modo bombero\" —sin capacidad de desarrollar features, solo conteniendo degradaciones de performance. Durante el mismo período, Facebook, con sharding nativo desde etapas tempranas, desplegaba features nuevas cada semana."
+  },
+  {
+    "id": "18",
+    "texto": "DECISIÓN 4: Crecer el equipo de ingeniería sin crecer la arquitectura"
+  },
+  {
+    "id": "19",
+    "texto": "Después de la adquisición por News Corp en 2005, MySpace pasó de un equipo de decenas a cientos de ingenieros en menos de dos años. Sin embargo, la base de código no fue refactorizada para soportar ese nivel de desarrollo paralelo. No existían límites de dominio claros, no había APIs internas definidas y no había propiedad clara de módulos."
+  },
+  {
+    "id": "20",
+    "texto": "News Corp necesitaba justificar los 580 millones invertidos con crecimiento rápido de producto. Contratar ingenieros era la palanca obvia. La presión de mercado —Facebook crecía aceleradamente— hacía que desacelerar para refactorizar pareciera suicida. Cada trimestre sin features nuevas era un trimestre que Facebook ganaba terreno."
+  },
+  {
+    "id": "21",
+    "texto": "Más ingenieros sobre una base de código sin separación de dominios no produce más velocidad. Produce más conflictos. Cuando 200 ingenieros trabajan sobre el mismo repositorio sin boundaries arquitectónicos, el tiempo de integración escala cuadráticamente con el número de desarrolladores. Dos ingenieros modificando el mismo módulo de perfiles con propósitos distintos generan conflictos que un tercero tiene que resolver manualmente. El proceso de code review se convirtió en un cuello de botella humano. Los deploys requerían coordinación entre equipos que no tenían mecanismo formal para comunicarse. El fenómeno tiene nombre en ingeniería de software: Ley de Brooks. Agregar personas a un proyecto de software atrasado lo atrasa más. En MySpace no era un proyecto atrasado: era un sistema sin arquitectura para trabajo paralelo."
+  },
+  {
+    "id": "22",
+    "texto": "Ex-ingenieros de MySpace describieron en entrevistas posteriores que el tiempo desde escribir código hasta verlo en producción podía ser de dos a cuatro semanas. Facebook en el mismo período operaba con ciclos de despliegue de días. La ventana de tiempo para iterar sobre cualquier feature era estructuralmente más lenta, independientemente de cuántas personas trabajaran en ella."
+  },
+  {
+    "id": "23",
+    "texto": "DECISIÓN 5: No construir una API pública cuando el mercado lo exigía"
+  },
+  {
+    "id": "24",
+    "texto": "Una API pública es una interfaz documentada que permite a terceros desarrolladores construir aplicaciones que se integran con una plataforma. Facebook lanzó su plataforma de aplicaciones con API abierta en mayo de 2007. MySpace lanzó su versión, OpenSocial, en colaboración con Google, en noviembre de 2007, seis meses después."
+  },
+  {
+    "id": "25",
+    "texto": "MySpace tenía razones legítimas para ser cautelosa con una API abierta. Su sistema de contenido generado por usuarios ya había demostrado ser un vector de seguridad. Abrir una API sobre una arquitectura no modular significaba exponer internals no documentados. El equipo de ingeniería estaba en modo de estabilización constante. Construir una API robusta requería refactorizar módulos que nadie quería tocar."
+  },
+  {
+    "id": "26",
+    "texto": "Facebook en seis meses construyó un ecosistema de aplicaciones de terceros que hacía la plataforma exponencialmente más valiosa. FarmVille, quiz apps, herramientas de birthday reminders: aplicaciones pequeñas que mantenían a los usuarios enganchados diariamente. MySpace no podía competir con ese ecosistema porque OpenSocial llegó tarde y su implementación era inconsistente entre plataformas. El tiempo entre 2003 y 2008 es cuando se establece el efecto de red de una plataforma social. Los usuarios no migran de plataforma cuando la alternativa es marginalmente mejor. Migran cuando el costo de quedarse supera el costo de irse. El ecosistema de aplicaciones de Facebook acumuló costo de switching durante exactamente ese período."
+  },
+  {
+    "id": "27",
+    "texto": "En enero de 2008, Facebook superó a MySpace en visitantes únicos globales por primera vez. En mayo de 2009, el cruce era irreversible. MySpace intentó un rediseño completo en 2010 enfocado en contenido musical —reconociendo que no podía ganar como red social generalista. El intento llegó demasiado tarde. En 2011, News Corp vendió MySpace por 35 millones de dólares. Habían pagado 580 millones seis años antes. La pérdida de valor fue del 94%."
+  },
+  {
+    "id": "28",
+    "texto": "DECISIÓN 6: El rediseño de 2010 — el diagnóstico correcto, la ejecución fatal"
+  },
+  {
+    "id": "29",
+    "texto": "En 2010, MySpace ejecutó su mayor rediseño: abandonar la red social generalista y reposicionarse como plataforma de entretenimiento y música. La decisión era estratégicamente correcta —MySpace tenía ventaja real en contenido musical. Pero el rediseño requería modificar los componentes más inestables del sistema: perfiles de usuario, reproductor de música y sistema de descubrimiento."
+  },
+  {
+    "id": "30",
+    "texto": "Los datos de 2009 mostraban que los usuarios que permanecían en MySpace se concentraban en verticales de entretenimiento. El rediseño intentaba convertir una debilidad —perder la guerra de redes generalistas— en una apuesta por un nicho donde aún eran relevantes. Era un pivot razonado con evidencia."
+  },
+  {
+    "id": "31",
+    "texto": "El rediseño tardó 18 meses en completarse. Para una plataforma con 100 millones de usuarios en 2008, 18 meses de desarrollo sobre una base de código frágil es demasiado tiempo. Cada cambio desencadenaba regressions. El equipo de ingeniería documentó que módulos que nadie había tocado en dos años comenzaban a fallar cuando se modificaban componentes adjacentes. El rediseño se lanzó en octubre de 2010. Para entonces, Facebook tenía 500 millones de usuarios activos. El nicho musical que MySpace intentaba capturar era ya una fracción de lo que había sido su base total. Y el producto lanzado tenía bugs de regresión visibles en producción porque el tiempo de testing no había sido suficiente sobre una base de código que ningún ingeniero conocía completamente."
+  },
+  {
+    "id": "32",
+    "texto": "El rediseño no detuvo la hemorragia de usuarios. En enero de 2011, MySpace tenía 63 millones de usuarios únicos mensuales, menos de la mitad del pico. Despidió al 47% de su plantilla en ese mes —500 empleados. Seis meses después, News Corp inició el proceso de venta. La arquitectura que había impedido actuar rápido durante el auge también impidió actuar rápido durante la caída."
+  },
+  {
+    "id": "33",
+    "texto": "El perfil de MySpace como plataforma musical sobrevivió. En 2011, Justin Timberlake lideró una adquisición para relanzarlo como red de artistas independientes. La idea central —los artistas deben poder distribuir música directamente a fans sin intermediarios— es hoy el modelo de SoundCloud, Bandcamp y la distribución directa en Spotify. El patrón arquitectónico que MySpace no pudo implementar —servicios desacoplados con APIs definidas— es exactamente lo que Facebook, Twitter y después todas las plataformas de escala adoptaron. El costo de no hacerlo se puede medir: 545 millones de dólares en valor destruido entre 2005 y 2011."
+  },
+  {
+    "id": "34",
+    "texto": "La próxima vez que estés construyendo sobre una base de código que nadie quiere tocar, pregúntate si el costo de refactorizar hoy es mayor o menor que el costo de no poder mover el sistema cuando el mercado cambie. Eso es lo que separa una plataforma que escala de una que se suicida cuando más la necesitas."
+  }
+]

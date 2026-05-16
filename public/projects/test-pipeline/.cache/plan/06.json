@@ -1,0 +1,23 @@
+{
+  "mainQuery": "artificial intelligence training neural network",
+  "subQueries": [
+    "machine learning data processing",
+    "AI model training computer"
+  ],
+  "keywords": [
+    "IA",
+    "ENTRENAMIENTO",
+    "FUTURO"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "El futuro se entrena, no se predice",
+  "bullets": [
+    "Los modelos de IA aprenden de datos",
+    "El entrenamiento define el resultado",
+    "Predicción es ahora generación activa"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "keywordOnly"
+}

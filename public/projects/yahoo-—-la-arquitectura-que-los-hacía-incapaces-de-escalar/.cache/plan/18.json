@@ -1,0 +1,26 @@
+{
+  "mainQuery": "yahoo portal website early 2000s",
+  "subQueries": [
+    "yahoo homepage computer screen",
+    "internet advertising banner ads"
+  ],
+  "keywords": [
+    "YAHOO",
+    "PORTAL 2000",
+    "PUBLICIDAD"
+  ],
+  "eyebrow": "CONTEXTO HISTÓRICO",
+  "headline": "Yahoo era portal de medios, no motor búsqueda",
+  "bullets": [
+    "Ingresos por publicidad en tráfico",
+    "No dependía de calidad de búsqueda"
+  ],
+  "stat": {
+    "value": "2000",
+    "unit": "",
+    "label": "Año en que Yahoo era principalmente empresa de medios"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

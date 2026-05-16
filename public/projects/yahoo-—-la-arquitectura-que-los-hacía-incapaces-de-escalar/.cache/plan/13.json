@@ -1,0 +1,27 @@
+{
+  "mainQuery": "yahoo search engine 2002 interface",
+  "subQueries": [
+    "early web search history",
+    "old computer monitor webpage"
+  ],
+  "keywords": [
+    "YAHOO",
+    "3% COBERTURA",
+    "2002"
+  ],
+  "eyebrow": "DATO HISTÓRICO",
+  "headline": "Yahoo perdió cobertura mientras web crecía exponencialmente",
+  "bullets": [
+    "Índice cubría menos del tres por ciento en 2002",
+    "Crecimiento web superó capacidad de indexación",
+    "Declive de Yahoo como buscador dominante"
+  ],
+  "stat": {
+    "value": "3",
+    "unit": "%",
+    "label": "Cobertura del índice de Yahoo en 2002"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

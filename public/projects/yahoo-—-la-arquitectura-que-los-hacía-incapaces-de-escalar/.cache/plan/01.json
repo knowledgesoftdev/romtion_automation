@@ -1,0 +1,26 @@
+{
+  "mainQuery": "Google search engine early 2000s",
+  "subQueries": [
+    "Yahoo portal homepage 2002",
+    "search engine interface vintage"
+  ],
+  "keywords": [
+    "YAHOO",
+    "GOOGLE",
+    "2002"
+  ],
+  "eyebrow": "CONTEXTO HISTÓRICO",
+  "headline": "Yahoo rechazó a Google por motor búsqueda obsoleto",
+  "bullets": [
+    "Yahoo poseía su propio buscador dañado",
+    "Decisión no fue por falta de visión"
+  ],
+  "stat": {
+    "value": "2002",
+    "unit": "",
+    "label": "Año del rechazo de Yahoo a Google"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,26 @@
+{
+  "mainQuery": "neural network training data center",
+  "subQueries": [
+    "artificial intelligence server room",
+    "computer processing power visualization"
+  ],
+  "keywords": [
+    "GPT-3",
+    "175 MIL MILLONES",
+    "COSTO ENTRENAMIENTO"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "GPT-4 supera billón de parámetros en 2023",
+  "bullets": [
+    "Costo de entrenamiento aumentó diez veces",
+    "GPT-3 tenía 175 mil millones de parámetros"
+  ],
+  "stat": {
+    "value": "175",
+    "unit": "mil millones",
+    "label": "parámetros de GPT-3 en 2020"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "dataSplit"
+}

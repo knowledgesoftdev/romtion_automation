@@ -1,0 +1,26 @@
+{
+  "mainQuery": "Google search engine 1998",
+  "subQueries": [
+    "early internet portal homepage",
+    "yahoo altavista search interface"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "42% BÚSQUEDA",
+    "1998"
+  ],
+  "eyebrow": "DATO HISTÓRICO",
+  "headline": "Google dominaba el 42% del tráfico de búsqueda mundial en 1998",
+  "bullets": [
+    "Cien millones de usuarios activos",
+    "Portal más visitado del mundo"
+  ],
+  "stat": {
+    "value": "42",
+    "unit": "%",
+    "label": "del tráfico de búsqueda en internet"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

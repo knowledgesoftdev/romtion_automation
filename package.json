@@ -6,12 +6,19 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.96.0",
     "@remotion/cli": "4.0.460",
     "@remotion/google-fonts": "^4.0.460",
+    "@remotion/motion-blur": "^4.0.462",
     "@remotion/tailwind-v4": "4.0.460",
+    "@remotion/transitions": "^4.0.462",
+    "cors": "^2.8.6",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "fish-audio-sdk": "^2025.11.29",
     "music-metadata": "^11.12.3",
+    "node-fetch": "^2.7.0",
+    "nodemon": "^3.1.14",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.460",
@@ -28,7 +35,13 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "server": "nodemon server/index.js",
+    "dashboard": "npm --prefix dashboard run dev",
     "upgrade": "remotion upgrade",
+    "automate": "node automate.js",
+    "plan": "node scripts/build-scene-plan.js",
+    "media": "node fetch-pexels.js",
+    "audio": "node generate-audio.js",
     "lint": "eslint src && tsc"
   },
   "sideEffects": [

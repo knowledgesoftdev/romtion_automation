@@ -1,0 +1,26 @@
+{
+  "mainQuery": "Google PageRank algorithm search engine",
+  "subQueries": [
+    "search results ranking computer screen",
+    "web crawler spider network diagram"
+  ],
+  "keywords": [
+    "PAGERANK",
+    "MIL MILLONES PÁGINAS",
+    "RELEVANCIA AUTOMÁTICA"
+  ],
+  "eyebrow": "ALGORITMO CLAVE",
+  "headline": "Google indexaba automáticamente mil millones de páginas",
+  "bullets": [
+    "Clasificación por relevancia matemática sin intervención humana",
+    "Sistema automático de indexación masiva"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "mil millones",
+    "label": "páginas indexadas automáticamente por PageRank"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

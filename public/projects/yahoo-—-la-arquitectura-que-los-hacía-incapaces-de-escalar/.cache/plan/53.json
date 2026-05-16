@@ -1,0 +1,26 @@
+{
+  "mainQuery": "data center server room",
+  "subQueries": [
+    "google search algorithm",
+    "computer server infrastructure"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "ALGORITMO BÚSQUEDA",
+    "SERVIDORES"
+  ],
+  "eyebrow": "LIMITACIÓN TÉCNICA",
+  "headline": "Inversión en servidores no podía replicar historial de búsqueda",
+  "bullets": [
+    "Mil millones de usuarios entrenan algoritmo diario",
+    "Paridad técnica imposible en horizonte realista"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "mil millones",
+    "label": "usuarios entrenando algoritmo Google"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

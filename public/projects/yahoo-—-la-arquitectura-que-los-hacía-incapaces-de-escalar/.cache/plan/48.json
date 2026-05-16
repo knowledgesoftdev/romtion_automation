@@ -1,0 +1,26 @@
+{
+  "mainQuery": "google search algorithm architecture",
+  "subQueries": [
+    "google office acquisition deal",
+    "google server data center"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "5.7 MIL MILLONES",
+    "BÚSQUEDA"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "Cinco mil millones en distracción institucional Google",
+  "bullets": [
+    "Hubiera comprado setenta por ciento Google",
+    "Desvió focus en momento crítico búsqueda"
+  ],
+  "stat": {
+    "value": "5.7",
+    "unit": "mil millones de dólares",
+    "label": "Valor de mercado que causó distracción"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

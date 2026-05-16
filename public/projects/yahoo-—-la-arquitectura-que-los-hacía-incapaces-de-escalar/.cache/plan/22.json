@@ -1,0 +1,26 @@
+{
+  "mainQuery": "data center server infrastructure",
+  "subQueries": [
+    "search engine database storage",
+    "computer hardware equipment facility"
+  ],
+  "keywords": [
+    "INKTOMI",
+    "235 MILLONES",
+    "2002"
+  ],
+  "eyebrow": "INVERSIÓN FALLIDA",
+  "headline": "Yahoo adquirió motor de búsqueda sin infraestructura de datos",
+  "bullets": [
+    "No tenía almacenamiento para entrenar el algoritmo",
+    "Millones de búsquedas diarias sin registros guardados"
+  ],
+  "stat": {
+    "value": "235",
+    "unit": "millones de dólares",
+    "label": "Precio de adquisición de Inktomi"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,22 @@
+{
+  "mainQuery": "yahoo search engine server room",
+  "subQueries": [
+    "monolithic architecture code",
+    "deployment testing process"
+  ],
+  "keywords": [
+    "MONOLITO",
+    "CICLOS PRUEBAS",
+    "ACOPLAMIENTO"
+  ],
+  "eyebrow": "CONTEXTO TÉCNICO",
+  "headline": "Yahoo enfrentó ciclos de despliegue de semanas por arquitectura monolítica",
+  "bullets": [
+    "Cambios al motor afectaban correo, noticias y finanzas",
+    "Cada mejora requería pruebas completas del sistema"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

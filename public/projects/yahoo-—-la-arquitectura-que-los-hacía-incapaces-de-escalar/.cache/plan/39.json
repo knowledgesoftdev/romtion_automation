@@ -1,0 +1,26 @@
+{
+  "mainQuery": "Google search ads revenue growth",
+  "subQueries": [
+    "Yahoo display advertising business",
+    "early 2000s tech company growth"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "PUBLICIDAD BÚSQUEDA",
+    "2001-2006"
+  ],
+  "eyebrow": "CRECIMIENTO EXPONENCIAL",
+  "headline": "Google pasó de cero a diez mil seiscientos millones en seis años",
+  "bullets": [
+    "Yahoo creció más lentamente en display",
+    "Publicidad en búsqueda fue clave para Google"
+  ],
+  "stat": {
+    "value": "10,600",
+    "unit": "millones USD",
+    "label": "Ingresos Google 2001-2006"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

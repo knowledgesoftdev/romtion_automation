@@ -1,0 +1,22 @@
+{
+  "mainQuery": "smartphone streaming app interface",
+  "subQueries": [
+    "user feedback data analytics",
+    "recommendation algorithm visualization"
+  ],
+  "keywords": [
+    "RETROALIMENTACIÓN",
+    "PRIMER USUARIO",
+    "ARQUITECTURA"
+  ],
+  "eyebrow": "SISTEMA CLAVE",
+  "headline": "Retroalimentación del primer usuario mejora arquitectura",
+  "bullets": [
+    "Spotify, Netflix y TikTok lo aplican",
+    "Señal capturada desde inicio, no después"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

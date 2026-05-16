@@ -1,0 +1,590 @@
+[
+  {
+    "id": "01",
+    "texto": "Internet Explorer seis dominó el noventa y cinco por ciento del mercado."
+  },
+  {
+    "id": "02",
+    "texto": "Microsoft dejó de actualizarlo."
+  },
+  {
+    "id": "03",
+    "texto": "Esa decisión paralizó la web por una década entera."
+  },
+  {
+    "id": "04",
+    "texto": "Internet Explorer nació en mil novecientos noventa y cinco como respuesta directa a Netscape Navigator."
+  },
+  {
+    "id": "05",
+    "texto": "Microsoft lo integró al sistema operativo Windows en mil novecientos noventa y ocho, versión cuatro, y ganó la primera guerra de navegadores por aplastamiento legal y técnico."
+  },
+  {
+    "id": "06",
+    "texto": "En dos mil dos, Internet Explorer seis controlaba noventa y cinco por ciento del mercado global de navegadores."
+  },
+  {
+    "id": "07",
+    "texto": "Era, en términos prácticos, el único navegador que existía."
+  },
+  {
+    "id": "08",
+    "texto": "Trescientos millones de usuarios dependían de él."
+  },
+  {
+    "id": "09",
+    "texto": "Los desarrolladores web construían para él y solo para él."
+  },
+  {
+    "id": "10",
+    "texto": "Ese monopolio absoluto fue exactamente lo que lo condenó."
+  },
+  {
+    "id": "11",
+    "texto": "DECISIÓN UNO: Integrar el navegador al sistema operativo como arma anticompetitiva"
+  },
+  {
+    "id": "12",
+    "texto": "Microsoft fusionó el motor de Internet Explorer con el núcleo de Windows mediante una interfaz de programación de aplicaciones llamada WinInet y componentes del sistema operativo que no podían desinstalarse."
+  },
+  {
+    "id": "13",
+    "texto": "El navegador no era una aplicación separada — era parte del sistema operativo."
+  },
+  {
+    "id": "14",
+    "texto": "En mil novecientos noventa y cinco, Netscape Navigator controlaba el ochenta por ciento del mercado."
+  },
+  {
+    "id": "15",
+    "texto": "Marc Andreessen, cofundador de Netscape, declaró públicamente que el navegador convertiría a Windows en un sistema operativo irrelevante."
+  },
+  {
+    "id": "16",
+    "texto": "Microsoft respondió con lo único que Netscape no podía replicar: distribución gratuita y obligatoria en cada copia de Windows."
+  },
+  {
+    "id": "17",
+    "texto": "La lógica era correcta para ganar la guerra."
+  },
+  {
+    "id": "18",
+    "texto": "Ganar mediante integración obligatoria eliminó el incentivo de mejorar el producto."
+  },
+  {
+    "id": "19",
+    "texto": "Una vez que Netscape colapsó y el mercado quedó capturado, el motor de Internet Explorer — llamado Trident — quedó congelado."
+  },
+  {
+    "id": "20",
+    "texto": "No había competidor que justificara inversión."
+  },
+  {
+    "id": "21",
+    "texto": "El Departamento de Justicia de los Estados Unidos abrió un caso antimonopolio en mil novecientos noventa y ocho."
+  },
+  {
+    "id": "22",
+    "texto": "Microsoft ganó en apelación en dos mil uno, pero el proceso consumió cuatro años de atención ejecutiva y generó restricciones sobre cómo podía competir."
+  },
+  {
+    "id": "23",
+    "texto": "El resultado interno fue parálisis: ningún equipo quería ser el siguiente objetivo de una demanda antimonopolio, y mejorar Internet Explorer agresivamente arriesgaba exactamente eso."
+  },
+  {
+    "id": "24",
+    "texto": "Internet Explorer seis fue lanzado en agosto de dos mil uno."
+  },
+  {
+    "id": "25",
+    "texto": "El siguiente lanzamiento mayor, Internet Explorer siete, llegó en octubre de dos mil seis — cinco años después."
+  },
+  {
+    "id": "26",
+    "texto": "Durante esos cinco años, el motor Trident no implementó ningún estándar nuevo del Consorcio World Wide Web."
+  },
+  {
+    "id": "27",
+    "texto": "Ninguno."
+  },
+  {
+    "id": "28",
+    "texto": "DECISIÓN DOS: Implementar el modelo de caja CSS con un error aritmético y no corregirlo"
+  },
+  {
+    "id": "29",
+    "texto": "El modelo de caja en hojas de estilo en cascada define cómo se calculan las dimensiones de un elemento en pantalla."
+  },
+  {
+    "id": "30",
+    "texto": "El Consorcio World Wide Web especificaba que el ancho declarado no incluye relleno interno ni bordes — solo el contenido."
+  },
+  {
+    "id": "31",
+    "texto": "Internet Explorer seis calculaba el ancho incluyendo relleno y bordes dentro del valor declarado."
+  },
+  {
+    "id": "32",
+    "texto": "Dos interpretaciones matemáticamente opuestas del mismo estándar."
+  },
+  {
+    "id": "33",
+    "texto": "El comportamiento original de Internet Explorer cuatro y cinco fue diseñado antes de que el Consorcio World Wide Web finalizara la especificación."
+  },
+  {
+    "id": "34",
+    "texto": "Cuando la especificación quedó publicada, Microsoft optó por mantener compatibilidad con sitios existentes en lugar de corregir el motor."
+  },
+  {
+    "id": "35",
+    "texto": "La decisión parecía razonable: romper millones de sitios ya construidos para cumplir un estándar nuevo generaría rechazo masivo."
+  },
+  {
+    "id": "36",
+    "texto": "El parche implementado fue el modo de compatibilidad doctype, conocido como quirks mode en inglés — modo peculiar."
+  },
+  {
+    "id": "37",
+    "texto": "Si un documento comenzaba con la declaración de tipo de documento correcta, Internet Explorer activaba el modelo de caja estándar."
+  },
+  {
+    "id": "38",
+    "texto": "Si no, usaba el modelo incorrecto."
+  },
+  {
+    "id": "39",
+    "texto": "El problema era que millones de desarrolladores no sabían cuál modo estaba activo, y depurar diferencias entre navegadores requería condiciones de prueba explícitas para cada caso."
+  },
+  {
+    "id": "40",
+    "texto": "Firefox, Safari y Opera usaban el modelo del Consorcio World Wide Web por defecto."
+  },
+  {
+    "id": "41",
+    "texto": "Un desarrollador escribiendo hojas de estilo en cascada debía mantener dos conjuntos de reglas paralelas — una para el estándar, otra para Internet Explorer."
+  },
+  {
+    "id": "42",
+    "texto": "El tiempo adicional de desarrollo se estimó entre veinte y cuarenta por ciento en proyectos frontend de mediana complejidad."
+  },
+  {
+    "id": "43",
+    "texto": "La fundación Mozilla publicó en dos mil cuatro un estudio interno mostrando que aproximadamente sesenta por ciento de los errores reportados por desarrolladores web tenían como causa raíz diferencias de comportamiento entre Internet Explorer y los navegadores basados en estándares."
+  },
+  {
+    "id": "44",
+    "texto": "El coste acumulado para la industria durante el periodo dos mil uno a dos mil ocho no fue medido formalmente, pero consultoras como Forrester Research estimaron en dos mil siete que las empresas gastaban entre quince y veinticinco por ciento de sus presupuestos de desarrollo web compensando incompatibilidades específicas de Internet Explorer."
+  },
+  {
+    "id": "45",
+    "texto": "DECISIÓN TRES: No implementar soporte de transparencia en PNG y bloquear el estándar de selectores CSS"
+  },
+  {
+    "id": "46",
+    "texto": "El formato PNG — gráficos de red portátiles — incluye desde mil novecientos noventa y seis un canal de transparencia de dieciséis bits llamado canal alfa."
+  },
+  {
+    "id": "47",
+    "texto": "Permite imágenes con transparencia parcial — degradados, sombras, bordes suaves."
+  },
+  {
+    "id": "48",
+    "texto": "Internet Explorer seis ignoraba el canal alfa de PNG."
+  },
+  {
+    "id": "49",
+    "texto": "Mostraba transparencia parcial como gris sólido."
+  },
+  {
+    "id": "50",
+    "texto": "CSS nivel dos, publicado por el Consorcio World Wide Web en mil novecientos noventa y ocho, incluía selectores que permiten aplicar estilos a elementos basándose en su posición relativa, estado o atributos."
+  },
+  {
+    "id": "51",
+    "texto": "Internet Explorer seis implementó aproximadamente cuarenta por ciento de esos selectores."
+  },
+  {
+    "id": "52",
+    "texto": "El resto era ignorado silenciosamente."
+  },
+  {
+    "id": "53",
+    "texto": "El equipo de Internet Explorer entre dos mil uno y dos mil seis fue reducido de cien ingenieros a menos de diez."
+  },
+  {
+    "id": "54",
+    "texto": "La documentación interna filtrada durante el proceso legal antimonopolio mostraba que Microsoft consideraba Internet Explorer un producto terminado."
+  },
+  {
+    "id": "55",
+    "texto": "Sin competidores activos, no había presupuesto para implementar estándares adicionales."
+  },
+  {
+    "id": "56",
+    "texto": "La decisión fue presupuestaria, no técnica."
+  },
+  {
+    "id": "57",
+    "texto": "Los desarrolladores web que necesitaban transparencia PNG en Internet Explorer seis debían implementar un filtro propietario de Microsoft llamado AlphaImageLoader."
+  },
+  {
+    "id": "58",
+    "texto": "No era parte de ningún estándar."
+  },
+  {
+    "id": "59",
+    "texto": "Era una interfaz de programación de aplicaciones específica de Internet Explorer que recargaba la imagen desde el servidor, la procesaba en memoria adicional, y la renderizaba con transparencia."
+  },
+  {
+    "id": "60",
+    "texto": "El costo en rendimiento era medible: pruebas publicadas por el equipo de Yahoo en dos mil siete mostraban que páginas con diez o más imágenes PNG usando AlphaImageLoader tardaban hasta un punto ocho segundos adicionales en renderizarse en máquinas con un gigabyte de memoria."
+  },
+  {
+    "id": "61",
+    "texto": "Para los selectores CSS faltantes, la solución era JavaScript — código ejecutado en el cliente que recorría el árbol del documento y aplicaba clases manualmente."
+  },
+  {
+    "id": "62",
+    "texto": "Más código, más tiempo de carga, más puntos de fallo."
+  },
+  {
+    "id": "63",
+    "texto": "En dos mil cinco, el equipo de Gmail de Google tomó la decisión de no usar transparencia PNG en la interfaz de usuario del cliente web por incompatibilidad con Internet Explorer seis."
+  },
+  {
+    "id": "64",
+    "texto": "La interfaz de usuario de Gmail mantuvo ese diseño limitado hasta dos mil ocho."
+  },
+  {
+    "id": "65",
+    "texto": "Un servicio con cien millones de usuarios activos en dos mil siete degradó su interfaz de usuario durante tres años para acomodar un motor que no implementaba un estándar publicado en mil novecientos noventa y seis."
+  },
+  {
+    "id": "66",
+    "texto": "DECISIÓN CUATRO: Ignorar XMLHttpRequest como estándar y bloquear AJAX nativo"
+  },
+  {
+    "id": "67",
+    "texto": "XMLHttpRequest es la interfaz de programación de aplicaciones que permite a una página web solicitar datos al servidor sin recargar la página completa."
+  },
+  {
+    "id": "68",
+    "texto": "Microsoft la inventó."
+  },
+  {
+    "id": "69",
+    "texto": "Fue introducida en Internet Explorer cinco en mil novecientos noventa y nueve como un objeto ActiveX propietario llamado MSXML."
+  },
+  {
+    "id": "70",
+    "texto": "Firefox, Opera y Safari implementaron la misma funcionalidad en dos mil dos como objeto nativo del navegador, accesible directamente desde JavaScript sin dependencias externas."
+  },
+  {
+    "id": "71",
+    "texto": "Internet Explorer mantuvo el objeto ActiveX como única forma de acceso hasta Internet Explorer siete en dos mil seis."
+  },
+  {
+    "id": "72",
+    "texto": "ActiveX era la plataforma de extensión de Microsoft para aplicaciones web empresariales."
+  },
+  {
+    "id": "73",
+    "texto": "Mantener XMLHttpRequest como objeto ActiveX en lugar de objeto nativo ataba a los desarrolladores a la plataforma de Microsoft."
+  },
+  {
+    "id": "74",
+    "texto": "Empresas que usaban ActiveX para otras funciones tenían incentivos para permanecer en Internet Explorer."
+  },
+  {
+    "id": "75",
+    "texto": "Era una decisión de bloqueo de plataforma — lo que en inglés se denomina vendor lock-in — técnicamente deliberada."
+  },
+  {
+    "id": "76",
+    "texto": "El bloqueo funcionó exactamente al revés."
+  },
+  {
+    "id": "77",
+    "texto": "En dos mil cuatro, Jesse James Garrett, diseñador de experiencia de usuario de la consultora Adaptive Path, documentó un patrón de desarrollo usando XMLHttpRequest para construir interfaces web que respondían como aplicaciones de escritorio."
+  },
+  {
+    "id": "78",
+    "texto": "Lo llamó AJAX — JavaScript asíncrono y XML en inglés, o JavaScript asíncrono y XML."
+  },
+  {
+    "id": "79",
+    "texto": "Google Maps fue lanzado en febrero de dos mil cinco usando AJAX sobre el objeto nativo."
+  },
+  {
+    "id": "80",
+    "texto": "Google Gmail usaba el mismo patrón."
+  },
+  {
+    "id": "81",
+    "texto": "Ambos productos requerían código adicional en Internet Explorer para detectar si el objeto ActiveX estaba disponible, si las políticas de seguridad de la empresa lo bloqueaban, y si la versión de MSXML instalada era compatible."
+  },
+  {
+    "id": "82",
+    "texto": "Los desarrolladores que querían construir aplicaciones web modernas descubrieron que Internet Explorer era el obstáculo principal."
+  },
+  {
+    "id": "83",
+    "texto": "No el facilitador — el obstáculo."
+  },
+  {
+    "id": "84",
+    "texto": "En enero de dos mil seis, la cuota de mercado de Internet Explorer era del ochenta y cinco por ciento."
+  },
+  {
+    "id": "85",
+    "texto": "En enero de dos mil ocho, era del setenta y siete por ciento."
+  },
+  {
+    "id": "86",
+    "texto": "Firefox pasó del nueve al dieciséis por ciento en el mismo periodo."
+  },
+  {
+    "id": "87",
+    "texto": "El catalizador documentado por múltiples análisis de la época fue la adopción de aplicaciones AJAX que funcionaban mejor fuera de Internet Explorer."
+  },
+  {
+    "id": "88",
+    "texto": "StatCounter, empresa de análisis de tráfico web, registró que en sitios de desarrollo web y tecnología la cuota de Internet Explorer caía por debajo del cincuenta por ciento ya en dos mil siete."
+  },
+  {
+    "id": "89",
+    "texto": "DECISIÓN CINCO: Lanzar Internet Explorer siete sin motor de renderizado nuevo y abandonar Internet Explorer seis sin ciclo de vida definido"
+  },
+  {
+    "id": "90",
+    "texto": "Internet Explorer siete, lanzado en octubre de dos mil seis, usaba el mismo motor Trident de Internet Explorer seis con parches incrementales."
+  },
+  {
+    "id": "91",
+    "texto": "No era una reescritura."
+  },
+  {
+    "id": "92",
+    "texto": "Implementó soporte parcial de CSS nivel dos — el que ya era estándar desde mil novecientos noventa y ocho — y soporte básico de transparencia PNG."
+  },
+  {
+    "id": "93",
+    "texto": "No implementó CSS nivel tres."
+  },
+  {
+    "id": "94",
+    "texto": "No implementó el modelo de eventos DOM nivel dos del Consorcio World Wide Web de forma completa."
+  },
+  {
+    "id": "95",
+    "texto": "Simultáneamente, Microsoft no estableció una fecha de fin de vida para Internet Explorer seis ni ofreció migración forzada."
+  },
+  {
+    "id": "96",
+    "texto": "Una reescritura completa del motor de renderizado habría tomado entre dos y tres años y habría requerido pruebas de regresión contra miles de sitios existentes."
+  },
+  {
+    "id": "97",
+    "texto": "Los clientes empresariales — bancos, aseguradoras, administraciones públicas — habían construido aplicaciones internas usando características propietarias de Internet Explorer seis."
+  },
+  {
+    "id": "98",
+    "texto": "Forzar la migración habría generado rechazo corporativo."
+  },
+  {
+    "id": "99",
+    "texto": "Microsoft optó por la ruta de menor fricción: una actualización cosmética que no rompiera la compatibilidad."
+  },
+  {
+    "id": "100",
+    "texto": "El resultado fue la coexistencia de tres versiones activas simultáneamente: Internet Explorer seis, Internet Explorer siete e Internet Explorer ocho, lanzado en dos mil nueve."
+  },
+  {
+    "id": "101",
+    "texto": "Cada versión tenía comportamientos diferentes para los mismos estándares."
+  },
+  {
+    "id": "102",
+    "texto": "Los desarrolladores web debían probar en las tres."
+  },
+  {
+    "id": "103",
+    "texto": "Herramientas como el selector condicional de comentarios — una sintaxis propietaria de Internet Explorer usando comentarios especiales en el lenguaje de marcado de hipertexto — se convirtieron en código estándar en cualquier proyecto web."
+  },
+  {
+    "id": "104",
+    "texto": "China mantuvo Internet Explorer seis como navegador dominante hasta dos mil trece porque el sistema bancario chino en línea requería controles ActiveX que solo funcionaban en Internet Explorer seis."
+  },
+  {
+    "id": "105",
+    "texto": "Baidu, el motor de búsqueda chino, reportó en dos mil doce que treinta y cuatro por ciento de sus usuarios aún accedían desde Internet Explorer seis."
+  },
+  {
+    "id": "106",
+    "texto": "Google anunció en enero de dos mil diez que dejaría de soportar Internet Explorer seis en sus productos."
+  },
+  {
+    "id": "107",
+    "texto": "YouTube terminó el soporte en marzo de dos mil diez."
+  },
+  {
+    "id": "108",
+    "texto": "Facebook en dos mil once."
+  },
+  {
+    "id": "109",
+    "texto": "Cada uno de estos anuncios generó costos de soporte adicionales para empresas cuyos usuarios aún dependían del navegador."
+  },
+  {
+    "id": "110",
+    "texto": "Microsoft publicó un sitio llamado \"Cuenta regresiva de Internet Explorer seis\" en dos mil once — nueve años después de que el navegador fuera lanzado — mostrando en tiempo real el porcentaje de uso global para coordinar su propio abandono."
+  },
+  {
+    "id": "111",
+    "texto": "Eso no es una estrategia de producto."
+  },
+  {
+    "id": "112",
+    "texto": "Es una autopsia pública."
+  },
+  {
+    "id": "113",
+    "texto": "DECISIÓN SEIS: No responder a Chrome con una arquitectura multiproceso"
+  },
+  {
+    "id": "114",
+    "texto": "Google Chrome fue lanzado en septiembre de dos mil ocho con una arquitectura donde cada pestaña del navegador ejecutaba en un proceso independiente del sistema operativo."
+  },
+  {
+    "id": "115",
+    "texto": "Si una pestaña fallaba, las demás continuaban funcionando."
+  },
+  {
+    "id": "116",
+    "texto": "Internet Explorer hasta la versión ocho usaba un modelo de proceso único: un fallo en cualquier pestaña podía colapsar la sesión completa."
+  },
+  {
+    "id": "117",
+    "texto": "Internet Explorer ocho introdujo procesos por pestaña de forma parcial, pero el proceso principal del navegador seguía siendo un punto único de fallo."
+  },
+  {
+    "id": "118",
+    "texto": "Internet Explorer nueve, lanzado en marzo de dos mil once, intentó la separación completa, pero con limitaciones en sistemas operativos anteriores a Windows Vista."
+  },
+  {
+    "id": "119",
+    "texto": "La arquitectura multiproceso de Chrome requería cambios profundos en cómo el motor Trident gestionaba el modelo de objetos del documento y la memoria compartida entre pestañas."
+  },
+  {
+    "id": "120",
+    "texto": "Microsoft había acumulado doce años de deuda técnica en Trident."
+  },
+  {
+    "id": "121",
+    "texto": "Reescribir la arquitectura de gestión de procesos sin romper compatibilidad con extensiones existentes — que usaban la interfaz de programación de aplicaciones de objetos COM de Microsoft — era técnicamente complejo."
+  },
+  {
+    "id": "122",
+    "texto": "La decisión de parchear en lugar de reescribir se repitió."
+  },
+  {
+    "id": "123",
+    "texto": "Chrome medía el tiempo de inicio, el tiempo de carga de páginas y el tiempo de ejecución de JavaScript con datos públicos."
+  },
+  {
+    "id": "124",
+    "texto": "El motor de JavaScript V8 de Chrome usaba compilación justo a tiempo — compilación del código en el momento de ejecución."
+  },
+  {
+    "id": "125",
+    "texto": "El motor de JavaScript de Internet Explorer ocho usaba interpretación pura."
+  },
+  {
+    "id": "126",
+    "texto": "En pruebas publicadas por el sitio Ars Technica en dos mil nueve, Chrome ejecutaba benchmarks de JavaScript entre ocho y veintidós veces más rápido que Internet Explorer ocho según el tipo de operación."
+  },
+  {
+    "id": "127",
+    "texto": "La diferencia era perceptible sin instrumentación."
+  },
+  {
+    "id": "128",
+    "texto": "Los usuarios no necesitaban leer análisis técnicos para sentir la diferencia."
+  },
+  {
+    "id": "129",
+    "texto": "En enero de dos mil nueve, Chrome tenía uno punto seis por ciento de cuota de mercado global."
+  },
+  {
+    "id": "130",
+    "texto": "En enero de dos mil doce, tenía veintisiete por ciento."
+  },
+  {
+    "id": "131",
+    "texto": "En mayo de dos mil doce superó a Internet Explorer como navegador más usado globalmente según StatCounter."
+  },
+  {
+    "id": "132",
+    "texto": "Eso es pasar de uno punto seis a treinta y dos por ciento en treinta y seis meses."
+  },
+  {
+    "id": "133",
+    "texto": "La velocidad de esa adopción no tuvo precedentes en la historia de los navegadores."
+  },
+  {
+    "id": "134",
+    "texto": "Microsoft respondió con Internet Explorer diez en dos mil doce e Internet Explorer once en dos mil trece."
+  },
+  {
+    "id": "135",
+    "texto": "Ambos llegaron demasiado tarde para recuperar el mercado de consumo."
+  },
+  {
+    "id": "136",
+    "texto": "En dos mil quince, Microsoft abandonó Internet Explorer y lanzó Edge con un motor completamente nuevo llamado EdgeHTML."
+  },
+  {
+    "id": "137",
+    "texto": "En dos mil dieciocho, ese motor también fue abandonado."
+  },
+  {
+    "id": "138",
+    "texto": "Edge fue reescrito sobre Chromium, el núcleo de código abierto de Chrome."
+  },
+  {
+    "id": "139",
+    "texto": "El motor Trident de Internet Explorer nunca murió del todo."
+  },
+  {
+    "id": "140",
+    "texto": "El modo Internet Explorer de Microsoft Edge existe hoy en producción — permite ejecutar sitios que requieren comportamiento de Internet Explorer once dentro de Edge."
+  },
+  {
+    "id": "141",
+    "texto": "Bancos europeos y sistemas gubernamentales lo usan activamente en dos mil veinticuatro."
+  },
+  {
+    "id": "142",
+    "texto": "El concepto de navegador embebido para compatibilidad retroactiva — un motor antiguo dentro de uno moderno — es la herencia directa."
+  },
+  {
+    "id": "143",
+    "texto": "Electron, el entorno de ejecución que usa Visual Studio Code, Slack y Figma, es esencialmente un navegador Chromium embebido en una aplicación de escritorio."
+  },
+  {
+    "id": "144",
+    "texto": "La idea de integrar un motor de navegador en productos de escritorio la inventó Internet Explorer."
+  },
+  {
+    "id": "145",
+    "texto": "Lo que cambió fue quién controlaba el estándar."
+  },
+  {
+    "id": "146",
+    "texto": "La próxima vez que tengas monopolio de mercado y consideres detener el desarrollo por falta de competencia, pregúntate si estás midiendo tu velocidad relativa a los competidores actuales o a los competidores que existirán cuando alguien más resuelva el problema que tú dejaste sin resolver."
+  },
+  {
+    "id": "147",
+    "texto": "Eso es lo que separa una plataforma que define una industria de una que la bloquea hasta que alguien la reemplaza."
+  }
+]

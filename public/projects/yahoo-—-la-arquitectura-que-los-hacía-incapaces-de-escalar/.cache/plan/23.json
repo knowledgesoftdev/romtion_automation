@@ -1,0 +1,27 @@
+{
+  "mainQuery": "Yahoo search engine 2000s office",
+  "subQueries": [
+    "google vs yahoo market share",
+    "early 2000s internet search"
+  ],
+  "keywords": [
+    "YAHOO SEARCH",
+    "2 MIL MILLONES",
+    "GOOGLE DOMINÓ"
+  ],
+  "eyebrow": "DATO HISTÓRICO",
+  "headline": "Yahoo invirtió miles de millones pero Google dominó",
+  "bullets": [
+    "Compró Inktomi y Overture",
+    "Construyó motor de búsqueda propio",
+    "Perdió participación vs Google"
+  ],
+  "stat": {
+    "value": "2",
+    "unit": "mil millones",
+    "label": "Invertidos por Yahoo en búsqueda"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,26 @@
+{
+  "mainQuery": "user scrolling phone screen ads",
+  "subQueries": [
+    "computer monitor website analytics",
+    "advertising dashboard revenue metrics"
+  ],
+  "keywords": [
+    "PUBLICIDAD",
+    "ENGAGEMENT TIEMPO",
+    "INCENTIVO PERVERSO"
+  ],
+  "eyebrow": "MODELO NEGOCIO",
+  "headline": "Más tiempo en portal igual más anuncios e ingresos",
+  "bullets": [
+    "Motor búsqueda rápido sacaba usuarios inmediatamente",
+    "Anuncios multiplicaban con cada página vista"
+  ],
+  "stat": {
+    "value": "∞",
+    "unit": "",
+    "label": "Ingresos con tiempo ilimitado en portal"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,19 @@
+{
+  "mainQuery": "search engine algorithm server",
+  "subQueries": [
+    "search bar website interface",
+    "data processing network servers"
+  ],
+  "keywords": [
+    "BÚSQUEDA",
+    "ALGORITMO",
+    "TERCERIZACIÓN"
+  ],
+  "eyebrow": "DECISIÓN 2",
+  "headline": "Tercerizar el motor de búsqueda algorítmica",
+  "bullets": [],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "keywordOnly"
+}

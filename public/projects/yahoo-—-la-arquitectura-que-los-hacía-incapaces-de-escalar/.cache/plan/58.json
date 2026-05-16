@@ -1,0 +1,22 @@
+{
+  "mainQuery": "google search interface results page",
+  "subQueries": [
+    "data center server infrastructure",
+    "user clicking computer screen"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "DATOS COMPORTAMIENTO",
+    "ENTRENAMIENTO MODELO"
+  ],
+  "eyebrow": "LECCIÓN TÉCNICA",
+  "headline": "Google convirtió datos de usuario en infraestructura de entrenamiento",
+  "bullets": [
+    "Cada búsqueda alimenta el modelo en tiempo real",
+    "Yahoo no construyó este sistema de retroalimentación"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,22 @@
+{
+  "mainQuery": "Yahoo office building 1990s 2000s",
+  "subQueries": [
+    "person at computer desk Yahoo search"
+  ],
+  "keywords": [
+    "TERCERIZACIÓN",
+    "YAHOO SERVICIOS",
+    "COSTOS"
+  ],
+  "eyebrow": "DECISIÓN ESTRATÉGICA",
+  "headline": "Yahoo terceriza búsqueda para enfocarse en servicios",
+  "bullets": [
+    "Reducía costos operacionales significativamente",
+    "Permitía expandir correo, noticias, finanzas",
+    "Lógica empresarial clara para la época"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

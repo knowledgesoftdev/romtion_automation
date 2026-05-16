@@ -1,0 +1,26 @@
+{
+  "mainQuery": "yahoo search engine 1990s computer",
+  "subQueries": [
+    "early web browser internet",
+    "crt monitor desktop computer vintage"
+  ],
+  "keywords": [
+    "YAHOO",
+    "1000 MILLONES PÁGINAS",
+    "AÑO 2000"
+  ],
+  "eyebrow": "DATO HISTÓRICO",
+  "headline": "Web creció 100% anual entre 1995 y 2000",
+  "bullets": [
+    "Yahoo indexaba solo un millón de sitios",
+    "Mil millones de páginas eran invisibles"
+  ],
+  "stat": {
+    "value": "1.000",
+    "unit": "millones páginas",
+    "label": "Web invisible en año 2000"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

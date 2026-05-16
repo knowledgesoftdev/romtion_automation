@@ -1,0 +1,26 @@
+{
+  "mainQuery": "yahoo headquarters office building",
+  "subQueries": [
+    "data center server room",
+    "dial up internet modem"
+  ],
+  "keywords": [
+    "YAHOO",
+    "5.700 MILLONES",
+    "INFRAESTRUCTURA"
+  ],
+  "eyebrow": "ADQUISICIÓN FALLIDA",
+  "headline": "Yahoo pagó 5.700 millones en tecnología prematura",
+  "bullets": [
+    "Mercado dependía de infraestructura inexistente",
+    "Masificación tomaría cinco años"
+  ],
+  "stat": {
+    "value": "5.700",
+    "unit": "millones de dólares",
+    "label": "Inversión de Yahoo en tecnología prematura"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

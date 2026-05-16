@@ -1,0 +1,26 @@
+{
+  "mainQuery": "Google search results ads clicks",
+  "subQueries": [
+    "search engine interface desktop",
+    "advertisement analytics dashboard"
+  ],
+  "keywords": [
+    "GOOGLE",
+    "BÚSQUEDA ANUNCIOS",
+    "INGRESOS"
+  ],
+  "eyebrow": "MODELO COMERCIAL",
+  "headline": "Google ganaba más con búsquedas de mejor calidad",
+  "bullets": [
+    "Mejor calidad de búsqueda generaba más clics",
+    "Clics relevantes producían ingresos publicitarios directos"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "",
+    "label": "incentivo de alineación económica"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

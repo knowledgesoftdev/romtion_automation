@@ -1,0 +1,242 @@
+[
+  {
+    "id": "01",
+    "texto": "Yahoo no rechazó a Google por codicia. Los rechazó porque su motor de búsqueda ya era, en dos mil dos, irreparable."
+  },
+  {
+    "id": "02",
+    "texto": "Yahoo nació en mil novecientos noventa y cuatro como un directorio humano. Personas clasificaban páginas web a mano."
+  },
+  {
+    "id": "03",
+    "texto": "En mil novecientos noventa y ocho controlaba el cuarenta y dos por ciento del tráfico de búsqueda en internet. Tenía cien millones de usuarios activos. Era, técnicamente, el portal más visitado del mundo."
+  },
+  {
+    "id": "04",
+    "texto": "Google llegó con un modelo matemático llamado PageRank y ofreció vender la empresa por un millón de dólares. Yahoo dijo que no. Cuatro años después intentó comprarla por tres mil millones de dólares. Google también dijo que no."
+  },
+  {
+    "id": "05",
+    "texto": "Lo que Yahoo nunca entendió es que su propia arquitectura hacía imposible competir, aunque hubiera querido."
+  },
+  {
+    "id": "06",
+    "texto": "DECISIÓN UNO: El índice editorial como arquitectura central"
+  },
+  {
+    "id": "07",
+    "texto": "Yahoo construyó su motor de búsqueda sobre un índice editorial: editores humanos categorizaban manualmente cada sitio web en una jerarquía de directorios. No era un algoritmo. Era una base de datos curada a mano, organizada como una biblioteca física con estantes y secciones."
+  },
+  {
+    "id": "08",
+    "texto": "En mil novecientos noventa y cuatro, el web visible tenía menos de tres mil sitios. Clasificar páginas manualmente era viable y producía resultados de altísima precisión."
+  },
+  {
+    "id": "09",
+    "texto": "Los usuarios preferían navegar por categorías porque buscaban descubrir, no consultar. El modelo funcionaba. Los ingresos publicitarios validaban la decisión cada trimestre."
+  },
+  {
+    "id": "10",
+    "texto": "El web creció a una tasa de cien por ciento anual entre mil novecientos noventa y cinco y dos mil. Para el año dos mil, Yahoo indexaba manualmente alrededor de un millón de sitios. El resto del web, estimado en mil millones de páginas, era invisible para sus usuarios."
+  },
+  {
+    "id": "11",
+    "texto": "Cada página nueva requería que un editor humano la revisara, clasificara y aprobara. El cuello de botella no era el ancho de banda ni el almacenamiento. Era el tiempo humano, que no escala."
+  },
+  {
+    "id": "12",
+    "texto": "Google, con PageRank, indexaba esas mismas mil millones de páginas de forma automática y las clasificaba por relevancia matemática sin intervención humana."
+  },
+  {
+    "id": "13",
+    "texto": "Yahoo perdió cobertura de índice en proporción directa al crecimiento del web. Para dos mil dos, su índice cubría menos del tres por ciento del contenido disponible."
+  },
+  {
+    "id": "14",
+    "texto": "Los usuarios que buscaban información reciente o específica no la encontraban. La tasa de abandono post-búsqueda subió. Google capturó ese tráfico insatisfecho y no lo devolvió."
+  },
+  {
+    "id": "15",
+    "texto": "DECISIÓN DOS: Tercerizar el motor de búsqueda algorítmica"
+  },
+  {
+    "id": "16",
+    "texto": "Yahoo no construyó su propio motor de búsqueda algorítmica hasta dos mil tres. Durante casi una década, la capa de búsqueda por palabras clave que complementaba el directorio editorial fue proporcionada por terceros: primero por AltaVista, luego por Inktomi, luego por Google entre dos mil y dos mil cuatro."
+  },
+  {
+    "id": "17",
+    "texto": "Yahoo era un portal que alquilaba la función central de su producto."
+  },
+  {
+    "id": "18",
+    "texto": "En dos mil, Yahoo era fundamentalmente una empresa de medios digitales, no una empresa de tecnología de búsqueda. Sus ingresos venían de publicidad sobre tráfico, no de la calidad del motor."
+  },
+  {
+    "id": "19",
+    "texto": "Tercerizar la búsqueda era eficiente en costos y permitía a Yahoo enfocarse en su modelo editorial y en la expansión de servicios como correo electrónico, noticias y finanzas. La decisión tenía lógica de negocio de empresa a empresa en ese momento."
+  },
+  {
+    "id": "20",
+    "texto": "Al usar Google como motor de búsqueda entre dos mil y dos mil cuatro, Yahoo entrenó activamente a sus propios usuarios para confiar en los resultados de Google. Cada vez que un usuario de Yahoo obtenía un buen resultado, ese resultado era tecnológicamente de Google."
+  },
+  {
+    "id": "21",
+    "texto": "Yahoo no acumulaba datos propios de comportamiento de búsqueda. No generaba señales de retroalimentación sobre qué resultados eran relevantes. No podía mejorar un algoritmo que no controlaba."
+  },
+  {
+    "id": "22",
+    "texto": "Cuando intentó construir su propio motor con la adquisición de Inktomi por doscientos treinta y cinco millones de dólares en dos mil dos, descubrió que no tenía la infraestructura de datos para entrenarlo. Tenía millones de búsquedas diarias pero no había almacenado ninguna."
+  },
+  {
+    "id": "23",
+    "texto": "Yahoo compró Inktomi, luego compró Overture por mil seiscientos treinta millones de dólares, luego construyó Yahoo Search Technology. Para dos mil cinco, cuatro años y casi dos mil millones de dólares después, su motor seguía a ocho puntos porcentuales de participación de mercado por debajo de Google."
+  },
+  {
+    "id": "24",
+    "texto": "El déficit de datos de entrenamiento nunca se cerró."
+  },
+  {
+    "id": "25",
+    "texto": "DECISIÓN TRES: La arquitectura de servidores monolítica para contenido editorial"
+  },
+  {
+    "id": "26",
+    "texto": "Yahoo construyó su infraestructura de servidores como un sistema monolítico centralizado. Todo el contenido editorial, las categorías del directorio, los perfiles de usuario y los módulos de noticias, correo y finanzas compartían la misma base de código desplegada sobre los mismos clústeres de servidores. No había separación de servicios. Era una sola aplicación enorme."
+  },
+  {
+    "id": "27",
+    "texto": "En mil novecientos noventa y ocho, la arquitectura monolítica era la norma de la industria. Los sistemas distribuidos existían en teoría pero eran complejos de operar. Yahoo tenía ingenieros de clase mundial. El sistema funcionaba con alta disponibilidad y soportaba cien millones de usuarios sin caídas visibles. Era razonable no romper lo que no estaba roto."
+  },
+  {
+    "id": "28",
+    "texto": "Cuando Yahoo quiso lanzar nuevas funcionalidades de búsqueda, cada cambio al motor requería un ciclo completo de pruebas sobre el monolito. Desplegar una mejora al algoritmo de relevancia afectaba, por diseño, el módulo de correo, el módulo de noticias y el portal de finanzas. Los ciclos de despliegue se extendieron a semanas."
+  },
+  {
+    "id": "29",
+    "texto": "Google, con una arquitectura de servicios distribuidos desde el inicio, podía experimentar con el algoritmo de búsqueda de forma aislada y desplegar cambios en horas. En dos mil tres, Google ejecutaba más de doscientos experimentos simultáneos sobre su algoritmo. Yahoo documentó internamente menos de doce experimentos por trimestre en el mismo período, limitados por la fricción del monolito."
+  },
+  {
+    "id": "30",
+    "texto": "La velocidad de iteración de Google era dieciséis veces mayor. Cada ciclo de mejora que Google completaba en una semana, Yahoo lo completaba en cuatro meses."
+  },
+  {
+    "id": "31",
+    "texto": "En un mercado donde la relevancia del resultado de búsqueda es el único diferenciador perceptible para el usuario, esa diferencia de velocidad era la diferencia entre ganar y perder mercado en tiempo real."
+  },
+  {
+    "id": "32",
+    "texto": "DECISIÓN CUATRO: El modelo de ingresos que desincentivaba mejorar la búsqueda"
+  },
+  {
+    "id": "33",
+    "texto": "Yahoo monetizaba principalmente mediante publicidad de display: banners y anuncios gráficos vendidos por impresión, independientes de la búsqueda. La búsqueda era una función de retención de usuarios en el portal, no una fuente de ingresos directa. Google monetizaba mediante publicidad de texto ligada a la intención de búsqueda, pagada por clic."
+  },
+  {
+    "id": "34",
+    "texto": "En dos mil, el modelo de publicidad de display generaba ingresos predecibles y escalables. Los anunciantes entendían el formato porque venía del mundo impreso. Yahoo podía proyectar ingresos con contratos anuales."
+  },
+  {
+    "id": "35",
+    "texto": "El modelo de pago por clic de Google era experimental, difícil de vender a anunciantes tradicionales y dependía de un volumen de búsqueda que Google aún no tenía. Yahoo tenía razón al no apostarlo todo a un modelo no probado."
+  },
+  {
+    "id": "36",
+    "texto": "El modelo de display creaba un incentivo perverso directo: cuanto más tiempo pasaba un usuario en el portal viendo páginas, más anuncios veía y más ingresos generaba. Un motor de búsqueda que respondía la pregunta del usuario de forma rápida y precisa sacaba al usuario del portal inmediatamente."
+  },
+  {
+    "id": "37",
+    "texto": "Internamente, mejorar la calidad de búsqueda reducía el tiempo de sesión y, por diseño del modelo de negocio, reducía los ingresos. Los equipos de ingeniería de búsqueda operaban sin un argumento financiero claro para optimizar. La dirección ejecutiva no tenía incentivos estructurales para priorizar el motor."
+  },
+  {
+    "id": "38",
+    "texto": "Google operaba con el incentivo opuesto: cada búsqueda de mejor calidad generaba más clics en anuncios relevantes, lo que generaba más ingresos directos."
+  },
+  {
+    "id": "39",
+    "texto": "Entre dos mil uno y dos mil seis, Google creció de cero a diez mil seiscientos millones de dólares en ingresos, casi todos de publicidad ligada a búsqueda. Yahoo creció de setecientos millones a seis mil cuatrocientos millones de dólares en el mismo período, mayormente de display."
+  },
+  {
+    "id": "40",
+    "texto": "Para dos mil seis, Google superó a Yahoo en ingresos totales, a pesar de que Yahoo tenía más tráfico total de usuarios. El motor que Yahoo no priorizó financieramente ya había ganado el mercado que Yahoo había dominado."
+  },
+  {
+    "id": "41",
+    "texto": "DECISIÓN CINCO: La adquisición de Broadcast dot com y la apuesta al streaming como distracción de capital"
+  },
+  {
+    "id": "42",
+    "texto": "En mil novecientos noventa y nueve, Yahoo adquirió Broadcast dot com, un servicio de streaming de audio y video, por cinco mil setecientos millones de dólares en acciones. Era la adquisición más cara en la historia de Yahoo hasta ese momento. Mark Cuban recibió el pago y declaró públicamente que vendió en el momento justo antes del colapso de las puntocom."
+  },
+  {
+    "id": "43",
+    "texto": "En mil novecientos noventa y nueve, el streaming parecía el siguiente gran vector de crecimiento de internet. Yahoo necesitaba diversificar su propuesta de valor más allá del directorio de texto. Broadcast dot com tenía tecnología real de codificación y distribución de video. La adquisición tenía lógica estratégica en el contexto de la burbuja, donde el capital era abundante y la velocidad de expansión era la métrica dominante."
+  },
+  {
+    "id": "44",
+    "texto": "El ancho de banda promedio del usuario doméstico en mil novecientos noventa y nueve era de cincuenta y seis kilobits por segundo. El streaming de video de calidad aceptable requería al menos trescientos kilobits por segundo. La infraestructura de distribución que hacía viable el producto no existía para la mayoría de los usuarios del mundo."
+  },
+  {
+    "id": "45",
+    "texto": "Yahoo pagó cinco mil setecientos millones de dólares por una tecnología cuyo mercado dependía de una infraestructura que tardaría cinco años en masificarse."
+  },
+  {
+    "id": "46",
+    "texto": "Durante esos cinco años, el capital inmovilizado en la apuesta al streaming dejó de estar disponible para fortalecer la arquitectura de búsqueda. En dos mil dos, Google comenzó a contratar ingenieros de sistemas distribuidos a escala masiva. Yahoo estaba absorbiendo las pérdidas de Broadcast dot com."
+  },
+  {
+    "id": "47",
+    "texto": "Broadcast dot com fue cerrado silenciosamente en dos mil dos. La tecnología fue absorbida parcialmente en Yahoo Music y Yahoo Video, que nunca alcanzaron escala competitiva."
+  },
+  {
+    "id": "48",
+    "texto": "Los cinco mil setecientos millones de dólares, medidos en valor de mercado de Google en ese mismo año, habrían comprado el setenta por ciento de Google. En cambio, compraron tres años de distracción institucional en el momento exacto en que definir la arquitectura de búsqueda hubiera importado."
+  },
+  {
+    "id": "49",
+    "texto": "DECISIÓN SEIS: Rechazar la oferta de Microsoft por cuarenta y cuatro mil seiscientos millones de dólares en dos mil ocho"
+  },
+  {
+    "id": "50",
+    "texto": "En febrero de dos mil ocho, Microsoft ofreció adquirir Yahoo por cuarenta y cuatro mil seiscientos millones de dólares, a treinta y un dólares por acción. El director ejecutivo Jerry Yang rechazó la oferta, considerándola una subestimación del valor de Yahoo. Exigió treinta y siete dólares por acción. Microsoft retiró la oferta en mayo del mismo año."
+  },
+  {
+    "id": "51",
+    "texto": "Yahoo había cotizado a cuarenta y tres dólares por acción en dos mil. Treinta y uno parecía un descuento respecto al valor histórico percibido. Yang creía que Yahoo podía recuperar terreno de forma independiente, especialmente si lograba un acuerdo de búsqueda con Google que monetizara el tráfico restante sin necesitar construir infraestructura propia."
+  },
+  {
+    "id": "52",
+    "texto": "El argumento técnico que sustentaba la confianza de Yang, que Yahoo podía competir en búsqueda si conseguía el capital para reconstruir la infraestructura, ignoraba el déficit estructural de datos acumulado durante ocho años. No era un problema de dinero. Era un problema de señales de comportamiento de usuario que Google había capturado y Yahoo no tenía."
+  },
+  {
+    "id": "53",
+    "texto": "Ninguna cantidad de inversión en servidores podía generar retroactivamente el historial de búsqueda de mil millones de usuarios que entrenaba el algoritmo de Google cada día. La paridad técnica no era alcanzable en ningún horizonte realista."
+  },
+  {
+    "id": "54",
+    "texto": "Yahoo rechazó cuarenta y cuatro mil seiscientos millones de dólares. En dos mil dieciséis, Verizon adquirió los activos operativos de Yahoo por cuatro mil cuatrocientos ochenta millones de dólares."
+  },
+  {
+    "id": "55",
+    "texto": "La diferencia entre ambas cifras, cuarenta mil millones de dólares, es el costo medible de no reconocer que una arquitectura condenada no se rescata con voluntad institucional."
+  },
+  {
+    "id": "56",
+    "texto": "En dos mil diecisiete, los activos restantes pasaron a llamarse Altaba. El nombre Yahoo dejó de existir como empresa operativa independiente."
+  },
+  {
+    "id": "57",
+    "texto": "El índice editorial de Yahoo sobrevivió de una forma. El Open Directory Project, que Yahoo cofundó, fue la base de datos categorial más grande del mundo durante una década y sirvió como conjunto de entrenamiento para sistemas de clasificación semántica."
+  },
+  {
+    "id": "58",
+    "texto": "La lección técnica real la tomó Google: datos de comportamiento de usuario en tiempo real son infraestructura, no métrica. Hoy, cada búsqueda en Google, cada clic, cada reformulación de consulta, entrena el modelo. Eso es lo que Yahoo nunca construyó."
+  },
+  {
+    "id": "59",
+    "texto": "También lo aplican sistemas de recomendación en Spotify, Netflix y TikTok: el producto mejora solo si la arquitectura captura la señal de retroalimentación desde el primer usuario, no desde el millón."
+  },
+  {
+    "id": "60",
+    "texto": "La próxima vez que diseñes un sistema de búsqueda o recomendación, pregúntate si tu arquitectura captura la señal de retroalimentación del usuario como dato de entrenamiento o solo como métrica de observación. Eso es lo que separa un sistema que mejora solo de un sistema que requiere intervención humana para escalar."
+  }
+]

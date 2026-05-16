@@ -1,0 +1,22 @@
+{
+  "mainQuery": "Yahoo website portal 1990s computer",
+  "subQueries": [
+    "vintage internet browser homepage",
+    "web directory search engine"
+  ],
+  "keywords": [
+    "YAHOO",
+    "PORTAL WEB",
+    "ALQUILER FUNCIÓN"
+  ],
+  "eyebrow": "MODELO NEGOCIO",
+  "headline": "Yahoo alquilaba la función central de su portal",
+  "bullets": [
+    "Servicio web no era propietario",
+    "Dependía de asociaciones externas"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "keywordOnly"
+}

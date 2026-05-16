@@ -1,0 +1,26 @@
+{
+  "mainQuery": "dial up modem computer 1999",
+  "subQueries": [
+    "vintage computer crt monitor"
+  ],
+  "keywords": [
+    "56 KBPS",
+    "ANCHO BANDA LIMITADO",
+    "1999"
+  ],
+  "eyebrow": "INFRAESTRUCTURA",
+  "headline": "Ancho de banda insuficiente en 1999 para video streaming",
+  "bullets": [
+    "Usuarios tenían 56 kbps de conexión",
+    "Video requería mínimo 300 kbps",
+    "Mayoría carecía de infraestructura viable"
+  ],
+  "stat": {
+    "value": "56",
+    "unit": "kilobits por segundo",
+    "label": "Ancho de banda promedio usuario doméstico 1999"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

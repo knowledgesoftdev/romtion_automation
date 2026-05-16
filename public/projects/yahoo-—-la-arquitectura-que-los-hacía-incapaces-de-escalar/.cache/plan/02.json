@@ -1,0 +1,26 @@
+{
+  "mainQuery": "yahoo search directory 1990s",
+  "subQueries": [
+    "person organizing web pages",
+    "vintage computer office 1994"
+  ],
+  "keywords": [
+    "YAHOO",
+    "1994",
+    "DIRECTORIO HUMANO"
+  ],
+  "eyebrow": "ORIGEN",
+  "headline": "Yahoo nació como directorio web clasificado manualmente",
+  "bullets": [
+    "Personas categorizaban páginas a mano",
+    "Precursor de los buscadores modernos"
+  ],
+  "stat": {
+    "value": "1994",
+    "unit": "",
+    "label": "Año de fundación de Yahoo"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

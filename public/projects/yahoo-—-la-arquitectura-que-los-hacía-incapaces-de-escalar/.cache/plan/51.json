@@ -1,0 +1,27 @@
+{
+  "mainQuery": "yahoo search engine office 2000s",
+  "subQueries": [
+    "google search deal partnership",
+    "stock market trading screen"
+  ],
+  "keywords": [
+    "YAHOO",
+    "$43 ACCIÓN",
+    "GOOGLE BÚSQUEDA"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "Yahoo cayó de $43 a $31 por acción",
+  "bullets": [
+    "Yang apostaba por recuperación independiente",
+    "Acuerdo con Google monetizaría tráfico restante",
+    "Estrategia sin invertir en infraestructura propia"
+  ],
+  "stat": {
+    "value": "43",
+    "unit": "$",
+    "label": "Precio histórico de Yahoo por acción en 2000"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

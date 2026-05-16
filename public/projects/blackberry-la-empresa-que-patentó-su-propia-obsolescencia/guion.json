@@ -1,0 +1,138 @@
+[
+  {
+    "id": "01",
+    "texto": "BlackBerry no murió por competencia. Murió porque su arquitectura de seguridad hacía físicamente imposible adaptarse a un mundo que ya había cambiado."
+  },
+  {
+    "id": "02",
+    "texto": "En 2007, BlackBerry controlaba el 43% del mercado de smartphones en EE.UU. Research In Motion —RIM— tenía 85 millones de usuarios activos. Sus dispositivos procesaban correos cifrados a través de servidores propietarios llamados BIS y BES. Eran el estándar corporativo en Wall Street, la Casa Blanca y el Pentágono. La arquitectura no era un accidente: era su ventaja competitiva. Cada mensaje pasaba por los servidores de RIM antes de llegar al dispositivo. Eso garantizaba cifrado end-to-end antes de que ese término fuera popular. El problema era que esa misma arquitectura hacía imposible separar el hardware del software. El teclado físico no era una decisión de diseño. Era una consecuencia de su stack tecnológico."
+  },
+  {
+    "id": "03",
+    "texto": "DECISIÓN 1: El servidor intermediario como modelo de seguridad"
+  },
+  {
+    "id": "04",
+    "texto": "BlackBerry Enterprise Server —BES— era la capa de infraestructura que enrutaba toda la comunicación corporativa a través de servidores propietarios de RIM antes de entregarla al dispositivo. El cifrado ocurría en ese proxy, no en el dispositivo final."
+  },
+  {
+    "id": "05",
+    "texto": "En 1999, los dispositivos móviles tenían CPUs de 32 MHz y 512 KB de RAM. Delegar el cifrado al servidor era la única opción viable. El cliente era liviano por necesidad de hardware. RIM construyó la arquitectura correcta para las limitaciones de 1999."
+  },
+  {
+    "id": "06",
+    "texto": "El modelo BES creó una dependencia infraestructural bidireccional. Para que un cliente de terceros funcionara en BlackBerry, necesitaba integrarse al protocolo BES. RIM controlaba ese protocolo. Cuando Apple lanzó iOS con un modelo de seguridad completamente on-device, los desarrolladores de apps no necesitaban hablar con ningún servidor intermediario. El ecosistema iOS era libre de esa capa. BlackBerry no podía replicarlo sin destruir su propuesta de valor corporativa: la seguridad centralizada y auditable que los CIOs compraban."
+  },
+  {
+    "id": "07",
+    "texto": "Entre 2009 y 2012, la cuota de mercado de BlackBerry cayó de 20% a 5.9% en EE.UU. El número de desarrolladores activos en BlackBerry App World nunca superó 15,000. iOS App Store tenía 500,000 apps en 2012. La brecha no era de calidad de apps: era de friction arquitectónico para desarrollarlas."
+  },
+  {
+    "id": "08",
+    "texto": "DECISIÓN 2: El teclado físico como invariante de diseño"
+  },
+  {
+    "id": "09",
+    "texto": "El teclado QWERTY físico de BlackBerry no era intercambiable. El firmware, el sistema de entrada de texto y la navegación de la UI estaban codificados para un dispositivo con teclado. No existía una capa de abstracción entre el método de entrada y el sistema operativo."
+  },
+  {
+    "id": "10",
+    "texto": "En 2003, escribir en una pantalla táctil resistiva era notoriamente lento e impreciso. El teclado físico de BlackBerry tenía latencia de entrada de 15ms. Era objetivamente superior para email corporativo. RIM lo convirtió en su diferenciador y construyó la experiencia de usuario completa alrededor de él."
+  },
+  {
+    "id": "11",
+    "texto": "Cuando Apple introdujo el iPhone en 2007 con pantalla capacitiva multitáctil, la ecuación de entrada cambió. El teclado virtual con autocorrección predictiva era inferior al BlackBerry para texto largo. Pero liberaba el 100% de la superficie de pantalla para contenido. Eso cambió qué tipo de aplicaciones eran posibles. Aplicaciones de mapas, video, navegación táctil, juegos: todas eran arquitecturalmente imposibles en un dispositivo donde la pantalla era secundaria al teclado. El sistema operativo de BlackBerry asumía el teclado como hardware garantizado. Portarlo a pantalla completa requería reescribir el input system desde cero. DÓNDE FALLÓ (continuación): RIM lo intentó con BlackBerry Storm en 2008. Usaron una pantalla táctil con retroalimentación háptica que simulaba el clic del teclado. El dispositivo requería presión física para registrar input —tecnología llamada SurePress—. Era un compromiso de ingeniería que no satisfacía a nadie: más lento que el teclado real y menos fluido que iOS. Vendieron 1 millón de unidades. Devolvieron 1 millón de unidades por defectos. La tasa de devolución fue la más alta en la historia de Verizon hasta ese momento."
+  },
+  {
+    "id": "12",
+    "texto": "BlackBerry Storm costó a RIM y Verizon aproximadamente 500 millones de dólares en reemplazos y soporte. La marca quedó asociada con dispositivos táctiles fallidos. RIM nunca recuperó credibilidad en el segmento de consumo masivo."
+  },
+  {
+    "id": "13",
+    "texto": "DECISIÓN 3: El sistema operativo propietario sin capa de abstracción"
+  },
+  {
+    "id": "14",
+    "texto": "BlackBerry OS —versiones 1 a 7— era un sistema operativo de tiempo real construido sobre un microkernel propietario. No tenía separación entre el kernel, los drivers de hardware y las aplicaciones del sistema. Las apps nativas se ejecutaban con acceso directo al hardware sin sandbox."
+  },
+  {
+    "id": "15",
+    "texto": "En dispositivos con 8 MB de RAM, un sistema operativo monolítico era más eficiente. Cada capa de abstracción consume memoria y ciclos de CPU. RIM eligió rendimiento sobre portabilidad. Era la decisión técnicamente correcta para el hardware de 2002."
+  },
+  {
+    "id": "16",
+    "texto": "Sin capa de abstracción —HAL, Hardware Abstraction Layer—, portar BlackBerry OS a nuevo hardware requería reescribir drivers desde cero. Cuando Qualcomm lanzó los primeros SoCs con GPU integrada en 2009, RIM no podía aprovechar la aceleración gráfica sin modificar el kernel. iOS y Android corrían sobre Linux y Darwin respectivamente: ambos con HAL completa. Podían adoptar nuevo hardware en semanas. RIM tardaba entre 12 y 18 meses en certificar nuevo hardware para BlackBerry OS. En un mercado donde el ciclo de innovación era de 6 meses, ese delta era letal."
+  },
+  {
+    "id": "17",
+    "texto": "BlackBerry Bold 9900, lanzado en 2011, tenía un procesador de 1.2 GHz. El iPhone 4S del mismo año tenía 800 MHz pero con GPU dual-core. El Bold procesaba gráficos 3D a 8 FPS. El iPhone a 60 FPS. Los números de CPU favorecían a BlackBerry. La experiencia de usuario visible favorecía a iOS. Los consumidores no leían especificaciones. Veían la pantalla."
+  },
+  {
+    "id": "18",
+    "texto": "DECISIÓN 4: El modelo de monetización del servidor como dependencia estructural"
+  },
+  {
+    "id": "19",
+    "texto": "BlackBerry Enterprise Server —BES— tenía un costo de licencia de aproximadamente 4,000 dólares por servidor más 99 dólares por usuario al año para empresas. RIM cobraba también a los operadores de telecomunicaciones una tarifa mensual por cada usuario BlackBerry que usara el servicio BIS —BlackBerry Internet Service—. Los operadores la trasladaban al consumidor final."
+  },
+  {
+    "id": "20",
+    "texto": "Era un modelo B2B2C que garantizaba ingresos recurrentes predecibles. En 2008, RIM generaba 600 millones de dólares anuales solo en licencias de servicio, independientemente de la venta de hardware. Los analistas lo consideraban el modelo de negocio más defensible del sector."
+  },
+  {
+    "id": "21",
+    "texto": "Cuando Apple negoció con AT&T en 2007, eliminó el concepto de data plan diferenciado por dispositivo. El iPhone usaba datos como cualquier otro tráfico IP. No había una capa de servicio intermedia que monetizar. Eso significó que cambiar de BlackBerry a iPhone no tenía fricción financiera para el usuario corporativo: el plan de datos existente era suficiente. La dependencia de BES, que era la ventaja competitiva de RIM, se convirtió en su mayor barrera de adopción. Las empresas necesitaban mantener servidores BES on-premise. Cuando iOS lanzó Exchange ActiveSync nativo en 2007, los IT managers tenían una alternativa sin servidor intermediario. El argumento de venta de RIM —seguridad centralizada— chocó contra el argumento de costo operativo: eliminar el BES ahorraba entre 150,000 y 500,000 dólares anuales en infraestructura para empresas medianas."
+  },
+  {
+    "id": "22",
+    "texto": "Entre 2010 y 2014, el número de servidores BES activos cayó de 250,000 a menos de 80,000. Los ingresos por servicios de RIM —que en 2011 representaban el 36% de sus ingresos totales— colapsaron en paralelo. En el Q4 de 2013, RIM —ya renombrado BlackBerry Ltd.— reportó pérdidas de 4,400 millones de dólares en un solo trimestre, incluyendo 2,700 millones en write-down de inventario no vendido."
+  },
+  {
+    "id": "23",
+    "texto": "DECISIÓN 5: La adquisición de QNX como solución tardía"
+  },
+  {
+    "id": "24",
+    "texto": "En abril de 2010, RIM adquirió QNX Software Systems por 200 millones de dólares. QNX era un sistema operativo de tiempo real —RTOS— usado en automóviles, equipos médicos y sistemas industriales. Tenía microkernel verdadero, separación de procesos real y HAL completa. Era técnicamente superior a BlackBerry OS en todos los aspectos relevantes."
+  },
+  {
+    "id": "25",
+    "texto": "RIM necesitaba un nuevo SO para competir con iOS y Android. En lugar de construir desde cero o adoptar Android —que era gratuito—, eligió QNX como base. La decisión técnica era correcta. QNX tenía mejor arquitectura que BlackBerry OS. El plan era lanzar una tablet primero —PlayBook— y luego migrar los teléfonos a BB10 basado en QNX."
+  },
+  {
+    "id": "26",
+    "texto": "El problema fue el timing y la ejecución. La tablet PlayBook se lanzó en abril de 2011 sin cliente de email nativo. Sin calendario nativo. Los usuarios corporativos —el mercado objetivo— no podían usar la tablet de forma autónoma. Necesitaban un BlackBerry emparejado vía Bluetooth para acceder al correo. Era una dependencia de hardware que ningún competidor tenía. El SO nuevo, BB10, tardó 34 meses desde la adquisición de QNX hasta llegar a un teléfono —BlackBerry Z10, enero de 2013—. Android 1.0 tardó 22 meses desde la fundación de Android Inc. hasta su lanzamiento. En esos 34 meses, iOS pasó de la versión 4 a la versión 6. Android pasó de Froyo a Jelly Bean. El mercado no esperó."
+  },
+  {
+    "id": "27",
+    "texto": "BlackBerry Z10 vendió 1 millón de unidades en su primer mes. El objetivo era 8 millones. BlackBerry reconoció en agosto de 2013 que tenía 934 millones de dólares en inventario Z10 no vendido. En septiembre de 2013, la empresa estuvo a punto de ser adquirida por Fairfax Financial. El acuerdo colapsó. Nunca se recuperó."
+  },
+  {
+    "id": "28",
+    "texto": "DECISIÓN 6: La negación del touchscreen como señal de mercado"
+  },
+  {
+    "id": "29",
+    "texto": "En la conferencia de resultados del Q1 2007 —cuatro días después del lanzamiento del iPhone—, el co-CEO de RIM, Mike Lazaridis, declaró públicamente que un teclado virtual nunca podría reemplazar a uno físico para usuarios de email intensivo. No era una opinión: era una hipótesis de ingeniería verificable que decidieron no verificar."
+  },
+  {
+    "id": "30",
+    "texto": "Los datos internos de RIM en 2007 confirmaban que sus usuarios corporativos escribían entre 60 y 100 correos diarios. En pruebas internas, el BlackBerry Bold superaba al iPhone original en velocidad de escritura de texto largo. La hipótesis tenía evidencia empírica parcial."
+  },
+  {
+    "id": "31",
+    "texto": "El error fue confundir el caso de uso actual con el caso de uso futuro. Los usuarios corporativos escribían muchos correos porque eso era lo que el dispositivo les permitía hacer de forma eficiente. No era una demanda intrínseca: era un comportamiento moldeado por el dispositivo disponible. Cuando los mismos usuarios tuvieron acceso a un dispositivo con pantalla completa, la mezcla de tareas cambió. Menos emails largos. Más mensajes cortos. Más consumo de contenido. El mercado no confirmó la hipótesis de Lazaridis porque el mercado cambió de comportamiento junto con el hardware. RIM midió la demanda de un mundo que estaba desapareciendo."
+  },
+  {
+    "id": "32",
+    "texto": "Entre 2007 y 2009, RIM lanzó nueve modelos de dispositivos distintos. Todos con teclado físico. Ninguno exploró seriamente la pantalla táctil completa excepto Storm, que fue un fracaso certificado. Esos dos años fueron el período en que iOS estableció la expectativa de mercado de pantalla completa como estándar. Cuando RIM quiso competir en ese espacio, la ventana de adopción masiva ya había cerrado."
+  },
+  {
+    "id": "33",
+    "texto": "El protocolo de mensajería de BlackBerry —BBM, BlackBerry Messenger— introdujo los mensajes de entrega confirmada con doble check en 2006. WhatsApp adoptó el mismo patrón en 2014. La arquitectura de notificaciones push de BES —donde el servidor inicia la conexión al dispositivo, no al revés— es el modelo que usa APNs de Apple y FCM de Google hoy. El modelo de seguridad centralizada de BES sobrevive en soluciones MDM —Mobile Device Management— como Microsoft Intune y VMware Workspace ONE, que gestionan flotas corporativas exactamente como BES lo hacía, pero sin el hardware propietario."
+  },
+  {
+    "id": "34",
+    "texto": "La próxima vez que una arquitectura sea simultáneamente tu diferenciador de seguridad y tu barrera de adaptación, pregúntate si estás defendiendo una ventaja o construyendo una trampa. Eso es lo que separa una decisión técnica que te protege de una que te entierra."
+  }
+]

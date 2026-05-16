@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data center server room 1990s",
+  "subQueries": [
+    "yahoo office computer network",
+    "large scale system architecture"
+  ],
+  "keywords": [
+    "ARQUITECTURA MONOLÍTICA",
+    "100 MILLONES USUARIOS",
+    "1998"
+  ],
+  "eyebrow": "CONTEXTO HISTÓRICO",
+  "headline": "En 1998 los sistemas monolíticos soportaban cien millones de usuarios",
+  "bullets": [
+    "Yahoo manejaba alta disponibilidad sin caídas",
+    "Sistemas distribuidos existían pero eran complejos",
+    "No había razón para cambiar lo funcionaba"
+  ],
+  "stat": {
+    "value": "100",
+    "unit": "millones usuarios",
+    "label": "Capacidad del sistema Yahoo en 1998"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}
