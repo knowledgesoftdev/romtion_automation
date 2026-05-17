@@ -1,0 +1,100 @@
+{
+  "temas_usados": [
+    "Yahoo",
+    "Internet Explorer",
+    "BlackBerry",
+    "MySpace",
+    "Nokia",
+    "Flash",
+    "Equifax"
+  ],
+  "palabras_clave_agotadas": [],
+  "mejor_rendimiento": [
+    {
+      "tema": "Yahoo",
+      "video_id": "UlaQgOTih74",
+      "retention": 0,
+      "ctr": 0,
+      "views": 0,
+      "likes": 0,
+      "hook_style": "afirmacion-tecnica-como-sentencia",
+      "fecha": "2026-05-17T05:10:25.185Z"
+    },
+    {
+      "tema": "Internet Explorer",
+      "video_id": "KsEVdfvrotA",
+      "retention": 0,
+      "ctr": 0,
+      "views": 21,
+      "likes": 1,
+      "hook_style": "dato-porcentaje-mas-consecuencia-escalada",
+      "fecha": "2026-05-17T05:10:26.027Z"
+    },
+    {
+      "tema": "BlackBerry",
+      "video_id": "r25SoTB4Umg",
+      "retention": 0,
+      "ctr": 0,
+      "views": 39,
+      "likes": 3,
+      "hook_style": "causa-tecnica-como-condena",
+      "fecha": "2026-05-17T05:10:27.025Z"
+    },
+    {
+      "tema": "MySpace",
+      "video_id": "YmMWg4JTE0E",
+      "retention": 0,
+      "ctr": 0,
+      "views": 9,
+      "likes": 0,
+      "hook_style": "reencuadre-narrativa-popular",
+      "fecha": "2026-05-17T05:10:27.839Z"
+    },
+    {
+      "tema": "Nokia",
+      "video_id": "j7rbmgKSdnI",
+      "retention": 0,
+      "ctr": 0,
+      "views": 39,
+      "likes": 0,
+      "hook_style": "tecnologia-perdida-por-decision-interna",
+      "fecha": "2026-05-17T05:10:28.657Z"
+    },
+    {
+      "tema": "Flash",
+      "video_id": "owUMBM8OS00",
+      "retention": 0,
+      "ctr": 0,
+      "views": 58,
+      "likes": 2,
+      "hook_style": "documento-historico-como-evidencia",
+      "fecha": "2026-05-17T05:10:29.486Z"
+    },
+    {
+      "tema": "equifax",
+      "video_id": "okJA5ALLYRY",
+      "retention": 0,
+      "ctr": 0,
+      "views": 0,
+      "likes": 0,
+      "hook_style": "estadistica-impactante-con-timeline",
+      "fecha": "2026-05-17T05:10:24.446Z"
+    }
+  ],
+  "estilo_hooks": [],
+  "ultima_publicacion": "2026-05-17T05:02:40Z",
+  "total_videos": 7,
+  "estilo_titulo_historial": [
+    "dato-oculto-con-numero-especifico",
+    "estadistica-impactante-con-timeline"
+  ],
+  "miniatura_conceptos": [
+    {
+      "projectId": "equifax-breach-un-framework-sin-patchear-147m-expuestos",
+      "titulo": "147 millones expuestos — la vulnerabilidad que Equifax ignoró 62 días",
+      "concepto": "Fondo dividido verticalmente: lado izquierdo rojo intenso (#E63946) con código Java vulnerable pixelado (Struts 2 en letras grandes), lado derecho negro con el número '147M' en blanco con efecto de grieta/rotura. En el centro, un símbolo de candado roto en naranja (#FF8C00). Arriba en blanco: '62 DÍAS SIN PARCHEAR'. Abajo en amarillo neon: 'EQUIFAX'. Estilo: contraste alto, fuerte, sin clickbait pero visualmente urgente. Bordes con pequeños fragmentos de datos (números SSN difuminados) para sugerir exposición de información.",
+      "estilo_titulo": "estadistica-impactante-con-timeline",
+      "fecha": "2026-05-17T04:12:38.511Z"
+    }
+  ]
+}

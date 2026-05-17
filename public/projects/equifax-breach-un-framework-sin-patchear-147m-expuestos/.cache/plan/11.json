@@ -1,0 +1,23 @@
+{
+  "mainQuery": "legacy web application internal portal",
+  "subQueries": [
+    "old enterprise software interface",
+    "business system low traffic"
+  ],
+  "keywords": [
+    "APLICACIÓN LEGACY",
+    "BAJO TRÁFICO",
+    "COSTO MIGRACIÓN"
+  ],
+  "eyebrow": "DECISIÓN TÉCNICA",
+  "headline": "Aplicación interna funcional sin presión para modernizar",
+  "bullets": [
+    "Sin quejas de usuarios ni requisitos nuevos",
+    "Migración injustificada por bajo volumen de tráfico",
+    "Sistema operativo mantenía estabilidad"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

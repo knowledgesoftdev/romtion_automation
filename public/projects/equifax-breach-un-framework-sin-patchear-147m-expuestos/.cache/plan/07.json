@@ -1,0 +1,27 @@
+{
+  "mainQuery": "corporate security breach data center",
+  "subQueries": [
+    "emergency response team meeting",
+    "calendar timeline notification"
+  ],
+  "keywords": [
+    "INTRUSIÓN",
+    "143 DÍAS",
+    "SILENCIO"
+  ],
+  "eyebrow": "DATO CLAVE",
+  "headline": "Empresa tardó 143 días en anunciar la intrusión",
+  "bullets": [
+    "Detectada la brecha de seguridad inicialmente",
+    "Comunicado público recién en septiembre",
+    "Retardo significativo en transparencia"
+  ],
+  "stat": {
+    "value": "143",
+    "unit": "días",
+    "label": "Tiempo hasta anunciar la intrusión"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

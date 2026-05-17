@@ -1,0 +1,22 @@
+{
+  "mainQuery": "equifax data breach credit cards",
+  "subQueries": [
+    "social security numbers database",
+    "personal information server room"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "DATOS PERSONALES",
+    "180 MILLONES"
+  ],
+  "eyebrow": "CONTEXTO",
+  "headline": "Equifax almacena datos de 150 millones de estadounidenses",
+  "bullets": [
+    "Historiales crediticios y números de seguro social",
+    "Direcciones, fechas de nacimiento y tarjetas"
+  ],
+  "stat": null,
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

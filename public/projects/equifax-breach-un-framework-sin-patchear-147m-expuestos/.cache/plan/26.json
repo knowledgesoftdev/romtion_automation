@@ -1,0 +1,26 @@
+{
+  "mainQuery": "SQL injection attack database breach",
+  "subQueries": [
+    "hacker typing code screen",
+    "data extraction server room"
+  ],
+  "keywords": [
+    "SQL INJECTION",
+    "EXTRACCIÓN DATOS",
+    "BASES DATOS"
+  ],
+  "eyebrow": "ATAQUE CRÍTICO",
+  "headline": "Treinta consultas SQL extrajeron tablas completas",
+  "bullets": [
+    "Período: mayo 12 a julio 29",
+    "Atacantes accedieron producción directamente"
+  ],
+  "stat": {
+    "value": "30",
+    "unit": "consultas SQL",
+    "label": "Ejecutadas para extraer datos completos"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

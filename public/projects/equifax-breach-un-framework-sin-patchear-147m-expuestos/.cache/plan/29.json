@@ -1,0 +1,27 @@
+{
+  "mainQuery": "expired ssl certificate server error",
+  "subQueries": [
+    "security lock padlock broken",
+    "network traffic malicious detection"
+  ],
+  "keywords": [
+    "SSL EXPIRADO",
+    "SEGURIDAD BLOQUEADA",
+    "TRÁFICO MALICIOSO"
+  ],
+  "eyebrow": "DECISIÓN 3",
+  "headline": "Certificado SSL expirado paralizó detección de amenazas",
+  "bullets": [
+    "Validación de seguridad falló por vencimiento",
+    "Sistema no detectó tráfico comprometido",
+    "Arquitectura dependía de single point"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "punto crítico de falla",
+    "label": "Certificado vencido detuvo protección"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "keywordOnly"
+}

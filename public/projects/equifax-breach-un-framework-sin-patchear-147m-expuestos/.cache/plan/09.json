@@ -1,0 +1,26 @@
+{
+  "mainQuery": "apache struts java code",
+  "subQueries": [
+    "equifax data breach server",
+    "legacy java framework architecture"
+  ],
+  "keywords": [
+    "APACHE STRUTS",
+    "EQUIFAX",
+    "JAVA 2014"
+  ],
+  "eyebrow": "VULNERABILIDAD CRÍTICA",
+  "headline": "Equifax usaba framework desactualizado en sistema sensible",
+  "bullets": [
+    "Struts 2.3.28 corría datos de disputas de consumidores",
+    "Acceso directo a bases de datos centrales expuesto"
+  ],
+  "stat": {
+    "value": "2014",
+    "unit": "",
+    "label": "Año de la versión vulnerada"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,27 @@
+{
+  "mainQuery": "equifax data breach server",
+  "subQueries": [
+    "corporate crime handcuffs",
+    "data security vault lock"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "700 MILLONES",
+    "SIN CÁRCEL"
+  ],
+  "eyebrow": "CASO CORPORATIVO",
+  "headline": "Equifax pagó 700 millones sin consecuencias penales",
+  "bullets": [
+    "Multa masiva sin prisión ejecutiva",
+    "Brecha de datos masiva impune",
+    "Dinero vs justicia penal"
+  ],
+  "stat": {
+    "value": "700",
+    "unit": "millones de dólares",
+    "label": "Multa por incumplimiento de seguridad"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "keywordOnly"
+}

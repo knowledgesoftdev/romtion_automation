@@ -1,0 +1,25 @@
+{
+  "mainQuery": "expired certificate server error",
+  "subQueries": [
+    "government data breach security"
+  ],
+  "keywords": [
+    "CERTIFICADO EXPIRADO",
+    "FALLO OPERATIVO",
+    "CERO JUSTIFICACIÓN"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "Certificado expirado causó el colapso más prevenible",
+  "bullets": [
+    "Error técnico cien por ciento evitable",
+    "Sin justificación operativa válida"
+  ],
+  "stat": {
+    "value": "100",
+    "unit": "%",
+    "label": "Fallo prevenible según auditoría"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

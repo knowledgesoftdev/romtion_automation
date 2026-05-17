@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data breach security server room",
+  "subQueries": [
+    "computer network vulnerability scanning",
+    "system administrator laptop screens"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "VULNERABILIDADES NO DETECTADAS",
+    "PROCESO MANUAL"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "Equifax no automatizó detección de aplicaciones expuestas",
+  "bullets": [
+    "Gestión de vulnerabilidades completamente manual",
+    "Confirmación de parches solo por correo electrónico",
+    "Sin validación automatizada del cumplimiento"
+  ],
+  "stat": {
+    "value": "0",
+    "unit": "sistemas automatizados de validación",
+    "label": "Herramientas de escaneo interno urgente implementadas"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,26 @@
+{
+  "mainQuery": "security breach server attack",
+  "subQueries": [
+    "vulnerability exploit code",
+    "hacker computer screen dark"
+  ],
+  "keywords": [
+    "VULNERABILIDAD",
+    "62 DÍAS",
+    "EXPLOIT"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "Vulnerabilidad sin parchear explotada tras 62 días",
+  "bullets": [
+    "Portal de disputas comprometido",
+    "Ataque exitoso después del disclosure"
+  ],
+  "stat": {
+    "value": "62",
+    "unit": "días",
+    "label": "Tiempo hasta explotación tras disclosure"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

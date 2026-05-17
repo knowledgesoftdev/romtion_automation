@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data breach security hack",
+  "subQueries": [
+    "personal documents identity theft",
+    "computer server security breach"
+  ],
+  "keywords": [
+    "147 MILLONES",
+    "DATOS PERSONALES",
+    "IDENTIDAD ROBADA"
+  ],
+  "eyebrow": "CRIMEN DIGITAL",
+  "headline": "Ciento cuarenta y siete millones expuestos en robo masivo",
+  "bullets": [
+    "38% de adultos estadounidenses comprometidos",
+    "Nombres, números de seguro social robados",
+    "Direcciones y licencias de conducir filtradas"
+  ],
+  "stat": {
+    "value": "147",
+    "unit": "millones",
+    "label": "personas con datos personales expuestos"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

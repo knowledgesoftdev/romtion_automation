@@ -1,0 +1,22 @@
+{
+  "mainQuery": "securities investigation office building",
+  "subQueries": [
+    "corporate scandal newspaper headline",
+    "judge gavel courtroom"
+  ],
+  "keywords": [
+    "INSIDER TRADING",
+    "INVESTIGACIÓN SEC",
+    "PERCEPCIÓN PÚBLICA"
+  ],
+  "eyebrow": "ESCÁNDALO CORPORATIVO",
+  "headline": "SEC investigó a ejecutivos por información privilegiada",
+  "bullets": [
+    "Ejecutivos fueron exonerados legalmente",
+    "Público percibió corrupción aún así"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

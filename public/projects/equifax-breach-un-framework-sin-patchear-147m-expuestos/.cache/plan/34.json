@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data center server security monitoring",
+  "subQueries": [
+    "network traffic packets flow",
+    "computer screen data transfer"
+  ],
+  "keywords": [
+    "9 GB/DÍA",
+    "SSL SIN INSPECCIÓN",
+    "DATOS PERSONALES"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "Sistema ignoró transferencia de datos sensibles sin cifrado",
+  "bullets": [
+    "Miles de solicitudes ocultaban números de seguro social",
+    "Prevención de pérdida de datos fue inútil sin visibilidad SSL",
+    "Tráfico malicioso se camufló como actividad normal"
+  ],
+  "stat": {
+    "value": "9",
+    "unit": "gigabytes/día",
+    "label": "Volumen de transferencia sin detectar"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

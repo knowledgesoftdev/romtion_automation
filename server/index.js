@@ -3,8 +3,10 @@ const cors    = require('cors');
 const fs      = require('fs');
 const path    = require('path');
 const { exec } = require('child_process');
-const { parseScript }    = require('./utils/parser');
+const { parseScript }     = require('./utils/parser');
 const { parseWithOllama } = require('./utils/ollamaProvider');
+const { readMemory, saveMemory } = require('../utils/memory');
+const { parseScriptSmart } = require('./utils/smartParser');
 
 const app  = express();
 const PORT = 5000;
@@ -48,11 +50,16 @@ app.get('/api/projects', (req, res) => {
   const activeId = readActiveProject();
   const projects = fs.readdirSync(PROJECTS_DIR)
     .filter(d => fs.statSync(path.join(PROJECTS_DIR, d)).isDirectory())
-    .map(id => ({
-      id,
-      active: id === activeId,
-      ...projectStatus(id),
-    }));
+    .map(id => {
+      const stat = fs.statSync(path.join(PROJECTS_DIR, id));
+      return {
+        id,
+        active: id === activeId,
+        mtime: stat.mtimeMs,
+        ...projectStatus(id),
+      };
+    })
+    .sort((a, b) => b.mtime - a.mtime); // Ordenar por modificación: más reciente primero
 
   res.json(projects);
 });
@@ -74,7 +81,7 @@ app.get('/api/projects/:id', (req, res) => {
 });
 
 // ── 3. Create project + parse script ─────────────────────────────────────────
-app.post('/api/projects', (req, res) => {
+app.post('/api/projects', async (req, res) => {
   const { name, rawScript } = req.body;
   if (!name || !rawScript) return res.status(400).json({ error: 'Nombre y guion son requeridos' });
 
@@ -84,14 +91,21 @@ app.post('/api/projects', (req, res) => {
 
   fs.writeFileSync(path.join(projectDir, 'full_script.txt'), rawScript);
 
-  const guion = parseScript(rawScript);
+  // Usar smartParser (Claude) con fallback determinista
+  let guion;
+  try {
+    guion = await parseScriptSmart(rawScript);
+  } catch (err) {
+    console.warn(`⚠️  smartParser falló, usando parser determinista: ${err.message}`);
+    guion = parseScript(rawScript);
+  }
   fs.writeFileSync(path.join(projectDir, 'guion.json'), JSON.stringify(guion, null, 2));
 
-  console.log(`✅ Proyecto "${projectId}" creado: ${guion.length} párrafos`);
+  console.log(`✅ Proyecto "${projectId}" creado: ${guion.length} fragmentos`);
   res.json({ message: 'Proyecto creado correctamente', projectId, paragraphCount: guion.length });
 });
 
-// ── 3b. Re-parse an existing project (uses deterministic parser) ──────────────
+// ── 3b. Re-parse determinista (parser original) ───────────────────────────────
 app.post('/api/projects/:id/reparse', (req, res) => {
   const { id } = req.params;
   const dir = path.join(PROJECTS_DIR, id);
@@ -107,6 +121,29 @@ app.post('/api/projects/:id/reparse', (req, res) => {
 
   console.log(`🔄 Re-parseo de "${id}": ${guion.length} párrafos`);
   res.json({ message: 'Guion re-procesado correctamente', projectId: id, paragraphCount: guion.length });
+});
+
+// ── 3c. Smart re-parse con Claude ─────────────────────────────────────────────
+app.post('/api/projects/:id/smart-reparse', async (req, res) => {
+  const { id } = req.params;
+  const dir = path.join(PROJECTS_DIR, id);
+  const scriptPath = path.join(dir, 'full_script.txt');
+
+  if (!fs.existsSync(scriptPath)) {
+    return res.status(404).json({ error: 'No se encontró full_script.txt para este proyecto' });
+  }
+
+  const rawScript = fs.readFileSync(scriptPath, 'utf8');
+  let guion;
+  try {
+    guion = await parseScriptSmart(rawScript);
+  } catch (err) {
+    return res.status(500).json({ error: 'Error en smart-reparse', detail: err.message });
+  }
+  fs.writeFileSync(path.join(dir, 'guion.json'), JSON.stringify(guion, null, 2));
+
+  console.log(`🧠 Smart re-parse de "${id}": ${guion.length} fragmentos`);
+  res.json({ message: 'Guion re-fragmentado con Claude', projectId: id, paragraphCount: guion.length });
 });
 
 // ── 4. Generate audio + timings ───────────────────────────────────────────────
@@ -202,6 +239,74 @@ app.delete('/api/projects/:id', (req, res) => {
   res.json({ message: `Proyecto "${id}" eliminado` });
 });
 
+// ── 9. Memory endpoints ────────────────────────────────────────────────────────
+
+// GET /api/memory → retorna channel-memory.json completo
+app.get('/api/memory', async (req, res) => {
+  try {
+    const memory = await readMemory();
+    res.json(memory);
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudo leer la memoria del canal', detail: err.message });
+  }
+});
+
+// POST /api/memory/topic-used → marca un tema como usado
+app.post('/api/memory/topic-used', async (req, res) => {
+  const { tema } = req.body;
+  if (!tema || typeof tema !== 'string') {
+    return res.status(400).json({ error: 'El campo "tema" es requerido y debe ser un string' });
+  }
+  try {
+    const memory = await readMemory();
+    const normalized = tema.trim().toLowerCase();
+    const alreadyExists = memory.temas_usados.some(
+      (t) => t.toLowerCase().trim() === normalized
+    );
+    if (!alreadyExists) {
+      memory.temas_usados.push(tema.trim());
+      await saveMemory(memory);
+      console.log(`✅ Tema "${tema}" marcado como usado.`);
+    }
+    res.json({
+      message: alreadyExists ? 'El tema ya estaba registrado' : 'Tema marcado como usado',
+      tema:    tema.trim(),
+      total:   memory.temas_usados.length,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudo actualizar la memoria', detail: err.message });
+  }
+});
+
+// GET /api/memory/performance → retorna mejor_rendimiento ordenado por retention desc
+app.get('/api/memory/performance', async (req, res) => {
+  try {
+    const memory = await readMemory();
+    const sorted = (memory.mejor_rendimiento || [])
+      .slice()
+      .sort((a, b) => (b.retention || 0) - (a.retention || 0));
+    res.json(sorted);
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudo leer el rendimiento', detail: err.message });
+  }
+});
+
+// POST /api/memory/sync → ejecuta el script scripts/auto-sync.js
+app.post('/api/memory/sync', (req, res) => {
+  const scriptPath = path.join(__dirname, '..', 'scripts', 'auto-sync.js');
+  console.log(`🔄 Servidor iniciando auto-sync: node ${scriptPath}`);
+  
+  exec(`node "${scriptPath}"`, (err, stdout, stderr) => {
+    if (err) {
+      console.error(`❌ Error en auto-sync desde API: ${err.message}`);
+      return res.status(500).json({ error: 'Error en auto-sync', detail: err.message, stderr });
+    }
+    console.log(`✅ Sincronización exitosa.`);
+    res.json({ message: 'Sincronización completada con éxito', stdout });
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
+

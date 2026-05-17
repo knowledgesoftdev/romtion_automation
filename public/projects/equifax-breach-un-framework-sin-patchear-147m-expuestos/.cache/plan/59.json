@@ -1,0 +1,27 @@
+{
+  "mainQuery": "server room data center",
+  "subQueries": [
+    "software inventory management screen",
+    "government office compliance audit"
+  ],
+  "keywords": [
+    "INVENTARIOS",
+    "SOFTWARE SBOM",
+    "EJECUTIVA 14028"
+  ],
+  "eyebrow": "NORMATIVA CRÍTICA",
+  "headline": "EO 14028 exige inventarios automatizados de componentes",
+  "bullets": [
+    "Orden Ejecutiva requiere listas de materiales software",
+    "Aplica a todos los proveedores gubernamentales",
+    "NIST publica estándares de cumplimiento obligatorio"
+  ],
+  "stat": {
+    "value": "14028",
+    "unit": "",
+    "label": "Número de Orden Ejecutiva"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

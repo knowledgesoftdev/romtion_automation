@@ -1,0 +1,27 @@
+{
+  "mainQuery": "server alert notification dashboard",
+  "subQueries": [
+    "security vulnerability code warning",
+    "cve vulnerability red alert"
+  ],
+  "keywords": [
+    "CVE CRÍTICO",
+    "AUTOMATIZACIÓN ALERTA",
+    "24 HORAS"
+  ],
+  "eyebrow": "RIESGO TÉCNICO",
+  "headline": "Automatización de alertas CVE separa incidente de desastre",
+  "bullets": [
+    "Monitoreo crítico en menos de 24 horas",
+    "Framework de terceros requiere vigilancia constante",
+    "Reputación corporativa en riesgo"
+  ],
+  "stat": {
+    "value": "24",
+    "unit": "horas",
+    "label": "Tiempo máximo para alerta de CVE crítico"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

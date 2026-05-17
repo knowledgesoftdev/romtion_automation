@@ -1,0 +1,22 @@
+{
+  "mainQuery": "software testing code deployment",
+  "subQueries": [
+    "quality assurance regression testing",
+    "internal application portal interface"
+  ],
+  "keywords": [
+    "PRUEBAS REGRESIÓN",
+    "DEPLOYMENT",
+    "PRIORIDAD BAJA"
+  ],
+  "eyebrow": "FALLO EN PROCESO",
+  "headline": "Aplicación interna sin pruebas rigurosas antes de deploy",
+  "bullets": [
+    "Portal de disputas excluido de testing prioritario",
+    "Asunción incorrecta sobre aplicaciones internas"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,23 @@
+{
+  "mainQuery": "equifax data breach server crash",
+  "subQueries": [
+    "website down error message",
+    "credit monitoring collapse overload"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "CONFIANZA PERDIDA",
+    "COLAPSO"
+  ],
+  "eyebrow": "CRISIS INSTITUCIONAL",
+  "headline": "Equifax ofreció monitoreo pero su sitio colapsó por sobrecarga",
+  "bullets": [
+    "La página se cayó el primer día",
+    "Retraso destruyó confianza institucional",
+    "Solución generó más daño"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

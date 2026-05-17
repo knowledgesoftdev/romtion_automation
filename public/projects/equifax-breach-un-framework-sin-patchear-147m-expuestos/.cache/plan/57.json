@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data breach security warning",
+  "subQueries": [
+    "credit card database hack",
+    "website server error 500"
+  ],
+  "keywords": [
+    "INCOMPETENCIA TÉCNICA",
+    "BREACH DATOS",
+    "CONFIANZA PERDIDA"
+  ],
+  "eyebrow": "CRISIS REPUTACIONAL",
+  "headline": "Fallo técnico destruye confianza en agencia de crédito",
+  "bullets": [
+    "Incompetencia visible peor que breach",
+    "Público desconfía de protección datos",
+    "Infraestructura crítica expuesta"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "",
+    "label": "incidente inicial generó cascada de desconfianza"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

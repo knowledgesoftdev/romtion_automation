@@ -1,0 +1,27 @@
+{
+  "mainQuery": "java web framework struts code",
+  "subQueries": [
+    "legacy java application server",
+    "java enterprise architecture diagram"
+  ],
+  "keywords": [
+    "STRUTS",
+    "JAVA EMPRESARIAL",
+    "2006"
+  ],
+  "eyebrow": "ARQUITECTURA FALLIDA",
+  "headline": "Struts 2 fue estándar Java empresarial desde 2006",
+  "bullets": [
+    "Componentes reutilizables y manejo de sesiones",
+    "Validación de formularios integrada",
+    "Servidores aplicaciones Java empresariales"
+  ],
+  "stat": {
+    "value": "2006",
+    "unit": "",
+    "label": "Año de adopción como estándar industrial"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

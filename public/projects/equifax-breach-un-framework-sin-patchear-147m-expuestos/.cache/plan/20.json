@@ -1,0 +1,26 @@
+{
+  "mainQuery": "data breach security breach",
+  "subQueries": [
+    "equifax building corporate office",
+    "server security patch update"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "APACHE PARCHE",
+    "72 HORAS"
+  ],
+  "eyebrow": "VULNERABILIDAD CRÍTICA",
+  "headline": "Equifax recibió alerta Apache y requirió parche urgente",
+  "bullets": [
+    "Boletín de seguridad llegó el 7 de marzo",
+    "Plazo crítico de 72 horas para aplicar parche"
+  ],
+  "stat": {
+    "value": "72",
+    "unit": "horas",
+    "label": "Plazo para aplicar parche de seguridad"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

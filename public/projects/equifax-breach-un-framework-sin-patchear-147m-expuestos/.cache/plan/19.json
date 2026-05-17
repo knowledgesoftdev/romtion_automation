@@ -1,0 +1,26 @@
+{
+  "mainQuery": "remote code execution attack server",
+  "subQueries": [
+    "hacker malicious code exploit",
+    "network security vulnerability breach"
+  ],
+  "keywords": [
+    "EJECUCIÓN REMOTA",
+    "SIN AUTENTICACIÓN",
+    "CRÍTICO"
+  ],
+  "eyebrow": "VULNERABILIDAD",
+  "headline": "Atacante ejecuta código arbitrario sin autenticación",
+  "bullets": [
+    "Una solicitud HTTP maliciosa basta",
+    "Riesgo máximo de explotación remota"
+  ],
+  "stat": {
+    "value": "10",
+    "unit": "de 10",
+    "label": "Puntaje de riesgo crítico"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

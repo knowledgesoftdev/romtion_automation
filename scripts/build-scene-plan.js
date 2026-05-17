@@ -14,6 +14,7 @@
  */
 
 require('dotenv').config();
+const { readMemory } = require('../utils/memory');
 const fs   = require('fs');
 const path = require('path');
 const http = require('http');
@@ -131,13 +132,13 @@ function initAnthropic() {
   return anthropicClient;
 }
 
-async function callAnthropic(paragraphText) {
+async function callAnthropic(paragraphText, systemPrompt = SYSTEM_PROMPT) {
   const client = initAnthropic();
   const res = await client.messages.create({
     model: ANTHROPIC_MODEL,
     max_tokens: 1024,
     system: [
-      { type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },
+      { type: 'text', text: systemPrompt, cache_control: { type: 'ephemeral' } },
     ],
     output_config: {
       format: { type: 'json_schema', schema: PLAN_SCHEMA },
@@ -186,8 +187,8 @@ function callOllama(prompt) {
   });
 }
 
-function ollamaPrompt(text) {
-  return `${SYSTEM_PROMPT}\n\nPárrafo:\n"""${text}"""\n\nJSON:`;
+function ollamaPrompt(text, systemPrompt = SYSTEM_PROMPT) {
+  return `${systemPrompt}\n\nPárrafo:\n"""${text}"""\n\nJSON:`;
 }
 
 function tryParseJson(text) {
@@ -268,7 +269,7 @@ async function selectProvider() {
   return 'fallback';
 }
 
-async function analyzeParagraph(paragraph, provider) {
+async function analyzeParagraph(paragraph, provider, systemPrompt = SYSTEM_PROMPT) {
   const cacheFile = path.join(cacheDir, `${paragraph.id}.json`);
   if (!FORCE && fs.existsSync(cacheFile)) {
     try { return { ...JSON.parse(fs.readFileSync(cacheFile, 'utf8')), _source: 'cache' }; }
@@ -279,7 +280,7 @@ async function analyzeParagraph(paragraph, provider) {
 
   if (provider === 'anthropic') {
     try {
-      analysis = await callAnthropic(paragraph.texto);
+      analysis = await callAnthropic(paragraph.texto, systemPrompt);
       analysis._source = 'anthropic';
     } catch (e) {
       console.log(`   ⚠️  [${paragraph.id}] Anthropic falló: ${e.message}`);
@@ -292,7 +293,7 @@ async function analyzeParagraph(paragraph, provider) {
       try {
         const ollamaUp = await checkOllama();
         if (ollamaUp) {
-          const raw = await callOllama(ollamaPrompt(paragraph.texto));
+          const raw = await callOllama(ollamaPrompt(paragraph.texto, systemPrompt));
           const parsed = tryParseJson(raw);
           if (parsed && parsed.mainQuery) {
             analysis = { ...parsed, _source: 'ollama' };
@@ -354,11 +355,62 @@ function buildMedia(paragraphIndex, paragraphId, analysis) {
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
+// ─── Build channel context block for the LLM prompt ───────────────────────────
+function buildChannelContext(memory) {
+  const lines = [
+    '## CONTEXTO DEL CANAL "CÓDIGO MUERTO"',
+    'Estilo visual del canal: fondo #0a0a0f, acento cyan #00d4ff, tipografía JetBrains Mono.',
+    'El canal hace autopsia técnica de arquitecturas de software que fallaron.',
+  ];
+
+  if (memory.temas_usados && memory.temas_usados.length > 0) {
+    lines.push(`\nTEMAS YA CUBIERTOS (no repitas estas referencias en visual queries ni keywords):`
+      + `\n${memory.temas_usados.map(t => `  - ${t}`).join('\n')}`);
+  }
+
+  if (memory.palabras_clave_agotadas && memory.palabras_clave_agotadas.length > 0) {
+    lines.push(`\nKEYWORDS YA SOBREUSADAS (evítalas como keywords en pantalla):`
+      + `\n${memory.palabras_clave_agotadas.map(k => `  - ${k}`).join('\n')}`);
+  }
+
+  if (memory.estilo_hooks && memory.estilo_hooks.length > 0) {
+    lines.push(`\nESTILOS DE HOOK YA USADOS (varía el enfoque visual, no repitas el mismo patrón):`
+      + `\n${memory.estilo_hooks.map(h => `  - ${h}`).join('\n')}`);
+  }
+
+  if (memory.mejor_rendimiento && memory.mejor_rendimiento.length > 0) {
+    const top = memory.mejor_rendimiento
+      .filter(v => v.retention >= 0.6)
+      .sort((a, b) => b.retention - a.retention)
+      .slice(0, 3);
+    if (top.length > 0) {
+      lines.push(`\nHOOKS CON MEJOR RETENCIÓN (>60%) — replica este estilo visual cuando sea posible):`
+        + `\n${top.map(v => `  - Tema: "${v.tema}" | Hook: ${v.hook_style} | Retención: ${(v.retention * 100).toFixed(0)}%`).join('\n')}`);
+    }
+  }
+
+  lines.push('\nAplica este contexto para asegurarte de que cada video se siente DIFERENTE al anterior en queries de Pexels, keywords en pantalla y estilo visual.');
+  return lines.join('\n');
+}
+
 async function main() {
   if (fs.existsSync(planPath) && !FORCE) {
     console.log(`ℹ️  scene-plan.json ya existe en ${planPath}`);
     console.log('   Usa --force para regenerar.');
     process.exit(0);
+  }
+
+  // ── Leer memoria del canal e inyectarla en el prompt ──────────────────────
+  let effectiveSystemPrompt = SYSTEM_PROMPT;
+  try {
+    const memory = await readMemory();
+    const channelCtx = buildChannelContext(memory);
+    effectiveSystemPrompt = `${channelCtx}\n\n${SYSTEM_PROMPT}`;
+    if (memory.temas_usados.length > 0) {
+      console.log(`🧠 Memoria del canal cargada: ${memory.temas_usados.length} temas previos, ${memory.mejor_rendimiento.length} métricas de retención.`);
+    }
+  } catch (memErr) {
+    console.warn(`⚠️  No se pudo leer channel-memory.json: ${memErr.message}. Continuando sin contexto de canal.`);
   }
 
   const provider = await selectProvider();
@@ -374,7 +426,7 @@ async function main() {
   for (let i = 0; i < guion.length; i++) {
     const p = guion[i];
     process.stdout.write(`   [${p.id}] `);
-    const analysis = await analyzeParagraph(p, provider);
+    const analysis = await analyzeParagraph(p, provider, effectiveSystemPrompt);
     const media = buildMedia(i, p.id, analysis);
     const sideContent = buildSideContent(analysis);
 

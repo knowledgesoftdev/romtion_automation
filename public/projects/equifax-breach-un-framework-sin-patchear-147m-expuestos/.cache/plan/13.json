@@ -1,0 +1,27 @@
+{
+  "mainQuery": "server room data center breach",
+  "subQueries": [
+    "apache struts code vulnerability",
+    "equifax security incident"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "STRUTS 2",
+    "SIN INVENTARIO"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "Equifax ignoraba qué versiones ejecutaba en producción",
+  "bullets": [
+    "Sin automatización de dependencias terceras",
+    "Descubrieron Struts 2 después del breach",
+    "Gestión deficiente de activos tecnológicos"
+  ],
+  "stat": {
+    "value": "0",
+    "unit": "",
+    "label": "Inventario automatizado de dependencias"
+  },
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,1736 @@
+{
+  "version": 1,
+  "projectId": "equifax-breach-un-framework-sin-patchear-147m-expuestos",
+  "paragraphs": [
+    {
+      "id": "01",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "java framework security vulnerability breach",
+        "filename": "parrafo-01.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Framework Java desactualizado expuso datos de 147 millones",
+      "keywords": [
+        "JAVA SIN ACTUALIZAR",
+        "147 MILLONES DATOS",
+        "62 DÍAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "147",
+          "unit": "millones",
+          "label": "personas con datos expuestos"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "equifax data breach credit cards",
+        "filename": "parrafo-02.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Equifax almacena datos de 150 millones de estadounidenses",
+      "keywords": [
+        "EQUIFAX",
+        "DATOS PERSONALES",
+        "180 MILLONES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Historiales crediticios y números de seguro social",
+            "Direcciones, fechas de nacimiento y tarjetas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "03",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "apache server code vulnerability",
+        "filename": "parrafo-03.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Apache Struts sufre vulnerabilidad de ejecución remota",
+      "keywords": [
+        "APACHE STRUTS",
+        "EJECUCIÓN REMOTA",
+        "2017"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "",
+          "label": "versión vulnerable de Apache Struts"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "Equifax data breach server security",
+        "filename": "parrafo-04.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO CRÍTICO",
+      "headline": "Equifax ignoró parches de Apache en marzo",
+      "keywords": [
+        "EQUIFAX",
+        "APACHE FALLA",
+        "MARZO 2017"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "145",
+          "unit": "millones",
+          "label": "Registros personales comprometidos en Equifax"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "web application vulnerability attack server",
+        "filename": "parrafo-05.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INCIDENTE DE SEGURIDAD",
+      "headline": "Atacantes explotaron vulnerabilidad web durante 76 días",
+      "keywords": [
+        "APLICACIÓN WEB",
+        "76 DÍAS",
+        "ATAQUE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "76",
+          "unit": "días",
+          "label": "Permanencia de los atacantes dentro del sistema"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data breach security hack",
+        "filename": "parrafo-06.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRIMEN DIGITAL",
+      "headline": "Ciento cuarenta y siete millones expuestos en robo masivo",
+      "keywords": [
+        "147 MILLONES",
+        "DATOS PERSONALES",
+        "IDENTIDAD ROBADA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "147",
+          "unit": "millones",
+          "label": "personas con datos personales expuestos"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "corporate security breach data center",
+        "filename": "parrafo-07.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Empresa tardó 143 días en anunciar la intrusión",
+      "keywords": [
+        "INTRUSIÓN",
+        "143 DÍAS",
+        "SILENCIO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "143",
+          "unit": "días",
+          "label": "Tiempo hasta anunciar la intrusión"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "apache struts server framework",
+        "filename": "parrafo-08.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Arquitectura monolítica sin auditoría de dependencias",
+      "keywords": [
+        "APACHE STRUTS",
+        "MONOLÍTICO",
+        "SIN AUDITORÍA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Framework antiguo sin validación",
+            "Riesgo de librerías comprometidas",
+            "Acoplamiento total del sistema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "09",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "apache struts java code",
+        "filename": "parrafo-09.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Equifax usaba framework desactualizado en sistema sensible",
+      "keywords": [
+        "APACHE STRUTS",
+        "EQUIFAX",
+        "JAVA 2014"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2014",
+          "unit": "",
+          "label": "Año de la versión vulnerada"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "java web framework struts code",
+        "filename": "parrafo-10.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Struts 2 fue estándar Java empresarial desde 2006",
+      "keywords": [
+        "STRUTS",
+        "JAVA EMPRESARIAL",
+        "2006"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "",
+          "label": "Año de adopción como estándar industrial"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "legacy web application internal portal",
+        "filename": "parrafo-11.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "Aplicación interna funcional sin presión para modernizar",
+      "keywords": [
+        "APLICACIÓN LEGACY",
+        "BAJO TRÁFICO",
+        "COSTO MIGRACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin quejas de usuarios ni requisitos nuevos",
+            "Migración injustificada por bajo volumen de tráfico",
+            "Sistema operativo mantenía estabilidad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "12",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "Apache Struts vulnerability code execution",
+        "filename": "parrafo-12.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Struts 2 tuvo 33 boletines de seguridad por ejecución remota",
+      "keywords": [
+        "STRUTS 2",
+        "EJECUCIÓN REMOTA",
+        "33 BOLETINES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "33",
+          "unit": "boletines",
+          "label": "seguridad emitidos entre 2012 y 2017"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server room data center breach",
+        "filename": "parrafo-13.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Equifax ignoraba qué versiones ejecutaba en producción",
+      "keywords": [
+        "EQUIFAX",
+        "STRUTS 2",
+        "SIN INVENTARIO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "Inventario automatizado de dependencias"
+        }
+      }
+    },
+    {
+      "id": "14",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "security vulnerability scan database",
+        "filename": "parrafo-14.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "SEGURIDAD FALLIDA",
+      "headline": "Portal de disputas invisible en escaneos de seguridad",
+      "keywords": [
+        "VULNERABILIDAD OCULTA",
+        "RIESGO BAJO",
+        "PORTAL INTERNO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Clasificado como aplicación interna de bajo riesgo",
+            "Vulnerabilidades no detectadas por sistemas de escaneo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "server data breach attack",
+        "filename": "parrafo-15.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Acceso sin segmentar a 51 bases de producción comprometidas",
+      "keywords": [
+        "51 BASES DATOS",
+        "EJECUCIÓN CÓDIGO",
+        "PIVOTE LATERAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "51",
+          "unit": "bases de datos",
+          "label": "de producción comprometidas simultáneamente"
+        }
+      }
+    },
+    {
+      "id": "16",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server network breach data center",
+        "filename": "parrafo-16.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Falta de segmentación de red permitió compromiso total",
+      "keywords": [
+        "SIN FIREWALL",
+        "ACCESO TOTAL",
+        "UN PUNTO FALLO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "del sistema comprometido por un acceso"
+        }
+      }
+    },
+    {
+      "id": "17",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "computer security vulnerability alert screen",
+        "filename": "parrafo-17.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 2",
+      "headline": "Vulnerabilidad crítica ignorada durante más de dos meses",
+      "keywords": [
+        "CVE-2017-5638",
+        "62 DÍAS",
+        "DESATENDIDO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "62",
+          "unit": "días",
+          "label": "Vulnerabilidad sin atención de seguridad"
+        }
+      }
+    },
+    {
+      "id": "18",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "Apache Struts vulnerability code injection",
+        "filename": "parrafo-18.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Apache Struts parche urgente por inyección de comandos",
+      "keywords": [
+        "APACHE STRUTS",
+        "INYECCIÓN COMANDOS",
+        "CVE 2017"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2.3.32",
+          "unit": "versión",
+          "label": "Parche de seguridad lanzado"
+        }
+      }
+    },
+    {
+      "id": "19",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "remote code execution attack server",
+        "filename": "parrafo-19.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD",
+      "headline": "Atacante ejecuta código arbitrario sin autenticación",
+      "keywords": [
+        "EJECUCIÓN REMOTA",
+        "SIN AUTENTICACIÓN",
+        "CRÍTICO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "de 10",
+          "label": "Puntaje de riesgo crítico"
+        }
+      }
+    },
+    {
+      "id": "20",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach security breach",
+        "filename": "parrafo-20.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD CRÍTICA",
+      "headline": "Equifax recibió alerta Apache y requirió parche urgente",
+      "keywords": [
+        "EQUIFAX",
+        "APACHE PARCHE",
+        "72 HORAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "72",
+          "unit": "horas",
+          "label": "Plazo para aplicar parche de seguridad"
+        }
+      }
+    },
+    {
+      "id": "21",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data center server room security",
+        "filename": "parrafo-21.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Equifax no supo qué servidores Java necesitaban parches",
+      "keywords": [
+        "EQUIFAX",
+        "STRUTS 2",
+        "JAVA VULNERABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "400",
+          "unit": "aplicaciones",
+          "label": "Aplicaciones Java en producción sin inventario"
+        }
+      }
+    },
+    {
+      "id": "22",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "software testing code deployment",
+        "filename": "parrafo-22.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO EN PROCESO",
+      "headline": "Aplicación interna sin pruebas rigurosas antes de deploy",
+      "keywords": [
+        "PRUEBAS REGRESIÓN",
+        "DEPLOYMENT",
+        "PRIORIDAD BAJA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Portal de disputas excluido de testing prioritario",
+            "Asunción incorrecta sobre aplicaciones internas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "github code exploit vulnerability",
+        "filename": "parrafo-23.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRONOLOGÍA",
+      "headline": "Exploits publicados, escaneos masivos iniciados",
+      "keywords": [
+        "EXPLOIT",
+        "GITHUB",
+        "VULNERABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "días",
+          "label": "Entre publicación y escaneos masivos"
+        }
+      }
+    },
+    {
+      "id": "24",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach security server room",
+        "filename": "parrafo-24.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Equifax no automatizó detección de aplicaciones expuestas",
+      "keywords": [
+        "EQUIFAX",
+        "VULNERABILIDADES NO DETECTADAS",
+        "PROCESO MANUAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "sistemas automatizados de validación",
+          "label": "Herramientas de escaneo interno urgente implementadas"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "security breach server attack",
+        "filename": "parrafo-25.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Vulnerabilidad sin parchear explotada tras 62 días",
+      "keywords": [
+        "VULNERABILIDAD",
+        "62 DÍAS",
+        "EXPLOIT"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "62",
+          "unit": "días",
+          "label": "Tiempo hasta explotación tras disclosure"
+        }
+      }
+    },
+    {
+      "id": "26",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "SQL injection attack database breach",
+        "filename": "parrafo-26.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ATAQUE CRÍTICO",
+      "headline": "Treinta consultas SQL extrajeron tablas completas",
+      "keywords": [
+        "SQL INJECTION",
+        "EXTRACCIÓN DATOS",
+        "BASES DATOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "30",
+          "unit": "consultas SQL",
+          "label": "Ejecutadas para extraer datos completos"
+        }
+      }
+    },
+    {
+      "id": "27",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "hacker stealing data server",
+        "filename": "parrafo-27.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TÉCNICA ATAQUE",
+      "headline": "Ataque sigiloso usando HTTPS legítimo para robar datos",
+      "keywords": [
+        "EXFILTRACIÓN DATOS",
+        "HTTPS CIFRADO",
+        "DETECCIÓN ELUDIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Compresión y cifrado de datos en sistema",
+            "Tráfico oculto entre comunicaciones normales",
+            "Volumen bajo evadió sistemas alertas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "28",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "database server breach data loss",
+        "filename": "parrafo-28.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CRÍTICO",
+      "headline": "147 millones de registros se filtraron sin detectarse",
+      "keywords": [
+        "147 MILLONES",
+        "REGISTROS",
+        "FILTRACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "147",
+          "unit": "millones",
+          "label": "Registros filtrados sin detección"
+        }
+      }
+    },
+    {
+      "id": "29",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "expired ssl certificate server error",
+        "filename": "parrafo-29.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 3",
+      "headline": "Certificado SSL expirado paralizó detección de amenazas",
+      "keywords": [
+        "SSL EXPIRADO",
+        "SEGURIDAD BLOQUEADA",
+        "TRÁFICO MALICIOSO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "punto crítico de falla",
+          "label": "Certificado vencido detuvo protección"
+        }
+      }
+    },
+    {
+      "id": "30",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "ssl inspection certificate expired server",
+        "filename": "parrafo-30.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Certificado SSL expirado dejó datos sin protección",
+      "keywords": [
+        "SSL EXPIRADO",
+        "EQUIFAX BREACH",
+        "CERTIFICADO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "meses",
+          "label": "Certificado expirado antes del breach"
+        }
+      }
+    },
+    {
+      "id": "31",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server ssl certificate network infrastructure",
+        "filename": "parrafo-31.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA TÉCNICA",
+      "headline": "Certificado SSL olvidado causó caída por prueba no formalizada",
+      "keywords": [
+        "SSL CERTIFICADO",
+        "GESTIÓN INFRAESTRUCTURA",
+        "OPERACIONES RED"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "años",
+          "label": "Tiempo que el dispositivo estuvo sin formalizar"
+        }
+      }
+    },
+    {
+      "id": "32",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server monitoring alert system dashboard",
+        "filename": "parrafo-32.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Sistema de monitoreo expiró sin generar alerta",
+      "keywords": [
+        "EXPIRACIÓN",
+        "MONITOREO FALLÓ",
+        "2016"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2016",
+          "unit": "",
+          "label": "Año en que expiró el dispositivo de monitoreo"
+        }
+      }
+    },
+    {
+      "id": "33",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "hacker data breach server interception",
+        "filename": "parrafo-33.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD",
+      "headline": "Tráfico cifrado escapó sin inspección durante 76 días",
+      "keywords": [
+        "HTTPS COMPROMETIDO",
+        "DATOS ROBADOS",
+        "SESIONES CIFRADAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "76",
+          "unit": "días",
+          "label": "Duración de la intrusión sin detección"
+        }
+      }
+    },
+    {
+      "id": "34",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data center server security monitoring",
+        "filename": "parrafo-34.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Sistema ignoró transferencia de datos sensibles sin cifrado",
+      "keywords": [
+        "9 GB/DÍA",
+        "SSL SIN INSPECCIÓN",
+        "DATOS PERSONALES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "9",
+          "unit": "gigabytes/día",
+          "label": "Volumen de transferencia sin detectar"
+        }
+      }
+    },
+    {
+      "id": "35",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach server security",
+        "filename": "parrafo-35.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Falla de seguridad SSL permitió exposición masiva de datos",
+      "keywords": [
+        "EQUIFAX BREACH",
+        "147 MILLONES REGISTROS",
+        "DETECCIÓN SSL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "147",
+          "unit": "millones",
+          "label": "registros de clientes expuestos en el breach"
+        }
+      }
+    },
+    {
+      "id": "36",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "expired certificate server error",
+        "filename": "parrafo-36.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Certificado expirado causó el colapso más prevenible",
+      "keywords": [
+        "CERTIFICADO EXPIRADO",
+        "FALLO OPERATIVO",
+        "CERO JUSTIFICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Fallo prevenible según auditoría"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legal document disclosure timeline",
+        "filename": "parrafo-37.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 4",
+      "headline": "Retraso de 143 días en divulgación pública",
+      "keywords": [
+        "DISCLOSURE",
+        "143 DÍAS",
+        "RETRASO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "143",
+          "unit": "días",
+          "label": "Retraso en disclosure público"
+        }
+      }
+    },
+    {
+      "id": "38",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data breach security alert server",
+        "filename": "parrafo-38.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FILTRACIÓN MASIVA",
+      "headline": "Equifax descubrió intrusión el 29 de julio de 2017",
+      "keywords": [
+        "EQUIFAX",
+        "BREACH 2017",
+        "147M DATOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "147",
+          "unit": "millones",
+          "label": "registros comprometidos en el breach"
+        }
+      }
+    },
+    {
+      "id": "39",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "timeline calendar countdown days",
+        "filename": "parrafo-39.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CRÍTICO",
+      "headline": "Desfase de cien días entre intrusión y confirmación",
+      "keywords": [
+        "143 DÍAS",
+        "INTRUSIÓN",
+        "CONFIRMACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "143",
+          "unit": "días",
+          "label": "Tiempo transcurrido desde intrusión inicial"
+        }
+      }
+    },
+    {
+      "id": "40",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach forensic investigation",
+        "filename": "parrafo-40.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS FORENSE",
+      "headline": "Equifax contrató Mandiant para reconstruir ataque en 51 bases",
+      "keywords": [
+        "EQUIFAX",
+        "51 BASES DATOS",
+        "MANDIANT"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "51",
+          "unit": "bases de datos",
+          "label": "Reconstruidas en análisis forense completo"
+        }
+      }
+    },
+    {
+      "id": "41",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "lawyer office document review meeting",
+        "filename": "parrafo-41.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO LEGAL",
+      "headline": "Equipo legal prepara defensa bajo acuerdo confidencial",
+      "keywords": [
+        "DEMANDAS COLECTIVAS",
+        "CONFIDENCIALIDAD",
+        "COMUNICADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Directorio debe aprobar comunicado público",
+            "Procesos legales requieren tiempo coordinado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "42",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data breach security hack",
+        "filename": "parrafo-42.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESCÁNDALO CORPORATIVO",
+      "headline": "Ejecutivos vendieron acciones antes de revelar breach",
+      "keywords": [
+        "EQUIFAX",
+        "INSIDER TRADING",
+        "BREACH"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1,800,000",
+          "unit": "dólares",
+          "label": "Vendidas por ejecutivos antes del disclosure"
+        }
+      }
+    },
+    {
+      "id": "43",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "securities investigation office building",
+        "filename": "parrafo-43.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESCÁNDALO CORPORATIVO",
+      "headline": "SEC investigó a ejecutivos por información privilegiada",
+      "keywords": [
+        "INSIDER TRADING",
+        "INVESTIGACIÓN SEC",
+        "PERCEPCIÓN PÚBLICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ejecutivos fueron exonerados legalmente",
+            "Público percibió corrupción aún así"
+          ]
+        }
+      }
+    },
+    {
+      "id": "44",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach cybersecurity hacking",
+        "filename": "parrafo-44.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AMENAZA CRÍTICA",
+      "headline": "Cada día de delay multiplicaba riesgo de fraude identitario",
+      "keywords": [
+        "DATOS ROBADOS",
+        "FRAUDE IDENTIDAD",
+        "RIESGO DIARIO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "día",
+          "label": "Incremento de riesgo por cada unidad de tiempo"
+        }
+      }
+    },
+    {
+      "id": "45",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "equifax data breach server crash",
+        "filename": "parrafo-45.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRISIS INSTITUCIONAL",
+      "headline": "Equifax ofreció monitoreo pero su sitio colapsó por sobrecarga",
+      "keywords": [
+        "EQUIFAX",
+        "CONFIANZA PERDIDA",
+        "COLAPSO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La página se cayó el primer día",
+            "Retraso destruyó confianza institucional",
+            "Solución generó más daño"
+          ]
+        }
+      }
+    },
+    {
+      "id": "46",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "corporate scandal lawsuit settlement",
+        "filename": "parrafo-46.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRISIS CORPORATIVA",
+      "headline": "Acuerdo de setecientos millones por demandas colectivas",
+      "keywords": [
+        "DEMANDA COLECTIVA",
+        "700 MILLONES USD",
+        "RENUNCIAS EJECUTIVAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "700",
+          "unit": "millones USD",
+          "label": "Acuerdo de demandas colectivas"
+        }
+      }
+    },
+    {
+      "id": "47",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "stock market crash red arrow",
+        "filename": "parrafo-47.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO FINANCIERO",
+      "headline": "Acción se desploma 31% tras pérdida de contratos",
+      "keywords": [
+        "CAÍDA 31%",
+        "PÉRDIDA $200M",
+        "CONGELAMIENTO CRÉDITO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "31",
+          "unit": "%",
+          "label": "Caída de precio en tres semanas"
+        }
+      }
+    },
+    {
+      "id": "48",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person speaking microphone press conference",
+        "filename": "parrafo-48.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 5",
+      "headline": "Respuesta caótica ante crisis amplificó daño reputacional",
+      "keywords": [
+        "CRISIS COMUNICACIONAL",
+        "REPUTACIÓN",
+        "RESPUESTA PÚBLICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Comunicación desorganizada aumentó desconfianza",
+            "Falta de mensaje claro generó especulación",
+            "Reacción defensiva alienó stakeholders"
+          ]
+        }
+      }
+    },
+    {
+      "id": "49",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach website form",
+        "filename": "parrafo-49.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INCIDENTE CLAVE",
+      "headline": "Equifax lanza sitio para verificar afectados por filtración",
+      "keywords": [
+        "EQUIFAX",
+        "BREACH 2017",
+        "SEGURO SOCIAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Requería apellido y últimos seis dígitos SSN",
+            "Ofrecía inscripción a TrustedID Premier"
+          ]
+        }
+      }
+    },
+    {
+      "id": "50",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach notification website server",
+        "filename": "parrafo-50.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RESPUESTA CRISIS",
+      "headline": "Equifax desplegó servicio de remediación a escala masiva inmediata",
+      "keywords": [
+        "EQUIFAX",
+        "REMEDIACIÓN MASIVA",
+        "TRUSTEDID PREMIER"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "TrustedID Premier permitió deployment rápido",
+            "Sitio separado evitó colapsar infraestructura corporativa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "51",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "phishing website scam alert screen",
+        "filename": "parrafo-51.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA DE SEGURIDAD",
+      "headline": "Equifax usó dominio sospechoso para respuesta",
+      "keywords": [
+        "PHISHING",
+        "DOMINIO FALSO",
+        "DATOS SENSIBLES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sitio no estaba en dominio principal oficial",
+            "Expertos alertaron sobre riesgo de suplantación",
+            "Entrenaba consumidores a ingreso inseguro"
+          ]
+        }
+      }
+    },
+    {
+      "id": "52",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "website error message screen",
+        "filename": "parrafo-52.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "El sitio entregaba respuestas contradictorias con datos idénticos",
+      "keywords": [
+        "RESPUESTAS CONTRADICTORIAS",
+        "DATOS INCONSISTENTES",
+        "ERROR"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Usuarios recibían resultados diferentes",
+            "Mismo dato, distintas verificaciones",
+            "Confiabilidad comprometida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "53",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "legal document contract terms",
+        "filename": "parrafo-53.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO LEGAL",
+      "headline": "Equifax aclaró cláusula de arbitraje no aplicaba a breach",
+      "keywords": [
+        "ARBITRAJE",
+        "DATA BREACH",
+        "DEMANDA COLECTIVA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Términos iniciales causaron confusión mediática",
+            "Renunció a restricción de demandas colectivas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "54",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "equifax data breach server down",
+        "filename": "parrafo-54.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Centro de llamadas colapsó por sobrecarga masiva",
+      "keywords": [
+        "EQUIFAX COLAPSO",
+        "2 HORAS ESPERA",
+        "DOMINIO FALSO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "horas",
+          "label": "Tiempo máximo de espera en llamadas"
+        }
+      }
+    },
+    {
+      "id": "55",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data breach website error frustrated user",
+        "filename": "parrafo-55.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRISIS DE SEGURIDAD",
+      "headline": "La respuesta caótica amplificó el daño reputacional",
+      "keywords": [
+        "BREACH",
+        "USUARIOS ENGAÑADOS",
+        "DOMINIOS FALSOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "múltiples",
+          "unit": "",
+          "label": "sitios de demostración de phishing creados"
+        }
+      }
+    },
+    {
+      "id": "56",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "newspaper headlines printed press",
+        "filename": "parrafo-56.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "GESTIÓN FALLIDA",
+      "headline": "Grandes periódicos criticaron gestión de crisis fallida de Equifax",
+      "keywords": [
+        "EQUIFAX",
+        "CRISIS",
+        "MBA CASO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3",
+          "unit": "periódicos",
+          "label": "Medios principales criticaron la gestión"
+        }
+      }
+    },
+    {
+      "id": "57",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data breach security warning",
+        "filename": "parrafo-57.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRISIS REPUTACIONAL",
+      "headline": "Fallo técnico destruye confianza en agencia de crédito",
+      "keywords": [
+        "INCOMPETENCIA TÉCNICA",
+        "BREACH DATOS",
+        "CONFIANZA PERDIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "",
+          "label": "incidente inicial generó cascada de desconfianza"
+        }
+      }
+    },
+    {
+      "id": "58",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "data breach security vulnerability",
+        "filename": "parrafo-58.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO DE ESTUDIO",
+      "headline": "Vulnerabilidad de Equifax redefinió estándares de seguridad",
+      "keywords": [
+        "EQUIFAX",
+        "DISCLOSURE RESPONSABLE",
+        "SPRING BOOT"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2017",
+          "unit": "",
+          "label": "Año del breach de Equifax"
+        }
+      }
+    },
+    {
+      "id": "59",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "server room data center",
+        "filename": "parrafo-59.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "NORMATIVA CRÍTICA",
+      "headline": "EO 14028 exige inventarios automatizados de componentes",
+      "keywords": [
+        "INVENTARIOS",
+        "SOFTWARE SBOM",
+        "EJECUTIVA 14028"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "14028",
+          "unit": "",
+          "label": "Número de Orden Ejecutiva"
+        }
+      }
+    },
+    {
+      "id": "60",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "equifax data breach server",
+        "filename": "parrafo-60.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO CORPORATIVO",
+      "headline": "Equifax pagó 700 millones sin consecuencias penales",
+      "keywords": [
+        "EQUIFAX",
+        "700 MILLONES",
+        "SIN CÁRCEL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "700",
+          "unit": "millones de dólares",
+          "label": "Multa por incumplimiento de seguridad"
+        }
+      }
+    },
+    {
+      "id": "61",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server alert notification dashboard",
+        "filename": "parrafo-61.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RIESGO TÉCNICO",
+      "headline": "Automatización de alertas CVE separa incidente de desastre",
+      "keywords": [
+        "CVE CRÍTICO",
+        "AUTOMATIZACIÓN ALERTA",
+        "24 HORAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "24",
+          "unit": "horas",
+          "label": "Tiempo máximo para alerta de CVE crítico"
+        }
+      }
+    }
+  ]
+}

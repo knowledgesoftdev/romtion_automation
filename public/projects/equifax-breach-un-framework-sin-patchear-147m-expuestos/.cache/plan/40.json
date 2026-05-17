@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data breach forensic investigation",
+  "subQueries": [
+    "hacker attack server room",
+    "cybersecurity incident response"
+  ],
+  "keywords": [
+    "EQUIFAX",
+    "51 BASES DATOS",
+    "MANDIANT"
+  ],
+  "eyebrow": "ANÁLISIS FORENSE",
+  "headline": "Equifax contrató Mandiant para reconstruir ataque en 51 bases",
+  "bullets": [
+    "Identificar qué registros fueron accedidos",
+    "Verificar integridad de sistemas no comprometidos",
+    "Confirmar que atacantes perdieron acceso"
+  ],
+  "stat": {
+    "value": "51",
+    "unit": "bases de datos",
+    "label": "Reconstruidas en análisis forense completo"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

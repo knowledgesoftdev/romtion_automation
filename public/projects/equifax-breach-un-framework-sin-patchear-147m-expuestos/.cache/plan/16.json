@@ -1,0 +1,26 @@
+{
+  "mainQuery": "server network breach data center",
+  "subQueries": [
+    "database security vulnerability"
+  ],
+  "keywords": [
+    "SIN FIREWALL",
+    "ACCESO TOTAL",
+    "UN PUNTO FALLO"
+  ],
+  "eyebrow": "ARQUITECTURA FALLIDA",
+  "headline": "Falta de segmentación de red permitió compromiso total",
+  "bullets": [
+    "Ausencia de controles entre capas",
+    "Punto único de entrada crítico",
+    "Ecosistema de datos expuesto"
+  ],
+  "stat": {
+    "value": "100",
+    "unit": "%",
+    "label": "del sistema comprometido por un acceso"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

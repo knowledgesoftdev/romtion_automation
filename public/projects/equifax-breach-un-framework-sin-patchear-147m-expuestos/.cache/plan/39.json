@@ -1,0 +1,26 @@
+{
+  "mainQuery": "timeline calendar countdown days",
+  "subQueries": [
+    "incident response timeline",
+    "clock timer digital display"
+  ],
+  "keywords": [
+    "143 DÍAS",
+    "INTRUSIÓN",
+    "CONFIRMACIÓN"
+  ],
+  "eyebrow": "DATO CRÍTICO",
+  "headline": "Desfase de cien días entre intrusión y confirmación",
+  "bullets": [
+    "Lag significativo en detección de ataque",
+    "Vulnerabilidad expuesta durante período extenso"
+  ],
+  "stat": {
+    "value": "143",
+    "unit": "días",
+    "label": "Tiempo transcurrido desde intrusión inicial"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

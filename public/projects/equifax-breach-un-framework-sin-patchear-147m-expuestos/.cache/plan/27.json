@@ -1,0 +1,23 @@
+{
+  "mainQuery": "hacker stealing data server",
+  "subQueries": [
+    "encrypted data transfer network",
+    "cyber attack command line terminal"
+  ],
+  "keywords": [
+    "EXFILTRACIÓN DATOS",
+    "HTTPS CIFRADO",
+    "DETECCIÓN ELUDIDA"
+  ],
+  "eyebrow": "TÉCNICA ATAQUE",
+  "headline": "Ataque sigiloso usando HTTPS legítimo para robar datos",
+  "bullets": [
+    "Compresión y cifrado de datos en sistema",
+    "Tráfico oculto entre comunicaciones normales",
+    "Volumen bajo evadió sistemas alertas"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

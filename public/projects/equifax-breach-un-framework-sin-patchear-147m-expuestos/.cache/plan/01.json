@@ -1,0 +1,26 @@
+{
+  "mainQuery": "java framework security vulnerability breach",
+  "subQueries": [
+    "unpatched software data leak",
+    "financial data server breach"
+  ],
+  "keywords": [
+    "JAVA SIN ACTUALIZAR",
+    "147 MILLONES DATOS",
+    "62 DÍAS"
+  ],
+  "eyebrow": "VULNERABILIDAD CRÍTICA",
+  "headline": "Framework Java desactualizado expuso datos de 147 millones",
+  "bullets": [
+    "Sesenta y dos días sin parches de seguridad",
+    "Exposición masiva de información financiera personal"
+  ],
+  "stat": {
+    "value": "147",
+    "unit": "millones",
+    "label": "personas con datos expuestos"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

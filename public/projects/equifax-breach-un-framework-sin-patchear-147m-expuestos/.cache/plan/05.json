@@ -1,0 +1,26 @@
+{
+  "mainQuery": "web application vulnerability attack server",
+  "subQueries": [
+    "hacker breach timeline tracking",
+    "cybersecurity intrusion forensics"
+  ],
+  "keywords": [
+    "APLICACIÓN WEB",
+    "76 DÍAS",
+    "ATAQUE"
+  ],
+  "eyebrow": "INCIDENTE DE SEGURIDAD",
+  "headline": "Atacantes explotaron vulnerabilidad web durante 76 días",
+  "bullets": [
+    "Acceso mediante aplicación interna vulnerable",
+    "Permanencia prolongada en el sistema sin detección"
+  ],
+  "stat": {
+    "value": "76",
+    "unit": "días",
+    "label": "Permanencia de los atacantes dentro del sistema"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

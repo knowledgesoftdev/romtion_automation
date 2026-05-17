@@ -1,0 +1,26 @@
+{
+  "mainQuery": "server data breach attack",
+  "subQueries": [
+    "database server room",
+    "hacker code terminal screen"
+  ],
+  "keywords": [
+    "51 BASES DATOS",
+    "EJECUCIÓN CÓDIGO",
+    "PIVOTE LATERAL"
+  ],
+  "eyebrow": "VULNERABILIDAD CRÍTICA",
+  "headline": "Acceso sin segmentar a 51 bases de producción comprometidas",
+  "bullets": [
+    "Ejecución de código remoto sin mitigación",
+    "Movimiento lateral sin fricción entre sistemas"
+  ],
+  "stat": {
+    "value": "51",
+    "unit": "bases de datos",
+    "label": "de producción comprometidas simultáneamente"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

@@ -1,0 +1,27 @@
+{
+  "mainQuery": "data breach cybersecurity hacking",
+  "subQueries": [
+    "identity theft fraud alert",
+    "credit card security lock"
+  ],
+  "keywords": [
+    "DATOS ROBADOS",
+    "FRAUDE IDENTIDAD",
+    "RIESGO DIARIO"
+  ],
+  "eyebrow": "AMENAZA CRÍTICA",
+  "headline": "Cada día de delay multiplicaba riesgo de fraude identitario",
+  "bullets": [
+    "Atacantes usaban datos para fraude inmediato",
+    "Víctimas ignoraban necesidad monitoreo crédito",
+    "Congelación reportes llegaba tarde"
+  ],
+  "stat": {
+    "value": "1",
+    "unit": "día",
+    "label": "Incremento de riesgo por cada unidad de tiempo"
+  },
+  "hasNumbers": true,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

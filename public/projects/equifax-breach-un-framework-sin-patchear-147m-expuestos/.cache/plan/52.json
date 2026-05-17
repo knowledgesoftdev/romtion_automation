@@ -1,0 +1,23 @@
+{
+  "mainQuery": "website error message screen",
+  "subQueries": [
+    "confused user frustrated computer",
+    "data inconsistency bug glitch"
+  ],
+  "keywords": [
+    "RESPUESTAS CONTRADICTORIAS",
+    "DATOS INCONSISTENTES",
+    "ERROR"
+  ],
+  "eyebrow": "FALLO CRÍTICO",
+  "headline": "El sitio entregaba respuestas contradictorias con datos idénticos",
+  "bullets": [
+    "Usuarios recibían resultados diferentes",
+    "Mismo dato, distintas verificaciones",
+    "Confiabilidad comprometida"
+  ],
+  "stat": null,
+  "hasNumbers": false,
+  "_source": "anthropic",
+  "suggestedLayout": "splitMedia"
+}

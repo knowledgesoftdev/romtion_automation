@@ -103,6 +103,17 @@ const S = {
     backgroundColor: '#00d4ff22', color: '#00d4ff', fontWeight: 700,
     border: '1px solid #00d4ff44',
   },
+  memSection: {
+    display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16,
+  },
+  memTag: (color) => ({
+    display: 'inline-block', padding: '2px 10px', borderRadius: 12, marginRight: 6, marginBottom: 6,
+    fontSize: 11, fontWeight: 600, backgroundColor: color + '22', color, border: `1px solid ${color}44`,
+  }),
+  perfRow: {
+    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+    padding: '8px 0', borderBottom: '1px solid #1e2a3a', fontSize: 12,
+  },
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -183,6 +194,24 @@ function ProjectDetail({ project, onRefresh, setStatus }) {
   const [loadingMedia,    setLoadingMedia]    = useState(false);
   const [loadingActivate, setLoadingActivate] = useState(false);
   const [loadingReparse,  setLoadingReparse]  = useState(false);
+
+  const [loadingSmartReparse, setLoadingSmartReparse] = useState(false);
+
+  const smartReparse = async () => {
+    setLoadingSmartReparse(true);
+    setStatus('🧠 Fragmentando con Claude (puede tardar ~30s)...');
+    try {
+      const res  = await fetch(`${API}/api/projects/${project.id}/smart-reparse`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setStatus(`✅ ${data.message} — ${data.paragraphCount} fragmentos cortos`);
+      onRefresh();
+    } catch (err) {
+      setStatus(`❌ Error: ${err.message}`);
+    } finally {
+      setLoadingSmartReparse(false);
+    }
+  };
 
   const reparse = async () => {
     setLoadingReparse(true);
@@ -289,16 +318,26 @@ function ProjectDetail({ project, onRefresh, setStatus }) {
       {/* Steps overview */}
       <div style={{ ...S.card, padding: '16px 20px' }}>
         <div style={S.cardTitle}>Estado del pipeline</div>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
           <StepRow num="1" label={`Guion extraído — ${project.paragraphCount} párrafos`} done={project.hasGuion} />
-          <button
-            style={loadingReparse ? S.btnDisabled : { ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
-            onClick={reparse}
-            disabled={loadingReparse}
-            title="Re-extraer el guion usando el parser determinista"
-          >
-            {loadingReparse ? '...' : 'Re-parsear'}
-          </button>
+          <div style={{ display: 'flex', gap: 6 }}>
+            <button
+              style={loadingReparse ? S.btnDisabled : { ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
+              onClick={reparse}
+              disabled={loadingReparse}
+              title="Re-extraer el guion usando el parser determinista"
+            >
+              {loadingReparse ? '...' : 'Re-parsear'}
+            </button>
+            <button
+              style={loadingSmartReparse ? S.btnDisabled : { ...S.btn('#8b5cf622', '#8b5cf6'), fontSize: 11, border: '1px solid #8b5cf644' }}
+              onClick={smartReparse}
+              disabled={loadingSmartReparse}
+              title="Fragmentar inteligentemente con Claude (~45 palabras por escena)"
+            >
+              {loadingSmartReparse ? '🧠...' : '🧠 Smart'}
+            </button>
+          </div>
         </div>
         <StepRow num="2" label="Audio generado y timings calculados"           done={project.hasTiming} />
         <StepRow num="3" label="Plan de escenas generado (LLM → scene-plan.json)" done={project.hasPlan} />
@@ -374,6 +413,108 @@ function ProjectDetail({ project, onRefresh, setStatus }) {
   );
 }
 
+// ── Channel Memory Panel ─────────────────────────────────────────────────────
+function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
+  if (!memory) return (
+    <div style={{ ...S.card, textAlign: 'center', color: '#334155', fontSize: 13 }}>
+      Cargando memoria del canal...
+    </div>
+  );
+
+  const topPerf = [...(memory.mejor_rendimiento || [])]
+    .sort((a, b) => b.views - a.views)
+    .slice(0, 6);
+
+  return (
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+        <div style={{ fontSize: 13, fontWeight: 700, color: '#64748b', letterSpacing: '0.1em',
+          textTransform: 'uppercase' }}>
+          🧠 Memoria del Canal
+        </div>
+        <button
+          style={isSyncing ? S.btnDisabled : S.btn('#8b5cf6', '#fff')}
+          onClick={onSync}
+          disabled={isSyncing}
+        >
+          {isSyncing ? '🔄 Sincronizando...' : '🔄 Sincronizar YouTube'}
+        </button>
+      </div>
+
+      <div style={S.memSection}>
+
+        {/* Temas usados */}
+        <div style={S.card}>
+          <div style={S.cardTitle}>Temas cubiertos ({memory.temas_usados?.length || 0})</div>
+          {(memory.temas_usados || []).map(t => (
+            <span key={t} style={S.memTag('#00d4ff')}>{t}</span>
+          ))}
+          {memory.temas_usados?.length === 0 && (
+            <div style={{ color: '#334155', fontSize: 12 }}>Sin temas aún</div>
+          )}
+        </div>
+
+        {/* Hook styles */}
+        <div style={S.card}>
+          <div style={S.cardTitle}>Hook styles usados ({memory.estilo_hooks?.length || 0})</div>
+          {(memory.estilo_hooks || []).map(h => (
+            <span key={h} style={S.memTag('#8b5cf6')}>{h}</span>
+          ))}
+          {memory.estilo_hooks?.length === 0 && (
+            <div style={{ color: '#334155', fontSize: 12 }}>Sin hooks registrados aún</div>
+          )}
+          <div style={{ marginTop: 10, fontSize: 11, color: '#475569' }}>
+            Total videos: <strong style={{ color: '#e2e8f0' }}>{memory.total_videos || 0}</strong>
+            {memory.ultima_publicacion && (
+              <span style={{ marginLeft: 10 }}>
+                Último: {new Date(memory.ultima_publicacion).toLocaleDateString('es-ES')}
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Rendimiento */}
+      {topPerf.length > 0 && (
+        <div style={S.card}>
+          <div style={S.cardTitle}>Rendimiento por video</div>
+          {topPerf.map(v => (
+            <div key={v.video_id} style={S.perfRow}>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: 12, color: '#e2e8f0', whiteSpace: 'nowrap',
+                  overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 280 }}>
+                  {v.tema}
+                </div>
+                <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>
+                  {v.hook_style}
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: 14, flexShrink: 0, marginLeft: 12 }}>
+                <span style={{ color: '#94a3b8', fontSize: 11 }}>
+                  👁 <strong style={{ color: '#e2e8f0' }}>{v.views.toLocaleString()}</strong>
+                </span>
+                <span style={{ color: '#94a3b8', fontSize: 11 }}>
+                  👍 <strong style={{ color: '#e2e8f0' }}>{v.likes}</strong>
+                </span>
+                {v.retention > 0 && (
+                  <span style={{ color: v.retention >= 0.6 ? '#22c55e' : '#f59e0b', fontSize: 11, fontWeight: 700 }}>
+                    {(v.retention * 100).toFixed(0)}% ret.
+                  </span>
+                )}
+                {v.ctr > 0 && (
+                  <span style={{ color: '#00d4ff', fontSize: 11, fontWeight: 700 }}>
+                    {(v.ctr * 100).toFixed(1)}% CTR
+                  </span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Main App ──────────────────────────────────────────────────────────────────
 export default function App() {
   const [projects,    setProjects]    = useState([]);
@@ -381,6 +522,8 @@ export default function App() {
   const [showNew,     setShowNew]     = useState(false);
   const [status,      setStatus]      = useState('Listo');
   const [statusType,  setStatusType]  = useState('idle'); // idle | ok | err | loading
+  const [memory,      setMemory]      = useState(null);
+  const [loadingSync, setLoadingSync] = useState(false);
 
   const loadProjects = useCallback(async () => {
     try {
@@ -397,7 +540,39 @@ export default function App() {
     }
   }, [selected]);
 
-  useEffect(() => { loadProjects(); }, []);
+  const loadMemory = useCallback(async () => {
+    try {
+      const res = await fetch(`${API}/api/memory`);
+      const data = await res.json();
+      setMemory(data);
+    } catch (_) {}
+  }, []);
+
+  const syncMemory = async () => {
+    setLoadingSync(true);
+    setSt('🔄 Sincronizando estadísticas y retención desde YouTube...');
+    try {
+      const res = await fetch(`${API}/api/memory/sync`, { method: 'POST' });
+      const data = await res.json();
+      if (res.ok) {
+        setSt('✅ Canal sincronizado y memoria actualizada correctamente.');
+        await loadMemory();
+      } else {
+        setSt(`❌ Error al sincronizar: ${data.error || 'error desconocido'}`);
+      }
+    } catch (e) {
+      setSt(`❌ Error de conexión al sincronizar canal: ${e.message}`);
+    } finally {
+      setLoadingSync(false);
+    }
+  };
+
+  useEffect(() => {
+    loadProjects();
+    loadMemory();
+  }, []);
+
+
 
   // Wrap setStatus to also set type
   const setSt = (msg) => {
@@ -501,14 +676,17 @@ export default function App() {
             <ProjectDetail project={selected} onRefresh={onRefresh} setStatus={setSt} />
           )}
           {!showNew && !selected && (
-            <div style={S.empty}>
-              <div style={{ fontSize: 40, marginBottom: 12 }}>🎬</div>
-              <div style={{ fontSize: 16, fontWeight: 600, color: '#475569' }}>
-                Selecciona un proyecto o crea uno nuevo
+            <div>
+              <div style={{ ...S.empty, padding: '20px 0 24px' }}>
+                <div style={{ fontSize: 32, marginBottom: 8 }}>🎬</div>
+                <div style={{ fontSize: 15, fontWeight: 600, color: '#475569' }}>
+                  Selecciona un proyecto o crea uno nuevo
+                </div>
+                <div style={{ fontSize: 12, color: '#334155', marginTop: 6 }}>
+                  Guion → Audio → Plan → Media → Remotion
+                </div>
               </div>
-              <div style={{ fontSize: 13, color: '#334155', marginTop: 8 }}>
-                Cada proyecto pasa por 5 pasos: guion → audio → plan → media → Remotion
-              </div>
+              <ChannelMemoryPanel memory={memory} onSync={syncMemory} isSyncing={loadingSync} />
             </div>
           )}
         </div>
