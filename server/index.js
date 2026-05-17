@@ -305,6 +305,45 @@ app.post('/api/memory/sync', (req, res) => {
     res.json({ message: 'Sincronización completada con éxito', stdout });
   });
 });
+// ── 9. Analyze comments ────────────────────────────────────────────────────────
+app.post('/api/projects/:id/analyze-comments', (req, res) => {
+  const { id } = req.params;
+  const { videoId } = req.body;
+  if (!videoId) return res.status(400).json({ error: 'Falta el videoId' });
+
+  console.log(`💬 Analizando comentarios de video ${videoId} para proyecto ${id}`);
+
+  exec(`node scripts/analyze-comments.js ${videoId}`, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
+    if (error) {
+      console.error(error.message);
+      return res.status(500).json({ error: 'Error analizando comentarios', detail: error.message });
+    }
+
+    const reportFile = path.join(PROJECTS_DIR, id, `comments-analysis-${videoId}.md`);
+    let reportContent = '';
+    if (fs.existsSync(reportFile)) {
+      reportContent = fs.readFileSync(reportFile, 'utf8');
+    } else {
+      reportContent = stdout;
+    }
+
+    res.json({ message: 'Comentarios analizados con éxito', report: reportContent });
+  });
+});
+
+app.get('/api/projects/:id/comments-analysis', (req, res) => {
+  const { id } = req.params;
+  const { videoId } = req.query;
+  if (!videoId) return res.status(400).json({ error: 'Falta el videoId' });
+
+  const reportFile = path.join(PROJECTS_DIR, id, `comments-analysis-${videoId}.md`);
+  if (fs.existsSync(reportFile)) {
+    const content = fs.readFileSync(reportFile, 'utf8');
+    return res.json({ exists: true, report: content });
+  }
+
+  res.json({ exists: false });
+});
 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);

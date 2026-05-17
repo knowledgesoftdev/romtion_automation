@@ -188,7 +188,7 @@ function NewProjectPanel({ onCreated, setStatus }) {
 }
 
 // ── Project Detail ────────────────────────────────────────────────────────────
-function ProjectDetail({ project, onRefresh, setStatus }) {
+function ProjectDetail({ project, onRefresh, setStatus, memory }) {
   const [loadingAudio,    setLoadingAudio]    = useState(false);
   const [loadingPlan,     setLoadingPlan]     = useState(false);
   const [loadingMedia,    setLoadingMedia]    = useState(false);
@@ -196,6 +196,83 @@ function ProjectDetail({ project, onRefresh, setStatus }) {
   const [loadingReparse,  setLoadingReparse]  = useState(false);
 
   const [loadingSmartReparse, setLoadingSmartReparse] = useState(false);
+
+  // States for comments analysis
+  const [commentsReport, setCommentsReport] = useState(null);
+  const [loadingComments, setLoadingComments] = useState(false);
+
+  const matchedVideo = memory?.mejor_rendimiento?.find(v => {
+    return project.id.toLowerCase().startsWith(v.tema.toLowerCase()) || 
+           v.tema.toLowerCase().startsWith(project.id.split('-')[0]);
+  });
+
+  useEffect(() => {
+    setCommentsReport(null);
+    if (matchedVideo) {
+      fetch(`${API}/api/projects/${project.id}/comments-analysis?videoId=${matchedVideo.video_id}`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.exists) {
+            setCommentsReport(data.report);
+          }
+        })
+        .catch(err => console.error('Error cargando análisis de comentarios:', err));
+    }
+  }, [project.id, matchedVideo]);
+
+  const analyzeComments = async () => {
+    if (!matchedVideo) return;
+    setLoadingComments(true);
+    setStatus('💬 Descargando y analizando comentarios de YouTube con Claude...');
+    try {
+      const res = await fetch(`${API}/api/projects/${project.id}/analyze-comments`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ videoId: matchedVideo.video_id }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setCommentsReport(data.report);
+      setStatus('✅ Análisis de comentarios completado');
+    } catch (err) {
+      setStatus(`❌ Error analizando comentarios: ${err.message}`);
+    } finally {
+      setLoadingComments(false);
+    }
+  };
+
+  const renderMarkdown = (text) => {
+    if (!text) return null;
+    return text.split('\n').map((line, idx) => {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('### **Autor**') || trimmed.startsWith('### **Usuario**') || trimmed.startsWith('### Autor:')) {
+        return <h4 key={idx} style={{ color: '#8b5cf6', marginTop: 16, marginBottom: 8, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{line.replace(/^###\s*/, '')}</h4>;
+      }
+      if (trimmed.startsWith('###')) {
+        return <h4 key={idx} style={{ color: '#e2e8f0', marginTop: 14, marginBottom: 6, fontSize: 14, fontWeight: 700 }}>{line.replace(/^###\s*/, '')}</h4>;
+      }
+      if (trimmed.startsWith('##')) {
+        return <h3 key={idx} style={{ color: '#00d4ff', marginTop: 20, marginBottom: 8, fontSize: 15, fontWeight: 700, borderBottom: '1px solid #1e2a3a', paddingBottom: 4 }}>{line.replace(/^##\s*/, '')}</h3>;
+      }
+      if (trimmed.startsWith('#')) {
+        return <h2 key={idx} style={{ color: '#fff', marginTop: 0, marginBottom: 12, fontSize: 18, fontWeight: 800 }}>{line.replace(/^#\s*/, '')}</h2>;
+      }
+      if (trimmed.startsWith('-') || trimmed.startsWith('*')) {
+        return <li key={idx} style={{ color: '#94a3b8', fontSize: 13, marginLeft: 16, marginBottom: 4 }}>{line.replace(/^[-*]\s*/, '')}</li>;
+      }
+      if (trimmed.startsWith('>')) {
+        return (
+          <blockquote key={idx} style={{ borderLeft: '3px solid #8b5cf6', paddingLeft: 12, margin: '8px 0', color: '#cbd5e1', fontStyle: 'italic', fontSize: 13, backgroundColor: '#8b5cf60a', padding: '8px 12px', borderRadius: 4 }}>
+            {line.replace(/^>\s*/, '')}
+          </blockquote>
+        );
+      }
+      if (trimmed === '---') {
+        return <hr key={idx} style={{ border: 'none', borderTop: '1px solid #1e2a3a', margin: '16px 0' }} />;
+      }
+      return <p key={idx} style={{ color: '#94a3b8', fontSize: 13, margin: '4px 0 8px 0', lineHeight: 1.5 }}>{line}</p>;
+    });
+  };
 
   const smartReparse = async () => {
     setLoadingSmartReparse(true);
@@ -407,6 +484,50 @@ function ProjectDetail({ project, onRefresh, setStatus }) {
           {project.hasMedia && <div style={{ color: '#22c55e', fontSize: 12, marginTop: 8 }}>✓ Media en images/ y videos/</div>}
         </div>
 
+      </div>
+
+      {/* Step 6 — YouTube Comments Analysis */}
+      <div style={S.card}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+          <div style={S.cardTitle}>💬 Comunidad — Análisis de Comentarios (YouTube)</div>
+          {matchedVideo && (
+            <button
+              style={loadingComments ? S.btnDisabled : S.btn('#8b5cf6', '#fff')}
+              onClick={analyzeComments}
+              disabled={loadingComments}
+            >
+              {loadingComments ? 'Analizando...' : (commentsReport ? '🔄 Volver a Analizar' : '🔍 Analizar Comentarios')}
+            </button>
+          )}
+        </div>
+
+        {!matchedVideo ? (
+          <div style={{ color: '#64748b', padding: '16px', backgroundColor: '#1e2a3a22', borderRadius: 8, border: '1px dashed #1e2a3a', fontSize: 13, lineHeight: 1.5 }}>
+            ⚠️ Este proyecto aún no ha sido sincronizado con un video publicado en YouTube.
+            <br />
+            Para poder analizar sus comentarios, sube el video a YouTube, agrégalo a tu canal y haz clic en el botón morado <strong>"Sincronizar YouTube"</strong> en el Dashboard de inicio.
+          </div>
+        ) : (
+          <div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, marginBottom: 16, padding: '10px 14px', backgroundColor: '#1e2a3a44', borderRadius: 6, fontSize: 12, border: '1px solid #1e2a3a' }}>
+              <div>Video ID: <strong style={{ color: '#e2e8f0' }}>{matchedVideo.video_id}</strong></div>
+              <div>Vistas: <strong style={{ color: '#e2e8f0' }}>{matchedVideo.views.toLocaleString()}</strong></div>
+              <div>Likes: <strong style={{ color: '#e2e8f0' }}>{matchedVideo.likes}</strong></div>
+              {matchedVideo.ctr > 0 && <div>CTR: <strong style={{ color: '#00d4ff' }}>{(matchedVideo.ctr * 100).toFixed(1)}%</strong></div>}
+              {matchedVideo.retention > 0 && <div>Retención: <strong style={{ color: '#22c55e' }}>{(matchedVideo.retention * 100).toFixed(0)}%</strong></div>}
+            </div>
+
+            {commentsReport ? (
+              <div style={{ maxHeight: 500, overflowY: 'auto', padding: '16px 20px', backgroundColor: '#090d16', borderRadius: 8, border: '1px solid #1e2a3a' }}>
+                {renderMarkdown(commentsReport)}
+              </div>
+            ) : (
+              <div style={{ color: '#64748b', fontSize: 13, fontStyle: 'italic' }}>
+                Haz clic en el botón superior para descargar los comentarios actuales de este video desde YouTube y recibir el informe analítico de Claude con sugerencias de respuestas para copiar.
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
     </div>
@@ -673,7 +794,7 @@ export default function App() {
             <NewProjectPanel onCreated={onProjectCreated} setStatus={setSt} />
           )}
           {!showNew && selected && (
-            <ProjectDetail project={selected} onRefresh={onRefresh} setStatus={setSt} />
+            <ProjectDetail project={selected} onRefresh={onRefresh} setStatus={setSt} memory={memory} />
           )}
           {!showNew && !selected && (
             <div>
