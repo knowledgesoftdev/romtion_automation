@@ -303,6 +303,13 @@ async function main() {
   fs.writeFileSync(outputPath, output, 'utf8');
   console.log(`\n✅ Guardado en: ${outputPath}`);
 
+  // Asegurar que la carpeta de miniaturas exista para el proyecto
+  const thumbnailsDir = path.join(projectDir, 'thumbnails');
+  if (!fs.existsSync(thumbnailsDir)) {
+    fs.mkdirSync(thumbnailsDir, { recursive: true });
+    console.log(`📁 Carpeta de miniaturas creada en: ${thumbnailsDir}`);
+  }
+
   // Actualizar memoria del canal
   if (!memory.estilo_titulo_historial) memory.estilo_titulo_historial = [];
   if (!memory.miniatura_conceptos)     memory.miniatura_conceptos     = [];
