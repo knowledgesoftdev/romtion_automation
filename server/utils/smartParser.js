@@ -1,11 +1,13 @@
 /**
  * server/utils/smartParser.js
- * Parser inteligente para guiones de "Código Muerto".
- * Usa Claude para fragmentar el texto en párrafos cortos y visualmente
- * efectivos (≤45 palabras). Si Claude no está disponible, hace fallback
- * al parser determinista existente.
  *
- * Principio: cada párrafo = 1 escena visual. Escenas cortas = más dinamismo.
+ * v4 — Schema multi-element estilo "explainer board":
+ *      Cada escena devuelve un array `visual.elements[]` con 4-7 elementos
+ *      visuales (pexels_image | icon | logo | label_red | label_black |
+ *      motion_graphic) posicionados en una constelación de 7 slots y
+ *      sincronizados con el audio vía `trigger_word`.
+ *
+ * Mantiene fallback al parser determinista cuando Claude no está disponible.
  */
 
 require('dotenv').config();
@@ -15,158 +17,552 @@ let Anthropic;
 try { Anthropic = require('@anthropic-ai/sdk'); } catch (_) { Anthropic = null; }
 
 const MAX_WORDS_PER_FRAGMENT = 45;
-const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
+const CHUNK_SIZE             = 10;   // párrafos por petición (menos que antes porque cada uno genera más JSON)
+const ANTHROPIC_MODEL        = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
 
-// ── Prompt de fragmentación ────────────────────────────────────────────────────
-const FRAGMENT_SYSTEM = `Eres un editor de video especializado en minidocumentales rápidos estilo YouTube.
-Tu tarea: recibir un guion de video y dividirlo en fragmentos cortos para escenas de video.
+// ── Constantes de validación ─────────────────────────────────────────────────
+const VALID_SLOTS = [
+  'top-left', 'top-right',
+  'mid-left', 'center', 'mid-right',
+  'bottom-left', 'bottom-right',
+];
 
-REGLAS ESTRICTAS:
-1. Cada fragmento debe tener entre 20 y 45 palabras (NUNCA más de 45).
-2. Cada fragmento debe tener sentido semántico completo por sí solo.
-3. Los títulos de sección (ej: "DECISIÓN UNO:", "QUÉ ERA:") van como fragmentos solos de 1 línea.
-4. Las líneas de [ANIMACIÓN N:] se eliminan completamente del output.
-5. La sección [ANIMACIONES — LISTA COMPLETA] y todo lo que sigue se elimina completamente.
-6. Mantén el orden narrativo exacto del guion original.
-7. Si una oración tiene más de 45 palabras, córtala en el punto más natural (coma, punto y coma, conjunción).
-8. NO inventes contenido. Solo reorganiza y corta el texto existente.
+const VALID_SIZES = ['sm', 'md', 'lg', 'xl'];
 
-FORMATO DE SALIDA: devuelve un array JSON donde cada elemento es un objeto { "texto": "..." }.
-NADA más. Solo el array JSON sin markdown ni explicaciones.`;
+const VALID_MOTION_GRAPHICS = [
+  'contador_porcentaje', 'donut_chart',
+  'flecha_subiendo', 'flecha_bajando', 'timeline_barras',
+];
 
-// ── Claude call ────────────────────────────────────────────────────────────────
+const VALID_ARROW_STYLES = ['dashed_curve', 'dashed_straight', 'solid'];
+
+const VALID_ELEMENT_TYPES = [
+  'pexels_image', 'icon', 'logo',
+  'label_red', 'label_black', 'motion_graphic',
+];
+
+const VALID_MOODS = ['neutro', 'urgente', 'positivo', 'nostalgia'];
+
+// Lista curada de iconos permitidos de Flat Color Icons.
+const ALLOWED_ICONS = [
+  'flat-color-icons:approve', 'flat-color-icons:cancel', 'flat-color-icons:alarm-clock',
+  'flat-color-icons:area-chart', 'flat-color-icons:bar-chart', 'flat-color-icons:line-chart',
+  'flat-color-icons:pie-chart', 'flat-color-icons:positive-dynamic', 'flat-color-icons:negative-dynamic',
+  'flat-color-icons:businessman', 'flat-color-icons:businesswoman', 'flat-color-icons:business',
+  'flat-color-icons:briefcase', 'flat-color-icons:business-contact', 'flat-color-icons:calculator',
+  'flat-color-icons:calendar', 'flat-color-icons:cell-phone', 'flat-color-icons:iphone',
+  'flat-color-icons:smartphone-tablet', 'flat-color-icons:multiple-smartphones', 'flat-color-icons:tablet-android',
+  'flat-color-icons:multiple-devices', 'flat-color-icons:display', 'flat-color-icons:command-line',
+  'flat-color-icons:document', 'flat-color-icons:download', 'flat-color-icons:upload',
+  'flat-color-icons:engineering', 'flat-color-icons:factory', 'flat-color-icons:factory-breakdown',
+  'flat-color-icons:globe', 'flat-color-icons:home', 'flat-color-icons:idea',
+  'flat-color-icons:settings', 'flat-color-icons:lock', 'flat-color-icons:unlock',
+  'flat-color-icons:key', 'flat-color-icons:link', 'flat-color-icons:money-transfer',
+  'flat-color-icons:currency-exchange', 'flat-color-icons:debt', 'flat-color-icons:paid',
+  'flat-color-icons:donate', 'flat-color-icons:news', 'flat-color-icons:rating',
+  'flat-color-icons:like', 'flat-color-icons:dislike', 'flat-color-icons:search',
+  'flat-color-icons:no-idea', 'flat-color-icons:google',
+  'flat-color-icons:linux', 'flat-color-icons:wikipedia', 'flat-color-icons:wi-fi-logo',
+  'flat-color-icons:checkmark', 'flat-color-icons:ok', 'flat-color-icons:plus',
+  'flat-color-icons:minus', 'flat-color-icons:next', 'flat-color-icons:previous',
+  'flat-color-icons:share', 'flat-color-icons:start', 'flat-color-icons:process',
+  'flat-color-icons:sim-card-chip', 'flat-color-icons:flash-on', 'flat-color-icons:electricity',
+  'flat-color-icons:electronics', 'flat-color-icons:integrated-webcam', 'flat-color-icons:gallery',
+  'flat-color-icons:picture', 'flat-color-icons:video-file', 'flat-color-icons:image-file',
+  'flat-color-icons:audio-file', 'flat-color-icons:film-reel', 'flat-color-icons:music',
+  'flat-color-icons:expired', 'flat-color-icons:safe', 'flat-color-icons:trademark',
+  'flat-color-icons:copyright', 'flat-color-icons:signature', 'flat-color-icons:graduation-cap',
+  'flat-color-icons:diploma-1', 'flat-color-icons:rules', 'flat-color-icons:decision',
+  'flat-color-icons:make-decision', 'flat-color-icons:statistics', 'flat-color-icons:timeline',
+];
+
+// ── Prompt principal (modo fragmentar y enriquecer en una sola pasada) ───────
+const FRAGMENT_SYSTEM = buildSystemPrompt({ withFragmentation: true });
+
+// ── Prompt de enriquecimiento (modo chunk: ya hay párrafos, sólo añadir visual)
+const ENRICH_SYSTEM = buildSystemPrompt({ withFragmentation: false });
+
+function buildSystemPrompt({ withFragmentation }) {
+  const iconList = ALLOWED_ICONS.join(', ');
+
+  const base = `Eres director de arte para un mini-documental tipo YouTube explainer (estilo ColdFusion, MoneyGPS, Patrick Boyle).
+Cada escena (parrafo del guion) genera una "constelacion" de 4-7 elementos visuales que aparecen secuencialmente
+sincronizados con la narracion del audio.
+
+REGLAS DE COMPOSICION:
+- 4 a 7 elementos por escena. NUNCA menos de 3. NUNCA mas de 7.
+- Cada elemento aparece cuando se pronuncia su "trigger_word" en el audio.
+- Slots disponibles: ${VALID_SLOTS.map(s => '"' + s + '"').join(', ')}
+- NO uses el mismo slot para 2 elementos en la misma escena.
+- "center" SOLO para 1 elemento hero por escena (tipicamente label_red con el dato clave).
+- Si la escena no tiene un dato hero, no uses "center".
+- Tamanos: ${VALID_SIZES.map(s => '"' + s + '"').join(', ')}  (sm 140px, md 200px, lg 280px, xl 380px).
+- chapter_title: el TEMA de la escena (1-3 palabras). Escenas consecutivas del mismo subtema deben compartir chapter_title.
+- color_mood: uno de ${VALID_MOODS.map(s => '"' + s + '"').join(', ')}.
+
+REGLAS ANTI-COLISION (CRITICAS para que los elementos no se monten):
+- MAXIMO 2 LABELS (label_red + label_black sumados) por fila. Filas: top (top-left,top-right) | mid (mid-left,center,mid-right) | bottom (bottom-left,bottom-right).
+- Si usas "center" con label_red o label_black, los slots mid-left y mid-right en esa misma escena DEBEN ser iconos, logos, motion_graphic o estar vacios. NUNCA labels.
+- En filas top y bottom puedes tener label izquierda + label derecha pero ambas deben ser cortas (label_red <=10 chars, label_black <=18 chars).
+- NUNCA pongas 3 labels seguidas en la misma fila.
+
+TIPOS DE ELEMENTO:
+
+1. "pexels_image" - foto stock real. Para productos fisicos, personas, lugares, eventos historicos.
+   Campos: query (3-5 palabras INGLES MUY especificas), slot, trigger_word, size
+   Ejemplos de query: "blackberry phone qwerty keyboard", "wall street trading floor 2008",
+                      "nokia phone snake game", "intel chip socket motherboard"
+   PROHIBIDO: queries genericas tipo "technology", "business", "concept".
+
+2. "icon" - icono plano coloreado de Flat Color Icons. Para conceptos abstractos.
+   Campos: icon_name (UNO de la lista permitida), slot, trigger_word, size
+   ICONOS PERMITIDOS:
+   ${iconList}
+
+3. "logo" - logo de marca via simple-icons. Para empresas y productos comerciales.
+   Campos: name (lowercase, sin sufijo "logo"), slot, trigger_word, size
+   Ejemplos: "blackberry", "intel", "apple", "google", "samsung", "nokia", "amd", "nvidia"
+   IMPORTANTE: "ibm" y "microsoft" NO estan disponibles. Para esos usa label_black con el nombre.
+
+4. "label_red" - texto grande en rojo estilo sticker. Para anos, cifras hero, datos clave.
+   Campos: text, slot, trigger_word, size
+   LIMITES DE TEXTO: maximo 12 caracteres. PREFIERE 1-6 caracteres ("1971", "40%", "$1B", "147M").
+   Si necesitas explicar mas, usa label_black aparte. NO inventes textos largos como "30 Enero 2007" — corta a "2007" o "Enero".
+   Ejemplos buenos: "1971", "40%", "$1B", "147M", "2007", "SSE3", "x86"
+   Ejemplos malos: "SIMD Extensions" (15 chars), "30 Enero 2007" (13 chars).
+
+5. "label_black" - texto negrita negro. Para nombres de producto, conceptos clave.
+   Campos: text, slot, trigger_word, size
+   LIMITES DE TEXTO: maximo 22 caracteres. Ideal 4-15 caracteres.
+   Ejemplos buenos: "4-bit processor", "Pentium III", "the Original IBM", "Java Struts 2", "Windows XP"
+   Ejemplos malos: "Windows Display Driver Model" (28 chars), "5 años desarrollo" (16 OK).
+
+6. "motion_graphic" - grafico animado vectorial. Para porcentajes y tendencias.
+   Campos: graphic, value, slot, trigger_word, size
+   graphic permitidos: ${VALID_MOTION_GRAPHICS.map(s => '"' + s + '"').join(', ')}
+   value: el dato (ej: "40", "60", "2005,2007,2010", "1.5")
+   USAR 0 o 1 motion_graphic por escena. No mas.
+
+CAMPOS COMUNES de cada elemento:
+- id: letra unica dentro de la escena ("a", "b", "c", "d", ...)
+- slot, trigger_word, size
+- trigger_word: la palabra EXACTA del texto del parrafo que dispara la aparicion. DEBE estar en el texto.
+
+ARROWS (opcional):
+- arrows: array de { from: "<id>", to: "<id>", style: "dashed_curve" | "dashed_straight" | "solid" }
+- Maximo 2 flechas por escena. Conecta elementos logicamente relacionados.
+
+EJEMPLO de una escena con texto "BlackBerry dominaba el 40% del mercado smartphone en 2007 con su teclado fisico":
+{
+  "texto": "BlackBerry dominaba el 40% del mercado smartphone en 2007 con su teclado fisico",
+  "chapter_title": "BlackBerry",
+  "visual": {
+    "color_mood": "urgente",
+    "elements": [
+      { "id": "a", "type": "logo", "name": "blackberry", "slot": "top-left", "trigger_word": "BlackBerry", "size": "lg" },
+      { "id": "b", "type": "pexels_image", "query": "blackberry phone qwerty keyboard", "slot": "top-right", "trigger_word": "teclado", "size": "md" },
+      { "id": "c", "type": "label_red", "text": "40%", "slot": "center", "trigger_word": "40", "size": "xl" },
+      { "id": "d", "type": "icon", "icon_name": "flat-color-icons:pie-chart", "slot": "mid-right", "trigger_word": "mercado", "size": "md" },
+      { "id": "e", "type": "label_black", "text": "2007", "slot": "bottom-right", "trigger_word": "2007", "size": "lg" },
+      { "id": "f", "type": "motion_graphic", "graphic": "donut_chart", "value": "40", "slot": "bottom-left", "trigger_word": "40", "size": "md" }
+    ],
+    "arrows": [
+      { "from": "a", "to": "c", "style": "dashed_curve" }
+    ]
+  }
+}`;
+
+  if (withFragmentation) {
+    return `${base}
+
+ADICIONALMENTE, tu tarea es FRAGMENTAR el guion completo:
+- Divide el texto en fragmentos de 20-45 palabras (NUNCA mas de 45).
+- Cada fragmento debe tener sentido semantico completo.
+- Los titulos de seccion (ej: "DECISION UNO:", "QUE ERA:") como fragmentos solos de 1 linea.
+- Elimina lineas [ANIMACION N:] y la seccion [ANIMACIONES - LISTA COMPLETA].
+- Mantén el orden narrativo exacto.
+- NO inventes contenido.
+
+FORMATO DE SALIDA: SOLO un array JSON donde cada elemento tiene EXACTAMENTE: { "texto": "...", "chapter_title": "...", "visual": {...} }
+Sin markdown, sin explicaciones.`;
+  }
+
+  return `${base}
+
+Recibiras un array JSON con parrafos ya cortados (solo campo "texto"). Tu UNICA tarea: anadir "chapter_title" y "visual" a cada elemento.
+NO modifiques el texto.
+FORMATO DE SALIDA: array JSON completo con texto + chapter_title + visual. Sin markdown.`;
+}
+
+// ── Visual por defecto (fallback) ────────────────────────────────────────────
+function defaultVisual() {
+  return {
+    color_mood: 'neutro',
+    elements:   [],
+    arrows:     [],
+  };
+}
+
+function defaultChapterTitle(rawText, projectName) {
+  // Toma primeras 2-3 palabras significativas del texto como chapter title.
+  const stop = new Set(['el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
+                        'de', 'del', 'al', 'a', 'en', 'con', 'por', 'para',
+                        'y', 'o', 'pero', 'que', 'se', 'su', 'sus', 'lo']);
+  const words = (rawText || '').split(/\s+/).filter(w => w.length > 2 && !stop.has(w.toLowerCase()));
+  if (words.length === 0) return projectName || 'Tema';
+  return words.slice(0, 2).join(' ');
+}
+
+// ── Validación del campo visual completo ─────────────────────────────────────
+function validateElement(raw, scene, usedSlots) {
+  if (!raw || typeof raw !== 'object') return null;
+  const type = String(raw.type || '').trim();
+  if (!VALID_ELEMENT_TYPES.includes(type)) return null;
+
+  const slot = VALID_SLOTS.includes(raw.slot) ? raw.slot : null;
+  if (!slot) return null;
+  if (usedSlots.has(slot)) return null;          // no duplicar slot
+  usedSlots.add(slot);
+
+  const size = VALID_SIZES.includes(raw.size) ? raw.size : 'md';
+  const trigger = typeof raw.trigger_word === 'string' ? raw.trigger_word.trim() : '';
+  const id = typeof raw.id === 'string' && raw.id.length <= 3 ? raw.id : null;
+  if (!id) return null;
+
+  const base = { id, type, slot, size, trigger_word: trigger };
+
+  switch (type) {
+    case 'pexels_image': {
+      const q = typeof raw.query === 'string' ? raw.query.trim() : '';
+      if (!q || q.length < 3) return null;
+      return { ...base, query: q };
+    }
+    case 'icon': {
+      const ic = typeof raw.icon_name === 'string' ? raw.icon_name.trim() : '';
+      if (!ALLOWED_ICONS.includes(ic)) {
+        // Si Claude inventó un nombre fuera de la lista, caemos a un icono seguro.
+        return { ...base, icon_name: 'flat-color-icons:idea' };
+      }
+      return { ...base, icon_name: ic };
+    }
+    case 'logo': {
+      const n = typeof raw.name === 'string' ? raw.name.trim().toLowerCase() : '';
+      if (!n) return null;
+      return { ...base, name: n };
+    }
+    case 'label_red': {
+      let t = typeof raw.text === 'string' ? raw.text.trim() : '';
+      if (!t) return null;
+      // Si Claude pasó texto largo, lo recortamos al primer fragmento corto
+      // (palabra clave o número). Buscamos un número/sigla primero.
+      if (t.length > 12) {
+        const numMatch = t.match(/[\d.,$%KMBkmb€]+/);
+        if (numMatch) t = numMatch[0];
+        else t = t.split(/\s+/)[0];
+        t = t.slice(0, 12);
+      }
+      return { ...base, text: t };
+    }
+    case 'label_black': {
+      let t = typeof raw.text === 'string' ? raw.text.trim() : '';
+      if (!t) return null;
+      if (t.length > 22) t = t.slice(0, 22);
+      return { ...base, text: t };
+    }
+    case 'motion_graphic': {
+      const g = VALID_MOTION_GRAPHICS.includes(raw.graphic) ? raw.graphic : 'donut_chart';
+      const v = typeof raw.value === 'string' ? raw.value : (typeof raw.value === 'number' ? String(raw.value) : '');
+      return { ...base, graphic: g, value: v };
+    }
+    default:
+      return null;
+  }
+}
+
+function validateArrow(raw, elementIds) {
+  if (!raw || typeof raw !== 'object') return null;
+  const from = String(raw.from || '').trim();
+  const to   = String(raw.to   || '').trim();
+  if (!elementIds.has(from) || !elementIds.has(to) || from === to) return null;
+  const style = VALID_ARROW_STYLES.includes(raw.style) ? raw.style : 'dashed_curve';
+  return { from, to, style };
+}
+
+function validateVisual(raw, sceneText) {
+  if (!raw || typeof raw !== 'object') return defaultVisual();
+
+  const mood = VALID_MOODS.includes(raw.color_mood) ? raw.color_mood : 'neutro';
+
+  const usedSlots = new Set();
+  const rawElements = Array.isArray(raw.elements) ? raw.elements : [];
+
+  // Hay que filtrar y limpiar
+  let elements = [];
+  for (const el of rawElements) {
+    const ve = validateElement(el, sceneText, usedSlots);
+    if (ve) elements.push(ve);
+    if (elements.length >= 7) break;
+  }
+
+  // Si quedó vacío (Claude rompió todo el output), devolvemos default
+  if (elements.length === 0) return defaultVisual();
+
+  elements = enforceLayoutRules(elements);
+
+  // Validar arrows contra los IDs realmente presentes
+  const ids = new Set(elements.map(e => e.id));
+  const arrows = Array.isArray(raw.arrows)
+    ? raw.arrows.map(a => validateArrow(a, ids)).filter(Boolean).slice(0, 2)
+    : [];
+
+  return { color_mood: mood, elements, arrows };
+}
+
+// Enforce reglas anti-colision al output de Claude (por si ignoró las reglas del prompt).
+//   1. Si "center" tiene label, mid-left y mid-right NO pueden ser labels (se eliminan)
+//   2. Maximo 2 labels por fila (top, mid, bottom)
+function enforceLayoutRules(elements) {
+  const isLabel = (el) => el.type === 'label_red' || el.type === 'label_black';
+
+  const center = elements.find(e => e.slot === 'center');
+  const centerHasLabel = center && isLabel(center);
+
+  let filtered = elements.filter(el => {
+    if (centerHasLabel && (el.slot === 'mid-left' || el.slot === 'mid-right') && isLabel(el)) {
+      return false;
+    }
+    return true;
+  });
+
+  // Max 2 labels por fila
+  const rows = {
+    top:    ['top-left', 'top-right'],
+    mid:    ['mid-left', 'center', 'mid-right'],
+    bottom: ['bottom-left', 'bottom-right'],
+  };
+  for (const slotList of Object.values(rows)) {
+    const labelsInRow = filtered.filter(el => slotList.includes(el.slot) && isLabel(el));
+    if (labelsInRow.length > 2) {
+      // Mantenemos los primeros 2 (orden de inserción), descartamos el resto
+      const dropIds = new Set(labelsInRow.slice(2).map(e => e.id));
+      filtered = filtered.filter(el => !dropIds.has(el.id));
+    }
+  }
+
+  return filtered;
+}
+
+// ── Llamada Claude: fragmentar guion completo ────────────────────────────────
 async function fragmentWithClaude(rawScript) {
   if (!Anthropic || !process.env.ANTHROPIC_API_KEY) {
     throw new Error('Anthropic no disponible');
   }
-
   const Client = Anthropic.default || Anthropic;
   const client = new Client();
 
-  // Dividimos el guion en chunks de ~3000 chars para no saturar el contexto
-  // Claude procesa el guion completo si es razonable (<15k chars)
   const res = await client.messages.create({
-    model: ANTHROPIC_MODEL,
-    max_tokens: 8000,
-    system: FRAGMENT_SYSTEM,
+    model:      ANTHROPIC_MODEL,
+    max_tokens: 16000,                  // multi-element pide mucho mas JSON
+    system:     FRAGMENT_SYSTEM,
     messages: [{
       role: 'user',
-      content: `Guion a fragmentar:\n\n${rawScript}\n\nDevuelve solo el array JSON.`,
+      content: `Guion a fragmentar:\n\n${rawScript}\n\nDevuelve solo el array JSON con texto + chapter_title + visual por cada escena.`,
     }],
   });
 
+  return extractJsonArray(res);
+}
+
+// ── Llamada Claude: enriquecer chunk de párrafos ya cortados ─────────────────
+async function enrichChunkWithClaude(client, paragraphs) {
+  const input = paragraphs.map(p => ({ texto: p.texto }));
+  const res = await client.messages.create({
+    model:      ANTHROPIC_MODEL,
+    max_tokens: 8000,
+    system:     ENRICH_SYSTEM,
+    messages: [{
+      role: 'user',
+      content: `Añade chapter_title y visual a cada parrafo:\n\n${JSON.stringify(input, null, 2)}\n\nDevuelve el array completo.`,
+    }],
+  });
+  return extractJsonArray(res);
+}
+
+function extractJsonArray(res) {
   let text = '';
   for (const block of res.content || []) {
     if (block.type === 'text') text += block.text;
   }
-
-  // Limpiar posible markdown
   text = text.trim()
     .replace(/^```(?:json)?\s*/i, '')
     .replace(/```\s*$/i, '');
-
   const start = text.indexOf('[');
   const end   = text.lastIndexOf(']');
-  if (start === -1 || end === -1) throw new Error('Claude no devolvió un array JSON válido');
-
+  if (start === -1 || end === -1) throw new Error('Claude no devolvio un array JSON valido');
   const parsed = JSON.parse(text.substring(start, end + 1));
   if (!Array.isArray(parsed)) throw new Error('Resultado no es un array');
-
   return parsed;
 }
 
-// ── Validación y normalización de fragmentos ───────────────────────────────────
-function normalizeFragments(rawFragments) {
+// ── Normalización: limpiar y validar la salida cruda de Claude ───────────────
+function normalizeFragments(rawFragments, projectName) {
   const result = [];
   let counter = 1;
-
   for (const item of rawFragments) {
     const text = (item.texto || item.text || '').trim().replace(/\s+/g, ' ');
     if (!text || text.length < 10) continue;
 
-    // Contar palabras
-    const words = text.split(/\s+/).filter(Boolean);
+    const visual = validateVisual(item.visual, text);
+    const chapter_title =
+      (typeof item.chapter_title === 'string' && item.chapter_title.trim())
+        ? item.chapter_title.trim()
+        : defaultChapterTitle(text, projectName);
 
+    const words = text.split(/\s+/).filter(Boolean);
     if (words.length <= MAX_WORDS_PER_FRAGMENT) {
       result.push({
-        id: String(counter++).padStart(2, '0'),
-        texto: text,
+        id:            String(counter++).padStart(2, '0'),
+        texto:         text,
+        chapter_title,
+        visual,
       });
     } else {
-      // Si Claude devolvió algo muy largo, lo cortamos en el punto medio más cercano
+      // Si el fragmento vino demasiado largo, lo cortamos por la mitad usando puntuación.
       const half = Math.floor(words.length / 2);
-      // Buscar punto de corte natural (punto, coma) cerca del mid
       let cutIdx = half;
       for (let i = half; i >= half - 10 && i >= 0; i--) {
         if (/[.,;]$/.test(words[i])) { cutIdx = i + 1; break; }
       }
       const part1 = words.slice(0, cutIdx).join(' ');
       const part2 = words.slice(cutIdx).join(' ');
-      if (part1.length > 10) result.push({ id: String(counter++).padStart(2, '0'), texto: part1 });
-      if (part2.length > 10) result.push({ id: String(counter++).padStart(2, '0'), texto: part2 });
+      if (part1.length > 10) result.push({ id: String(counter++).padStart(2, '0'), texto: part1, chapter_title, visual });
+      if (part2.length > 10) result.push({ id: String(counter++).padStart(2, '0'), texto: part2, chapter_title, visual });
     }
   }
-
   return result;
 }
 
-// ── Fragmentación del parser determinista (fallback) ───────────────────────────
-// El parser determinista devuelve párrafos a veces muy largos.
-// Esta función los corta respetando el límite de palabras.
-function splitLongParagraphs(paragraphs) {
+// ── Corte de párrafos largos del parser determinista (sin visual) ────────────
+function splitLongParagraphs(paragraphs, projectName) {
   const result = [];
   let counter = 1;
-
   for (const p of paragraphs) {
     const words = p.texto.trim().split(/\s+/).filter(Boolean);
+    const chapter_title = defaultChapterTitle(p.texto, projectName);
     if (words.length <= MAX_WORDS_PER_FRAGMENT) {
-      result.push({ id: String(counter++).padStart(2, '0'), texto: p.texto });
+      result.push({
+        id:            String(counter++).padStart(2, '0'),
+        texto:         p.texto,
+        chapter_title,
+        visual:        defaultVisual(),
+      });
       continue;
     }
-
-    // Cortar en fragmentos de MAX_WORDS_PER_FRAGMENT buscando puntos naturales
     let i = 0;
     while (i < words.length) {
       let end = Math.min(i + MAX_WORDS_PER_FRAGMENT, words.length);
-      // Retroceder hasta un punto de corte natural
       let cut = end;
       for (let j = end - 1; j >= i + 15; j--) {
         if (/[.!?]$/.test(words[j])) { cut = j + 1; break; }
       }
       const fragment = words.slice(i, cut).join(' ');
       if (fragment.trim().length > 10) {
-        result.push({ id: String(counter++).padStart(2, '0'), texto: fragment });
+        result.push({
+          id:            String(counter++).padStart(2, '0'),
+          texto:         fragment,
+          chapter_title,
+          visual:        defaultVisual(),
+        });
       }
       i = cut;
     }
   }
-
   return result;
 }
 
-// ── Función principal exportada ────────────────────────────────────────────────
-/**
- * parseScriptSmart(rawScript)
- * Intenta fragmentar con Claude. Si falla, usa parser determinista + splitter.
- * @param {string} rawScript
- * @returns {Promise<Array<{id: string, texto: string}>>}
- */
-async function parseScriptSmart(rawScript) {
-  // Intento 1: Claude
-  try {
-    console.log('🧠 [smartParser] Fragmentando con Claude...');
-    const fragments = await fragmentWithClaude(rawScript);
-    const normalized = normalizeFragments(fragments);
-    console.log(`✅ [smartParser] Claude generó ${normalized.length} fragmentos`);
-    return normalized;
-  } catch (err) {
-    console.warn(`⚠️  [smartParser] Claude falló: ${err.message}. Usando parser determinista.`);
+// ── Modo chunk: parser determinista + enriquecer en lotes ────────────────────
+async function enrichInChunks(rawScript, projectName) {
+  if (!Anthropic || !process.env.ANTHROPIC_API_KEY) {
+    throw new Error('Anthropic no disponible');
+  }
+  const Client = Anthropic.default || Anthropic;
+  const client = new Client();
+
+  const deterministicParagraphs = parseScript(rawScript);
+  const base = splitLongParagraphs(deterministicParagraphs, projectName);
+  const total = base.length;
+  console.log(`🧩 [smartParser] Modo chunk multi-element: ${total} párrafos → lotes de ${CHUNK_SIZE}`);
+
+  const chunks = [];
+  for (let i = 0; i < total; i += CHUNK_SIZE) chunks.push(base.slice(i, i + CHUNK_SIZE));
+
+  const enriched = [];
+  let successChunks = 0;
+  let failedChunks  = 0;
+
+  for (let ci = 0; ci < chunks.length; ci++) {
+    const chunk = chunks[ci];
+    console.log(`  📦 Chunk ${ci + 1}/${chunks.length} (${chunk.length} párrafos)...`);
+    try {
+      const enrichedChunk = await enrichChunkWithClaude(client, chunk);
+      for (let i = 0; i < chunk.length; i++) {
+        const original = chunk[i];
+        const fromClaude = enrichedChunk[i];
+        const visual = validateVisual(fromClaude?.visual, original.texto);
+        const chapter_title =
+          (typeof fromClaude?.chapter_title === 'string' && fromClaude.chapter_title.trim())
+            ? fromClaude.chapter_title.trim()
+            : original.chapter_title;
+        enriched.push({
+          id:            original.id,
+          texto:         original.texto,
+          chapter_title,
+          visual,
+        });
+      }
+      successChunks++;
+    } catch (err) {
+      console.warn(`  ⚠️  Chunk ${ci + 1} falló: ${err.message}. Usando visual por defecto.`);
+      for (const p of chunk) enriched.push(p);
+      failedChunks++;
+    }
+    if (ci < chunks.length - 1) await new Promise(r => setTimeout(r, 500));
+  }
+  console.log(`✅ [smartParser] Chunks: ${successChunks} OK, ${failedChunks} fallback`);
+  return enriched;
+}
+
+// ── Función principal exportada ──────────────────────────────────────────────
+async function parseScriptSmart(rawScript, opts = {}) {
+  const projectName = opts.projectName || '';
+  const wordCount = rawScript.split(/\s+/).filter(Boolean).length;
+  const estimatedScenes = Math.ceil(wordCount / 30);
+  const useChunkMode = estimatedScenes > 20;
+
+  if (useChunkMode) {
+    console.log(`🧠 [smartParser] Guion largo (~${estimatedScenes} escenas) → modo chunk`);
+    try {
+      const result = await enrichInChunks(rawScript, projectName);
+      console.log(`✅ [smartParser] Chunk mode: ${result.length} fragmentos`);
+      return result;
+    } catch (err) {
+      console.warn(`⚠️  Chunk mode falló: ${err.message}. Fallback determinista.`);
+    }
+  } else {
+    try {
+      console.log(`🧠 [smartParser] Fragmentando+enriqueciendo con Claude (~${estimatedScenes} escenas)...`);
+      const raw = await fragmentWithClaude(rawScript);
+      const normalized = normalizeFragments(raw, projectName);
+      console.log(`✅ [smartParser] Claude generó ${normalized.length} fragmentos multi-element`);
+      return normalized;
+    } catch (err) {
+      console.warn(`⚠️  Claude falló: ${err.message}. Fallback determinista.`);
+    }
   }
 
-  // Fallback: parser determinista + corte de párrafos largos
   const deterministicParagraphs = parseScript(rawScript);
-  const result = splitLongParagraphs(deterministicParagraphs);
-  console.log(`✅ [smartParser] Fallback: ${result.length} fragmentos`);
+  const result = splitLongParagraphs(deterministicParagraphs, projectName);
+  console.log(`✅ [smartParser] Fallback: ${result.length} fragmentos (visual vacío)`);
   return result;
 }
 

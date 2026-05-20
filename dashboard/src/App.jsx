@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import NeuronGraph from './NeuronGraph';
 
 const API = 'http://localhost:5000';
 
@@ -135,6 +136,9 @@ function NewProjectPanel({ onCreated, setStatus }) {
   const [name,   setName]   = useState('');
   const [script, setScript] = useState('');
   const [loading, setLoading] = useState(false);
+  const [topicForPrompt, setTopicForPrompt] = useState('');
+  const [enrichedPrompt, setEnrichedPrompt] = useState(null);
+  const [loadingPrompt, setLoadingPrompt] = useState(false);
 
   const handleCreate = async () => {
     if (!name.trim() || !script.trim()) return;
@@ -158,30 +162,105 @@ function NewProjectPanel({ onCreated, setStatus }) {
     }
   };
 
+  const generateEnrichedPrompt = async () => {
+    setLoadingPrompt(true);
+    setStatus('🧠 Inyectando aprendizaje del canal en el prompt base...');
+    try {
+      const res = await fetch(`${API}/api/prompt/enriched`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tema: topicForPrompt.trim() || null }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || data.detail);
+      setEnrichedPrompt(data.content);
+      setStatus('✅ Prompt enriquecido listo. Copialo y pegalo en Claude/ChatGPT.');
+    } catch (err) {
+      setStatus(`❌ Error: ${err.message}`);
+    } finally {
+      setLoadingPrompt(false);
+    }
+  };
+
+  const copyPrompt = () => {
+    if (!enrichedPrompt) return;
+    navigator.clipboard.writeText(enrichedPrompt).then(
+      () => setStatus('📋 Prompt enriquecido copiado'),
+      () => setStatus('❌ No se pudo copiar')
+    );
+  };
+
   return (
-    <div style={S.card}>
-      <div style={S.cardTitle}>Nuevo proyecto</div>
-      <div style={{ marginBottom: 10 }}>
-        <input
-          style={S.input}
-          placeholder="Nombre del proyecto (ej: Historia de Flash)"
-          value={name}
-          onChange={e => setName(e.target.value)}
-        />
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+
+      {/* ── Paso 0: Generador de prompt con aprendizaje ──────────────────── */}
+      <div style={S.card}>
+        <div style={S.cardTitle}>🧠 Paso 0 — Prompt enriquecido con aprendizaje del canal</div>
+        <p style={{ fontSize: 13, color: '#64748b', marginTop: 0 }}>
+          Genera una versión de <code style={{ color: '#00d4ff' }}>prompt.txt</code> con los insights del canal inyectados:
+          temas ya cubiertos (no repetir), hooks ganadores, recomendaciones. Copialo y pegalo en Claude/ChatGPT para
+          que el guion nuevo aproveche todo lo aprendido.
+        </p>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 10 }}>
+          <input
+            style={{ ...S.input, flex: 1 }}
+            placeholder="(Opcional) Tema del próximo video — ej: 'Yahoo - la arquitectura monolítica'"
+            value={topicForPrompt}
+            onChange={e => setTopicForPrompt(e.target.value)}
+          />
+          <button
+            style={loadingPrompt ? S.btnDisabled : S.btn('#8b5cf6', '#fff')}
+            onClick={generateEnrichedPrompt}
+            disabled={loadingPrompt}
+          >
+            {loadingPrompt ? 'Generando...' : '🧠 Generar prompt'}
+          </button>
+        </div>
+        {enrichedPrompt && (
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 6 }}>
+              <button style={{ ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }} onClick={copyPrompt}>
+                📋 Copiar prompt
+              </button>
+            </div>
+            <div style={{
+              maxHeight: 280, overflowY: 'auto',
+              padding: '12px 16px', backgroundColor: '#060910',
+              border: '1px solid #1e2a3a', borderRadius: 6,
+              fontFamily: 'JetBrains Mono, monospace', fontSize: 11,
+              color: '#cbd5e1', whiteSpace: 'pre-wrap', lineHeight: 1.5,
+            }}>
+              {enrichedPrompt}
+            </div>
+          </div>
+        )}
       </div>
-      <textarea
-        style={S.textarea(280)}
-        placeholder="Pega aquí el guion completo que te entregó Claude..."
-        value={script}
-        onChange={e => setScript(e.target.value)}
-      />
-      <div style={{ marginTop: 10 }}>
-        {loading
-          ? <button style={S.btnDisabled} disabled>Procesando...</button>
-          : <button style={S.btn('#00d4ff')} onClick={handleCreate}>
-              Extraer guion
-            </button>
-        }
+
+      {/* ── Paso 1: Crear proyecto pegando guion ─────────────────────────── */}
+      <div style={S.card}>
+        <div style={S.cardTitle}>Paso 1 — Nuevo proyecto</div>
+        <div style={{ marginBottom: 10 }}>
+          <input
+            style={S.input}
+            placeholder="Nombre del proyecto (ej: Historia de Flash)"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+        </div>
+        <textarea
+          style={S.textarea(280)}
+          placeholder="Pega aquí el guion completo que te entregó Claude..."
+          value={script}
+          onChange={e => setScript(e.target.value)}
+        />
+        <div style={{ marginTop: 10 }}>
+          {loading
+            ? <button style={S.btnDisabled} disabled>Procesando...</button>
+            : <button style={S.btn('#00d4ff')} onClick={handleCreate}>
+                Extraer guion
+              </button>
+          }
+        </div>
       </div>
     </div>
   );
@@ -189,13 +268,16 @@ function NewProjectPanel({ onCreated, setStatus }) {
 
 // ── Project Detail ────────────────────────────────────────────────────────────
 function ProjectDetail({ project, onRefresh, setStatus, memory }) {
-  const [loadingAudio,    setLoadingAudio]    = useState(false);
-  const [loadingPlan,     setLoadingPlan]     = useState(false);
-  const [loadingMedia,    setLoadingMedia]    = useState(false);
-  const [loadingActivate, setLoadingActivate] = useState(false);
-  const [loadingReparse,  setLoadingReparse]  = useState(false);
-
-  const [loadingSmartReparse, setLoadingSmartReparse] = useState(false);
+  const [loadingAudio,       setLoadingAudio]       = useState(false);
+  const [loadingPlan,        setLoadingPlan]        = useState(false);
+  const [loadingMedia,       setLoadingMedia]       = useState(false);
+  const [loadingActivate,    setLoadingActivate]    = useState(false);
+  const [loadingReparse,     setLoadingReparse]     = useState(false);
+  const [loadingSmartReparse,setLoadingSmartReparse] = useState(false);
+  const [loadingWordTiming,  setLoadingWordTiming]  = useState(false);
+  const [hasWordTiming,      setHasWordTiming]      = useState(false);
+  const [loadingMetadata,    setLoadingMetadata]    = useState(false);
+  const [metadataContent,    setMetadataContent]    = useState(null);
 
   // States for comments analysis
   const [commentsReport, setCommentsReport] = useState(null);
@@ -205,6 +287,23 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
     return project.id.toLowerCase().startsWith(v.tema.toLowerCase()) || 
            v.tema.toLowerCase().startsWith(project.id.split('-')[0]);
   });
+
+  // Comprobar si ya existe word-timing.json para este proyecto
+  useEffect(() => {
+    fetch(`${API}/api/active-project`)
+      .then(res => res.json())
+      .then(data => setHasWordTiming(Array.isArray(data.wordTiming) && data.wordTiming.length > 0))
+      .catch(() => setHasWordTiming(false));
+  }, [project.id]);
+
+  // Cargar yt-metadata si ya existe
+  useEffect(() => {
+    setMetadataContent(null);
+    fetch(`${API}/api/projects/${project.id}/yt-metadata`)
+      .then(res => res.json())
+      .then(data => { if (data.exists) setMetadataContent(data.content); })
+      .catch(() => {});
+  }, [project.id]);
 
   useEffect(() => {
     setCommentsReport(null);
@@ -321,6 +420,22 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
     }
   };
 
+  const generateWordTiming = async () => {
+    setLoadingWordTiming(true);
+    setStatus('🎙️ Faster-Whisper analizando audio (puede tardar 1-3 min)...');
+    try {
+      const res  = await fetch(`${API}/api/projects/${project.id}/whisper-timing`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || data.detail);
+      setHasWordTiming(true);
+      setStatus('✅ word-timing.json generado — sincronización por palabra lista');
+    } catch (err) {
+      setStatus(`❌ Error en Whisper: ${err.message}`);
+    } finally {
+      setLoadingWordTiming(false);
+    }
+  };
+
   const generatePlan = async () => {
     setLoadingPlan(true);
     setStatus('Analizando guion con LLM y generando scene-plan.json...');
@@ -357,6 +472,31 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
     }
   };
 
+  const generateMetadata = async () => {
+    setLoadingMetadata(true);
+    setStatus('📺 Generando metadata YouTube con Claude (Capítulos, descripción, hashtags)...');
+    try {
+      const res  = await fetch(`${API}/api/projects/${project.id}/generate-yt-metadata`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || data.detail);
+      setMetadataContent(data.content);
+      setStatus(`✅ yt-metadata.txt generado correctamente`);
+      onRefresh();
+    } catch (err) {
+      setStatus(`❌ Error generando metadata: ${err.message}`);
+    } finally {
+      setLoadingMetadata(false);
+    }
+  };
+
+  const copyMetadata = () => {
+    if (!metadataContent) return;
+    navigator.clipboard.writeText(metadataContent).then(
+      () => setStatus('📋 Metadata copiada al portapapeles'),
+      () => setStatus('❌ No se pudo copiar')
+    );
+  };
+
   const activate = async () => {
     setLoadingActivate(true);
     setStatus('Activando proyecto en Remotion...');
@@ -372,7 +512,7 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
     }
   };
 
-  const readyToActivate = project.hasPlan && project.hasMedia;
+  const readyToActivate = project.hasGuion && project.hasMedia;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -417,9 +557,10 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
           </div>
         </div>
         <StepRow num="2" label="Audio generado y timings calculados"           done={project.hasTiming} />
-        <StepRow num="3" label="Plan de escenas generado (LLM → scene-plan.json)" done={project.hasPlan} />
+        <StepRow num="3" label="Plan de escenas generado (opcional, legacy)"   done={project.hasPlan} />
         <StepRow num="4" label="Imágenes y videos descargados (Pexels)"        done={project.hasMedia} />
-        <StepRow num="5" label="Proyecto activo en Remotion Studio"            done={project.active} />
+        <StepRow num="5" label="Metadata YouTube generada (yt-metadata.txt)"   done={project.hasMetadata} />
+        <StepRow num="6" label="Proyecto activo en Remotion Studio"            done={project.active} />
       </div>
 
       <div style={S.grid}>
@@ -444,6 +585,38 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
               </button>
             )
           }
+          {/* Word Timing — aparece solo cuando hay audio generado */}
+          {project.hasTiming && (
+            <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid #1e2a3a' }}>
+              <div style={{ fontSize: 11, color: '#475569', marginBottom: 8 }}>
+                🎙️ <strong style={{ color: '#94a3b8' }}>Word Timing</strong> — sincronización milimétrica
+              </div>
+              {hasWordTiming
+                ? (
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                    <div style={{ color: '#22c55e', fontSize: 12 }}>✓ word-timing.json listo</div>
+                    <button
+                      style={loadingWordTiming ? S.btnDisabled : { ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 10 }}
+                      onClick={generateWordTiming}
+                      disabled={loadingWordTiming}
+                      title="Regenerar timestamps por palabra"
+                    >
+                      {loadingWordTiming ? '...' : '↺ Regenerar'}
+                    </button>
+                  </div>
+                )
+                : (
+                  <button
+                    style={loadingWordTiming ? S.btnDisabled : S.btn('#8b5cf622', '#8b5cf6', '1px solid #8b5cf644')}
+                    onClick={generateWordTiming}
+                    disabled={loadingWordTiming}
+                  >
+                    {loadingWordTiming ? '🎙️ Analizando audio...' : '🎙️ Generar Word Timing'}
+                  </button>
+                )
+              }
+            </div>
+          )}
         </div>
 
         {/* Step 3 — Scene plan */}
@@ -470,20 +643,57 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
         <div style={S.card}>
           <div style={S.cardTitle}>Paso 4 — Descargar imágenes/videos</div>
           <p style={{ fontSize: 13, color: '#64748b', marginTop: 0 }}>
-            Descarga desde Pexels los medios definidos en el plan. Idempotente: no re-descarga lo existente.
+            Descarga desde Pexels los medios. Lee los elementos pexels_image del guion (o scene-plan.json si existe). Idempotente.
           </p>
           <button
-            style={project.hasPlan
+            style={project.hasGuion
               ? (loadingMedia ? S.btnDisabled : S.btn('#8b5cf6', '#fff'))
               : S.btnDisabled}
             onClick={fetchMedia}
-            disabled={!project.hasPlan || loadingMedia}
+            disabled={!project.hasGuion || loadingMedia}
           >
             {loadingMedia ? 'Descargando...' : project.hasMedia ? 'Re-descargar faltantes' : 'Descargar media'}
           </button>
           {project.hasMedia && <div style={{ color: '#22c55e', fontSize: 12, marginTop: 8 }}>✓ Media en images/ y videos/</div>}
         </div>
 
+      </div>
+
+      {/* Step 5 — YouTube Metadata */}
+      <div style={S.card}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 }}>
+          <div style={S.cardTitle}>📺 Paso 5 — Metadata YouTube (título, descripción, hashtags)</div>
+          {metadataContent && (
+            <button
+              style={{ ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
+              onClick={copyMetadata}
+            >
+              📋 Copiar
+            </button>
+          )}
+        </div>
+        <p style={{ fontSize: 13, color: '#64748b', marginTop: 0 }}>
+          Claude analiza el guion + memoria del canal y genera: título optimizado para CTR, descripción con capítulos (timestamps reales), hashtags, etiquetas SEO y concepto de miniatura. Listo para pegar en YouTube.
+        </p>
+        <button
+          style={project.hasGuion
+            ? (loadingMetadata ? S.btnDisabled : S.btn('#ef4444', '#fff'))
+            : S.btnDisabled}
+          onClick={generateMetadata}
+          disabled={!project.hasGuion || loadingMetadata}
+        >
+          {loadingMetadata ? 'Generando...' : (metadataContent ? '🔄 Regenerar metadata' : '🎬 Generar metadata YouTube')}
+        </button>
+        {metadataContent && (
+          <div style={{
+            marginTop: 16, maxHeight: 400, overflowY: 'auto',
+            padding: '14px 18px', backgroundColor: '#060910', border: '1px solid #1e2a3a',
+            borderRadius: 6, fontFamily: 'JetBrains Mono, monospace', fontSize: 11,
+            color: '#cbd5e1', whiteSpace: 'pre-wrap', lineHeight: 1.5,
+          }}>
+            {metadataContent}
+          </div>
+        )}
       </div>
 
       {/* Step 6 — YouTube Comments Analysis */}
@@ -638,13 +848,29 @@ function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
 
 // ── Main App ──────────────────────────────────────────────────────────────────
 export default function App() {
-  const [projects,    setProjects]    = useState([]);
-  const [selected,    setSelected]    = useState(null);
-  const [showNew,     setShowNew]     = useState(false);
-  const [status,      setStatus]      = useState('Listo');
-  const [statusType,  setStatusType]  = useState('idle'); // idle | ok | err | loading
-  const [memory,      setMemory]      = useState(null);
-  const [loadingSync, setLoadingSync] = useState(false);
+  const [projects,      setProjects]      = useState([]);
+  const [selected,      setSelected]      = useState(null);
+  const [showNew,       setShowNew]       = useState(false);
+  const [status,        setStatus]        = useState('Listo');
+  const [statusType,    setStatusType]    = useState('idle'); // idle | ok | err | loading
+  const [memory,        setMemory]        = useState(null);
+  const [loadingSync,   setLoadingSync]   = useState(false);
+  const [renderEngine,  setRenderEngine]  = useState(
+    () => localStorage.getItem('render_engine') || 'remotion'
+  );
+  const [insights,      setInsights]      = useState(null);
+
+  const ENGINES = [
+    { id: 'remotion',    label: 'Remotion',    sublabel: 'React + TypeScript', icon: '⚗️', activo: true  },
+    { id: 'hyperframes', label: 'HyperFrames', sublabel: 'HTML + GSAP — HeyGen', icon: '🎦', activo: false, badge: 'Próximamente' },
+  ];
+
+  const selectEngine = (id) => {
+    const engine = ENGINES.find(e => e.id === id);
+    if (!engine || !engine.activo) return;
+    setRenderEngine(id);
+    localStorage.setItem('render_engine', id);
+  };
 
   const loadProjects = useCallback(async () => {
     try {
@@ -669,6 +895,14 @@ export default function App() {
     } catch (_) {}
   }, []);
 
+  const loadInsights = useCallback(async () => {
+    try {
+      const res = await fetch(`${API}/api/memory/insights`);
+      const data = await res.json();
+      setInsights(data);
+    } catch (_) {}
+  }, []);
+
   const syncMemory = async () => {
     setLoadingSync(true);
     setSt('🔄 Sincronizando estadísticas y retención desde YouTube...');
@@ -678,6 +912,7 @@ export default function App() {
       if (res.ok) {
         setSt('✅ Canal sincronizado y memoria actualizada correctamente.');
         await loadMemory();
+        await loadInsights();
       } else {
         setSt(`❌ Error al sincronizar: ${data.error || 'error desconocido'}`);
       }
@@ -691,6 +926,7 @@ export default function App() {
   useEffect(() => {
     loadProjects();
     loadMemory();
+    loadInsights();
   }, []);
 
 
@@ -798,7 +1034,64 @@ export default function App() {
           )}
           {!showNew && !selected && (
             <div>
-              <div style={{ ...S.empty, padding: '20px 0 24px' }}>
+              {/* ── Selector de motor de renderizado ──────────────────────────── */}
+              <div style={{ ...S.card, marginBottom: 16 }}>
+                <div style={S.cardTitle}>🎬 Motor de Renderizado</div>
+                <div style={{ display: 'flex', gap: 12 }}>
+                  {ENGINES.map(engine => (
+                    <div
+                      key={engine.id}
+                      onClick={() => selectEngine(engine.id)}
+                      style={{
+                        position: 'relative',
+                        flex: 1,
+                        padding: '14px 16px',
+                        borderRadius: 8,
+                        border: renderEngine === engine.id
+                          ? '2px solid #00d4ff'
+                          : '2px solid #1e2a3a',
+                        background: renderEngine === engine.id ? '#00d4ff0a' : '#060910',
+                        cursor: engine.activo ? 'pointer' : 'not-allowed',
+                        opacity: engine.activo ? 1 : 0.45,
+                        transition: 'border-color 0.15s, background 0.15s',
+                      }}
+                    >
+                      {engine.badge && (
+                        <div style={{
+                          position: 'absolute', top: 8, right: 8,
+                          fontSize: 9, fontWeight: 700, padding: '2px 6px', borderRadius: 4,
+                          background: '#1e2a3a', color: '#64748b', border: '1px solid #334155',
+                        }}>
+                          {engine.badge}
+                        </div>
+                      )}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                        <div style={{
+                          width: 16, height: 16, borderRadius: '50%', flexShrink: 0,
+                          border: `2px solid ${renderEngine === engine.id ? '#00d4ff' : '#334155'}`,
+                          background: renderEngine === engine.id ? '#00d4ff' : 'transparent',
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        }}>
+                          {renderEngine === engine.id && (
+                            <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#060910' }} />
+                          )}
+                        </div>
+                        <div style={{ fontSize: 14 }}>{engine.icon}</div>
+                        <div>
+                          <div style={{ fontSize: 13, fontWeight: 700, color: engine.activo ? '#e2e8f0' : '#475569' }}>
+                            {engine.label}
+                          </div>
+                          <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>
+                            {engine.sublabel}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div style={{ ...S.empty, padding: '16px 0 20px' }}>
                 <div style={{ fontSize: 32, marginBottom: 8 }}>🎬</div>
                 <div style={{ fontSize: 15, fontWeight: 600, color: '#475569' }}>
                   Selecciona un proyecto o crea uno nuevo
@@ -807,7 +1100,156 @@ export default function App() {
                   Guion → Audio → Plan → Media → Remotion
                 </div>
               </div>
+
               <ChannelMemoryPanel memory={memory} onSync={syncMemory} isSyncing={loadingSync} />
+
+              {/* ── Red de Memoria Neuronal ──────────────────────────────── */}
+              <div style={{ ...S.card, marginTop: 20 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+                  <div style={S.cardTitle}>🧠 Red de Memoria del Canal</div>
+                  <div style={{ fontSize: 11, color: '#334155' }}>
+                    Hover sobre un nodo para ver sus métricas · Nodos conectados = guiones con palabras clave compartidas
+                  </div>
+                </div>
+                <NeuronGraph data={memory} />
+              </div>
+
+              {/* ── Panel de Insights derivados ──────────────────────────── */}
+              {insights && (
+                <div style={{ ...S.card, marginTop: 20 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+                    <div style={S.cardTitle}>💡 Insights Aprendidos</div>
+                    <div style={{ fontSize: 11, color: '#334155' }}>
+                      Derivado de {insights.total_videos} videos y {insights.total_projects} proyectos
+                    </div>
+                  </div>
+
+                  {/* Recomendaciones (lo más accionable arriba) */}
+                  {insights.recommendations?.length > 0 && (
+                    <div style={{
+                      marginBottom: 16, padding: '14px 18px',
+                      background: '#1e2a3a33', border: '1px solid #00d4ff22',
+                      borderRadius: 8,
+                    }}>
+                      <div style={{
+                        fontSize: 11, fontWeight: 700, color: '#00d4ff',
+                        textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 10,
+                      }}>
+                        Recomendaciones para tu próximo video
+                      </div>
+                      {insights.recommendations.map((r, i) => (
+                        <div key={i} style={{
+                          fontSize: 13, color: '#cbd5e1', marginBottom: 6, lineHeight: 1.5,
+                        }}>{r}</div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Grid 2 columnas: hooks y motion graphics */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+                    {/* Hook patterns ganadores */}
+                    {insights.best_hook_patterns?.length > 0 && (
+                      <div>
+                        <div style={{
+                          fontSize: 11, fontWeight: 700, color: '#64748b',
+                          letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8,
+                        }}>
+                          🪝 Hooks por rendimiento
+                        </div>
+                        {insights.best_hook_patterns.slice(0, 5).map(h => (
+                          <div key={h.pattern} style={{
+                            padding: '6px 0', borderBottom: '1px solid #1e2a3a',
+                            display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+                          }}>
+                            <span style={{ fontSize: 12, color: '#e2e8f0', flex: 1, marginRight: 8 }}>
+                              {h.pattern}
+                            </span>
+                            <span style={{ fontSize: 11, color: '#00d4ff', fontWeight: 700 }}>
+                              {h.avg_views.toLocaleString()} v
+                            </span>
+                            <span style={{ fontSize: 10, color: '#475569', marginLeft: 6 }}>
+                              ×{h.uses}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Motion graphics ganadores */}
+                    {insights.visual_winners?.length > 0 && (
+                      <div>
+                        <div style={{
+                          fontSize: 11, fontWeight: 700, color: '#64748b',
+                          letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8,
+                        }}>
+                          🎨 Motion graphics ganadores
+                        </div>
+                        {insights.visual_winners.slice(0, 5).map(v => (
+                          <div key={v.element} style={{
+                            padding: '6px 0', borderBottom: '1px solid #1e2a3a',
+                            display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+                          }}>
+                            <span style={{ fontSize: 12, color: '#e2e8f0', flex: 1, marginRight: 8 }}>
+                              {v.element}
+                            </span>
+                            <span style={{ fontSize: 11, color: '#22c55e', fontWeight: 700 }}>
+                              {v.avg_views.toLocaleString()} v
+                            </span>
+                            <span style={{ fontSize: 10, color: '#475569', marginLeft: 6 }}>
+                              ×{v.samples}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Color moods */}
+                    {insights.mood_performance?.length > 0 && (
+                      <div>
+                        <div style={{
+                          fontSize: 11, fontWeight: 700, color: '#64748b',
+                          letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8,
+                        }}>
+                          🎭 Color moods
+                        </div>
+                        {insights.mood_performance.map(m => (
+                          <div key={m.mood} style={{
+                            padding: '6px 0', borderBottom: '1px solid #1e2a3a',
+                            display: 'flex', justifyContent: 'space-between', alignItems: 'baseline',
+                          }}>
+                            <span style={{ fontSize: 12, color: '#e2e8f0' }}>{m.mood}</span>
+                            <span style={{ fontSize: 11, color: '#f59e0b', fontWeight: 700 }}>
+                              {m.avg_views.toLocaleString()} v
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Temas agotados */}
+                    {insights.topics_agotados?.length > 0 && (
+                      <div>
+                        <div style={{
+                          fontSize: 11, fontWeight: 700, color: '#64748b',
+                          letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8,
+                        }}>
+                          🚫 Temas ya cubiertos
+                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                          {insights.topics_agotados.map(t => (
+                            <span key={t} style={{
+                              fontSize: 10, padding: '2px 8px',
+                              background: '#475569', color: '#cbd5e1',
+                              borderRadius: 12, opacity: 0.7,
+                            }}>{t}</span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
             </div>
           )}
         </div>

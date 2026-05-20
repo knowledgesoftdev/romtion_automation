@@ -42,15 +42,70 @@ const imagesDir  = path.join(projectDir, 'images');
 const videosDir  = path.join(projectDir, 'videos');
 const cacheDir   = path.join(projectDir, '.cache', 'pexels');
 
-if (!fs.existsSync(planPath)) {
-  console.error(`❌ No existe: ${planPath}`);
-  console.error('   Genera el plan primero con: node scripts/build-scene-plan.js ' + projectId);
-  process.exit(1);
+let paragraphs = [];
+
+// Prioridad de fuente:
+//   1. guion.json con schema multi-element (visual.elements[]) ← nuevo flow
+//   2. scene-plan.json (legacy, salida de build-scene-plan.js)
+//   3. guion.json con schema viejo (visual.pexels_query directo)
+const guionPath = path.join(projectDir, 'guion.json');
+let guion = null;
+if (fs.existsSync(guionPath)) {
+  try { guion = JSON.parse(fs.readFileSync(guionPath, 'utf8')); }
+  catch (e) { console.error(`❌ guion.json invalido: ${e.message}`); process.exit(1); }
 }
 
-const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
-if (!plan.paragraphs || !Array.isArray(plan.paragraphs)) {
-  console.error('❌ scene-plan.json no tiene .paragraphs[]');
+const guionHasMultiElement =
+  Array.isArray(guion) &&
+  guion.some(p => p?.visual && Array.isArray(p.visual.elements) && p.visual.elements.length > 0);
+
+if (guionHasMultiElement) {
+  console.log(`✅ Usando guion.json (schema multi-element).`);
+  for (const p of guion) {
+    const v = p.visual;
+    if (!v || !Array.isArray(v.elements)) continue;
+    const pexelsEls = v.elements.filter(el => el && el.type === 'pexels_image' && el.query);
+    for (const el of pexelsEls) {
+      paragraphs.push({
+        id: `${p.id}-${el.id}`,
+        media: {
+          type:        'image',
+          query:       el.query,
+          filename:    `parrafo-${p.id}-${el.id}.jpg`,
+          orientation: 'landscape',
+          pick:        'first',
+        },
+      });
+    }
+  }
+} else if (fs.existsSync(planPath)) {
+  const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
+  if (plan.paragraphs && Array.isArray(plan.paragraphs)) {
+    console.log(`ℹ️  Usando scene-plan.json (schema legacy).`);
+    paragraphs = plan.paragraphs;
+  } else {
+    console.error('❌ scene-plan.json no tiene .paragraphs[]');
+    process.exit(1);
+  }
+} else if (guion) {
+  console.log(`ℹ️  Usando guion.json (schema viejo single-visual).`);
+  for (const p of guion) {
+    const v = p.visual;
+    if (!v || !v.pexels_query) continue;
+    const ext = v.asset_type === 'video' ? 'mp4' : 'jpg';
+    paragraphs.push({
+      id: p.id,
+      media: {
+        type:        v.asset_type === 'video' ? 'video' : 'image',
+        query:       v.pexels_query,
+        filename:    `parrafo-${p.id}.${ext}`,
+        orientation: 'landscape',
+        pick:        'first',
+      },
+    });
+  }
+} else {
+  console.error(`❌ Faltan archivos del proyecto: no se encontró guion.json ni scene-plan.json`);
   process.exit(1);
 }
 
@@ -218,8 +273,8 @@ async function main() {
   console.log(`📥 Descargando media de Pexels para "${projectId}"\n`);
   seedUsedIdsFromCache();
 
-  for (let i = 0; i < plan.paragraphs.length; i++) {
-    const p = plan.paragraphs[i];
+  for (let i = 0; i < paragraphs.length; i++) {
+    const p = paragraphs[i];
     if (!p.media) { console.log(`   ⏭  [${p.id}] sin media`); skip++; continue; }
     // perPage default raised to 15 so dedup has enough candidates when several
     // paragraphs share a query and the top-5 results overlap.

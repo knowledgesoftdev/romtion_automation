@@ -5,7 +5,7 @@ const path    = require('path');
 const { exec } = require('child_process');
 const { parseScript }     = require('./utils/parser');
 const { parseWithOllama } = require('./utils/ollamaProvider');
-const { readMemory, saveMemory } = require('../utils/memory');
+const { readMemory, saveMemory, recordParseInsights, recordVisualStyle, computeInsights } = require('../utils/memory');
 const { parseScriptSmart } = require('./utils/smartParser');
 
 const app  = express();
@@ -29,10 +29,11 @@ function saveActiveProject(projectId) {
 
 function projectStatus(projectId) {
   const dir     = path.join(PROJECTS_DIR, projectId);
-  const hasGuion  = fs.existsSync(path.join(dir, 'guion.json'));
-  const hasTiming = fs.existsSync(path.join(dir, 'timing.json'));
-  const hasPlan   = fs.existsSync(path.join(dir, 'scene-plan.json'));
-  const hasMedia  = fs.existsSync(path.join(dir, 'images')) || fs.existsSync(path.join(dir, 'videos'));
+  const hasGuion    = fs.existsSync(path.join(dir, 'guion.json'));
+  const hasTiming   = fs.existsSync(path.join(dir, 'timing.json'));
+  const hasPlan     = fs.existsSync(path.join(dir, 'scene-plan.json'));
+  const hasMedia    = fs.existsSync(path.join(dir, 'images')) || fs.existsSync(path.join(dir, 'videos'));
+  const hasMetadata = fs.existsSync(path.join(dir, 'yt-metadata.txt'));
 
   let paragraphCount = 0;
   if (hasGuion) {
@@ -40,7 +41,7 @@ function projectStatus(projectId) {
     catch (_) {}
   }
 
-  return { hasGuion, hasTiming, hasPlan, hasMedia, paragraphCount };
+  return { hasGuion, hasTiming, hasPlan, hasMedia, hasMetadata, paragraphCount };
 }
 
 // ── 1. List all projects ──────────────────────────────────────────────────────
@@ -101,6 +102,10 @@ app.post('/api/projects', async (req, res) => {
   }
   fs.writeFileSync(path.join(projectDir, 'guion.json'), JSON.stringify(guion, null, 2));
 
+  // Aprendizaje del canal: registramos características del guion y estilo visual
+  recordParseInsights(projectId, rawScript, guion).catch(() => {});
+  recordVisualStyle(projectId, guion).catch(() => {});
+
   console.log(`✅ Proyecto "${projectId}" creado: ${guion.length} fragmentos`);
   res.json({ message: 'Proyecto creado correctamente', projectId, paragraphCount: guion.length });
 });
@@ -141,6 +146,10 @@ app.post('/api/projects/:id/smart-reparse', async (req, res) => {
     return res.status(500).json({ error: 'Error en smart-reparse', detail: err.message });
   }
   fs.writeFileSync(path.join(dir, 'guion.json'), JSON.stringify(guion, null, 2));
+
+  // Aprendizaje: registramos parse insights + estilo visual del nuevo guion
+  recordParseInsights(id, rawScript, guion).catch(() => {});
+  recordVisualStyle(id, guion).catch(() => {});
 
   console.log(`🧠 Smart re-parse de "${id}": ${guion.length} fragmentos`);
   res.json({ message: 'Guion re-fragmentado con Claude', projectId: id, paragraphCount: guion.length });
@@ -221,15 +230,93 @@ app.get('/api/active-project', (req, res) => {
     catch (e) { console.warn(`scene-plan.json inválido: ${e.message}`); }
   }
 
+  // word-timing.json es opcional — lo incluye si ya fue generado con Faster-Whisper
+  const wordTimingPath = path.join(dir, 'word-timing.json');
+  let wordTiming = null;
+  if (fs.existsSync(wordTimingPath)) {
+    try { wordTiming = JSON.parse(fs.readFileSync(wordTimingPath, 'utf8')); }
+    catch (e) { console.warn(`word-timing.json inválido: ${e.message}`); }
+  }
+
   res.json({
     projectId,
-    guion:  JSON.parse(fs.readFileSync(guionPath,  'utf8')),
-    timing: JSON.parse(fs.readFileSync(timingPath, 'utf8')),
+    guion:      JSON.parse(fs.readFileSync(guionPath,  'utf8')),
+    timing:     JSON.parse(fs.readFileSync(timingPath, 'utf8')),
     scenePlan,
+    wordTiming,
   });
 });
 
-// ── 8. Delete project ─────────────────────────────────────────────────────────
+// ── 8. Generate word-level timing with Faster-Whisper ───────────────────────
+app.post('/api/projects/:id/whisper-timing', (req, res) => {
+  const { id } = req.params;
+  const dir    = path.join(PROJECTS_DIR, id);
+
+  if (!fs.existsSync(dir)) {
+    return res.status(404).json({ error: 'Proyecto no encontrado' });
+  }
+
+  const audioPath = path.join(dir, 'audio.mp3');
+  if (!fs.existsSync(audioPath)) {
+    return res.status(400).json({ error: 'audio.mp3 no encontrado. Genera el audio primero.' });
+  }
+
+  console.log(`🎙️ Generando word-timing para: ${id}`);
+  exec(
+    `python scripts/whisper-timing.py "${id}"`,
+    { cwd: path.join(__dirname, '..'), timeout: 300_000 },
+    (error, stdout, stderr) => {
+      if (error) {
+        console.error(`❌ whisper-timing error: ${error.message}`);
+        return res.status(500).json({
+          error:  'Error generando word-timing',
+          detail: error.message,
+          stderr,
+        });
+      }
+      console.log(stdout);
+      res.json({ ok: true, message: stdout.trim() });
+    }
+  );
+});
+
+// ── 8b. Generate YouTube metadata (yt-metadata.txt) ─────────────────────────
+app.post('/api/projects/:id/generate-yt-metadata', (req, res) => {
+  const { id } = req.params;
+  const dir    = path.join(PROJECTS_DIR, id);
+  if (!fs.existsSync(dir)) return res.status(404).json({ error: 'Proyecto no encontrado' });
+
+  const scriptPath = path.join(dir, 'full_script.txt');
+  if (!fs.existsSync(scriptPath)) {
+    return res.status(400).json({ error: 'full_script.txt no encontrado. Crea el proyecto primero.' });
+  }
+
+  console.log(`📺 Generando yt-metadata para: ${id}`);
+  exec(
+    `node scripts/generate-yt-metadata.js "${id}"`,
+    { cwd: path.join(__dirname, '..'), timeout: 180_000 },
+    (error, stdout, stderr) => {
+      if (error) {
+        console.error(`❌ yt-metadata error: ${error.message}`);
+        return res.status(500).json({ error: 'Error generando yt-metadata', detail: error.message, stderr });
+      }
+      const outPath = path.join(dir, 'yt-metadata.txt');
+      const content = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
+      console.log(stdout);
+      res.json({ ok: true, message: 'yt-metadata.txt generado', content });
+    }
+  );
+});
+
+// GET /api/projects/:id/yt-metadata → devuelve el contenido si existe
+app.get('/api/projects/:id/yt-metadata', (req, res) => {
+  const { id } = req.params;
+  const filePath = path.join(PROJECTS_DIR, id, 'yt-metadata.txt');
+  if (!fs.existsSync(filePath)) return res.json({ exists: false });
+  res.json({ exists: true, content: fs.readFileSync(filePath, 'utf8') });
+});
+
+// ── 9. Delete project ─────────────────────────────────────────────────────────
 app.delete('/api/projects/:id', (req, res) => {
   const { id } = req.params;
   const dir = path.join(PROJECTS_DIR, id);
@@ -275,6 +362,36 @@ app.post('/api/memory/topic-used', async (req, res) => {
     });
   } catch (err) {
     res.status(500).json({ error: 'No se pudo actualizar la memoria', detail: err.message });
+  }
+});
+
+// POST /api/prompt/enriched → genera prompt-enriched.txt con insights inyectados
+// Body: { tema?: string }
+app.post('/api/prompt/enriched', (req, res) => {
+  const tema = (req.body && req.body.tema) ? String(req.body.tema) : '';
+  const args = tema ? `"${tema.replace(/"/g, '\\"')}"` : '';
+  exec(
+    `node scripts/build-enriched-prompt.js ${args}`,
+    { cwd: path.join(__dirname, '..'), timeout: 30_000 },
+    (error, stdout, stderr) => {
+      if (error) {
+        console.error(`❌ build-enriched-prompt error: ${error.message}`);
+        return res.status(500).json({ error: 'No se pudo generar prompt enriquecido', detail: error.message, stderr });
+      }
+      const outPath = path.join(__dirname, '..', 'prompt-enriched.txt');
+      const content = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
+      res.json({ ok: true, content, stdout: stdout.trim() });
+    }
+  );
+});
+
+// GET /api/memory/insights → análisis derivado (no ML, agregación estadística)
+app.get('/api/memory/insights', async (req, res) => {
+  try {
+    const insights = await computeInsights();
+    res.json(insights);
+  } catch (err) {
+    res.status(500).json({ error: 'No se pudieron computar los insights', detail: err.message });
   }
 });
 

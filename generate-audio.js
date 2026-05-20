@@ -415,6 +415,21 @@ async function main() {
     session.close();
   }
 
+  // ─── CONCATENACIÓN AUTOMÁTICA CONTINUA ───
+  const finalAudioPath = path.join(projectDir, 'audio.mp3');
+  if (HAS_FFMPEG) {
+    console.log(`\n🔗 Concatenando todos los fragmentos en un audio continuo: audio.mp3...`);
+    try {
+      const allParagraphsFiles = guion.map(p => path.join(audioDir, `parrafo-${p.id}.mp3`));
+      await concatMp3s(allParagraphsFiles, finalAudioPath);
+      console.log(`   ✅ Audio continuo unificado guardado en: ${finalAudioPath}`);
+    } catch (concatErr) {
+      console.error(`   ❌ Falló la unificación del audio continuo:`, concatErr.message);
+    }
+  } else {
+    console.warn(`   ⚠️  No se pudo crear audio.mp3 continuo porque ffmpeg no está disponible.`);
+  }
+
   fs.writeFileSync(timingPath, JSON.stringify(timing, null, 2));
   const total = Math.round(currentStart * 100) / 100;
   console.log(`\n✨ Listo.`);

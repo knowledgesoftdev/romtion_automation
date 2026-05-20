@@ -6,30 +6,37 @@
 
 ## 🌟 Características de Nivel Premium
 
-### 🧠 1. Memoria Continua del Canal (`channel-memory.json`)
-El sistema no solo crea videos, sino que **aprende de su rendimiento real**. Guarda un registro histórico de:
-- Temas cubiertos y palabras clave agotadas.
-- Lista completa de videos publicados, sus vistas y likes en tiempo real.
-- Estilos de hook usados y rendimiento del CTR / Retención analizados mediante la API de YouTube Analytics.
-- Sugerencias optimizadas de miniatura generadas durante el pipeline de planificación.
+### 📊 1. Análisis de Rendimiento en YouTube (CTR & Retención)
+El sistema no solo crea videos, sino que **aprende de su rendimiento real** consultando la API oficial de YouTube Analytics:
+- **Cálculo de Retención Real:** Cruza la duración real del video en segundos con la duración promedio de reproducción (`retention = averageViewDuration / duration`).
+- **Extracción de CTR:** Captura el Click-Through Rate (CTR) de impresión exacto por cada video.
+- **Autoclase de Ganchos (Hook Styles):** Si un video supera el **60% de retención**, el estilo de gancho utilizado (ej. *pregunta retórica*, *dato técnico de ruptura*) se registra automáticamente en `channel-memory.json` como un gancho exitoso para guiar al escritor de IA en futuros videos.
+- **Ejecución del análisis:**
+  ```bash
+  node scripts/analyze-performance.js <videoId> [--hook-style="dato impactante"]
+  ```
 
-### 🔄 2. Sincronización YouTube en 1-Clic
+### 🧠 2. Red de Memoria del Canal (`NeuronGraph.jsx`)
+La interfaz incluye una **red neuronal interactiva en 2D/3D** renderizada mediante HTML5 Canvas:
+- **Visualización de Neuronas:** Cada neurona representa un video local o publicado en YouTube.
+- **Mapeo de Novedades (Etiqueta NEW):** Las neuronas se iluminan dinámicamente y marcan con un tag "NEW" los últimos 3 videos sincronizados desde tu canal.
+- **Cálculo de Pesos:** Dibuja sinapsis y conexiones con grosores variables basados en la similitud semántica y los patrones de rendimiento en tu canal.
+- **Animaciones fluidas:** Un bucle de simulación física en tiempo real integrado con React que se auto-recupera de estados vacíos.
+
+### 🎨 3. Motor de Composición Smart Whiteboard (`smartParser.js`)
+Para evitar videos genéricos aburridos, el sistema utiliza **Claude (Anthropic API)** como un **Director de Arte de Pizarra Virtual**:
+- **7-Slots Constellation:** Organiza los elementos visuales en slots (`top-left`, `top-right`, `mid-left`, `center`, `mid-right`, `bottom-left`, `bottom-right`) evitando colisiones.
+- **Tipos de Elementos Sincronizados:**
+  - `label_red` / `label_black`: Textos y stickers dinámicos limitados para máxima legibilidad.
+  - `icon` / `logo`: Integración de logos de marcas e iconos vectoriales dinámicos (`flat-color-icons`).
+  - `motion_graphic`: Gráficos animados embebidos (`donut_chart`, `contador_porcentaje`, `timeline_barras`).
+  - `pexels_image`: Imágenes de stock reales descargadas de forma automática solo en escenas clave.
+- **Trigger Words:** Cada elemento visual está vinculado a una palabra exacta del audio generador y aparece exactamente cuando la voz en off la pronuncia.
+
+### 🔄 4. Sincronización YouTube en 1-Clic
 Integrado directamente en el Dashboard, permite sincronizar tu canal en segundos:
 - Intercambia y refresca dinámicamente credenciales **Google OAuth2** seguras.
 - Detecta y cruza de manera semántica tus videos subidos con los proyectos locales.
-- Actualiza automáticamente estadísticas de retención (`retention = averageViewDuration / duration`) y CTR exactos.
-
-### 🧠 3. Fragmentación Inteligente (Smart Parser)
-- Utiliza **Claude (Anthropic API)** para dividir tus narrativas de forma inteligente en escenas cortas de $\le 45$ palabras.
-- Evita escenas largas y aburridas, garantizando un ritmo ágil y dinámico ideal para redes sociales y retención masiva.
-
-### 🎨 4. Dashboard de Control Moderno
-Una interfaz visual premium con tema oscuro, gradientes HSL y micro-animaciones:
-1. **Paso 1: Guion**: Carga tu texto, utiliza el **🧠 Smart Reparse** con Claude para fragmentarlo, genera metadatos completos para YouTube (título, descripción, tags y capítulos automáticos cruzando `guion.json` y `timing.json`).
-2. **Paso 2: Audio & Timings**: Generación sincronizada párrafo por párrafo de voz artificial realista y mapeo milimétrico de tiempos (`timing.json`).
-3. **Paso 3: Planificación**: Generación automatizada del plan visual escena por escena, sugiriendo conceptos de imágenes/videos.
-4. **Paso 4: Media Assets**: Descarga directa de assets premium libres de derechos desde Pexels.
-5. **Paso 5: Previsualización & Render**: Visualización directa a través de Remotion Studio y exportación final.
 
 ---
 
@@ -38,18 +45,23 @@ Una interfaz visual premium con tema oscuro, gradientes HSL y micro-animaciones:
 ```
 prueba-remo-claude/
 ├── dashboard/                 # Frontend React (Vite)
-│   └── src/App.jsx            # Interfaz moderna de usuario
+│   └── src/
+│       ├── App.jsx            # Interfaz principal con control de pasos
+│       └── NeuronGraph.jsx    # Visualizador interactivo de red neuronal de videos
 ├── server/                    # Servidor Express de control del pipeline
 │   ├── index.js               # Rutas API de automatización
-│   └── utils/smartParser.js   # Segmentador de guiones conectado a Claude
+│   └── utils/
+│       ├── smartParser.js     # Segmentador de guiones y Director de Arte (Claude)
+│       └── ollamaProvider.js  # Proveedor de respaldo local con Ollama
 ├── scripts/                   # Scripts auxiliares del pipeline de producción
 │   ├── auto-sync.js           # Sincronizador de YouTube Analytics
+│   ├── analyze-performance.js # Analizador oficial de CTR, Retención y Ganchos
 │   ├── oauth-setup.js         # Asistente interactivo de autorización OAuth2
 │   ├── build-scene-plan.js    # Planificador visual de escenas
 │   └── generate-yt-metadata.js# Generador de títulos, descripciones y tags
 ├── public/projects/           # Carpetas independientes por video producido
 │   └── [nombre-proyecto]/     # Guion, timings, assets y metadatos del proyecto
-├── channel-memory.json        # Base de datos local de memoria persistente
+├── channel-memory.json        # Base de datos local de memoria persistente del canal
 └── .env                       # Credenciales seguras (API Keys, OAuth2 Tokens)
 ```
 
@@ -91,11 +103,11 @@ npm run server
 npm run dev
 ```
 
-1. Abre tu navegador en `http://localhost:5173`.
+1. Abre tu navegador en `http://localhost:5173` (o la dirección del frontend).
 2. Crea un **Nuevo Proyecto**, introduce el título y pega el guion original.
-3. Haz click en **Smart Reparse** en el Step 1 para fragmentar semánticamente el texto.
-4. Genera el audio, descarga los multimedia de Pexels, ¡y abre Remotion Studio para ver tu video cobrar vida en tiempo real!
-5. **Cierra el loop**: Una vez que subas tu video a YouTube, haz click en el botón morado **"🔄 Sincronizar YouTube"** del Dashboard para que el sistema aprenda automáticamente de tu CTR y retención para tus futuros videos.
+3. Haz click en **Smart Reparse** en el Step 1 para fragmentar semánticamente el texto y diseñar las escenas visuales de la pizarra virtual.
+4. Genera el audio, descarga los multimedia de Pexels (que descargará únicamente las imágenes requeridas para las pizarras), ¡y abre Remotion Studio para ver tu video cobrar vida en tiempo real!
+5. **Cierra el loop:** Una vez que subas tu video a YouTube, sincronízalo para que el sistema analice tu CTR, vistas y retención promedio (`analyze-performance.js`), registrando los mejores hooks de cara al futuro.
 
 ---
-Creado para revolucionar la automatización de video con IA y código premium. 🎬🤖💡
+Creado para revolucionar la automatización de video con IA y código de diseño premium. 🎬🤖💡
