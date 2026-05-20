@@ -17,17 +17,15 @@ Gancho: "Symbian podía hacer todo lo que hacía iOS.
 Excepto sobrevivir a sus propios ingenieros."
 
 ## TONO Y ESTILO
+- **Vocabulario Accesible y Comprensible**: Usa explicaciones claras y sencillas. Evita la jerga excesivamente compleja, abstracta o pedante. Ilustra conceptos de ingeniería con analogías cotidianas y lógicas fáciles de asimilar para el espectador.
+- **Español Puro (Evitar Anglicismos)**: Escribe el guion 100% en español. Evita términos en inglés siempre que sea posible. Si usas un acrónimo o término técnico en inglés indispensable en la informática (como *API*, *CPU*, *XML*), tradúcelo, utiliza su equivalente en español o explícalo de inmediato con palabras muy sencillas (ej. *hilos de ejecución* en lugar de *threads*, *sobrecosto de procesamiento* en lugar de *overhead*, *mensajería instantánea* en lugar de *chat*, *interfaz de conexión* en lugar de *API*).
 - Velocidad constante: ninguna frase es decorativa
 - Cada oración aporta un dato técnico o una consecuencia
 - Neutralidad educativa: no opinas, demuestras con hechos
 - Densidad alta: cero relleno, cero introducciones largas
-- Términos técnicos correctos, explicados en una frase 
-  cuando aparecen por primera vez
-- NUNCA uses: "hoy veremos", "es muy interesante", 
-  "sin más preámbulos", "espero que les guste", 
-  "en este video"
-- Oraciones cortas. Punto seguido. Sin párrafos de más 
-  de 4 líneas. Exactamente como se narraría en voz en off.
+- Términos técnicos correctos, explicados en una frase sencilla cuando aparecen por primera vez
+- NUNCA uses: "hoy veremos", "es muy interesante", "sin más preámbulos", "espero que les guste", "en este video"
+- Oraciones cortas. Punto seguido. Sin párrafos de más de 4 líneas. Exactamente como se narraría en voz en off.
 
 ## ESTRUCTURA OBLIGATORIA
 
