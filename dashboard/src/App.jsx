@@ -860,6 +860,14 @@ export default function App() {
   );
   const [insights,      setInsights]      = useState(null);
 
+  // WebSockets Live logs & progress variables
+  const [wsLogs,             setWsLogs]             = useState([]);
+  const [wsConnected,        setWsConnected]        = useState(false);
+  const [activeTask,         setActiveTask]         = useState(null);
+  const [activeProgress,     setActiveProgress]     = useState(null);
+  const [isTerminalExpanded, setIsTerminalExpanded] = useState(false);
+  const [showTerminal,       setShowTerminal]       = useState(false);
+
   const ENGINES = [
     { id: 'remotion',    label: 'Remotion',    sublabel: 'React + TypeScript', icon: '⚗️', activo: true  },
     { id: 'hyperframes', label: 'HyperFrames', sublabel: 'HTML + GSAP — HeyGen', icon: '🎦', activo: false, badge: 'Próximamente' },
@@ -927,6 +935,74 @@ export default function App() {
     loadProjects();
     loadMemory();
     loadInsights();
+  }, []);
+
+  // Live WebSocket logs stream connection
+  useEffect(() => {
+    const wsHost = window.location.hostname || 'localhost';
+    const wsUrl = `ws://${wsHost}:5000`;
+    console.log(`🔌 Conectando WebSocket a ${wsUrl}...`);
+    
+    let ws;
+    let reconnectTimeout;
+
+    function connect() {
+      ws = new WebSocket(wsUrl);
+
+      ws.onopen = () => {
+        console.log('🔌 WebSocket Conectado');
+        setWsConnected(true);
+      };
+
+      ws.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          
+          if (data.type === 'status') {
+            console.log('📡 WS Status:', data.message);
+          } else if (data.type === 'progress') {
+            const time = new Date().toLocaleTimeString();
+            const logLine = `[${time}] ${data.log}`;
+            
+            setWsLogs(prev => [...prev.slice(-250), { text: logLine, isError: data.isError }]);
+            
+            if (data.progress !== null) {
+              setActiveProgress(data.progress);
+            }
+            
+            if (data.progress === 0) {
+              setActiveTask(data.task);
+              setShowTerminal(true);
+              setIsTerminalExpanded(true);
+            } else if (data.progress === 100) {
+              setTimeout(() => {
+                setActiveTask(null);
+              }, 3000);
+            }
+          }
+        } catch (e) {
+          console.error('Error parsing WS message:', e);
+        }
+      };
+
+      ws.onclose = () => {
+        console.log('🔌 WebSocket desconectado, intentando reconexión en 3s...');
+        setWsConnected(false);
+        reconnectTimeout = setTimeout(connect, 3000);
+      };
+
+      ws.onerror = (err) => {
+        console.error('🔌 WebSocket Error:', err);
+        ws.close();
+      };
+    }
+
+    connect();
+
+    return () => {
+      if (ws) ws.close();
+      clearTimeout(reconnectTimeout);
+    };
   }, []);
 
 
@@ -1255,11 +1331,163 @@ export default function App() {
         </div>
 
         {/* Status bar */}
-        <div style={S.statusBar}>
-          <div style={S.dot(statusColor)} />
-          <span>{status}</span>
+        <div style={{ ...S.statusBar, justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div style={S.dot(statusColor)} />
+            <span>{status}</span>
+          </div>
+          <button
+            onClick={() => setShowTerminal(!showTerminal)}
+            style={{
+              background: '#1e2a3a',
+              color: showTerminal ? '#00d4ff' : '#94a3b8',
+              border: '1px solid #334155',
+              borderRadius: 4,
+              padding: '4px 10px',
+              fontSize: 10,
+              fontWeight: 700,
+              cursor: 'pointer',
+              fontFamily: 'JetBrains Mono, monospace',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 5,
+              outline: 'none',
+              transition: 'all 0.15s ease',
+            }}
+          >
+            📺 Terminal {activeTask && (
+              <span style={{
+                width: 6,
+                height: 6,
+                borderRadius: '50%',
+                backgroundColor: '#00d4ff',
+                boxShadow: '0 0 6px #00d4ff',
+                display: 'inline-block',
+                animation: 'pulse 1.5s infinite',
+              }} />
+            )}
+          </button>
         </div>
       </div>
+
+      {/* Floating Terminal tray */}
+      {showTerminal && (
+        <div style={{
+          position: 'absolute',
+          bottom: 50,
+          right: 24,
+          width: isTerminalExpanded ? 500 : 280,
+          height: isTerminalExpanded ? 320 : 42,
+          backgroundColor: '#0a0d14dd',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid #1e2a3a',
+          borderRadius: '10px 10px 0 0',
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden',
+          boxShadow: '0 12px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 212, 255, 0.15)',
+          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+          zIndex: 9999,
+        }}>
+          {/* Header */}
+          <div style={{
+            padding: '10px 16px',
+            background: '#0d1117',
+            borderBottom: '1px solid #1e2a3a',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            cursor: 'pointer',
+            userSelect: 'none',
+          }} onClick={() => setIsTerminalExpanded(!isTerminalExpanded)}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{
+                width: 8,
+                height: 8,
+                borderRadius: '50%',
+                backgroundColor: wsConnected ? '#22c55e' : '#ef4444',
+                boxShadow: wsConnected ? '0 0 8px #22c55e' : '0 0 8px #ef4444',
+              }} />
+              <span style={{ fontSize: 10, fontWeight: 700, color: '#00d4ff', fontFamily: 'JetBrains Mono, monospace', letterSpacing: '0.05em' }}>
+                {activeTask ? `LOGS: ${activeTask.toUpperCase()}` : 'SERVIDOR DE LOGS'}
+              </span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }} onClick={(e) => e.stopPropagation()}>
+              <button
+                onClick={() => setIsTerminalExpanded(!isTerminalExpanded)}
+                style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: 11, padding: 0 }}
+                title={isTerminalExpanded ? "Minimizar" : "Expandir"}
+              >
+                {isTerminalExpanded ? '▼' : '▲'}
+              </button>
+              <button
+                onClick={() => setWsLogs([])}
+                style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: 11, padding: 0 }}
+                title="Limpiar Consola"
+              >
+                🗑️
+              </button>
+              <button
+                onClick={() => setShowTerminal(false)}
+                style={{ background: 'none', border: 'none', color: '#64748b', cursor: 'pointer', fontSize: 11, padding: 0 }}
+                title="Cerrar"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+
+          {/* Glowing progress bar */}
+          {activeProgress !== null && (
+            <div style={{ height: 4, width: '100%', background: '#1e2a3a', position: 'relative' }}>
+              <div style={{
+                height: '100%',
+                width: `${activeProgress}%`,
+                background: 'linear-gradient(90deg, #00d4ff, #8b5cf6)',
+                boxShadow: '0 0 10px rgba(0, 212, 255, 0.8)',
+                transition: 'width 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+              }} />
+            </div>
+          )}
+
+          {/* Console logs */}
+          {isTerminalExpanded && (
+            <div style={{
+              flex: 1,
+              padding: 12,
+              overflowY: 'auto',
+              fontFamily: 'JetBrains Mono, Courier New, monospace',
+              fontSize: 10,
+              color: '#e2e8f0',
+              lineHeight: 1.5,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 5,
+              backgroundColor: '#060910ee',
+            }} ref={(el) => {
+              if (el) el.scrollTop = el.scrollHeight;
+            }}>
+              {wsLogs.length === 0 ? (
+                <div style={{ color: '#475569', fontStyle: 'italic', textAlign: 'center', marginTop: 60, fontFamily: 'sans-serif', fontSize: 12 }}>
+                  Consola lista. Ejecuta alguna tarea (audio, media, plan) para ver logs en vivo.
+                </div>
+              ) : (
+                wsLogs.map((log, idx) => (
+                  <div key={idx} style={{
+                    color: log.isError ? '#f43f5e' : log.text.includes('✅') || log.text.includes('✨') ? '#10b981' : '#cbd5e1',
+                    whiteSpace: 'pre-wrap',
+                    wordBreak: 'break-all',
+                    borderLeft: log.isError ? '2px solid #f43f5e' : 'none',
+                    paddingLeft: log.isError ? 6 : 0,
+                  }}>
+                    {log.text}
+                  </div>
+                ))
+              )}
+            </div>
+          )}
+        </div>
+      )}
 
     </div>
   );

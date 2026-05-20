@@ -375,6 +375,105 @@ const TimelineBarrasGraphic: React.FC<{ valor: string; color: string; frame: num
   );
 };
 
+// ── Bordes Estilo Boceto a Mano (Sketchy Borders) para Etiquetas ──────────────
+const SketchyBorder: React.FC<{
+  width: number;
+  height: number;
+  color: string;
+  appear: number;
+}> = ({ width, height, color, appear }) => {
+  const draw = interpolate(appear, [0.3, 0.95], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  const w = width;
+  const h = height;
+  
+  // Trazados imperfectos cerrados con ligeras perturbaciones
+  const p1 = `M 6,6 L ${w - 5},8 L ${w - 7},${h - 6} L 7,${h - 8} Z`;
+  const p2 = `M 8,5 L ${w - 8},6 L ${w - 5},${h - 7} L 5,${h - 5}`;
+
+  return (
+    <svg
+      width={w}
+      height={h}
+      viewBox={`0 0 ${w} ${h}`}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        pointerEvents: "none",
+        overflow: "visible",
+      }}
+    >
+      <path
+        d={p1}
+        fill="none"
+        stroke={color}
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        pathLength={100}
+        strokeDasharray="100"
+        strokeDashoffset={100 - draw * 100}
+      />
+      <path
+        d={p2}
+        fill="none"
+        stroke={color}
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity={0.65}
+        pathLength={100}
+        strokeDasharray="100"
+        strokeDashoffset={100 - draw * 100}
+      />
+    </svg>
+  );
+};
+
+const SketchyUnderline: React.FC<{
+  width: number;
+  color: string;
+  appear: number;
+}> = ({ width, color, appear }) => {
+  const draw = interpolate(appear, [0.4, 0.98], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  // Subrayado ondulado imperfecto de pizarra (boceto a mano)
+  const p = `M 2,3 C ${width * 0.25},1 ${width * 0.4},5 ${width * 0.75},2 C ${width * 0.9},0.5 ${width * 0.95},4 ${width - 2},3`;
+
+  return (
+    <svg
+      width={width}
+      height={8}
+      viewBox={`0 0 ${width} 8`}
+      style={{
+        position: "absolute",
+        bottom: -5,
+        left: 0,
+        pointerEvents: "none",
+        overflow: "visible",
+      }}
+    >
+      <path
+        d={p}
+        fill="none"
+        stroke={color}
+        strokeWidth={3.5}
+        strokeLinecap="round"
+        pathLength={100}
+        strokeDasharray="100"
+        strokeDashoffset={100 - draw * 100}
+      />
+    </svg>
+  );
+};
+
 // ── Renderer por tipo de elemento ──────────────────────────────────────────────
 const RenderElement: React.FC<{
   el:            VisualElement;
@@ -469,40 +568,83 @@ const RenderElement: React.FC<{
     case "label_red": {
       const fontSize = labelFontSize(el.text, sizePx, true, slotMaxWidth);
       const isHero = el.size === "xl" || el.size === "lg";
+
+      if (isHero) {
+        return (
+          <div style={{
+            fontFamily:    INTER,
+            fontSize,
+            fontWeight:    900,
+            color:         "#dc2626",
+            letterSpacing: "-0.025em",
+            lineHeight:    1,
+            textAlign:     "center",
+            whiteSpace:    "nowrap",
+          }}>
+            {el.text}
+          </div>
+        );
+      }
+
+      // Caja con SketchyBorder
+      const textWidth = el.text.length * fontSize * 0.56;
+      const textHeight = fontSize * 1.15;
+      const paddingX = 18;
+      const paddingY = 8;
+      const width = textWidth + paddingX * 2;
+      const height = textHeight + paddingY * 2;
+
       return (
         <div style={{
-          fontFamily:    INTER,
-          fontSize,
-          fontWeight:    900,
-          color:         "#dc2626",
-          letterSpacing: "-0.025em",
-          lineHeight:    1,
-          textAlign:     "center",
-          whiteSpace:    "nowrap",
-          padding:       isHero ? "0" : "6px 14px",
-          border:        isHero ? "none" : `3px solid #dc2626`,
-          borderRadius:  8,
-          background:    isHero ? "transparent" : "#fee2e2",
+          position:       "relative",
+          width,
+          height,
+          display:        "flex",
+          alignItems:     "center",
+          justifyContent: "center",
+          background:     "#fee2e2",
+          clipPath:       "polygon(2% 4%, 97% 1%, 99% 95%, 1% 98%)", // Forma de papel irregular
         }}>
-          {el.text}
+          <SketchyBorder width={width} height={height} color="#dc2626" appear={appear} />
+          <div style={{
+            fontFamily:    INTER,
+            fontSize,
+            fontWeight:    900,
+            color:         "#dc2626",
+            letterSpacing: "-0.025em",
+            lineHeight:    1,
+            textAlign:     "center",
+            whiteSpace:    "nowrap",
+            zIndex:        1,
+          }}>
+            {el.text}
+          </div>
         </div>
       );
     }
 
     case "label_black": {
       const fontSize = labelFontSize(el.text, sizePx, false, slotMaxWidth);
+      const textWidth = el.text.length * fontSize * 0.56;
+
       return (
         <div style={{
-          fontFamily:    INTER,
-          fontSize,
-          fontWeight:    800,
-          color:         "#0f172a",
-          letterSpacing: "-0.01em",
-          textAlign:     "center",
-          lineHeight:    1.1,
-          whiteSpace:    "nowrap",
+          position:      "relative",
+          display:       "inline-block",
         }}>
-          {el.text}
+          <div style={{
+            fontFamily:    INTER,
+            fontSize,
+            fontWeight:    800,
+            color:         "#0f172a",
+            letterSpacing: "-0.01em",
+            textAlign:     "center",
+            lineHeight:    1.1,
+            whiteSpace:    "nowrap",
+          }}>
+            {el.text}
+          </div>
+          <SketchyUnderline width={textWidth} color="#0f172a" appear={appear} />
         </div>
       );
     }
@@ -611,9 +753,27 @@ const ConnectorArrow: React.FC<{
   );
 };
 
+const getSpringConfig = (type: string) => {
+  switch (type) {
+    case "logo":
+    case "icon":
+      return { damping: 10, mass: 0.4, stiffness: 180 }; // Retro pop
+    case "pexels_image":
+      return { damping: 18, mass: 0.9, stiffness: 90 };  // Smooth slide
+    case "label_red":
+      return { damping: 9, mass: 0.6, stiffness: 160 };   // Punchy bounce
+    case "label_black":
+      return { damping: 13, mass: 0.7, stiffness: 110 };  // Soft scale
+    case "motion_graphic":
+      return { damping: 12, mass: 0.6, stiffness: 130 };  // Organic spring
+    default:
+      return { damping: 14, mass: 0.7, stiffness: 120 };  // Default fallback
+  }
+};
+
 // ── Componente principal ───────────────────────────────────────────────────────
 export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
-  texto,
+  texto: _texto,
   chapterTitle,
   colorMood,
   elements,
@@ -742,11 +902,29 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
           const appear = spring({
             frame: frame - fireFrame,
             fps:   actualFps,
-            config: { damping: 14, mass: 0.7, stiffness: 120 },
+            config: getSpringConfig(el.type),
           });
 
           // Hidden hasta su trigger
           if (frame < fireFrame) return null;
+
+          const relFrame = frame - fireFrame;
+          const floatWeight = interpolate(relFrame, [12, 32], [0, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          });
+
+          // Micro-animación de flotación sinuosa orgánica
+          const floatX = Math.sin(relFrame / 18 + idx * 1.5) * 3.5 * floatWeight;
+          const floatY = Math.cos(relFrame / 14 + idx * 1.5) * 3.5 * floatWeight;
+          const floatRot = Math.sin(relFrame / 22 + idx * 2.0) * 0.8 * floatWeight;
+
+          // Inclinación humana base para stickers (label_red)
+          const baseTilt = el.type === "label_red" ? (idx % 2 === 0 ? -2.5 : 2.5) : 0;
+          const totalRotation = baseTilt + floatRot;
+
+          // Entrada con deslizamiento vertical suave para imágenes
+          const entrySlideY = el.type === "pexels_image" ? interpolate(appear, [0, 1], [30, 0]) : 0;
 
           return (
             <div
@@ -755,7 +933,7 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
                 position: "absolute",
                 left:     coord.x,
                 top:      coord.y,
-                transform: `translate(-50%, -50%) scale(${appear})`,
+                transform: `translate(-50%, -50%) translate(${floatX}px, ${floatY + entrySlideY}px) scale(${appear}) rotate(${totalRotation}deg)`,
                 opacity:  appear,
                 display:  "flex",
                 alignItems: "center",

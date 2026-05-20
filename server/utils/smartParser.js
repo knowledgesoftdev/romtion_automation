@@ -352,6 +352,176 @@ function enforceLayoutRules(elements) {
   return filtered;
 }
 
+// ── Validación Detallada con Recopilación de Errores para Autocuración ───────
+function validateSceneVisualDetailed(raw, sceneText, sceneIndex) {
+  const errors = [];
+  if (!raw || typeof raw !== 'object') {
+    errors.push(`Escena ${sceneIndex}: 'visual' no es un objeto JSON válido.`);
+    return errors;
+  }
+
+  const mood = raw.color_mood;
+  if (mood && !VALID_MOODS.includes(mood)) {
+    errors.push(`Escena ${sceneIndex}: 'color_mood' inválido ('${mood}'). Debe ser uno de: ${VALID_MOODS.join(', ')}.`);
+  }
+
+  const elements = raw.elements;
+  if (!Array.isArray(elements)) {
+    errors.push(`Escena ${sceneIndex}: 'elements' debe ser un array.`);
+    return errors;
+  }
+
+  if (elements.length < 3) {
+    errors.push(`Escena ${sceneIndex}: Tiene muy pocos elementos (${elements.length}). Debe tener al menos 3 (idealmente entre 4 y 7).`);
+  } else if (elements.length > 7) {
+    errors.push(`Escena ${sceneIndex}: Tiene demasiados elementos (${elements.length}). El máximo es 7.`);
+  }
+
+  const usedSlots = new Set();
+  const elementIds = new Set();
+
+  for (let idx = 0; idx < elements.length; idx++) {
+    const el = elements[idx];
+    const elDesc = `elemento en índice ${idx}`;
+    if (!el || typeof el !== 'object') {
+      errors.push(`Escena ${sceneIndex}: El ${elDesc} no es un objeto válido.`);
+      continue;
+    }
+
+    const id = el.id;
+    if (!id || typeof id !== 'string') {
+      errors.push(`Escena ${sceneIndex}: El ${elDesc} no tiene un 'id' válido.`);
+    } else {
+      elementIds.add(id);
+    }
+
+    const type = el.type;
+    if (!type || !VALID_ELEMENT_TYPES.includes(type)) {
+      errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): Tipo de elemento inválido o faltante ('${type}'). Debe ser uno de: ${VALID_ELEMENT_TYPES.join(', ')}.`);
+    }
+
+    const slot = el.slot;
+    if (!slot || !VALID_SLOTS.includes(slot)) {
+      errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): Slot inválido ('${slot}'). Debe ser uno de: ${VALID_SLOTS.join(', ')}.`);
+    } else {
+      if (usedSlots.has(slot)) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El slot '${slot}' ya está en uso por otro elemento en esta escena. NO duplicar slots.`);
+      }
+      usedSlots.add(slot);
+    }
+
+    const size = el.size;
+    if (size && !VALID_SIZES.includes(size)) {
+      errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): Tamaño inválido ('${size}'). Debe ser uno de: ${VALID_SIZES.join(', ')}.`);
+    }
+
+    // Trigger word validation
+    const trigger = el.trigger_word;
+    if (!trigger || typeof trigger !== 'string') {
+      errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): 'trigger_word' faltante o no es un string.`);
+    } else {
+      const normalizedTrigger = trigger.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
+      const normalizedSceneText = sceneText.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
+      if (!normalizedSceneText.includes(normalizedTrigger)) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): La palabra clave de activación 'trigger_word' ('${trigger}') no existe en el texto de la escena ("${sceneText}").`);
+      }
+    }
+
+    // Specific type validation
+    if (type === 'pexels_image') {
+      const q = el.query;
+      if (!q || typeof q !== 'string' || q.trim().length < 3) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'pexels_image' requiere un 'query' de búsqueda válido en inglés.`);
+      }
+    } else if (type === 'icon') {
+      const ic = el.icon_name;
+      if (!ic || typeof ic !== 'string') {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'icon' requiere un 'icon_name'.`);
+      } else if (!ALLOWED_ICONS.includes(ic)) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El icono '${ic}' no está en la lista curada de iconos permitidos.`);
+      }
+    } else if (type === 'logo') {
+      const n = el.name;
+      if (!n || typeof n !== 'string' || n.trim().length === 0) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'logo' requiere un campo 'name' en minúsculas.`);
+      }
+    } else if (type === 'label_red') {
+      const t = el.text;
+      if (!t || typeof t !== 'string') {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'label_red' requiere un campo 'text'.`);
+      } else if (t.length > 12) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El texto '${t}' en label_red supera el límite de 12 caracteres (tiene ${t.length}).`);
+      }
+    } else if (type === 'label_black') {
+      const t = el.text;
+      if (!t || typeof t !== 'string') {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'label_black' requiere un campo 'text'.`);
+      } else if (t.length > 22) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El texto '${t}' en label_black supera el límite de 22 caracteres (tiene ${t.length}).`);
+      }
+    } else if (type === 'motion_graphic') {
+      const g = el.graphic;
+      if (!g || !VALID_MOTION_GRAPHICS.includes(g)) {
+        errors.push(`Escena ${sceneIndex} (ID: ${id || idx}): El elemento de tipo 'motion_graphic' requiere un campo 'graphic' válido (${VALID_MOTION_GRAPHICS.join(', ')}).`);
+      }
+    }
+  }
+
+  // Anti-collision: Max 2 labels per row
+  const rows = {
+    top:    ['top-left', 'top-right'],
+    mid:    ['mid-left', 'center', 'mid-right'],
+    bottom: ['bottom-left', 'bottom-right'],
+  };
+  const isLabel = (el) => el && (el.type === 'label_red' || el.type === 'label_black');
+  
+  for (const [rowName, slotList] of Object.entries(rows)) {
+    const labelsInRow = elements.filter(el => slotList.includes(el.slot) && isLabel(el));
+    if (labelsInRow.length > 2) {
+      errors.push(`Escena ${sceneIndex}: Colisión detectada en la fila '${rowName}'. Hay ${labelsInRow.length} etiquetas (labels) en la misma fila. Máximo permitido es 2.`);
+    }
+  }
+
+  // Center label collision
+  const centerEl = elements.find(el => el.slot === 'center');
+  if (centerEl && isLabel(centerEl)) {
+    const midLeftEl = elements.find(el => el.slot === 'mid-left');
+    const midRightEl = elements.find(el => el.slot === 'mid-right');
+    if (isLabel(midLeftEl) || isLabel(midRightEl)) {
+      errors.push(`Escena ${sceneIndex}: Colisión crítica. El slot 'center' tiene una etiqueta, por lo que 'mid-left' y 'mid-right' no pueden tener etiquetas.`);
+    }
+  }
+
+  // Arrows validation
+  const arrows = raw.arrows;
+  if (arrows) {
+    if (!Array.isArray(arrows)) {
+      errors.push(`Escena ${sceneIndex}: 'arrows' debe ser un array.`);
+    } else {
+      if (arrows.length > 2) {
+        errors.push(`Escena ${sceneIndex}: Demasiadas flechas (${arrows.length}). El máximo es 2 por escena.`);
+      }
+      for (let idx = 0; idx < arrows.length; idx++) {
+        const arr = arrows[idx];
+        if (!arr || typeof arr !== 'object') continue;
+        const from = arr.from;
+        const to = arr.to;
+        if (!elementIds.has(from)) {
+          errors.push(`Escena ${sceneIndex}: Flecha conectando un origen ('from') inexistente ('${from}').`);
+        }
+        if (!elementIds.has(to)) {
+          errors.push(`Escena ${sceneIndex}: Flecha conectando un destino ('to') inexistente ('${to}').`);
+        }
+        if (from && to && from === to) {
+          errors.push(`Escena ${sceneIndex}: Flecha conectando un elemento consigo mismo ('${from}').`);
+        }
+      }
+    }
+  }
+
+  return errors;
+}
+
 // ── Llamada Claude: fragmentar guion completo ────────────────────────────────
 async function fragmentWithClaude(rawScript) {
   if (!Anthropic || !process.env.ANTHROPIC_API_KEY) {
@@ -360,32 +530,166 @@ async function fragmentWithClaude(rawScript) {
   const Client = Anthropic.default || Anthropic;
   const client = new Client();
 
-  const res = await client.messages.create({
-    model:      ANTHROPIC_MODEL,
-    max_tokens: 16000,                  // multi-element pide mucho mas JSON
-    system:     FRAGMENT_SYSTEM,
-    messages: [{
-      role: 'user',
-      content: `Guion a fragmentar:\n\n${rawScript}\n\nDevuelve solo el array JSON con texto + chapter_title + visual por cada escena.`,
-    }],
-  });
+  const messages = [{
+    role: 'user',
+    content: `Guion a fragmentar:\n\n${rawScript}\n\nDevuelve solo el array JSON con texto + chapter_title + visual por cada escena.`,
+  }];
 
-  return extractJsonArray(res);
+  let attempts = 0;
+  const maxAttempts = 3;
+
+  while (attempts < maxAttempts) {
+    attempts++;
+    console.log(`🤖 [smartParser] Intento ${attempts}/${maxAttempts} de fragmentación y composición con Claude...`);
+
+    const res = await client.messages.create({
+      model:      ANTHROPIC_MODEL,
+      max_tokens: 16000,                  // multi-element pide mucho mas JSON
+      system:     FRAGMENT_SYSTEM,
+      messages:   messages,
+    });
+
+    let rawText = '';
+    for (const block of res.content || []) {
+      if (block.type === 'text') rawText += block.text;
+    }
+
+    let rawFragments;
+    try {
+      rawFragments = extractJsonArray(res);
+    } catch (parseErr) {
+      console.warn(`⚠️  Intento ${attempts} falló al parsear el JSON de Claude: ${parseErr.message}`);
+      if (attempts === maxAttempts) throw parseErr;
+
+      messages.push({ role: 'assistant', content: rawText });
+      messages.push({
+        role: 'user',
+        content: `Error al parsear el JSON: ${parseErr.message}. Asegúrate de devolver ÚNICAMENTE un array JSON válido sin bloques markdown adicionales ni explicaciones.`
+      });
+      continue;
+    }
+
+    // Validar visual y recolectar errores
+    const validationErrors = [];
+    for (let i = 0; i < rawFragments.length; i++) {
+      const frag = rawFragments[i];
+      const text = (frag.texto || frag.text || '').trim();
+      const errors = validateSceneVisualDetailed(frag.visual, text, i + 1);
+      if (errors.length > 0) {
+        validationErrors.push(...errors);
+      }
+    }
+
+    if (validationErrors.length === 0) {
+      console.log(`✅ [smartParser] Validación exitosa en el intento ${attempts}! Ningún error de diseño encontrado.`);
+      return rawFragments;
+    }
+
+    console.warn(`⚠️  Intento ${attempts} falló la validación estricta con ${validationErrors.length} errores.`);
+    if (attempts === maxAttempts) {
+      console.warn(`🛑 Se alcanzó el límite de intentos en fragmentWithClaude. Retornando output actual con correcciones heurísticas.`);
+      return rawFragments;
+    }
+
+    // Construir retroalimentación de corrección
+    const errorListStr = validationErrors.slice(0, 15).map(e => `- ${e}`).join('\n');
+    console.log(`📝 Enviando retroalimentación de corrección a Claude:\n${errorListStr}`);
+
+    messages.push({ role: 'assistant', content: rawText });
+    messages.push({
+      role: 'user',
+      content: `El JSON devuelto tiene los siguientes errores de composición y límites de diseño. Por favor corrígelos y vuelve a generar el array JSON completo respetando estrictamente las reglas anti-colisión, límites de caracteres y triggers:
+
+${errorListStr}
+
+Devuelve el JSON corregido completo.`
+    });
+  }
+
+  throw new Error('Excedido el número máximo de intentos');
 }
 
 // ── Llamada Claude: enriquecer chunk de párrafos ya cortados ─────────────────
 async function enrichChunkWithClaude(client, paragraphs) {
   const input = paragraphs.map(p => ({ texto: p.texto }));
-  const res = await client.messages.create({
-    model:      ANTHROPIC_MODEL,
-    max_tokens: 8000,
-    system:     ENRICH_SYSTEM,
-    messages: [{
+  const messages = [{
+    role: 'user',
+    content: `Añade chapter_title y visual a cada parrafo:\n\n${JSON.stringify(input, null, 2)}\n\nDevuelve el array completo.`,
+  }];
+
+  let attempts = 0;
+  const maxAttempts = 3;
+
+  while (attempts < maxAttempts) {
+    attempts++;
+    console.log(`🤖 [smartParser] Intento ${attempts}/${maxAttempts} de enriquecimiento de chunk con Claude...`);
+
+    const res = await client.messages.create({
+      model:      ANTHROPIC_MODEL,
+      max_tokens: 8000,
+      system:     ENRICH_SYSTEM,
+      messages:   messages,
+    });
+
+    let rawText = '';
+    for (const block of res.content || []) {
+      if (block.type === 'text') rawText += block.text;
+    }
+
+    let rawFragments;
+    try {
+      rawFragments = extractJsonArray(res);
+    } catch (parseErr) {
+      console.warn(`⚠️  Intento ${attempts} de chunk falló al parsear el JSON de Claude: ${parseErr.message}`);
+      if (attempts === maxAttempts) throw parseErr;
+
+      messages.push({ role: 'assistant', content: rawText });
+      messages.push({
+        role: 'user',
+        content: `Error al parsear el JSON del chunk: ${parseErr.message}. Asegúrate de devolver ÚNICAMENTE un array JSON válido sin bloques markdown ni explicaciones.`
+      });
+      continue;
+    }
+
+    // Validar visual y recolectar errores
+    const validationErrors = [];
+    for (let i = 0; i < rawFragments.length; i++) {
+      const frag = rawFragments[i];
+      const original = paragraphs[i];
+      if (!original) continue;
+      const errors = validateSceneVisualDetailed(frag.visual, original.texto, i + 1);
+      if (errors.length > 0) {
+        validationErrors.push(...errors);
+      }
+    }
+
+    if (validationErrors.length === 0) {
+      console.log(`✅ [smartParser] Chunk validado con éxito en el intento ${attempts}!`);
+      return rawFragments;
+    }
+
+    console.warn(`⚠️  Intento ${attempts} de chunk falló la validación estricta con ${validationErrors.length} errores.`);
+    if (attempts === maxAttempts) {
+      console.warn(`🛑 Límite de intentos en enrichChunkWithClaude. Usando correcciones heurísticas.`);
+      return rawFragments;
+    }
+
+    // Construir retroalimentación de corrección
+    const errorListStr = validationErrors.slice(0, 10).map(e => `- ${e}`).join('\n');
+    console.log(`📝 Enviando retroalimentación de corrección de chunk a Claude:\n${errorListStr}`);
+
+    messages.push({ role: 'assistant', content: rawText });
+    messages.push({
       role: 'user',
-      content: `Añade chapter_title y visual a cada parrafo:\n\n${JSON.stringify(input, null, 2)}\n\nDevuelve el array completo.`,
-    }],
-  });
-  return extractJsonArray(res);
+      content: `El JSON del chunk tiene los siguientes errores de composición. Por favor corrígelos y vuelve a generar el array JSON completo:
+
+${errorListStr}
+
+Devuelve el JSON corregido completo.`
+    });
+  }
+
+  throw new Error('Excedido el número máximo de intentos en chunk');
 }
 
 function extractJsonArray(res) {

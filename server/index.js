@@ -2,7 +2,9 @@ const express = require('express');
 const cors    = require('cors');
 const fs      = require('fs');
 const path    = require('path');
-const { exec } = require('child_process');
+const http    = require('http');
+const WebSocket = require('ws');
+const { exec, spawn } = require('child_process');
 const { parseScript }     = require('./utils/parser');
 const { parseWithOllama } = require('./utils/ollamaProvider');
 const { readMemory, saveMemory, recordParseInsights, recordVisualStyle, computeInsights } = require('../utils/memory');
@@ -14,8 +16,146 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
+
+function broadcast(data) {
+  const message = JSON.stringify(data);
+  wss.clients.forEach((client) => {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(message);
+    }
+  });
+}
+
+wss.on('connection', (ws) => {
+  console.log('🔌 Cliente WebSocket conectado');
+  ws.send(JSON.stringify({ type: 'status', message: 'Conectado al servidor de logs en tiempo real' }));
+});
+
 const PROJECTS_DIR  = path.join(__dirname, '..', 'public', 'projects');
 const ACTIVE_FILE   = path.join(__dirname, 'active-project.json');
+
+// ── Streaming helper ──────────────────────────────────────────────────────────
+function runCommandStream(cmd, args, taskType, projectId, res, successMessage, extraResponseData = {}) {
+  let totalParagraphs = 0;
+  let totalScenes = 0;
+  if (projectId) {
+    try {
+      const guionPath = path.join(PROJECTS_DIR, projectId, 'guion.json');
+      if (fs.existsSync(guionPath)) {
+        totalParagraphs = JSON.parse(fs.readFileSync(guionPath, 'utf8')).length;
+      }
+    } catch (_) {}
+  }
+
+  console.log(`[Stream] Ejecutando: ${cmd} ${args.join(' ')}`);
+  
+  // Start task at 0%
+  broadcast({ type: 'progress', task: taskType, progress: 0, log: `Iniciando tarea: ${taskType}...` });
+
+  const child = spawn(cmd, args, { cwd: path.join(__dirname, '..'), shell: true });
+  
+  let stdout = '';
+  let stderr = '';
+  
+  let stdoutBuffer = '';
+  let stderrBuffer = '';
+
+  function handleLine(line, isError = false) {
+    const trimmed = line.trim();
+    if (!trimmed) return;
+
+    let progress = null;
+    if (['audio', 'plan', 'pexels'].includes(taskType) && totalParagraphs > 0) {
+      const match = trimmed.match(/\[(?:parrafo-)?(\d+)\]/);
+      if (match) {
+        const current = parseInt(match[1]);
+        progress = Math.min(Math.round((current / totalParagraphs) * 100), 100);
+      }
+    } else if (taskType === 'whisper') {
+      const sceneMatch = trimmed.match(/Timing cargado:\s*(\d+)\s*escenas/);
+      if (sceneMatch) {
+        totalScenes = parseInt(sceneMatch[1]);
+      }
+      const segmentMatch = trimmed.match(/Procesando segmento\s*(\d+)/);
+      if (segmentMatch && totalScenes > 0) {
+        const current = parseInt(segmentMatch[1]);
+        progress = Math.min(Math.round((current / totalScenes) * 100), 100);
+      }
+    }
+
+    broadcast({
+      type: 'progress',
+      task: taskType,
+      progress: progress,
+      log: trimmed,
+      isError
+    });
+  }
+
+  child.stdout.on('data', (data) => {
+    const str = data.toString();
+    stdout += str;
+    process.stdout.write(str);
+
+    stdoutBuffer += str;
+    let lines = stdoutBuffer.split(/\r?\n/);
+    stdoutBuffer = lines.pop();
+    for (const line of lines) {
+      handleLine(line, false);
+    }
+  });
+
+  child.stderr.on('data', (data) => {
+    const str = data.toString();
+    stderr += str;
+    process.stderr.write(str);
+
+    stderrBuffer += str;
+    let lines = stderrBuffer.split(/\r?\n/);
+    stderrBuffer = lines.pop();
+    for (const line of lines) {
+      handleLine(line, true);
+    }
+  });
+
+  child.on('close', (code) => {
+    if (stdoutBuffer.trim()) handleLine(stdoutBuffer, false);
+    if (stderrBuffer.trim()) handleLine(stderrBuffer, true);
+
+    if (code !== 0) {
+      console.error(`[Stream] Comando falló con código ${code}`);
+      broadcast({
+        type: 'progress',
+        task: taskType,
+        progress: 100,
+        log: `❌ Error: La tarea falló con código ${code}`,
+        isError: true
+      });
+      if (!res.headersSent) {
+        res.status(500).json({ error: `Error en tarea ${taskType}`, detail: stderr || stdout });
+      }
+    } else {
+      console.log(`[Stream] Comando completado con éxito`);
+      broadcast({
+        type: 'progress',
+        task: taskType,
+        progress: 100,
+        log: `✨ Tarea completada con éxito`
+      });
+      if (!res.headersSent) {
+        let finalData = { message: successMessage };
+        if (typeof extraResponseData === 'function') {
+          finalData = { ...finalData, ...extraResponseData(stdout, stderr) };
+        } else {
+          finalData = { ...finalData, ...extraResponseData };
+        }
+        res.json(finalData);
+      }
+    }
+  });
+}
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function readActiveProject() {
@@ -95,7 +235,7 @@ app.post('/api/projects', async (req, res) => {
   // Usar smartParser (Claude) con fallback determinista
   let guion;
   try {
-    guion = await parseScriptSmart(rawScript);
+    guion = await parseScriptSmart(rawScript, { projectName: name });
   } catch (err) {
     console.warn(`⚠️  smartParser falló, usando parser determinista: ${err.message}`);
     guion = parseScript(rawScript);
@@ -141,7 +281,7 @@ app.post('/api/projects/:id/smart-reparse', async (req, res) => {
   const rawScript = fs.readFileSync(scriptPath, 'utf8');
   let guion;
   try {
-    guion = await parseScriptSmart(rawScript);
+    guion = await parseScriptSmart(rawScript, { projectName: id });
   } catch (err) {
     return res.status(500).json({ error: 'Error en smart-reparse', detail: err.message });
   }
@@ -159,43 +299,22 @@ app.post('/api/projects/:id/smart-reparse', async (req, res) => {
 app.post('/api/projects/:id/generate-audio', (req, res) => {
   const { id } = req.params;
   console.log(`🎙️ Generando audio para: ${id}`);
-  exec(`node generate-audio.js ${id}`, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(error.message);
-      return res.status(500).json({ error: 'Error generando audio', detail: error.message });
-    }
-    console.log(stdout);
-    res.json({ message: 'Audio y timings generados' });
-  });
+  runCommandStream('node', ['generate-audio.js', id], 'audio', id, res, 'Audio y timings generados');
 });
 
 // ── 5. Build scene-plan (LLM analysis) ───────────────────────────────────────
 app.post('/api/projects/:id/scene-plan', (req, res) => {
   const { id } = req.params;
-  const force = req.body?.force ? ' --force' : '';
+  const force = req.body?.force ? ['--force'] : [];
   console.log(`🧠 Generando scene-plan para: ${id}`);
-  exec(`node scripts/build-scene-plan.js ${id}${force}`, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(error.message);
-      return res.status(500).json({ error: 'Error generando scene-plan', detail: error.message });
-    }
-    console.log(stdout);
-    res.json({ message: 'Scene-plan generado' });
-  });
+  runCommandStream('node', ['scripts/build-scene-plan.js', id, ...force], 'plan', id, res, 'Scene-plan generado');
 });
 
 // ── 6. Fetch media from Pexels ───────────────────────────────────────────────
 app.post('/api/projects/:id/fetch-media', (req, res) => {
   const { id } = req.params;
   console.log(`📥 Descargando media de Pexels para: ${id}`);
-  exec(`node fetch-pexels.js ${id}`, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(error.message);
-      return res.status(500).json({ error: 'Error descargando media', detail: error.message });
-    }
-    console.log(stdout);
-    res.json({ message: 'Media descargada' });
-  });
+  runCommandStream('node', ['fetch-pexels.js', id], 'pexels', id, res, 'Media descargada');
 });
 
 // ── 7. Activate existing project ─────────────────────────────────────────────
@@ -262,22 +381,7 @@ app.post('/api/projects/:id/whisper-timing', (req, res) => {
   }
 
   console.log(`🎙️ Generando word-timing para: ${id}`);
-  exec(
-    `python scripts/whisper-timing.py "${id}"`,
-    { cwd: path.join(__dirname, '..'), timeout: 300_000 },
-    (error, stdout, stderr) => {
-      if (error) {
-        console.error(`❌ whisper-timing error: ${error.message}`);
-        return res.status(500).json({
-          error:  'Error generando word-timing',
-          detail: error.message,
-          stderr,
-        });
-      }
-      console.log(stdout);
-      res.json({ ok: true, message: stdout.trim() });
-    }
-  );
+  runCommandStream('python', ['scripts/whisper-timing.py', id], 'whisper', id, res, 'word-timing.json generado');
 });
 
 // ── 8b. Generate YouTube metadata (yt-metadata.txt) ─────────────────────────
@@ -292,20 +396,11 @@ app.post('/api/projects/:id/generate-yt-metadata', (req, res) => {
   }
 
   console.log(`📺 Generando yt-metadata para: ${id}`);
-  exec(
-    `node scripts/generate-yt-metadata.js "${id}"`,
-    { cwd: path.join(__dirname, '..'), timeout: 180_000 },
-    (error, stdout, stderr) => {
-      if (error) {
-        console.error(`❌ yt-metadata error: ${error.message}`);
-        return res.status(500).json({ error: 'Error generando yt-metadata', detail: error.message, stderr });
-      }
-      const outPath = path.join(dir, 'yt-metadata.txt');
-      const content = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
-      console.log(stdout);
-      res.json({ ok: true, message: 'yt-metadata.txt generado', content });
-    }
-  );
+  runCommandStream('node', ['scripts/generate-yt-metadata.js', id], 'metadata', id, res, 'yt-metadata.txt generado', () => {
+    const outPath = path.join(dir, 'yt-metadata.txt');
+    const content = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : null;
+    return { ok: true, content };
+  });
 });
 
 // GET /api/projects/:id/yt-metadata → devuelve el contenido si existe
@@ -412,16 +507,9 @@ app.get('/api/memory/performance', async (req, res) => {
 app.post('/api/memory/sync', (req, res) => {
   const scriptPath = path.join(__dirname, '..', 'scripts', 'auto-sync.js');
   console.log(`🔄 Servidor iniciando auto-sync: node ${scriptPath}`);
-  
-  exec(`node "${scriptPath}"`, (err, stdout, stderr) => {
-    if (err) {
-      console.error(`❌ Error en auto-sync desde API: ${err.message}`);
-      return res.status(500).json({ error: 'Error en auto-sync', detail: err.message, stderr });
-    }
-    console.log(`✅ Sincronización exitosa.`);
-    res.json({ message: 'Sincronización completada con éxito', stdout });
-  });
+  runCommandStream('node', [scriptPath], 'sync', null, res, 'Sincronización completada con éxito');
 });
+
 // ── 9. Analyze comments ────────────────────────────────────────────────────────
 app.post('/api/projects/:id/analyze-comments', (req, res) => {
   const { id } = req.params;
@@ -429,22 +517,13 @@ app.post('/api/projects/:id/analyze-comments', (req, res) => {
   if (!videoId) return res.status(400).json({ error: 'Falta el videoId' });
 
   console.log(`💬 Analizando comentarios de video ${videoId} para proyecto ${id}`);
-
-  exec(`node scripts/analyze-comments.js ${videoId}`, { cwd: path.join(__dirname, '..') }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(error.message);
-      return res.status(500).json({ error: 'Error analizando comentarios', detail: error.message });
-    }
-
+  runCommandStream('node', ['scripts/analyze-comments.js', videoId], 'comments', id, res, 'Comentarios analizados con éxito', () => {
     const reportFile = path.join(PROJECTS_DIR, id, `comments-analysis-${videoId}.md`);
     let reportContent = '';
     if (fs.existsSync(reportFile)) {
       reportContent = fs.readFileSync(reportFile, 'utf8');
-    } else {
-      reportContent = stdout;
     }
-
-    res.json({ message: 'Comentarios analizados con éxito', report: reportContent });
+    return { report: reportContent };
   });
 });
 
@@ -462,7 +541,7 @@ app.get('/api/projects/:id/comments-analysis', (req, res) => {
   res.json({ exists: false });
 });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
 

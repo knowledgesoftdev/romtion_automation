@@ -25,7 +25,8 @@
     "react-dom": "19.2.3",
     "remotion": "4.0.460",
     "simple-icons": "^16.20.0",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "ws": "^8.20.1"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.460",
@@ -45,6 +46,7 @@
     "plan": "node scripts/build-scene-plan.js",
     "media": "node fetch-pexels.js",
     "audio": "node generate-audio.js",
+    "visual-qa": "node scripts/visual-qa.js",
     "lint": "eslint src && tsc"
   },
   "sideEffects": [
