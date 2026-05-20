@@ -59,6 +59,18 @@ if (fs.existsSync(PLAN_PATH)) {
   } catch (_) {}
 }
 
+// Try reading word timings from Faster-Whisper if available
+const WORD_TIMING_PATH = path.join(PROJECT_DIR, 'word-timing.json');
+let wordTimings = [];
+if (fs.existsSync(WORD_TIMING_PATH)) {
+  try {
+    wordTimings = JSON.parse(fs.readFileSync(WORD_TIMING_PATH, 'utf8'));
+    console.log(`🎙️  Timings de palabras cargados desde word-timing.json (${wordTimings.length} palabras)`);
+  } catch (e) {
+    console.warn(`⚠️  Advertencia: Error al leer word-timing.json: ${e.message}`);
+  }
+}
+
 // ── Process Scenes ────────────────────────────────────────────────────────────
 let totalDuration = 0;
 const processedScenes = [];
@@ -75,10 +87,29 @@ guion.forEach((scene, index) => {
     totalDuration = end;
   }
 
+  // Filter word timings specifically for this scene
+  const sceneWords = wordTimings.filter(w => 
+    String(w.escena_id) === String(scene.id) || 
+    parseInt(w.escena_id, 10) === parseInt(scene.id, 10)
+  );
+
   // Pre-process visual elements to link downloaded Pexels media files
-  const elements = (scene.visual.elements || []).map(el => {
+  const elements = (scene.visual.elements || []).map((el, idx) => {
     const elCopy = { ...el };
     
+    // Calculate precise speech-timed trigger start_sec matching Remotion exactly
+    let triggerSec = findTriggerSec(elCopy.trigger_word, sceneWords);
+    if (triggerSec === null) {
+      const ratio = (scene.visual.elements || []).length > 0 ? idx / (scene.visual.elements || []).length : 0;
+      triggerSec = start + duration * ratio * 0.6;
+    }
+    
+    // Convert to 30fps frame relative to scene to align with Remotion's Math.max(4, Math.round(sceneRelSec * 30))
+    const sceneRelSec = triggerSec - start;
+    const fireFrame = Math.max(4, Math.round(sceneRelSec * 30));
+    elCopy.start_sec = Number((start + fireFrame / 30).toFixed(3));
+    console.log(`   👁️ [Escena ${scene.id}] Elemento "${elCopy.id}" (${elCopy.trigger_word}) sincronizado en t=${elCopy.start_sec}s`);
+
     if (elCopy.type === 'pexels_image') {
       // 1. Try to find the exact filename in scene-plan
       let matchedFilename = null;
@@ -111,6 +142,46 @@ guion.forEach((scene, index) => {
     return elCopy;
   });
 
+  // Calculate timing for explicit connections & arrows
+  const processedArrows = (scene.visual.arrows || []).map(arr => {
+    const arrCopy = { ...arr };
+    const fromEl = elements.find(e => e.id === arr.from);
+    const toEl = elements.find(e => e.id === arr.to);
+    if (fromEl && toEl) {
+      const fromFireFrame = Math.max(4, Math.round(((fromEl.start_sec || start) - start) * 30));
+      const toFireFrame = Math.max(4, Math.round(((toEl.start_sec || start) - start) * 30));
+      // Arrow fires 4 frames after both connected elements have appeared
+      const arrowFireFrame = Math.max(fromFireFrame, toFireFrame) + 4;
+      arrCopy.start_sec = Number((start + arrowFireFrame / 30).toFixed(3));
+    } else {
+      arrCopy.start_sec = Number((start + 0.8).toFixed(3));
+    }
+    return arrCopy;
+  });
+
+  // Generate automatic center connectors for radial layouts (scene has center and >= 4 elements)
+  const hasCenter = elements.some(e => e.slot === 'center');
+  if (elements.length >= 4 && hasCenter) {
+    const centerEl = elements.find(e => e.slot === 'center');
+    const orbitalElements = elements.filter(e => e.slot !== 'center' && !processedArrows.some(a => a.from === e.id || a.to === e.id));
+    
+    orbitalElements.forEach(el => {
+      const fromFireFrame = Math.max(4, Math.round(((centerEl.start_sec || start) - start) * 30));
+      const toFireFrame = Math.max(4, Math.round(((el.start_sec || start) - start) * 30));
+      const arrowFireFrame = Math.max(fromFireFrame, toFireFrame) + 4;
+      
+      const autoArrow = {
+        from: centerEl.id,
+        to: el.id,
+        style: 'dashed_straight',
+        start_sec: Number((start + arrowFireFrame / 30).toFixed(3))
+      };
+      
+      processedArrows.push(autoArrow);
+      console.log(`   🏹 [Escena ${scene.id}] Conector radial auto-generado: ${centerEl.id} -> ${el.id} en t=${autoArrow.start_sec}s`);
+    });
+  }
+
   processedScenes.push({
     id: scene.id,
     texto: scene.texto,
@@ -121,7 +192,7 @@ guion.forEach((scene, index) => {
     visual: {
       color_mood: scene.visual.color_mood || 'positivo',
       elements: elements,
-      arrows: scene.visual.arrows || []
+      arrows: processedArrows
     }
   });
 });
@@ -169,5 +240,73 @@ function getActiveProjectId() {
       return JSON.parse(fs.readFileSync(activePath, 'utf8')).projectId || null;
     }
   } catch (_) {}
+  return null;
+}
+
+function normalizeWord(w) {
+  if (!w) return "";
+  return w
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function findTriggerSec(triggerWord, sceneWords) {
+  if (!triggerWord || !sceneWords || !sceneWords.length) return null;
+  const target = normalizeWord(triggerWord);
+  if (!target) return null;
+
+  const equivalents = {
+    "xml": ["eksml", "exml", "xml"],
+    "cpu": ["pu", "pego", "cpu"],
+    "transformation": ["transformacion", "transformations"],
+    "ellis": ["elis"],
+    "gibbs": ["yips"],
+    "10": ["diez", "10"],
+    "diez": ["10", "diez"],
+    "20": ["veinte", "20"],
+    "veinte": ["20", "veinte"],
+    "30": ["treinta", "30"],
+    "50": ["cincuenta", "50"],
+    "cincuenta": ["50", "cincuenta"],
+    "500ms": ["500", "500ms"],
+    "800ms": ["800", "800ms"],
+    "gmail": ["jamal", "gmail"],
+    "21mb": ["uno", "omega", "omegas", "dos", "21mb"],
+    "ttfmr": ["ttf", "mr", "ttfmr"],
+    "xmpp": ["xmp", "xmpp", "eksml"],
+    "parsearse": ["parcearse", "parsearse"],
+    "parchear": ["parchar", "parchear"],
+    "overhead": ["overjet", "overhead"],
+    "docs": ["dogs", "docs"],
+    "anidada": ["formanidad", "anidada"],
+    "threads": ["trets", "tretsanidados", "threads"]
+  };
+
+  const candidates = [target];
+  if (equivalents[target]) {
+    candidates.push(...equivalents[target]);
+  }
+
+  for (const w of sceneWords) {
+    const n = normalizeWord(w.palabra);
+    for (const cand of candidates) {
+      if (n === cand) return w.inicio;
+      if (cand.length > 3 && n.includes(cand)) return w.inicio;
+      if (n.length > 3 && cand.includes(n)) return w.inicio;
+    }
+  }
+
+  for (const w of sceneWords) {
+    const n = normalizeWord(w.palabra);
+    for (const cand of candidates) {
+      if (cand.length > 4 && (cand.includes(n) || n.includes(cand))) {
+        return w.inicio;
+      }
+    }
+  }
+
   return null;
 }

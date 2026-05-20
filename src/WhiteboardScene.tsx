@@ -23,9 +23,13 @@ import {
 import { Icon } from "@iconify/react";
 import * as simpleIcons from "simple-icons";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
+import { loadFont as loadKalam } from "@remotion/google-fonts/Kalam";
+import { loadFont as loadFiraCode } from "@remotion/google-fonts/FiraCode";
 import { FCI_ICONS } from "./iconLookup";
 
 const { fontFamily: INTER } = loadInter();
+const { fontFamily: KALAM } = loadKalam();
+const { fontFamily: FIRA } = loadFiraCode();
 
 // ── Tipos ──────────────────────────────────────────────────────────────────────
 export interface WordTiming {
@@ -139,6 +143,24 @@ function parseNum(raw: string): number {
   const m = raw.replace(/[^0-9.,-]/g, "").replace(",", ".").match(/[\d.]+/);
   return m ? parseFloat(m[0]) : 0;
 }
+
+function getSpringConfig(type: string) {
+  switch (type) {
+    case "icon":
+    case "logo":
+      return { mass: 0.45, damping: 9, stiffness: 170 }; // Playful bouncy "pop"
+    case "pexels_image":
+      return { mass: 1.3, damping: 21, stiffness: 85 }; // Heavy, smooth, elegant slide
+    case "label_red":
+    case "label_black":
+      return { mass: 0.8, damping: 14, stiffness: 125 }; // Balanced, neat whiteboard writing speed
+    case "motion_graphic":
+      return { mass: 0.75, damping: 12, stiffness: 135 }; // Crisp and energetic
+    default:
+      return { mass: 1, damping: 15, stiffness: 100 };
+  }
+}
+
 
 // Tamaño efectivo del bounding box según tipo (limita iconos/logos para que no dominen).
 function effectiveSize(el: VisualElement): number {
@@ -258,12 +280,58 @@ function findTriggerSec(
   if (!triggerWord || !sceneWords.length) return null;
   const target = normalizeWord(triggerWord);
   if (!target) return null;
+
+  // Diccionario de equivalencias fonéticas e inteligentes para Whisper en español
+  const equivalents: Record<string, string[]> = {
+    "xml": ["eksml", "exml", "xml"],
+    "cpu": ["pu", "pego", "cpu"],
+    "transformation": ["transformacion", "transformations"],
+    "ellis": ["elis"],
+    "gibbs": ["yips"],
+    "10": ["diez", "10"],
+    "diez": ["10", "diez"],
+    "20": ["veinte", "20"],
+    "veinte": ["20", "veinte"],
+    "30": ["treinta", "30"],
+    "50": ["cincuenta", "50"],
+    "cincuenta": ["50", "cincuenta"],
+    "500ms": ["500", "500ms"],
+    "800ms": ["800", "800ms"],
+    "gmail": ["jamal", "gmail"],
+    "21mb": ["uno", "omega", "omegas", "dos", "21mb"],
+    "ttfmr": ["ttf", "mr", "ttfmr"],
+    "xmpp": ["xmp", "xmpp", "eksml"],
+    "parsearse": ["parcearse", "parsearse"],
+    "parchear": ["parchar", "parchear"],
+    "overhead": ["overjet", "overhead"],
+    "docs": ["dogs", "docs"],
+    "anidada": ["formanidad", "anidada"],
+    "threads": ["trets", "tretsanidados", "threads"]
+  };
+
+  const candidates = [target];
+  if (equivalents[target]) {
+    candidates.push(...equivalents[target]);
+  }
+
   for (const w of sceneWords) {
     const n = normalizeWord(w.palabra);
-    if (n === target) return w.inicio;
-    if (target.length > 3 && n.includes(target)) return w.inicio;
-    if (n.length > 3 && target.includes(n)) return w.inicio;
+    for (const cand of candidates) {
+      if (n === cand) return w.inicio;
+      if (cand.length > 3 && n.includes(cand)) return w.inicio;
+      if (n.length > 3 && cand.includes(n)) return w.inicio;
+    }
   }
+
+  for (const w of sceneWords) {
+    const n = normalizeWord(w.palabra);
+    for (const cand of candidates) {
+      if (cand.length > 4 && (cand.includes(n) || n.includes(cand))) {
+        return w.inicio;
+      }
+    }
+  }
+
   return null;
 }
 
@@ -495,7 +563,7 @@ const RenderElement: React.FC<{
         return (
           <div style={{
             width: sizePx, height: sizePx * 0.75,
-            background: "#f1f5f9", border: "2px dashed #cbd5e1",
+            background: "#f8fafc", border: "2.5px dashed #cbd5e1",
             borderRadius: 12, display: "flex", flexDirection: "column",
             alignItems: "center", justifyContent: "center",
           }}>
@@ -508,26 +576,65 @@ const RenderElement: React.FC<{
         );
       }
       return (
-        <Img
-          src={src}
-          onError={() => setImgError(true)}
-          style={{
-            width: sizePx, height: sizePx * 0.75, objectFit: "cover",
-            borderRadius: 10,
-            boxShadow: "0 10px 24px rgba(15,23,42,0.12)",
-          }}
-        />
+        <div style={{
+          background: "#ffffff",
+          padding: "10px 10px 24px 10px",
+          boxShadow: "0 12px 30px rgba(15,23,42,0.15)",
+          border: "2px solid #0f172a",
+          borderRadius: 2,
+          transform: `rotate(${el.id.charCodeAt(0) % 2 === 0 ? -1.5 : 1.5}deg)`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}>
+          <Img
+            src={src}
+            onError={() => setImgError(true)}
+            style={{
+              width: sizePx - 20,
+              height: (sizePx - 20) * 0.72,
+              objectFit: "cover",
+              border: "1.5px solid #0f172a",
+            }}
+          />
+          <div style={{
+            fontFamily: KALAM,
+            fontSize: Math.max(12, sizePx * 0.08),
+            color: "#0f172a",
+            fontWeight: 700,
+            marginTop: 10,
+            lineHeight: 1,
+          }}>
+            {el.query}
+          </div>
+        </div>
       );
     }
 
     case "icon": {
       const iconData = FCI_ICONS[el.icon_name];
-      if (!iconData) {
-        // Si Claude pidió un icon_name fuera de la lista bundleada, fallback al CDN
-        return <Icon icon={el.icon_name} width={sizePx * 0.85} height={sizePx * 0.85} />;
-      }
+      const innerIcon = iconData ? (
+        <Icon icon={iconData} width={sizePx * 0.52} height={sizePx * 0.52} />
+      ) : (
+        <Icon icon={el.icon_name} width={sizePx * 0.52} height={sizePx * 0.52} />
+      );
+
       return (
-        <Icon icon={iconData} width={sizePx * 0.85} height={sizePx * 0.85} />
+        <div style={{
+          width: sizePx * 0.72,
+          height: sizePx * 0.72,
+          background: "rgba(255, 255, 255, 0.95)",
+          border: "2.5px solid #0f172a",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 10px 25px rgba(15,23,42,0.1)",
+          transform: `rotate(${el.id.charCodeAt(0) % 2 === 0 ? -3 : 3}deg)`,
+          clipPath: "polygon(4% 2%, 97% 4%, 95% 97%, 2% 95%)",
+        }}>
+          {innerIcon}
+        </div>
       );
     }
 
@@ -535,23 +642,11 @@ const RenderElement: React.FC<{
       const slug = el.name.replace(/[^a-z0-9]/gi, "");
       const key = "si" + slug.charAt(0).toUpperCase() + slug.slice(1);
       const icon = (simpleIcons as Record<string, { svg: string; hex: string; title: string }>)[key];
-      if (!icon) {
-        // Fallback: label negro con el nombre de la marca capitalizado
-        return (
-          <div style={{
-            fontFamily: INTER, fontSize: sizePx * 0.22, fontWeight: 900,
-            color: "#0f172a", textAlign: "center",
-            padding: "10px 16px", border: "2px solid #0f172a", borderRadius: 8,
-            background: "#ffffff",
-          }}>
-            {el.name.toUpperCase()}
-          </div>
-        );
-      }
-      return (
+      
+      const innerLogo = icon ? (
         <div
           style={{
-            width: sizePx * 0.85, height: sizePx * 0.85,
+            width: sizePx * 0.45, height: sizePx * 0.45,
             color: "#" + icon.hex,
             display: "flex", alignItems: "center", justifyContent: "center",
           }}
@@ -562,6 +657,31 @@ const RenderElement: React.FC<{
             ),
           }}
         />
+      ) : (
+        <div style={{
+          fontFamily: FIRA, fontSize: sizePx * 0.12, fontWeight: 800,
+          color: "#0f172a", textAlign: "center",
+        }}>
+          {el.name.toUpperCase()}
+        </div>
+      );
+
+      return (
+        <div style={{
+          width: sizePx * 0.72,
+          height: sizePx * 0.72,
+          background: "rgba(255, 255, 255, 0.95)",
+          border: "2.5px solid #0f172a",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 10px 25px rgba(15,23,42,0.1)",
+          transform: `rotate(${el.id.charCodeAt(0) % 2 === 0 ? 3 : -3}deg)`,
+          clipPath: "polygon(3% 5%, 96% 2%, 98% 95%, 4% 97%)",
+        }}>
+          {innerLogo}
+        </div>
       );
     }
 
@@ -572,11 +692,11 @@ const RenderElement: React.FC<{
       if (isHero) {
         return (
           <div style={{
-            fontFamily:    INTER,
-            fontSize,
+            fontFamily:    KALAM,
+            fontSize:      fontSize * 1.15,
             fontWeight:    900,
             color:         "#dc2626",
-            letterSpacing: "-0.025em",
+            letterSpacing: "-0.01em",
             lineHeight:    1,
             textAlign:     "center",
             whiteSpace:    "nowrap",
@@ -587,8 +707,8 @@ const RenderElement: React.FC<{
       }
 
       // Caja con SketchyBorder
-      const textWidth = el.text.length * fontSize * 0.56;
-      const textHeight = fontSize * 1.15;
+      const textWidth = el.text.length * fontSize * 0.58;
+      const textHeight = fontSize * 1.2;
       const paddingX = 18;
       const paddingY = 8;
       const width = textWidth + paddingX * 2;
@@ -603,15 +723,15 @@ const RenderElement: React.FC<{
           alignItems:     "center",
           justifyContent: "center",
           background:     "#fee2e2",
-          clipPath:       "polygon(2% 4%, 97% 1%, 99% 95%, 1% 98%)", // Forma de papel irregular
+          clipPath:       "polygon(2% 4%, 97% 1%, 99% 95%, 1% 98%)",
         }}>
           <SketchyBorder width={width} height={height} color="#dc2626" appear={appear} />
           <div style={{
-            fontFamily:    INTER,
-            fontSize,
-            fontWeight:    900,
+            fontFamily:    KALAM,
+            fontSize:      fontSize * 1.1,
+            fontWeight:    800,
             color:         "#dc2626",
-            letterSpacing: "-0.025em",
+            letterSpacing: "-0.01em",
             lineHeight:    1,
             textAlign:     "center",
             whiteSpace:    "nowrap",
@@ -625,7 +745,7 @@ const RenderElement: React.FC<{
 
     case "label_black": {
       const fontSize = labelFontSize(el.text, sizePx, false, slotMaxWidth);
-      const textWidth = el.text.length * fontSize * 0.56;
+      const textWidth = el.text.length * fontSize * 0.58;
 
       return (
         <div style={{
@@ -633,9 +753,9 @@ const RenderElement: React.FC<{
           display:       "inline-block",
         }}>
           <div style={{
-            fontFamily:    INTER,
-            fontSize,
-            fontWeight:    800,
+            fontFamily:    KALAM,
+            fontSize:      fontSize * 1.1,
+            fontWeight:    700,
             color:         "#0f172a",
             letterSpacing: "-0.01em",
             textAlign:     "center",
@@ -679,6 +799,8 @@ const ConnectorArrow: React.FC<{
   frame: number;
   fireFrame: number;
 }> = ({ from, to, style, frame, fireFrame }) => {
+  if (frame < fireFrame) return null;
+
   const draw = interpolate(frame, [fireFrame, fireFrame + 22], [0, 1], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp",
   });
@@ -691,17 +813,27 @@ const ConnectorArrow: React.FC<{
   if (len < 1) return null;
 
   let d: string;
+  let d2: string;
   if (style === "dashed_curve") {
     const offset = Math.min(80, len * 0.25);
     const cx = mx + (-dy / len) * offset;
     const cy = my + ( dx / len) * offset;
     d = `M ${from.x} ${from.y} Q ${cx} ${cy} ${to.x} ${to.y}`;
+    
+    // Sketchy offset paths with sinuous waviness
+    const cx2 = cx + Math.sin(len) * 3 + 1.5;
+    const cy2 = cy + Math.cos(len) * 3 - 1.5;
+    d2 = `M ${from.x + 1} ${from.y - 1} Q ${cx2} ${cy2} ${to.x - 1} ${to.y + 1}`;
   } else {
     d = `M ${from.x} ${from.y} L ${to.x} ${to.y}`;
+    
+    // Sketchy double stroke for straight arrows: a wavy offset path
+    const mx_p = mx + (-dy / len) * 2;
+    const my_p = my + ( dx / len) * 2;
+    d2 = `M ${from.x + 1.5} ${from.y - 1} Q ${mx_p} ${my_p} ${to.x - 1.5} ${to.y + 1}`;
   }
 
-  // Arrowhead apuntando en la dirección final del path (tangente en el endpoint).
-  // Para Q bezier la tangente en t=1 va del control point al endpoint.
+  // Arrowhead pointing to the final direction of the path
   let tangentDx = dx, tangentDy = dy;
   if (style === "dashed_curve") {
     const offset = Math.min(80, len * 0.25);
@@ -713,62 +845,75 @@ const ConnectorArrow: React.FC<{
   const angle = Math.atan2(tangentDy, tangentDx);
   const arrowSize = 16;
   const apex = { x: to.x, y: to.y };
+  
+  // Hand-drawn asymmetric/imperfect arrowheads
   const base1 = {
-    x: to.x - arrowSize * Math.cos(angle - Math.PI / 6.5),
-    y: to.y - arrowSize * Math.sin(angle - Math.PI / 6.5),
+    x: to.x - arrowSize * Math.cos(angle - Math.PI / 6.5) + (Math.sin(len) * 1.2),
+    y: to.y - arrowSize * Math.sin(angle - Math.PI / 6.5) - (Math.cos(len) * 1.2),
   };
   const base2 = {
-    x: to.x - arrowSize * Math.cos(angle + Math.PI / 6.5),
-    y: to.y - arrowSize * Math.sin(angle + Math.PI / 6.5),
+    x: to.x - (arrowSize - 2) * Math.cos(angle + Math.PI / 6.0) - (Math.sin(len) * 1.0),
+    y: to.y - (arrowSize - 2) * Math.sin(angle + Math.PI / 6.0) + (Math.cos(len) * 1.0),
   };
 
   const headOpacity = interpolate(draw, [0.6, 1], [0, 1], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp",
   });
 
-  // Usamos pathLength=100 para que el dashoffset sea estable independientemente
-  // del largo real del path (que difiere para curvas vs líneas rectas).
+  const maskId = `mask-${fireFrame}-${Math.round(from.x)}-${Math.round(from.y)}-${Math.round(to.x)}-${Math.round(to.y)}`;
+
   return (
     <svg
       width={1280} height={720}
       viewBox="0 0 1280 720"
       style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
     >
-      <path
-        d={d}
-        pathLength={100}
-        fill="none"
-        stroke="#0f172a"
-        strokeWidth={3}
-        strokeDasharray={style === "solid" ? undefined : "4.5 3.5"}
-        strokeDashoffset={100 - draw * 100}
-        strokeLinecap="round"
-      />
+      <defs>
+        <mask id={maskId}>
+          <path
+            d={d}
+            pathLength={100}
+            fill="none"
+            stroke="#ffffff"
+            strokeWidth={15}
+            strokeLinecap="round"
+            strokeDasharray="100"
+            strokeDashoffset={100 - draw * 100}
+          />
+        </mask>
+      </defs>
+      <g mask={`url(#${maskId})`}>
+        {/* Primary sketchy stroke */}
+        <path
+          d={d}
+          pathLength={100}
+          fill="none"
+          stroke="#0f172a"
+          strokeWidth={3.2}
+          strokeDasharray={style === "solid" ? undefined : "4.5 3.5"}
+          strokeLinecap="round"
+        />
+        {/* Secondary sketchy parallel stroke */}
+        <path
+          d={d2}
+          pathLength={100}
+          fill="none"
+          stroke="#0f172a"
+          strokeWidth={1.5}
+          strokeDasharray={style === "solid" ? undefined : "4.5 3.5"}
+          strokeLinecap="round"
+          opacity={0.35}
+        />
+      </g>
+      {/* Arrowhead */}
       <polygon
         points={`${apex.x},${apex.y} ${base1.x},${base1.y} ${base2.x},${base2.y}`}
         fill="#0f172a"
         opacity={headOpacity}
+        style={{ stroke: "#0f172a", strokeWidth: 1.5, strokeLinejoin: "round" }}
       />
     </svg>
   );
-};
-
-const getSpringConfig = (type: string) => {
-  switch (type) {
-    case "logo":
-    case "icon":
-      return { damping: 10, mass: 0.4, stiffness: 180 }; // Retro pop
-    case "pexels_image":
-      return { damping: 18, mass: 0.9, stiffness: 90 };  // Smooth slide
-    case "label_red":
-      return { damping: 9, mass: 0.6, stiffness: 160 };   // Punchy bounce
-    case "label_black":
-      return { damping: 13, mass: 0.7, stiffness: 110 };  // Soft scale
-    case "motion_graphic":
-      return { damping: 12, mass: 0.6, stiffness: 130 };  // Organic spring
-    default:
-      return { damping: 14, mass: 0.7, stiffness: 120 };  // Default fallback
-  }
 };
 
 // ── Componente principal ───────────────────────────────────────────────────────
@@ -798,11 +943,65 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
     [elements]
   );
 
+  // ── Dynamic Slot Coordinates for Radial & Grid Adaptations ──
+  const dynamicSlotCoords = React.useMemo(() => {
+    const coords = { ...SLOT_COORDS };
+    const activeSlots = elements.map(e => e.slot);
+    const hasCenter = activeSlots.includes("center");
+
+    // Case 1: 6 Elements Layout (Unified 3x2 Grid)
+    if (elements.length === 6) {
+      if (activeSlots.includes("top-left")) coords["top-left"] = { x: 270, y: 220 };
+      if (activeSlots.includes("top-right")) coords["top-right"] = { x: 1010, y: 220 };
+      if (activeSlots.includes("center")) coords["center"] = { x: 640, y: 220 }; // Move to top-center
+      if (activeSlots.includes("mid-right")) coords["mid-right"] = { x: 1010, y: 520 }; // Move to bottom-right
+      if (activeSlots.includes("bottom-left")) coords["bottom-left"] = { x: 270, y: 520 }; // Move to bottom-left
+      if (activeSlots.includes("bottom-right")) coords["bottom-right"] = { x: 640, y: 520 }; // Move to bottom-center
+    }
+    // Case 2: Radial Layout (Center + Orbitals)
+    else if (hasCenter && elements.length >= 4) {
+      elements.forEach(e => {
+        if (e.slot !== "center") {
+          const defaultCoord = SLOT_COORDS[e.slot];
+          const dx = defaultCoord.x - 640;
+          const dy = defaultCoord.y - 410;
+          const factor = 0.82; // Pull 18% closer for tight radial diagram feel
+          coords[e.slot] = {
+            x: 640 + dx * factor,
+            y: 410 + dy * factor,
+          };
+        }
+      });
+    }
+    // Case 3: 5 Elements Layout with Center
+    else if (hasCenter && elements.length === 5) {
+      elements.forEach(e => {
+        if (e.slot !== "center") {
+          const defaultCoord = SLOT_COORDS[e.slot];
+          const dx = defaultCoord.x - 640;
+          const dy = defaultCoord.y - 410;
+          const factor = 0.85;
+          coords[e.slot] = {
+            x: 640 + dx * factor,
+            y: 410 + dy * factor,
+          };
+        }
+      });
+    }
+
+    return coords;
+  }, [elements]);
+
   // ── Filtrado de wordTimings por escena ────────────────────────────────────
   const sceneWords = React.useMemo(() => {
     if (!wordTimings?.length) return [];
-    const eid = String(escenaId);
-    return wordTimings.filter(w => String(w.escena_id) === eid);
+    const targetInt = parseInt(String(escenaId), 10);
+    const targetStr = String(escenaId);
+    return wordTimings.filter(w => {
+      const wIdStr = String(w.escena_id);
+      const wIdInt = parseInt(wIdStr, 10);
+      return wIdStr === targetStr || wIdInt === targetInt;
+    });
   }, [wordTimings, escenaId]);
 
   // ── Para cada elemento, calculo su frame de aparición ────────────────────
@@ -839,7 +1038,16 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
   });
 
   return (
-    <AbsoluteFill style={{ background: "#ffffff", overflow: "hidden" }}>
+    <AbsoluteFill style={{
+      backgroundColor: "#f8fafc",
+      backgroundImage: `
+        radial-gradient(#cbd5e1 1.5px, transparent 1.5px),
+        radial-gradient(#cbd5e1 1.5px, transparent 1.5px)
+      `,
+      backgroundSize: "32px 32px",
+      backgroundPosition: "0 0, 16px 16px",
+      overflow: "hidden"
+    }}>
       <AbsoluteFill style={{ opacity: globalOpacity }}>
 
         {/* ── Chapter title ─────────────────────────────────────────────── */}
@@ -862,8 +1070,19 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
             color:      "#0f172a",
             letterSpacing: "-0.025em",
             lineHeight: 1.05,
+            position: "relative",
           }}>
             {chapterTitle}
+            <div style={{
+              position: "absolute",
+              bottom: -8,
+              left: "10%",
+              width: "80%",
+              height: 4,
+              background: "#0f172a",
+              borderRadius: 2,
+              opacity: 0.8,
+            }} />
           </div>
         </div>
 
@@ -872,8 +1091,8 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
           const elFrom = elements.find(e => e.id === arr.from);
           const elTo   = elements.find(e => e.id === arr.to);
           if (!elFrom || !elTo) return null;
-          const fromCoord = SLOT_COORDS[elFrom.slot];
-          const toCoord   = SLOT_COORDS[elTo.slot];
+          const fromCoord = dynamicSlotCoords[elFrom.slot];
+          const toCoord   = dynamicSlotCoords[elTo.slot];
           const fromDims  = elementHalfDims(elFrom, slotMaxWidths[elFrom.slot]);
           const toDims    = elementHalfDims(elTo,   slotMaxWidths[elTo.slot]);
           const seg = shortenArrow(fromCoord, toCoord, fromDims, toDims);
@@ -894,9 +1113,36 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
           );
         })}
 
+        {/* ── Automatic Center Connectors for Circular/Radial Layouts ── */}
+        {elements.length >= 4 && elements.some(e => e.slot === "center") &&
+          elements.filter(e => e.slot !== "center" && !arrows.some(a => a.from === e.id || a.to === e.id)).map((el, i) => {
+            const centerEl = elements.find(e => e.slot === "center")!;
+            const fromCoord = dynamicSlotCoords[centerEl.slot];
+            const toCoord   = dynamicSlotCoords[el.slot];
+            const fromDims  = elementHalfDims(centerEl, slotMaxWidths[centerEl.slot]);
+            const toDims    = elementHalfDims(el,   slotMaxWidths[el.slot]);
+            const seg = shortenArrow(fromCoord, toCoord, fromDims, toDims);
+            if (!seg) return null;
+            const fireFrame = Math.max(
+              elementFireFrames[elements.indexOf(centerEl)] || 0,
+              elementFireFrames[elements.indexOf(el)]       || 0
+            ) + 4;
+            return (
+              <ConnectorArrow
+                key={`auto-arrow-${i}`}
+                from={seg.from}
+                to={seg.to}
+                style="dashed_straight"
+                frame={frame}
+                fireFrame={fireFrame}
+              />
+            );
+          })
+        }
+
         {/* ── Elementos posicionados por slot ────────────────────────────── */}
         {elements.map((el, idx) => {
-          const coord = SLOT_COORDS[el.slot];
+          const coord = dynamicSlotCoords[el.slot];
           const sizePx = effectiveSize(el);
           const fireFrame = elementFireFrames[idx];
           const appear = spring({

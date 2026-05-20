@@ -26,6 +26,55 @@ const SIZE_PX = {
   xl: 360,
 };
 
+// ── Dynamic Slot Coordinates for Radial & Grid Adaptations ──
+function getDynamicSlotCoords(elements) {
+  const coords = { ...SLOT_COORDS };
+  const activeSlots = elements.map(e => e.slot);
+  const hasCenter = activeSlots.includes("center");
+
+  // Case 1: 6 Elements Layout (Unified 3x2 Grid)
+  if (elements.length === 6) {
+    if (activeSlots.includes("top-left")) coords["top-left"] = { x: 270, y: 220 };
+    if (activeSlots.includes("top-right")) coords["top-right"] = { x: 1010, y: 220 };
+    if (activeSlots.includes("center")) coords["center"] = { x: 640, y: 220 }; // Move to top-center
+    if (activeSlots.includes("mid-right")) coords["mid-right"] = { x: 1010, y: 520 }; // Move to bottom-right
+    if (activeSlots.includes("bottom-left")) coords["bottom-left"] = { x: 270, y: 520 }; // Move to bottom-left
+    if (activeSlots.includes("bottom-right")) coords["bottom-right"] = { x: 640, y: 520 }; // Move to bottom-center
+  }
+  // Case 2: Radial Layout (Center + Orbitals)
+  else if (hasCenter && elements.length >= 4) {
+    elements.forEach(e => {
+      if (e.slot !== "center") {
+        const defaultCoord = SLOT_COORDS[e.slot];
+        const dx = defaultCoord.x - 640;
+        const dy = defaultCoord.y - 410;
+        const factor = 0.82; // Pull 18% closer for tight radial diagram feel
+        coords[e.slot] = {
+          x: 640 + dx * factor,
+          y: 410 + dy * factor,
+        };
+      }
+    });
+  }
+  // Case 3: 5 Elements Layout with Center
+  else if (hasCenter && elements.length === 5) {
+    elements.forEach(e => {
+      if (e.slot !== "center") {
+        const defaultCoord = SLOT_COORDS[e.slot];
+        const dx = defaultCoord.x - 640;
+        const dy = defaultCoord.y - 410;
+        const factor = 0.85;
+        coords[e.slot] = {
+          x: 640 + dx * factor,
+          y: 410 + dy * factor,
+        };
+      }
+    });
+  }
+
+  return coords;
+}
+
 let mainTimeline = null;
 let totalFrames = 0;
 const FPS = 60;
@@ -59,9 +108,12 @@ function initEngine() {
     const startSec = scene.start;
     const endSec = scene.end;
 
+    // Get the dynamic coordinate map for this scene
+    const sceneCoords = getDynamicSlotCoords(scene.visual.elements);
+
     // Create scene container to isolate visibility
     scene.visual.elements.forEach(el => {
-      const coord = SLOT_COORDS[el.slot] || SLOT_COORDS.center;
+      const coord = sceneCoords[el.slot] || SLOT_COORDS.center;
       const sizePx = SIZE_PX[el.size] || SIZE_PX.md;
       
       const elDiv = document.createElement('div');
@@ -123,8 +175,8 @@ function initEngine() {
         const toEl = scene.visual.elements.find(e => e.id === arr.to);
         if (!fromEl || !toEl) return;
 
-        const fromCoord = SLOT_COORDS[fromEl.slot] || SLOT_COORDS.center;
-        const toCoord = SLOT_COORDS[toEl.slot] || SLOT_COORDS.center;
+        const fromCoord = sceneCoords[fromEl.slot] || SLOT_COORDS.center;
+        const toCoord = sceneCoords[toEl.slot] || SLOT_COORDS.center;
 
         // Calculate path representing a smooth curve
         const pathData = calculateCurve(fromCoord.x, fromCoord.y, toCoord.x, toCoord.y, arr.style);
@@ -132,10 +184,11 @@ function initEngine() {
         const pathEl = document.createElementNS('http://www.w3.org/2000/svg', 'path');
         pathEl.setAttribute('id', `arrow-${scene.id}-${arrowIndex}`);
         
-        const isOrange = arr.style && arr.style.includes('orange');
+                const isOrange = arr.style && arr.style.includes('orange');
         pathEl.setAttribute('class', isOrange ? 'arrow-path-orange' : 'arrow-path');
         pathEl.setAttribute('d', pathData);
         pathEl.setAttribute('marker-end', isOrange ? 'url(#arrow-marker-orange)' : 'url(#arrow-marker)');
+        pathEl.setAttribute('opacity', '0');
         
         svgContainer.appendChild(pathEl);
         
@@ -143,7 +196,8 @@ function initEngine() {
           path: pathEl,
           sceneId: scene.id,
           startSec,
-          endSec
+          endSec,
+          start_sec: arr.start_sec
         });
       });
     }
@@ -219,16 +273,22 @@ function initEngine() {
         }, absoluteStart);
       }
 
-      // Continuous float macro-animation once active
-      gsap.to(elDom, {
-        y: '+=6',
-        rotation: '+=1.5',
-        duration: 2 + Math.random() * 2,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        delay: relativeStart
-      });
+      // Continuous float macro-animation once active (controlled by Master Timeline)
+      const entryDuration = (elObj.type === 'logo' || elObj.type === 'icon' || elObj.type === 'label_red') ? 0.85 : 0.7;
+      const floatStart = absoluteStart + entryDuration;
+      const floatDuration = 2 + Math.random() * 2;
+      const remainingTime = endSec - floatStart;
+      if (remainingTime > 0) {
+        const floatRepeats = Math.ceil(remainingTime / floatDuration) + 1;
+        mainTimeline.to(elDom, {
+          y: '+=6',
+          rotation: elObj.type === 'label_red' ? '+=1.5' : '+=3',
+          duration: floatDuration,
+          repeat: floatRepeats,
+          yoyo: true,
+          ease: 'sine.inOut'
+        }, floatStart);
+      }
 
       // Animate exit
       mainTimeline.to(elDom, {
@@ -247,6 +307,8 @@ function initEngine() {
       // Get length to animate path drawing
       const pathLength = pathDom.getTotalLength();
       
+      const absoluteStart = arrObj.start_sec || (startSec + 0.8);
+      
       mainTimeline.fromTo(pathDom, {
         strokeDasharray: pathLength,
         strokeDashoffset: pathLength,
@@ -256,7 +318,7 @@ function initEngine() {
         opacity: 1,
         duration: 1.2,
         ease: 'power2.out'
-      }, startSec + 0.8);
+      }, absoluteStart);
 
       mainTimeline.to(pathDom, {
         opacity: 0,
