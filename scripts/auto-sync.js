@@ -234,11 +234,17 @@ async function main() {
 
     // 5. Registrar / Actualizar en mejor_rendimiento
     const existingIdx = memory.mejor_rendimiento.findIndex(v => v.video_id === videoId);
+    const existingEntry = existingIdx >= 0 ? memory.mejor_rendimiento[existingIdx] : null;
+
+    // Preservar valores manuales o previos si la API devuelve 0 (por retraso de 48h de YouTube Analytics o falta de OAuth2)
+    const finalRetention = (retention > 0) ? parseFloat(retention.toFixed(4)) : (existingEntry?.retention || 0);
+    const finalCtr = (ctr > 0) ? parseFloat(ctr.toFixed(4)) : (existingEntry?.ctr || 0);
+
     const perfEntry = {
       tema: cleanTema,
       video_id: videoId,
-      retention: parseFloat(retention.toFixed(4)),
-      ctr: parseFloat(ctr.toFixed(4)),
+      retention: finalRetention,
+      ctr: finalCtr,
       views,
       likes,
       hook_style: hookStyle,
