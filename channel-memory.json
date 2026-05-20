@@ -20,7 +20,7 @@
       "views": 16,
       "likes": 0,
       "hook_style": "afirmacion-tecnica-como-sentencia",
-      "fecha": "2026-05-20T01:49:39.712Z"
+      "fecha": "2026-05-20T06:35:25.644Z"
     },
     {
       "tema": "Internet Explorer",
@@ -30,57 +30,57 @@
       "views": 60,
       "likes": 1,
       "hook_style": "dato-porcentaje-mas-consecuencia-escalada",
-      "fecha": "2026-05-20T01:49:40.589Z"
+      "fecha": "2026-05-20T06:35:26.440Z"
     },
     {
       "tema": "BlackBerry",
       "video_id": "r25SoTB4Umg",
       "retention": 0.242,
-      "ctr": 0.010,
+      "ctr": 0.01,
       "views": 70,
       "likes": 4,
       "hook_style": "causa-tecnica-como-condena",
-      "fecha": "2026-05-20T01:49:41.456Z"
+      "fecha": "2026-05-20T06:35:27.322Z"
     },
     {
-      "tema": "myspace",
+      "tema": "google",
       "video_id": "YmMWg4JTE0E",
       "retention": 0,
       "ctr": 0.005,
       "views": 9,
       "likes": 0,
       "hook_style": "dato-tecnico-con-impacto-visual",
-      "fecha": "2026-05-20T01:49:42.249Z"
+      "fecha": "2026-05-20T06:35:28.209Z"
     },
     {
-      "tema": "nokia",
+      "tema": "google",
       "video_id": "j7rbmgKSdnI",
       "retention": 0.109,
       "ctr": 0.006,
       "views": 42,
       "likes": 0,
       "hook_style": "dato-tecnico-con-impacto-visual",
-      "fecha": "2026-05-20T01:49:43.141Z"
+      "fecha": "2026-05-20T06:35:29.147Z"
     },
     {
-      "tema": "La carta que Steve Jobs usó para matar Flash — y tenía razón",
+      "tema": "Flash",
       "video_id": "owUMBM8OS00",
       "retention": 0.324,
       "ctr": 0.007,
       "views": 63,
       "likes": 2,
       "hook_style": "mi-estilo",
-      "fecha": "2026-05-20T03:08:34.242Z"
+      "fecha": "2026-05-20T06:35:29.930Z"
     },
     {
       "tema": "equifax",
       "video_id": "okJA5ALLYRY",
       "retention": 0.225,
       "ctr": 0.005,
-      "views": 13,
+      "views": 15,
       "likes": 1,
       "hook_style": "estadistica-impactante-con-timeline",
-      "fecha": "2026-05-20T01:49:38.853Z"
+      "fecha": "2026-05-20T06:35:24.664Z"
     },
     {
       "tema": "windows",
@@ -90,12 +90,22 @@
       "views": 0,
       "likes": 0,
       "hook_style": "declaracion-contraintuitiva-con-cifra-exacta",
-      "fecha": "2026-05-20T01:49:38.017Z"
+      "fecha": "2026-05-20T06:35:23.810Z"
+    },
+    {
+      "tema": "google",
+      "video_id": "wsxPDJdt2o8",
+      "retention": 0,
+      "ctr": 0,
+      "views": 0,
+      "likes": 0,
+      "hook_style": "dato-tecnico-con-impacto-visual",
+      "fecha": "2026-05-20T06:35:21.845Z"
     }
   ],
   "estilo_hooks": [],
-  "ultima_publicacion": "2026-05-20T01:22:11Z",
-  "total_videos": 8,
+  "ultima_publicacion": "2026-05-20T06:27:22Z",
+  "total_videos": 9,
   "estilo_titulo_historial": [
     "dato-oculto-con-numero-especifico",
     "estadistica-impactante-con-timeline",
