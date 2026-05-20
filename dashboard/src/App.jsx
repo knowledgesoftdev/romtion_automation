@@ -267,7 +267,7 @@ function NewProjectPanel({ onCreated, setStatus }) {
 }
 
 // ── Project Detail ────────────────────────────────────────────────────────────
-function ProjectDetail({ project, onRefresh, setStatus, memory }) {
+function ProjectDetail({ project, onRefresh, setStatus, memory, renderEngine, setRenderEngine }) {
   const [loadingAudio,       setLoadingAudio]       = useState(false);
   const [loadingPlan,        setLoadingPlan]        = useState(false);
   const [loadingMedia,       setLoadingMedia]       = useState(false);
@@ -278,6 +278,64 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
   const [hasWordTiming,      setHasWordTiming]      = useState(false);
   const [loadingMetadata,    setLoadingMetadata]    = useState(false);
   const [metadataContent,    setMetadataContent]    = useState(null);
+
+  const iframeRef = React.useRef(null);
+  const [loadingHyperframes, setLoadingHyperframes] = useState(false);
+  const [loadingRender, setLoadingRender] = useState(false);
+
+  const compileHyperframes = async () => {
+    setLoadingHyperframes(true);
+    setStatus('🎦 Compilando HyperFrames (HTML + GSAP)...');
+    try {
+      const res = await fetch(`${API}/api/projects/${project.id}/build-hyperframes`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setStatus(`✅ ${data.message}`);
+      onRefresh();
+    } catch (err) {
+      setStatus(`❌ Error compilando HyperFrames: ${err.message}`);
+    } finally {
+      setLoadingHyperframes(false);
+    }
+  };
+
+  const renderHyperframes = async () => {
+    setLoadingRender(true);
+    setStatus('📹 Iniciando exportación de video HyperFrames (Puppeteer + FFmpeg)...');
+    try {
+      const res = await fetch(`${API}/api/projects/${project.id}/render-hyperframes`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error);
+      setStatus(`✅ Video exportado con éxito a out/${project.id}-hyperframes.mp4!`);
+      onRefresh();
+    } catch (err) {
+      setStatus(`❌ Error exportando video: ${err.message}`);
+    } finally {
+      setLoadingRender(false);
+    }
+  };
+
+  const playTimeline = () => {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      iframeRef.current.contentWindow.playTimeline();
+      setStatus('▶ Reproduciendo HyperFrames');
+    }
+  };
+
+  const pauseTimeline = () => {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      iframeRef.current.contentWindow.pauseTimeline();
+      setStatus('⏸ Pausado HyperFrames');
+    }
+  };
+
+  const restartTimeline = () => {
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      iframeRef.current.contentWindow.seekToFrame(0);
+      iframeRef.current.contentWindow.playTimeline();
+      setStatus('↺ Reiniciado HyperFrames');
+    }
+  };
 
   // States for comments analysis
   const [commentsReport, setCommentsReport] = useState(null);
@@ -532,6 +590,33 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
         )}
       </div>
 
+      {/* Selector de motor dentro de ProjectDetail */}
+      <div style={{ ...S.card, padding: '12px 18px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#0e1622', border: '1px solid #00d4ff22' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <span style={{ fontSize: 18 }}>🎬</span>
+          <div>
+            <div style={{ fontSize: 12, fontWeight: 700, color: '#cbd5e1' }}>Motor de Renderizado Activo</div>
+            <div style={{ fontSize: 10, color: '#00d4ff', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em', marginTop: 2 }}>
+              {renderEngine === 'hyperframes' ? 'HyperFrames (HTML5 + GSAP)' : 'Remotion (React + Studio)'}
+            </div>
+          </div>
+        </div>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <button
+            style={renderEngine === 'remotion' ? S.btn('#00d4ff') : { ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
+            onClick={() => setRenderEngine('remotion')}
+          >
+            ⚗️ Remotion
+          </button>
+          <button
+            style={renderEngine === 'hyperframes' ? S.btn('#00d4ff') : { ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
+            onClick={() => setRenderEngine('hyperframes')}
+          >
+            🎦 HyperFrames
+          </button>
+        </div>
+      </div>
+
       {/* Steps overview */}
       <div style={{ ...S.card, padding: '16px 20px' }}>
         <div style={S.cardTitle}>Estado del pipeline</div>
@@ -560,8 +645,90 @@ function ProjectDetail({ project, onRefresh, setStatus, memory }) {
         <StepRow num="3" label="Plan de escenas generado (opcional, legacy)"   done={project.hasPlan} />
         <StepRow num="4" label="Imágenes y videos descargados (Pexels)"        done={project.hasMedia} />
         <StepRow num="5" label="Metadata YouTube generada (yt-metadata.txt)"   done={project.hasMetadata} />
-        <StepRow num="6" label="Proyecto activo en Remotion Studio"            done={project.active} />
+        {renderEngine === 'hyperframes' ? (
+          <StepRow num="6" label="Línea de tiempo HyperFrames compilada"       done={project.hasHyperframes} />
+        ) : (
+          <StepRow num="6" label="Proyecto activo en Remotion Studio"            done={project.active} />
+        )}
       </div>
+
+      {/* Previsualización Interactiva (HyperFrames) */}
+      {renderEngine === 'hyperframes' && (
+        <div style={{ ...S.card, display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={S.cardTitle}>🎦 Previsualización Interactiva HyperFrames</div>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                style={loadingHyperframes ? S.btnDisabled : S.btn('#00d4ff')}
+                onClick={compileHyperframes}
+                disabled={loadingHyperframes}
+              >
+                {loadingHyperframes ? 'Compilando...' : project.hasHyperframes ? '↺ Recompilar' : '🎦 Compilar'}
+              </button>
+              {project.hasHyperframes && (
+                <button
+                  style={loadingRender ? S.btnDisabled : S.btn('#10b981', '#fff')}
+                  onClick={renderHyperframes}
+                  disabled={loadingRender}
+                >
+                  {loadingRender ? 'Renderizando...' : '📹 Exportar MP4'}
+                </button>
+              )}
+            </div>
+          </div>
+
+          {project.hasHyperframes ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {/* Contenedor Iframe con aspecto 16:9 y premium blur border */}
+              <div style={{
+                position: 'relative',
+                width: '100%',
+                paddingTop: '56.25%', // 16:9 Aspect Ratio
+                background: '#090d16',
+                border: '1px solid #1e2a3a',
+                borderRadius: 12,
+                overflow: 'hidden',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.5)'
+              }}>
+                <iframe
+                  ref={iframeRef}
+                  src={`${API}/projects/${project.id}/hyperframes/index.html`}
+                  style={{
+                    position: 'absolute',
+                    top: 0, left: 0,
+                    width: '100%', height: '100%',
+                    border: 'none'
+                  }}
+                  title="HyperFrames Previsualizador"
+                />
+              </div>
+
+              {/* Botones de Control de Playback */}
+              <div style={{ display: 'flex', justifyContent: 'center', gap: 10, padding: '8px 0' }}>
+                <button style={S.btn('#22c55e', '#fff')} onClick={playTimeline}>▶ Reproducir</button>
+                <button style={S.btn('#ef4444', '#fff')} onClick={pauseTimeline}>⏸ Pausar</button>
+                <button style={S.btn('#1e2a3a', '#94a3b8')} onClick={restartTimeline}>↺ Reiniciar</button>
+              </div>
+            </div>
+          ) : (
+            <div style={{
+              padding: '40px 20px',
+              textAlign: 'center',
+              backgroundColor: '#1e2a3a22',
+              borderRadius: 8,
+              border: '1px dashed #334155',
+              color: '#94a3b8',
+              fontSize: 13
+            }}>
+              ⚠️ HyperFrames no se ha compilado para este proyecto.
+              <br />
+              <span style={{ fontSize: 11, color: '#475569', display: 'block', marginTop: 6 }}>
+                Haz clic en el botón superior "Compilar HyperFrames" para generar la línea de tiempo GSAP e iniciar la previsualización interactiva con audio.
+              </span>
+            </div>
+          )}
+        </div>
+      )}
 
       <div style={S.grid}>
 
@@ -870,7 +1037,7 @@ export default function App() {
 
   const ENGINES = [
     { id: 'remotion',    label: 'Remotion',    sublabel: 'React + TypeScript', icon: '⚗️', activo: true  },
-    { id: 'hyperframes', label: 'HyperFrames', sublabel: 'HTML + GSAP — HeyGen', icon: '🎦', activo: false, badge: 'Próximamente' },
+    { id: 'hyperframes', label: 'HyperFrames', sublabel: 'HTML + GSAP — HeyGen', icon: '🎦', activo: true },
   ];
 
   const selectEngine = (id) => {
@@ -1069,6 +1236,7 @@ export default function App() {
                 {p.hasTiming  && <span style={S.badge('#f59e0b')}>audio</span>}
                 {p.hasPlan    && <span style={S.badge('#00d4ff')}>plan</span>}
                 {p.hasMedia   && <span style={S.badge('#8b5cf6')}>media</span>}
+                {p.hasHyperframes && <span style={S.badge('#10b981')}>hyper</span>}
                 {p.active     && <span style={S.badge('#22c55e')}>activo</span>}
               </div>
             </div>
@@ -1106,7 +1274,14 @@ export default function App() {
             <NewProjectPanel onCreated={onProjectCreated} setStatus={setSt} />
           )}
           {!showNew && selected && (
-            <ProjectDetail project={selected} onRefresh={onRefresh} setStatus={setSt} memory={memory} />
+            <ProjectDetail
+              project={selected}
+              onRefresh={onRefresh}
+              setStatus={setSt}
+              memory={memory}
+              renderEngine={renderEngine}
+              setRenderEngine={setRenderEngine}
+            />
           )}
           {!showNew && !selected && (
             <div>

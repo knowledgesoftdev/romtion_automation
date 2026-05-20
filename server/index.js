@@ -15,6 +15,7 @@ const PORT = 5000;
 
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));
+app.use('/projects', express.static(path.join(__dirname, '..', 'public', 'projects')));
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
@@ -174,6 +175,7 @@ function projectStatus(projectId) {
   const hasPlan     = fs.existsSync(path.join(dir, 'scene-plan.json'));
   const hasMedia    = fs.existsSync(path.join(dir, 'images')) || fs.existsSync(path.join(dir, 'videos'));
   const hasMetadata = fs.existsSync(path.join(dir, 'yt-metadata.txt'));
+  const hasHyperframes = fs.existsSync(path.join(dir, 'hyperframes', 'index.html'));
 
   let paragraphCount = 0;
   if (hasGuion) {
@@ -181,7 +183,7 @@ function projectStatus(projectId) {
     catch (_) {}
   }
 
-  return { hasGuion, hasTiming, hasPlan, hasMedia, hasMetadata, paragraphCount };
+  return { hasGuion, hasTiming, hasPlan, hasMedia, hasMetadata, hasHyperframes, paragraphCount };
 }
 
 // ── 1. List all projects ──────────────────────────────────────────────────────
@@ -315,6 +317,20 @@ app.post('/api/projects/:id/fetch-media', (req, res) => {
   const { id } = req.params;
   console.log(`📥 Descargando media de Pexels para: ${id}`);
   runCommandStream('node', ['fetch-pexels.js', id], 'pexels', id, res, 'Media descargada');
+});
+
+// ── 6.5. Build HyperFrames HTML/GSAP ──────────────────────────────────────────
+app.post('/api/projects/:id/build-hyperframes', (req, res) => {
+  const { id } = req.params;
+  console.log(`🎦 Compilando HyperFrames (HTML + GSAP) para: ${id}`);
+  runCommandStream('node', ['scripts/build-hyperframes.js', id], 'hyperframes', id, res, 'HyperFrames compilado con éxito');
+});
+
+// ── 6.6. Render HyperFrames Video ─────────────────────────────────────────────
+app.post('/api/projects/:id/render-hyperframes', (req, res) => {
+  const { id } = req.params;
+  console.log(`📹 Renderizando HyperFrames (Puppeteer + FFmpeg) para: ${id}`);
+  runCommandStream('node', ['scripts/render-hyperframes.js', id], 'render', id, res, 'HyperFrames renderizado y exportado con éxito');
 });
 
 // ── 7. Activate existing project ─────────────────────────────────────────────
