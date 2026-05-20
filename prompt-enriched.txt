@@ -11,10 +11,61 @@ NO es periodístico. Es de ingeniería: qué decisión técnica
 o de negocio lo condenó, y qué criterio concreto se lleva 
 el espectador para no repetirlo.
 
+## CONTEXTO DEL CANAL — APRENDIZAJE ACUMULADO
+Total de videos publicados: 9
+Última publicación: 2026-05-20T06:27:22Z
+
+### TEMAS YA CUBIERTOS — NO REPETIR:
+  - Yahoo
+  - Internet Explorer
+  - BlackBerry
+  - MySpace
+  - Nokia
+  - Flash
+  - Equifax
+  - Windows
+  - Google
+
+### HOOKS POR RENDIMIENTO HISTÓRICO (replicá el patrón ganador):
+  ✅ FUNCIONA "causa-tecnica-como-condena" → 70 views promedio (n=1)
+  ✅ FUNCIONA "mi-estilo" → 63 views promedio (n=1)
+  ✅ FUNCIONA "dato-porcentaje-mas-consecuencia-escalada" → 60 views promedio (n=1)
+  🚫 EVITAR "dato-tecnico-con-impacto-visual" → 17 views promedio (n=3)
+  🚫 EVITAR "afirmacion-tecnica-como-sentencia" → 16 views promedio (n=1)
+  🚫 EVITAR "estadistica-impactante-con-timeline" → 15 views promedio (n=1)
+  🚫 EVITAR "declaracion-contraintuitiva-con-cifra-exacta" → 0 views promedio (n=1)
+
+### MOTION GRAPHICS QUE CORRELACIONAN CON VIEWS:
+  - timeline_barras: 31 views promedio (n=5)
+  - donut_chart: 28 views promedio (n=6)
+  - flecha_bajando: 24 views promedio (n=7)
+  - flecha_subiendo: 17 views promedio (n=5)
+  - contador_porcentaje: 17 views promedio (n=4)
+
+### COLOR MOODS GANADORES:
+  - nostalgia: 26 views promedio (n=6)
+  - urgente: 24 views promedio (n=7)
+  - neutro: 24 views promedio (n=7)
+  - positivo: 24 views promedio (n=7)
+
+### RECOMENDACIONES ESTRATÉGICAS:
+  📈 El hook "causa-tecnica-como-condena" rinde mejor (70 views promedio, 1 muestras). Considéralo para el próximo guion.
+  ⚠️ El hook "declaracion-contraintuitiva-con-cifra-exacta" tuvo bajo desempeño (0 views). Evítalo o cámbialo.
+  🎨 Motion graphic "timeline_barras" correlaciona con 31 views promedio. Úsalo en datos clave.
+  🎭 Color mood "nostalgia" funciona mejor en este canal (26 views promedio).
+  🚫 Temas ya cubiertos (no repitas): Yahoo, Internet Explorer, BlackBerry, MySpace, Nokia, Flash, Equifax, Windows.
+
+### CÓMO USAR ESTE CONTEXTO:
+  1. NO escribas un guion sobre temas en "YA CUBIERTOS".
+  2. El gancho del guion DEBE seguir el patrón del hook etiquetado ✅ FUNCIONA.
+  3. Si el dato lo permite, incluye al menos 2 elementos visuales del top de motion graphics.
+  4. Las animaciones deben usar el color_mood ganador del canal.
+
+────────────────────────────────────────────────────────────────────
+
 ## TEMA DEL VIDEO
-Nokia — cuando el CEO no entendía el software que vendía
-Gancho: "Symbian podía hacer todo lo que hacía iOS. 
-Excepto sobrevivir a sus propios ingenieros."
+Friendster — la red social que murió de éxito  "Tenían más usuarios que Facebook en 2004. Su base de datos tardaba 40 segundos en cargar un perfil. Los usuarios se fueron."
+
 
 ## TONO Y ESTILO
 - **Vocabulario Accesible y Comprensible**: Usa explicaciones claras y sencillas. Evita la jerga excesivamente compleja, abstracta o pedante. Ilustra conceptos de ingeniería con analogías cotidianas y lógicas fáciles de asimilar para el espectador.
@@ -105,5 +156,5 @@ React. Usa este vocabulario al describir:
   de arquitectura, fragmentos de código real
 
 ## GENERA AHORA
-El guión completo del video sobre [TEMA] con exactamente 
+El guión completo del video sobre Friendster con exactamente 
 12,000 caracteres, respetando toda la estructura anterior.

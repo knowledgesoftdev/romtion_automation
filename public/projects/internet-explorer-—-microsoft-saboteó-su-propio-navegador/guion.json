@@ -1,590 +1,4258 @@
 [
   {
     "id": "01",
-    "texto": "Internet Explorer seis dominó el noventa y cinco por ciento del mercado."
+    "texto": "Internet Explorer seis dominó el noventa y cinco por ciento del mercado. Microsoft dejó de actualizarlo. Esa decisión paralizó la web por una década entera.",
+    "chapter_title": "IE6 Dominance",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Internet Explorer",
+          "name": "internetexplorer"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "noventa y cinco",
+          "text": "95%"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "mercado",
+          "icon_name": "flat-color-icons:pie-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "actualizarlo",
+          "text": "Congelado"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "dominó",
+          "graphic": "donut_chart",
+          "value": "95"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "02",
-    "texto": "Microsoft dejó de actualizarlo."
+    "texto": "Internet Explorer nació en mil novecientos noventa y cinco como respuesta directa a Netscape Navigator. Microsoft lo integró al sistema operativo Windows en mil novecientos noventa y ocho, versión cuatro, y ganó la primera guerra de navegadores por aplastamiento legal y técnico.",
+    "chapter_title": "Browser Wars",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y cinco",
+          "text": "1995"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Netscape",
+          "text": "Netscape Navigator"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y ocho",
+          "text": "1998"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "integró",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "aplastamiento",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "03",
-    "texto": "Esa decisión paralizó la web por una década entera."
+    "texto": "En dos mil dos, Internet Explorer seis controlaba noventa y cinco por ciento del mercado global de navegadores. Era, en términos prácticos, el único navegador que existía. Trescientos millones de usuarios dependían de él. Los desarrolladores web construían para él y solo para él.",
+    "chapter_title": "Monopoly Peak",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dos mil dos",
+          "text": "2002"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "noventa y cinco",
+          "text": "95%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "desarrolladores",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "controlaba",
+          "graphic": "donut_chart",
+          "value": "95"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "04",
-    "texto": "Internet Explorer nació en mil novecientos noventa y cinco como respuesta directa a Netscape Navigator."
+    "texto": "Ese monopolio absoluto fue exactamente lo que lo condenó.",
+    "chapter_title": "The Trap",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "condenó",
+          "text": "DOOM"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "monopolio",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "absolutamente",
+          "icon_name": "flat-color-icons:factory-breakdown"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "05",
-    "texto": "Microsoft lo integró al sistema operativo Windows en mil novecientos noventa y ocho, versión cuatro, y ganó la primera guerra de navegadores por aplastamiento legal y técnico."
+    "texto": "DECISIÓN UNO: Integrar el navegador al sistema operativo como arma anticompetitiva",
+    "chapter_title": "Strategic Decision",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN UNO",
+          "text": "UNO"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "Integrar",
+          "text": "Integración forzada"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "navegador",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "anticompetitiva",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "06",
-    "texto": "En dos mil dos, Internet Explorer seis controlaba noventa y cinco por ciento del mercado global de navegadores."
+    "texto": "Microsoft fusionó el motor de Internet Explorer con el núcleo de Windows mediante una interfaz de programación de aplicaciones llamada WinInet y componentes del sistema operativo que no podían desinstalarse. El navegador no era una aplicación separada — era parte del sistema operativo.",
+    "chapter_title": "WinInet Strategy",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "WinInet",
+          "text": "WinInet"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "fusionó",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "no podían desinstalarse",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "núcleo",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "sistema operativo",
+          "text": "Parte del OS"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "07",
-    "texto": "Era, en términos prácticos, el único navegador que existía."
+    "texto": "En mil novecientos noventa y cinco, Netscape Navigator controlaba el ochenta por ciento del mercado. Marc Andreessen, cofundador de Netscape, declaró públicamente que el navegador convertiría a Windows en un sistema operativo irrelevante.",
+    "chapter_title": "Andreessen Threat",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y cinco",
+          "text": "1995"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "ochenta",
+          "text": "80%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Andreessen",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "controlaba",
+          "graphic": "donut_chart",
+          "value": "80"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "08",
-    "texto": "Trescientos millones de usuarios dependían de él."
+    "texto": "Microsoft respondió con lo único que Netscape no podía replicar: distribución gratuita y obligatoria en cada copia de Windows. La lógica era correcta para ganar la guerra.",
+    "chapter_title": "Distribution Weapon",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "distribución",
+          "icon_name": "flat-color-icons:download"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "gratuita",
+          "text": "Gratuita y obligatoria"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "correcta",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Netscape",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "09",
-    "texto": "Los desarrolladores web construían para él y solo para él."
+    "texto": "Ganar mediante integración obligatoria eliminó el incentivo de mejorar el producto. Una vez que Netscape colapsó y el mercado quedó capturado, el motor de Internet Explorer — llamado Trident — quedó congelado. No había competidor que justificara inversión.",
+    "chapter_title": "Trident Frozen",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Trident",
+          "text": "Trident Motor"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "congelado",
+          "text": "CONGELADO"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "colapsó",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "incentivo",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "congelado",
+          "query": "frozen ice winter frozen"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "10",
-    "texto": "Ese monopolio absoluto fue exactamente lo que lo condenó."
+    "texto": "El Departamento de Justicia de los Estados Unidos abrió un caso antimonopolio en mil novecientos noventa y ocho. Microsoft ganó en apelación en dos mil uno, pero el proceso consumió cuatro años de atención ejecutiva y generó restricciones sobre cómo podía competir.",
+    "chapter_title": "Antitrust Case",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y ocho",
+          "text": "1998"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "antimonopolio",
+          "text": "Antimonopolio"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "restricciones",
+          "icon_name": "flat-color-icons:rules"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "años",
+          "graphic": "timeline_barras",
+          "value": "1998,2001"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "11",
-    "texto": "DECISIÓN UNO: Integrar el navegador al sistema operativo como arma anticompetitiva"
+    "texto": "El resultado interno fue parálisis: ningún equipo quería ser el siguiente objetivo de una demanda antimonopolio, y mejorar Internet Explorer agresivamente arriesgaba exactamente eso.",
+    "chapter_title": "Parálisis interna",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "parálisis",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "demanda",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "mejorar",
+          "text": "Sin mejoras"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "arriesgaba",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "arriesgaba",
+          "text": "RIESGO"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "12",
-    "texto": "Microsoft fusionó el motor de Internet Explorer con el núcleo de Windows mediante una interfaz de programación de aplicaciones llamada WinInet y componentes del sistema operativo que no podían desinstalarse."
+    "texto": "Internet Explorer seis fue lanzado en agosto de dos mil uno. El siguiente lanzamiento mayor, Internet Explorer siete, llegó en octubre de dos mil seis — cinco años después.",
+    "chapter_title": "El intervalo",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Explorer",
+          "name": "internetexplorer"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "mil uno",
+          "text": "2001"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "agosto",
+          "icon_name": "flat-color-icons:calendar"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cinco años",
+          "graphic": "timeline_barras",
+          "value": "2001,2006"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "dos mil seis",
+          "text": "2006"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "cinco años",
+          "text": "5 años"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "13",
-    "texto": "El navegador no era una aplicación separada — era parte del sistema operativo."
+    "texto": "Durante esos cinco años, el motor Trident no implementó ningún estándar nuevo del Consorcio World Wide Web. Ninguno.",
+    "chapter_title": "Estancamiento",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Trident",
+          "text": "Motor Trident"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "ningún",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Ninguno",
+          "text": "CERO"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "cinco años",
+          "icon_name": "flat-color-icons:alarm-clock"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "14",
-    "texto": "En mil novecientos noventa y cinco, Netscape Navigator controlaba el ochenta por ciento del mercado."
+    "texto": "DECISIÓN DOS: Implementar el modelo de caja CSS con un error aritmético y no corregirlo",
+    "chapter_title": "Error de caja",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "DOS",
+          "text": "DOS"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "modelo",
+          "text": "Modelo de caja CSS"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "error",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "corregirlo",
+          "icon_name": "flat-color-icons:make-decision"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "15",
-    "texto": "Marc Andreessen, cofundador de Netscape, declaró públicamente que el navegador convertiría a Windows en un sistema operativo irrelevante."
+    "texto": "El modelo de caja en hojas de estilo en cascada define cómo se calculan las dimensiones de un elemento en pantalla. El Consorcio World Wide Web especificaba que el ancho declarado no incluye relleno interno ni bordes — solo el contenido.",
+    "chapter_title": "Especificación W3C",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "modelo de caja",
+          "text": "CSS Box Model"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "dimensiones",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "especificaba",
+          "icon_name": "flat-color-icons:rules"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "sm",
+          "trigger_word": "contenido",
+          "text": "Contenido"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "relleno",
+          "text": "Sin padding"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "bordes",
+          "text": "Sin bordes"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "16",
-    "texto": "Microsoft respondió con lo único que Netscape no podía replicar: distribución gratuita y obligatoria en cada copia de Windows."
+    "texto": "Internet Explorer seis calculaba el ancho incluyendo relleno y bordes dentro del valor declarado. Dos interpretaciones matemáticamente opuestas del mismo estándar.",
+    "chapter_title": "El conflicto",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Explorer seis",
+          "text": "IE6"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "incluyendo",
+          "text": "INCLUYE"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "opuestas",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "estándar",
+          "text": "W3C: Excluye"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "interpretaciones",
+          "icon_name": "flat-color-icons:decision"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "17",
-    "texto": "La lógica era correcta para ganar la guerra."
+    "texto": "El comportamiento original de Internet Explorer cuatro y cinco fue diseñado antes de que el Consorcio World Wide Web finalizara la especificación. Cuando la especificación quedó publicada, Microsoft optó por mantener compatibilidad con sitios existentes en lugar de corregir el motor.",
+    "chapter_title": "La causa",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "cuatro y cinco",
+          "text": "IE4 & IE5"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "antes",
+          "icon_name": "flat-color-icons:calendar"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "publicada",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "compatibilidad",
+          "text": "COMPAT"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "corregir",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "18",
-    "texto": "Ganar mediante integración obligatoria eliminó el incentivo de mejorar el producto."
+    "texto": "La decisión parecía razonable: romper millones de sitios ya construidos para cumplir un estándar nuevo generaría rechazo masivo.",
+    "chapter_title": "La justificación",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "razonable",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "millones",
+          "text": "MILLONES"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "romper",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "rechazo",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "sitios",
+          "text": "de sitios web"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "19",
-    "texto": "Una vez que Netscape colapsó y el mercado quedó capturado, el motor de Internet Explorer — llamado Trident — quedó congelado."
+    "texto": "El parche implementado fue el modo de compatibilidad doctype, conocido como quirks mode en inglés — modo peculiar. Si un documento comenzaba con la declaración de tipo de documento correcta, Internet Explorer activaba el modelo de caja estándar. Si no, usaba el modelo incorrecto.",
+    "chapter_title": "Quirks Mode",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "quirks mode",
+          "text": "Quirks Mode"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "doctype",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "correcta",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "estándar",
+          "text": "Estándar ON"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Si no",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "incorrecto",
+          "text": "Modo incorrecto"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "20",
-    "texto": "No había competidor que justificara inversión."
+    "texto": "El problema era que millones de desarrolladores no sabían cuál modo estaba activo, y depurar diferencias entre navegadores requería condiciones de prueba explícitas para cada caso. Firefox, Safari y Opera usaban el modelo del Consorcio World Wide Web por defecto.",
+    "chapter_title": "Fragmentación",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "millones",
+          "text": "MILLONES"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sabían",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "depurar",
+          "icon_name": "flat-color-icons:search"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "Consorcio",
+          "text": "sin W3C"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "defecto",
+          "text": "con W3C"
+        },
+        {
+          "id": "f",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Firefox",
+          "query": "firefox safari opera browser logos"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "21",
-    "texto": "El Departamento de Justicia de los Estados Unidos abrió un caso antimonopolio en mil novecientos noventa y ocho."
+    "texto": "Un desarrollador escribiendo hojas de estilo en cascada debía mantener dos conjuntos de reglas paralelas — una para el estándar, otra para Internet Explorer. El tiempo adicional de desarrollo se estimó entre veinte y cuarenta por ciento en proyectos frontend de mediana complejidad.",
+    "chapter_title": "Costo de desarrollo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "hojas de estilo",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Internet Explorer",
+          "text": "Internet Explorer"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cuarenta",
+          "text": "40%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "tiempo",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "desarrollo",
+          "graphic": "contador_porcentaje",
+          "value": "40"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "22",
-    "texto": "Microsoft ganó en apelación en dos mil uno, pero el proceso consumió cuatro años de atención ejecutiva y generó restricciones sobre cómo podía competir."
+    "texto": "La fundación Mozilla publicó en dos mil cuatro un estudio interno mostrando que aproximadamente sesenta por ciento de los errores reportados por desarrolladores web tenían como causa raíz diferencias de comportamiento entre Internet Explorer y los navegadores basados en estándares.",
+    "chapter_title": "Errores de compatibilidad",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Mozilla",
+          "name": "mozilla"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "dos mil cuatro",
+          "text": "2004"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "sesenta",
+          "text": "60%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "errores",
+          "icon_name": "flat-color-icons:pie-chart"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "diferencias",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "comportamiento",
+          "text": "Incompatibilidad"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "23",
-    "texto": "El resultado interno fue parálisis: ningún equipo quería ser el siguiente objetivo de una demanda antimonopolio, y mejorar Internet Explorer agresivamente arriesgaba exactamente eso."
+    "texto": "El coste acumulado para la industria durante el periodo dos mil uno a dos mil ocho no fue medido formalmente, pero consultoras como Forrester Research estimaron en dos mil siete que las empresas gastaban entre quince y veinticinco por ciento de sus presupuestos de desarrollo",
+    "chapter_title": "Impacto financiero",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "dos mil uno",
+          "text": "2001-2008"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Forrester",
+          "text": "Forrester"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "veinticinco",
+          "text": "25%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "presupuestos",
+          "icon_name": "flat-color-icons:area-chart"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "gastaban",
+          "graphic": "donut_chart",
+          "value": "25"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "24",
-    "texto": "Internet Explorer seis fue lanzado en agosto de dos mil uno."
+    "texto": "web compensando incompatibilidades específicas de Internet Explorer. DECISIÓN TRES: No implementar soporte de transparencia en PNG y bloquear el estándar de selectores CSS",
+    "chapter_title": "Decisión 3: PNG y CSS",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 3"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "bloquear",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "transparencia",
+          "text": "PNG transparencia"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "selectores",
+          "text": "Selectores CSS"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "estándar",
+          "icon_name": "flat-color-icons:document"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "25",
-    "texto": "El siguiente lanzamiento mayor, Internet Explorer siete, llegó en octubre de dos mil seis — cinco años después."
+    "texto": "El formato PNG — gráficos de red portátiles — incluye desde mil novecientos noventa y seis un canal de transparencia de dieciséis bits llamado canal alfa. Permite imágenes con transparencia parcial — degradados, sombras, bordes suaves. Internet Explorer seis ignoraba el canal alfa de PNG.",
+    "chapter_title": "PNG y canal alfa",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "novecientos noventa",
+          "text": "1996"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "alfa",
+          "text": "Canal Alfa"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "transparencia",
+          "query": "PNG image transparency gradient shadow"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "ignoraba",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Explorer seis",
+          "text": "IE6"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "26",
-    "texto": "Durante esos cinco años, el motor Trident no implementó ningún estándar nuevo del Consorcio World Wide Web."
+    "texto": "Mostraba transparencia parcial como gris sólido. CSS nivel dos, publicado por el Consorcio World Wide Web en mil novecientos noventa y ocho, incluía selectores que permiten aplicar estilos a elementos basándose en su posición relativa, estado o atributos.",
+    "chapter_title": "CSS nivel 2",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "CSS nivel dos",
+          "text": "CSS2"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "novecientos noventa",
+          "text": "1998"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Consorcio",
+          "text": "W3C"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "selectores",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "atributos",
+          "icon_name": "flat-color-icons:settings"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "27",
-    "texto": "Ninguno."
+    "texto": "Internet Explorer seis implementó aproximadamente cuarenta por ciento de esos selectores. El resto era ignorado silenciosamente.",
+    "chapter_title": "CSS incompletitud",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Explorer seis",
+          "text": "IE6"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cuarenta",
+          "text": "40%"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "ignorado",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "selectores",
+          "graphic": "donut_chart",
+          "value": "40"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "28",
-    "texto": "DECISIÓN DOS: Implementar el modelo de caja CSS con un error aritmético y no corregirlo"
+    "texto": "El equipo de Internet Explorer entre dos mil uno y dos mil seis fue reducido de cien ingenieros a menos de diez. La documentación interna filtrada durante el proceso legal antimonopolio mostraba que Microsoft consideraba Internet Explorer un producto terminado.",
+    "chapter_title": "Crisis de recursos",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "cien",
+          "text": "100→10"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "dos mil uno",
+          "text": "2001-2006"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Microsoft",
+          "text": "Microsoft"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "reducido",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "ingenieros",
+          "icon_name": "flat-color-icons:briefcase"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "29",
-    "texto": "El modelo de caja en hojas de estilo en cascada define cómo se calculan las dimensiones de un elemento en pantalla."
+    "texto": "Sin competidores activos, no había presupuesto para implementar estándares adicionales. La decisión fue presupuestaria, no técnica.",
+    "chapter_title": "Decisión presupuestaria",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "competidores",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "presupuesto",
+          "text": "$"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "decisión",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "presupuestaria",
+          "text": "No técnica"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "30",
-    "texto": "El Consorcio World Wide Web especificaba que el ancho declarado no incluye relleno interno ni bordes — solo el contenido."
+    "texto": "Los desarrolladores web que necesitaban transparencia PNG en Internet Explorer seis debían implementar un filtro propietario de Microsoft llamado AlphaImageLoader. No era parte de ningún estándar.",
+    "chapter_title": "AlphaImageLoader",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Explorer seis",
+          "text": "IE6"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "AlphaImageLoader",
+          "text": "AlphaImageLoader"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "propietario",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "estándar",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "filtro",
+          "icon_name": "flat-color-icons:document"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "31",
-    "texto": "Internet Explorer seis calculaba el ancho incluyendo relleno y bordes dentro del valor declarado."
+    "texto": "Era una interfaz de programación de aplicaciones específica de Internet Explorer que recargaba la imagen desde el servidor, la procesaba en memoria adicional, y la renderizaba con transparencia.",
+    "chapter_title": "AlphaImageLoader",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Internet Explorer",
+          "name": "internetexplorer"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "imagen",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "interfaz",
+          "text": "AlphaImageLoader"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "memoria",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "transparencia",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "32",
-    "texto": "Dos interpretaciones matemáticamente opuestas del mismo estándar."
+    "texto": "El costo en rendimiento era medible: pruebas publicadas por el equipo de Yahoo en dos mil siete mostraban que páginas con diez o más imágenes PNG usando AlphaImageLoader tardaban hasta un punto ocho segundos adicionales en renderizarse en máquinas con un gigabyte de memoria.",
+    "chapter_title": "Costo de rendimiento",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Yahoo",
+          "text": "Yahoo"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "dos mil siete",
+          "text": "2007"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "pruebas",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "punto ocho",
+          "text": "+0.8s"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "imágenes PNG",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "gigabyte",
+          "text": "1 GB RAM"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "33",
-    "texto": "El comportamiento original de Internet Explorer cuatro y cinco fue diseñado antes de que el Consorcio World Wide Web finalizara la especificación."
+    "texto": "Para los selectores CSS faltantes, la solución era JavaScript — código ejecutado en el cliente que recorría el árbol del documento y aplicaba clases manualmente. Más código, más tiempo de carga, más puntos de fallo.",
+    "chapter_title": "Workaround con JS",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "selectores CSS",
+          "text": "CSS faltante"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "JavaScript",
+          "text": "JavaScript"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "código",
+          "icon_name": "flat-color-icons:command-line"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "árbol del documento",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "fallo",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "34",
-    "texto": "Cuando la especificación quedó publicada, Microsoft optó por mantener compatibilidad con sitios existentes en lugar de corregir el motor."
+    "texto": "En dos mil cinco, el equipo de Gmail de Google tomó la decisión de no usar transparencia PNG en la interfaz de usuario del cliente web por incompatibilidad con Internet Explorer seis.",
+    "chapter_title": "Gmail vs PNG",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dos mil cinco",
+          "text": "2005"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Gmail",
+          "text": "Gmail"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "no usar",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "PNG",
+          "text": "PNG"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Internet Explorer seis",
+          "text": "IE 6"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "f",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "35",
-    "texto": "La decisión parecía razonable: romper millones de sitios ya construidos para cumplir un estándar nuevo generaría rechazo masivo."
+    "texto": "La interfaz de usuario de Gmail mantuvo ese diseño limitado hasta dos mil ocho. Un servicio con cien millones de usuarios activos en dos mil siete degradó su interfaz de usuario durante tres años para acomodar un motor que no implementaba un estándar publicado en",
+    "chapter_title": "Gmail degradado",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Gmail",
+          "text": "Gmail"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "dos mil ocho",
+          "text": "2008"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "degradó",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cien millones",
+          "text": "100M"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "años",
+          "icon_name": "flat-color-icons:timeline"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "36",
-    "texto": "El parche implementado fue el modo de compatibilidad doctype, conocido como quirks mode en inglés — modo peculiar."
+    "texto": "mil novecientos noventa y seis. DECISIÓN CUATRO: Ignorar XMLHttpRequest como estándar y bloquear AJAX nativo",
+    "chapter_title": "XMLHttpRequest",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y seis",
+          "text": "1996"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "XMLHttpRequest",
+          "text": "XMLHttpRequest"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "bloquear",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "CUATRO",
+          "text": "4"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "37",
-    "texto": "Si un documento comenzaba con la declaración de tipo de documento correcta, Internet Explorer activaba el modelo de caja estándar."
+    "texto": "XMLHttpRequest es la interfaz de programación de aplicaciones que permite a una página web solicitar datos al servidor sin recargar la página completa. Microsoft la inventó. Fue introducida en Internet Explorer cinco en mil novecientos noventa y nueve como un objeto ActiveX propietario llamado MSXML.",
+    "chapter_title": "XMLHttpRequest",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "XMLHttpRequest",
+          "text": "XMLHttpRequest"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Microsoft",
+          "text": "Microsoft"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "solicitar datos",
+          "icon_name": "flat-color-icons:share"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "mil novecientos noventa y nueve",
+          "text": "1999"
+        },
+        {
+          "id": "f",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "Internet Explorer",
+          "name": "internetexplorer"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "38",
-    "texto": "Si no, usaba el modelo incorrecto."
+    "texto": "Firefox, Opera y Safari implementaron la misma funcionalidad en dos mil dos como objeto nativo del navegador, accesible directamente desde JavaScript sin dependencias externas. Internet Explorer mantuvo el objeto ActiveX como única forma de acceso hasta Internet Explorer siete en dos mil seis.",
+    "chapter_title": "XMLHttpRequest",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Firefox",
+          "name": "firefox"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "dos mil dos",
+          "text": "2002"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "nativo",
+          "icon_name": "flat-color-icons:checkmark"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "objeto nativo",
+          "text": "Nativo"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ActiveX",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "dos mil seis",
+          "text": "IE 7 - 2006"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "39",
-    "texto": "El problema era que millones de desarrolladores no sabían cuál modo estaba activo, y depurar diferencias entre navegadores requería condiciones de prueba explícitas para cada caso."
+    "texto": "ActiveX era la plataforma de extensión de Microsoft para aplicaciones web empresariales. Mantener XMLHttpRequest como objeto ActiveX en lugar de objeto nativo ataba a los desarrolladores a la plataforma de Microsoft. Empresas que usaban ActiveX para otras funciones tenían incentivos para permanecer en Internet Explorer.",
+    "chapter_title": "Bloqueo de plataforma",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "ActiveX",
+          "text": "ActiveX"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Microsoft",
+          "text": "Microsoft"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "ataba",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "desarrolladores",
+          "text": "Atado"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Empresas",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "f",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "Internet Explorer",
+          "name": "internetexplorer"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "40",
-    "texto": "Firefox, Safari y Opera usaban el modelo del Consorcio World Wide Web por defecto."
+    "texto": "Era una decisión de bloqueo de plataforma — lo que en inglés se denomina vendor lock-in — técnicamente deliberada.",
+    "chapter_title": "Bloqueo de plataforma",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "vendor lock-in",
+          "text": "Vendor Lock-in"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "bloqueo",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "decisión",
+          "icon_name": "flat-color-icons:decision"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "deliberada",
+          "text": "Deliberada"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "41",
-    "texto": "Un desarrollador escribiendo hojas de estilo en cascada debía mantener dos conjuntos de reglas paralelas — una para el estándar, otra para Internet Explorer."
+    "texto": "El bloqueo funcionó exactamente al revés. En dos mil cuatro, Jesse James Garrett, diseñador de experiencia de usuario de la consultora Adaptive Path, documentó un patrón de desarrollo usando XMLHttpRequest para construir interfaces web que respondían como aplicaciones de escritorio.",
+    "chapter_title": "El nacimiento de AJAX",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Jesse",
+          "text": "Jesse James Garrett"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Adaptive",
+          "text": "Adaptive Path"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "mil cuatro",
+          "text": "2004"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "XMLHttpRequest",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "interfaces",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "f",
+          "type": "pexels_image",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "escritorio",
+          "query": "desktop application user interface"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "42",
-    "texto": "El tiempo adicional de desarrollo se estimó entre veinte y cuarenta por ciento en proyectos frontend de mediana complejidad."
+    "texto": "Lo llamó AJAX — JavaScript asíncrono y XML en inglés, o JavaScript asíncrono y XML. Google Maps fue lanzado en febrero de dos mil cinco usando AJAX sobre el objeto nativo. Google Gmail usaba el mismo patrón.",
+    "chapter_title": "AJAX revoluciona",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "AJAX",
+          "text": "AJAX"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "mil cinco",
+          "text": "2005"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "patrón",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "a",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "43",
-    "texto": "La fundación Mozilla publicó en dos mil cuatro un estudio interno mostrando que aproximadamente sesenta por ciento de los errores reportados por desarrolladores web tenían como causa raíz diferencias de comportamiento entre Internet Explorer y los navegadores basados en estándares."
+    "texto": "Ambos productos requerían código adicional en Internet Explorer para detectar si el objeto ActiveX estaba disponible, si las políticas de seguridad de la empresa lo bloqueaban, y si la versión de MSXML instalada era compatible.",
+    "chapter_title": "IE como obstáculo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Internet Explorer",
+          "text": "Internet Explorer"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "ActiveX",
+          "text": "ActiveX"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "detectar",
+          "icon_name": "flat-color-icons:decision"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "seguridad",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "MSXML",
+          "text": "MSXML"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "compatible",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "44",
-    "texto": "El coste acumulado para la industria durante el periodo dos mil uno a dos mil ocho no fue medido formalmente, pero consultoras como Forrester Research estimaron en dos mil siete que las empresas gastaban entre quince y veinticinco por ciento de sus presupuestos de desarrollo web compensando incompatibilidades específicas de Internet Explorer."
+    "texto": "Los desarrolladores que querían construir aplicaciones web modernas descubrieron que Internet Explorer era el obstáculo principal. No el facilitador — el obstáculo.",
+    "chapter_title": "IE como obstáculo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "desarrolladores",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "modernas",
+          "text": "web modernas"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "obstáculo",
+          "text": "OBSTÁCULO"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "obstáculo",
+          "query": "barrier wall blocking obstacle"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "No",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "45",
-    "texto": "DECISIÓN TRES: No implementar soporte de transparencia en PNG y bloquear el estándar de selectores CSS"
+    "texto": "En enero de dos mil seis, la cuota de mercado de Internet Explorer era del ochenta y cinco por ciento. En enero de dos mil ocho, era del setenta y siete por ciento. Firefox pasó del nueve al dieciséis por ciento en el mismo periodo.",
+    "chapter_title": "Cambio de mercado",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "ochenta",
+          "text": "85%"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "setenta",
+          "text": "77%"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cuota",
+          "graphic": "flecha_bajando",
+          "value": "8"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "enero",
+          "text": "2006-2008"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "Firefox",
+          "name": "firefox"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "nueve",
+          "text": "9% → 16%"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "46",
-    "texto": "El formato PNG — gráficos de red portátiles — incluye desde mil novecientos noventa y seis un canal de transparencia de dieciséis bits llamado canal alfa."
+    "texto": "El catalizador documentado por múltiples análisis de la época fue la adopción de aplicaciones AJAX que funcionaban mejor fuera de Internet Explorer.",
+    "chapter_title": "Cambio de mercado",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "AJAX",
+          "text": "AJAX"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "catalizador",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "mejor",
+          "text": "MEJOR"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "análisis",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "fuera",
+          "text": "fuera de IE"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "funcionaban",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "47",
-    "texto": "Permite imágenes con transparencia parcial — degradados, sombras, bordes suaves."
+    "texto": "StatCounter, empresa de análisis de tráfico web, registró que en sitios de desarrollo web y tecnología la cuota de Internet Explorer caía por debajo del cincuenta por ciento ya en dos mil siete.",
+    "chapter_title": "Cambio de mercado",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "StatCounter",
+          "text": "StatCounter"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "análisis",
+          "icon_name": "flat-color-icons:area-chart"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cincuenta",
+          "text": "<50%"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "mil siete",
+          "text": "2007"
+        },
+        {
+          "id": "f",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "caía",
+          "graphic": "flecha_bajando",
+          "value": "50"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "48",
-    "texto": "Internet Explorer seis ignoraba el canal alfa de PNG."
+    "texto": "DECISIÓN CINCO: Lanzar Internet Explorer siete sin motor de renderizado nuevo y abandonar Internet Explorer seis sin ciclo de vida definido",
+    "chapter_title": "Decisión 5: IE7",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 5"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "siete",
+          "text": "IE7"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "renderizado",
+          "text": "Sin motor nuevo"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "abandonar",
+          "text": "IE6 abandonado"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "sin",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "49",
-    "texto": "Mostraba transparencia parcial como gris sólido."
+    "texto": "Internet Explorer siete, lanzado en octubre de dos mil seis, usaba el mismo motor Trident de Internet Explorer seis con parches incrementales. No era una reescritura.",
+    "chapter_title": "Decisión 5: IE7",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "siete",
+          "text": "IE7"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "mil seis",
+          "text": "2006"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Trident",
+          "text": "Trident"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "motor",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "parches",
+          "text": "Parches"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "reescritura",
+          "text": "No reescritura"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "50",
-    "texto": "CSS nivel dos, publicado por el Consorcio World Wide Web en mil novecientos noventa y ocho, incluía selectores que permiten aplicar estilos a elementos basándose en su posición relativa, estado o atributos."
+    "texto": "Implementó soporte parcial de CSS nivel dos — el que ya era estándar desde mil novecientos noventa y ocho — y soporte básico de transparencia PNG. No implementó CSS nivel tres.",
+    "chapter_title": "Decisión 5: IE7",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "CSS",
+          "text": "CSS 2"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "parcial",
+          "text": "PARCIAL"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "mil novecientos",
+          "text": "1998"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "No",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "CSS nivel tres",
+          "text": "CSS3 omitido"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "51",
-    "texto": "Internet Explorer seis implementó aproximadamente cuarenta por ciento de esos selectores."
+    "texto": "No implementó el modelo de eventos DOM nivel dos del Consorcio World Wide Web de forma completa. Simultáneamente, Microsoft no estableció una fecha de fin de vida para Internet Explorer seis ni ofreció migración forzada.",
+    "chapter_title": "Incompletitud técnica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "DOM",
+          "text": "DOM nivel 2"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "completa",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "fin de vida",
+          "text": "Sin fecha de fin"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "migración",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "52",
-    "texto": "El resto era ignorado silenciosamente."
+    "texto": "Una reescritura completa del motor de renderizado habría tomado entre dos y tres años y habría requerido pruebas de regresión contra miles de sitios existentes. Los clientes empresariales — bancos, aseguradoras, administraciones públicas — habían construido aplicaciones internas usando características propietarias de Internet Explorer seis.",
+    "chapter_title": "Costo técnico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dos y tres años",
+          "text": "2-3 años"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "reescritura",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "empresariales",
+          "text": "Bancos, seguros"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "aplicaciones",
+          "icon_name": "flat-color-icons:factory"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "propietarias",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "miles",
+          "text": "1000s sitios"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "53",
-    "texto": "El equipo de Internet Explorer entre dos mil uno y dos mil seis fue reducido de cien ingenieros a menos de diez."
+    "texto": "Forzar la migración habría generado rechazo corporativo. Microsoft optó por la ruta de menor fricción: una actualización cosmética que no rompiera la compatibilidad.",
+    "chapter_title": "Estrategia Microsoft",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "rechazo",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "menor fricción",
+          "text": "Menor fricción"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "actualización",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "compatibilidad",
+          "icon_name": "flat-color-icons:link"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "54",
-    "texto": "La documentación interna filtrada durante el proceso legal antimonopolio mostraba que Microsoft consideraba Internet Explorer un producto terminado."
+    "texto": "El resultado fue la coexistencia de tres versiones activas simultáneamente: Internet Explorer seis, Internet Explorer siete e Internet Explorer ocho, lanzado en dos mil nueve. Cada versión tenía comportamientos diferentes para los mismos estándares. Los desarrolladores web debían probar en las tres.",
+    "chapter_title": "Fragmentación",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "tres versiones",
+          "text": "3 versiones"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "Internet Explorer siete",
+          "text": "IE7"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "dos mil nueve",
+          "text": "2009"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "comportamientos",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "55",
-    "texto": "Sin competidores activos, no había presupuesto para implementar estándares adicionales."
+    "texto": "Herramientas como el selector condicional de comentarios — una sintaxis propietaria de Internet Explorer usando comentarios especiales en el lenguaje de marcado de hipertexto — se convirtieron en código estándar en cualquier proyecto web.",
+    "chapter_title": "Workarounds",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "selector condicional",
+          "text": "Sel. condicional"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sintaxis",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "comentarios",
+          "text": "HTML comments"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "propietaria",
+          "icon_name": "flat-color-icons:process"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "56",
-    "texto": "La decisión fue presupuestaria, no técnica."
+    "texto": "China mantuvo Internet Explorer seis como navegador dominante hasta dos mil trece porque el sistema bancario chino en línea requería controles ActiveX que solo funcionaban en Internet Explorer seis.",
+    "chapter_title": "China IE6",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "pexels_image",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "China",
+          "query": "China banking system financial"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Internet Explorer seis",
+          "text": "IE6"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "ActiveX",
+          "text": "ActiveX"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "controles",
+          "icon_name": "flat-color-icons:lock"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "57",
-    "texto": "Los desarrolladores web que necesitaban transparencia PNG en Internet Explorer seis debían implementar un filtro propietario de Microsoft llamado AlphaImageLoader."
+    "texto": "Baidu, el motor de búsqueda chino, reportó en dos mil doce que treinta y cuatro por ciento de sus usuarios aún accedían desde Internet Explorer seis.",
+    "chapter_title": "China IE6",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Baidu",
+          "text": "Baidu"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "búsqueda",
+          "icon_name": "flat-color-icons:search"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "treinta y cuatro",
+          "text": "34%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "por ciento",
+          "icon_name": "flat-color-icons:pie-chart"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "dos mil doce",
+          "text": "2012"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "58",
-    "texto": "No era parte de ningún estándar."
+    "texto": "Google anunció en enero de dos mil diez que dejaría de soportar Internet Explorer seis en sus productos. YouTube terminó el soporte en marzo de dos mil diez. Facebook en dos mil once.",
+    "chapter_title": "Abandono global",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "enero",
+          "text": "Enero 2010"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "YouTube",
+          "text": "YouTube"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "marzo",
+          "text": "Marzo 2010"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "text": "Facebook"
+        },
+        {
+          "id": "f",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "dos mil once",
+          "text": "2011"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "59",
-    "texto": "Era una interfaz de programación de aplicaciones específica de Internet Explorer que recargaba la imagen desde el servidor, la procesaba en memoria adicional, y la renderizaba con transparencia."
+    "texto": "Cada uno de estos anuncios generó costos de soporte adicionales para empresas cuyos usuarios aún dependían del navegador.",
+    "chapter_title": "Costos empresariales",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "anuncios",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "costos",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "soporte",
+          "text": "Soporte extra"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "empresas",
+          "icon_name": "flat-color-icons:business"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "usuarios",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "60",
-    "texto": "El costo en rendimiento era medible: pruebas publicadas por el equipo de Yahoo en dos mil siete mostraban que páginas con diez o más imágenes PNG usando AlphaImageLoader tardaban hasta un punto ocho segundos adicionales en renderizarse en máquinas con un gigabyte de memoria."
+    "texto": "Microsoft publicó un sitio llamado \"Cuenta regresiva de Internet Explorer seis\" en dos mil once — nueve años después de que el navegador fuera lanzado — mostrando en tiempo real el porcentaje de uso global para coordinar su propio abandono.",
+    "chapter_title": "Fin de IE6",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Cuenta regresiva",
+          "text": "Countdown IE6"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "tiempo real",
+          "icon_name": "flat-color-icons:calendar"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "dos mil once",
+          "text": "2011"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "nueve años",
+          "text": "9 años"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "61",
-    "texto": "Para los selectores CSS faltantes, la solución era JavaScript — código ejecutado en el cliente que recorría el árbol del documento y aplicaba clases manualmente."
+    "texto": "Eso no es una estrategia de producto. Es una autopsia pública. DECISIÓN SEIS: No responder a Chrome con una arquitectura multiproceso",
+    "chapter_title": "La Autopsia",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "autopsia",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "DECISIÓN SEIS",
+          "text": "DECISIÓN 6"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "estrategia",
+          "icon_name": "flat-color-icons:make-decision"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "62",
-    "texto": "Más código, más tiempo de carga, más puntos de fallo."
+    "texto": "Google Chrome fue lanzado en septiembre de dos mil ocho con una arquitectura donde cada pestaña del navegador ejecutaba en un proceso independiente del sistema operativo. Si una pestaña fallaba, las demás continuaban funcionando.",
+    "chapter_title": "Chrome Multiproceso",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google Chrome",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "septiembre",
+          "text": "2008"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "pestaña",
+          "query": "google chrome browser window tabs"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "proceso independiente",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "continuaban funcionando",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "63",
-    "texto": "En dos mil cinco, el equipo de Gmail de Google tomó la decisión de no usar transparencia PNG en la interfaz de usuario del cliente web por incompatibilidad con Internet Explorer seis."
+    "texto": "Internet Explorer hasta la versión ocho usaba un modelo de proceso único: un fallo en cualquier pestaña podía colapsar la sesión completa. Internet Explorer ocho introdujo procesos por pestaña de forma parcial, pero el proceso principal del navegador seguía siendo un punto único de fallo.",
+    "chapter_title": "Explorer Limitado",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Internet Explorer ocho",
+          "text": "Internet Explorer 8"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "proceso único",
+          "text": "1 PROCESO"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "colapsar",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "fallo",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "64",
-    "texto": "La interfaz de usuario de Gmail mantuvo ese diseño limitado hasta dos mil ocho."
+    "texto": "Internet Explorer nueve, lanzado en marzo de dos mil once, intentó la separación completa, pero con limitaciones en sistemas operativos anteriores a Windows Vista.",
+    "chapter_title": "Explorer 9",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Internet Explorer nueve",
+          "text": "IE 9"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "marzo",
+          "text": "2011"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "separación",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "limitaciones",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "65",
-    "texto": "Un servicio con cien millones de usuarios activos en dos mil siete degradó su interfaz de usuario durante tres años para acomodar un motor que no implementaba un estándar publicado en mil novecientos noventa y seis."
+    "texto": "La arquitectura multiproceso de Chrome requería cambios profundos en cómo el motor Trident gestionaba el modelo de objetos del documento y la memoria compartida entre pestañas. Microsoft había acumulado doce años de deuda técnica en Trident.",
+    "chapter_title": "Deuda Técnica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Trident",
+          "text": "Motor Trident"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "doce años",
+          "text": "12 AÑOS"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "deuda técnica",
+          "icon_name": "flat-color-icons:debt"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "memoria compartida",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "66",
-    "texto": "DECISIÓN CUATRO: Ignorar XMLHttpRequest como estándar y bloquear AJAX nativo"
+    "texto": "Reescribir la arquitectura de gestión de procesos sin romper compatibilidad con extensiones existentes — que usaban la interfaz de programación de aplicaciones de objetos COM de Microsoft — era técnicamente complejo. La decisión de parchear en lugar de reescribir se repitió.",
+    "chapter_title": "El Parche",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "decisión",
+          "icon_name": "flat-color-icons:decision"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "COM",
+          "text": "COM API"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "parchear",
+          "text": "PARCHE"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "romper compatibilidad",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "67",
-    "texto": "XMLHttpRequest es la interfaz de programación de aplicaciones que permite a una página web solicitar datos al servidor sin recargar la página completa."
+    "texto": "Chrome medía el tiempo de inicio, el tiempo de carga de páginas y el tiempo de ejecución de JavaScript con datos públicos. El motor de JavaScript V8 de Chrome usaba compilación justo a tiempo — compilación del código en el momento de ejecución.",
+    "chapter_title": "V8 vs Interpretación",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "V8",
+          "text": "Motor V8"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "tiempo",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "medía",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "compilación justo",
+          "text": "JIT Compilation"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "ejecución",
+          "icon_name": "flat-color-icons:flash-on"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "68",
-    "texto": "Microsoft la inventó."
+    "texto": "El motor de JavaScript de Internet Explorer ocho usaba interpretación pura. En pruebas publicadas por el sitio Ars Technica en dos mil nueve, Chrome ejecutaba benchmarks de JavaScript entre ocho y veintidós veces más rápido que Internet Explorer ocho según el tipo de operación.",
+    "chapter_title": "La Brecha",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Internet Explorer ocho",
+          "text": "IE 8"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "veintidós veces",
+          "text": "22X"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Chrome",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "interpretación",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "benchmarks",
+          "query": "benchmark test performance chart"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "69",
-    "texto": "Fue introducida en Internet Explorer cinco en mil novecientos noventa y nueve como un objeto ActiveX propietario llamado MSXML."
+    "texto": "La diferencia era perceptible sin instrumentación. Los usuarios no necesitaban leer análisis técnicos para sentir la diferencia.",
+    "chapter_title": "Experiencia Real",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "usuarios",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "perceptible",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "sentir",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "70",
-    "texto": "Firefox, Opera y Safari implementaron la misma funcionalidad en dos mil dos como objeto nativo del navegador, accesible directamente desde JavaScript sin dependencias externas."
+    "texto": "En enero de dos mil nueve, Chrome tenía uno punto seis por ciento de cuota de mercado global. En enero de dos mil doce, tenía veintisiete por ciento. En mayo de dos mil doce superó a Internet Explorer como navegador más usado globalmente según StatCounter.",
+    "chapter_title": "La Conquista",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "uno punto seis",
+          "text": "1.6%"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "veintisiete",
+          "text": "27%"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cuota de mercado",
+          "graphic": "flecha_subiendo",
+          "value": "1.6,27,100"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "enero",
+          "text": "2009-2012"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "superó",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "71",
-    "texto": "Internet Explorer mantuvo el objeto ActiveX como única forma de acceso hasta Internet Explorer siete en dos mil seis."
+    "texto": "Eso es pasar de uno punto seis a treinta y dos por ciento en treinta y seis meses. La velocidad de esa adopción no tuvo precedentes en la historia de los navegadores.",
+    "chapter_title": "Adopción de Chrome",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "uno punto seis",
+          "text": "1.6%"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "treinta y dos",
+          "text": "32%"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "treinta y seis meses",
+          "text": "36 meses"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "velocidad",
+          "graphic": "flecha_subiendo",
+          "value": "1.6,32"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "adopción",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "precedentes",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "solid"
+        }
+      ]
+    }
   },
   {
     "id": "72",
-    "texto": "ActiveX era la plataforma de extensión de Microsoft para aplicaciones web empresariales."
+    "texto": "Microsoft respondió con Internet Explorer diez en dos mil doce e Internet Explorer once en dos mil trece. Ambos llegaron demasiado tarde para recuperar el mercado de consumo.",
+    "chapter_title": "Respuesta tardía",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Microsoft",
+          "text": "Internet Explorer"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "diez",
+          "text": "IE 10"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "dos mil doce",
+          "text": "2012"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "once",
+          "text": "IE 11"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "dos mil trece",
+          "text": "2013"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "demasiado tarde",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "73",
-    "texto": "Mantener XMLHttpRequest como objeto ActiveX en lugar de objeto nativo ataba a los desarrolladores a la plataforma de Microsoft."
+    "texto": "En dos mil quince, Microsoft abandonó Internet Explorer y lanzó Edge con un motor completamente nuevo llamado EdgeHTML. En dos mil dieciocho, ese motor también fue abandonado. Edge fue reescrito sobre Chromium, el núcleo de código abierto de Chrome.",
+    "chapter_title": "Evolución de Edge",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dos mil quince",
+          "text": "2015"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Edge",
+          "text": "Edge"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "dos mil dieciocho",
+          "text": "2018"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Chromium",
+          "name": "chromium"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "reescrito",
+          "icon_name": "flat-color-icons:process"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "74",
-    "texto": "Empresas que usaban ActiveX para otras funciones tenían incentivos para permanecer en Internet Explorer."
+    "texto": "El motor Trident de Internet Explorer nunca murió del todo. El modo Internet Explorer de Microsoft Edge existe hoy en producción — permite ejecutar sitios que requieren comportamiento de Internet Explorer once dentro de Edge.",
+    "chapter_title": "Legado de Trident",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Trident",
+          "text": "Trident"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "motor",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "once",
+          "text": "IE 11"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "producción",
+          "icon_name": "flat-color-icons:ok"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "dentro",
+          "icon_name": "flat-color-icons:link"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "75",
-    "texto": "Era una decisión de bloqueo de plataforma — lo que en inglés se denomina vendor lock-in — técnicamente deliberada."
+    "texto": "Bancos europeos y sistemas gubernamentales lo usan activamente en dos mil veinticuatro. El concepto de navegador embebido para compatibilidad retroactiva — un motor antiguo dentro de uno moderno — es la herencia directa.",
+    "chapter_title": "Compatibilidad retroactiva",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Bancos",
+          "icon_name": "flat-color-icons:business"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "gubernamentales",
+          "text": "Gobiernos"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "dos mil veinticuatro",
+          "text": "2024"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "embebido",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "retroactiva",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "herencia",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
   },
   {
     "id": "76",
-    "texto": "El bloqueo funcionó exactamente al revés."
+    "texto": "Electron, el entorno de ejecución que usa Visual Studio Code, Slack y Figma, es esencialmente un navegador Chromium embebido en una aplicación de escritorio. La idea de integrar un motor de navegador en productos de escritorio la inventó Internet Explorer.",
+    "chapter_title": "Legado en Electron",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Electron",
+          "text": "Electron"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "sm",
+          "trigger_word": "Visual Studio Code",
+          "text": "VS Code"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Slack",
+          "name": "slack"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Figma",
+          "name": "figma"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "integrar",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "Internet Explorer",
+          "text": "IE inventó esto"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   },
   {
     "id": "77",
-    "texto": "En dos mil cuatro, Jesse James Garrett, diseñador de experiencia de usuario de la consultora Adaptive Path, documentó un patrón de desarrollo usando XMLHttpRequest para construir interfaces web que respondían como aplicaciones de escritorio."
+    "texto": "Lo que cambió fue quién controlaba el estándar.",
+    "chapter_title": "Control del estándar",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "cambió",
+          "icon_name": "flat-color-icons:decision"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "controlaba",
+          "text": "Control"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "estándar",
+          "icon_name": "flat-color-icons:rules"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "78",
-    "texto": "Lo llamó AJAX — JavaScript asíncrono y XML en inglés, o JavaScript asíncrono y XML."
+    "texto": "La próxima vez que tengas monopolio de mercado y consideres detener el desarrollo por falta de competencia, pregúntate si estás midiendo tu velocidad relativa a los competidores actuales o a los competidores que existirán cuando alguien más resuelva el problema que tú dejaste sin resolver.",
+    "chapter_title": "Lección de monopolio",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "tengas",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "monopolio",
+          "text": "Monopolio"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "detener",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "velocidad",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "competidores",
+          "icon_name": "flat-color-icons:next"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "reemplaza",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
   },
   {
     "id": "79",
-    "texto": "Google Maps fue lanzado en febrero de dos mil cinco usando AJAX sobre el objeto nativo."
-  },
-  {
-    "id": "80",
-    "texto": "Google Gmail usaba el mismo patrón."
-  },
-  {
-    "id": "81",
-    "texto": "Ambos productos requerían código adicional en Internet Explorer para detectar si el objeto ActiveX estaba disponible, si las políticas de seguridad de la empresa lo bloqueaban, y si la versión de MSXML instalada era compatible."
-  },
-  {
-    "id": "82",
-    "texto": "Los desarrolladores que querían construir aplicaciones web modernas descubrieron que Internet Explorer era el obstáculo principal."
-  },
-  {
-    "id": "83",
-    "texto": "No el facilitador — el obstáculo."
-  },
-  {
-    "id": "84",
-    "texto": "En enero de dos mil seis, la cuota de mercado de Internet Explorer era del ochenta y cinco por ciento."
-  },
-  {
-    "id": "85",
-    "texto": "En enero de dos mil ocho, era del setenta y siete por ciento."
-  },
-  {
-    "id": "86",
-    "texto": "Firefox pasó del nueve al dieciséis por ciento en el mismo periodo."
-  },
-  {
-    "id": "87",
-    "texto": "El catalizador documentado por múltiples análisis de la época fue la adopción de aplicaciones AJAX que funcionaban mejor fuera de Internet Explorer."
-  },
-  {
-    "id": "88",
-    "texto": "StatCounter, empresa de análisis de tráfico web, registró que en sitios de desarrollo web y tecnología la cuota de Internet Explorer caía por debajo del cincuenta por ciento ya en dos mil siete."
-  },
-  {
-    "id": "89",
-    "texto": "DECISIÓN CINCO: Lanzar Internet Explorer siete sin motor de renderizado nuevo y abandonar Internet Explorer seis sin ciclo de vida definido"
-  },
-  {
-    "id": "90",
-    "texto": "Internet Explorer siete, lanzado en octubre de dos mil seis, usaba el mismo motor Trident de Internet Explorer seis con parches incrementales."
-  },
-  {
-    "id": "91",
-    "texto": "No era una reescritura."
-  },
-  {
-    "id": "92",
-    "texto": "Implementó soporte parcial de CSS nivel dos — el que ya era estándar desde mil novecientos noventa y ocho — y soporte básico de transparencia PNG."
-  },
-  {
-    "id": "93",
-    "texto": "No implementó CSS nivel tres."
-  },
-  {
-    "id": "94",
-    "texto": "No implementó el modelo de eventos DOM nivel dos del Consorcio World Wide Web de forma completa."
-  },
-  {
-    "id": "95",
-    "texto": "Simultáneamente, Microsoft no estableció una fecha de fin de vida para Internet Explorer seis ni ofreció migración forzada."
-  },
-  {
-    "id": "96",
-    "texto": "Una reescritura completa del motor de renderizado habría tomado entre dos y tres años y habría requerido pruebas de regresión contra miles de sitios existentes."
-  },
-  {
-    "id": "97",
-    "texto": "Los clientes empresariales — bancos, aseguradoras, administraciones públicas — habían construido aplicaciones internas usando características propietarias de Internet Explorer seis."
-  },
-  {
-    "id": "98",
-    "texto": "Forzar la migración habría generado rechazo corporativo."
-  },
-  {
-    "id": "99",
-    "texto": "Microsoft optó por la ruta de menor fricción: una actualización cosmética que no rompiera la compatibilidad."
-  },
-  {
-    "id": "100",
-    "texto": "El resultado fue la coexistencia de tres versiones activas simultáneamente: Internet Explorer seis, Internet Explorer siete e Internet Explorer ocho, lanzado en dos mil nueve."
-  },
-  {
-    "id": "101",
-    "texto": "Cada versión tenía comportamientos diferentes para los mismos estándares."
-  },
-  {
-    "id": "102",
-    "texto": "Los desarrolladores web debían probar en las tres."
-  },
-  {
-    "id": "103",
-    "texto": "Herramientas como el selector condicional de comentarios — una sintaxis propietaria de Internet Explorer usando comentarios especiales en el lenguaje de marcado de hipertexto — se convirtieron en código estándar en cualquier proyecto web."
-  },
-  {
-    "id": "104",
-    "texto": "China mantuvo Internet Explorer seis como navegador dominante hasta dos mil trece porque el sistema bancario chino en línea requería controles ActiveX que solo funcionaban en Internet Explorer seis."
-  },
-  {
-    "id": "105",
-    "texto": "Baidu, el motor de búsqueda chino, reportó en dos mil doce que treinta y cuatro por ciento de sus usuarios aún accedían desde Internet Explorer seis."
-  },
-  {
-    "id": "106",
-    "texto": "Google anunció en enero de dos mil diez que dejaría de soportar Internet Explorer seis en sus productos."
-  },
-  {
-    "id": "107",
-    "texto": "YouTube terminó el soporte en marzo de dos mil diez."
-  },
-  {
-    "id": "108",
-    "texto": "Facebook en dos mil once."
-  },
-  {
-    "id": "109",
-    "texto": "Cada uno de estos anuncios generó costos de soporte adicionales para empresas cuyos usuarios aún dependían del navegador."
-  },
-  {
-    "id": "110",
-    "texto": "Microsoft publicó un sitio llamado \"Cuenta regresiva de Internet Explorer seis\" en dos mil once — nueve años después de que el navegador fuera lanzado — mostrando en tiempo real el porcentaje de uso global para coordinar su propio abandono."
-  },
-  {
-    "id": "111",
-    "texto": "Eso no es una estrategia de producto."
-  },
-  {
-    "id": "112",
-    "texto": "Es una autopsia pública."
-  },
-  {
-    "id": "113",
-    "texto": "DECISIÓN SEIS: No responder a Chrome con una arquitectura multiproceso"
-  },
-  {
-    "id": "114",
-    "texto": "Google Chrome fue lanzado en septiembre de dos mil ocho con una arquitectura donde cada pestaña del navegador ejecutaba en un proceso independiente del sistema operativo."
-  },
-  {
-    "id": "115",
-    "texto": "Si una pestaña fallaba, las demás continuaban funcionando."
-  },
-  {
-    "id": "116",
-    "texto": "Internet Explorer hasta la versión ocho usaba un modelo de proceso único: un fallo en cualquier pestaña podía colapsar la sesión completa."
-  },
-  {
-    "id": "117",
-    "texto": "Internet Explorer ocho introdujo procesos por pestaña de forma parcial, pero el proceso principal del navegador seguía siendo un punto único de fallo."
-  },
-  {
-    "id": "118",
-    "texto": "Internet Explorer nueve, lanzado en marzo de dos mil once, intentó la separación completa, pero con limitaciones en sistemas operativos anteriores a Windows Vista."
-  },
-  {
-    "id": "119",
-    "texto": "La arquitectura multiproceso de Chrome requería cambios profundos en cómo el motor Trident gestionaba el modelo de objetos del documento y la memoria compartida entre pestañas."
-  },
-  {
-    "id": "120",
-    "texto": "Microsoft había acumulado doce años de deuda técnica en Trident."
-  },
-  {
-    "id": "121",
-    "texto": "Reescribir la arquitectura de gestión de procesos sin romper compatibilidad con extensiones existentes — que usaban la interfaz de programación de aplicaciones de objetos COM de Microsoft — era técnicamente complejo."
-  },
-  {
-    "id": "122",
-    "texto": "La decisión de parchear en lugar de reescribir se repitió."
-  },
-  {
-    "id": "123",
-    "texto": "Chrome medía el tiempo de inicio, el tiempo de carga de páginas y el tiempo de ejecución de JavaScript con datos públicos."
-  },
-  {
-    "id": "124",
-    "texto": "El motor de JavaScript V8 de Chrome usaba compilación justo a tiempo — compilación del código en el momento de ejecución."
-  },
-  {
-    "id": "125",
-    "texto": "El motor de JavaScript de Internet Explorer ocho usaba interpretación pura."
-  },
-  {
-    "id": "126",
-    "texto": "En pruebas publicadas por el sitio Ars Technica en dos mil nueve, Chrome ejecutaba benchmarks de JavaScript entre ocho y veintidós veces más rápido que Internet Explorer ocho según el tipo de operación."
-  },
-  {
-    "id": "127",
-    "texto": "La diferencia era perceptible sin instrumentación."
-  },
-  {
-    "id": "128",
-    "texto": "Los usuarios no necesitaban leer análisis técnicos para sentir la diferencia."
-  },
-  {
-    "id": "129",
-    "texto": "En enero de dos mil nueve, Chrome tenía uno punto seis por ciento de cuota de mercado global."
-  },
-  {
-    "id": "130",
-    "texto": "En enero de dos mil doce, tenía veintisiete por ciento."
-  },
-  {
-    "id": "131",
-    "texto": "En mayo de dos mil doce superó a Internet Explorer como navegador más usado globalmente según StatCounter."
-  },
-  {
-    "id": "132",
-    "texto": "Eso es pasar de uno punto seis a treinta y dos por ciento en treinta y seis meses."
-  },
-  {
-    "id": "133",
-    "texto": "La velocidad de esa adopción no tuvo precedentes en la historia de los navegadores."
-  },
-  {
-    "id": "134",
-    "texto": "Microsoft respondió con Internet Explorer diez en dos mil doce e Internet Explorer once en dos mil trece."
-  },
-  {
-    "id": "135",
-    "texto": "Ambos llegaron demasiado tarde para recuperar el mercado de consumo."
-  },
-  {
-    "id": "136",
-    "texto": "En dos mil quince, Microsoft abandonó Internet Explorer y lanzó Edge con un motor completamente nuevo llamado EdgeHTML."
-  },
-  {
-    "id": "137",
-    "texto": "En dos mil dieciocho, ese motor también fue abandonado."
-  },
-  {
-    "id": "138",
-    "texto": "Edge fue reescrito sobre Chromium, el núcleo de código abierto de Chrome."
-  },
-  {
-    "id": "139",
-    "texto": "El motor Trident de Internet Explorer nunca murió del todo."
-  },
-  {
-    "id": "140",
-    "texto": "El modo Internet Explorer de Microsoft Edge existe hoy en producción — permite ejecutar sitios que requieren comportamiento de Internet Explorer once dentro de Edge."
-  },
-  {
-    "id": "141",
-    "texto": "Bancos europeos y sistemas gubernamentales lo usan activamente en dos mil veinticuatro."
-  },
-  {
-    "id": "142",
-    "texto": "El concepto de navegador embebido para compatibilidad retroactiva — un motor antiguo dentro de uno moderno — es la herencia directa."
-  },
-  {
-    "id": "143",
-    "texto": "Electron, el entorno de ejecución que usa Visual Studio Code, Slack y Figma, es esencialmente un navegador Chromium embebido en una aplicación de escritorio."
-  },
-  {
-    "id": "144",
-    "texto": "La idea de integrar un motor de navegador en productos de escritorio la inventó Internet Explorer."
-  },
-  {
-    "id": "145",
-    "texto": "Lo que cambió fue quién controlaba el estándar."
-  },
-  {
-    "id": "146",
-    "texto": "La próxima vez que tengas monopolio de mercado y consideres detener el desarrollo por falta de competencia, pregúntate si estás midiendo tu velocidad relativa a los competidores actuales o a los competidores que existirán cuando alguien más resuelva el problema que tú dejaste sin resolver."
-  },
-  {
-    "id": "147",
-    "texto": "Eso es lo que separa una plataforma que define una industria de una que la bloquea hasta que alguien la reemplaza."
+    "texto": "Eso es lo que separa una plataforma que define una industria de una que la bloquea hasta que alguien la reemplaza.",
+    "chapter_title": "Definición vs bloqueo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "define",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "plataforma",
+          "text": "Plataforma"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "bloquea",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "separa",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "reemplaza",
+          "icon_name": "flat-color-icons:next"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        },
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
   }
 ]

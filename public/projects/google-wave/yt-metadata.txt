@@ -1,0 +1,45 @@
+════════════════════════════════════════════════════════════
+  📺 METADATA YOUTUBE — CÓDIGO MUERTO
+════════════════════════════════════════════════════════════
+
+【 TÍTULOS 】
+Principal:     Google Wave: 100% CPU por cada mensaje. Por qué Google mató su propio protocolo
+Alternativo:   Cómo un protocolo XML destruyó Google Wave desde adentro
+
+【 DESCRIPCIÓN CORTA (antes del ver más) 】
+Google Wave prometía revolucionar la comunicación. 11 meses después estaba muerto. No fue por confusión del usuario. Fue por decisiones de arquitectura que consumían el 100% de un núcleo de CPU en cada sincronización. Esto es por qué falló.
+
+【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】
+────────────────────────────────────────────────────────────
+Google Wave fue construido por los mismos ingenieros de Google Maps. Prometía fusionar email, chat, wikis y edición en tiempo real en un solo objeto. Se lanzó en septiembre de 2009. En agosto de 2010 estaba descontinuado. No fue fracaso de mercado. Fue colapso arquitectónico: cada mensaje sincronizado generaba una cascada de operaciones XML que consumía el 100% de un núcleo de CPU en navegadores de 2009. En máquinas de 1 GB RAM y procesadores de un núcleo a 2 GHz, Wave consumía entre 30% y 60% de CPU de forma sostenida. Esto es la autopsia técnica de cómo decisiones razonables en un laboratorio se volvieron insostenibles bajo carga real.
+
+0:00 Introducción
+0:56 Decisión 1: XMPP extendido como columna vertebral
+2:34 Decisión 2: Modelo de sincronización colaborativa sin batching
+4:12 Decisión 3: Federación pública como requisito central
+6:03 Decisión 4: Almacenamiento de operaciones vs estado final
+7:49 Decisión 5: Validación de esquema en cada hop
+
+¿Qué arquitectura debería ser la próxima autopsia? Comenta abajo.
+────────────────────────────────────────────────────────────
+
+【 CAPÍTULOS (referencia) 】
+0:00 Introducción
+0:56 Decisión 1
+2:34 Decisión 2
+4:12 Decisión 3
+6:03 Decisión 4
+7:49 Decisión 5
+
+【 HASHTAGS 】
+#GoogleWave #ArquitecturaDeSoftware #ProtocolosWeb #HistoriaDeTecnología #XML #SincronizacionEnTiempoReal #IngenieríaDeProductos #CodigoMuerto #Tecnología #Programación #YouTube
+(177 caracteres)
+
+【 ETIQUETAS SEO 】
+Google Wave, arquitectura de software, protocolo XMPP, sincronización en tiempo real, historia de tecnología, ingeniería de producto, XML, colapso tecnológico, autopsia técnica, programación
+
+【 CONCEPTO DE MINIATURA 】
+Fondo oscuro (gris oscuro #1a1a1a). En el centro: gráfico de barras rojas exponencial subiendo hacia la esquina superior derecha. Encima del gráfico, texto grande en blanco: '100% CPU' en fuente sans-serif negrita. Debajo: 'Google Wave' en fuente más pequeña. En la esquina superior izquierda, pequeño logo de Google Wave (onda azul cyan #00d4ff). En la esquina inferior derecha: timestamp '11 MESES' en rojo brillante. El gráfico de barras debe tener efecto de movimiento o distorsión que sugiera colapso inminente.
+
+════════════════════════════════════════════════════════════
+Generado: 19/5/2026, 20:49:06

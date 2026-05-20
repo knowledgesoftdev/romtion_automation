@@ -28,7 +28,17 @@
       "PowerShell(npx tsc --noEmit -p . 2>&1 | Select-Object -First 50)",
       "PowerShell($out = npx tsc --noEmit -p . 2>&1; if \\($LASTEXITCODE -eq 0\\) { Write-Output \"OK: tsc paso sin errores\" } else { Write-Output \"Errores \\($LASTEXITCODE\\):\"; $out | Select-Object -First 30 })",
       "PowerShell($out = npx tsc --noEmit -p . 2>&1; Write-Output \\(\"tsc exit code: \" + $LASTEXITCODE\\); if \\($LASTEXITCODE -ne 0\\) { $out | Select-Object -First 20 })",
-      "PowerShell(npm *)"
+      "PowerShell(npm *)",
+      "Bash(ffmpeg -version)",
+      "Bash(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 videoreferecncia.mp4)",
+      "Bash(mkdir -p /tmp/refframes)",
+      "Bash(ffmpeg -y -i videoreferecncia.mp4 -vf \"fps=1/80,scale=960:-1\" -frames:v 8 /tmp/refframes/f%02d.jpg)",
+      "Bash(mkdir -p .refframes)",
+      "Bash(ffmpeg -y -i videoreferecncia.mp4 -vf \"fps=1/80,scale=960:-1\" -frames:v 8 .refframes/f%02d.jpg)",
+      "Bash(ffmpeg -y -ss 10 -t 60 -i videoreferecncia.mp4 -vf \"fps=1,scale=960:-1\" .refframes/early_%02d.jpg)",
+      "Bash(ffmpeg -y -ss 90 -t 30 -i videoreferecncia.mp4 -vf \"fps=1,scale=960:-1\" .refframes/mid1_%02d.jpg)",
+      "Bash(ffmpeg -y -ss 240 -t 30 -i videoreferecncia.mp4 -vf \"fps=1,scale=960:-1\" .refframes/mid2_%02d.jpg)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('parse_insights keys:', list\\(d.get\\('parse_insights',{}\\).keys\\(\\)\\)\\); print\\('mejor_rendimiento count:', len\\(d.get\\('mejor_rendimiento',[]\\)\\)\\); print\\('mejor_rendimiento temas:', [v['tema'] for v in d.get\\('mejor_rendimiento',[]\\)]\\)\")"
     ]
   }
 }

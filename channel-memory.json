@@ -43,7 +43,7 @@
       "fecha": "2026-05-20T06:35:27.322Z"
     },
     {
-      "tema": "google",
+      "tema": "myspace",
       "video_id": "YmMWg4JTE0E",
       "retention": 0,
       "ctr": 0.005,
@@ -53,7 +53,7 @@
       "fecha": "2026-05-20T06:35:28.209Z"
     },
     {
-      "tema": "google",
+      "tema": "nokia",
       "video_id": "j7rbmgKSdnI",
       "retention": 0.109,
       "ctr": 0.006,
@@ -110,7 +110,8 @@
     "dato-oculto-con-numero-especifico",
     "estadistica-impactante-con-timeline",
     "declaracion-contraintuitiva-con-cifra-exacta",
-    "dato-tecnico-con-impacto-visual"
+    "dato-tecnico-con-impacto-visual",
+    "dato-tecnico-con-cifra-exacta"
   ],
   "miniatura_conceptos": [
     {
@@ -133,6 +134,13 @@
       "concepto": "Fondo oscuro (gris oscuro #1a1a1a). En el centro: gráfico de barras rojas exponencial subiendo hacia la esquina superior derecha. Encima del gráfico, texto grande en blanco: '100% CPU' en fuente sans-serif negrita. Debajo: 'Google Wave' en fuente más pequeña. En la esquina superior izquierda, pequeño logo de Google Wave (onda azul cyan #00d4ff). En la esquina inferior derecha: timestamp '11 MESES' en rojo brillante. El gráfico de barras debe tener efecto de movimiento o distorsión que sugiera colapso inminente.",
       "estilo_titulo": "dato-tecnico-con-impacto-visual",
       "fecha": "2026-05-20T01:49:06.056Z"
+    },
+    {
+      "projectId": "friendster",
+      "titulo": "Friendster: cómo 3 millones de usuarios colapsaron en 40 segundos",
+      "concepto": "Fondo dividido: mitad izquierda con el logo de Friendster en rojo oscuro desaturado con efecto de descomposición; mitad derecha con código rojo de error (tipo matriz). Texto superior en blanco: '40 SEGUNDOS' en fuente serif serif gruesa. Texto inferior: 'Friendster' en blanco con contorno negro. Esquina superior derecha: insignia roja con '2004' (año del colapso). Elemento visual adicional: reloj de arena cayéndose en la esquina inferior izquierda. Paleta: rojo sangre, negro profundo, blanco high-contrast. Diseño asimétrico, orientado a transmitir urgencia y decadencia tecnológica.",
+      "estilo_titulo": "dato-tecnico-con-cifra-exacta",
+      "fecha": "2026-05-20T07:12:23.591Z"
     }
   ],
   "parse_insights": {
@@ -390,6 +398,47 @@
         "old computer hardware processor cpu"
       ],
       "recorded_at": "2026-05-20T01:25:04.139Z"
+    },
+    "friendster": {
+      "motion_elements_used": [
+        "flecha_subiendo",
+        "contador_porcentaje",
+        "flecha_bajando",
+        "donut_chart",
+        "timeline_barras"
+      ],
+      "color_moods": [
+        "neutro",
+        "urgente",
+        "positivo",
+        "nostalgia"
+      ],
+      "asset_types": {
+        "icon": 127,
+        "label_black": 47,
+        "label_red": 53,
+        "motion_graphic": 8,
+        "pexels_image": 17,
+        "logo": 3
+      },
+      "pexels_queries": [
+        "network graph connections diagram",
+        "node graph mathematical structure",
+        "database relational index book",
+        "computer error bug screen debugging",
+        "computer memory RAM hardware",
+        "server room data center computers",
+        "map southeast asia philippines indonesia",
+        "server room data center infrastructure",
+        "southeast asia map philippines indonesia thailand",
+        "network latency internet speed test",
+        "server location asia distribution network",
+        "server location proximity distance latency",
+        "empty office unemployment business decline",
+        "metrics dashboard performance monitoring analytics",
+        "user experience loading time frustration"
+      ],
+      "recorded_at": "2026-05-20T07:28:25.822Z"
     }
   }
 }

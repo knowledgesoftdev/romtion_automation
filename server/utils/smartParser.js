@@ -870,4 +870,4 @@ async function parseScriptSmart(rawScript, opts = {}) {
   return result;
 }
 
-module.exports = { parseScriptSmart };
+module.exports = { parseScriptSmart, enrichChunkWithClaude, validateVisual, Anthropic };

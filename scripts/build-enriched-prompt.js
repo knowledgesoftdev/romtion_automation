@@ -112,6 +112,12 @@ async function main() {
     );
   }
 
+  // Extraer el tema corto (por ejemplo, "Yahoo" a partir de "Yahoo — la arquitectura que falló")
+  // para reemplazar de forma dinámica el placeholder [TEMA] en el cuerpo del prompt (ej. en la orden final)
+  const temaFinal = tema || "Nokia";
+  const temaCorto = temaFinal.split(/[—\-:]/)[0].trim();
+  enrichedPrompt = enrichedPrompt.replace(/\[TEMA\]/g, temaCorto);
+
   fs.writeFileSync(OUTPUT, enrichedPrompt, 'utf8');
   console.log(`✅ Prompt enriquecido guardado en ${OUTPUT}`);
   console.log(`   ${enrichedPrompt.split('\n').length} líneas, ${enrichedPrompt.length} caracteres`);
