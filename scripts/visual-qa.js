@@ -23,7 +23,18 @@ try {
 }
 
 // ─── Configuración ──────────────────────────────────────────────────────────────
-const PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects');
+let channelId = 'codigo-muerto';
+try {
+  const activeFile = path.join(__dirname, '..', 'active-channel.json');
+  if (fs.existsSync(activeFile)) {
+    channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+  }
+} catch (_) {}
+
+let PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects', channelId);
+if (!fs.existsSync(PROJECTS_DIR)) {
+  PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects');
+}
 const REF_DIR = path.join(__dirname, '..', '.refframes');
 const FPS = 30;
 

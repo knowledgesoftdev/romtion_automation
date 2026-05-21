@@ -31,7 +31,18 @@ if (!projectId) {
   process.exit(1);
 }
 
-const PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects');
+let channelId = 'codigo-muerto';
+try {
+  const activeFile = path.join(__dirname, '..', 'active-channel.json');
+  if (fs.existsSync(activeFile)) {
+    channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+  }
+} catch (_) {}
+
+let PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects', channelId);
+if (!fs.existsSync(PROJECTS_DIR)) {
+  PROJECTS_DIR = path.join(__dirname, '..', 'public', 'projects');
+}
 const projectDir   = path.join(PROJECTS_DIR, projectId);
 
 if (!fs.existsSync(projectDir)) {

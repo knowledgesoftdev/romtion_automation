@@ -327,7 +327,18 @@ async function main() {
     console.warn('   Los párrafos largos no se podrán dividir/concatenar. Instala ffmpeg para usar el pipeline completo.');
   }
 
-  const projectDir = path.join(__dirname, 'public', 'projects', projectId);
+  let channelId = 'codigo-muerto';
+  try {
+    const activeFile = path.join(__dirname, 'active-channel.json');
+    if (fs.existsSync(activeFile)) {
+      channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+    }
+  } catch (_) {}
+
+  let projectDir = path.join(__dirname, 'public', 'projects', channelId, projectId);
+  if (!fs.existsSync(projectDir)) {
+    projectDir = path.join(__dirname, 'public', 'projects', projectId);
+  }
   const guionPath  = path.join(projectDir, 'guion.json');
   const audioDir   = path.join(projectDir, 'audio');
   const cacheDir   = path.join(audioDir, '.cache');

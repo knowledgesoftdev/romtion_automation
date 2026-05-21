@@ -14,7 +14,19 @@ if (!PROJECT_ID) {
   process.exit(1);
 }
 
-const PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', PROJECT_ID);
+let channelId = 'codigo-muerto';
+try {
+  const activeFile = path.join(__dirname, '..', 'active-channel.json');
+  if (fs.existsSync(activeFile)) {
+    channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+  }
+} catch (_) {}
+
+let PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', channelId, PROJECT_ID);
+if (!fs.existsSync(PROJECT_DIR)) {
+  PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', PROJECT_ID);
+  channelId = '';
+}
 const AUDIO_PATH = path.join(PROJECT_DIR, 'audio.mp3');
 const OUTPUT_DIR = path.join(__dirname, '..', 'out');
 const OUTPUT_PATH = path.join(OUTPUT_DIR, `${PROJECT_ID}-hyperframes.mp4`);
@@ -28,7 +40,8 @@ async function run() {
   }
 
   // 1. Verify static server is reachable
-  const SERVER_URL = `http://localhost:5000/projects/${PROJECT_ID}/hyperframes/index.html`;
+  const urlSubPath = channelId ? `${channelId}/${PROJECT_ID}` : PROJECT_ID;
+  const SERVER_URL = `http://localhost:5000/projects/${urlSubPath}/hyperframes/index.html`;
   console.log(`🌐 Cargando lienzo estático desde: ${SERVER_URL}`);
 
   // 2. Launch headless browser

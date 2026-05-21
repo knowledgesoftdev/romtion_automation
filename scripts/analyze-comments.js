@@ -134,13 +134,27 @@ async function main() {
     let outputDir = __dirname;
     if (matchedVideo) {
       // Intentar buscar la carpeta del proyecto
-      const projectsDir = path.join(__dirname, '..', 'public', 'projects');
-      const projectFolders = fs.readdirSync(projectsDir);
-      const matchFolder = projectFolders.find(folder => {
-        return folder.toLowerCase().includes(matchedVideo.tema.toLowerCase().replace(/\s+/g, '-'));
-      });
-      if (matchFolder) {
-        outputDir = path.join(projectsDir, matchFolder);
+      let channelId = 'codigo-muerto';
+      try {
+        const activeFile = path.join(__dirname, '..', 'active-channel.json');
+        if (fs.existsSync(activeFile)) {
+          channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+        }
+      } catch (_) {}
+
+      let projectsDir = path.join(__dirname, '..', 'public', 'projects', channelId);
+      if (!fs.existsSync(projectsDir)) {
+        projectsDir = path.join(__dirname, '..', 'public', 'projects');
+      }
+
+      if (fs.existsSync(projectsDir)) {
+        const projectFolders = fs.readdirSync(projectsDir);
+        const matchFolder = projectFolders.find(folder => {
+          return folder.toLowerCase().includes(matchedVideo.tema.toLowerCase().replace(/\s+/g, '-'));
+        });
+        if (matchFolder) {
+          outputDir = path.join(projectsDir, matchFolder);
+        }
       }
     }
 

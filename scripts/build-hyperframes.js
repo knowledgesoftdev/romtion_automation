@@ -14,7 +14,18 @@ if (!PROJECT_ID) {
 
 console.log(`🧠 [HyperFrames Compiler] Iniciando compilación de "${PROJECT_ID}"...`);
 
-const PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', PROJECT_ID);
+let channelId = 'codigo-muerto';
+try {
+  const activeFile = path.join(__dirname, '..', 'active-channel.json');
+  if (fs.existsSync(activeFile)) {
+    channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+  }
+} catch (_) {}
+
+let PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', channelId, PROJECT_ID);
+if (!fs.existsSync(PROJECT_DIR)) {
+  PROJECT_DIR = path.join(__dirname, '..', 'public', 'projects', PROJECT_ID);
+}
 const GUION_PATH = path.join(PROJECT_DIR, 'guion.json');
 const TIMING_PATH = path.join(PROJECT_DIR, 'timing.json');
 const PLAN_PATH = path.join(PROJECT_DIR, 'scene-plan.json');

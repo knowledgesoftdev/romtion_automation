@@ -36,7 +36,18 @@ if (!projectId) {
   process.exit(1);
 }
 
-const projectDir = path.join(__dirname, 'public', 'projects', projectId);
+let channelId = 'codigo-muerto';
+try {
+  const activeFile = path.join(__dirname, 'active-channel.json');
+  if (fs.existsSync(activeFile)) {
+    channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
+  }
+} catch (_) {}
+
+let projectDir = path.join(__dirname, 'public', 'projects', channelId, projectId);
+if (!fs.existsSync(projectDir)) {
+  projectDir = path.join(__dirname, 'public', 'projects', projectId);
+}
 const planPath   = path.join(projectDir, 'scene-plan.json');
 const imagesDir  = path.join(projectDir, 'images');
 const videosDir  = path.join(projectDir, 'videos');
