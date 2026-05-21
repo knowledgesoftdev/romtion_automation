@@ -194,35 +194,31 @@ async function main() {
 
     const ctr = analytics.clickThroughRate || 0;
 
-    // 4. Intentar cruzar estilo de hook/título con miniatura_conceptos
+    // Extracción inteligente de tema corto (Prioridad 1: Detección directa de marca)
+    const marcas = ['Yahoo', 'Internet Explorer', 'BlackBerry', 'MySpace', 'Nokia', 'Flash', 'Equifax', 'Google', 'Windows'];
+    const encontrada = marcas.find(m => title.toLowerCase().includes(m.toLowerCase()));
+    
+    let cleanTema = title;
+    if (encontrada) {
+      cleanTema = encontrada;
+    } else {
+      const splitByDash = title.split(/[—\-\:]/)[0].trim();
+      cleanTema = splitByDash;
+    }
+
+    // 4. Intentar cruzar estilo de hook/título con miniatura_conceptos para obtener el estilo visual
     let matchedConcept = memory.miniatura_conceptos?.find(c => {
-      return titleSimilarity(c.titulo, title) > 0.6;
+      return titleSimilarity(c.titulo, title) > 0.5;
     });
 
-    // Fallback: buscar por palabras clave en común
-    if (!matchedConcept) {
+    // Fallback de concepto: buscar por marca detectada
+    if (!matchedConcept && encontrada) {
       matchedConcept = memory.miniatura_conceptos?.find(c => {
-        const words = c.titulo.toLowerCase().split(/\s+/);
-        return words.some(w => w.length > 4 && title.toLowerCase().includes(w));
+        return c.projectId && c.projectId.toLowerCase().includes(encontrada.toLowerCase());
       });
     }
 
     const hookStyle = matchedConcept?.estilo_titulo || 'no-especificado';
-    
-    // Extracción inteligente de tema corto
-    let cleanTema = title;
-    if (matchedConcept?.projectId) {
-      cleanTema = matchedConcept.projectId.split('-')[0];
-    } else {
-      const marcas = ['Yahoo', 'Internet Explorer', 'BlackBerry', 'MySpace', 'Nokia', 'Flash', 'Equifax'];
-      const encontrada = marcas.find(m => title.toLowerCase().includes(m.toLowerCase()));
-      if (encontrada) {
-        cleanTema = encontrada;
-      } else {
-        const splitByDash = title.split(/[—\-\:]/)[0].trim();
-        cleanTema = splitByDash;
-      }
-    }
 
     // Añadir tema formateado a temas_usados si no está registrado aún
     const formattedTema = cleanTema.charAt(0).toUpperCase() + cleanTema.slice(1);
