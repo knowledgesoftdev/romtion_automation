@@ -70,8 +70,9 @@ const guionHasMultiElement =
   Array.isArray(guion) &&
   guion.some(p => p?.visual && Array.isArray(p.visual.elements) && p.visual.elements.length > 0);
 
+// 1. Collect from guion.json multi-element if present (for Whiteboard)
 if (guionHasMultiElement) {
-  console.log(`✅ Usando guion.json (schema multi-element).`);
+  console.log(`✅ Detectado guion.json (schema multi-element). Agregando imágenes del Whiteboard.`);
   for (const p of guion) {
     const v = p.visual;
     if (!v || !Array.isArray(v.elements)) continue;
@@ -89,17 +90,28 @@ if (guionHasMultiElement) {
       });
     }
   }
-} else if (fs.existsSync(planPath)) {
-  const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
-  if (plan.paragraphs && Array.isArray(plan.paragraphs)) {
-    console.log(`ℹ️  Usando scene-plan.json (schema legacy).`);
-    paragraphs = plan.paragraphs;
-  } else {
-    console.error('❌ scene-plan.json no tiene .paragraphs[]');
-    process.exit(1);
+}
+
+// 2. Collect from scene-plan.json if present (for VideoEngine)
+if (fs.existsSync(planPath)) {
+  try {
+    const plan = JSON.parse(fs.readFileSync(planPath, 'utf8'));
+    if (plan.paragraphs && Array.isArray(plan.paragraphs)) {
+      console.log(`ℹ️  Detectado scene-plan.json. Agregando assets del VideoEngine.`);
+      for (const p of plan.paragraphs) {
+        if (p && p.media) {
+          paragraphs.push(p);
+        }
+      }
+    }
+  } catch (e) {
+    console.error(`⚠️  Error al leer scene-plan.json: ${e.message}`);
   }
-} else if (guion) {
-  console.log(`ℹ️  Usando guion.json (schema viejo single-visual).`);
+}
+
+// 3. Fallback to legacy single-visual guion.json ONLY if no other media was collected
+if (paragraphs.length === 0 && guion) {
+  console.log(`ℹ️  Usando guion.json (schema viejo single-visual) como fallback.`);
   for (const p of guion) {
     const v = p.visual;
     if (!v || !v.pexels_query) continue;
@@ -115,8 +127,10 @@ if (guionHasMultiElement) {
       },
     });
   }
-} else {
-  console.error(`❌ Faltan archivos del proyecto: no se encontró guion.json ni scene-plan.json`);
+}
+
+if (paragraphs.length === 0) {
+  console.error(`❌ Faltan archivos del proyecto: no se encontró guion.json ni scene-plan.json con datos de media`);
   process.exit(1);
 }
 
