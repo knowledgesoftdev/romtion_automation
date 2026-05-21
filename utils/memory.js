@@ -86,17 +86,49 @@ async function saveMemory(data) {
 
 /**
  * isTopicUsed(tema) → retorna true si el tema ya fue registrado como usado.
- * La comparación es insensible a mayúsculas/minúsculas y espacios extras.
+ * Hace un análisis estricto comparando coincidencias de subcadenas y palabras clave significativas (ej. "Google" vs "Google Wave").
  * @param {string} tema
  * @returns {Promise<boolean>}
  */
 async function isTopicUsed(tema) {
   try {
     const memory = await readMemory();
-    const normalized = tema.trim().toLowerCase();
-    return memory.temas_usados.some(
-      (t) => t.toLowerCase().trim() === normalized
-    );
+    const cleanNew = tema.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+    // 1. Verificar coincidencia directa o cruzada en temas_usados
+    for (const t of memory.temas_usados || []) {
+      const cleanUsed = t.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      
+      // Coincidencia de inclusión mutua (ej: "Google" en "Google Wave" o viceversa)
+      if (cleanNew.includes(cleanUsed) || cleanUsed.includes(cleanNew)) {
+        return true;
+      }
+      
+      // Comparación por tokens individuales significativos (longitud >= 4)
+      const newWords = cleanNew.split(/\s+/).filter(w => w.length >= 4);
+      const usedWords = cleanUsed.split(/\s+/).filter(w => w.length >= 4);
+      for (const nw of newWords) {
+        if (usedWords.includes(nw)) {
+          return true;
+        }
+      }
+    }
+
+    // 2. Verificar contra mejor_rendimiento o registros históricos de temas/títulos
+    const historicItems = [
+      ...(memory.mejor_rendimiento || []).map(v => v.tema || ''),
+      ...(memory.mejor_rendimiento || []).map(v => v.video_id || '') // En caso de que se use el id de video
+    ];
+
+    for (const item of historicItems) {
+      if (!item) continue;
+      const cleanItem = item.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      if (cleanNew.includes(cleanItem) || cleanItem.includes(cleanNew)) {
+        return true;
+      }
+    }
+
+    return false;
   } catch (err) {
     console.warn(`[memory] Error verificando tema: ${err.message}`);
     return false;
