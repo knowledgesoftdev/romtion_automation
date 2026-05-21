@@ -93,6 +93,7 @@ export interface WhiteboardSceneProps {
   elements:       VisualElement[];
   arrows:         ArrowConnection[];
   projectId:      string;
+  channelId?:     string;
   sceneId:        string;            // ej. "01"
   startFrame:     number;
   durationFrames: number;
@@ -546,6 +547,7 @@ const SketchyUnderline: React.FC<{
 const RenderElement: React.FC<{
   el:            VisualElement;
   projectId:     string;
+  channelId?:    string;
   sceneId:       string;
   sizePx:        number;
   frame:         number;
@@ -553,12 +555,13 @@ const RenderElement: React.FC<{
   appear:        number;
   accentColor:   string;
   slotMaxWidth:  number;
-}> = ({ el, projectId, sceneId, sizePx, frame, fps, appear, accentColor, slotMaxWidth }) => {
+}> = ({ el, projectId, channelId, sceneId, sizePx, frame, fps, appear, accentColor, slotMaxWidth }) => {
   const [imgError, setImgError] = React.useState(false);
 
   switch (el.type) {
     case "pexels_image": {
-      const src = staticFile(`projects/${projectId}/images/parrafo-${sceneId}-${el.id}.jpg`);
+      const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
+      const src = staticFile(`projects/${projectPath}/images/parrafo-${sceneId}-${el.id}.jpg`);
       if (imgError) {
         return (
           <div style={{
@@ -924,6 +927,7 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
   elements,
   arrows,
   projectId,
+  channelId,
   sceneId,
   startFrame,
   durationFrames,
@@ -1191,6 +1195,7 @@ export const WhiteboardScene: React.FC<WhiteboardSceneProps> = ({
               <RenderElement
                 el={el}
                 projectId={projectId}
+                channelId={channelId}
                 sceneId={sceneId}
                 sizePx={sizePx}
                 frame={frame - fireFrame}

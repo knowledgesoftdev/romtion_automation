@@ -7,21 +7,24 @@ import type { ScenePlanParagraph } from './types';
 
 interface Props {
   projectId: string;
+  channelId?: string;
   paragraph: ScenePlanParagraph;
   durationInFrames: number;
 }
 
-export const SceneRenderer: React.FC<Props> = ({ projectId, paragraph, durationInFrames }) => {
+export const SceneRenderer: React.FC<Props> = ({ projectId, channelId, paragraph, durationInFrames }) => {
+  const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
+
   switch (paragraph.layout) {
     case 'fullBleedMedia':
-      return <FullBleedMedia projectId={projectId} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <FullBleedMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'splitMedia':
-      return <SplitMedia projectId={projectId} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <SplitMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'dataSplit':
-      return <DataSplit projectId={projectId} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <DataSplit projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'keywordOnly':
-      return <KeywordOnly projectId={projectId} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <KeywordOnly projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
     default:
-      return <FullBleedMedia projectId={projectId} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <FullBleedMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
   }
 };

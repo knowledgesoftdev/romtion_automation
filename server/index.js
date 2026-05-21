@@ -380,6 +380,7 @@ app.get('/api/active-project', (req, res) => {
 
   res.json({
     projectId,
+    channelId: getActiveChannelId(),
     guion:      JSON.parse(fs.readFileSync(guionPath,  'utf8')),
     timing:     JSON.parse(fs.readFileSync(timingPath, 'utf8')),
     scenePlan,

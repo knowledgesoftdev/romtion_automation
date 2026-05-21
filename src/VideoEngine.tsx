@@ -14,6 +14,7 @@ export interface VideoEngineProps {
   guion: Array<{ id: string; texto: string }>;
   timing: Record<string, { start: number; duration: number }>;
   projectId: string;
+  channelId?: string;
   scenePlan?: ScenePlan | null;
 }
 
@@ -52,19 +53,22 @@ const SceneWrapper: React.FC<{
   texto: string;
   durationInFrames: number;
   projectId: string;
+  channelId?: string;
   planParagraph?: ScenePlanParagraph;
-}> = ({ texto, durationInFrames, projectId, planParagraph }) => {
+}> = ({ texto, durationInFrames, projectId, channelId, planParagraph }) => {
   if (planParagraph) {
-    return <SceneRenderer projectId={projectId} paragraph={planParagraph} durationInFrames={durationInFrames} />;
+    return <SceneRenderer projectId={projectId} channelId={channelId} paragraph={planParagraph} durationInFrames={durationInFrames} />;
   }
   return <DefaultText texto={texto} durationInFrames={durationInFrames} />;
 };
 
-export const VideoEngine: React.FC<VideoEngineProps> = ({ guion, timing, projectId, scenePlan }) => {
+export const VideoEngine: React.FC<VideoEngineProps> = ({ guion, timing, projectId, channelId, scenePlan }) => {
   const planById: Record<string, ScenePlanParagraph> = {};
   if (scenePlan?.paragraphs) {
     for (const p of scenePlan.paragraphs) planById[p.id] = p;
   }
+
+  const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0a0a0f" }}>
@@ -79,11 +83,12 @@ export const VideoEngine: React.FC<VideoEngineProps> = ({ guion, timing, project
 
         return (
           <Sequence key={key} from={fromFrame} durationInFrames={durationInFrames}>
-            <Audio src={staticFile(`projects/${projectId}/audio/${key}.mp3`)} />
+            <Audio src={staticFile(`projects/${projectPath}/audio/${key}.mp3`)} />
             <SceneWrapper
               texto={item.texto}
               durationInFrames={durationInFrames}
               projectId={projectId}
+              channelId={channelId}
               planParagraph={planParagraph}
             />
           </Sequence>

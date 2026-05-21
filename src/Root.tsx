@@ -10,8 +10,8 @@ import {
   ArrowConnection,
 } from "./WhiteboardScene";
 
-import nokiaGuion from "../public/projects/nokia-history/guion.json";
-import nokiaTiming from "../public/projects/nokia-history/timing.json";
+import nokiaGuion from "../public/projects/codigo-muerto/nokia-history/guion.json";
+import nokiaTiming from "../public/projects/codigo-muerto/nokia-history/timing.json";
 
 // ── Tipos extendidos para active-project ───────────────────────────────────────
 interface ActiveProjectData extends VideoEngineProps {
@@ -63,6 +63,7 @@ interface GuionItem {
 
 interface WhiteboardVideoProps {
   projectId:  string;
+  channelId?: string;
   guion:      GuionItem[];
   timing:     Record<string, { start: number; duration: number }>;
   wordTiming: WordTiming[] | null;
@@ -82,11 +83,13 @@ const SceneSequence: React.FC<{
 // ── WhiteboardVideo: orquesta todas las escenas ────────────────────────────────
 const WhiteboardVideo: React.FC<WhiteboardVideoProps> = ({
   projectId,
+  channelId,
   guion,
   timing,
   wordTiming,
 }) => {
-  const audioSrc = staticFile(`projects/${projectId}/audio.mp3`);
+  const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
+  const audioSrc = staticFile(`projects/${projectPath}/audio.mp3`);
 
   return (
     <>
@@ -116,6 +119,7 @@ const WhiteboardVideo: React.FC<WhiteboardVideoProps> = ({
           elements,
           arrows,
           projectId,
+          channelId,
           sceneId:        item.id,
           startFrame,
           durationFrames,
@@ -180,6 +184,7 @@ const calculateMetadataWhiteboard = async ({
       const data: ActiveProjectData = await res.json();
       const props: WhiteboardVideoProps = {
         projectId:  data.projectId,
+        channelId:  data.channelId,
         guion:      data.guion as GuionItem[],
         timing:     data.timing,
         wordTiming: data.wordTiming ?? null,
