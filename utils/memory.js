@@ -7,7 +7,38 @@
 const fs   = require('fs');
 const path = require('path');
 
-const MEMORY_PATH = path.join(__dirname, '..', 'channel-memory.json');
+const ACTIVE_CHANNEL_FILE = path.join(__dirname, '..', 'active-channel.json');
+
+function getActiveChannelId() {
+  try {
+    if (fs.existsSync(ACTIVE_CHANNEL_FILE)) {
+      const data = JSON.parse(fs.readFileSync(ACTIVE_CHANNEL_FILE, 'utf8'));
+      return data.channelId || 'codigo-muerto';
+    }
+  } catch (_) {}
+  return 'codigo-muerto';
+}
+
+function getMemoryPath() {
+  const channelId = getActiveChannelId();
+  const channelMemoryPath = path.join(__dirname, '..', 'channels', channelId, 'channel-memory.json');
+  
+  // Fallback: si es codigo-muerto y el archivo no está en channels, pero sí en la raíz, úsalo
+  if (channelId === 'codigo-muerto' && !fs.existsSync(channelMemoryPath)) {
+    const rootMemory = path.join(__dirname, '..', 'channel-memory.json');
+    if (fs.existsSync(rootMemory)) {
+      return rootMemory;
+    }
+  }
+  
+  // Asegurar que la carpeta del canal exista
+  const channelDir = path.dirname(channelMemoryPath);
+  if (!fs.existsSync(channelDir)) {
+    fs.mkdirSync(channelDir, { recursive: true });
+  }
+
+  return channelMemoryPath;
+}
 
 /**
  * Estructura por defecto. Se usa cuando el archivo no existe o está corrupto.
@@ -28,7 +59,11 @@ const DEFAULT_MEMORY = {
  */
 async function readMemory() {
   try {
-    const raw = fs.readFileSync(MEMORY_PATH, 'utf8');
+    const memPath = getMemoryPath();
+    if (!fs.existsSync(memPath)) {
+      return { ...DEFAULT_MEMORY };
+    }
+    const raw = fs.readFileSync(memPath, 'utf8');
     return JSON.parse(raw);
   } catch (_) {
     return { ...DEFAULT_MEMORY };
@@ -42,7 +77,8 @@ async function readMemory() {
  */
 async function saveMemory(data) {
   try {
-    fs.writeFileSync(MEMORY_PATH, JSON.stringify(data, null, 2), 'utf8');
+    const memPath = getMemoryPath();
+    fs.writeFileSync(memPath, JSON.stringify(data, null, 2), 'utf8');
   } catch (err) {
     throw new Error(`[memory] No se pudo guardar channel-memory.json: ${err.message}`);
   }
@@ -349,5 +385,5 @@ async function computeInsights() {
 module.exports = {
   readMemory, saveMemory, isTopicUsed, updateAfterPublish,
   recordParseInsights, recordVisualStyle, computeInsights,
-  lightSentiment, extractKeywords,
+  lightSentiment, extractKeywords, getActiveChannelId,
 };

@@ -1,0 +1,47 @@
+════════════════════════════════════════════════════════════
+  📺 METADATA YOUTUBE — CÓDIGO MUERTO
+════════════════════════════════════════════════════════════
+
+【 TÍTULOS 】
+Principal:     Friendster: cómo 3 millones de usuarios colapsaron en 40 segundos
+Alternativo:   La base de datos que rechazó 30 millones de dólares
+
+【 DESCRIPCIÓN CORTA (antes del ver más) 】
+Friendster rechazó la oferta de Google en 2003. Tenía más usuarios que Facebook. Su arquitectura tardaba 40 segundos en cargar un perfil. Los usuarios se fueron porque el sistema no aguantaba su propio crecimiento.
+
+【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】
+────────────────────────────────────────────────────────────
+Friendster nació en 2002 como la primera red social masiva de internet. En su pico tenía más de 3 millones de usuarios activos en EE.UU. —más que Facebook en ese momento—. Google le ofreció 30 millones de dólares en 2003. Friendster rechazó la oferta. Dos años después estaba muerto. No fue derrotado por la competencia: fue destruido por su propia arquitectura. Esta es la autopsia técnica de cómo un sistema de base de datos relacional sin caché convirtió cada usuario nuevo en un clavo más en el ataúd.
+
+0:00 Introducción
+0:57 Decisión 1: Base de datos relacional sin caché
+3:35 Decisión 2: Recorrido de grafo en tiempo real
+5:45 Decisión 3: Consultas N+1 sin optimización
+7:47 Decisión 4: Escala vertical sin particionamiento
+10:04 Decisión 5: Sin cola de procesamiento asincrónico
+12:28 Decisión 6: Negarse a pivotear cuando el problema era evidente
+
+¿Qué empresa tecnológica debería ser la próxima autopsia de Código Muerto? Suscríbete para no perderte los casos que redefinieron el fracaso técnico.
+────────────────────────────────────────────────────────────
+
+【 CAPÍTULOS (referencia) 】
+0:00 Introducción
+0:57 Decisión 1
+3:35 Decisión 2
+5:45 Decisión 3
+7:47 Decisión 4
+10:04 Decisión 5
+12:28 Decisión 6
+
+【 HASHTAGS 】
+#Friendster #SEO #Arquitectura #BaseDatos #HistoriaTech #SoftwareEngineering #CodigoMuerto #Programacion #TechHistory #Facebook #MySQL #WebScale #FracasoTecnico
+(160 caracteres)
+
+【 ETIQUETAS SEO 】
+Friendster, arquitectura de software, base de datos relacional, MySQL, escalabilidad, historia de tecnología, ingeniería de software, redes sociales, fracaso técnico, rendimiento de base datos
+
+【 CONCEPTO DE MINIATURA 】
+Fondo dividido: mitad izquierda con el logo de Friendster en rojo oscuro desaturado con efecto de descomposición; mitad derecha con código rojo de error (tipo matriz). Texto superior en blanco: '40 SEGUNDOS' en fuente serif serif gruesa. Texto inferior: 'Friendster' en blanco con contorno negro. Esquina superior derecha: insignia roja con '2004' (año del colapso). Elemento visual adicional: reloj de arena cayéndose en la esquina inferior izquierda. Paleta: rojo sangre, negro profundo, blanco high-contrast. Diseño asimétrico, orientado a transmitir urgencia y decadencia tecnológica.
+
+════════════════════════════════════════════════════════════
+Generado: 20/5/2026, 2:12:23

@@ -1,0 +1,9764 @@
+[
+  {
+    "palabra": "El",
+    "inicio": 0.0,
+    "fin": 0.2,
+    "escena_id": 1
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 0.2,
+    "fin": 0.84,
+    "escena_id": 1
+  },
+  {
+    "palabra": "de",
+    "inicio": 0.84,
+    "fin": 0.96,
+    "escena_id": 1
+  },
+  {
+    "palabra": "Google",
+    "inicio": 0.96,
+    "fin": 1.16,
+    "escena_id": 1
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 1.16,
+    "fin": 1.54,
+    "escena_id": 1
+  },
+  {
+    "palabra": "no",
+    "inicio": 1.54,
+    "fin": 1.76,
+    "escena_id": 1
+  },
+  {
+    "palabra": "murió",
+    "inicio": 1.76,
+    "fin": 2.04,
+    "escena_id": 1
+  },
+  {
+    "palabra": "por",
+    "inicio": 2.04,
+    "fin": 2.24,
+    "escena_id": 1
+  },
+  {
+    "palabra": "confusión",
+    "inicio": 2.24,
+    "fin": 2.8,
+    "escena_id": 1
+  },
+  {
+    "palabra": "del",
+    "inicio": 2.8,
+    "fin": 2.96,
+    "escena_id": 1
+  },
+  {
+    "palabra": "usuario,",
+    "inicio": 2.96,
+    "fin": 3.54,
+    "escena_id": 1
+  },
+  {
+    "palabra": "murió",
+    "inicio": 3.96,
+    "fin": 4.32,
+    "escena_id": 1
+  },
+  {
+    "palabra": "porque",
+    "inicio": 4.32,
+    "fin": 4.56,
+    "escena_id": 1
+  },
+  {
+    "palabra": "cada",
+    "inicio": 4.56,
+    "fin": 4.86,
+    "escena_id": 1
+  },
+  {
+    "palabra": "mensaje",
+    "inicio": 4.86,
+    "fin": 5.34,
+    "escena_id": 1
+  },
+  {
+    "palabra": "sincronizado",
+    "inicio": 5.34,
+    "fin": 6.02,
+    "escena_id": 1
+  },
+  {
+    "palabra": "en",
+    "inicio": 6.02,
+    "fin": 6.24,
+    "escena_id": 1
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 6.24,
+    "fin": 6.54,
+    "escena_id": 1
+  },
+  {
+    "palabra": "real",
+    "inicio": 6.54,
+    "fin": 6.78,
+    "escena_id": 1
+  },
+  {
+    "palabra": "generaba",
+    "inicio": 6.78,
+    "fin": 7.34,
+    "escena_id": 1
+  },
+  {
+    "palabra": "una",
+    "inicio": 7.34,
+    "fin": 7.52,
+    "escena_id": 1
+  },
+  {
+    "palabra": "cascada",
+    "inicio": 7.52,
+    "fin": 7.94,
+    "escena_id": 1
+  },
+  {
+    "palabra": "de",
+    "inicio": 7.94,
+    "fin": 8.12,
+    "escena_id": 1
+  },
+  {
+    "palabra": "operaciones,",
+    "inicio": 8.12,
+    "fin": 8.58,
+    "escena_id": 1
+  },
+  {
+    "palabra": "EKSML,",
+    "inicio": 8.58,
+    "fin": 9.22,
+    "escena_id": 1
+  },
+  {
+    "palabra": "que",
+    "inicio": 9.38,
+    "fin": 9.46,
+    "escena_id": 1
+  },
+  {
+    "palabra": "consumía",
+    "inicio": 9.46,
+    "fin": 9.98,
+    "escena_id": 1
+  },
+  {
+    "palabra": "el",
+    "inicio": 9.98,
+    "fin": 10.08,
+    "escena_id": 1
+  },
+  {
+    "palabra": "100",
+    "inicio": 10.08,
+    "fin": 10.24,
+    "escena_id": 1
+  },
+  {
+    "palabra": "%",
+    "inicio": 10.24,
+    "fin": 10.7,
+    "escena_id": 1
+  },
+  {
+    "palabra": "de",
+    "inicio": 10.7,
+    "fin": 10.86,
+    "escena_id": 1
+  },
+  {
+    "palabra": "un",
+    "inicio": 10.86,
+    "fin": 10.98,
+    "escena_id": 1
+  },
+  {
+    "palabra": "núcleo",
+    "inicio": 10.98,
+    "fin": 11.38,
+    "escena_id": 1
+  },
+  {
+    "palabra": "de",
+    "inicio": 11.38,
+    "fin": 11.48,
+    "escena_id": 1
+  },
+  {
+    "palabra": "sentésima",
+    "inicio": 11.48,
+    "fin": 12.06,
+    "escena_id": 1
+  },
+  {
+    "palabra": "PU",
+    "inicio": 12.06,
+    "fin": 12.44,
+    "escena_id": 1
+  },
+  {
+    "palabra": "en",
+    "inicio": 12.44,
+    "fin": 12.62,
+    "escena_id": 1
+  },
+  {
+    "palabra": "el",
+    "inicio": 12.62,
+    "fin": 12.74,
+    "escena_id": 1
+  },
+  {
+    "palabra": "navegador",
+    "inicio": 12.74,
+    "fin": 13.22,
+    "escena_id": 1
+  },
+  {
+    "palabra": "de",
+    "inicio": 13.22,
+    "fin": 13.4,
+    "escena_id": 1
+  },
+  {
+    "palabra": "2009.",
+    "inicio": 13.4,
+    "fin": 13.98,
+    "escena_id": 1
+  },
+  {
+    "palabra": "Google",
+    "inicio": 14.48,
+    "fin": 14.62,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 14.62,
+    "fin": 15.04,
+    "escena_id": 2
+  },
+  {
+    "palabra": "se",
+    "inicio": 15.04,
+    "fin": 15.26,
+    "escena_id": 2
+  },
+  {
+    "palabra": "anunció",
+    "inicio": 15.26,
+    "fin": 15.82,
+    "escena_id": 2
+  },
+  {
+    "palabra": "en",
+    "inicio": 15.82,
+    "fin": 15.98,
+    "escena_id": 2
+  },
+  {
+    "palabra": "mayo",
+    "inicio": 15.98,
+    "fin": 16.28,
+    "escena_id": 2
+  },
+  {
+    "palabra": "de",
+    "inicio": 16.28,
+    "fin": 16.5,
+    "escena_id": 2
+  },
+  {
+    "palabra": "2009",
+    "inicio": 16.5,
+    "fin": 17.06,
+    "escena_id": 2
+  },
+  {
+    "palabra": "en",
+    "inicio": 17.06,
+    "fin": 17.38,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Google",
+    "inicio": 17.38,
+    "fin": 17.6,
+    "escena_id": 2
+  },
+  {
+    "palabra": "y",
+    "inicio": 17.6,
+    "fin": 17.84,
+    "escena_id": 2
+  },
+  {
+    "palabra": "o",
+    "inicio": 17.84,
+    "fin": 18.06,
+    "escena_id": 2
+  },
+  {
+    "palabra": "fue",
+    "inicio": 18.06,
+    "fin": 18.28,
+    "escena_id": 2
+  },
+  {
+    "palabra": "construido",
+    "inicio": 18.28,
+    "fin": 18.84,
+    "escena_id": 2
+  },
+  {
+    "palabra": "por",
+    "inicio": 18.84,
+    "fin": 19.1,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Lars",
+    "inicio": 19.1,
+    "fin": 19.46,
+    "escena_id": 2
+  },
+  {
+    "palabra": "y",
+    "inicio": 19.46,
+    "fin": 19.86,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Jens",
+    "inicio": 19.86,
+    "fin": 20.26,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Rasmussen,",
+    "inicio": 20.26,
+    "fin": 20.86,
+    "escena_id": 2
+  },
+  {
+    "palabra": "los",
+    "inicio": 21.24,
+    "fin": 21.36,
+    "escena_id": 2
+  },
+  {
+    "palabra": "mismos",
+    "inicio": 21.36,
+    "fin": 21.66,
+    "escena_id": 2
+  },
+  {
+    "palabra": "ingenieros",
+    "inicio": 21.66,
+    "fin": 22.28,
+    "escena_id": 2
+  },
+  {
+    "palabra": "que",
+    "inicio": 22.28,
+    "fin": 22.44,
+    "escena_id": 2
+  },
+  {
+    "palabra": "diseñaron",
+    "inicio": 22.44,
+    "fin": 23.0,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Google",
+    "inicio": 23.0,
+    "fin": 23.32,
+    "escena_id": 2
+  },
+  {
+    "palabra": "Maps.",
+    "inicio": 23.32,
+    "fin": 23.64,
+    "escena_id": 2
+  },
+  {
+    "palabra": "La",
+    "inicio": 24.14,
+    "fin": 24.28,
+    "escena_id": 3
+  },
+  {
+    "palabra": "promesa",
+    "inicio": 24.28,
+    "fin": 24.78,
+    "escena_id": 3
+  },
+  {
+    "palabra": "era",
+    "inicio": 24.78,
+    "fin": 24.96,
+    "escena_id": 3
+  },
+  {
+    "palabra": "técnicamente",
+    "inicio": 24.96,
+    "fin": 25.64,
+    "escena_id": 3
+  },
+  {
+    "palabra": "legítima,",
+    "inicio": 25.64,
+    "fin": 26.28,
+    "escena_id": 3
+  },
+  {
+    "palabra": "un",
+    "inicio": 26.5,
+    "fin": 26.66,
+    "escena_id": 3
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 26.66,
+    "fin": 27.02,
+    "escena_id": 3
+  },
+  {
+    "palabra": "de",
+    "inicio": 27.02,
+    "fin": 27.28,
+    "escena_id": 3
+  },
+  {
+    "palabra": "comunicación",
+    "inicio": 27.28,
+    "fin": 27.98,
+    "escena_id": 3
+  },
+  {
+    "palabra": "unificada",
+    "inicio": 27.98,
+    "fin": 28.62,
+    "escena_id": 3
+  },
+  {
+    "palabra": "que",
+    "inicio": 28.62,
+    "fin": 28.78,
+    "escena_id": 3
+  },
+  {
+    "palabra": "funcionaba",
+    "inicio": 28.78,
+    "fin": 29.38,
+    "escena_id": 3
+  },
+  {
+    "palabra": "correo",
+    "inicio": 29.38,
+    "fin": 29.76,
+    "escena_id": 3
+  },
+  {
+    "palabra": "electrónico,",
+    "inicio": 29.76,
+    "fin": 30.32,
+    "escena_id": 3
+  },
+  {
+    "palabra": "mensajería",
+    "inicio": 30.46,
+    "fin": 30.94,
+    "escena_id": 3
+  },
+  {
+    "palabra": "instantánea,",
+    "inicio": 30.94,
+    "fin": 31.5,
+    "escena_id": 3
+  },
+  {
+    "palabra": "wikis",
+    "inicio": 31.68,
+    "fin": 31.94,
+    "escena_id": 3
+  },
+  {
+    "palabra": "colaborativos",
+    "inicio": 31.94,
+    "fin": 32.58,
+    "escena_id": 3
+  },
+  {
+    "palabra": "y",
+    "inicio": 32.58,
+    "fin": 32.86,
+    "escena_id": 3
+  },
+  {
+    "palabra": "edición",
+    "inicio": 32.86,
+    "fin": 33.22,
+    "escena_id": 3
+  },
+  {
+    "palabra": "en",
+    "inicio": 33.22,
+    "fin": 33.38,
+    "escena_id": 3
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 33.38,
+    "fin": 33.66,
+    "escena_id": 3
+  },
+  {
+    "palabra": "real",
+    "inicio": 33.66,
+    "fin": 33.9,
+    "escena_id": 3
+  },
+  {
+    "palabra": "dentro",
+    "inicio": 33.9,
+    "fin": 34.24,
+    "escena_id": 3
+  },
+  {
+    "palabra": "de",
+    "inicio": 34.24,
+    "fin": 34.4,
+    "escena_id": 3
+  },
+  {
+    "palabra": "un",
+    "inicio": 34.4,
+    "fin": 34.52,
+    "escena_id": 3
+  },
+  {
+    "palabra": "sol",
+    "inicio": 34.52,
+    "fin": 34.68,
+    "escena_id": 3
+  },
+  {
+    "palabra": "objeto",
+    "inicio": 34.68,
+    "fin": 34.98,
+    "escena_id": 3
+  },
+  {
+    "palabra": "llamado",
+    "inicio": 34.98,
+    "fin": 35.34,
+    "escena_id": 3
+  },
+  {
+    "palabra": "Wave.",
+    "inicio": 35.34,
+    "fin": 35.78,
+    "escena_id": 3
+  },
+  {
+    "palabra": "El",
+    "inicio": 36.34,
+    "fin": 36.6,
+    "escena_id": 3
+  },
+  {
+    "palabra": "lanzamiento",
+    "inicio": 36.6,
+    "fin": 37.06,
+    "escena_id": 3
+  },
+  {
+    "palabra": "público",
+    "inicio": 37.06,
+    "fin": 37.48,
+    "escena_id": 3
+  },
+  {
+    "palabra": "llegó",
+    "inicio": 37.48,
+    "fin": 37.8,
+    "escena_id": 3
+  },
+  {
+    "palabra": "en",
+    "inicio": 37.8,
+    "fin": 37.98,
+    "escena_id": 3
+  },
+  {
+    "palabra": "septiembre",
+    "inicio": 37.98,
+    "fin": 38.44,
+    "escena_id": 3
+  },
+  {
+    "palabra": "de",
+    "inicio": 38.44,
+    "fin": 38.64,
+    "escena_id": 3
+  },
+  {
+    "palabra": "2009",
+    "inicio": 38.64,
+    "fin": 39.2,
+    "escena_id": 3
+  },
+  {
+    "palabra": "en",
+    "inicio": 39.2,
+    "fin": 39.88,
+    "escena_id": 3
+  },
+  {
+    "palabra": "agosto",
+    "inicio": 39.88,
+    "fin": 40.36,
+    "escena_id": 3
+  },
+  {
+    "palabra": "de",
+    "inicio": 40.36,
+    "fin": 40.52,
+    "escena_id": 3
+  },
+  {
+    "palabra": "2010",
+    "inicio": 40.52,
+    "fin": 41.1,
+    "escena_id": 3
+  },
+  {
+    "palabra": "Google",
+    "inicio": 41.1,
+    "fin": 41.6,
+    "escena_id": 3
+  },
+  {
+    "palabra": "lo",
+    "inicio": 41.6,
+    "fin": 41.78,
+    "escena_id": 3
+  },
+  {
+    "palabra": "discontinuó,",
+    "inicio": 41.78,
+    "fin": 42.48,
+    "escena_id": 3
+  },
+  {
+    "palabra": "duró",
+    "inicio": 42.84,
+    "fin": 43.14,
+    "escena_id": 4
+  },
+  {
+    "palabra": "11",
+    "inicio": 43.14,
+    "fin": 43.74,
+    "escena_id": 4
+  },
+  {
+    "palabra": "meses",
+    "inicio": 43.74,
+    "fin": 44.12,
+    "escena_id": 4
+  },
+  {
+    "palabra": "en",
+    "inicio": 44.12,
+    "fin": 44.38,
+    "escena_id": 4
+  },
+  {
+    "palabra": "producción,",
+    "inicio": 44.38,
+    "fin": 44.8,
+    "escena_id": 4
+  },
+  {
+    "palabra": "no",
+    "inicio": 45.46,
+    "fin": 45.7,
+    "escena_id": 4
+  },
+  {
+    "palabra": "fue",
+    "inicio": 45.7,
+    "fin": 45.86,
+    "escena_id": 4
+  },
+  {
+    "palabra": "mala",
+    "inicio": 45.86,
+    "fin": 46.08,
+    "escena_id": 4
+  },
+  {
+    "palabra": "suerte,",
+    "inicio": 46.08,
+    "fin": 46.58,
+    "escena_id": 4
+  },
+  {
+    "palabra": "fue",
+    "inicio": 47.18,
+    "fin": 47.3,
+    "escena_id": 4
+  },
+  {
+    "palabra": "una",
+    "inicio": 47.3,
+    "fin": 47.56,
+    "escena_id": 4
+  },
+  {
+    "palabra": "serie",
+    "inicio": 47.56,
+    "fin": 47.8,
+    "escena_id": 4
+  },
+  {
+    "palabra": "de",
+    "inicio": 47.8,
+    "fin": 48.02,
+    "escena_id": 4
+  },
+  {
+    "palabra": "decisiones",
+    "inicio": 48.02,
+    "fin": 48.64,
+    "escena_id": 4
+  },
+  {
+    "palabra": "de",
+    "inicio": 48.64,
+    "fin": 48.74,
+    "escena_id": 4
+  },
+  {
+    "palabra": "arquitectura",
+    "inicio": 48.74,
+    "fin": 49.34,
+    "escena_id": 4
+  },
+  {
+    "palabra": "que",
+    "inicio": 49.34,
+    "fin": 49.6,
+    "escena_id": 4
+  },
+  {
+    "palabra": "razonables",
+    "inicio": 49.6,
+    "fin": 50.46,
+    "escena_id": 4
+  },
+  {
+    "palabra": "en",
+    "inicio": 50.46,
+    "fin": 50.68,
+    "escena_id": 4
+  },
+  {
+    "palabra": "un",
+    "inicio": 50.68,
+    "fin": 50.78,
+    "escena_id": 4
+  },
+  {
+    "palabra": "laboratorio",
+    "inicio": 50.78,
+    "fin": 51.44,
+    "escena_id": 4
+  },
+  {
+    "palabra": "se",
+    "inicio": 51.44,
+    "fin": 52.08,
+    "escena_id": 4
+  },
+  {
+    "palabra": "volvieron",
+    "inicio": 52.08,
+    "fin": 52.5,
+    "escena_id": 4
+  },
+  {
+    "palabra": "insostenibles",
+    "inicio": 52.5,
+    "fin": 53.22,
+    "escena_id": 4
+  },
+  {
+    "palabra": "bajo",
+    "inicio": 53.22,
+    "fin": 53.52,
+    "escena_id": 4
+  },
+  {
+    "palabra": "carga",
+    "inicio": 53.52,
+    "fin": 53.8,
+    "escena_id": 4
+  },
+  {
+    "palabra": "real,",
+    "inicio": 53.8,
+    "fin": 54.2,
+    "escena_id": 4
+  },
+  {
+    "palabra": "esto",
+    "inicio": 54.62,
+    "fin": 55.0,
+    "escena_id": 4
+  },
+  {
+    "palabra": "es",
+    "inicio": 55.0,
+    "fin": 55.2,
+    "escena_id": 4
+  },
+  {
+    "palabra": "la",
+    "inicio": 55.2,
+    "fin": 55.32,
+    "escena_id": 4
+  },
+  {
+    "palabra": "autopsia.",
+    "inicio": 55.32,
+    "fin": 55.92,
+    "escena_id": 4
+  },
+  {
+    "palabra": "Decision",
+    "inicio": 55.92,
+    "fin": 56.76,
+    "escena_id": 4
+  },
+  {
+    "palabra": "1,",
+    "inicio": 56.76,
+    "fin": 57.16,
+    "escena_id": 5
+  },
+  {
+    "palabra": "el",
+    "inicio": 57.46,
+    "fin": 57.62,
+    "escena_id": 5
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 57.62,
+    "fin": 58.28,
+    "escena_id": 5
+  },
+  {
+    "palabra": "de",
+    "inicio": 58.28,
+    "fin": 58.4,
+    "escena_id": 5
+  },
+  {
+    "palabra": "extensión",
+    "inicio": 58.4,
+    "fin": 58.88,
+    "escena_id": 5
+  },
+  {
+    "palabra": "es",
+    "inicio": 58.88,
+    "fin": 59.08,
+    "escena_id": 5
+  },
+  {
+    "palabra": "EKSML,",
+    "inicio": 59.08,
+    "fin": 59.52,
+    "escena_id": 5
+  },
+  {
+    "palabra": "como",
+    "inicio": 59.9,
+    "fin": 60.2,
+    "escena_id": 5
+  },
+  {
+    "palabra": "columna",
+    "inicio": 60.2,
+    "fin": 60.66,
+    "escena_id": 5
+  },
+  {
+    "palabra": "vertebral.",
+    "inicio": 60.66,
+    "fin": 61.24,
+    "escena_id": 5
+  },
+  {
+    "palabra": "Google",
+    "inicio": 61.54,
+    "fin": 61.88,
+    "escena_id": 6
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 61.88,
+    "fin": 62.22,
+    "escena_id": 6
+  },
+  {
+    "palabra": "usaba",
+    "inicio": 62.22,
+    "fin": 62.66,
+    "escena_id": 6
+  },
+  {
+    "palabra": "una",
+    "inicio": 62.66,
+    "fin": 62.92,
+    "escena_id": 6
+  },
+  {
+    "palabra": "versión",
+    "inicio": 62.92,
+    "fin": 63.26,
+    "escena_id": 6
+  },
+  {
+    "palabra": "extendida",
+    "inicio": 63.26,
+    "fin": 63.9,
+    "escena_id": 6
+  },
+  {
+    "palabra": "de",
+    "inicio": 63.9,
+    "fin": 64.14,
+    "escena_id": 6
+  },
+  {
+    "palabra": "EKSML,",
+    "inicio": 64.14,
+    "fin": 64.72,
+    "escena_id": 6
+  },
+  {
+    "palabra": "extensive",
+    "inicio": 65.08,
+    "fin": 65.72,
+    "escena_id": 6
+  },
+  {
+    "palabra": "messaging",
+    "inicio": 65.72,
+    "fin": 66.5,
+    "escena_id": 6
+  },
+  {
+    "palabra": "and",
+    "inicio": 66.5,
+    "fin": 66.88,
+    "escena_id": 6
+  },
+  {
+    "palabra": "presents",
+    "inicio": 66.88,
+    "fin": 67.16,
+    "escena_id": 6
+  },
+  {
+    "palabra": "protocol",
+    "inicio": 67.16,
+    "fin": 67.7,
+    "escena_id": 6
+  },
+  {
+    "palabra": "como",
+    "inicio": 67.7,
+    "fin": 68.08,
+    "escena_id": 6
+  },
+  {
+    "palabra": "transporte",
+    "inicio": 68.08,
+    "fin": 68.74,
+    "escena_id": 6
+  },
+  {
+    "palabra": "base.",
+    "inicio": 68.74,
+    "fin": 69.02,
+    "escena_id": 6
+  },
+  {
+    "palabra": "EKSML",
+    "inicio": 69.66,
+    "fin": 70.18,
+    "escena_id": 6
+  },
+  {
+    "palabra": "es",
+    "inicio": 70.18,
+    "fin": 70.72,
+    "escena_id": 6
+  },
+  {
+    "palabra": "un",
+    "inicio": 70.72,
+    "fin": 70.82,
+    "escena_id": 6
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 70.82,
+    "fin": 71.36,
+    "escena_id": 6
+  },
+  {
+    "palabra": "de",
+    "inicio": 71.36,
+    "fin": 71.5,
+    "escena_id": 6
+  },
+  {
+    "palabra": "mensajería",
+    "inicio": 71.5,
+    "fin": 72.18,
+    "escena_id": 6
+  },
+  {
+    "palabra": "basado",
+    "inicio": 72.18,
+    "fin": 72.54,
+    "escena_id": 6
+  },
+  {
+    "palabra": "en",
+    "inicio": 72.54,
+    "fin": 72.72,
+    "escena_id": 6
+  },
+  {
+    "palabra": "EKSML,",
+    "inicio": 72.72,
+    "fin": 73.3,
+    "escena_id": 6
+  },
+  {
+    "palabra": "diseñado",
+    "inicio": 73.44,
+    "fin": 74.0,
+    "escena_id": 6
+  },
+  {
+    "palabra": "originalmente",
+    "inicio": 74.0,
+    "fin": 74.7,
+    "escena_id": 6
+  },
+  {
+    "palabra": "para",
+    "inicio": 74.7,
+    "fin": 74.98,
+    "escena_id": 6
+  },
+  {
+    "palabra": "chat",
+    "inicio": 74.98,
+    "fin": 75.22,
+    "escena_id": 6
+  },
+  {
+    "palabra": "en",
+    "inicio": 75.22,
+    "fin": 75.46,
+    "escena_id": 6
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 75.46,
+    "fin": 75.74,
+    "escena_id": 6
+  },
+  {
+    "palabra": "real,",
+    "inicio": 75.74,
+    "fin": 76.04,
+    "escena_id": 6
+  },
+  {
+    "palabra": "donde",
+    "inicio": 76.56,
+    "fin": 76.8,
+    "escena_id": 6
+  },
+  {
+    "palabra": "cada",
+    "inicio": 76.8,
+    "fin": 77.12,
+    "escena_id": 6
+  },
+  {
+    "palabra": "fragmento",
+    "inicio": 77.12,
+    "fin": 77.74,
+    "escena_id": 6
+  },
+  {
+    "palabra": "de",
+    "inicio": 77.74,
+    "fin": 77.86,
+    "escena_id": 6
+  },
+  {
+    "palabra": "datos",
+    "inicio": 77.86,
+    "fin": 78.12,
+    "escena_id": 6
+  },
+  {
+    "palabra": "viaja",
+    "inicio": 78.12,
+    "fin": 78.58,
+    "escena_id": 6
+  },
+  {
+    "palabra": "como",
+    "inicio": 78.58,
+    "fin": 78.84,
+    "escena_id": 6
+  },
+  {
+    "palabra": "uno",
+    "inicio": 78.84,
+    "fin": 79.08,
+    "escena_id": 6
+  },
+  {
+    "palabra": "de",
+    "inicio": 79.08,
+    "fin": 79.24,
+    "escena_id": 6
+  },
+  {
+    "palabra": "EKSML",
+    "inicio": 79.24,
+    "fin": 79.84,
+    "escena_id": 6
+  },
+  {
+    "palabra": "completo.",
+    "inicio": 79.84,
+    "fin": 80.5,
+    "escena_id": 6
+  },
+  {
+    "palabra": "En",
+    "inicio": 80.5,
+    "fin": 80.96,
+    "escena_id": 6
+  },
+  {
+    "palabra": "2009,",
+    "inicio": 80.96,
+    "fin": 81.6,
+    "escena_id": 7
+  },
+  {
+    "palabra": "EKSMLPP",
+    "inicio": 82.1,
+    "fin": 82.92,
+    "escena_id": 7
+  },
+  {
+    "palabra": "era",
+    "inicio": 82.92,
+    "fin": 83.14,
+    "escena_id": 7
+  },
+  {
+    "palabra": "el",
+    "inicio": 83.14,
+    "fin": 83.24,
+    "escena_id": 7
+  },
+  {
+    "palabra": "estándar",
+    "inicio": 83.24,
+    "fin": 83.64,
+    "escena_id": 7
+  },
+  {
+    "palabra": "abierto",
+    "inicio": 83.64,
+    "fin": 84.0,
+    "escena_id": 7
+  },
+  {
+    "palabra": "de",
+    "inicio": 84.0,
+    "fin": 84.2,
+    "escena_id": 7
+  },
+  {
+    "palabra": "facto",
+    "inicio": 84.2,
+    "fin": 84.48,
+    "escena_id": 7
+  },
+  {
+    "palabra": "para",
+    "inicio": 84.48,
+    "fin": 84.74,
+    "escena_id": 7
+  },
+  {
+    "palabra": "mensajería",
+    "inicio": 84.74,
+    "fin": 85.28,
+    "escena_id": 7
+  },
+  {
+    "palabra": "federada.",
+    "inicio": 85.28,
+    "fin": 85.9,
+    "escena_id": 7
+  },
+  {
+    "palabra": "Google",
+    "inicio": 86.3,
+    "fin": 86.76,
+    "escena_id": 7
+  },
+  {
+    "palabra": "ya",
+    "inicio": 86.76,
+    "fin": 87.06,
+    "escena_id": 7
+  },
+  {
+    "palabra": "lo",
+    "inicio": 87.06,
+    "fin": 87.2,
+    "escena_id": 7
+  },
+  {
+    "palabra": "usaba",
+    "inicio": 87.2,
+    "fin": 87.54,
+    "escena_id": 7
+  },
+  {
+    "palabra": "en",
+    "inicio": 87.54,
+    "fin": 87.7,
+    "escena_id": 7
+  },
+  {
+    "palabra": "Google",
+    "inicio": 87.7,
+    "fin": 87.9,
+    "escena_id": 7
+  },
+  {
+    "palabra": "Talk,",
+    "inicio": 87.9,
+    "fin": 88.28,
+    "escena_id": 7
+  },
+  {
+    "palabra": "extenderlo",
+    "inicio": 88.9,
+    "fin": 89.62,
+    "escena_id": 7
+  },
+  {
+    "palabra": "para",
+    "inicio": 89.62,
+    "fin": 89.82,
+    "escena_id": 7
+  },
+  {
+    "palabra": "soportar",
+    "inicio": 89.82,
+    "fin": 90.36,
+    "escena_id": 7
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 90.36,
+    "fin": 90.52,
+    "escena_id": 7
+  },
+  {
+    "palabra": "parecía",
+    "inicio": 90.52,
+    "fin": 91.02,
+    "escena_id": 7
+  },
+  {
+    "palabra": "el",
+    "inicio": 91.02,
+    "fin": 91.14,
+    "escena_id": 7
+  },
+  {
+    "palabra": "camino",
+    "inicio": 91.14,
+    "fin": 91.32,
+    "escena_id": 7
+  },
+  {
+    "palabra": "natural",
+    "inicio": 91.32,
+    "fin": 91.74,
+    "escena_id": 7
+  },
+  {
+    "palabra": "hacia",
+    "inicio": 91.74,
+    "fin": 92.06,
+    "escena_id": 7
+  },
+  {
+    "palabra": "la",
+    "inicio": 92.06,
+    "fin": 92.18,
+    "escena_id": 7
+  },
+  {
+    "palabra": "interoperabilidad",
+    "inicio": 92.18,
+    "fin": 93.04,
+    "escena_id": 7
+  },
+  {
+    "palabra": "entre",
+    "inicio": 93.04,
+    "fin": 93.24,
+    "escena_id": 7
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 93.24,
+    "fin": 93.72,
+    "escena_id": 7
+  },
+  {
+    "palabra": "de",
+    "inicio": 93.72,
+    "fin": 93.94,
+    "escena_id": 7
+  },
+  {
+    "palabra": "distintas",
+    "inicio": 93.94,
+    "fin": 94.36,
+    "escena_id": 7
+  },
+  {
+    "palabra": "organizaciones,",
+    "inicio": 94.36,
+    "fin": 95.16,
+    "escena_id": 7
+  },
+  {
+    "palabra": "el",
+    "inicio": 95.44,
+    "fin": 95.58,
+    "escena_id": 8
+  },
+  {
+    "palabra": "problema",
+    "inicio": 95.58,
+    "fin": 95.98,
+    "escena_id": 8
+  },
+  {
+    "palabra": "no",
+    "inicio": 95.98,
+    "fin": 96.36,
+    "escena_id": 8
+  },
+  {
+    "palabra": "era",
+    "inicio": 96.36,
+    "fin": 96.64,
+    "escena_id": 8
+  },
+  {
+    "palabra": "EKSMLPP,",
+    "inicio": 96.64,
+    "fin": 97.62,
+    "escena_id": 8
+  },
+  {
+    "palabra": "era",
+    "inicio": 98.3,
+    "fin": 98.68,
+    "escena_id": 8
+  },
+  {
+    "palabra": "el",
+    "inicio": 98.68,
+    "fin": 98.84,
+    "escena_id": 8
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 98.84,
+    "fin": 99.1,
+    "escena_id": 8
+  },
+  {
+    "palabra": "de",
+    "inicio": 99.1,
+    "fin": 99.44,
+    "escena_id": 8
+  },
+  {
+    "palabra": "extensión.",
+    "inicio": 99.44,
+    "fin": 100.28,
+    "escena_id": 8
+  },
+  {
+    "palabra": "Cada",
+    "inicio": 100.68,
+    "fin": 101.02,
+    "escena_id": 8
+  },
+  {
+    "palabra": "operación",
+    "inicio": 101.02,
+    "fin": 101.6,
+    "escena_id": 8
+  },
+  {
+    "palabra": "de",
+    "inicio": 101.6,
+    "fin": 101.82,
+    "escena_id": 8
+  },
+  {
+    "palabra": "edición",
+    "inicio": 101.82,
+    "fin": 102.24,
+    "escena_id": 8
+  },
+  {
+    "palabra": "colaborativa",
+    "inicio": 102.24,
+    "fin": 103.04,
+    "escena_id": 8
+  },
+  {
+    "palabra": "en",
+    "inicio": 103.04,
+    "fin": 103.26,
+    "escena_id": 8
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 103.26,
+    "fin": 103.5,
+    "escena_id": 8
+  },
+  {
+    "palabra": "real,",
+    "inicio": 103.5,
+    "fin": 103.78,
+    "escena_id": 8
+  },
+  {
+    "palabra": "cada",
+    "inicio": 103.78,
+    "fin": 104.16,
+    "escena_id": 8
+  },
+  {
+    "palabra": "tecla",
+    "inicio": 104.16,
+    "fin": 104.52,
+    "escena_id": 8
+  },
+  {
+    "palabra": "presionada",
+    "inicio": 104.52,
+    "fin": 105.1,
+    "escena_id": 8
+  },
+  {
+    "palabra": "por",
+    "inicio": 105.1,
+    "fin": 105.32,
+    "escena_id": 8
+  },
+  {
+    "palabra": "cada",
+    "inicio": 105.32,
+    "fin": 105.54,
+    "escena_id": 8
+  },
+  {
+    "palabra": "usuario,",
+    "inicio": 105.54,
+    "fin": 106.06,
+    "escena_id": 8
+  },
+  {
+    "palabra": "debía",
+    "inicio": 106.44,
+    "fin": 106.88,
+    "escena_id": 8
+  },
+  {
+    "palabra": "encapsularse",
+    "inicio": 106.88,
+    "fin": 107.6,
+    "escena_id": 8
+  },
+  {
+    "palabra": "como",
+    "inicio": 107.6,
+    "fin": 107.84,
+    "escena_id": 8
+  },
+  {
+    "palabra": "un",
+    "inicio": 107.84,
+    "fin": 108.06,
+    "escena_id": 8
+  },
+  {
+    "palabra": "bloque",
+    "inicio": 108.06,
+    "fin": 108.28,
+    "escena_id": 8
+  },
+  {
+    "palabra": "XML",
+    "inicio": 108.28,
+    "fin": 108.88,
+    "escena_id": 8
+  },
+  {
+    "palabra": "completo,",
+    "inicio": 108.88,
+    "fin": 109.44,
+    "escena_id": 8
+  },
+  {
+    "palabra": "parcearse",
+    "inicio": 109.44,
+    "fin": 110.1,
+    "escena_id": 8
+  },
+  {
+    "palabra": "en",
+    "inicio": 110.1,
+    "fin": 110.28,
+    "escena_id": 8
+  },
+  {
+    "palabra": "el",
+    "inicio": 110.28,
+    "fin": 110.4,
+    "escena_id": 8
+  },
+  {
+    "palabra": "servidor,",
+    "inicio": 110.4,
+    "fin": 110.8,
+    "escena_id": 8
+  },
+  {
+    "palabra": "validarse",
+    "inicio": 110.96,
+    "fin": 111.36,
+    "escena_id": 8
+  },
+  {
+    "palabra": "contra",
+    "inicio": 111.36,
+    "fin": 111.66,
+    "escena_id": 8
+  },
+  {
+    "palabra": "el",
+    "inicio": 111.66,
+    "fin": 111.86,
+    "escena_id": 8
+  },
+  {
+    "palabra": "esquema",
+    "inicio": 111.86,
+    "fin": 112.08,
+    "escena_id": 8
+  },
+  {
+    "palabra": "de",
+    "inicio": 112.08,
+    "fin": 112.24,
+    "escena_id": 8
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 112.24,
+    "fin": 112.44,
+    "escena_id": 8
+  },
+  {
+    "palabra": "enrutarse",
+    "inicio": 112.44,
+    "fin": 113.2,
+    "escena_id": 8
+  },
+  {
+    "palabra": "y",
+    "inicio": 113.2,
+    "fin": 113.4,
+    "escena_id": 8
+  },
+  {
+    "palabra": "retransmitirse,",
+    "inicio": 113.4,
+    "fin": 114.2,
+    "escena_id": 8
+  },
+  {
+    "palabra": "el",
+    "inicio": 114.54,
+    "fin": 114.7,
+    "escena_id": 9
+  },
+  {
+    "palabra": "overhead",
+    "inicio": 114.7,
+    "fin": 115.12,
+    "escena_id": 9
+  },
+  {
+    "palabra": "por",
+    "inicio": 115.12,
+    "fin": 115.36,
+    "escena_id": 9
+  },
+  {
+    "palabra": "mensaje",
+    "inicio": 115.36,
+    "fin": 115.9,
+    "escena_id": 9
+  },
+  {
+    "palabra": "era",
+    "inicio": 115.9,
+    "fin": 116.1,
+    "escena_id": 9
+  },
+  {
+    "palabra": "desproporcionado.",
+    "inicio": 116.1,
+    "fin": 117.06,
+    "escena_id": 9
+  },
+  {
+    "palabra": "Un",
+    "inicio": 117.5,
+    "fin": 117.64,
+    "escena_id": 9
+  },
+  {
+    "palabra": "chat",
+    "inicio": 117.64,
+    "fin": 117.82,
+    "escena_id": 9
+  },
+  {
+    "palabra": "de",
+    "inicio": 117.82,
+    "fin": 117.98,
+    "escena_id": 9
+  },
+  {
+    "palabra": "10",
+    "inicio": 117.98,
+    "fin": 118.14,
+    "escena_id": 9
+  },
+  {
+    "palabra": "personas",
+    "inicio": 118.14,
+    "fin": 118.64,
+    "escena_id": 9
+  },
+  {
+    "palabra": "editando",
+    "inicio": 118.64,
+    "fin": 119.16,
+    "escena_id": 9
+  },
+  {
+    "palabra": "simultáneamente,",
+    "inicio": 119.16,
+    "fin": 120.08,
+    "escena_id": 9
+  },
+  {
+    "palabra": "generaba",
+    "inicio": 120.3,
+    "fin": 120.62,
+    "escena_id": 9
+  },
+  {
+    "palabra": "cientos",
+    "inicio": 120.62,
+    "fin": 121.0,
+    "escena_id": 9
+  },
+  {
+    "palabra": "de",
+    "inicio": 121.0,
+    "fin": 121.18,
+    "escena_id": 9
+  },
+  {
+    "palabra": "estanzas",
+    "inicio": 121.18,
+    "fin": 121.64,
+    "escena_id": 9
+  },
+  {
+    "palabra": "XML",
+    "inicio": 121.64,
+    "fin": 122.58,
+    "escena_id": 9
+  },
+  {
+    "palabra": "por",
+    "inicio": 122.58,
+    "fin": 123.0,
+    "escena_id": 9
+  },
+  {
+    "palabra": "minuto,",
+    "inicio": 123.0,
+    "fin": 123.46,
+    "escena_id": 9
+  },
+  {
+    "palabra": "cada",
+    "inicio": 123.62,
+    "fin": 123.72,
+    "escena_id": 9
+  },
+  {
+    "palabra": "una",
+    "inicio": 123.72,
+    "fin": 124.0,
+    "escena_id": 9
+  },
+  {
+    "palabra": "con",
+    "inicio": 124.0,
+    "fin": 124.18,
+    "escena_id": 9
+  },
+  {
+    "palabra": "su",
+    "inicio": 124.18,
+    "fin": 124.32,
+    "escena_id": 9
+  },
+  {
+    "palabra": "envoltura",
+    "inicio": 124.32,
+    "fin": 124.8,
+    "escena_id": 9
+  },
+  {
+    "palabra": "completa",
+    "inicio": 124.8,
+    "fin": 125.22,
+    "escena_id": 9
+  },
+  {
+    "palabra": "de",
+    "inicio": 125.22,
+    "fin": 125.44,
+    "escena_id": 9
+  },
+  {
+    "palabra": "namespaces,",
+    "inicio": 125.44,
+    "fin": 126.08,
+    "escena_id": 9
+  },
+  {
+    "palabra": "atributos",
+    "inicio": 126.64,
+    "fin": 127.14,
+    "escena_id": 9
+  },
+  {
+    "palabra": "y",
+    "inicio": 127.14,
+    "fin": 127.3,
+    "escena_id": 9
+  },
+  {
+    "palabra": "metadatos",
+    "inicio": 127.3,
+    "fin": 127.8,
+    "escena_id": 9
+  },
+  {
+    "palabra": "federados.",
+    "inicio": 127.8,
+    "fin": 128.48,
+    "escena_id": 9
+  },
+  {
+    "palabra": "Los",
+    "inicio": 128.82,
+    "fin": 128.94,
+    "escena_id": 10
+  },
+  {
+    "palabra": "benchmarks",
+    "inicio": 128.94,
+    "fin": 129.24,
+    "escena_id": 10
+  },
+  {
+    "palabra": "internos",
+    "inicio": 129.24,
+    "fin": 129.9,
+    "escena_id": 10
+  },
+  {
+    "palabra": "de",
+    "inicio": 129.9,
+    "fin": 130.02,
+    "escena_id": 10
+  },
+  {
+    "palabra": "Google",
+    "inicio": 130.02,
+    "fin": 130.24,
+    "escena_id": 10
+  },
+  {
+    "palabra": "mostraron",
+    "inicio": 130.24,
+    "fin": 130.9,
+    "escena_id": 10
+  },
+  {
+    "palabra": "que",
+    "inicio": 130.9,
+    "fin": 131.04,
+    "escena_id": 10
+  },
+  {
+    "palabra": "el",
+    "inicio": 131.04,
+    "fin": 131.12,
+    "escena_id": 10
+  },
+  {
+    "palabra": "servidor",
+    "inicio": 131.12,
+    "fin": 131.52,
+    "escena_id": 10
+  },
+  {
+    "palabra": "de",
+    "inicio": 131.52,
+    "fin": 131.7,
+    "escena_id": 10
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 131.7,
+    "fin": 131.94,
+    "escena_id": 10
+  },
+  {
+    "palabra": "requería",
+    "inicio": 131.94,
+    "fin": 132.5,
+    "escena_id": 10
+  },
+  {
+    "palabra": "significativamente",
+    "inicio": 132.5,
+    "fin": 133.44,
+    "escena_id": 10
+  },
+  {
+    "palabra": "más",
+    "inicio": 133.44,
+    "fin": 133.8,
+    "escena_id": 10
+  },
+  {
+    "palabra": "memoria",
+    "inicio": 133.8,
+    "fin": 134.22,
+    "escena_id": 10
+  },
+  {
+    "palabra": "por",
+    "inicio": 134.22,
+    "fin": 134.46,
+    "escena_id": 10
+  },
+  {
+    "palabra": "conexión",
+    "inicio": 134.46,
+    "fin": 134.88,
+    "escena_id": 10
+  },
+  {
+    "palabra": "activa",
+    "inicio": 134.88,
+    "fin": 135.34,
+    "escena_id": 10
+  },
+  {
+    "palabra": "que",
+    "inicio": 135.34,
+    "fin": 135.44,
+    "escena_id": 10
+  },
+  {
+    "palabra": "los",
+    "inicio": 135.44,
+    "fin": 135.58,
+    "escena_id": 10
+  },
+  {
+    "palabra": "sistemas",
+    "inicio": 135.58,
+    "fin": 135.96,
+    "escena_id": 10
+  },
+  {
+    "palabra": "de",
+    "inicio": 135.96,
+    "fin": 136.14,
+    "escena_id": 10
+  },
+  {
+    "palabra": "chat",
+    "inicio": 136.14,
+    "fin": 136.32,
+    "escena_id": 10
+  },
+  {
+    "palabra": "convencionales",
+    "inicio": 136.32,
+    "fin": 137.16,
+    "escena_id": 10
+  },
+  {
+    "palabra": "de",
+    "inicio": 137.16,
+    "fin": 137.24,
+    "escena_id": 10
+  },
+  {
+    "palabra": "la",
+    "inicio": 137.24,
+    "fin": 137.38,
+    "escena_id": 10
+  },
+  {
+    "palabra": "época.",
+    "inicio": 137.38,
+    "fin": 137.66,
+    "escena_id": 10
+  },
+  {
+    "palabra": "La",
+    "inicio": 138.08,
+    "fin": 138.18,
+    "escena_id": 11
+  },
+  {
+    "palabra": "federación",
+    "inicio": 138.18,
+    "fin": 138.72,
+    "escena_id": 11
+  },
+  {
+    "palabra": "pública,",
+    "inicio": 138.72,
+    "fin": 139.3,
+    "escena_id": 11
+  },
+  {
+    "palabra": "que",
+    "inicio": 139.42,
+    "fin": 139.78,
+    "escena_id": 11
+  },
+  {
+    "palabra": "era",
+    "inicio": 139.78,
+    "fin": 139.94,
+    "escena_id": 11
+  },
+  {
+    "palabra": "el",
+    "inicio": 139.94,
+    "fin": 140.04,
+    "escena_id": 11
+  },
+  {
+    "palabra": "objetivo",
+    "inicio": 140.04,
+    "fin": 140.38,
+    "escena_id": 11
+  },
+  {
+    "palabra": "central",
+    "inicio": 140.38,
+    "fin": 140.8,
+    "escena_id": 11
+  },
+  {
+    "palabra": "del",
+    "inicio": 140.8,
+    "fin": 141.02,
+    "escena_id": 11
+  },
+  {
+    "palabra": "protocolo,",
+    "inicio": 141.02,
+    "fin": 141.78,
+    "escena_id": 11
+  },
+  {
+    "palabra": "nunca",
+    "inicio": 141.96,
+    "fin": 142.2,
+    "escena_id": 11
+  },
+  {
+    "palabra": "se",
+    "inicio": 142.2,
+    "fin": 142.36,
+    "escena_id": 11
+  },
+  {
+    "palabra": "activó",
+    "inicio": 142.36,
+    "fin": 142.76,
+    "escena_id": 11
+  },
+  {
+    "palabra": "a",
+    "inicio": 142.76,
+    "fin": 142.84,
+    "escena_id": 11
+  },
+  {
+    "palabra": "gran",
+    "inicio": 142.84,
+    "fin": 142.98,
+    "escena_id": 11
+  },
+  {
+    "palabra": "escala",
+    "inicio": 142.98,
+    "fin": 143.34,
+    "escena_id": 11
+  },
+  {
+    "palabra": "precisamente",
+    "inicio": 143.34,
+    "fin": 143.8,
+    "escena_id": 11
+  },
+  {
+    "palabra": "porque",
+    "inicio": 143.8,
+    "fin": 144.42,
+    "escena_id": 11
+  },
+  {
+    "palabra": "el",
+    "inicio": 144.42,
+    "fin": 144.6,
+    "escena_id": 11
+  },
+  {
+    "palabra": "costo",
+    "inicio": 144.6,
+    "fin": 144.86,
+    "escena_id": 11
+  },
+  {
+    "palabra": "de",
+    "inicio": 144.86,
+    "fin": 144.98,
+    "escena_id": 11
+  },
+  {
+    "palabra": "mantener",
+    "inicio": 144.98,
+    "fin": 145.38,
+    "escena_id": 11
+  },
+  {
+    "palabra": "esas",
+    "inicio": 145.38,
+    "fin": 145.62,
+    "escena_id": 11
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 145.62,
+    "fin": 146.32,
+    "escena_id": 11
+  },
+  {
+    "palabra": "XML",
+    "inicio": 146.32,
+    "fin": 146.88,
+    "escena_id": 11
+  },
+  {
+    "palabra": "persistentes",
+    "inicio": 146.88,
+    "fin": 147.76,
+    "escena_id": 11
+  },
+  {
+    "palabra": "entre",
+    "inicio": 147.76,
+    "fin": 148.04,
+    "escena_id": 11
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 148.04,
+    "fin": 148.6,
+    "escena_id": 11
+  },
+  {
+    "palabra": "de",
+    "inicio": 148.6,
+    "fin": 148.76,
+    "escena_id": 11
+  },
+  {
+    "palabra": "terceros",
+    "inicio": 148.76,
+    "fin": 149.3,
+    "escena_id": 11
+  },
+  {
+    "palabra": "era",
+    "inicio": 149.3,
+    "fin": 149.48,
+    "escena_id": 11
+  },
+  {
+    "palabra": "prohibitivo,",
+    "inicio": 149.48,
+    "fin": 150.26,
+    "escena_id": 11
+  },
+  {
+    "palabra": "sin",
+    "inicio": 150.74,
+    "fin": 150.98,
+    "escena_id": 11
+  },
+  {
+    "palabra": "federación",
+    "inicio": 150.98,
+    "fin": 151.68,
+    "escena_id": 11
+  },
+  {
+    "palabra": "el",
+    "inicio": 151.68,
+    "fin": 151.84,
+    "escena_id": 11
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 151.84,
+    "fin": 152.4,
+    "escena_id": 11
+  },
+  {
+    "palabra": "perdía",
+    "inicio": 152.4,
+    "fin": 152.76,
+    "escena_id": 11
+  },
+  {
+    "palabra": "su",
+    "inicio": 152.76,
+    "fin": 152.94,
+    "escena_id": 11
+  },
+  {
+    "palabra": "razón",
+    "inicio": 152.94,
+    "fin": 153.2,
+    "escena_id": 11
+  },
+  {
+    "palabra": "de",
+    "inicio": 153.2,
+    "fin": 153.42,
+    "escena_id": 11
+  },
+  {
+    "palabra": "existir,",
+    "inicio": 153.42,
+    "fin": 153.96,
+    "escena_id": 11
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 154.24,
+    "fin": 154.8,
+    "escena_id": 12
+  },
+  {
+    "palabra": "2,",
+    "inicio": 154.8,
+    "fin": 155.12,
+    "escena_id": 12
+  },
+  {
+    "palabra": "operacir",
+    "inicio": 155.46,
+    "fin": 156.02,
+    "escena_id": 12
+  },
+  {
+    "palabra": "al",
+    "inicio": 156.02,
+    "fin": 156.18,
+    "escena_id": 12
+  },
+  {
+    "palabra": "transformación",
+    "inicio": 156.18,
+    "fin": 156.94,
+    "escena_id": 12
+  },
+  {
+    "palabra": "como",
+    "inicio": 156.94,
+    "fin": 157.2,
+    "escena_id": 12
+  },
+  {
+    "palabra": "motor",
+    "inicio": 157.2,
+    "fin": 157.52,
+    "escena_id": 12
+  },
+  {
+    "palabra": "de",
+    "inicio": 157.52,
+    "fin": 157.7,
+    "escena_id": 12
+  },
+  {
+    "palabra": "concurrencia,",
+    "inicio": 157.7,
+    "fin": 158.34,
+    "escena_id": 12
+  },
+  {
+    "palabra": "operación",
+    "inicio": 158.7,
+    "fin": 159.12,
+    "escena_id": 13
+  },
+  {
+    "palabra": "al",
+    "inicio": 159.12,
+    "fin": 159.34,
+    "escena_id": 13
+  },
+  {
+    "palabra": "transformación",
+    "inicio": 159.34,
+    "fin": 160.1,
+    "escena_id": 13
+  },
+  {
+    "palabra": "no",
+    "inicio": 160.1,
+    "fin": 160.3,
+    "escena_id": 13
+  },
+  {
+    "palabra": "té",
+    "inicio": 160.3,
+    "fin": 160.52,
+    "escena_id": 13
+  },
+  {
+    "palabra": "es",
+    "inicio": 160.52,
+    "fin": 160.72,
+    "escena_id": 13
+  },
+  {
+    "palabra": "un",
+    "inicio": 160.72,
+    "fin": 160.84,
+    "escena_id": 13
+  },
+  {
+    "palabra": "algoritmo",
+    "inicio": 160.84,
+    "fin": 161.36,
+    "escena_id": 13
+  },
+  {
+    "palabra": "que",
+    "inicio": 161.36,
+    "fin": 161.54,
+    "escena_id": 13
+  },
+  {
+    "palabra": "permite",
+    "inicio": 161.54,
+    "fin": 161.88,
+    "escena_id": 13
+  },
+  {
+    "palabra": "que",
+    "inicio": 161.88,
+    "fin": 162.18,
+    "escena_id": 13
+  },
+  {
+    "palabra": "múltiples",
+    "inicio": 162.18,
+    "fin": 162.76,
+    "escena_id": 13
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 162.76,
+    "fin": 163.34,
+    "escena_id": 13
+  },
+  {
+    "palabra": "editen",
+    "inicio": 163.34,
+    "fin": 163.84,
+    "escena_id": 13
+  },
+  {
+    "palabra": "el",
+    "inicio": 163.84,
+    "fin": 164.04,
+    "escena_id": 13
+  },
+  {
+    "palabra": "mismo",
+    "inicio": 164.04,
+    "fin": 164.3,
+    "escena_id": 13
+  },
+  {
+    "palabra": "documento",
+    "inicio": 164.3,
+    "fin": 164.86,
+    "escena_id": 13
+  },
+  {
+    "palabra": "simultáneamente",
+    "inicio": 164.86,
+    "fin": 165.66,
+    "escena_id": 13
+  },
+  {
+    "palabra": "sin",
+    "inicio": 165.66,
+    "fin": 165.92,
+    "escena_id": 13
+  },
+  {
+    "palabra": "conflictos.",
+    "inicio": 165.92,
+    "fin": 167.02,
+    "escena_id": 13
+  },
+  {
+    "palabra": "Cuando",
+    "inicio": 167.14,
+    "fin": 167.48,
+    "escena_id": 13
+  },
+  {
+    "palabra": "dos",
+    "inicio": 167.48,
+    "fin": 167.78,
+    "escena_id": 13
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 167.78,
+    "fin": 168.36,
+    "escena_id": 13
+  },
+  {
+    "palabra": "modifican",
+    "inicio": 168.36,
+    "fin": 169.08,
+    "escena_id": 13
+  },
+  {
+    "palabra": "el",
+    "inicio": 169.08,
+    "fin": 169.24,
+    "escena_id": 13
+  },
+  {
+    "palabra": "mismo",
+    "inicio": 169.24,
+    "fin": 169.5,
+    "escena_id": 13
+  },
+  {
+    "palabra": "fragmento",
+    "inicio": 169.5,
+    "fin": 170.08,
+    "escena_id": 13
+  },
+  {
+    "palabra": "al",
+    "inicio": 170.08,
+    "fin": 170.14,
+    "escena_id": 13
+  },
+  {
+    "palabra": "mismo",
+    "inicio": 170.14,
+    "fin": 170.38,
+    "escena_id": 13
+  },
+  {
+    "palabra": "tiempo,",
+    "inicio": 170.38,
+    "fin": 171.02,
+    "escena_id": 13
+  },
+  {
+    "palabra": "OT",
+    "inicio": 171.42,
+    "fin": 171.64,
+    "escena_id": 13
+  },
+  {
+    "palabra": "transforma",
+    "inicio": 171.64,
+    "fin": 172.36,
+    "escena_id": 13
+  },
+  {
+    "palabra": "las",
+    "inicio": 172.36,
+    "fin": 172.5,
+    "escena_id": 13
+  },
+  {
+    "palabra": "operaciones",
+    "inicio": 172.5,
+    "fin": 173.02,
+    "escena_id": 13
+  },
+  {
+    "palabra": "para",
+    "inicio": 173.02,
+    "fin": 173.34,
+    "escena_id": 13
+  },
+  {
+    "palabra": "que",
+    "inicio": 173.34,
+    "fin": 173.52,
+    "escena_id": 13
+  },
+  {
+    "palabra": "el",
+    "inicio": 173.52,
+    "fin": 173.64,
+    "escena_id": 13
+  },
+  {
+    "palabra": "resultado",
+    "inicio": 173.64,
+    "fin": 174.02,
+    "escena_id": 13
+  },
+  {
+    "palabra": "final",
+    "inicio": 174.02,
+    "fin": 174.44,
+    "escena_id": 13
+  },
+  {
+    "palabra": "sea",
+    "inicio": 174.44,
+    "fin": 174.72,
+    "escena_id": 13
+  },
+  {
+    "palabra": "coherente",
+    "inicio": 174.72,
+    "fin": 175.28,
+    "escena_id": 13
+  },
+  {
+    "palabra": "en",
+    "inicio": 175.28,
+    "fin": 175.44,
+    "escena_id": 13
+  },
+  {
+    "palabra": "todos",
+    "inicio": 175.44,
+    "fin": 175.6,
+    "escena_id": 13
+  },
+  {
+    "palabra": "los",
+    "inicio": 175.6,
+    "fin": 175.82,
+    "escena_id": 13
+  },
+  {
+    "palabra": "clientes.",
+    "inicio": 175.82,
+    "fin": 176.44,
+    "escena_id": 13
+  },
+  {
+    "palabra": "Google",
+    "inicio": 176.78,
+    "fin": 177.0,
+    "escena_id": 14
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 177.0,
+    "fin": 177.42,
+    "escena_id": 14
+  },
+  {
+    "palabra": "implementó",
+    "inicio": 177.42,
+    "fin": 178.42,
+    "escena_id": 14
+  },
+  {
+    "palabra": "su",
+    "inicio": 178.42,
+    "fin": 178.58,
+    "escena_id": 14
+  },
+  {
+    "palabra": "propia",
+    "inicio": 178.58,
+    "fin": 178.96,
+    "escena_id": 14
+  },
+  {
+    "palabra": "variante",
+    "inicio": 178.96,
+    "fin": 179.38,
+    "escena_id": 14
+  },
+  {
+    "palabra": "de",
+    "inicio": 179.38,
+    "fin": 179.62,
+    "escena_id": 14
+  },
+  {
+    "palabra": "OT,",
+    "inicio": 179.62,
+    "fin": 179.9,
+    "escena_id": 14
+  },
+  {
+    "palabra": "llamada",
+    "inicio": 180.38,
+    "fin": 180.74,
+    "escena_id": 14
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 180.74,
+    "fin": 181.06,
+    "escena_id": 14
+  },
+  {
+    "palabra": "OT,",
+    "inicio": 181.06,
+    "fin": 181.6,
+    "escena_id": 14
+  },
+  {
+    "palabra": "OT",
+    "inicio": 182.0,
+    "fin": 182.26,
+    "escena_id": 15
+  },
+  {
+    "palabra": "era",
+    "inicio": 182.26,
+    "fin": 182.46,
+    "escena_id": 15
+  },
+  {
+    "palabra": "la",
+    "inicio": 182.46,
+    "fin": 182.6,
+    "escena_id": 15
+  },
+  {
+    "palabra": "única",
+    "inicio": 182.6,
+    "fin": 182.82,
+    "escena_id": 15
+  },
+  {
+    "palabra": "solución",
+    "inicio": 182.82,
+    "fin": 183.32,
+    "escena_id": 15
+  },
+  {
+    "palabra": "técnicamente",
+    "inicio": 183.32,
+    "fin": 183.98,
+    "escena_id": 15
+  },
+  {
+    "palabra": "probada",
+    "inicio": 183.98,
+    "fin": 184.46,
+    "escena_id": 15
+  },
+  {
+    "palabra": "para",
+    "inicio": 184.46,
+    "fin": 184.7,
+    "escena_id": 15
+  },
+  {
+    "palabra": "la",
+    "inicio": 184.7,
+    "fin": 184.76,
+    "escena_id": 15
+  },
+  {
+    "palabra": "edición",
+    "inicio": 184.76,
+    "fin": 185.06,
+    "escena_id": 15
+  },
+  {
+    "palabra": "colaborativa",
+    "inicio": 185.06,
+    "fin": 185.66,
+    "escena_id": 15
+  },
+  {
+    "palabra": "en",
+    "inicio": 185.66,
+    "fin": 185.88,
+    "escena_id": 15
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 185.88,
+    "fin": 186.1,
+    "escena_id": 15
+  },
+  {
+    "palabra": "real,",
+    "inicio": 186.1,
+    "fin": 186.42,
+    "escena_id": 15
+  },
+  {
+    "palabra": "el",
+    "inicio": 186.86,
+    "fin": 187.04,
+    "escena_id": 15
+  },
+  {
+    "palabra": "paper",
+    "inicio": 187.04,
+    "fin": 187.26,
+    "escena_id": 15
+  },
+  {
+    "palabra": "original",
+    "inicio": 187.26,
+    "fin": 187.74,
+    "escena_id": 15
+  },
+  {
+    "palabra": "de",
+    "inicio": 187.74,
+    "fin": 188.06,
+    "escena_id": 15
+  },
+  {
+    "palabra": "ELIS",
+    "inicio": 188.06,
+    "fin": 188.42,
+    "escena_id": 15
+  },
+  {
+    "palabra": "y",
+    "inicio": 188.42,
+    "fin": 188.56,
+    "escena_id": 15
+  },
+  {
+    "palabra": "YIPS",
+    "inicio": 188.56,
+    "fin": 188.86,
+    "escena_id": 15
+  },
+  {
+    "palabra": "data",
+    "inicio": 188.86,
+    "fin": 189.16,
+    "escena_id": 15
+  },
+  {
+    "palabra": "de",
+    "inicio": 189.16,
+    "fin": 189.36,
+    "escena_id": 15
+  },
+  {
+    "palabra": "1989,",
+    "inicio": 189.36,
+    "fin": 190.2,
+    "escena_id": 15
+  },
+  {
+    "palabra": "Google",
+    "inicio": 190.92,
+    "fin": 191.16,
+    "escena_id": 15
+  },
+  {
+    "palabra": "la",
+    "inicio": 191.16,
+    "fin": 191.32,
+    "escena_id": 15
+  },
+  {
+    "palabra": "usaba",
+    "inicio": 191.32,
+    "fin": 191.6,
+    "escena_id": 15
+  },
+  {
+    "palabra": "internamente",
+    "inicio": 191.6,
+    "fin": 192.14,
+    "escena_id": 15
+  },
+  {
+    "palabra": "en",
+    "inicio": 192.14,
+    "fin": 192.36,
+    "escena_id": 15
+  },
+  {
+    "palabra": "prototipos,",
+    "inicio": 192.36,
+    "fin": 193.12,
+    "escena_id": 15
+  },
+  {
+    "palabra": "era",
+    "inicio": 193.26,
+    "fin": 193.7,
+    "escena_id": 15
+  },
+  {
+    "palabra": "la",
+    "inicio": 193.7,
+    "fin": 193.84,
+    "escena_id": 15
+  },
+  {
+    "palabra": "elección",
+    "inicio": 193.84,
+    "fin": 194.18,
+    "escena_id": 15
+  },
+  {
+    "palabra": "correcta",
+    "inicio": 194.18,
+    "fin": 194.7,
+    "escena_id": 15
+  },
+  {
+    "palabra": "para",
+    "inicio": 194.7,
+    "fin": 194.86,
+    "escena_id": 15
+  },
+  {
+    "palabra": "el",
+    "inicio": 194.86,
+    "fin": 194.96,
+    "escena_id": 15
+  },
+  {
+    "palabra": "problema",
+    "inicio": 194.96,
+    "fin": 195.3,
+    "escena_id": 15
+  },
+  {
+    "palabra": "correcto,",
+    "inicio": 195.3,
+    "fin": 196.08,
+    "escena_id": 15
+  },
+  {
+    "palabra": "la",
+    "inicio": 196.12,
+    "fin": 196.3,
+    "escena_id": 16
+  },
+  {
+    "palabra": "complejidad",
+    "inicio": 196.3,
+    "fin": 196.94,
+    "escena_id": 16
+  },
+  {
+    "palabra": "computacional",
+    "inicio": 196.94,
+    "fin": 197.66,
+    "escena_id": 16
+  },
+  {
+    "palabra": "de",
+    "inicio": 197.66,
+    "fin": 197.88,
+    "escena_id": 16
+  },
+  {
+    "palabra": "OT",
+    "inicio": 197.88,
+    "fin": 198.18,
+    "escena_id": 16
+  },
+  {
+    "palabra": "escala",
+    "inicio": 198.18,
+    "fin": 198.9,
+    "escena_id": 16
+  },
+  {
+    "palabra": "con",
+    "inicio": 198.9,
+    "fin": 199.14,
+    "escena_id": 16
+  },
+  {
+    "palabra": "el",
+    "inicio": 199.14,
+    "fin": 199.28,
+    "escena_id": 16
+  },
+  {
+    "palabra": "número",
+    "inicio": 199.28,
+    "fin": 199.5,
+    "escena_id": 16
+  },
+  {
+    "palabra": "de",
+    "inicio": 199.5,
+    "fin": 199.74,
+    "escena_id": 16
+  },
+  {
+    "palabra": "operaciones",
+    "inicio": 199.74,
+    "fin": 200.18,
+    "escena_id": 16
+  },
+  {
+    "palabra": "concurrentes",
+    "inicio": 200.18,
+    "fin": 201.2,
+    "escena_id": 16
+  },
+  {
+    "palabra": "en",
+    "inicio": 201.2,
+    "fin": 201.8,
+    "escena_id": 16
+  },
+  {
+    "palabra": "un",
+    "inicio": 201.8,
+    "fin": 201.98,
+    "escena_id": 16
+  },
+  {
+    "palabra": "documento",
+    "inicio": 201.98,
+    "fin": 202.62,
+    "escena_id": 16
+  },
+  {
+    "palabra": "con",
+    "inicio": 202.62,
+    "fin": 202.78,
+    "escena_id": 16
+  },
+  {
+    "palabra": "dos",
+    "inicio": 202.78,
+    "fin": 202.96,
+    "escena_id": 16
+  },
+  {
+    "palabra": "usuarios,",
+    "inicio": 202.96,
+    "fin": 203.52,
+    "escena_id": 16
+  },
+  {
+    "palabra": "el",
+    "inicio": 203.78,
+    "fin": 203.9,
+    "escena_id": 16
+  },
+  {
+    "palabra": "árbol",
+    "inicio": 203.9,
+    "fin": 204.12,
+    "escena_id": 16
+  },
+  {
+    "palabra": "de",
+    "inicio": 204.12,
+    "fin": 204.28,
+    "escena_id": 16
+  },
+  {
+    "palabra": "transformaciones",
+    "inicio": 204.28,
+    "fin": 205.04,
+    "escena_id": 16
+  },
+  {
+    "palabra": "es",
+    "inicio": 205.04,
+    "fin": 205.4,
+    "escena_id": 16
+  },
+  {
+    "palabra": "manejable,",
+    "inicio": 205.4,
+    "fin": 206.06,
+    "escena_id": 16
+  },
+  {
+    "palabra": "con",
+    "inicio": 206.38,
+    "fin": 206.52,
+    "escena_id": 17
+  },
+  {
+    "palabra": "10",
+    "inicio": 206.52,
+    "fin": 206.68,
+    "escena_id": 17
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 206.68,
+    "fin": 207.24,
+    "escena_id": 17
+  },
+  {
+    "palabra": "editando",
+    "inicio": 207.24,
+    "fin": 207.8,
+    "escena_id": 17
+  },
+  {
+    "palabra": "simultáneamente,",
+    "inicio": 207.8,
+    "fin": 208.8,
+    "escena_id": 17
+  },
+  {
+    "palabra": "el",
+    "inicio": 209.0,
+    "fin": 209.44,
+    "escena_id": 17
+  },
+  {
+    "palabra": "servidor",
+    "inicio": 209.44,
+    "fin": 209.84,
+    "escena_id": 17
+  },
+  {
+    "palabra": "debe",
+    "inicio": 209.84,
+    "fin": 210.08,
+    "escena_id": 17
+  },
+  {
+    "palabra": "calcular",
+    "inicio": 210.08,
+    "fin": 210.56,
+    "escena_id": 17
+  },
+  {
+    "palabra": "y",
+    "inicio": 210.56,
+    "fin": 210.72,
+    "escena_id": 17
+  },
+  {
+    "palabra": "mantener",
+    "inicio": 210.72,
+    "fin": 211.18,
+    "escena_id": 17
+  },
+  {
+    "palabra": "una",
+    "inicio": 211.18,
+    "fin": 211.54,
+    "escena_id": 17
+  },
+  {
+    "palabra": "matriz",
+    "inicio": 211.54,
+    "fin": 211.96,
+    "escena_id": 17
+  },
+  {
+    "palabra": "de",
+    "inicio": 211.96,
+    "fin": 212.18,
+    "escena_id": 17
+  },
+  {
+    "palabra": "transformaciones",
+    "inicio": 212.18,
+    "fin": 213.04,
+    "escena_id": 17
+  },
+  {
+    "palabra": "de",
+    "inicio": 213.04,
+    "fin": 213.26,
+    "escena_id": 17
+  },
+  {
+    "palabra": "orden",
+    "inicio": 213.26,
+    "fin": 213.5,
+    "escena_id": 17
+  },
+  {
+    "palabra": "cuadrático",
+    "inicio": 213.5,
+    "fin": 214.2,
+    "escena_id": 17
+  },
+  {
+    "palabra": "o",
+    "inicio": 214.2,
+    "fin": 214.9,
+    "escena_id": 17
+  },
+  {
+    "palabra": "N,",
+    "inicio": 214.9,
+    "fin": 215.2,
+    "escena_id": 17
+  },
+  {
+    "palabra": "en",
+    "inicio": 215.92,
+    "fin": 216.44,
+    "escena_id": 17
+  },
+  {
+    "palabra": "el",
+    "inicio": 216.44,
+    "fin": 216.44,
+    "escena_id": 17
+  },
+  {
+    "palabra": "número",
+    "inicio": 216.44,
+    "fin": 216.94,
+    "escena_id": 17
+  },
+  {
+    "palabra": "de",
+    "inicio": 216.94,
+    "fin": 217.18,
+    "escena_id": 17
+  },
+  {
+    "palabra": "operaciones",
+    "inicio": 217.18,
+    "fin": 217.64,
+    "escena_id": 17
+  },
+  {
+    "palabra": "en",
+    "inicio": 217.64,
+    "fin": 217.92,
+    "escena_id": 17
+  },
+  {
+    "palabra": "vuelo,",
+    "inicio": 217.92,
+    "fin": 218.58,
+    "escena_id": 17
+  },
+  {
+    "palabra": "en",
+    "inicio": 218.6,
+    "fin": 218.9,
+    "escena_id": 17
+  },
+  {
+    "palabra": "waves",
+    "inicio": 218.9,
+    "fin": 219.2,
+    "escena_id": 17
+  },
+  {
+    "palabra": "con",
+    "inicio": 219.2,
+    "fin": 219.44,
+    "escena_id": 17
+  },
+  {
+    "palabra": "muchos",
+    "inicio": 219.44,
+    "fin": 219.74,
+    "escena_id": 17
+  },
+  {
+    "palabra": "participantes",
+    "inicio": 219.74,
+    "fin": 220.5,
+    "escena_id": 17
+  },
+  {
+    "palabra": "activos,",
+    "inicio": 220.5,
+    "fin": 221.12,
+    "escena_id": 17
+  },
+  {
+    "palabra": "esto",
+    "inicio": 221.14,
+    "fin": 221.34,
+    "escena_id": 17
+  },
+  {
+    "palabra": "generaba",
+    "inicio": 221.34,
+    "fin": 221.82,
+    "escena_id": 17
+  },
+  {
+    "palabra": "latencias",
+    "inicio": 221.82,
+    "fin": 222.32,
+    "escena_id": 17
+  },
+  {
+    "palabra": "de",
+    "inicio": 222.32,
+    "fin": 222.52,
+    "escena_id": 17
+  },
+  {
+    "palabra": "respuesta",
+    "inicio": 222.52,
+    "fin": 222.88,
+    "escena_id": 17
+  },
+  {
+    "palabra": "medibles",
+    "inicio": 222.88,
+    "fin": 223.44,
+    "escena_id": 17
+  },
+  {
+    "palabra": "en",
+    "inicio": 223.44,
+    "fin": 223.68,
+    "escena_id": 17
+  },
+  {
+    "palabra": "segundos,",
+    "inicio": 223.68,
+    "fin": 224.16,
+    "escena_id": 17
+  },
+  {
+    "palabra": "no",
+    "inicio": 224.38,
+    "fin": 224.4,
+    "escena_id": 17
+  },
+  {
+    "palabra": "milisegundos,",
+    "inicio": 224.4,
+    "fin": 225.26,
+    "escena_id": 17
+  },
+  {
+    "palabra": "un",
+    "inicio": 225.56,
+    "fin": 225.8,
+    "escena_id": 17
+  },
+  {
+    "palabra": "retraso",
+    "inicio": 225.8,
+    "fin": 226.3,
+    "escena_id": 18
+  },
+  {
+    "palabra": "de",
+    "inicio": 226.3,
+    "fin": 226.4,
+    "escena_id": 18
+  },
+  {
+    "palabra": "500",
+    "inicio": 226.4,
+    "fin": 226.76,
+    "escena_id": 18
+  },
+  {
+    "palabra": "milisegundos",
+    "inicio": 226.76,
+    "fin": 227.6,
+    "escena_id": 18
+  },
+  {
+    "palabra": "en",
+    "inicio": 227.6,
+    "fin": 227.78,
+    "escena_id": 18
+  },
+  {
+    "palabra": "una",
+    "inicio": 227.78,
+    "fin": 228.0,
+    "escena_id": 18
+  },
+  {
+    "palabra": "aplicación",
+    "inicio": 228.0,
+    "fin": 228.46,
+    "escena_id": 18
+  },
+  {
+    "palabra": "de",
+    "inicio": 228.46,
+    "fin": 228.6,
+    "escena_id": 18
+  },
+  {
+    "palabra": "chat",
+    "inicio": 228.6,
+    "fin": 228.8,
+    "escena_id": 18
+  },
+  {
+    "palabra": "no",
+    "inicio": 228.8,
+    "fin": 229.06,
+    "escena_id": 18
+  },
+  {
+    "palabra": "es",
+    "inicio": 229.06,
+    "fin": 229.22,
+    "escena_id": 18
+  },
+  {
+    "palabra": "un",
+    "inicio": 229.22,
+    "fin": 229.36,
+    "escena_id": 18
+  },
+  {
+    "palabra": "bug",
+    "inicio": 229.36,
+    "fin": 229.6,
+    "escena_id": 18
+  },
+  {
+    "palabra": "de",
+    "inicio": 229.6,
+    "fin": 229.82,
+    "escena_id": 18
+  },
+  {
+    "palabra": "Udésima,",
+    "inicio": 229.82,
+    "fin": 230.44,
+    "escena_id": 18
+  },
+  {
+    "palabra": "es",
+    "inicio": 230.96,
+    "fin": 231.1,
+    "escena_id": 18
+  },
+  {
+    "palabra": "una",
+    "inicio": 231.1,
+    "fin": 231.3,
+    "escena_id": 18
+  },
+  {
+    "palabra": "rotura",
+    "inicio": 231.3,
+    "fin": 231.74,
+    "escena_id": 18
+  },
+  {
+    "palabra": "del",
+    "inicio": 231.74,
+    "fin": 231.9,
+    "escena_id": 18
+  },
+  {
+    "palabra": "contrato",
+    "inicio": 231.9,
+    "fin": 232.32,
+    "escena_id": 18
+  },
+  {
+    "palabra": "implícito",
+    "inicio": 232.32,
+    "fin": 232.88,
+    "escena_id": 18
+  },
+  {
+    "palabra": "que",
+    "inicio": 232.88,
+    "fin": 233.04,
+    "escena_id": 18
+  },
+  {
+    "palabra": "define",
+    "inicio": 233.04,
+    "fin": 233.4,
+    "escena_id": 18
+  },
+  {
+    "palabra": "que",
+    "inicio": 233.4,
+    "fin": 233.68,
+    "escena_id": 18
+  },
+  {
+    "palabra": "es",
+    "inicio": 233.68,
+    "fin": 233.94,
+    "escena_id": 18
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 233.94,
+    "fin": 234.18,
+    "escena_id": 18
+  },
+  {
+    "palabra": "real,",
+    "inicio": 234.18,
+    "fin": 234.56,
+    "escena_id": 18
+  },
+  {
+    "palabra": "ingenieros",
+    "inicio": 234.92,
+    "fin": 235.56,
+    "escena_id": 19
+  },
+  {
+    "palabra": "que",
+    "inicio": 235.56,
+    "fin": 235.7,
+    "escena_id": 19
+  },
+  {
+    "palabra": "probaron",
+    "inicio": 235.7,
+    "fin": 236.14,
+    "escena_id": 19
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 236.14,
+    "fin": 236.4,
+    "escena_id": 19
+  },
+  {
+    "palabra": "en",
+    "inicio": 236.4,
+    "fin": 236.64,
+    "escena_id": 19
+  },
+  {
+    "palabra": "producción",
+    "inicio": 236.64,
+    "fin": 237.06,
+    "escena_id": 19
+  },
+  {
+    "palabra": "reportaron",
+    "inicio": 237.06,
+    "fin": 237.8,
+    "escena_id": 19
+  },
+  {
+    "palabra": "que",
+    "inicio": 237.8,
+    "fin": 237.96,
+    "escena_id": 19
+  },
+  {
+    "palabra": "en",
+    "inicio": 237.96,
+    "fin": 238.08,
+    "escena_id": 19
+  },
+  {
+    "palabra": "waves",
+    "inicio": 238.08,
+    "fin": 238.4,
+    "escena_id": 19
+  },
+  {
+    "palabra": "con",
+    "inicio": 238.4,
+    "fin": 238.62,
+    "escena_id": 19
+  },
+  {
+    "palabra": "más",
+    "inicio": 238.62,
+    "fin": 238.8,
+    "escena_id": 19
+  },
+  {
+    "palabra": "de",
+    "inicio": 238.8,
+    "fin": 238.96,
+    "escena_id": 19
+  },
+  {
+    "palabra": "20",
+    "inicio": 238.96,
+    "fin": 239.12,
+    "escena_id": 19
+  },
+  {
+    "palabra": "participantes",
+    "inicio": 239.12,
+    "fin": 240.0,
+    "escena_id": 19
+  },
+  {
+    "palabra": "activos,",
+    "inicio": 240.0,
+    "fin": 240.84,
+    "escena_id": 19
+  },
+  {
+    "palabra": "el",
+    "inicio": 241.0,
+    "fin": 241.16,
+    "escena_id": 19
+  },
+  {
+    "palabra": "lag",
+    "inicio": 241.16,
+    "fin": 241.36,
+    "escena_id": 19
+  },
+  {
+    "palabra": "entre",
+    "inicio": 241.36,
+    "fin": 241.76,
+    "escena_id": 19
+  },
+  {
+    "palabra": "una",
+    "inicio": 241.76,
+    "fin": 241.98,
+    "escena_id": 19
+  },
+  {
+    "palabra": "pulsación",
+    "inicio": 241.98,
+    "fin": 242.5,
+    "escena_id": 19
+  },
+  {
+    "palabra": "de",
+    "inicio": 242.5,
+    "fin": 242.7,
+    "escena_id": 19
+  },
+  {
+    "palabra": "tecla",
+    "inicio": 242.7,
+    "fin": 243.04,
+    "escena_id": 19
+  },
+  {
+    "palabra": "y",
+    "inicio": 243.04,
+    "fin": 243.14,
+    "escena_id": 19
+  },
+  {
+    "palabra": "su",
+    "inicio": 243.14,
+    "fin": 243.26,
+    "escena_id": 19
+  },
+  {
+    "palabra": "aparición",
+    "inicio": 243.26,
+    "fin": 243.68,
+    "escena_id": 19
+  },
+  {
+    "palabra": "en",
+    "inicio": 243.68,
+    "fin": 243.84,
+    "escena_id": 19
+  },
+  {
+    "palabra": "pantalla",
+    "inicio": 243.84,
+    "fin": 244.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "llegaba",
+    "inicio": 244.22,
+    "fin": 244.72,
+    "escena_id": 19
+  },
+  {
+    "palabra": "su",
+    "inicio": 244.72,
+    "fin": 244.94,
+    "escena_id": 19
+  },
+  {
+    "palabra": "operación,",
+    "inicio": 244.94,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "que",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "es",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "la",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "que",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "se",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "trata",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "de",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "operar",
+    "inicio": 245.22,
+    "fin": 245.22,
+    "escena_id": 19
+  },
+  {
+    "palabra": "los",
+    "inicio": 245.22,
+    "fin": 245.4,
+    "escena_id": 19
+  },
+  {
+    "palabra": "800",
+    "inicio": 245.4,
+    "fin": 245.74,
+    "escena_id": 19
+  },
+  {
+    "palabra": "milisegundos",
+    "inicio": 245.74,
+    "fin": 246.76,
+    "escena_id": 19
+  },
+  {
+    "palabra": "bajo",
+    "inicio": 246.76,
+    "fin": 247.04,
+    "escena_id": 19
+  },
+  {
+    "palabra": "carga",
+    "inicio": 247.04,
+    "fin": 247.38,
+    "escena_id": 19
+  },
+  {
+    "palabra": "normal,",
+    "inicio": 247.38,
+    "fin": 247.7,
+    "escena_id": 19
+  },
+  {
+    "palabra": "el",
+    "inicio": 247.94,
+    "fin": 248.54,
+    "escena_id": 19
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 248.54,
+    "fin": 248.86,
+    "escena_id": 20
+  },
+  {
+    "palabra": "era",
+    "inicio": 248.86,
+    "fin": 249.1,
+    "escena_id": 20
+  },
+  {
+    "palabra": "técnicamente",
+    "inicio": 249.1,
+    "fin": 249.7,
+    "escena_id": 20
+  },
+  {
+    "palabra": "correcto",
+    "inicio": 249.7,
+    "fin": 250.32,
+    "escena_id": 20
+  },
+  {
+    "palabra": "pero",
+    "inicio": 250.32,
+    "fin": 250.5,
+    "escena_id": 20
+  },
+  {
+    "palabra": "no",
+    "inicio": 250.5,
+    "fin": 250.68,
+    "escena_id": 20
+  },
+  {
+    "palabra": "era",
+    "inicio": 250.68,
+    "fin": 250.84,
+    "escena_id": 20
+  },
+  {
+    "palabra": "operativamente",
+    "inicio": 250.84,
+    "fin": 251.62,
+    "escena_id": 20
+  },
+  {
+    "palabra": "viable,",
+    "inicio": 251.62,
+    "fin": 252.1,
+    "escena_id": 20
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 252.48,
+    "fin": 252.98,
+    "escena_id": 21
+  },
+  {
+    "palabra": "3,",
+    "inicio": 252.98,
+    "fin": 253.32,
+    "escena_id": 21
+  },
+  {
+    "palabra": "el",
+    "inicio": 253.82,
+    "fin": 253.92,
+    "escena_id": 21
+  },
+  {
+    "palabra": "cliente",
+    "inicio": 253.92,
+    "fin": 254.44,
+    "escena_id": 21
+  },
+  {
+    "palabra": "JavaScript",
+    "inicio": 254.44,
+    "fin": 254.72,
+    "escena_id": 21
+  },
+  {
+    "palabra": "monolítico",
+    "inicio": 254.72,
+    "fin": 255.92,
+    "escena_id": 21
+  },
+  {
+    "palabra": "en",
+    "inicio": 255.92,
+    "fin": 256.24,
+    "escena_id": 21
+  },
+  {
+    "palabra": "el",
+    "inicio": 256.24,
+    "fin": 256.4,
+    "escena_id": 21
+  },
+  {
+    "palabra": "navegador",
+    "inicio": 256.4,
+    "fin": 256.94,
+    "escena_id": 21
+  },
+  {
+    "palabra": "de",
+    "inicio": 256.94,
+    "fin": 257.14,
+    "escena_id": 21
+  },
+  {
+    "palabra": "2009,",
+    "inicio": 257.14,
+    "fin": 257.74,
+    "escena_id": 21
+  },
+  {
+    "palabra": "la",
+    "inicio": 258.22,
+    "fin": 258.32,
+    "escena_id": 22
+  },
+  {
+    "palabra": "interfaz",
+    "inicio": 258.32,
+    "fin": 258.78,
+    "escena_id": 22
+  },
+  {
+    "palabra": "de",
+    "inicio": 258.78,
+    "fin": 259.0,
+    "escena_id": 22
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 259.0,
+    "fin": 259.26,
+    "escena_id": 22
+  },
+  {
+    "palabra": "vivía",
+    "inicio": 259.26,
+    "fin": 259.74,
+    "escena_id": 22
+  },
+  {
+    "palabra": "completamente",
+    "inicio": 259.74,
+    "fin": 260.2,
+    "escena_id": 22
+  },
+  {
+    "palabra": "en",
+    "inicio": 260.2,
+    "fin": 260.58,
+    "escena_id": 22
+  },
+  {
+    "palabra": "el",
+    "inicio": 260.58,
+    "fin": 260.7,
+    "escena_id": 22
+  },
+  {
+    "palabra": "navegador",
+    "inicio": 260.7,
+    "fin": 261.14,
+    "escena_id": 22
+  },
+  {
+    "palabra": "como",
+    "inicio": 261.14,
+    "fin": 261.4,
+    "escena_id": 22
+  },
+  {
+    "palabra": "una",
+    "inicio": 261.4,
+    "fin": 261.58,
+    "escena_id": 22
+  },
+  {
+    "palabra": "aplicación",
+    "inicio": 261.58,
+    "fin": 262.06,
+    "escena_id": 22
+  },
+  {
+    "palabra": "JavaScript",
+    "inicio": 262.06,
+    "fin": 262.54,
+    "escena_id": 22
+  },
+  {
+    "palabra": "de",
+    "inicio": 262.54,
+    "fin": 262.8,
+    "escena_id": 22
+  },
+  {
+    "palabra": "alto",
+    "inicio": 262.8,
+    "fin": 263.0,
+    "escena_id": 22
+  },
+  {
+    "palabra": "peso,",
+    "inicio": 263.0,
+    "fin": 263.42,
+    "escena_id": 22
+  },
+  {
+    "palabra": "el",
+    "inicio": 263.82,
+    "fin": 264.66,
+    "escena_id": 22
+  },
+  {
+    "palabra": "cliente",
+    "inicio": 264.66,
+    "fin": 265.18,
+    "escena_id": 23
+  },
+  {
+    "palabra": "debía",
+    "inicio": 265.18,
+    "fin": 265.46,
+    "escena_id": 23
+  },
+  {
+    "palabra": "mantener",
+    "inicio": 265.46,
+    "fin": 265.86,
+    "escena_id": 23
+  },
+  {
+    "palabra": "el",
+    "inicio": 265.86,
+    "fin": 266.16,
+    "escena_id": 23
+  },
+  {
+    "palabra": "estado",
+    "inicio": 266.16,
+    "fin": 266.42,
+    "escena_id": 23
+  },
+  {
+    "palabra": "local",
+    "inicio": 266.42,
+    "fin": 266.82,
+    "escena_id": 23
+  },
+  {
+    "palabra": "de",
+    "inicio": 266.82,
+    "fin": 267.18,
+    "escena_id": 23
+  },
+  {
+    "palabra": "todas",
+    "inicio": 267.18,
+    "fin": 267.44,
+    "escena_id": 23
+  },
+  {
+    "palabra": "las",
+    "inicio": 267.44,
+    "fin": 267.7,
+    "escena_id": 23
+  },
+  {
+    "palabra": "waves",
+    "inicio": 267.7,
+    "fin": 267.92,
+    "escena_id": 23
+  },
+  {
+    "palabra": "abiertas,",
+    "inicio": 267.92,
+    "fin": 268.62,
+    "escena_id": 23
+  },
+  {
+    "palabra": "ejecutar",
+    "inicio": 268.82,
+    "fin": 269.38,
+    "escena_id": 23
+  },
+  {
+    "palabra": "las",
+    "inicio": 269.38,
+    "fin": 269.56,
+    "escena_id": 23
+  },
+  {
+    "palabra": "transformaciones",
+    "inicio": 269.56,
+    "fin": 270.34,
+    "escena_id": 23
+  },
+  {
+    "palabra": "OT",
+    "inicio": 270.34,
+    "fin": 270.8,
+    "escena_id": 23
+  },
+  {
+    "palabra": "en",
+    "inicio": 270.8,
+    "fin": 271.04,
+    "escena_id": 23
+  },
+  {
+    "palabra": "el",
+    "inicio": 271.04,
+    "fin": 271.14,
+    "escena_id": 23
+  },
+  {
+    "palabra": "lado",
+    "inicio": 271.14,
+    "fin": 271.38,
+    "escena_id": 23
+  },
+  {
+    "palabra": "del",
+    "inicio": 271.38,
+    "fin": 271.56,
+    "escena_id": 23
+  },
+  {
+    "palabra": "cliente",
+    "inicio": 271.56,
+    "fin": 272.04,
+    "escena_id": 23
+  },
+  {
+    "palabra": "para",
+    "inicio": 272.04,
+    "fin": 272.24,
+    "escena_id": 23
+  },
+  {
+    "palabra": "previsualización",
+    "inicio": 272.24,
+    "fin": 273.24,
+    "escena_id": 23
+  },
+  {
+    "palabra": "inmediata",
+    "inicio": 273.24,
+    "fin": 273.92,
+    "escena_id": 23
+  },
+  {
+    "palabra": "y",
+    "inicio": 273.92,
+    "fin": 274.46,
+    "escena_id": 23
+  },
+  {
+    "palabra": "sin",
+    "inicio": 274.46,
+    "fin": 274.62,
+    "escena_id": 23
+  },
+  {
+    "palabra": "cronizar",
+    "inicio": 274.62,
+    "fin": 275.04,
+    "escena_id": 23
+  },
+  {
+    "palabra": "continuamente",
+    "inicio": 275.04,
+    "fin": 275.7,
+    "escena_id": 23
+  },
+  {
+    "palabra": "con",
+    "inicio": 275.7,
+    "fin": 275.96,
+    "escena_id": 23
+  },
+  {
+    "palabra": "el",
+    "inicio": 275.96,
+    "fin": 276.1,
+    "escena_id": 23
+  },
+  {
+    "palabra": "servidor",
+    "inicio": 276.1,
+    "fin": 276.52,
+    "escena_id": 23
+  },
+  {
+    "palabra": "mediante",
+    "inicio": 276.52,
+    "fin": 276.94,
+    "escena_id": 23
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 276.94,
+    "fin": 277.6,
+    "escena_id": 23
+  },
+  {
+    "palabra": "HTTP",
+    "inicio": 277.6,
+    "fin": 278.32,
+    "escena_id": 23
+  },
+  {
+    "palabra": "lo",
+    "inicio": 278.32,
+    "fin": 279.02,
+    "escena_id": 23
+  },
+  {
+    "palabra": "un",
+    "inicio": 279.02,
+    "fin": 279.16,
+    "escena_id": 23
+  },
+  {
+    "palabra": "polling,",
+    "inicio": 279.16,
+    "fin": 279.48,
+    "escena_id": 23
+  },
+  {
+    "palabra": "la",
+    "inicio": 279.88,
+    "fin": 279.96,
+    "escena_id": 24
+  },
+  {
+    "palabra": "arquitectura",
+    "inicio": 279.96,
+    "fin": 280.58,
+    "escena_id": 24
+  },
+  {
+    "palabra": "de",
+    "inicio": 280.58,
+    "fin": 280.76,
+    "escena_id": 24
+  },
+  {
+    "palabra": "cliente",
+    "inicio": 280.76,
+    "fin": 281.16,
+    "escena_id": 24
+  },
+  {
+    "palabra": "rico",
+    "inicio": 281.16,
+    "fin": 281.4,
+    "escena_id": 24
+  },
+  {
+    "palabra": "thick",
+    "inicio": 281.4,
+    "fin": 281.74,
+    "escena_id": 24
+  },
+  {
+    "palabra": "client",
+    "inicio": 281.74,
+    "fin": 282.22,
+    "escena_id": 24
+  },
+  {
+    "palabra": "reducía",
+    "inicio": 282.22,
+    "fin": 283.16,
+    "escena_id": 24
+  },
+  {
+    "palabra": "la",
+    "inicio": 283.16,
+    "fin": 283.38,
+    "escena_id": 24
+  },
+  {
+    "palabra": "latencia",
+    "inicio": 283.38,
+    "fin": 283.76,
+    "escena_id": 24
+  },
+  {
+    "palabra": "percibida",
+    "inicio": 283.76,
+    "fin": 284.34,
+    "escena_id": 24
+  },
+  {
+    "palabra": "porque",
+    "inicio": 284.34,
+    "fin": 284.6,
+    "escena_id": 24
+  },
+  {
+    "palabra": "las",
+    "inicio": 284.6,
+    "fin": 284.78,
+    "escena_id": 24
+  },
+  {
+    "palabra": "operaciones",
+    "inicio": 284.78,
+    "fin": 285.26,
+    "escena_id": 24
+  },
+  {
+    "palabra": "de",
+    "inicio": 285.26,
+    "fin": 285.5,
+    "escena_id": 24
+  },
+  {
+    "palabra": "edición",
+    "inicio": 285.5,
+    "fin": 285.86,
+    "escena_id": 24
+  },
+  {
+    "palabra": "se",
+    "inicio": 285.86,
+    "fin": 286.02,
+    "escena_id": 24
+  },
+  {
+    "palabra": "reflejaban",
+    "inicio": 286.02,
+    "fin": 286.56,
+    "escena_id": 24
+  },
+  {
+    "palabra": "localmente",
+    "inicio": 286.56,
+    "fin": 287.22,
+    "escena_id": 24
+  },
+  {
+    "palabra": "antes",
+    "inicio": 287.22,
+    "fin": 287.44,
+    "escena_id": 24
+  },
+  {
+    "palabra": "de",
+    "inicio": 287.44,
+    "fin": 287.56,
+    "escena_id": 24
+  },
+  {
+    "palabra": "confirmarse",
+    "inicio": 287.56,
+    "fin": 288.1,
+    "escena_id": 24
+  },
+  {
+    "palabra": "en",
+    "inicio": 288.1,
+    "fin": 288.24,
+    "escena_id": 24
+  },
+  {
+    "palabra": "el",
+    "inicio": 288.24,
+    "fin": 288.32,
+    "escena_id": 24
+  },
+  {
+    "palabra": "servidor,",
+    "inicio": 288.32,
+    "fin": 288.8,
+    "escena_id": 24
+  },
+  {
+    "palabra": "era",
+    "inicio": 289.08,
+    "fin": 289.54,
+    "escena_id": 24
+  },
+  {
+    "palabra": "la",
+    "inicio": 289.54,
+    "fin": 289.66,
+    "escena_id": 24
+  },
+  {
+    "palabra": "misma",
+    "inicio": 289.66,
+    "fin": 289.94,
+    "escena_id": 24
+  },
+  {
+    "palabra": "filosofía",
+    "inicio": 289.94,
+    "fin": 290.56,
+    "escena_id": 24
+  },
+  {
+    "palabra": "que",
+    "inicio": 290.56,
+    "fin": 290.72,
+    "escena_id": 24
+  },
+  {
+    "palabra": "haría",
+    "inicio": 290.72,
+    "fin": 290.9,
+    "escena_id": 24
+  },
+  {
+    "palabra": "famoso",
+    "inicio": 290.9,
+    "fin": 291.3,
+    "escena_id": 24
+  },
+  {
+    "palabra": "a",
+    "inicio": 291.3,
+    "fin": 291.44,
+    "escena_id": 24
+  },
+  {
+    "palabra": "Jamal",
+    "inicio": 291.44,
+    "fin": 291.76,
+    "escena_id": 24
+  },
+  {
+    "palabra": "procesar",
+    "inicio": 291.76,
+    "fin": 292.38,
+    "escena_id": 24
+  },
+  {
+    "palabra": "en",
+    "inicio": 292.38,
+    "fin": 292.54,
+    "escena_id": 24
+  },
+  {
+    "palabra": "el",
+    "inicio": 292.54,
+    "fin": 292.68,
+    "escena_id": 24
+  },
+  {
+    "palabra": "navegador",
+    "inicio": 292.68,
+    "fin": 293.14,
+    "escena_id": 24
+  },
+  {
+    "palabra": "para",
+    "inicio": 293.14,
+    "fin": 293.38,
+    "escena_id": 24
+  },
+  {
+    "palabra": "parecer",
+    "inicio": 293.38,
+    "fin": 293.74,
+    "escena_id": 24
+  },
+  {
+    "palabra": "más",
+    "inicio": 293.74,
+    "fin": 293.96,
+    "escena_id": 24
+  },
+  {
+    "palabra": "rápido,",
+    "inicio": 293.96,
+    "fin": 294.4,
+    "escena_id": 24
+  },
+  {
+    "palabra": "en",
+    "inicio": 294.7,
+    "fin": 294.84,
+    "escena_id": 25
+  },
+  {
+    "palabra": "2009",
+    "inicio": 294.84,
+    "fin": 295.44,
+    "escena_id": 25
+  },
+  {
+    "palabra": "e8",
+    "inicio": 295.44,
+    "fin": 296.2,
+    "escena_id": 25
+  },
+  {
+    "palabra": "de",
+    "inicio": 296.2,
+    "fin": 296.4,
+    "escena_id": 25
+  },
+  {
+    "palabra": "Chrome",
+    "inicio": 296.4,
+    "fin": 296.66,
+    "escena_id": 25
+  },
+  {
+    "palabra": "tenía",
+    "inicio": 296.66,
+    "fin": 297.04,
+    "escena_id": 25
+  },
+  {
+    "palabra": "6",
+    "inicio": 297.04,
+    "fin": 297.38,
+    "escena_id": 25
+  },
+  {
+    "palabra": "meses",
+    "inicio": 297.38,
+    "fin": 297.66,
+    "escena_id": 25
+  },
+  {
+    "palabra": "de",
+    "inicio": 297.66,
+    "fin": 297.92,
+    "escena_id": 25
+  },
+  {
+    "palabra": "vida,",
+    "inicio": 297.92,
+    "fin": 298.2,
+    "escena_id": 25
+  },
+  {
+    "palabra": "Firefox",
+    "inicio": 298.58,
+    "fin": 298.78,
+    "escena_id": 25
+  },
+  {
+    "palabra": "ejecutaba",
+    "inicio": 298.78,
+    "fin": 299.56,
+    "escena_id": 25
+  },
+  {
+    "palabra": "JavaScript",
+    "inicio": 299.56,
+    "fin": 300.1,
+    "escena_id": 25
+  },
+  {
+    "palabra": "como",
+    "inicio": 300.1,
+    "fin": 300.54,
+    "escena_id": 25
+  },
+  {
+    "palabra": "un",
+    "inicio": 300.54,
+    "fin": 300.72,
+    "escena_id": 25
+  },
+  {
+    "palabra": "interpretes",
+    "inicio": 300.72,
+    "fin": 301.4,
+    "escena_id": 25
+  },
+  {
+    "palabra": "ingit",
+    "inicio": 301.4,
+    "fin": 301.76,
+    "escena_id": 25
+  },
+  {
+    "palabra": "estable,",
+    "inicio": 301.76,
+    "fin": 302.26,
+    "escena_id": 25
+  },
+  {
+    "palabra": "el",
+    "inicio": 303.06,
+    "fin": 303.22,
+    "escena_id": 25
+  },
+  {
+    "palabra": "cliente",
+    "inicio": 303.22,
+    "fin": 303.66,
+    "escena_id": 25
+  },
+  {
+    "palabra": "de",
+    "inicio": 303.66,
+    "fin": 303.78,
+    "escena_id": 25
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 303.78,
+    "fin": 303.96,
+    "escena_id": 25
+  },
+  {
+    "palabra": "llegaba",
+    "inicio": 303.96,
+    "fin": 304.44,
+    "escena_id": 25
+  },
+  {
+    "palabra": "a",
+    "inicio": 304.44,
+    "fin": 304.54,
+    "escena_id": 25
+  },
+  {
+    "palabra": "descargar",
+    "inicio": 304.54,
+    "fin": 304.94,
+    "escena_id": 25
+  },
+  {
+    "palabra": "entre",
+    "inicio": 304.94,
+    "fin": 305.28,
+    "escena_id": 25
+  },
+  {
+    "palabra": "UNO",
+    "inicio": 305.28,
+    "fin": 305.78,
+    "escena_id": 25
+  },
+  {
+    "palabra": "punto",
+    "inicio": 305.78,
+    "fin": 306.0,
+    "escena_id": 25
+  },
+  {
+    "palabra": "CINNC,",
+    "inicio": 306.0,
+    "fin": 306.96,
+    "escena_id": 25
+  },
+  {
+    "palabra": "omegasidOS",
+    "inicio": 307.1,
+    "fin": 307.84,
+    "escena_id": 25
+  },
+  {
+    "palabra": "punto",
+    "inicio": 307.84,
+    "fin": 308.3,
+    "escena_id": 25
+  },
+  {
+    "palabra": "bueno",
+    "inicio": 308.3,
+    "fin": 308.54,
+    "escena_id": 25
+  },
+  {
+    "palabra": "omegas",
+    "inicio": 308.54,
+    "fin": 309.06,
+    "escena_id": 25
+  },
+  {
+    "palabra": "de",
+    "inicio": 309.06,
+    "fin": 309.14,
+    "escena_id": 25
+  },
+  {
+    "palabra": "JavaScript",
+    "inicio": 309.14,
+    "fin": 309.44,
+    "escena_id": 25
+  },
+  {
+    "palabra": "minificado",
+    "inicio": 309.44,
+    "fin": 310.34,
+    "escena_id": 25
+  },
+  {
+    "palabra": "antes",
+    "inicio": 310.34,
+    "fin": 310.6,
+    "escena_id": 25
+  },
+  {
+    "palabra": "de",
+    "inicio": 310.6,
+    "fin": 310.74,
+    "escena_id": 25
+  },
+  {
+    "palabra": "renderizar",
+    "inicio": 310.74,
+    "fin": 311.3,
+    "escena_id": 25
+  },
+  {
+    "palabra": "la",
+    "inicio": 311.3,
+    "fin": 311.48,
+    "escena_id": 25
+  },
+  {
+    "palabra": "primera",
+    "inicio": 311.48,
+    "fin": 311.72,
+    "escena_id": 25
+  },
+  {
+    "palabra": "pantalla,",
+    "inicio": 311.72,
+    "fin": 312.36,
+    "escena_id": 25
+  },
+  {
+    "palabra": "en",
+    "inicio": 312.7,
+    "fin": 312.8,
+    "escena_id": 26
+  },
+  {
+    "palabra": "la",
+    "inicio": 312.8,
+    "fin": 312.92,
+    "escena_id": 26
+  },
+  {
+    "palabra": "máquina",
+    "inicio": 312.92,
+    "fin": 313.18,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 313.18,
+    "fin": 313.38,
+    "escena_id": 26
+  },
+  {
+    "palabra": "escritorio",
+    "inicio": 313.38,
+    "fin": 313.88,
+    "escena_id": 26
+  },
+  {
+    "palabra": "promedio",
+    "inicio": 313.88,
+    "fin": 314.34,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 314.34,
+    "fin": 314.44,
+    "escena_id": 26
+  },
+  {
+    "palabra": "2009,",
+    "inicio": 314.44,
+    "fin": 315.04,
+    "escena_id": 26
+  },
+  {
+    "palabra": "con",
+    "inicio": 315.66,
+    "fin": 315.74,
+    "escena_id": 26
+  },
+  {
+    "palabra": "un",
+    "inicio": 315.74,
+    "fin": 315.92,
+    "escena_id": 26
+  },
+  {
+    "palabra": "procesador",
+    "inicio": 315.92,
+    "fin": 316.46,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 316.46,
+    "fin": 316.62,
+    "escena_id": 26
+  },
+  {
+    "palabra": "un",
+    "inicio": 316.62,
+    "fin": 316.74,
+    "escena_id": 26
+  },
+  {
+    "palabra": "núcleo",
+    "inicio": 316.74,
+    "fin": 317.06,
+    "escena_id": 26
+  },
+  {
+    "palabra": "a",
+    "inicio": 317.06,
+    "fin": 317.12,
+    "escena_id": 26
+  },
+  {
+    "palabra": "2",
+    "inicio": 317.12,
+    "fin": 317.3,
+    "escena_id": 26
+  },
+  {
+    "palabra": "GHz",
+    "inicio": 317.3,
+    "fin": 317.68,
+    "escena_id": 26
+  },
+  {
+    "palabra": "y",
+    "inicio": 317.68,
+    "fin": 317.98,
+    "escena_id": 26
+  },
+  {
+    "palabra": "1",
+    "inicio": 317.98,
+    "fin": 318.08,
+    "escena_id": 26
+  },
+  {
+    "palabra": "GHz",
+    "inicio": 318.08,
+    "fin": 318.5,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 318.5,
+    "fin": 318.62,
+    "escena_id": 26
+  },
+  {
+    "palabra": "RA",
+    "inicio": 318.62,
+    "fin": 318.96,
+    "escena_id": 26
+  },
+  {
+    "palabra": "milésima,",
+    "inicio": 318.96,
+    "fin": 319.6,
+    "escena_id": 26
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 320.08,
+    "fin": 320.32,
+    "escena_id": 26
+  },
+  {
+    "palabra": "consumía",
+    "inicio": 320.32,
+    "fin": 320.84,
+    "escena_id": 26
+  },
+  {
+    "palabra": "el",
+    "inicio": 320.84,
+    "fin": 320.98,
+    "escena_id": 26
+  },
+  {
+    "palabra": "100",
+    "inicio": 320.98,
+    "fin": 321.08,
+    "escena_id": 26
+  },
+  {
+    "palabra": "%",
+    "inicio": 321.08,
+    "fin": 321.64,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 321.64,
+    "fin": 321.78,
+    "escena_id": 26
+  },
+  {
+    "palabra": "un",
+    "inicio": 321.78,
+    "fin": 321.88,
+    "escena_id": 26
+  },
+  {
+    "palabra": "núcleo",
+    "inicio": 321.88,
+    "fin": 322.22,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 322.22,
+    "fin": 322.32,
+    "escena_id": 26
+  },
+  {
+    "palabra": "sentésima",
+    "inicio": 322.32,
+    "fin": 322.84,
+    "escena_id": 26
+  },
+  {
+    "palabra": "pego",
+    "inicio": 322.84,
+    "fin": 323.12,
+    "escena_id": 26
+  },
+  {
+    "palabra": "durante",
+    "inicio": 323.12,
+    "fin": 323.48,
+    "escena_id": 26
+  },
+  {
+    "palabra": "la",
+    "inicio": 323.48,
+    "fin": 323.66,
+    "escena_id": 26
+  },
+  {
+    "palabra": "sincronización",
+    "inicio": 323.66,
+    "fin": 324.24,
+    "escena_id": 26
+  },
+  {
+    "palabra": "inicial",
+    "inicio": 324.24,
+    "fin": 324.78,
+    "escena_id": 26
+  },
+  {
+    "palabra": "y",
+    "inicio": 324.78,
+    "fin": 325.28,
+    "escena_id": 26
+  },
+  {
+    "palabra": "entre",
+    "inicio": 325.28,
+    "fin": 325.48,
+    "escena_id": 26
+  },
+  {
+    "palabra": "el",
+    "inicio": 325.48,
+    "fin": 325.58,
+    "escena_id": 26
+  },
+  {
+    "palabra": "30",
+    "inicio": 325.58,
+    "fin": 325.86,
+    "escena_id": 26
+  },
+  {
+    "palabra": "%",
+    "inicio": 325.86,
+    "fin": 326.2,
+    "escena_id": 26
+  },
+  {
+    "palabra": "y",
+    "inicio": 326.2,
+    "fin": 326.4,
+    "escena_id": 26
+  },
+  {
+    "palabra": "el",
+    "inicio": 326.4,
+    "fin": 326.48,
+    "escena_id": 26
+  },
+  {
+    "palabra": "60",
+    "inicio": 326.48,
+    "fin": 326.8,
+    "escena_id": 26
+  },
+  {
+    "palabra": "%",
+    "inicio": 326.8,
+    "fin": 327.22,
+    "escena_id": 26
+  },
+  {
+    "palabra": "de",
+    "inicio": 327.22,
+    "fin": 327.42,
+    "escena_id": 26
+  },
+  {
+    "palabra": "forma",
+    "inicio": 327.42,
+    "fin": 327.68,
+    "escena_id": 26
+  },
+  {
+    "palabra": "sostenida",
+    "inicio": 327.68,
+    "fin": 328.32,
+    "escena_id": 26
+  },
+  {
+    "palabra": "durante",
+    "inicio": 328.32,
+    "fin": 328.94,
+    "escena_id": 26
+  },
+  {
+    "palabra": "el",
+    "inicio": 328.94,
+    "fin": 329.22,
+    "escena_id": 27
+  },
+  {
+    "palabra": "uso",
+    "inicio": 329.22,
+    "fin": 329.38,
+    "escena_id": 27
+  },
+  {
+    "palabra": "normal,",
+    "inicio": 329.38,
+    "fin": 329.86,
+    "escena_id": 27
+  },
+  {
+    "palabra": "el",
+    "inicio": 330.14,
+    "fin": 330.96,
+    "escena_id": 27
+  },
+  {
+    "palabra": "navegador",
+    "inicio": 330.96,
+    "fin": 331.46,
+    "escena_id": 27
+  },
+  {
+    "palabra": "se",
+    "inicio": 331.46,
+    "fin": 331.68,
+    "escena_id": 27
+  },
+  {
+    "palabra": "congelaba",
+    "inicio": 331.68,
+    "fin": 332.22,
+    "escena_id": 27
+  },
+  {
+    "palabra": "de",
+    "inicio": 332.22,
+    "fin": 332.4,
+    "escena_id": 27
+  },
+  {
+    "palabra": "forma",
+    "inicio": 332.4,
+    "fin": 332.7,
+    "escena_id": 27
+  },
+  {
+    "palabra": "perceptible",
+    "inicio": 332.7,
+    "fin": 333.4,
+    "escena_id": 27
+  },
+  {
+    "palabra": "al",
+    "inicio": 333.4,
+    "fin": 333.54,
+    "escena_id": 27
+  },
+  {
+    "palabra": "abrir",
+    "inicio": 333.54,
+    "fin": 333.78,
+    "escena_id": 27
+  },
+  {
+    "palabra": "waves",
+    "inicio": 333.78,
+    "fin": 334.26,
+    "escena_id": 27
+  },
+  {
+    "palabra": "con",
+    "inicio": 334.26,
+    "fin": 334.48,
+    "escena_id": 27
+  },
+  {
+    "palabra": "más",
+    "inicio": 334.48,
+    "fin": 334.66,
+    "escena_id": 27
+  },
+  {
+    "palabra": "de",
+    "inicio": 334.66,
+    "fin": 334.78,
+    "escena_id": 27
+  },
+  {
+    "palabra": "50",
+    "inicio": 334.78,
+    "fin": 335.06,
+    "escena_id": 27
+  },
+  {
+    "palabra": "mensajes",
+    "inicio": 335.06,
+    "fin": 335.58,
+    "escena_id": 27
+  },
+  {
+    "palabra": "en",
+    "inicio": 335.58,
+    "fin": 335.8,
+    "escena_id": 27
+  },
+  {
+    "palabra": "el",
+    "inicio": 335.8,
+    "fin": 335.94,
+    "escena_id": 27
+  },
+  {
+    "palabra": "historial,",
+    "inicio": 335.94,
+    "fin": 336.46,
+    "escena_id": 27
+  },
+  {
+    "palabra": "las",
+    "inicio": 336.76,
+    "fin": 337.24,
+    "escena_id": 28
+  },
+  {
+    "palabra": "métricas",
+    "inicio": 337.24,
+    "fin": 337.76,
+    "escena_id": 28
+  },
+  {
+    "palabra": "de",
+    "inicio": 337.76,
+    "fin": 337.86,
+    "escena_id": 28
+  },
+  {
+    "palabra": "abandono",
+    "inicio": 337.86,
+    "fin": 338.36,
+    "escena_id": 28
+  },
+  {
+    "palabra": "durante",
+    "inicio": 338.36,
+    "fin": 338.66,
+    "escena_id": 28
+  },
+  {
+    "palabra": "el",
+    "inicio": 338.66,
+    "fin": 338.86,
+    "escena_id": 28
+  },
+  {
+    "palabra": "onboarding",
+    "inicio": 338.86,
+    "fin": 339.32,
+    "escena_id": 28
+  },
+  {
+    "palabra": "eran",
+    "inicio": 339.32,
+    "fin": 339.52,
+    "escena_id": 28
+  },
+  {
+    "palabra": "devastadoras,",
+    "inicio": 339.52,
+    "fin": 340.68,
+    "escena_id": 28
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 340.86,
+    "fin": 341.42,
+    "escena_id": 28
+  },
+  {
+    "palabra": "con",
+    "inicio": 341.42,
+    "fin": 341.64,
+    "escena_id": 28
+  },
+  {
+    "palabra": "hardware",
+    "inicio": 341.64,
+    "fin": 341.98,
+    "escena_id": 28
+  },
+  {
+    "palabra": "moderno",
+    "inicio": 341.98,
+    "fin": 342.56,
+    "escena_id": 28
+  },
+  {
+    "palabra": "para",
+    "inicio": 342.56,
+    "fin": 342.76,
+    "escena_id": 28
+  },
+  {
+    "palabra": "la",
+    "inicio": 342.76,
+    "fin": 342.92,
+    "escena_id": 28
+  },
+  {
+    "palabra": "época",
+    "inicio": 342.92,
+    "fin": 343.16,
+    "escena_id": 28
+  },
+  {
+    "palabra": "reportaban",
+    "inicio": 343.16,
+    "fin": 343.9,
+    "escena_id": 28
+  },
+  {
+    "palabra": "tiempos",
+    "inicio": 343.9,
+    "fin": 344.36,
+    "escena_id": 28
+  },
+  {
+    "palabra": "de",
+    "inicio": 344.36,
+    "fin": 344.46,
+    "escena_id": 28
+  },
+  {
+    "palabra": "carga",
+    "inicio": 344.46,
+    "fin": 344.64,
+    "escena_id": 28
+  },
+  {
+    "palabra": "iniciales",
+    "inicio": 344.64,
+    "fin": 345.36,
+    "escena_id": 28
+  },
+  {
+    "palabra": "superiores",
+    "inicio": 345.36,
+    "fin": 345.78,
+    "escena_id": 28
+  },
+  {
+    "palabra": "a",
+    "inicio": 345.78,
+    "fin": 345.96,
+    "escena_id": 28
+  },
+  {
+    "palabra": "los",
+    "inicio": 345.96,
+    "fin": 346.08,
+    "escena_id": 28
+  },
+  {
+    "palabra": "15",
+    "inicio": 346.08,
+    "fin": 346.34,
+    "escena_id": 28
+  },
+  {
+    "palabra": "segundos",
+    "inicio": 346.34,
+    "fin": 346.82,
+    "escena_id": 28
+  },
+  {
+    "palabra": "en",
+    "inicio": 346.82,
+    "fin": 347.02,
+    "escena_id": 28
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 347.02,
+    "fin": 347.48,
+    "escena_id": 28
+  },
+  {
+    "palabra": "de",
+    "inicio": 347.48,
+    "fin": 347.7,
+    "escena_id": 28
+  },
+  {
+    "palabra": "banda",
+    "inicio": 347.7,
+    "fin": 347.96,
+    "escena_id": 28
+  },
+  {
+    "palabra": "en",
+    "inicio": 348.39,
+    "fin": 348.78,
+    "escena_id": 28
+  },
+  {
+    "palabra": "pruebas",
+    "inicio": 348.78,
+    "fin": 349.18,
+    "escena_id": 29
+  },
+  {
+    "palabra": "controladas",
+    "inicio": 349.18,
+    "fin": 349.82,
+    "escena_id": 29
+  },
+  {
+    "palabra": "el",
+    "inicio": 349.82,
+    "fin": 350.04,
+    "escena_id": 29
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 350.04,
+    "fin": 350.34,
+    "escena_id": 29
+  },
+  {
+    "palabra": "hasta",
+    "inicio": 350.34,
+    "fin": 350.54,
+    "escena_id": 29
+  },
+  {
+    "palabra": "primer",
+    "inicio": 350.54,
+    "fin": 350.88,
+    "escena_id": 29
+  },
+  {
+    "palabra": "mensaje",
+    "inicio": 350.88,
+    "fin": 351.4,
+    "escena_id": 29
+  },
+  {
+    "palabra": "elegible",
+    "inicio": 351.4,
+    "fin": 351.98,
+    "escena_id": 29
+  },
+  {
+    "palabra": "TTF",
+    "inicio": 351.98,
+    "fin": 352.54,
+    "escena_id": 29
+  },
+  {
+    "palabra": "MR",
+    "inicio": 352.54,
+    "fin": 353.12,
+    "escena_id": 29
+  },
+  {
+    "palabra": "analogo",
+    "inicio": 353.12,
+    "fin": 354.1,
+    "escena_id": 29
+  },
+  {
+    "palabra": "al",
+    "inicio": 354.1,
+    "fin": 354.32,
+    "escena_id": 29
+  },
+  {
+    "palabra": "modern",
+    "inicio": 354.32,
+    "fin": 354.6,
+    "escena_id": 29
+  },
+  {
+    "palabra": "time",
+    "inicio": 354.6,
+    "fin": 354.98,
+    "escena_id": 29
+  },
+  {
+    "palabra": "to",
+    "inicio": 354.98,
+    "fin": 355.14,
+    "escena_id": 29
+  },
+  {
+    "palabra": "interactive",
+    "inicio": 355.14,
+    "fin": 355.68,
+    "escena_id": 29
+  },
+  {
+    "palabra": "era",
+    "inicio": 355.68,
+    "fin": 356.46,
+    "escena_id": 29
+  },
+  {
+    "palabra": "de",
+    "inicio": 356.46,
+    "fin": 356.64,
+    "escena_id": 29
+  },
+  {
+    "palabra": "12",
+    "inicio": 356.64,
+    "fin": 356.92,
+    "escena_id": 29
+  },
+  {
+    "palabra": "a",
+    "inicio": 356.92,
+    "fin": 357.06,
+    "escena_id": 29
+  },
+  {
+    "palabra": "18",
+    "inicio": 357.06,
+    "fin": 357.54,
+    "escena_id": 29
+  },
+  {
+    "palabra": "segundos,",
+    "inicio": 357.54,
+    "fin": 358.1,
+    "escena_id": 29
+  },
+  {
+    "palabra": "ningún",
+    "inicio": 358.48,
+    "fin": 358.86,
+    "escena_id": 29
+  },
+  {
+    "palabra": "usuario",
+    "inicio": 358.86,
+    "fin": 359.48,
+    "escena_id": 29
+  },
+  {
+    "palabra": "con",
+    "inicio": 359.48,
+    "fin": 359.68,
+    "escena_id": 29
+  },
+  {
+    "palabra": "una",
+    "inicio": 359.68,
+    "fin": 359.88,
+    "escena_id": 29
+  },
+  {
+    "palabra": "alternativa",
+    "inicio": 359.88,
+    "fin": 360.42,
+    "escena_id": 29
+  },
+  {
+    "palabra": "viable",
+    "inicio": 360.42,
+    "fin": 360.66,
+    "escena_id": 29
+  },
+  {
+    "palabra": "esperaba",
+    "inicio": 360.66,
+    "fin": 361.22,
+    "escena_id": 29
+  },
+  {
+    "palabra": "18",
+    "inicio": 361.22,
+    "fin": 361.62,
+    "escena_id": 29
+  },
+  {
+    "palabra": "segundos",
+    "inicio": 361.62,
+    "fin": 362.2,
+    "escena_id": 29
+  },
+  {
+    "palabra": "para",
+    "inicio": 362.2,
+    "fin": 362.46,
+    "escena_id": 29
+  },
+  {
+    "palabra": "leer",
+    "inicio": 362.46,
+    "fin": 362.66,
+    "escena_id": 29
+  },
+  {
+    "palabra": "un",
+    "inicio": 362.66,
+    "fin": 362.82,
+    "escena_id": 29
+  },
+  {
+    "palabra": "correo,",
+    "inicio": 362.82,
+    "fin": 363.26,
+    "escena_id": 29
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 363.5,
+    "fin": 363.94,
+    "escena_id": 30
+  },
+  {
+    "palabra": "4,",
+    "inicio": 363.94,
+    "fin": 364.38,
+    "escena_id": 30
+  },
+  {
+    "palabra": "la",
+    "inicio": 364.94,
+    "fin": 365.16,
+    "escena_id": 30
+  },
+  {
+    "palabra": "federación",
+    "inicio": 365.16,
+    "fin": 365.7,
+    "escena_id": 30
+  },
+  {
+    "palabra": "abierta",
+    "inicio": 365.7,
+    "fin": 366.16,
+    "escena_id": 30
+  },
+  {
+    "palabra": "como",
+    "inicio": 366.16,
+    "fin": 366.38,
+    "escena_id": 30
+  },
+  {
+    "palabra": "promesa",
+    "inicio": 366.38,
+    "fin": 366.8,
+    "escena_id": 30
+  },
+  {
+    "palabra": "diferida,",
+    "inicio": 366.8,
+    "fin": 367.44,
+    "escena_id": 30
+  },
+  {
+    "palabra": "la",
+    "inicio": 367.74,
+    "fin": 367.84,
+    "escena_id": 31
+  },
+  {
+    "palabra": "federación",
+    "inicio": 367.84,
+    "fin": 368.44,
+    "escena_id": 31
+  },
+  {
+    "palabra": "es",
+    "inicio": 368.44,
+    "fin": 368.64,
+    "escena_id": 31
+  },
+  {
+    "palabra": "la",
+    "inicio": 368.64,
+    "fin": 368.76,
+    "escena_id": 31
+  },
+  {
+    "palabra": "capacidad",
+    "inicio": 368.76,
+    "fin": 369.12,
+    "escena_id": 31
+  },
+  {
+    "palabra": "de",
+    "inicio": 369.12,
+    "fin": 369.5,
+    "escena_id": 31
+  },
+  {
+    "palabra": "un",
+    "inicio": 369.5,
+    "fin": 369.62,
+    "escena_id": 31
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 369.62,
+    "fin": 370.34,
+    "escena_id": 31
+  },
+  {
+    "palabra": "para",
+    "inicio": 370.34,
+    "fin": 370.56,
+    "escena_id": 31
+  },
+  {
+    "palabra": "que",
+    "inicio": 370.56,
+    "fin": 370.7,
+    "escena_id": 31
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 370.7,
+    "fin": 371.2,
+    "escena_id": 31
+  },
+  {
+    "palabra": "de",
+    "inicio": 371.2,
+    "fin": 371.42,
+    "escena_id": 31
+  },
+  {
+    "palabra": "distintas",
+    "inicio": 371.42,
+    "fin": 371.88,
+    "escena_id": 31
+  },
+  {
+    "palabra": "organizaciones",
+    "inicio": 371.88,
+    "fin": 372.54,
+    "escena_id": 31
+  },
+  {
+    "palabra": "se",
+    "inicio": 372.54,
+    "fin": 372.76,
+    "escena_id": 31
+  },
+  {
+    "palabra": "comuniquen",
+    "inicio": 372.76,
+    "fin": 373.24,
+    "escena_id": 31
+  },
+  {
+    "palabra": "directamente",
+    "inicio": 373.24,
+    "fin": 373.64,
+    "escena_id": 31
+  },
+  {
+    "palabra": "como",
+    "inicio": 373.64,
+    "fin": 374.18,
+    "escena_id": 31
+  },
+  {
+    "palabra": "el",
+    "inicio": 374.18,
+    "fin": 374.32,
+    "escena_id": 31
+  },
+  {
+    "palabra": "correo",
+    "inicio": 374.32,
+    "fin": 374.64,
+    "escena_id": 31
+  },
+  {
+    "palabra": "electrónico,",
+    "inicio": 374.64,
+    "fin": 375.26,
+    "escena_id": 31
+  },
+  {
+    "palabra": "el",
+    "inicio": 375.52,
+    "fin": 375.66,
+    "escena_id": 32
+  },
+  {
+    "palabra": "diseño",
+    "inicio": 375.66,
+    "fin": 376.02,
+    "escena_id": 32
+  },
+  {
+    "palabra": "original",
+    "inicio": 376.02,
+    "fin": 376.4,
+    "escena_id": 32
+  },
+  {
+    "palabra": "de",
+    "inicio": 376.4,
+    "fin": 376.66,
+    "escena_id": 32
+  },
+  {
+    "palabra": "wave",
+    "inicio": 376.66,
+    "fin": 376.86,
+    "escena_id": 32
+  },
+  {
+    "palabra": "especificaba",
+    "inicio": 376.86,
+    "fin": 377.8,
+    "escena_id": 32
+  },
+  {
+    "palabra": "que",
+    "inicio": 377.8,
+    "fin": 377.96,
+    "escena_id": 32
+  },
+  {
+    "palabra": "cualquier",
+    "inicio": 377.96,
+    "fin": 378.26,
+    "escena_id": 32
+  },
+  {
+    "palabra": "organización",
+    "inicio": 378.26,
+    "fin": 379.02,
+    "escena_id": 32
+  },
+  {
+    "palabra": "podría",
+    "inicio": 379.02,
+    "fin": 379.38,
+    "escena_id": 32
+  },
+  {
+    "palabra": "correr",
+    "inicio": 379.38,
+    "fin": 379.7,
+    "escena_id": 32
+  },
+  {
+    "palabra": "su",
+    "inicio": 379.7,
+    "fin": 379.9,
+    "escena_id": 32
+  },
+  {
+    "palabra": "propio",
+    "inicio": 379.9,
+    "fin": 380.18,
+    "escena_id": 32
+  },
+  {
+    "palabra": "servidor",
+    "inicio": 380.18,
+    "fin": 380.64,
+    "escena_id": 32
+  },
+  {
+    "palabra": "de",
+    "inicio": 380.64,
+    "fin": 380.82,
+    "escena_id": 32
+  },
+  {
+    "palabra": "wave",
+    "inicio": 380.82,
+    "fin": 381.06,
+    "escena_id": 32
+  },
+  {
+    "palabra": "y",
+    "inicio": 381.06,
+    "fin": 381.26,
+    "escena_id": 32
+  },
+  {
+    "palabra": "que",
+    "inicio": 381.26,
+    "fin": 381.36,
+    "escena_id": 32
+  },
+  {
+    "palabra": "los",
+    "inicio": 381.36,
+    "fin": 381.5,
+    "escena_id": 32
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 381.5,
+    "fin": 382.0,
+    "escena_id": 32
+  },
+  {
+    "palabra": "de",
+    "inicio": 382.0,
+    "fin": 382.18,
+    "escena_id": 32
+  },
+  {
+    "palabra": "diferentes",
+    "inicio": 382.18,
+    "fin": 382.64,
+    "escena_id": 32
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 382.64,
+    "fin": 383.12,
+    "escena_id": 32
+  },
+  {
+    "palabra": "podrían",
+    "inicio": 383.12,
+    "fin": 383.66,
+    "escena_id": 32
+  },
+  {
+    "palabra": "colaborar",
+    "inicio": 383.66,
+    "fin": 384.16,
+    "escena_id": 32
+  },
+  {
+    "palabra": "sin",
+    "inicio": 384.16,
+    "fin": 384.36,
+    "escena_id": 32
+  },
+  {
+    "palabra": "fricciones,",
+    "inicio": 384.36,
+    "fin": 384.92,
+    "escena_id": 32
+  },
+  {
+    "palabra": "era",
+    "inicio": 385.16,
+    "fin": 385.32,
+    "escena_id": 32
+  },
+  {
+    "palabra": "en",
+    "inicio": 385.32,
+    "fin": 385.86,
+    "escena_id": 32
+  },
+  {
+    "palabra": "papel",
+    "inicio": 385.86,
+    "fin": 386.2,
+    "escena_id": 32
+  },
+  {
+    "palabra": "el",
+    "inicio": 386.2,
+    "fin": 386.8,
+    "escena_id": 32
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 386.8,
+    "fin": 387.36,
+    "escena_id": 32
+  },
+  {
+    "palabra": "abierto",
+    "inicio": 387.36,
+    "fin": 387.64,
+    "escena_id": 32
+  },
+  {
+    "palabra": "que",
+    "inicio": 387.64,
+    "fin": 387.86,
+    "escena_id": 32
+  },
+  {
+    "palabra": "reemplazaría",
+    "inicio": 387.86,
+    "fin": 388.46,
+    "escena_id": 32
+  },
+  {
+    "palabra": "el",
+    "inicio": 388.46,
+    "fin": 388.6,
+    "escena_id": 32
+  },
+  {
+    "palabra": "email,",
+    "inicio": 388.6,
+    "fin": 388.9,
+    "escena_id": 32
+  },
+  {
+    "palabra": "la",
+    "inicio": 389.28,
+    "fin": 389.36,
+    "escena_id": 33
+  },
+  {
+    "palabra": "federación",
+    "inicio": 389.36,
+    "fin": 389.9,
+    "escena_id": 33
+  },
+  {
+    "palabra": "era",
+    "inicio": 389.9,
+    "fin": 390.18,
+    "escena_id": 33
+  },
+  {
+    "palabra": "la",
+    "inicio": 390.18,
+    "fin": 390.32,
+    "escena_id": 33
+  },
+  {
+    "palabra": "propuesta",
+    "inicio": 390.32,
+    "fin": 390.82,
+    "escena_id": 33
+  },
+  {
+    "palabra": "de",
+    "inicio": 390.82,
+    "fin": 391.0,
+    "escena_id": 33
+  },
+  {
+    "palabra": "valor",
+    "inicio": 391.0,
+    "fin": 391.28,
+    "escena_id": 33
+  },
+  {
+    "palabra": "de",
+    "inicio": 391.28,
+    "fin": 391.48,
+    "escena_id": 33
+  },
+  {
+    "palabra": "largo",
+    "inicio": 391.48,
+    "fin": 391.8,
+    "escena_id": 33
+  },
+  {
+    "palabra": "plazo,",
+    "inicio": 391.8,
+    "fin": 392.28,
+    "escena_id": 33
+  },
+  {
+    "palabra": "un",
+    "inicio": 392.6,
+    "fin": 392.78,
+    "escena_id": 33
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 392.78,
+    "fin": 393.14,
+    "escena_id": 33
+  },
+  {
+    "palabra": "de",
+    "inicio": 393.14,
+    "fin": 393.38,
+    "escena_id": 33
+  },
+  {
+    "palabra": "comunicación",
+    "inicio": 393.38,
+    "fin": 394.06,
+    "escena_id": 33
+  },
+  {
+    "palabra": "propietario",
+    "inicio": 394.06,
+    "fin": 394.72,
+    "escena_id": 33
+  },
+  {
+    "palabra": "es",
+    "inicio": 394.72,
+    "fin": 394.86,
+    "escena_id": 33
+  },
+  {
+    "palabra": "una",
+    "inicio": 394.86,
+    "fin": 395.04,
+    "escena_id": 33
+  },
+  {
+    "palabra": "red",
+    "inicio": 395.04,
+    "fin": 395.22,
+    "escena_id": 33
+  },
+  {
+    "palabra": "social",
+    "inicio": 395.22,
+    "fin": 395.6,
+    "escena_id": 33
+  },
+  {
+    "palabra": "más,",
+    "inicio": 395.6,
+    "fin": 395.9,
+    "escena_id": 33
+  },
+  {
+    "palabra": "un",
+    "inicio": 396.5,
+    "fin": 396.72,
+    "escena_id": 33
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 396.72,
+    "fin": 397.32,
+    "escena_id": 33
+  },
+  {
+    "palabra": "federado",
+    "inicio": 397.32,
+    "fin": 397.82,
+    "escena_id": 33
+  },
+  {
+    "palabra": "es",
+    "inicio": 397.82,
+    "fin": 398.04,
+    "escena_id": 33
+  },
+  {
+    "palabra": "infraestructura,",
+    "inicio": 398.04,
+    "fin": 398.9,
+    "escena_id": 33
+  },
+  {
+    "palabra": "google",
+    "inicio": 399.5,
+    "fin": 399.76,
+    "escena_id": 33
+  },
+  {
+    "palabra": "quería",
+    "inicio": 399.76,
+    "fin": 400.14,
+    "escena_id": 33
+  },
+  {
+    "palabra": "construir",
+    "inicio": 400.14,
+    "fin": 400.58,
+    "escena_id": 33
+  },
+  {
+    "palabra": "infraestructura,",
+    "inicio": 400.58,
+    "fin": 401.56,
+    "escena_id": 33
+  },
+  {
+    "palabra": "la",
+    "inicio": 401.92,
+    "fin": 402.0,
+    "escena_id": 34
+  },
+  {
+    "palabra": "federación",
+    "inicio": 402.0,
+    "fin": 402.58,
+    "escena_id": 34
+  },
+  {
+    "palabra": "requería",
+    "inicio": 402.58,
+    "fin": 403.1,
+    "escena_id": 34
+  },
+  {
+    "palabra": "que",
+    "inicio": 403.1,
+    "fin": 403.22,
+    "escena_id": 34
+  },
+  {
+    "palabra": "el",
+    "inicio": 403.22,
+    "fin": 403.34,
+    "escena_id": 34
+  },
+  {
+    "palabra": "servidor",
+    "inicio": 403.34,
+    "fin": 403.78,
+    "escena_id": 34
+  },
+  {
+    "palabra": "de",
+    "inicio": 403.78,
+    "fin": 403.96,
+    "escena_id": 34
+  },
+  {
+    "palabra": "wave",
+    "inicio": 403.96,
+    "fin": 404.2,
+    "escena_id": 34
+  },
+  {
+    "palabra": "de",
+    "inicio": 404.2,
+    "fin": 404.46,
+    "escena_id": 34
+  },
+  {
+    "palabra": "cada",
+    "inicio": 404.46,
+    "fin": 404.68,
+    "escena_id": 34
+  },
+  {
+    "palabra": "organización",
+    "inicio": 404.68,
+    "fin": 405.4,
+    "escena_id": 34
+  },
+  {
+    "palabra": "mantuviera",
+    "inicio": 405.4,
+    "fin": 406.1,
+    "escena_id": 34
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 406.1,
+    "fin": 406.92,
+    "escena_id": 34
+  },
+  {
+    "palabra": "xmp",
+    "inicio": 406.92,
+    "fin": 407.92,
+    "escena_id": 34
+  },
+  {
+    "palabra": "persistentes",
+    "inicio": 407.92,
+    "fin": 408.84,
+    "escena_id": 34
+  },
+  {
+    "palabra": "con",
+    "inicio": 408.84,
+    "fin": 409.08,
+    "escena_id": 34
+  },
+  {
+    "palabra": "todos",
+    "inicio": 409.08,
+    "fin": 409.42,
+    "escena_id": 34
+  },
+  {
+    "palabra": "los",
+    "inicio": 409.42,
+    "fin": 409.64,
+    "escena_id": 34
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 409.64,
+    "fin": 410.14,
+    "escena_id": 34
+  },
+  {
+    "palabra": "de",
+    "inicio": 410.14,
+    "fin": 410.34,
+    "escena_id": 34
+  },
+  {
+    "palabra": "wave",
+    "inicio": 410.34,
+    "fin": 410.56,
+    "escena_id": 34
+  },
+  {
+    "palabra": "con",
+    "inicio": 410.56,
+    "fin": 410.84,
+    "escena_id": 34
+  },
+  {
+    "palabra": "los",
+    "inicio": 410.84,
+    "fin": 410.98,
+    "escena_id": 34
+  },
+  {
+    "palabra": "que",
+    "inicio": 410.98,
+    "fin": 411.14,
+    "escena_id": 34
+  },
+  {
+    "palabra": "su",
+    "inicio": 411.14,
+    "fin": 411.3,
+    "escena_id": 34
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 411.3,
+    "fin": 411.76,
+    "escena_id": 34
+  },
+  {
+    "palabra": "interactuara,",
+    "inicio": 411.76,
+    "fin": 412.72,
+    "escena_id": 34
+  },
+  {
+    "palabra": "dado",
+    "inicio": 413.14,
+    "fin": 413.32,
+    "escena_id": 35
+  },
+  {
+    "palabra": "el",
+    "inicio": 413.32,
+    "fin": 413.52,
+    "escena_id": 35
+  },
+  {
+    "palabra": "overjet",
+    "inicio": 413.52,
+    "fin": 413.92,
+    "escena_id": 35
+  },
+  {
+    "palabra": "ya",
+    "inicio": 413.92,
+    "fin": 414.26,
+    "escena_id": 35
+  },
+  {
+    "palabra": "descrito",
+    "inicio": 414.26,
+    "fin": 414.74,
+    "escena_id": 35
+  },
+  {
+    "palabra": "del",
+    "inicio": 414.74,
+    "fin": 415.0,
+    "escena_id": 35
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 415.0,
+    "fin": 415.52,
+    "escena_id": 35
+  },
+  {
+    "palabra": "XML",
+    "inicio": 415.52,
+    "fin": 415.88,
+    "escena_id": 35
+  },
+  {
+    "palabra": "extendido,",
+    "inicio": 415.88,
+    "fin": 416.72,
+    "escena_id": 35
+  },
+  {
+    "palabra": "el",
+    "inicio": 417.16,
+    "fin": 417.44,
+    "escena_id": 35
+  },
+  {
+    "palabra": "costo",
+    "inicio": 417.44,
+    "fin": 417.84,
+    "escena_id": 35
+  },
+  {
+    "palabra": "de",
+    "inicio": 417.84,
+    "fin": 417.94,
+    "escena_id": 35
+  },
+  {
+    "palabra": "mantener",
+    "inicio": 417.94,
+    "fin": 418.34,
+    "escena_id": 35
+  },
+  {
+    "palabra": "esas",
+    "inicio": 418.34,
+    "fin": 418.62,
+    "escena_id": 35
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 418.62,
+    "fin": 419.22,
+    "escena_id": 35
+  },
+  {
+    "palabra": "entre",
+    "inicio": 419.22,
+    "fin": 419.52,
+    "escena_id": 35
+  },
+  {
+    "palabra": "servidores",
+    "inicio": 419.52,
+    "fin": 420.16,
+    "escena_id": 35
+  },
+  {
+    "palabra": "era",
+    "inicio": 420.16,
+    "fin": 420.42,
+    "escena_id": 35
+  },
+  {
+    "palabra": "cuadraticamente",
+    "inicio": 420.42,
+    "fin": 421.18,
+    "escena_id": 35
+  },
+  {
+    "palabra": "más",
+    "inicio": 421.18,
+    "fin": 421.54,
+    "escena_id": 35
+  },
+  {
+    "palabra": "caro",
+    "inicio": 421.54,
+    "fin": 421.96,
+    "escena_id": 35
+  },
+  {
+    "palabra": "que",
+    "inicio": 421.96,
+    "fin": 422.08,
+    "escena_id": 35
+  },
+  {
+    "palabra": "en",
+    "inicio": 422.08,
+    "fin": 422.16,
+    "escena_id": 35
+  },
+  {
+    "palabra": "un",
+    "inicio": 422.16,
+    "fin": 422.22,
+    "escena_id": 35
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 422.22,
+    "fin": 422.5,
+    "escena_id": 35
+  },
+  {
+    "palabra": "centralizado,",
+    "inicio": 422.5,
+    "fin": 423.38,
+    "escena_id": 35
+  },
+  {
+    "palabra": "google",
+    "inicio": 423.98,
+    "fin": 424.34,
+    "escena_id": 35
+  },
+  {
+    "palabra": "no",
+    "inicio": 424.34,
+    "fin": 424.56,
+    "escena_id": 35
+  },
+  {
+    "palabra": "activó",
+    "inicio": 424.56,
+    "fin": 424.98,
+    "escena_id": 35
+  },
+  {
+    "palabra": "la",
+    "inicio": 424.98,
+    "fin": 425.1,
+    "escena_id": 35
+  },
+  {
+    "palabra": "federación",
+    "inicio": 425.1,
+    "fin": 425.6,
+    "escena_id": 35
+  },
+  {
+    "palabra": "pública",
+    "inicio": 425.6,
+    "fin": 426.02,
+    "escena_id": 35
+  },
+  {
+    "palabra": "durante",
+    "inicio": 426.02,
+    "fin": 426.38,
+    "escena_id": 35
+  },
+  {
+    "palabra": "los",
+    "inicio": 426.38,
+    "fin": 426.62,
+    "escena_id": 35
+  },
+  {
+    "palabra": "11",
+    "inicio": 426.62,
+    "fin": 426.9,
+    "escena_id": 35
+  },
+  {
+    "palabra": "meses",
+    "inicio": 426.9,
+    "fin": 427.14,
+    "escena_id": 35
+  },
+  {
+    "palabra": "de",
+    "inicio": 427.14,
+    "fin": 427.36,
+    "escena_id": 35
+  },
+  {
+    "palabra": "vida",
+    "inicio": 427.36,
+    "fin": 427.54,
+    "escena_id": 35
+  },
+  {
+    "palabra": "del",
+    "inicio": 427.54,
+    "fin": 427.76,
+    "escena_id": 35
+  },
+  {
+    "palabra": "producto,",
+    "inicio": 427.76,
+    "fin": 428.26,
+    "escena_id": 35
+  },
+  {
+    "palabra": "la",
+    "inicio": 428.6,
+    "fin": 428.72,
+    "escena_id": 36
+  },
+  {
+    "palabra": "justificación",
+    "inicio": 428.72,
+    "fin": 429.3,
+    "escena_id": 36
+  },
+  {
+    "palabra": "oficial",
+    "inicio": 429.3,
+    "fin": 429.76,
+    "escena_id": 36
+  },
+  {
+    "palabra": "fue",
+    "inicio": 429.76,
+    "fin": 430.16,
+    "escena_id": 36
+  },
+  {
+    "palabra": "la",
+    "inicio": 430.16,
+    "fin": 430.28,
+    "escena_id": 36
+  },
+  {
+    "palabra": "estabilidad,",
+    "inicio": 430.28,
+    "fin": 430.94,
+    "escena_id": 36
+  },
+  {
+    "palabra": "pero",
+    "inicio": 431.28,
+    "fin": 431.42,
+    "escena_id": 36
+  },
+  {
+    "palabra": "los",
+    "inicio": 431.42,
+    "fin": 431.66,
+    "escena_id": 36
+  },
+  {
+    "palabra": "registros",
+    "inicio": 431.66,
+    "fin": 432.12,
+    "escena_id": 36
+  },
+  {
+    "palabra": "de",
+    "inicio": 432.12,
+    "fin": 432.26,
+    "escena_id": 36
+  },
+  {
+    "palabra": "los",
+    "inicio": 432.26,
+    "fin": 432.42,
+    "escena_id": 36
+  },
+  {
+    "palabra": "grupos",
+    "inicio": 432.42,
+    "fin": 432.72,
+    "escena_id": 36
+  },
+  {
+    "palabra": "del",
+    "inicio": 432.72,
+    "fin": 432.96,
+    "escena_id": 36
+  },
+  {
+    "palabra": "desarrollador",
+    "inicio": 432.96,
+    "fin": 433.62,
+    "escena_id": 36
+  },
+  {
+    "palabra": "de",
+    "inicio": 433.62,
+    "fin": 433.82,
+    "escena_id": 36
+  },
+  {
+    "palabra": "la",
+    "inicio": 433.82,
+    "fin": 433.98,
+    "escena_id": 36
+  },
+  {
+    "palabra": "época",
+    "inicio": 433.98,
+    "fin": 434.2,
+    "escena_id": 36
+  },
+  {
+    "palabra": "muestran",
+    "inicio": 434.2,
+    "fin": 434.76,
+    "escena_id": 36
+  },
+  {
+    "palabra": "que",
+    "inicio": 434.76,
+    "fin": 434.96,
+    "escena_id": 36
+  },
+  {
+    "palabra": "el",
+    "inicio": 434.96,
+    "fin": 435.06,
+    "escena_id": 36
+  },
+  {
+    "palabra": "equipo",
+    "inicio": 435.06,
+    "fin": 435.3,
+    "escena_id": 36
+  },
+  {
+    "palabra": "no",
+    "inicio": 435.3,
+    "fin": 435.56,
+    "escena_id": 36
+  },
+  {
+    "palabra": "había",
+    "inicio": 435.56,
+    "fin": 435.72,
+    "escena_id": 36
+  },
+  {
+    "palabra": "resuelto",
+    "inicio": 435.72,
+    "fin": 436.18,
+    "escena_id": 36
+  },
+  {
+    "palabra": "el",
+    "inicio": 436.18,
+    "fin": 436.32,
+    "escena_id": 36
+  },
+  {
+    "palabra": "problema",
+    "inicio": 436.32,
+    "fin": 436.64,
+    "escena_id": 36
+  },
+  {
+    "palabra": "de",
+    "inicio": 436.64,
+    "fin": 436.86,
+    "escena_id": 36
+  },
+  {
+    "palabra": "escala",
+    "inicio": 436.86,
+    "fin": 437.18,
+    "escena_id": 36
+  },
+  {
+    "palabra": "de",
+    "inicio": 437.18,
+    "fin": 437.34,
+    "escena_id": 36
+  },
+  {
+    "palabra": "las",
+    "inicio": 437.34,
+    "fin": 437.48,
+    "escena_id": 36
+  },
+  {
+    "palabra": "conexiones",
+    "inicio": 437.48,
+    "fin": 438.02,
+    "escena_id": 36
+  },
+  {
+    "palabra": "federadas",
+    "inicio": 438.02,
+    "fin": 438.56,
+    "escena_id": 36
+  },
+  {
+    "palabra": "bajo",
+    "inicio": 438.56,
+    "fin": 438.82,
+    "escena_id": 36
+  },
+  {
+    "palabra": "carga",
+    "inicio": 438.82,
+    "fin": 439.14,
+    "escena_id": 36
+  },
+  {
+    "palabra": "real,",
+    "inicio": 439.14,
+    "fin": 439.58,
+    "escena_id": 36
+  },
+  {
+    "palabra": "sin",
+    "inicio": 439.76,
+    "fin": 440.04,
+    "escena_id": 37
+  },
+  {
+    "palabra": "federación",
+    "inicio": 440.04,
+    "fin": 440.66,
+    "escena_id": 37
+  },
+  {
+    "palabra": "wave",
+    "inicio": 440.66,
+    "fin": 441.04,
+    "escena_id": 37
+  },
+  {
+    "palabra": "era",
+    "inicio": 441.04,
+    "fin": 441.34,
+    "escena_id": 37
+  },
+  {
+    "palabra": "una",
+    "inicio": 441.34,
+    "fin": 441.52,
+    "escena_id": 37
+  },
+  {
+    "palabra": "herramienta",
+    "inicio": 441.52,
+    "fin": 442.04,
+    "escena_id": 37
+  },
+  {
+    "palabra": "de",
+    "inicio": 442.04,
+    "fin": 442.12,
+    "escena_id": 37
+  },
+  {
+    "palabra": "colaboración",
+    "inicio": 442.12,
+    "fin": 442.76,
+    "escena_id": 37
+  },
+  {
+    "palabra": "más,",
+    "inicio": 442.76,
+    "fin": 443.1,
+    "escena_id": 37
+  },
+  {
+    "palabra": "competiendo",
+    "inicio": 443.58,
+    "fin": 444.06,
+    "escena_id": 37
+  },
+  {
+    "palabra": "directamente",
+    "inicio": 444.06,
+    "fin": 444.44,
+    "escena_id": 37
+  },
+  {
+    "palabra": "con",
+    "inicio": 444.44,
+    "fin": 444.96,
+    "escena_id": 37
+  },
+  {
+    "palabra": "google",
+    "inicio": 444.96,
+    "fin": 445.22,
+    "escena_id": 37
+  },
+  {
+    "palabra": "dogs",
+    "inicio": 445.22,
+    "fin": 445.52,
+    "escena_id": 37
+  },
+  {
+    "palabra": "en",
+    "inicio": 445.52,
+    "fin": 445.76,
+    "escena_id": 37
+  },
+  {
+    "palabra": "el",
+    "inicio": 445.76,
+    "fin": 445.86,
+    "escena_id": 37
+  },
+  {
+    "palabra": "ecosistema",
+    "inicio": 445.86,
+    "fin": 446.4,
+    "escena_id": 37
+  },
+  {
+    "palabra": "de",
+    "inicio": 446.4,
+    "fin": 446.56,
+    "escena_id": 37
+  },
+  {
+    "palabra": "google",
+    "inicio": 446.56,
+    "fin": 446.84,
+    "escena_id": 37
+  },
+  {
+    "palabra": "sin",
+    "inicio": 446.84,
+    "fin": 447.24,
+    "escena_id": 37
+  },
+  {
+    "palabra": "ventaja",
+    "inicio": 447.24,
+    "fin": 447.64,
+    "escena_id": 37
+  },
+  {
+    "palabra": "diferencial,",
+    "inicio": 447.64,
+    "fin": 448.38,
+    "escena_id": 37
+  },
+  {
+    "palabra": "la",
+    "inicio": 448.76,
+    "fin": 448.84,
+    "escena_id": 38
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 448.84,
+    "fin": 449.32,
+    "escena_id": 38
+  },
+  {
+    "palabra": "de",
+    "inicio": 449.32,
+    "fin": 449.46,
+    "escena_id": 38
+  },
+  {
+    "palabra": "no",
+    "inicio": 449.46,
+    "fin": 449.6,
+    "escena_id": 38
+  },
+  {
+    "palabra": "activar",
+    "inicio": 449.6,
+    "fin": 450.0,
+    "escena_id": 38
+  },
+  {
+    "palabra": "la",
+    "inicio": 450.0,
+    "fin": 450.12,
+    "escena_id": 38
+  },
+  {
+    "palabra": "federación",
+    "inicio": 450.12,
+    "fin": 450.64,
+    "escena_id": 38
+  },
+  {
+    "palabra": "eliminó",
+    "inicio": 450.64,
+    "fin": 451.18,
+    "escena_id": 38
+  },
+  {
+    "palabra": "la",
+    "inicio": 451.18,
+    "fin": 451.32,
+    "escena_id": 38
+  },
+  {
+    "palabra": "única",
+    "inicio": 451.32,
+    "fin": 451.58,
+    "escena_id": 38
+  },
+  {
+    "palabra": "razón",
+    "inicio": 451.58,
+    "fin": 451.94,
+    "escena_id": 38
+  },
+  {
+    "palabra": "por",
+    "inicio": 451.94,
+    "fin": 452.16,
+    "escena_id": 38
+  },
+  {
+    "palabra": "la",
+    "inicio": 452.16,
+    "fin": 452.26,
+    "escena_id": 38
+  },
+  {
+    "palabra": "que",
+    "inicio": 452.26,
+    "fin": 452.38,
+    "escena_id": 38
+  },
+  {
+    "palabra": "un",
+    "inicio": 452.38,
+    "fin": 452.52,
+    "escena_id": 38
+  },
+  {
+    "palabra": "equipo",
+    "inicio": 452.52,
+    "fin": 452.8,
+    "escena_id": 38
+  },
+  {
+    "palabra": "de",
+    "inicio": 452.8,
+    "fin": 452.98,
+    "escena_id": 38
+  },
+  {
+    "palabra": "hité",
+    "inicio": 452.98,
+    "fin": 453.18,
+    "escena_id": 38
+  },
+  {
+    "palabra": "corporativo",
+    "inicio": 453.18,
+    "fin": 453.82,
+    "escena_id": 38
+  },
+  {
+    "palabra": "habría",
+    "inicio": 453.82,
+    "fin": 454.12,
+    "escena_id": 38
+  },
+  {
+    "palabra": "justificado",
+    "inicio": 454.12,
+    "fin": 454.78,
+    "escena_id": 38
+  },
+  {
+    "palabra": "el",
+    "inicio": 454.78,
+    "fin": 454.9,
+    "escena_id": 38
+  },
+  {
+    "palabra": "costo",
+    "inicio": 454.9,
+    "fin": 455.2,
+    "escena_id": 38
+  },
+  {
+    "palabra": "de",
+    "inicio": 455.2,
+    "fin": 455.32,
+    "escena_id": 38
+  },
+  {
+    "palabra": "adopción,",
+    "inicio": 455.32,
+    "fin": 455.76,
+    "escena_id": 38
+  },
+  {
+    "palabra": "las",
+    "inicio": 455.76,
+    "fin": 456.44,
+    "escena_id": 38
+  },
+  {
+    "palabra": "empresas",
+    "inicio": 456.44,
+    "fin": 456.8,
+    "escena_id": 38
+  },
+  {
+    "palabra": "que",
+    "inicio": 456.8,
+    "fin": 457.1,
+    "escena_id": 38
+  },
+  {
+    "palabra": "evaluaron",
+    "inicio": 457.1,
+    "fin": 457.52,
+    "escena_id": 38
+  },
+  {
+    "palabra": "wave",
+    "inicio": 457.52,
+    "fin": 457.74,
+    "escena_id": 38
+  },
+  {
+    "palabra": "para",
+    "inicio": 457.74,
+    "fin": 458.02,
+    "escena_id": 38
+  },
+  {
+    "palabra": "uso",
+    "inicio": 458.02,
+    "fin": 458.24,
+    "escena_id": 38
+  },
+  {
+    "palabra": "interno",
+    "inicio": 458.24,
+    "fin": 458.68,
+    "escena_id": 38
+  },
+  {
+    "palabra": "concluyeron",
+    "inicio": 458.68,
+    "fin": 459.26,
+    "escena_id": 38
+  },
+  {
+    "palabra": "que",
+    "inicio": 459.26,
+    "fin": 459.38,
+    "escena_id": 38
+  },
+  {
+    "palabra": "su",
+    "inicio": 459.38,
+    "fin": 459.54,
+    "escena_id": 38
+  },
+  {
+    "palabra": "valor",
+    "inicio": 459.54,
+    "fin": 459.76,
+    "escena_id": 38
+  },
+  {
+    "palabra": "no",
+    "inicio": 459.76,
+    "fin": 459.98,
+    "escena_id": 38
+  },
+  {
+    "palabra": "justificaba",
+    "inicio": 459.98,
+    "fin": 460.66,
+    "escena_id": 38
+  },
+  {
+    "palabra": "la",
+    "inicio": 460.66,
+    "fin": 460.8,
+    "escena_id": 38
+  },
+  {
+    "palabra": "migración",
+    "inicio": 460.8,
+    "fin": 461.24,
+    "escena_id": 38
+  },
+  {
+    "palabra": "desde",
+    "inicio": 461.24,
+    "fin": 461.48,
+    "escena_id": 38
+  },
+  {
+    "palabra": "herramientas",
+    "inicio": 461.48,
+    "fin": 462.04,
+    "escena_id": 38
+  },
+  {
+    "palabra": "existentes,",
+    "inicio": 462.04,
+    "fin": 462.72,
+    "escena_id": 38
+  },
+  {
+    "palabra": "la",
+    "inicio": 463.06,
+    "fin": 463.14,
+    "escena_id": 39
+  },
+  {
+    "palabra": "base",
+    "inicio": 463.14,
+    "fin": 463.4,
+    "escena_id": 39
+  },
+  {
+    "palabra": "de",
+    "inicio": 463.4,
+    "fin": 463.58,
+    "escena_id": 39
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 463.58,
+    "fin": 464.06,
+    "escena_id": 39
+  },
+  {
+    "palabra": "estabilizaba",
+    "inicio": 464.06,
+    "fin": 464.8,
+    "escena_id": 39
+  },
+  {
+    "palabra": "en",
+    "inicio": 464.8,
+    "fin": 465.0,
+    "escena_id": 39
+  },
+  {
+    "palabra": "early",
+    "inicio": 465.0,
+    "fin": 465.26,
+    "escena_id": 39
+  },
+  {
+    "palabra": "adopters",
+    "inicio": 465.26,
+    "fin": 465.76,
+    "escena_id": 39
+  },
+  {
+    "palabra": "técnicos",
+    "inicio": 465.76,
+    "fin": 466.26,
+    "escena_id": 39
+  },
+  {
+    "palabra": "que",
+    "inicio": 466.26,
+    "fin": 466.5,
+    "escena_id": 39
+  },
+  {
+    "palabra": "lo",
+    "inicio": 466.5,
+    "fin": 466.62,
+    "escena_id": 39
+  },
+  {
+    "palabra": "usaban",
+    "inicio": 466.62,
+    "fin": 466.96,
+    "escena_id": 39
+  },
+  {
+    "palabra": "por",
+    "inicio": 466.96,
+    "fin": 467.12,
+    "escena_id": 39
+  },
+  {
+    "palabra": "curiosidad",
+    "inicio": 467.12,
+    "fin": 467.68,
+    "escena_id": 39
+  },
+  {
+    "palabra": "no",
+    "inicio": 467.68,
+    "fin": 467.9,
+    "escena_id": 39
+  },
+  {
+    "palabra": "por",
+    "inicio": 467.9,
+    "fin": 468.06,
+    "escena_id": 39
+  },
+  {
+    "palabra": "necesidad",
+    "inicio": 468.06,
+    "fin": 468.52,
+    "escena_id": 39
+  },
+  {
+    "palabra": "operativa,",
+    "inicio": 468.52,
+    "fin": 469.18,
+    "escena_id": 39
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 469.52,
+    "fin": 470.04,
+    "escena_id": 40
+  },
+  {
+    "palabra": "5,",
+    "inicio": 470.04,
+    "fin": 470.52,
+    "escena_id": 40
+  },
+  {
+    "palabra": "el",
+    "inicio": 471.08,
+    "fin": 471.22,
+    "escena_id": 40
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 471.22,
+    "fin": 471.5,
+    "escena_id": 40
+  },
+  {
+    "palabra": "mental",
+    "inicio": 471.5,
+    "fin": 471.98,
+    "escena_id": 40
+  },
+  {
+    "palabra": "inexistente",
+    "inicio": 471.98,
+    "fin": 472.8,
+    "escena_id": 40
+  },
+  {
+    "palabra": "para",
+    "inicio": 472.8,
+    "fin": 473.02,
+    "escena_id": 40
+  },
+  {
+    "palabra": "el",
+    "inicio": 473.02,
+    "fin": 473.18,
+    "escena_id": 40
+  },
+  {
+    "palabra": "usuario,",
+    "inicio": 473.18,
+    "fin": 473.64,
+    "escena_id": 40
+  },
+  {
+    "palabra": "una",
+    "inicio": 473.9,
+    "fin": 474.08,
+    "escena_id": 41
+  },
+  {
+    "palabra": "wave",
+    "inicio": 474.08,
+    "fin": 474.4,
+    "escena_id": 41
+  },
+  {
+    "palabra": "no",
+    "inicio": 474.4,
+    "fin": 474.72,
+    "escena_id": 41
+  },
+  {
+    "palabra": "era",
+    "inicio": 474.72,
+    "fin": 474.9,
+    "escena_id": 41
+  },
+  {
+    "palabra": "un",
+    "inicio": 474.9,
+    "fin": 475.02,
+    "escena_id": 41
+  },
+  {
+    "palabra": "correo,",
+    "inicio": 475.02,
+    "fin": 475.5,
+    "escena_id": 41
+  },
+  {
+    "palabra": "ni",
+    "inicio": 475.66,
+    "fin": 475.7,
+    "escena_id": 41
+  },
+  {
+    "palabra": "un",
+    "inicio": 475.7,
+    "fin": 475.92,
+    "escena_id": 41
+  },
+  {
+    "palabra": "chat,",
+    "inicio": 475.92,
+    "fin": 476.2,
+    "escena_id": 41
+  },
+  {
+    "palabra": "ni",
+    "inicio": 476.46,
+    "fin": 476.52,
+    "escena_id": 41
+  },
+  {
+    "palabra": "un",
+    "inicio": 476.52,
+    "fin": 476.68,
+    "escena_id": 41
+  },
+  {
+    "palabra": "documento,",
+    "inicio": 476.68,
+    "fin": 477.64,
+    "escena_id": 41
+  },
+  {
+    "palabra": "era",
+    "inicio": 477.76,
+    "fin": 477.86,
+    "escena_id": 41
+  },
+  {
+    "palabra": "un",
+    "inicio": 477.86,
+    "fin": 478.0,
+    "escena_id": 41
+  },
+  {
+    "palabra": "objeto",
+    "inicio": 478.0,
+    "fin": 478.3,
+    "escena_id": 41
+  },
+  {
+    "palabra": "de",
+    "inicio": 478.3,
+    "fin": 478.52,
+    "escena_id": 41
+  },
+  {
+    "palabra": "comunicación",
+    "inicio": 478.52,
+    "fin": 479.2,
+    "escena_id": 41
+  },
+  {
+    "palabra": "nuevo",
+    "inicio": 479.2,
+    "fin": 479.46,
+    "escena_id": 41
+  },
+  {
+    "palabra": "que",
+    "inicio": 479.46,
+    "fin": 479.72,
+    "escena_id": 41
+  },
+  {
+    "palabra": "mezclaba",
+    "inicio": 479.72,
+    "fin": 480.18,
+    "escena_id": 41
+  },
+  {
+    "palabra": "los",
+    "inicio": 480.18,
+    "fin": 480.44,
+    "escena_id": 41
+  },
+  {
+    "palabra": "tres,",
+    "inicio": 480.44,
+    "fin": 480.7,
+    "escena_id": 41
+  },
+  {
+    "palabra": "los",
+    "inicio": 481.08,
+    "fin": 481.22,
+    "escena_id": 42
+  },
+  {
+    "palabra": "mensajes",
+    "inicio": 481.22,
+    "fin": 481.64,
+    "escena_id": 42
+  },
+  {
+    "palabra": "dentro",
+    "inicio": 481.64,
+    "fin": 481.98,
+    "escena_id": 42
+  },
+  {
+    "palabra": "de",
+    "inicio": 481.98,
+    "fin": 482.16,
+    "escena_id": 42
+  },
+  {
+    "palabra": "una",
+    "inicio": 482.16,
+    "fin": 482.34,
+    "escena_id": 42
+  },
+  {
+    "palabra": "wave",
+    "inicio": 482.34,
+    "fin": 482.54,
+    "escena_id": 42
+  },
+  {
+    "palabra": "podían",
+    "inicio": 482.54,
+    "fin": 482.94,
+    "escena_id": 42
+  },
+  {
+    "palabra": "responderse",
+    "inicio": 482.94,
+    "fin": 483.64,
+    "escena_id": 42
+  },
+  {
+    "palabra": "de",
+    "inicio": 483.64,
+    "fin": 483.72,
+    "escena_id": 42
+  },
+  {
+    "palabra": "formanidad",
+    "inicio": 483.72,
+    "fin": 484.28,
+    "escena_id": 42
+  },
+  {
+    "palabra": "en",
+    "inicio": 484.28,
+    "fin": 484.46,
+    "escena_id": 42
+  },
+  {
+    "palabra": "cualquier",
+    "inicio": 484.46,
+    "fin": 484.74,
+    "escena_id": 42
+  },
+  {
+    "palabra": "punto",
+    "inicio": 484.74,
+    "fin": 485.14,
+    "escena_id": 42
+  },
+  {
+    "palabra": "de",
+    "inicio": 485.14,
+    "fin": 485.34,
+    "escena_id": 42
+  },
+  {
+    "palabra": "hilo,",
+    "inicio": 485.34,
+    "fin": 485.62,
+    "escena_id": 42
+  },
+  {
+    "palabra": "editarse",
+    "inicio": 486.22,
+    "fin": 486.72,
+    "escena_id": 42
+  },
+  {
+    "palabra": "retroactivamente",
+    "inicio": 486.72,
+    "fin": 487.52,
+    "escena_id": 42
+  },
+  {
+    "palabra": "y",
+    "inicio": 487.52,
+    "fin": 487.82,
+    "escena_id": 42
+  },
+  {
+    "palabra": "actualizarse",
+    "inicio": 487.82,
+    "fin": 488.48,
+    "escena_id": 42
+  },
+  {
+    "palabra": "en",
+    "inicio": 488.48,
+    "fin": 488.6,
+    "escena_id": 42
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 488.6,
+    "fin": 488.86,
+    "escena_id": 42
+  },
+  {
+    "palabra": "real",
+    "inicio": 488.86,
+    "fin": 489.12,
+    "escena_id": 42
+  },
+  {
+    "palabra": "en",
+    "inicio": 489.12,
+    "fin": 489.32,
+    "escena_id": 42
+  },
+  {
+    "palabra": "la",
+    "inicio": 489.32,
+    "fin": 489.42,
+    "escena_id": 42
+  },
+  {
+    "palabra": "pantalla",
+    "inicio": 489.42,
+    "fin": 489.74,
+    "escena_id": 42
+  },
+  {
+    "palabra": "de",
+    "inicio": 489.74,
+    "fin": 489.98,
+    "escena_id": 42
+  },
+  {
+    "palabra": "todos",
+    "inicio": 489.98,
+    "fin": 490.16,
+    "escena_id": 42
+  },
+  {
+    "palabra": "los",
+    "inicio": 490.16,
+    "fin": 490.38,
+    "escena_id": 42
+  },
+  {
+    "palabra": "participantes,",
+    "inicio": 490.38,
+    "fin": 491.26,
+    "escena_id": 42
+  },
+  {
+    "palabra": "el",
+    "inicio": 491.66,
+    "fin": 491.78,
+    "escena_id": 43
+  },
+  {
+    "palabra": "diseño",
+    "inicio": 491.78,
+    "fin": 492.14,
+    "escena_id": 43
+  },
+  {
+    "palabra": "respondía",
+    "inicio": 492.14,
+    "fin": 492.68,
+    "escena_id": 43
+  },
+  {
+    "palabra": "a",
+    "inicio": 492.68,
+    "fin": 492.84,
+    "escena_id": 43
+  },
+  {
+    "palabra": "una",
+    "inicio": 492.84,
+    "fin": 492.98,
+    "escena_id": 43
+  },
+  {
+    "palabra": "observación",
+    "inicio": 492.98,
+    "fin": 493.62,
+    "escena_id": 43
+  },
+  {
+    "palabra": "técnicamente",
+    "inicio": 493.62,
+    "fin": 494.38,
+    "escena_id": 43
+  },
+  {
+    "palabra": "válida,",
+    "inicio": 494.38,
+    "fin": 494.92,
+    "escena_id": 43
+  },
+  {
+    "palabra": "el",
+    "inicio": 495.46,
+    "fin": 495.58,
+    "escena_id": 43
+  },
+  {
+    "palabra": "correo",
+    "inicio": 495.58,
+    "fin": 495.94,
+    "escena_id": 43
+  },
+  {
+    "palabra": "electrónico",
+    "inicio": 495.94,
+    "fin": 496.56,
+    "escena_id": 43
+  },
+  {
+    "palabra": "es",
+    "inicio": 496.56,
+    "fin": 496.78,
+    "escena_id": 43
+  },
+  {
+    "palabra": "un",
+    "inicio": 496.78,
+    "fin": 496.88,
+    "escena_id": 43
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 496.88,
+    "fin": 497.42,
+    "escena_id": 43
+  },
+  {
+    "palabra": "de",
+    "inicio": 497.42,
+    "fin": 497.58,
+    "escena_id": 43
+  },
+  {
+    "palabra": "1971",
+    "inicio": 497.58,
+    "fin": 498.24,
+    "escena_id": 43
+  },
+  {
+    "palabra": "que",
+    "inicio": 498.24,
+    "fin": 499.24,
+    "escena_id": 43
+  },
+  {
+    "palabra": "no",
+    "inicio": 499.24,
+    "fin": 499.34,
+    "escena_id": 43
+  },
+  {
+    "palabra": "fue",
+    "inicio": 499.34,
+    "fin": 499.52,
+    "escena_id": 43
+  },
+  {
+    "palabra": "diseñado",
+    "inicio": 499.52,
+    "fin": 499.98,
+    "escena_id": 43
+  },
+  {
+    "palabra": "para",
+    "inicio": 499.98,
+    "fin": 500.16,
+    "escena_id": 43
+  },
+  {
+    "palabra": "conversaciones",
+    "inicio": 500.16,
+    "fin": 500.8,
+    "escena_id": 43
+  },
+  {
+    "palabra": "en",
+    "inicio": 500.8,
+    "fin": 501.04,
+    "escena_id": 43
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 501.04,
+    "fin": 501.3,
+    "escena_id": 43
+  },
+  {
+    "palabra": "real",
+    "inicio": 501.3,
+    "fin": 501.54,
+    "escena_id": 43
+  },
+  {
+    "palabra": "ni",
+    "inicio": 501.54,
+    "fin": 501.68,
+    "escena_id": 43
+  },
+  {
+    "palabra": "para",
+    "inicio": 501.68,
+    "fin": 501.88,
+    "escena_id": 43
+  },
+  {
+    "palabra": "edición",
+    "inicio": 501.88,
+    "fin": 502.24,
+    "escena_id": 43
+  },
+  {
+    "palabra": "colaborativa,",
+    "inicio": 502.24,
+    "fin": 503.04,
+    "escena_id": 43
+  },
+  {
+    "palabra": "wave",
+    "inicio": 503.68,
+    "fin": 503.92,
+    "escena_id": 43
+  },
+  {
+    "palabra": "resolvía",
+    "inicio": 503.92,
+    "fin": 504.4,
+    "escena_id": 43
+  },
+  {
+    "palabra": "limitaciones",
+    "inicio": 504.4,
+    "fin": 504.96,
+    "escena_id": 43
+  },
+  {
+    "palabra": "reales",
+    "inicio": 504.96,
+    "fin": 505.46,
+    "escena_id": 43
+  },
+  {
+    "palabra": "del",
+    "inicio": 505.46,
+    "fin": 505.56,
+    "escena_id": 43
+  },
+  {
+    "palabra": "email,",
+    "inicio": 505.56,
+    "fin": 505.88,
+    "escena_id": 43
+  },
+  {
+    "palabra": "la",
+    "inicio": 506.24,
+    "fin": 506.34,
+    "escena_id": 44
+  },
+  {
+    "palabra": "decisión",
+    "inicio": 506.34,
+    "fin": 506.74,
+    "escena_id": 44
+  },
+  {
+    "palabra": "de",
+    "inicio": 506.74,
+    "fin": 506.86,
+    "escena_id": 44
+  },
+  {
+    "palabra": "crear",
+    "inicio": 506.86,
+    "fin": 507.08,
+    "escena_id": 44
+  },
+  {
+    "palabra": "un",
+    "inicio": 507.08,
+    "fin": 507.26,
+    "escena_id": 44
+  },
+  {
+    "palabra": "objeto",
+    "inicio": 507.26,
+    "fin": 507.56,
+    "escena_id": 44
+  },
+  {
+    "palabra": "nuevo",
+    "inicio": 507.56,
+    "fin": 508.04,
+    "escena_id": 44
+  },
+  {
+    "palabra": "en",
+    "inicio": 508.04,
+    "fin": 508.68,
+    "escena_id": 44
+  },
+  {
+    "palabra": "lugar",
+    "inicio": 508.68,
+    "fin": 508.9,
+    "escena_id": 44
+  },
+  {
+    "palabra": "de",
+    "inicio": 508.9,
+    "fin": 509.1,
+    "escena_id": 44
+  },
+  {
+    "palabra": "parchar",
+    "inicio": 509.1,
+    "fin": 509.46,
+    "escena_id": 44
+  },
+  {
+    "palabra": "objetos",
+    "inicio": 509.46,
+    "fin": 509.86,
+    "escena_id": 44
+  },
+  {
+    "palabra": "existentes",
+    "inicio": 509.86,
+    "fin": 510.56,
+    "escena_id": 44
+  },
+  {
+    "palabra": "será",
+    "inicio": 510.56,
+    "fin": 510.84,
+    "escena_id": 44
+  },
+  {
+    "palabra": "arquitectuánicamente",
+    "inicio": 510.84,
+    "fin": 511.86,
+    "escena_id": 44
+  },
+  {
+    "palabra": "honesta,",
+    "inicio": 511.86,
+    "fin": 512.36,
+    "escena_id": 44
+  },
+  {
+    "palabra": "no",
+    "inicio": 512.66,
+    "fin": 512.74,
+    "escena_id": 45
+  },
+  {
+    "palabra": "existía",
+    "inicio": 512.74,
+    "fin": 513.22,
+    "escena_id": 45
+  },
+  {
+    "palabra": "ningún",
+    "inicio": 513.22,
+    "fin": 513.52,
+    "escena_id": 45
+  },
+  {
+    "palabra": "referente",
+    "inicio": 513.52,
+    "fin": 514.06,
+    "escena_id": 45
+  },
+  {
+    "palabra": "cognitivo",
+    "inicio": 514.06,
+    "fin": 514.68,
+    "escena_id": 45
+  },
+  {
+    "palabra": "previo",
+    "inicio": 514.68,
+    "fin": 515.04,
+    "escena_id": 45
+  },
+  {
+    "palabra": "para",
+    "inicio": 515.04,
+    "fin": 515.24,
+    "escena_id": 45
+  },
+  {
+    "palabra": "el",
+    "inicio": 515.24,
+    "fin": 515.36,
+    "escena_id": 45
+  },
+  {
+    "palabra": "usuario,",
+    "inicio": 515.36,
+    "fin": 515.74,
+    "escena_id": 45
+  },
+  {
+    "palabra": "la",
+    "inicio": 516.04,
+    "fin": 516.12,
+    "escena_id": 45
+  },
+  {
+    "palabra": "curva",
+    "inicio": 516.12,
+    "fin": 516.4,
+    "escena_id": 45
+  },
+  {
+    "palabra": "de",
+    "inicio": 516.4,
+    "fin": 516.52,
+    "escena_id": 45
+  },
+  {
+    "palabra": "aprendizaje",
+    "inicio": 516.52,
+    "fin": 517.06,
+    "escena_id": 45
+  },
+  {
+    "palabra": "no",
+    "inicio": 517.06,
+    "fin": 517.24,
+    "escena_id": 45
+  },
+  {
+    "palabra": "era",
+    "inicio": 517.24,
+    "fin": 517.38,
+    "escena_id": 45
+  },
+  {
+    "palabra": "empinada,",
+    "inicio": 517.38,
+    "fin": 517.88,
+    "escena_id": 45
+  },
+  {
+    "palabra": "era",
+    "inicio": 518.24,
+    "fin": 518.42,
+    "escena_id": 45
+  },
+  {
+    "palabra": "vertical,",
+    "inicio": 518.42,
+    "fin": 518.9,
+    "escena_id": 45
+  },
+  {
+    "palabra": "las",
+    "inicio": 519.5,
+    "fin": 519.7,
+    "escena_id": 45
+  },
+  {
+    "palabra": "sesiones",
+    "inicio": 519.7,
+    "fin": 520.02,
+    "escena_id": 45
+  },
+  {
+    "palabra": "de",
+    "inicio": 520.02,
+    "fin": 520.22,
+    "escena_id": 45
+  },
+  {
+    "palabra": "onboarding",
+    "inicio": 520.22,
+    "fin": 520.64,
+    "escena_id": 45
+  },
+  {
+    "palabra": "internas",
+    "inicio": 520.64,
+    "fin": 521.14,
+    "escena_id": 45
+  },
+  {
+    "palabra": "mostraban",
+    "inicio": 521.14,
+    "fin": 521.6,
+    "escena_id": 45
+  },
+  {
+    "palabra": "que",
+    "inicio": 521.6,
+    "fin": 521.74,
+    "escena_id": 45
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 521.74,
+    "fin": 522.2,
+    "escena_id": 45
+  },
+  {
+    "palabra": "no",
+    "inicio": 522.2,
+    "fin": 522.42,
+    "escena_id": 45
+  },
+  {
+    "palabra": "técnicos",
+    "inicio": 522.42,
+    "fin": 522.86,
+    "escena_id": 45
+  },
+  {
+    "palabra": "tardaban",
+    "inicio": 522.86,
+    "fin": 523.36,
+    "escena_id": 45
+  },
+  {
+    "palabra": "entre",
+    "inicio": 523.36,
+    "fin": 523.64,
+    "escena_id": 45
+  },
+  {
+    "palabra": "20",
+    "inicio": 523.64,
+    "fin": 523.86,
+    "escena_id": 45
+  },
+  {
+    "palabra": "y",
+    "inicio": 523.86,
+    "fin": 524.04,
+    "escena_id": 45
+  },
+  {
+    "palabra": "40",
+    "inicio": 524.04,
+    "fin": 524.4,
+    "escena_id": 45
+  },
+  {
+    "palabra": "minutos",
+    "inicio": 524.4,
+    "fin": 524.64,
+    "escena_id": 45
+  },
+  {
+    "palabra": "en",
+    "inicio": 524.64,
+    "fin": 524.94,
+    "escena_id": 45
+  },
+  {
+    "palabra": "completar",
+    "inicio": 524.94,
+    "fin": 525.42,
+    "escena_id": 45
+  },
+  {
+    "palabra": "su",
+    "inicio": 525.42,
+    "fin": 525.58,
+    "escena_id": 45
+  },
+  {
+    "palabra": "primera",
+    "inicio": 525.58,
+    "fin": 525.86,
+    "escena_id": 45
+  },
+  {
+    "palabra": "tarea",
+    "inicio": 525.86,
+    "fin": 526.18,
+    "escena_id": 45
+  },
+  {
+    "palabra": "básica",
+    "inicio": 526.18,
+    "fin": 526.62,
+    "escena_id": 45
+  },
+  {
+    "palabra": "sin",
+    "inicio": 526.62,
+    "fin": 526.94,
+    "escena_id": 45
+  },
+  {
+    "palabra": "ayuda,",
+    "inicio": 526.94,
+    "fin": 527.28,
+    "escena_id": 45
+  },
+  {
+    "palabra": "el",
+    "inicio": 527.9,
+    "fin": 528.02,
+    "escena_id": 46
+  },
+  {
+    "palabra": "problema",
+    "inicio": 528.02,
+    "fin": 528.3,
+    "escena_id": 46
+  },
+  {
+    "palabra": "no",
+    "inicio": 528.3,
+    "fin": 528.58,
+    "escena_id": 46
+  },
+  {
+    "palabra": "era",
+    "inicio": 528.58,
+    "fin": 528.74,
+    "escena_id": 46
+  },
+  {
+    "palabra": "que",
+    "inicio": 528.74,
+    "fin": 528.94,
+    "escena_id": 46
+  },
+  {
+    "palabra": "wave",
+    "inicio": 528.94,
+    "fin": 529.16,
+    "escena_id": 46
+  },
+  {
+    "palabra": "fuera",
+    "inicio": 529.16,
+    "fin": 529.52,
+    "escena_id": 46
+  },
+  {
+    "palabra": "difícil,",
+    "inicio": 529.52,
+    "fin": 529.96,
+    "escena_id": 46
+  },
+  {
+    "palabra": "era",
+    "inicio": 530.5,
+    "fin": 530.66,
+    "escena_id": 46
+  },
+  {
+    "palabra": "que",
+    "inicio": 530.66,
+    "fin": 530.84,
+    "escena_id": 46
+  },
+  {
+    "palabra": "el",
+    "inicio": 530.84,
+    "fin": 530.96,
+    "escena_id": 46
+  },
+  {
+    "palabra": "usuario",
+    "inicio": 530.96,
+    "fin": 531.4,
+    "escena_id": 46
+  },
+  {
+    "palabra": "no",
+    "inicio": 531.4,
+    "fin": 531.56,
+    "escena_id": 46
+  },
+  {
+    "palabra": "tenía",
+    "inicio": 531.56,
+    "fin": 531.84,
+    "escena_id": 46
+  },
+  {
+    "palabra": "ningún",
+    "inicio": 531.84,
+    "fin": 532.22,
+    "escena_id": 46
+  },
+  {
+    "palabra": "mapa",
+    "inicio": 532.22,
+    "fin": 532.44,
+    "escena_id": 46
+  },
+  {
+    "palabra": "mental",
+    "inicio": 532.44,
+    "fin": 532.9,
+    "escena_id": 46
+  },
+  {
+    "palabra": "previo",
+    "inicio": 532.9,
+    "fin": 533.4,
+    "escena_id": 46
+  },
+  {
+    "palabra": "desde",
+    "inicio": 533.4,
+    "fin": 533.58,
+    "escena_id": 46
+  },
+  {
+    "palabra": "el",
+    "inicio": 533.58,
+    "fin": 533.78,
+    "escena_id": 46
+  },
+  {
+    "palabra": "que",
+    "inicio": 533.78,
+    "fin": 533.86,
+    "escena_id": 46
+  },
+  {
+    "palabra": "proyectar",
+    "inicio": 533.86,
+    "fin": 534.4,
+    "escena_id": 46
+  },
+  {
+    "palabra": "su",
+    "inicio": 534.4,
+    "fin": 534.54,
+    "escena_id": 46
+  },
+  {
+    "palabra": "experiencia,",
+    "inicio": 534.54,
+    "fin": 535.12,
+    "escena_id": 46
+  },
+  {
+    "palabra": "en",
+    "inicio": 535.56,
+    "fin": 536.14,
+    "escena_id": 46
+  },
+  {
+    "palabra": "producto",
+    "inicio": 536.14,
+    "fin": 536.46,
+    "escena_id": 46
+  },
+  {
+    "palabra": "un",
+    "inicio": 536.46,
+    "fin": 536.84,
+    "escena_id": 46
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 536.84,
+    "fin": 537.04,
+    "escena_id": 46
+  },
+  {
+    "palabra": "mental",
+    "inicio": 537.04,
+    "fin": 537.48,
+    "escena_id": 46
+  },
+  {
+    "palabra": "inexistente",
+    "inicio": 537.48,
+    "fin": 538.34,
+    "escena_id": 46
+  },
+  {
+    "palabra": "es",
+    "inicio": 538.34,
+    "fin": 538.58,
+    "escena_id": 46
+  },
+  {
+    "palabra": "más",
+    "inicio": 538.58,
+    "fin": 538.72,
+    "escena_id": 46
+  },
+  {
+    "palabra": "costoso",
+    "inicio": 538.72,
+    "fin": 539.18,
+    "escena_id": 46
+  },
+  {
+    "palabra": "que",
+    "inicio": 539.18,
+    "fin": 539.38,
+    "escena_id": 46
+  },
+  {
+    "palabra": "un",
+    "inicio": 539.38,
+    "fin": 539.48,
+    "escena_id": 46
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 539.48,
+    "fin": 539.68,
+    "escena_id": 46
+  },
+  {
+    "palabra": "mental",
+    "inicio": 539.68,
+    "fin": 540.16,
+    "escena_id": 46
+  },
+  {
+    "palabra": "incorrecto,",
+    "inicio": 540.16,
+    "fin": 540.94,
+    "escena_id": 46
+  },
+  {
+    "palabra": "el",
+    "inicio": 541.18,
+    "fin": 541.32,
+    "escena_id": 46
+  },
+  {
+    "palabra": "usuario",
+    "inicio": 541.32,
+    "fin": 541.72,
+    "escena_id": 46
+  },
+  {
+    "palabra": "con",
+    "inicio": 541.72,
+    "fin": 541.9,
+    "escena_id": 46
+  },
+  {
+    "palabra": "un",
+    "inicio": 541.9,
+    "fin": 542.0,
+    "escena_id": 46
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 542.0,
+    "fin": 542.24,
+    "escena_id": 46
+  },
+  {
+    "palabra": "incorrecto",
+    "inicio": 542.24,
+    "fin": 542.86,
+    "escena_id": 46
+  },
+  {
+    "palabra": "ajusta,",
+    "inicio": 542.86,
+    "fin": 543.4,
+    "escena_id": 46
+  },
+  {
+    "palabra": "el",
+    "inicio": 543.66,
+    "fin": 543.82,
+    "escena_id": 47
+  },
+  {
+    "palabra": "usuario",
+    "inicio": 543.82,
+    "fin": 544.26,
+    "escena_id": 47
+  },
+  {
+    "palabra": "sin",
+    "inicio": 544.26,
+    "fin": 544.48,
+    "escena_id": 47
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 544.48,
+    "fin": 544.8,
+    "escena_id": 47
+  },
+  {
+    "palabra": "abandona,",
+    "inicio": 544.8,
+    "fin": 545.62,
+    "escena_id": 47
+  },
+  {
+    "palabra": "Google",
+    "inicio": 545.92,
+    "fin": 546.18,
+    "escena_id": 48
+  },
+  {
+    "palabra": "reportó",
+    "inicio": 546.18,
+    "fin": 546.76,
+    "escena_id": 48
+  },
+  {
+    "palabra": "que",
+    "inicio": 546.76,
+    "fin": 546.88,
+    "escena_id": 48
+  },
+  {
+    "palabra": "la",
+    "inicio": 546.88,
+    "fin": 547.02,
+    "escena_id": 48
+  },
+  {
+    "palabra": "tasa",
+    "inicio": 547.02,
+    "fin": 547.32,
+    "escena_id": 48
+  },
+  {
+    "palabra": "de",
+    "inicio": 547.32,
+    "fin": 547.42,
+    "escena_id": 48
+  },
+  {
+    "palabra": "retensión",
+    "inicio": 547.42,
+    "fin": 547.9,
+    "escena_id": 48
+  },
+  {
+    "palabra": "a",
+    "inicio": 547.9,
+    "fin": 548.02,
+    "escena_id": 48
+  },
+  {
+    "palabra": "30",
+    "inicio": 548.02,
+    "fin": 548.32,
+    "escena_id": 48
+  },
+  {
+    "palabra": "días",
+    "inicio": 548.32,
+    "fin": 548.6,
+    "escena_id": 48
+  },
+  {
+    "palabra": "de",
+    "inicio": 548.6,
+    "fin": 548.72,
+    "escena_id": 48
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 548.72,
+    "fin": 549.14,
+    "escena_id": 48
+  },
+  {
+    "palabra": "invitados",
+    "inicio": 549.14,
+    "fin": 549.7,
+    "escena_id": 48
+  },
+  {
+    "palabra": "durante",
+    "inicio": 549.7,
+    "fin": 550.04,
+    "escena_id": 48
+  },
+  {
+    "palabra": "la",
+    "inicio": 550.04,
+    "fin": 550.28,
+    "escena_id": 48
+  },
+  {
+    "palabra": "beta",
+    "inicio": 550.28,
+    "fin": 550.44,
+    "escena_id": 48
+  },
+  {
+    "palabra": "era",
+    "inicio": 550.44,
+    "fin": 550.76,
+    "escena_id": 48
+  },
+  {
+    "palabra": "significativamente",
+    "inicio": 550.76,
+    "fin": 551.72,
+    "escena_id": 48
+  },
+  {
+    "palabra": "inferior",
+    "inicio": 551.72,
+    "fin": 552.16,
+    "escena_id": 48
+  },
+  {
+    "palabra": "a",
+    "inicio": 552.16,
+    "fin": 552.38,
+    "escena_id": 48
+  },
+  {
+    "palabra": "la",
+    "inicio": 552.38,
+    "fin": 552.48,
+    "escena_id": 48
+  },
+  {
+    "palabra": "de",
+    "inicio": 552.48,
+    "fin": 552.62,
+    "escena_id": 48
+  },
+  {
+    "palabra": "otros",
+    "inicio": 552.62,
+    "fin": 552.82,
+    "escena_id": 48
+  },
+  {
+    "palabra": "productos",
+    "inicio": 552.82,
+    "fin": 553.28,
+    "escena_id": 48
+  },
+  {
+    "palabra": "que",
+    "inicio": 553.28,
+    "fin": 553.52,
+    "escena_id": 48
+  },
+  {
+    "palabra": "Google",
+    "inicio": 553.52,
+    "fin": 553.74,
+    "escena_id": 48
+  },
+  {
+    "palabra": "de",
+    "inicio": 553.74,
+    "fin": 553.96,
+    "escena_id": 48
+  },
+  {
+    "palabra": "la",
+    "inicio": 553.96,
+    "fin": 554.08,
+    "escena_id": 48
+  },
+  {
+    "palabra": "época,",
+    "inicio": 554.08,
+    "fin": 554.38,
+    "escena_id": 48
+  },
+  {
+    "palabra": "los",
+    "inicio": 554.74,
+    "fin": 554.92,
+    "escena_id": 49
+  },
+  {
+    "palabra": "datos",
+    "inicio": 554.92,
+    "fin": 555.18,
+    "escena_id": 49
+  },
+  {
+    "palabra": "de",
+    "inicio": 555.18,
+    "fin": 555.38,
+    "escena_id": 49
+  },
+  {
+    "palabra": "engagement",
+    "inicio": 555.38,
+    "fin": 555.7,
+    "escena_id": 49
+  },
+  {
+    "palabra": "mostraron",
+    "inicio": 555.7,
+    "fin": 556.4,
+    "escena_id": 49
+  },
+  {
+    "palabra": "que",
+    "inicio": 556.4,
+    "fin": 556.54,
+    "escena_id": 49
+  },
+  {
+    "palabra": "la",
+    "inicio": 556.54,
+    "fin": 556.68,
+    "escena_id": 49
+  },
+  {
+    "palabra": "mayoría",
+    "inicio": 556.68,
+    "fin": 556.96,
+    "escena_id": 49
+  },
+  {
+    "palabra": "de",
+    "inicio": 556.96,
+    "fin": 557.24,
+    "escena_id": 49
+  },
+  {
+    "palabra": "los",
+    "inicio": 557.24,
+    "fin": 557.38,
+    "escena_id": 49
+  },
+  {
+    "palabra": "usuarios",
+    "inicio": 557.38,
+    "fin": 557.86,
+    "escena_id": 49
+  },
+  {
+    "palabra": "que",
+    "inicio": 557.86,
+    "fin": 558.06,
+    "escena_id": 49
+  },
+  {
+    "palabra": "obtenía",
+    "inicio": 558.06,
+    "fin": 558.48,
+    "escena_id": 49
+  },
+  {
+    "palabra": "una",
+    "inicio": 558.48,
+    "fin": 558.68,
+    "escena_id": 49
+  },
+  {
+    "palabra": "invitación,",
+    "inicio": 558.68,
+    "fin": 559.22,
+    "escena_id": 49
+  },
+  {
+    "palabra": "el",
+    "inicio": 559.32,
+    "fin": 559.42,
+    "escena_id": 49
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 559.42,
+    "fin": 559.7,
+    "escena_id": 49
+  },
+  {
+    "palabra": "de",
+    "inicio": 559.7,
+    "fin": 559.94,
+    "escena_id": 49
+  },
+  {
+    "palabra": "acceso",
+    "inicio": 559.94,
+    "fin": 560.22,
+    "escena_id": 49
+  },
+  {
+    "palabra": "era",
+    "inicio": 560.22,
+    "fin": 560.48,
+    "escena_id": 49
+  },
+  {
+    "palabra": "por",
+    "inicio": 560.48,
+    "fin": 560.66,
+    "escena_id": 49
+  },
+  {
+    "palabra": "invitación",
+    "inicio": 560.66,
+    "fin": 561.2,
+    "escena_id": 49
+  },
+  {
+    "palabra": "como",
+    "inicio": 561.2,
+    "fin": 561.46,
+    "escena_id": 49
+  },
+  {
+    "palabra": "Gmail,",
+    "inicio": 561.46,
+    "fin": 561.82,
+    "escena_id": 49
+  },
+  {
+    "palabra": "ingresaban",
+    "inicio": 562.56,
+    "fin": 563.04,
+    "escena_id": 49
+  },
+  {
+    "palabra": "una",
+    "inicio": 563.04,
+    "fin": 563.32,
+    "escena_id": 49
+  },
+  {
+    "palabra": "o",
+    "inicio": 563.32,
+    "fin": 563.44,
+    "escena_id": 49
+  },
+  {
+    "palabra": "dos",
+    "inicio": 563.44,
+    "fin": 563.64,
+    "escena_id": 49
+  },
+  {
+    "palabra": "veces",
+    "inicio": 563.64,
+    "fin": 563.9,
+    "escena_id": 49
+  },
+  {
+    "palabra": "y",
+    "inicio": 563.9,
+    "fin": 564.12,
+    "escena_id": 49
+  },
+  {
+    "palabra": "no",
+    "inicio": 564.12,
+    "fin": 564.24,
+    "escena_id": 49
+  },
+  {
+    "palabra": "regresaban,",
+    "inicio": 564.24,
+    "fin": 564.88,
+    "escena_id": 49
+  },
+  {
+    "palabra": "el",
+    "inicio": 565.1,
+    "fin": 565.22,
+    "escena_id": 49
+  },
+  {
+    "palabra": "producto",
+    "inicio": 565.22,
+    "fin": 565.58,
+    "escena_id": 49
+  },
+  {
+    "palabra": "generaba",
+    "inicio": 565.58,
+    "fin": 566.18,
+    "escena_id": 49
+  },
+  {
+    "palabra": "curiosidad",
+    "inicio": 566.18,
+    "fin": 566.78,
+    "escena_id": 49
+  },
+  {
+    "palabra": "pero",
+    "inicio": 566.78,
+    "fin": 567.04,
+    "escena_id": 49
+  },
+  {
+    "palabra": "no",
+    "inicio": 567.04,
+    "fin": 567.2,
+    "escena_id": 49
+  },
+  {
+    "palabra": "hábito,",
+    "inicio": 567.2,
+    "fin": 567.58,
+    "escena_id": 49
+  },
+  {
+    "palabra": "operación",
+    "inicio": 567.88,
+    "fin": 568.32,
+    "escena_id": 50
+  },
+  {
+    "palabra": "al",
+    "inicio": 568.32,
+    "fin": 568.5,
+    "escena_id": 50
+  },
+  {
+    "palabra": "transformación",
+    "inicio": 568.5,
+    "fin": 569.18,
+    "escena_id": 50
+  },
+  {
+    "palabra": "no",
+    "inicio": 569.18,
+    "fin": 569.42,
+    "escena_id": 50
+  },
+  {
+    "palabra": "murió",
+    "inicio": 569.42,
+    "fin": 569.7,
+    "escena_id": 50
+  },
+  {
+    "palabra": "con",
+    "inicio": 569.7,
+    "fin": 569.92,
+    "escena_id": 50
+  },
+  {
+    "palabra": "wave,",
+    "inicio": 569.92,
+    "fin": 570.2,
+    "escena_id": 50
+  },
+  {
+    "palabra": "vive",
+    "inicio": 570.2,
+    "fin": 570.9,
+    "escena_id": 50
+  },
+  {
+    "palabra": "en",
+    "inicio": 570.9,
+    "fin": 571.12,
+    "escena_id": 50
+  },
+  {
+    "palabra": "Google",
+    "inicio": 571.12,
+    "fin": 571.28,
+    "escena_id": 50
+  },
+  {
+    "palabra": "Docs,",
+    "inicio": 571.28,
+    "fin": 572.14,
+    "escena_id": 50
+  },
+  {
+    "palabra": "donde",
+    "inicio": 572.14,
+    "fin": 572.46,
+    "escena_id": 50
+  },
+  {
+    "palabra": "el",
+    "inicio": 572.46,
+    "fin": 572.72,
+    "escena_id": 50
+  },
+  {
+    "palabra": "mismo",
+    "inicio": 572.72,
+    "fin": 573.0,
+    "escena_id": 50
+  },
+  {
+    "palabra": "algoritmo",
+    "inicio": 573.0,
+    "fin": 573.56,
+    "escena_id": 50
+  },
+  {
+    "palabra": "gestiona",
+    "inicio": 573.56,
+    "fin": 573.98,
+    "escena_id": 50
+  },
+  {
+    "palabra": "la",
+    "inicio": 573.98,
+    "fin": 574.2,
+    "escena_id": 50
+  },
+  {
+    "palabra": "edición",
+    "inicio": 574.2,
+    "fin": 574.5,
+    "escena_id": 50
+  },
+  {
+    "palabra": "concurrente",
+    "inicio": 574.5,
+    "fin": 575.12,
+    "escena_id": 50
+  },
+  {
+    "palabra": "de",
+    "inicio": 575.12,
+    "fin": 575.36,
+    "escena_id": 50
+  },
+  {
+    "palabra": "millones",
+    "inicio": 575.36,
+    "fin": 575.64,
+    "escena_id": 50
+  },
+  {
+    "palabra": "de",
+    "inicio": 575.64,
+    "fin": 575.94,
+    "escena_id": 50
+  },
+  {
+    "palabra": "documentos",
+    "inicio": 575.94,
+    "fin": 576.46,
+    "escena_id": 50
+  },
+  {
+    "palabra": "diariamente,",
+    "inicio": 576.46,
+    "fin": 577.06,
+    "escena_id": 50
+  },
+  {
+    "palabra": "la",
+    "inicio": 577.52,
+    "fin": 577.58,
+    "escena_id": 51
+  },
+  {
+    "palabra": "diferencia",
+    "inicio": 577.58,
+    "fin": 577.92,
+    "escena_id": 51
+  },
+  {
+    "palabra": "es",
+    "inicio": 577.92,
+    "fin": 578.14,
+    "escena_id": 51
+  },
+  {
+    "palabra": "que",
+    "inicio": 578.14,
+    "fin": 578.22,
+    "escena_id": 51
+  },
+  {
+    "palabra": "Docs",
+    "inicio": 578.22,
+    "fin": 578.54,
+    "escena_id": 51
+  },
+  {
+    "palabra": "lo",
+    "inicio": 578.54,
+    "fin": 578.62,
+    "escena_id": 51
+  },
+  {
+    "palabra": "aplica",
+    "inicio": 578.62,
+    "fin": 578.98,
+    "escena_id": 51
+  },
+  {
+    "palabra": "a",
+    "inicio": 578.98,
+    "fin": 579.12,
+    "escena_id": 51
+  },
+  {
+    "palabra": "un",
+    "inicio": 579.12,
+    "fin": 579.14,
+    "escena_id": 51
+  },
+  {
+    "palabra": "modelo",
+    "inicio": 579.14,
+    "fin": 579.34,
+    "escena_id": 51
+  },
+  {
+    "palabra": "de",
+    "inicio": 579.34,
+    "fin": 579.64,
+    "escena_id": 51
+  },
+  {
+    "palabra": "datos",
+    "inicio": 579.64,
+    "fin": 579.86,
+    "escena_id": 51
+  },
+  {
+    "palabra": "simple,",
+    "inicio": 579.86,
+    "fin": 580.32,
+    "escena_id": 51
+  },
+  {
+    "palabra": "texto",
+    "inicio": 580.7,
+    "fin": 580.94,
+    "escena_id": 51
+  },
+  {
+    "palabra": "conformato",
+    "inicio": 580.94,
+    "fin": 581.74,
+    "escena_id": 51
+  },
+  {
+    "palabra": "y",
+    "inicio": 581.74,
+    "fin": 582.28,
+    "escena_id": 51
+  },
+  {
+    "palabra": "no",
+    "inicio": 582.28,
+    "fin": 582.48,
+    "escena_id": 51
+  },
+  {
+    "palabra": "a",
+    "inicio": 582.48,
+    "fin": 582.68,
+    "escena_id": 51
+  },
+  {
+    "palabra": "un",
+    "inicio": 582.68,
+    "fin": 582.84,
+    "escena_id": 51
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 582.84,
+    "fin": 583.4,
+    "escena_id": 51
+  },
+  {
+    "palabra": "de",
+    "inicio": 583.4,
+    "fin": 583.52,
+    "escena_id": 51
+  },
+  {
+    "palabra": "comunicación",
+    "inicio": 583.52,
+    "fin": 584.26,
+    "escena_id": 51
+  },
+  {
+    "palabra": "federado",
+    "inicio": 584.26,
+    "fin": 584.76,
+    "escena_id": 51
+  },
+  {
+    "palabra": "de",
+    "inicio": 584.76,
+    "fin": 584.92,
+    "escena_id": 51
+  },
+  {
+    "palabra": "propósito",
+    "inicio": 584.92,
+    "fin": 585.42,
+    "escena_id": 51
+  },
+  {
+    "palabra": "general,",
+    "inicio": 585.42,
+    "fin": 585.86,
+    "escena_id": 51
+  },
+  {
+    "palabra": "el",
+    "inicio": 586.16,
+    "fin": 586.58,
+    "escena_id": 51
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 586.58,
+    "fin": 587.14,
+    "escena_id": 51
+  },
+  {
+    "palabra": "base",
+    "inicio": 587.14,
+    "fin": 587.4,
+    "escena_id": 51
+  },
+  {
+    "palabra": "de",
+    "inicio": 587.4,
+    "fin": 587.58,
+    "escena_id": 51
+  },
+  {
+    "palabra": "wave",
+    "inicio": 587.58,
+    "fin": 587.78,
+    "escena_id": 51
+  },
+  {
+    "palabra": "fue",
+    "inicio": 587.78,
+    "fin": 588.06,
+    "escena_id": 51
+  },
+  {
+    "palabra": "donado",
+    "inicio": 588.06,
+    "fin": 588.52,
+    "escena_id": 51
+  },
+  {
+    "palabra": "a",
+    "inicio": 588.52,
+    "fin": 588.62,
+    "escena_id": 51
+  },
+  {
+    "palabra": "la",
+    "inicio": 588.62,
+    "fin": 588.7,
+    "escena_id": 51
+  },
+  {
+    "palabra": "Apache",
+    "inicio": 588.7,
+    "fin": 589.0,
+    "escena_id": 51
+  },
+  {
+    "palabra": "software",
+    "inicio": 589.0,
+    "fin": 589.32,
+    "escena_id": 51
+  },
+  {
+    "palabra": "foundation",
+    "inicio": 589.32,
+    "fin": 589.94,
+    "escena_id": 51
+  },
+  {
+    "palabra": "como",
+    "inicio": 589.94,
+    "fin": 590.22,
+    "escena_id": 51
+  },
+  {
+    "palabra": "Apache",
+    "inicio": 590.22,
+    "fin": 590.54,
+    "escena_id": 51
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 590.54,
+    "fin": 590.8,
+    "escena_id": 51
+  },
+  {
+    "palabra": "en",
+    "inicio": 590.8,
+    "fin": 591.06,
+    "escena_id": 51
+  },
+  {
+    "palabra": "2012,",
+    "inicio": 591.06,
+    "fin": 591.68,
+    "escena_id": 51
+  },
+  {
+    "palabra": "el",
+    "inicio": 592.56,
+    "fin": 592.7,
+    "escena_id": 52
+  },
+  {
+    "palabra": "concepto",
+    "inicio": 592.7,
+    "fin": 593.26,
+    "escena_id": 52
+  },
+  {
+    "palabra": "de",
+    "inicio": 593.26,
+    "fin": 593.36,
+    "escena_id": 52
+  },
+  {
+    "palabra": "canales",
+    "inicio": 593.36,
+    "fin": 593.72,
+    "escena_id": 52
+  },
+  {
+    "palabra": "con",
+    "inicio": 593.72,
+    "fin": 593.96,
+    "escena_id": 52
+  },
+  {
+    "palabra": "tretsanidados",
+    "inicio": 593.96,
+    "fin": 594.82,
+    "escena_id": 52
+  },
+  {
+    "palabra": "y",
+    "inicio": 594.82,
+    "fin": 595.06,
+    "escena_id": 52
+  },
+  {
+    "palabra": "edición",
+    "inicio": 595.06,
+    "fin": 595.4,
+    "escena_id": 52
+  },
+  {
+    "palabra": "en",
+    "inicio": 595.4,
+    "fin": 595.58,
+    "escena_id": 52
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 595.58,
+    "fin": 595.86,
+    "escena_id": 52
+  },
+  {
+    "palabra": "real",
+    "inicio": 595.86,
+    "fin": 596.1,
+    "escena_id": 52
+  },
+  {
+    "palabra": "sobrevivió",
+    "inicio": 596.1,
+    "fin": 596.86,
+    "escena_id": 52
+  },
+  {
+    "palabra": "en",
+    "inicio": 596.86,
+    "fin": 597.14,
+    "escena_id": 52
+  },
+  {
+    "palabra": "Slack",
+    "inicio": 597.14,
+    "fin": 597.66,
+    "escena_id": 52
+  },
+  {
+    "palabra": "y",
+    "inicio": 597.66,
+    "fin": 598.02,
+    "escena_id": 52
+  },
+  {
+    "palabra": "en",
+    "inicio": 598.02,
+    "fin": 598.14,
+    "escena_id": 52
+  },
+  {
+    "palabra": "la",
+    "inicio": 598.14,
+    "fin": 598.24,
+    "escena_id": 52
+  },
+  {
+    "palabra": "función",
+    "inicio": 598.24,
+    "fin": 598.56,
+    "escena_id": 52
+  },
+  {
+    "palabra": "de",
+    "inicio": 598.56,
+    "fin": 598.78,
+    "escena_id": 52
+  },
+  {
+    "palabra": "trets",
+    "inicio": 598.78,
+    "fin": 599.1,
+    "escena_id": 52
+  },
+  {
+    "palabra": "de",
+    "inicio": 599.1,
+    "fin": 599.26,
+    "escena_id": 52
+  },
+  {
+    "palabra": "Discord.",
+    "inicio": 599.26,
+    "fin": 599.58,
+    "escena_id": 52
+  },
+  {
+    "palabra": "Wave",
+    "inicio": 600.0,
+    "fin": 600.26,
+    "escena_id": 53
+  },
+  {
+    "palabra": "llegó",
+    "inicio": 600.26,
+    "fin": 600.54,
+    "escena_id": 53
+  },
+  {
+    "palabra": "demasiado",
+    "inicio": 600.54,
+    "fin": 600.82,
+    "escena_id": 53
+  },
+  {
+    "palabra": "pronto,",
+    "inicio": 600.82,
+    "fin": 601.46,
+    "escena_id": 53
+  },
+  {
+    "palabra": "construyó",
+    "inicio": 601.64,
+    "fin": 602.02,
+    "escena_id": 53
+  },
+  {
+    "palabra": "demasiado",
+    "inicio": 602.02,
+    "fin": 602.3,
+    "escena_id": 53
+  },
+  {
+    "palabra": "a",
+    "inicio": 602.3,
+    "fin": 602.66,
+    "escena_id": 53
+  },
+  {
+    "palabra": "la",
+    "inicio": 602.66,
+    "fin": 602.74,
+    "escena_id": 53
+  },
+  {
+    "palabra": "vez",
+    "inicio": 602.74,
+    "fin": 602.92,
+    "escena_id": 53
+  },
+  {
+    "palabra": "y",
+    "inicio": 602.92,
+    "fin": 603.12,
+    "escena_id": 53
+  },
+  {
+    "palabra": "apostó",
+    "inicio": 603.12,
+    "fin": 603.5,
+    "escena_id": 53
+  },
+  {
+    "palabra": "por",
+    "inicio": 603.5,
+    "fin": 603.66,
+    "escena_id": 53
+  },
+  {
+    "palabra": "una",
+    "inicio": 603.66,
+    "fin": 603.82,
+    "escena_id": 53
+  },
+  {
+    "palabra": "complejidad",
+    "inicio": 603.82,
+    "fin": 604.54,
+    "escena_id": 53
+  },
+  {
+    "palabra": "de",
+    "inicio": 604.54,
+    "fin": 604.7,
+    "escena_id": 53
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 604.7,
+    "fin": 605.28,
+    "escena_id": 53
+  },
+  {
+    "palabra": "que",
+    "inicio": 605.28,
+    "fin": 605.42,
+    "escena_id": 53
+  },
+  {
+    "palabra": "el",
+    "inicio": 605.42,
+    "fin": 605.54,
+    "escena_id": 53
+  },
+  {
+    "palabra": "hardware",
+    "inicio": 605.54,
+    "fin": 605.78,
+    "escena_id": 53
+  },
+  {
+    "palabra": "de",
+    "inicio": 605.78,
+    "fin": 606.04,
+    "escena_id": 53
+  },
+  {
+    "palabra": "su",
+    "inicio": 606.04,
+    "fin": 606.18,
+    "escena_id": 53
+  },
+  {
+    "palabra": "época",
+    "inicio": 606.18,
+    "fin": 606.44,
+    "escena_id": 53
+  },
+  {
+    "palabra": "no",
+    "inicio": 606.44,
+    "fin": 606.7,
+    "escena_id": 53
+  },
+  {
+    "palabra": "podía",
+    "inicio": 606.7,
+    "fin": 607.0,
+    "escena_id": 53
+  },
+  {
+    "palabra": "sostener,",
+    "inicio": 607.0,
+    "fin": 607.56,
+    "escena_id": 53
+  },
+  {
+    "palabra": "la",
+    "inicio": 607.92,
+    "fin": 608.02,
+    "escena_id": 54
+  },
+  {
+    "palabra": "próxima",
+    "inicio": 608.02,
+    "fin": 608.42,
+    "escena_id": 54
+  },
+  {
+    "palabra": "vez",
+    "inicio": 608.42,
+    "fin": 608.64,
+    "escena_id": 54
+  },
+  {
+    "palabra": "que",
+    "inicio": 608.64,
+    "fin": 608.8,
+    "escena_id": 54
+  },
+  {
+    "palabra": "diseñe",
+    "inicio": 608.8,
+    "fin": 609.12,
+    "escena_id": 54
+  },
+  {
+    "palabra": "un",
+    "inicio": 609.12,
+    "fin": 609.28,
+    "escena_id": 54
+  },
+  {
+    "palabra": "protocolo",
+    "inicio": 609.28,
+    "fin": 609.7,
+    "escena_id": 54
+  },
+  {
+    "palabra": "de",
+    "inicio": 609.7,
+    "fin": 609.84,
+    "escena_id": 54
+  },
+  {
+    "palabra": "comunicación",
+    "inicio": 609.84,
+    "fin": 610.4,
+    "escena_id": 54
+  },
+  {
+    "palabra": "en",
+    "inicio": 610.4,
+    "fin": 610.52,
+    "escena_id": 54
+  },
+  {
+    "palabra": "tiempo",
+    "inicio": 610.52,
+    "fin": 610.78,
+    "escena_id": 54
+  },
+  {
+    "palabra": "real,",
+    "inicio": 610.78,
+    "fin": 611.08,
+    "escena_id": 54
+  },
+  {
+    "palabra": "preguntate",
+    "inicio": 611.58,
+    "fin": 612.14,
+    "escena_id": 54
+  },
+  {
+    "palabra": "si",
+    "inicio": 612.14,
+    "fin": 612.34,
+    "escena_id": 54
+  },
+  {
+    "palabra": "el",
+    "inicio": 612.34,
+    "fin": 612.48,
+    "escena_id": 54
+  },
+  {
+    "palabra": "costo",
+    "inicio": 612.48,
+    "fin": 612.8,
+    "escena_id": 54
+  },
+  {
+    "palabra": "computacional",
+    "inicio": 612.8,
+    "fin": 613.5,
+    "escena_id": 54
+  },
+  {
+    "palabra": "por",
+    "inicio": 613.5,
+    "fin": 613.76,
+    "escena_id": 54
+  },
+  {
+    "palabra": "operación",
+    "inicio": 613.76,
+    "fin": 614.18,
+    "escena_id": 54
+  },
+  {
+    "palabra": "escala",
+    "inicio": 614.18,
+    "fin": 614.62,
+    "escena_id": 54
+  },
+  {
+    "palabra": "linealmente",
+    "inicio": 614.62,
+    "fin": 615.36,
+    "escena_id": 54
+  },
+  {
+    "palabra": "o",
+    "inicio": 615.36,
+    "fin": 615.62,
+    "escena_id": 54
+  },
+  {
+    "palabra": "cuadráticamente",
+    "inicio": 615.62,
+    "fin": 616.28,
+    "escena_id": 54
+  },
+  {
+    "palabra": "con",
+    "inicio": 616.28,
+    "fin": 616.6,
+    "escena_id": 54
+  },
+  {
+    "palabra": "el",
+    "inicio": 616.6,
+    "fin": 616.7,
+    "escena_id": 54
+  },
+  {
+    "palabra": "número",
+    "inicio": 616.7,
+    "fin": 616.88,
+    "escena_id": 54
+  },
+  {
+    "palabra": "de",
+    "inicio": 616.88,
+    "fin": 617.08,
+    "escena_id": 54
+  },
+  {
+    "palabra": "participantes,",
+    "inicio": 617.08,
+    "fin": 617.88,
+    "escena_id": 54
+  },
+  {
+    "palabra": "eso",
+    "inicio": 618.26,
+    "fin": 618.46,
+    "escena_id": 55
+  },
+  {
+    "palabra": "es",
+    "inicio": 618.46,
+    "fin": 618.6,
+    "escena_id": 55
+  },
+  {
+    "palabra": "lo",
+    "inicio": 618.6,
+    "fin": 618.72,
+    "escena_id": 55
+  },
+  {
+    "palabra": "que",
+    "inicio": 618.72,
+    "fin": 618.88,
+    "escena_id": 55
+  },
+  {
+    "palabra": "separa",
+    "inicio": 618.88,
+    "fin": 619.44,
+    "escena_id": 55
+  },
+  {
+    "palabra": "un",
+    "inicio": 619.44,
+    "fin": 619.58,
+    "escena_id": 55
+  },
+  {
+    "palabra": "sistema",
+    "inicio": 619.58,
+    "fin": 619.96,
+    "escena_id": 55
+  },
+  {
+    "palabra": "que",
+    "inicio": 619.96,
+    "fin": 620.2,
+    "escena_id": 55
+  },
+  {
+    "palabra": "funciona",
+    "inicio": 620.2,
+    "fin": 620.7,
+    "escena_id": 55
+  },
+  {
+    "palabra": "en",
+    "inicio": 620.7,
+    "fin": 620.82,
+    "escena_id": 55
+  },
+  {
+    "palabra": "el",
+    "inicio": 620.82,
+    "fin": 620.92,
+    "escena_id": 55
+  },
+  {
+    "palabra": "laboratorio",
+    "inicio": 620.92,
+    "fin": 621.44,
+    "escena_id": 55
+  },
+  {
+    "palabra": "de",
+    "inicio": 621.44,
+    "fin": 621.68,
+    "escena_id": 55
+  },
+  {
+    "palabra": "uno",
+    "inicio": 621.68,
+    "fin": 621.96,
+    "escena_id": 55
+  },
+  {
+    "palabra": "que",
+    "inicio": 621.96,
+    "fin": 622.12,
+    "escena_id": 55
+  },
+  {
+    "palabra": "funciona",
+    "inicio": 622.12,
+    "fin": 622.46,
+    "escena_id": 55
+  },
+  {
+    "palabra": "en",
+    "inicio": 622.46,
+    "fin": 622.62,
+    "escena_id": 55
+  },
+  {
+    "palabra": "producción.",
+    "inicio": 622.62,
+    "fin": 622.9,
+    "escena_id": 55
+  }
+]

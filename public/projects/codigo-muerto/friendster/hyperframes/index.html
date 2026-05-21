@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HyperFrames Playback Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- GSAP Core Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- Iconify SVG Framework (Automated Icon Fetching) -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- Viewport Container (Fixed 1280x720 ratio, scaling using CSS transform) -->
+  <div id="hyperframes-viewport">
+    <div id="hyperframes-canvas">
+      
+      <!-- Background Ambient Glows -->
+      <div class="ambient-glow glow-1"></div>
+      <div class="ambient-glow glow-2"></div>
+      
+      <!-- Header / Chapter Band -->
+      <div id="chapter-band">
+        <span id="chapter-number">CAPÍTULO 01</span>
+        <h1 id="chapter-title">Cargando Guión...</h1>
+      </div>
+      
+      <!-- Connecting Arrows Layer (SVG) -->
+      <svg id="arrows-svg" viewBox="0 0 1280 720" width="1280" height="720">
+        <defs>
+          <marker id="arrow-marker" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#00d4ff" />
+          </marker>
+          <marker id="arrow-marker-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 1 L 10 5 L 0 9 z" fill="#ff7b00" />
+          </marker>
+        </defs>
+        <!-- Dynamic paths will be injected here -->
+      </svg>
+      
+      <!-- Dynamic Elements Container -->
+      <div id="elements-container">
+        <!-- Generated visual items will be injected here by the timeline compiler -->
+      </div>
+      
+      <!-- Caption / Subtitle Overlay -->
+      <div id="caption-box">
+        <p id="caption-text"></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Load Compiled Scene Data -->
+  <script src="data.js"></script>
+  <!-- HyperFrames Local Control Engine -->
+  <script src="engine.js"></script>
+</body>
+</html>

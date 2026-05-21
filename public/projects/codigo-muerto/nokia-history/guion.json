@@ -1,0 +1,231 @@
+[
+  {
+    "id": "01",
+    "texto": "Nokia no murió por falta de innovación. Murió porque su sistema operativo Symbian era un laberinto de código espagueti que hacía imposible competir con la agilidad del iPhone.",
+    "chapter_title": "El Laberinto",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Nokia",
+          "text": "Nokia"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "murió",
+          "icon_name": "flat-color-icons:broken-link"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Symbian",
+          "text": "Symbian"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "laberinto",
+          "icon_name": "noto:tangled-web"
+        },
+        {
+          "id": "e",
+          "type": "asset_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "iPhone",
+          "pexels_query": "iphone original"
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "texto": "A principios de los 2000, Nokia controlaba casi la mitad del mercado mundial de telefonía móvil. Eran los reyes indiscutibles del hardware, fabricando teléfonos indestructibles con baterías que duraban semanas.",
+    "chapter_title": "El Imperio",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "asset_image",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "2000",
+          "pexels_query": "nokia 3310 vintage"
+        },
+        {
+          "id": "b",
+          "type": "metric_donut",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "mitad",
+          "value": 50,
+          "label": "Market Share"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "indestructibles",
+          "icon_name": "emojione:brick"
+        }
+      ]
+    }
+  },
+  {
+    "id": "03",
+    "texto": "El problema era que Symbian, el cerebro de sus teléfonos inteligentes, había sido diseñado para dispositivos con teclados numéricos y pantallas pequeñas. No estaba preparado para la era táctil.",
+    "chapter_title": "La Falla Arquitectónica",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-center",
+          "size": "md",
+          "trigger_word": "cerebro",
+          "text": "Arquitectura Symbian"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "teclados",
+          "icon_name": "noto:keyboard"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "táctil",
+          "text": "Era Táctil"
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "texto": "Cuando Apple lanzó el iPhone en 2007, introdujo iOS: un sistema operativo fluido, centrado en aplicaciones y construido sobre una base moderna. Google hizo lo mismo poco después con Android.",
+    "chapter_title": "El Punto de Quiebre",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "metric_year",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2007",
+          "value": 2007
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "iOS",
+          "name": "apple"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "Android",
+          "name": "android"
+        }
+      ]
+    }
+  },
+  {
+    "id": "05",
+    "texto": "Mientras Apple y Google avanzaban a pasos agigantados, los ingenieros de Nokia luchaban contra millones de líneas de código obsoleto. Añadir una simple función a Symbian tomaba meses de reescritura dolorosa.",
+    "chapter_title": "Deuda Técnica",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "asset_image",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "ingenieros",
+          "pexels_query": "frustrated developer"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "obsoleto",
+          "text": "Código Legado"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "meses",
+          "icon_name": "emojione:hourglass-not-done"
+        }
+      ]
+    }
+  },
+  {
+    "id": "06",
+    "texto": "En un intento desesperado por sobrevivir, Nokia abandonó Symbian en 2011 y se alió con Microsoft para usar Windows Phone. Pero ya era demasiado tarde. La deuda técnica los había paralizado el tiempo suficiente para perder su imperio.",
+    "chapter_title": "El Fin",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "metric_year",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "2011",
+          "value": 2011
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "Microsoft",
+          "name": "microsoft"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "deuda",
+          "text": "Deuda Técnica"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "perder",
+          "icon_name": "noto:tombstone"
+        }
+      ]
+    }
+  }
+]

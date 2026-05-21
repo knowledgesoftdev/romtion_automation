@@ -1,0 +1,3467 @@
+[
+  {
+    "id": "01",
+    "texto": "Facebook no ganó por ser mejor. Ganó porque MySpace no podía actualizarse sin destruirse.",
+    "chapter_title": "La caída de MySpace",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "caída",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "MySpace",
+          "text": "MySpace"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "destruirse",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "texto": "MySpace fue la red social dominante entre 2004 y 2008. En su pico, 2006, superaba a Google como el sitio más visitado de Estados Unidos. 100 millones de usuarios registrados.",
+    "chapter_title": "Apogeo de MySpace",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "2004",
+          "text": "2004-2008"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2006",
+          "text": "2006"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "dominante",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "100 millones",
+          "text": "100M"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "usuarios",
+          "icon_name": "flat-color-icons:globe"
+        },
+        {
+          "id": "f",
+          "type": "pexels_image",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "sitio",
+          "query": "myspace social network early 2000s"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "03",
+    "texto": "News Corp lo compró en 2005 por 580 millones de dólares, convencida de haber adquirido el futuro de internet. No era una startup sin recursos. Era una plataforma con respaldo corporativo masivo, ingenieros competentes y una base de usuarios que parecía inamovible.",
+    "chapter_title": "News Corp adquiere MySpace",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "News Corp",
+          "text": "News Corp"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2005",
+          "text": "2005"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "580 millones",
+          "text": "$580M"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "dólares",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ingenieros",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "futuro",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "texto": "El problema no estaba en el equipo. Estaba en el código. Y en las decisiones que lo convirtieron en una trampa. Cuando Facebook los alcanzó, MySpace no pudo responder. No porque no quisiera. Sino porque literalmente no podía mover el sistema sin romperlo.",
+    "chapter_title": "El problema técnico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "código",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "decisiones",
+          "icon_name": "flat-color-icons:decision"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "literalmente",
+          "text": "No podía evolucionar"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "romperlo",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "trampa",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "05",
+    "texto": "DECISIÓN 1: Perl sobre arquitectura — la fundación de arena",
+    "chapter_title": "Decisión 1",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN 1",
+          "text": "1"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Perl",
+          "text": "Perl"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "arena",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "arquitectura",
+          "text": "sin arquitectura"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "06",
+    "texto": "MySpace fue construido originalmente en Perl sobre Cold Fusion, luego migrado parcialmente a ASP clásico con Microsoft SQL Server. No existía una arquitectura diseñada para crecer. El stack técnico fue elegido por velocidad de desarrollo inicial, no por escalabilidad.",
+    "chapter_title": "Decisión 1",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Perl",
+          "text": "Perl"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Cold Fusion",
+          "text": "Cold Fusion"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "velocidad",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "escalabilidad",
+          "text": "No scale"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "stack",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "07",
+    "texto": "En 2003, el equipo fundador —Tom Anderson y Chris DeWolfe— necesitaba lanzar rápido. El mercado de redes sociales no existía aún como categoría definida. Moverse rápido tenía más valor que construir bien. Esa decisión era razonable en ese contexto.",
+    "chapter_title": "Decisión 1",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2003",
+          "text": "2003"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Tom Anderson",
+          "text": "Tom Anderson"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "rápido",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "categoría",
+          "text": "Mercado nuevo"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "razonable",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "08",
+    "texto": "Cuando la base de usuarios explotó, el sistema respondió con caídas en cascada. La lógica de negocio estaba mezclada con la lógica de presentación. No había separación de capas. Los módulos se llamaban entre sí sin contratos claros.",
+    "chapter_title": "Colapso del sistema",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "explotó",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "cascada",
+          "text": "Caídas"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "lógica",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "separación",
+          "text": "Sin arquitectura"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "contratos",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "09",
+    "texto": "Cambiar una función de perfiles rompía el sistema de mensajes. Cambiar el sistema de mensajes rompía las páginas de artistas. El código tenía acoplamiento circular: módulo A dependía de B, B de C, C de A. Romper el ciclo requería reescribir los tres.",
+    "chapter_title": "Acoplamiento circular",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "perfiles",
+          "text": "Perfiles"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "mensajes",
+          "text": "Mensajes"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "acoplamiento",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "circular",
+          "text": "A→B→C→A"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Romper",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "f",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "reescribir",
+          "graphic": "donut_chart",
+          "value": "3"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "texto": "MySpace sufrió caídas de servicio documentadas en 2006 y 2007 cuando su tráfico se triplicó. El tiempo de carga promedio de página subía por encima de 8 segundos en horas pico.",
+    "chapter_title": "Colapso del sistema",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2006",
+          "text": "2006"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2007",
+          "text": "2007"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "caídas",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "8 segundos",
+          "text": "8s+"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "triplicó",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "f",
+          "type": "motion_graphic",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "tráfico",
+          "graphic": "contador_porcentaje",
+          "value": "300"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "e",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "texto": "Ingenieros declararon posteriormente que desplegar un cambio tomaba semanas de pruebas manuales porque las pruebas automatizadas eran prácticamente inexistentes. El costo de cada feature nueva no era de desarrollo: era de estabilización post-despliegue.",
+    "chapter_title": "Testing Manual",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "semanas",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "semanas",
+          "text": "Semanas"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "pruebas",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "automatizadas",
+          "text": "Sin automatización"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "costo",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "12",
+    "texto": "DECISIÓN 2: Permitir CSS y JavaScript arbitrario en perfiles de usuario",
+    "chapter_title": "Decisión Crítica",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "JavaScript",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "arbitrario",
+          "text": "CSS & JS"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Permitir",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "13",
+    "texto": "MySpace permitía a cualquier usuario insertar HTML, CSS y JavaScript directamente en su perfil. Era una feature deliberada, no un bug. Buscaba diferenciación: \"tu perfil es tuyo, personalízalo como quieras\". Esta libertad creativa fue un factor clave de adopción temprana entre músicos y adolescentes.",
+    "chapter_title": "Estrategia Personalización",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "MySpace",
+          "name": "myspace"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "personalízalo",
+          "text": "Libertad Creativa"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "deliberada",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "músicos",
+          "query": "teenager music band profile customization"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "adopción",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "texto": "La personalización extrema era el argumento de venta central de MySpace frente a competidores más rígidos. En 2004 y 2005, era genuinamente una ventaja competitiva.",
+    "chapter_title": "Estrategia Personalización",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2004",
+          "text": "2004-05"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "ventaja",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "competidores",
+          "text": "vs Competencia"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "argumento",
+          "icon_name": "flat-color-icons:briefcase"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "15",
+    "texto": "Los perfiles de bandas con reproductores de música embebidos, fondos animados y tipografías personalizadas eran imposibles en cualquier otra plataforma masiva.",
+    "chapter_title": "Estrategia Personalización",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "pexels_image",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "bandas",
+          "query": "music band profile player embed animation"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "música",
+          "icon_name": "flat-color-icons:music"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "imposibles",
+          "text": "Único en web"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "fondos",
+          "icon_name": "flat-color-icons:picture"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "16",
+    "texto": "El JavaScript sin sanitizar creó un vector de ataque sistemático. El gusano Samy, desplegado en octubre de 2005 por Samy Kamkar, explotó exactamente esta superficie.",
+    "chapter_title": "Gusano Samy",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "octubre",
+          "text": "2005"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sanitizar",
+          "icon_name": "flat-color-icons:unlock"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Samy",
+          "text": "Samy Kamkar"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "gusano",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "ataque",
+          "icon_name": "flat-color-icons:flash-on"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "17",
+    "texto": "Utilizó XSS —Cross-Site Scripting— para replicarse entre perfiles: cualquier usuario que visitaba un perfil infectado ejecutaba código que modificaba su propio perfil y agregaba a Samy como amigo. En menos de 20 horas infectó más de un millón de perfiles.",
+    "chapter_title": "Gusano Samy",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Cross-Site",
+          "text": "XSS Attack"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "millón",
+          "text": "1M+"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "replicarse",
+          "icon_name": "flat-color-icons:multiple-smartphones"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "infectó",
+          "graphic": "contador_porcentaje",
+          "value": "100"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "horas",
+          "text": "20hrs"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "18",
+    "texto": "MySpace tuvo que desconectar el sitio para contenerlo. Más allá de la seguridad, la consecuencia estructural fue peor. Con CSS arbitrario, MySpace no podía rediseñar su interfaz. Si actualizaban el DOM o renombraban clases CSS, rompían los perfiles de millones de usuarios.",
+    "chapter_title": "Trampa del Sistema",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "MySpace",
+          "name": "myspace"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "desconectar",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "rediseñar",
+          "text": "No Rediseño"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "rompían",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "19",
+    "texto": "El sistema visual estaba capturado por el contenido generado por usuarios. Hacer mobile-first era imposible sin destruir años de personalización acumulada.",
+    "chapter_title": "Trampa del Sistema",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "capturado",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "mobile-first",
+          "text": "No Mobile"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "mobile",
+          "icon_name": "flat-color-icons:smartphone-tablet"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "años",
+          "text": "Años"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "destruir",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "20",
+    "texto": "El gusano Samy es el primer gusano XSS masivo documentado en internet. Infectó 1,002,580 perfiles en 24 horas según datos de Kamkar. Más críticamente: cuando Facebook lanzó su diseño limpio y consistente en 2006, MySpace no podía responder con un rediseño.",
+    "chapter_title": "Impacto Histórico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1,002,580",
+          "text": "1M+"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "2006",
+          "text": "2006"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "no podía",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "histórico",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "críticamente",
+          "text": "Punto de quiebre"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "texto": "Los intentos de unificar la experiencia visual entre 2007 y 2009 generaron protestas masivas de usuarios que habían invertido horas en sus perfiles personalizados.",
+    "chapter_title": "Unificación fallida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "2007",
+          "text": "2007-2009"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "protestas",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "protestas",
+          "query": "protest angry crowd people"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "perfiles",
+          "text": "Perfiles personalizado"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "masivas",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "22",
+    "texto": "DECISIÓN 3: Base de datos monolítica sin sharding — el cuello de botella central",
+    "chapter_title": "Arquitectura DB",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 3"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "base de datos",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "monolítica",
+          "text": "Monolítica"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cuello de botella",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "sharding",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "23",
+    "texto": "MySpace utilizaba Microsoft SQL Server con una base de datos monolítica central. Sharding es la práctica de particionar horizontalmente una base de datos en múltiples instancias independientes para distribuir la carga. MySpace no implementó sharding hasta que el problema era ya una crisis de producción.",
+    "chapter_title": "Arquitectura DB",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "pexels_image",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "SQL Server",
+          "query": "sql server database server infrastructure"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "monolítica",
+          "text": "Monolítica central"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Sharding",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "crisis",
+          "text": "Crisis"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "múltiples instancias",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "24",
+    "texto": "Con un equipo pequeño y crecimiento inicial modesto, una base de datos centralizada simplificaba el desarrollo. Las queries relacionales eran más simples. El equipo conocía el stack.",
+    "chapter_title": "Razones iniciales",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "equipo",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "pequeño",
+          "text": "Equipo pequeño"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "crecimiento",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "simplificaba",
+          "icon_name": "flat-color-icons:checkmark"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "queries",
+          "text": "Queries simples"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "25",
+    "texto": "Y en 2003-2004, los patrones de sharding para redes sociales no eran conocimiento común —Facebook, que los sistematizaría, aún no existía como referencia pública.",
+    "chapter_title": "Contexto 2003",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2003",
+          "text": "2003-2004"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "no eran conocimiento",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "patrones",
+          "text": "Patrones sharding"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "sistematizaría",
+          "icon_name": "flat-color-icons:graduation-cap"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "26",
+    "texto": "La base de datos se convirtió en el único punto de fallo del sistema completo. En 2006, con 100 millones de usuarios activos, cada acción —ver un perfil, enviar un mensaje, agregar un amigo— requería múltiples queries a la misma instancia central.",
+    "chapter_title": "Punto único fallo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "único punto de fallo",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "xl",
+          "trigger_word": "100 millones",
+          "text": "100M"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "usuarios",
+          "text": "Usuarios activos"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "acción",
+          "icon_name": "flat-color-icons:multiple-smartphones"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "2006",
+          "text": "2006"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "27",
+    "texto": "El patrón de lectura de redes sociales es radialmente intensivo: cuando un artista con 50,000 seguidores publica algo, eso genera 50,000 notificaciones simultáneas que golpean la misma tabla. La base de datos no tenía mecanismo para distribuir esa carga.",
+    "chapter_title": "Patrón lectura",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "50,000",
+          "text": "50K"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "notificaciones",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "radialmente",
+          "text": "Radialmente intensivo"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "genera",
+          "graphic": "flecha_subiendo",
+          "value": "50000"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "no tenía mecanismo",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "28",
+    "texto": "MySpace implementó eventualmente una solución de sharding manual, pero fue construida encima de la arquitectura existente como una capa de indirección. Cada query tenía que pasar por una capa de routing que determinaba en qué shard físico vivían los datos.",
+    "chapter_title": "Sharding manual",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "sharding",
+          "text": "Sharding manual"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "capa",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "indirección",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "routing",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "shard físico",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "29",
+    "texto": "Esa capa se convirtió en otro punto único de fallo.",
+    "chapter_title": "Sharding manual",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "punto",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "único",
+          "text": "SPOF"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "fallo",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "30",
+    "texto": "En 2007, MySpace contrató a ingenieros específicamente para estabilizar la capa de base de datos. Documentos internos filtrados posteriormente describían semanas donde el equipo completo estaba en \"modo bombero\" —sin capacidad de desarrollar features, solo conteniendo degradaciones de performance.",
+    "chapter_title": "Crisis 2007",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2007",
+          "text": "2007"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "ingenieros",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "bombero",
+          "text": "Modo bombero"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "degradaciones",
+          "graphic": "flecha_bajando",
+          "value": "1"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "sin capacidad",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "31",
+    "texto": "Durante el mismo período, Facebook, con sharding nativo desde etapas tempranas, desplegaba features nuevas cada semana.",
+    "chapter_title": "Facebook vs MySpace",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sharding",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "semana",
+          "text": "1 semana"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "features",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "32",
+    "texto": "DECISIÓN 4: Crecer el equipo de ingeniería sin crecer la arquitectura",
+    "chapter_title": "La Decisión Fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 4"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "equipo",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "arquitectura",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "33",
+    "texto": "Después de la adquisición por News Corp en 2005, MySpace pasó de un equipo de decenas a cientos de ingenieros en menos de dos años. Sin embargo, la base de código no fue refactorizada para soportar ese nivel de desarrollo paralelo.",
+    "chapter_title": "La Adquisición",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "News Corp",
+          "text": "News Corp"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2005",
+          "text": "2005"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cientos",
+          "graphic": "flecha_subiendo",
+          "value": "1"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "refactorizada",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "34",
+    "texto": "No existían límites de dominio claros, no había APIs internas definidas y no había propiedad clara de módulos.",
+    "chapter_title": "Sin Arquitectura",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "No existían",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "límites",
+          "text": "límites dominio"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "APIs",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "propiedad",
+          "text": "Caos"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "35",
+    "texto": "News Corp necesitaba justificar los 580 millones invertidos con crecimiento rápido de producto. Contratar ingenieros era la palanca obvia. La presión de mercado —Facebook crecía aceleradamente— hacía que desacelerar para refactorizar pareciera suicida. Cada trimestre sin features nuevas era un trimestre que Facebook ganaba terreno.",
+    "chapter_title": "Presión de Mercado",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "580 millones",
+          "text": "$580M"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "presión",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "crecimiento",
+          "text": "crecimiento rápido"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "trimestre",
+          "icon_name": "flat-color-icons:alarm-clock"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "36",
+    "texto": "Más ingenieros sobre una base de código sin separación de dominios no produce más velocidad. Produce más conflictos. Cuando 200 ingenieros trabajan sobre el mismo repositorio sin boundaries arquitectónicos, el tiempo de integración escala cuadráticamente con el número de desarrolladores.",
+    "chapter_title": "Ley de Brooks",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "200 ingenieros",
+          "text": "200"
+        },
+        {
+          "id": "b",
+          "type": "motion_graphic",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "velocidad",
+          "graphic": "flecha_bajando",
+          "value": "1"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "conflictos",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "escala",
+          "icon_name": "flat-color-icons:line-chart"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "37",
+    "texto": "Dos ingenieros modificando el mismo módulo de perfiles con propósitos distintos generan conflictos que un tercero tiene que resolver manualmente. El proceso de code review se convirtió en un cuello de botella humano.",
+    "chapter_title": "Cuello de Botella",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Dos ingenieros",
+          "text": "2"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "conflictos",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "code review",
+          "text": "code review"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "humano",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "cuello",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "38",
+    "texto": "Los deploys requerían coordinación entre equipos que no tenían mecanismo formal para comunicarse. El fenómeno tiene nombre en ingeniería de software: Ley de Brooks. Agregar personas a un proyecto de software atrasado lo atrasa más.",
+    "chapter_title": "Ley de Brooks",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "deploys",
+          "icon_name": "flat-color-icons:upload"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "coordinación",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Brooks",
+          "text": "Brooks"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "atrasa",
+          "graphic": "flecha_bajando",
+          "value": "1"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "39",
+    "texto": "En MySpace no era un proyecto atrasado: era un sistema sin arquitectura para trabajo paralelo.",
+    "chapter_title": "Raíz del Problema",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "MySpace",
+          "text": "MySpace"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "sin arquitectura",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "paralelo",
+          "text": "NO paralelo"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "40",
+    "texto": "Ex-ingenieros de MySpace describieron en entrevistas posteriores que el tiempo desde escribir código hasta verlo en producción podía ser de dos a cuatro semanas. Facebook en el mismo período operaba con ciclos de despliegue de días.",
+    "chapter_title": "Velocidad de Despliegue",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dos a cuatro",
+          "text": "2-4 sem"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "tiempo",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "ciclos",
+          "graphic": "timeline_barras",
+          "value": "MySpace,Facebook"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "41",
+    "texto": "La ventana de tiempo para iterar sobre cualquier feature era estructuralmente más lenta, independientemente de cuántas personas trabajaran en ella.",
+    "chapter_title": "Velocidad de iteración",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "ventana de tiempo",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "más lenta",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "estructuralmente",
+          "text": "Cuello de botella"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "personas",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "lenta",
+          "graphic": "flecha_bajando",
+          "value": "1"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "42",
+    "texto": "DECISIÓN 5: No construir una API pública cuando el mercado lo exigía",
+    "chapter_title": "Decisión 5: API pública",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 5"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "API",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "No construir",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "pública",
+          "text": "API pública"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "43",
+    "texto": "Una API pública es una interfaz documentada que permite a terceros desarrolladores construir aplicaciones que se integran con una plataforma. Facebook lanzó su plataforma de aplicaciones con API abierta en mayo de 2007.",
+    "chapter_title": "Decisión 5: API pública",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "API pública",
+          "text": "API pública"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "interfaz",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "2007",
+          "text": "2007"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "abierta",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "44",
+    "texto": "MySpace lanzó su versión, OpenSocial, en colaboración con Google, en noviembre de 2007, seis meses después.",
+    "chapter_title": "Decisión 5: API pública",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "MySpace",
+          "text": "MySpace"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "OpenSocial",
+          "text": "OpenSocial"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "noviembre",
+          "text": "Nov 2007"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "seis meses",
+          "icon_name": "flat-color-icons:alarm-clock"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45",
+    "texto": "MySpace tenía razones legítimas para ser cautelosa con una API abierta. Su sistema de contenido generado por usuarios ya había demostrado ser un vector de seguridad. Abrir una API sobre una arquitectura no modular significaba exponer internals no documentados.",
+    "chapter_title": "Decisión 5: API pública",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "cautelosa",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "seguridad",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "vector",
+          "text": "RIESGO"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "arquitectura",
+          "icon_name": "flat-color-icons:engineering"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "46",
+    "texto": "El equipo de ingeniería estaba en modo de estabilización constante. Construir una API robusta requería refactorizar módulos que nadie quería tocar.",
+    "chapter_title": "Obstáculos técnicos",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "equipo",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "estabilización",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "constante",
+          "text": "En crisis perpetua"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "módulos",
+          "icon_name": "flat-color-icons:factory-breakdown"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "nadie quería tocar",
+          "icon_name": "flat-color-icons:lock"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "47",
+    "texto": "Facebook en seis meses construyó un ecosistema de aplicaciones de terceros que hacía la plataforma exponencialmente más valiosa. FarmVille, quiz apps, herramientas de birthday reminders: aplicaciones pequeñas que mantenían a los usuarios enganchados diariamente.",
+    "chapter_title": "Ecosistema Facebook",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "seis meses",
+          "text": "6 meses"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "exponencialmente",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "FarmVille",
+          "text": "FarmVille"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "enganchados",
+          "icon_name": "flat-color-icons:like"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "48",
+    "texto": "MySpace no podía competir con ese ecosistema porque OpenSocial llegó tarde y su implementación era inconsistente entre plataformas. El tiempo entre 2003 y 2008 es cuando se establece el efecto de red de una plataforma social.",
+    "chapter_title": "Ventana crítica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "MySpace",
+          "text": "MySpace"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "no podía",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "2003 y 2008",
+          "text": "2003-2008"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "efecto de red",
+          "icon_name": "flat-color-icons:timeline"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "49",
+    "texto": "Los usuarios no migran de plataforma cuando la alternativa es marginalmente mejor. Migran cuando el costo de quedarse supera el costo de irse. El ecosistema de aplicaciones de Facebook acumuló costo de switching durante exactamente ese período.",
+    "chapter_title": "Costo de switching",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "usuarios",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "supera",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "supera",
+          "text": "ALTO"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "50",
+    "texto": "En enero de 2008, Facebook superó a MySpace en visitantes únicos globales por primera vez. En mayo de 2009, el cruce era irreversible. MySpace intentó un rediseño completo en 2010 enfocado en contenido musical —reconociendo que no podía ganar como red social generalista.",
+    "chapter_title": "El cruce",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "enero de 2008",
+          "text": "Enero 2008"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "superó",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "mayo de 2009",
+          "text": "2009"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "2010",
+          "text": "Rediseño 2010"
+        },
+        {
+          "id": "g",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "musical",
+          "icon_name": "flat-color-icons:music"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "51",
+    "texto": "El intento llegó demasiado tarde. En 2011, News Corp vendió MySpace por 35 millones de dólares. Habían pagado 580 millones seis años antes. La pérdida de valor fue del 94%.",
+    "chapter_title": "Colapso financiero",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2011",
+          "text": "2011"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "35 millones",
+          "text": "$35M"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "94",
+          "text": "94%"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "pérdida",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "52",
+    "texto": "DECISIÓN 6: El rediseño de 2010 — el diagnóstico correcto, la ejecución fatal",
+    "chapter_title": "Rediseño 2010",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2010",
+          "text": "2010"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "rediseño",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "diagnóstico",
+          "text": "Diagnóstico correcto"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ejecución",
+          "text": "Ejecución fatal"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "53",
+    "texto": "En 2010, MySpace ejecutó su mayor rediseño: abandonar la red social generalista y reposicionarse como plataforma de entretenimiento y música. La decisión era estratégicamente correcta —MySpace tenía ventaja real en contenido musical.",
+    "chapter_title": "Rediseño 2010",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "música",
+          "icon_name": "flat-color-icons:music"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "reposicionarse",
+          "text": "Red social→Música"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "correcta",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ventaja",
+          "text": "Ventaja real"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "54",
+    "texto": "Pero el rediseño requería modificar los componentes más inestables del sistema: perfiles de usuario, reproductor de música y sistema de descubrimiento.",
+    "chapter_title": "Rediseño 2010",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "inestables",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "sm",
+          "trigger_word": "perfiles",
+          "text": "Perfiles usuario"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "sm",
+          "trigger_word": "reproductor",
+          "text": "Reproductor"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "sm",
+          "trigger_word": "descubrimiento",
+          "text": "Descubrimiento"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "55",
+    "texto": "Los datos de 2009 mostraban que los usuarios que permanecían en MySpace se concentraban en verticales de entretenimiento. El rediseño intentaba convertir una debilidad —perder la guerra de redes generalistas— en una apuesta por un nicho donde aún eran relevantes.",
+    "chapter_title": "Rediseño 2010",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2009",
+          "text": "2009"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "datos",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "entretenimiento",
+          "text": "Entretenimiento"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "nicho",
+          "text": "Nicho relevante"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "56",
+    "texto": "Era un pivot razonado con evidencia.",
+    "chapter_title": "Rediseño 2010",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "pivot",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "57",
+    "texto": "El rediseño tardó 18 meses en completarse. Para una plataforma con 100 millones de usuarios en 2008, 18 meses de desarrollo sobre una base de código frágil es demasiado tiempo. Cada cambio desencadenaba regressions.",
+    "chapter_title": "Ejecución fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "18 meses",
+          "text": "18 meses"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "100 millones",
+          "text": "100M"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "tardó",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "frágil",
+          "text": "Código frágil"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "regressions",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "58",
+    "texto": "El equipo de ingeniería documentó que módulos que nadie había tocado en dos años comenzaban a fallar cuando se modificaban componentes adjacentes. El rediseño se lanzó en octubre de 2010. Para entonces, Facebook tenía 500 millones de usuarios activos.",
+    "chapter_title": "Ejecución fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "sm",
+          "trigger_word": "módulos",
+          "text": "Modules legacy"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "octubre",
+          "text": "Oct 2010"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "fallar",
+          "icon_name": "flat-color-icons:factory-breakdown"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "500 millones",
+          "text": "500M"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "text": "Facebook"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "59",
+    "texto": "El nicho musical que MySpace intentaba capturar era ya una fracción de lo que había sido su base total.",
+    "chapter_title": "Ejecución fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "musical",
+          "icon_name": "flat-color-icons:music"
+        },
+        {
+          "id": "b",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "fracción",
+          "graphic": "donut_chart",
+          "value": "20"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "fracción",
+          "text": "Mercado reducido"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "60",
+    "texto": "Y el producto lanzado tenía bugs de regresión visibles en producción porque el tiempo de testing no había sido suficiente sobre una base de código que ningún ingeniero conocía completamente.",
+    "chapter_title": "Ejecución fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "bugs",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "regresión",
+          "text": "Regresiones"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "visibles",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "sm",
+          "trigger_word": "testing",
+          "text": "Testing insuf."
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "61",
+    "texto": "El rediseño no detuvo la hemorragia de usuarios. En enero de 2011, MySpace tenía 63 millones de usuarios únicos mensuales, menos de la mitad del pico. Despidió al 47% de su plantilla en ese mes —500 empleados.",
+    "chapter_title": "La caída",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "63 millones",
+          "text": "63M"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "hemorragia",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "enero de 2011",
+          "text": "enero 2011"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "empleados",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "f",
+          "type": "motion_graphic",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "despidió",
+          "graphic": "flecha_bajando",
+          "value": "47"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "a",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "62",
+    "texto": "Seis meses después, News Corp inició el proceso de venta. La arquitectura que había impedido actuar rápido durante el auge también impidió actuar rápido durante la caída.",
+    "chapter_title": "La venta",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "News Corp",
+          "text": "News Corp"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "meses después",
+          "text": "2011"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "venta",
+          "icon_name": "flat-color-icons:briefcase"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "arquitectura",
+          "icon_name": "flat-color-icons:settings"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "caída",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "63",
+    "texto": "El perfil de MySpace como plataforma musical sobrevivió. En 2011, Justin Timberlake lideró una adquisición para relanzarlo como red de artistas independientes.",
+    "chapter_title": "Renacimiento musical",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "plataforma musical",
+          "icon_name": "flat-color-icons:music"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Justin Timberlake",
+          "text": "Justin Timberlake"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "2011",
+          "text": "2011"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "sobrevivió",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "artistas independientes",
+          "icon_name": "flat-color-icons:idea"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "64",
+    "texto": "La idea central —los artistas deben poder distribuir música directamente a fans sin intermediarios— es hoy el modelo de SoundCloud, Bandcamp y la distribución directa en Spotify.",
+    "chapter_title": "Legado musical",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "música",
+          "icon_name": "flat-color-icons:music"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "directamente",
+          "text": "distribución directa"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "artistas",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "SoundCloud",
+          "name": "soundcloud"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Spotify",
+          "name": "spotify"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "65",
+    "texto": "El patrón arquitectónico que MySpace no pudo implementar —servicios desacoplados con APIs definidas— es exactamente lo que Facebook, Twitter y después todas las plataformas de escala adoptaron.",
+    "chapter_title": "Lección arquitectónica",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "arquitectónico",
+          "icon_name": "flat-color-icons:settings"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "APIs definidas",
+          "text": "APIs desacopladas"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Facebook",
+          "name": "facebook"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Twitter",
+          "name": "twitter"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "escala",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "66",
+    "texto": "El costo de no hacerlo se puede medir: 545 millones de dólares en valor destruido entre 2005 y 2011.",
+    "chapter_title": "El costo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "545 millones",
+          "text": "$545M"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "dólares",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "2005 y 2011",
+          "text": "2005-2011"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "destruido",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "67",
+    "texto": "La próxima vez que estés construyendo sobre una base de código que nadie quiere tocar, pregúntate si el costo de refactorizar hoy es mayor o menor que el costo de no poder mover el sistema cuando el mercado cambie.",
+    "chapter_title": "Lección final",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "código",
+          "icon_name": "flat-color-icons:command-line"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "pregúntate",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "refactorizar",
+          "text": "refactorizar hoy"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "costo",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "mover el sistema",
+          "icon_name": "flat-color-icons:next"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "68",
+    "texto": "Eso es lo que separa una plataforma que escala de una que se suicida cuando más la necesitas.",
+    "chapter_title": "Conclusión",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "escala",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "suicida",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  }
+]

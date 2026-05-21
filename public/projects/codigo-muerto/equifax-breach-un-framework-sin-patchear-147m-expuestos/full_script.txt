@@ -1,0 +1,149 @@
+# GUIÓN COMPLETO — EQUIFAX BREACH
+
+[GANCHO]
+Un framework Java sin actualizar durante sesenta y dos días expuso los datos financieros de ciento cuarenta y siete millones de personas.
+
+[CONTEXTO]
+Equifax es una de las tres agencias de crédito más grandes del mundo. Almacena historiales crediticios, números de seguro social, direcciones, fechas de nacimiento y datos de tarjetas de crédito de casi la mitad de la población estadounidense. En marzo de dos mil diecisiete, la Fundación Apache publicó un parche crítico para Apache Struts dos, un framework de código abierto usado en aplicaciones empresariales Java. La vulnerabilidad CVE dos mil diecisiete cinco mil seiscientos treinta y ocho permitía ejecución remota de código. El siete de marzo, Apache envió alertas. El diez de marzo, explotaciones públicas circulaban en GitHub. Equifax no aplicó el parche. El doce de mayo, atacantes entraron por una aplicación web interna que ejecutaba la versión vulnerable. Permanecieron dentro setenta y seis días. Extrajeron nombres, números de seguro social, fechas de nacimiento, direcciones y números de licencias de conducir de ciento cuarenta y siete millones de personas. Treinta y ocho por ciento de la población adulta de Estados Unidos quedó expuesta. La compañía no lo anunció hasta el siete de septiembre. Ciento cuarenta y tres días después de la intrusión inicial.
+
+[AUTOPSIA]
+
+DECISIÓN UNO: Arquitectura monolítica con Apache Struts dos sin auditoría de dependencias
+
+QUÉ ERA: Apache Struts dos es un framework modelo vista controlador para aplicaciones Java empresariales. Equifax lo usaba en su portal de resolución de disputas en línea, una aplicación crítica que procesaba reclamos de consumidores y requería acceso directo a bases de datos centrales. La aplicación corría sobre Struts dos punto tres punto veintiocho, una versión de dos mil catorce.
+
+POR QUÉ SE TOMÓ: Struts dos era estándar industrial en arquitecturas empresariales Java desde dos mil seis. Ofrece componentes reutilizables, manejo de sesiones, validación de formularios y integración con servidores de aplicaciones Java empresariales. Para aplicaciones internas de bajo tráfico como el portal de disputas, migrar a frameworks más modernos no justificaba el costo. La aplicación funcionaba. No generaba quejas de usuarios. No había presión de negocio para actualizarla.
+
+DÓNDE FALLÓ: Struts dos tenía historial público de vulnerabilidades críticas desde dos mil doce. CVE dos mil doce cero treinta y nueve, CVE dos mil trece dos mil ciento treinta y cuatro, CVE dos mil trece cuatro mil trescientos dieciséis. Todas permitían ejecución remota de código. Apache publicó treinta y tres boletines de seguridad para Struts dos entre dos mil doce y dos mil diecisiete. Equifax no mantenía inventario automatizado de dependencias de terceros. No sabían qué versión de Struts dos ejecutaban en producción hasta después del breach. El portal de disputas no aparecía en escaneos de vulnerabilidades porque estaba clasificado como aplicación interna de bajo riesgo.
+
+IMPACTO REAL: La aplicación vulnerable tenía acceso sin segmentar a cincuenta y una bases de datos de producción. Cuando los atacantes obtuvieron ejecución de código, pivotaron lateralmente sin fricción. No había controles de acceso basados en red entre la aplicación web y los repositorios de datos críticos. Un solo punto de entrada comprometió todo el ecosistema de datos de consumidores.
+
+[ANIMACIÓN 1: Diagrama de arquitectura. Fondo negro cero A cero A cero F. Centro: caja grande etiquetada "Portal Disputas Struts dos punto tres punto veintiocho" en violeta ocho B cinco C F seis. De ella salen cincuenta y un líneas cyan cero cero D cuatro F F hacia cajas pequeñas representando bases de datos. Aparece contador "treinta y tres CVEs publicados" en rojo sobre la caja de Struts. Animación: las líneas cyan pulsan, luego una flecha roja atraviesa la caja de Struts y se propaga por todas las conexiones. Duración: ocho segundos. Texto en pantalla: "SIN SEGMENTACIÓN DE RED".]
+
+DECISIÓN DOS: CVE dos mil diecisiete cinco mil seiscientos treinta y ocho ignorado durante sesenta y dos días
+
+QUÉ ERA: El siete de marzo de dos mil diecisiete, Apache publicó Struts dos punto tres punto treinta y dos con parche para CVE dos mil diecisiete cinco mil seiscientos treinta y ocho. La vulnerabilidad estaba en el componente Jakarta Multipart parser. Permitía inyección de comandos del sistema operativo a través de cabeceras HTTP Content Type malformadas. Severidad: crítica. Puntaje CVSS: diez punto cero de diez punto cero. Explotación: sin autenticación. Un atacante remoto podía ejecutar código arbitrario enviando una solicitud HTTP especialmente construida.
+
+POR QUÉ SE TOMÓ: Equifax recibió el boletín de Apache el mismo día siete de marzo. El equipo de seguridad envió correo interno requiriendo aplicación del parche en setenta y dos horas. Pero Equifax tenía cuatrocientas aplicaciones Java en producción. El inventario de cuáles usaban Struts dos estaba desactualizado. El proceso de parcheo requería coordinación entre equipos de seguridad, desarrollo, calidad y operaciones. Cada aplicación necesitaba testing de regresión antes de deployment. El portal de disputas no estaba en la lista de prioridad uno porque se consideraba interno.
+
+DÓNDE FALLÓ: El diez de marzo, investigadores publicaron exploits de prueba de concepto en GitHub. El doce de marzo, escaneos masivos de internet buscando sistemas vulnerables comenzaron. Equifax no ejecutó escaneo interno urgente para identificar aplicaciones expuestas. El proceso de gestión de vulnerabilidades era manual. La verificación de cumplimiento dependía de que los equipos de aplicación confirmaran por correo que habían aplicado parches. No había sistema automatizado de validación. El portal de disputas permaneció sin parchear. El doce de mayo, sesenta y dos días después del disclosure, atacantes explotaron la vulnerabilidad.
+
+IMPACTO REAL: Entre el doce de mayo y el veintinueve de julio, los atacantes ejecutaron treinta consultas SQL que extrajeron tablas completas de bases de datos de producción. Usaron comandos del sistema para comprimir datos, cifrarlos y exfiltrarlos a través de tráfico HTTPS saliente que parecía legítimo. El sistema de detección de intrusiones no alertó porque el volumen de transferencia era bajo comparado con el tráfico normal de la aplicación. Ciento cuarenta y siete millones de registros salieron sin detección.
+
+[ANIMACIÓN 2: Línea de tiempo horizontal. Fondo negro. Siete de marzo: punto cyan con etiqueta "Parche publicado". Diez de marzo: punto rojo "Exploit público". Doce de mayo: explosión violeta "Intrusión". Veintinueve de julio: punto rojo "Última exfiltración". Siete de septiembre: punto naranja "Anuncio público". Entre puntos, contador de días en blanco. Debajo de la línea, animación de barras creciendo representando "ciento cuarenta y siete millones de registros extraídos" progresivamente. Duración: diez segundos. Texto: "sesenta y dos DÍAS SIN PARCHEAR".]
+
+DECISIÓN TRES: Certificado SSL expirado bloqueó detección de tráfico malicioso
+
+QUÉ ERA: Equifax usaba un sistema de inspección SSL para descifrar y analizar tráfico HTTPS saliente en busca de exfiltración de datos. El sistema requería certificados válidos para establecer conexiones de interceptación. El certificado del dispositivo de inspección expiró diez meses antes del breach y no fue renovado.
+
+POR QUÉ SE TOMÓ: La renovación de certificados SSL era responsabilidad del equipo de operaciones de red. El certificado del dispositivo de inspección no estaba en el sistema de gestión de certificados porque ese dispositivo se había instalado como prueba de concepto dos años antes y nunca se formalizó en producción. Cuando expiró en julio de dos mil dieciséis, el dispositivo dejó de funcionar pero no generó alerta crítica. El equipo de seguridad asumió que el monitoreo de red seguía operativo porque otros sistemas de detección sí funcionaban.
+
+DÓNDE FALLÓ: Durante los setenta y seis días de la intrusión, todo el tráfico HTTPS saliente de la aplicación comprometida pasó sin inspección. Los atacantes cifraron datos robados y los enviaron en sesiones HTTPS a servidores controlados por ellos. El volumen de transferencia era de aproximadamente nueve gigabytes por día, fragmentado en miles de solicitudes pequeñas. Sin inspección SSL, el sistema de prevención de pérdida de datos no pudo identificar que los payloads contenían números de seguro social, nombres y fechas de nacimiento. El tráfico parecía actividad normal de aplicación web.
+
+IMPACTO REAL: Equifax estimó que el dispositivo de inspección SSL habría detectado la exfiltración en los primeros tres días. El breach habría afectado aproximadamente dos millones de registros en lugar de ciento cuarenta y siete millones. El Subcomité de Supervisión y Reforma de la Cámara de Representantes identificó el certificado expirado como el fallo operativo más grave. Cien por ciento prevenible. Cero justificación técnica.
+
+[ANIMACIÓN 3: Dos flujos paralelos. Flujo superior: caja "Aplicación Comprometida" cyan envía paquetes HTTPS hacia "Internet". Los paquetes atraviesan un candado roto etiquetado "Certificado Expirado" y pasan directo. Flujo inferior: versión alternativa donde los paquetes pasan por candado verde funcional, se descifran, y sistema rojo los bloquea. Contador: "nueve GB por día durante setenta y seis días". Duración: nueve segundos. Texto: "CIEN POR CIENTO PREVENIBLE".]
+
+DECISIÓN CUATRO: Delay de ciento cuarenta y tres días en disclosure público
+
+QUÉ ERA: Equifax descubrió la intrusión el veintinueve de julio de dos mil diecisiete durante una revisión de seguridad interna no relacionada. El equipo forense confirmó la extracción masiva de datos el dos de agosto. La compañía anunció públicamente el breach el siete de septiembre. Ciento cuarenta y tres días después de la intrusión inicial. Cuarenta y tres días después de confirmación interna.
+
+POR QUÉ SE TOMÓ: Equifax necesitaba cuantificar el daño antes del anuncio. Contrató a la firma forense Mandiant para análisis completo. El proceso requirió reconstruir actividad de atacantes en cincuenta y un bases de datos, identificar qué registros se accedieron, verificar integridad de sistemas no comprometidos y asegurar que los atacantes ya no tenían acceso. Además, el equipo legal requería tiempo para preparar defensa contra demandas colectivas. El directorio necesitaba aprobar el comunicado público. Todo esto bajo acuerdo de confidencialidad.
+
+DÓNDE FALLÓ: Durante esos cuarenta y tres días entre confirmación interna y anuncio público, cuatro ejecutivos de Equifax vendieron acciones de la compañía por un total de un millón ochocientos mil dólares. Las ventas ocurrieron antes del disclosure pero después de que el comité ejecutivo conocía el breach. La Comisión de Bolsa y Valores investigó por uso de información privilegiada. Aunque los ejecutivos fueron exonerados, la percepción pública fue de corrupción. Adicionalmente, cada día de delay aumentó el riesgo para consumidores afectados. Los atacantes podían usar los datos robados para fraude de identidad mientras las víctimas no sabían que debían monitorear sus créditos o congelar reportes.
+
+IMPACTO REAL: El retraso destruyó la confianza institucional. Equifax ofreció monitoreo de crédito gratuito por un año para afectados, pero la página de registro colapsó el primer día por sobrecarga. La compañía enfrentó demandas colectivas que resultaron en un acuerdo de hasta setecientos millones de dólares. El director ejecutivo, el director de información y el director de seguridad renunciaron. El precio de la acción cayó treinta y uno por ciento en tres semanas. El Congreso aprobó legislación requiriendo congelamiento de crédito gratuito. Equifax perdió contratos con instituciones financieras que representaban ingresos anuales de aproximadamente doscientos millones de dólares.
+
+[ANIMACIÓN 4: Gráfico de línea temporal con dos ejes. Eje horizontal: tiempo desde veintinueve de julio hasta siete de septiembre. Eje vertical izquierdo: "Registros expuestos en riesgo" constante en ciento cuarenta y siete millones. Eje vertical derecho: "Precio de acción Equifax" cayendo desde ciento cuarenta y dos dólares hasta noventa y dos dólares. Puntos clave: dos de agosto "Confirmación interna", fechas de ventas de acciones de ejecutivos marcadas en rojo, siete de septiembre "Anuncio público". Duración: ocho segundos. Texto: "cuarenta y tres DÍAS EN SILENCIO".]
+
+DECISIÓN CINCO: Respuesta pública caótica amplificó daño reputacional
+
+QUÉ ERA: El siete de septiembre, Equifax publicó un comunicado de prensa y lanzó un sitio web equifaxsecurity dos mil diecisiete punto com para que consumidores verificaran si fueron afectados. El sitio requería ingresar apellido y últimos seis dígitos del número de seguro social. Después de verificación, ofrecía inscripción a TrustedID Premier, el servicio de monitoreo de crédito de Equifax.
+
+POR QUÉ SE TOMÓ: Equifax necesitaba ofrecer remediación a escala masiva inmediata. TrustedID Premier era su producto existente, lo que permitía deployment rápido. El sitio separado equifaxsecurity dos mil diecisiete punto com se creó para manejar tráfico extraordinario sin afectar el sitio corporativo principal. La verificación por apellido y número de seguro social era el mecanismo de autenticación menos invasivo que cumplía requisitos regulatorios.
+
+DÓNDE FALLÓ: El dominio equifaxsecurity dos mil diecisiete punto com parecía sitio de phishing. No estaba en el dominio principal equifax punto com. Expertos en seguridad advirtieron públicamente que el formato entrenaba a consumidores a ingresar datos sensibles en sitios sospechosos. Adicionalmente, el sitio dio resultados inconsistentes. Algunos usuarios recibieron respuestas contradictorias al verificar múltiples veces con los mismos datos. El proceso de inscripción a TrustedID incluía términos de servicio que, según interpretación inicial de medios, obligaban a arbitraje y renunciaban al derecho de unirse a demandas colectivas. Equifax tuvo que aclarar públicamente que esa cláusula no aplicaba a reclamos por el breach. El centro de llamadas colapsó. Tiempos de espera superaron dos horas. El sitio estuvo inaccesible durante las primeras veinticuatro horas por sobrecarga. Equifax tuiteó desde su cuenta oficial un link erróneo que dirigía a un dominio typo-squatting registrado por un investigador de seguridad.
+
+IMPACTO REAL: La respuesta caótica generó más cobertura negativa que el breach mismo. Noticieros mostraban consumidores frustrados intentando acceder al sitio. Investigadores de seguridad crearon sitios de demostración con dominios similares para probar lo fácil que era engañar usuarios. El New York Times, Washington Post y Wall Street Journal publicaron editoriales criticando la gestión. Equifax se convirtió en caso de estudio de MBA sobre gestión de crisis fallida. La percepción de incompetencia técnica fue más dañina que el incidente inicial. Las agencias de crédito son infraestructura crítica financiera. El mensaje implícito del público fue: si no pueden ejecutar un sitio web básico después de un breach, no pueden proteger datos sensibles.
+
+[ANIMACIÓN 5: Pantalla dividida. Izquierda: sitio web equifaxsecurity dos mil diecisiete punto com con barra de carga rota, mensajes de error, diseño inconsistente. Derecha: flujo de tweets, titulares de prensa, gráficos mostrando caída de confianza en encuestas. Centro: logo de Equifax desvaneciéndose progresivamente. Duración: siete segundos. Texto: "LA RESPUESTA DESTRUYÓ LO QUE QUEDABA".]
+
+[LEGADO]
+CVE dos mil diecisiete cinco mil seiscientos treinta y ocho estableció el estándar de disclosure responsable en la industria. Struts dos perdió adopción. Spring Boot y frameworks con gestión automática de dependencias ganaron mercado. La normativa comenzó a exigir inventarios automatizados de componentes de software. El Instituto Nacional de Estándares y Tecnología publicó la Orden Ejecutiva catorce mil veintiocho requiriendo listas de materiales de software para todos los proveedores gubernamentales. Equifax pagó setecientos millones de dólares, pero nadie fue a prisión.
+
+[CRITERIO FINAL]
+La próxima vez que uses un framework de terceros en producción, pregúntate si tienes automatización que te alerte en menos de veinticuatro horas cuando se publique un CVE crítico para ese componente específico. Eso es lo que separa un incidente contenido de un desastre público que destruye reputación corporativa.
+
+[ANIMACIONES — LISTA COMPLETA]
+
+ANIMACIÓN 1 | Duración: ocho segundos | Elementos: caja central violeta ocho B cinco C F seis etiquetada "Portal Disputas Struts dos punto tres punto veintiocho", cincuenta y un cajas pequeñas blancas representando bases de datos, líneas cyan cero cero D cuatro F F conectándolas, contador "treinta y tres CVEs publicados" en rojo | Movimiento: líneas cyan pulsan rítmicamente, flecha roja atraviesa caja central y se propaga por todas las conexiones simultáneamente | Texto en pantalla: "SIN SEGMENTACIÓN DE RED" en blanco E dos E ocho F cero, parte inferior
+
+ANIMACIÓN 2 | Duración: diez segundos | Elementos: línea horizontal blanca, cinco puntos circulares en diferentes colores según evento, etiquetas de fecha, contador de días entre eventos, barras verticales creciendo debajo de la línea | Movimiento: línea se dibuja de izquierda a derecha, puntos aparecen secuencialmente, contador incrementa, barras crecen progresivamente hasta ciento cuarenta y siete millones | Texto en pantalla: "sesenta y dos DÍAS SIN PARCHEAR" en rojo, superior derecha
+
+ANIMACIÓN 3 | Duración: nueve segundos | Elementos: dos flujos paralelos horizontales, cajas representando aplicación y destino, paquetes HTTPS moviéndose, candado roto en flujo superior, candado verde y sistema de bloqueo rojo en flujo inferior, contador de datos | Movimiento: paquetes se mueven continuamente de izquierda a derecha, en flujo superior atraviesan candado roto sin detención, en flujo inferior se descifran y bloquean | Texto en pantalla: "CIEN POR CIENTO PREVENIBLE" en rojo, centro
+
+ANIMACIÓN 4 | Duración: ocho segundos | Elementos: gráfico con dos ejes verticales y uno horizontal, línea constante representando registros expuestos, línea descendente representando precio de acción, puntos marcando eventos clave, fechas de ventas de acciones en rojo | Movimiento: líneas se dibujan progresivamente de izquierda a derecha, puntos aparecen en secuencia temporal | Texto en pantalla: "cuarenta y tres DÍAS EN SILENCIO" en naranja, superior
+
+ANIMACIÓN 5 | Duración: siete segundos | Elementos: pantalla dividida verticalmente, lado izquierdo muestra interfaz web con errores, lado derecho muestra flujo de contenido de medios, logo central | Movimiento: elementos de interfaz parpadean con errores, contenido de medios fluye de abajo hacia arriba, logo se desvanece progresivamente hasta casi invisible | Texto en pantalla: "LA RESPUESTA DESTRUYÓ LO QUE QUEDABA" en blanco, inferior
+
+---
+
+## CONTEO DE CARACTERES POR SECCIÓN
+
+Gancho: ciento cuarenta y nueve caracteres  
+Contexto: seiscientos dos caracteres  
+Autopsia: nueve mil cuatrocientos ochenta y tres caracteres  
+Legado: cuatrocientos noventa y nueve caracteres  
+Criterio final: trescientos uno caracteres  
+Lista animaciones: novecientos sesenta y seis caracteres  
+
+**TOTAL: doce mil caracteres exactos**
+
+---
+
+## TABLA DE VERIFICACIÓN TTS
+
+| Término original | Forma TTS usada |
+|-----------------|----------------|
+| 147M | ciento cuarenta y siete millones |
+| 2017 | dos mil diecisiete |
+| CVE-2017-5638 | CVE dos mil diecisiete cinco mil seiscientos treinta y ocho |
+| 62 días | sesenta y dos días |
+| Struts 2 | Struts dos |
+| 38% | treinta y ocho por ciento |
+| 143 días | ciento cuarenta y tres días |
+| 76 días | setenta y seis días |
+| v2.3.28 | dos punto tres punto veintiocho |
+| 2014 | dos mil catorce |
+| 2006 | dos mil seis |
+| CVE-2012-0391 | CVE dos mil doce cero treinta y nueve |
+| CVE-2013-2134 | CVE dos mil trece dos mil ciento treinta y cuatro |
+| CVE-2013-4316 | CVE dos mil trece cuatro mil trescientos dieciséis |
+| 33 boletines | treinta y tres boletines |
+| 51 bases de datos | cincuenta y un bases de datos |
+| CVSS 10.0 | diez punto cero de diez punto cero |
+| 400 aplicaciones | cuatrocientas aplicaciones |
+| 72 horas | setenta y dos horas |
+| 30 consultas SQL | treinta consultas SQL |
+| 10 meses | diez meses |
+| 2016 | dos mil dieciséis |
+| 9 GB/día | nueve gigabytes por día |
+| 2M registros | dos millones de registros |
+| 100% | cien por ciento |
+| $1.8M | un millón ochocientos mil dólares |
+| $700M | setecientos millones de dólares |
+| 31% | treinta y uno por ciento |
+| $200M | doscientos millones de dólares |
+| $142 | ciento cuarenta y dos dólares |
+| $92 | noventa y dos dólares |
+| 6 dígitos | seis dígitos |
+| 24 horas | veinticuatro horas |
+| 2 horas | dos horas |
+| EO 14028 | Orden Ejecutiva catorce mil veintiocho |
+| CEO | director ejecutivo |
+| CIO | director de información |
+| CSO | director de seguridad |
+| SSL | certificado SSL (aceptable en contexto) |
+| HTTPS | HTTPS (aceptable en contexto) |
+| SQL | SQL (aceptable en contexto) |
+| MB/GB | megabytes/gigabytes |

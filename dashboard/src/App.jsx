@@ -1027,6 +1027,12 @@ export default function App() {
   );
   const [insights,      setInsights]      = useState(null);
 
+  // Estados de canales
+  const [channels,          setChannels]          = useState([]);
+  const [activeChannel,     setActiveChannel]     = useState('codigo-muerto');
+  const [showCreateChannel, setShowCreateChannel] = useState(false);
+  const [newChannelName,    setNewChannelName]    = useState('');
+
   // WebSockets Live logs & progress variables
   const [wsLogs,             setWsLogs]             = useState([]);
   const [wsConnected,        setWsConnected]        = useState(false);
@@ -1078,31 +1084,95 @@ export default function App() {
     } catch (_) {}
   }, []);
 
+  const loadChannels = useCallback(async () => {
+    try {
+      const res = await fetch(`${API}/api/channels`);
+      const data = await res.json();
+      setChannels(data);
+    } catch (_) {}
+  }, []);
+
+  const loadActiveChannel = useCallback(async () => {
+    try {
+      const res = await fetch(`${API}/api/active-channel`);
+      const data = await res.json();
+      setActiveChannel(data.channelId);
+    } catch (_) {}
+  }, []);
+
+  const activateChannel = async (channelId) => {
+    try {
+      const res = await fetch(`${API}/api/channels/activate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ channelId })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setActiveChannel(channelId);
+        setSelected(null); // Deseleccionar
+        setStatus(`✅ Canal activo cambiado a: ${channelId}`);
+      }
+    } catch (err) {
+      setStatus('❌ No se pudo cambiar de canal');
+    }
+  };
+
+  const handleCreateChannel = async () => {
+    if (!newChannelName.trim()) return;
+    try {
+      const res = await fetch(`${API}/api/channels`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: newChannelName.trim() })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setStatus(`✅ Canal "${newChannelName}" creado con éxito`);
+        setNewChannelName('');
+        setShowCreateChannel(false);
+        await loadChannels();
+        await activateChannel(data.channelId);
+      } else {
+        setStatus(`❌ Error: ${data.error}`);
+      }
+    } catch (err) {
+      setStatus('❌ Error al crear el canal');
+    }
+  };
+
   const syncMemory = async () => {
     setLoadingSync(true);
-    setSt('🔄 Sincronizando estadísticas y retención desde YouTube...');
+    setStatus('🔄 Sincronizando estadísticas y retención desde YouTube...');
     try {
       const res = await fetch(`${API}/api/memory/sync`, { method: 'POST' });
       const data = await res.json();
       if (res.ok) {
-        setSt('✅ Canal sincronizado y memoria actualizada correctamente.');
+        setStatus('✅ Canal sincronizado y memoria actualizada correctamente.');
         await loadMemory();
         await loadInsights();
       } else {
-        setSt(`❌ Error al sincronizar: ${data.error || 'error desconocido'}`);
+        setStatus(`❌ Error al sincronizar: ${data.error || 'error desconocido'}`);
       }
     } catch (e) {
-      setSt(`❌ Error de conexión al sincronizar canal: ${e.message}`);
+      setStatus(`❌ Error de conexión al sincronizar canal: ${e.message}`);
     } finally {
       setLoadingSync(false);
     }
   };
 
+  // Cargar canales iniciales
+  useEffect(() => {
+    loadChannels();
+    loadActiveChannel();
+  }, [loadChannels, loadActiveChannel]);
+
+  // Recargar datos cuando cambia el canal activo
   useEffect(() => {
     loadProjects();
     loadMemory();
     loadInsights();
-  }, []);
+  }, [activeChannel, loadProjects, loadMemory, loadInsights]);
 
   // Live WebSocket logs stream connection
   useEffect(() => {
@@ -1214,7 +1284,42 @@ export default function App() {
 
       {/* Sidebar */}
       <div style={S.sidebar}>
-        <div style={S.sidebarHeader}>Código Muerto</div>
+        <div style={{ ...S.sidebarHeader, display: 'flex', flexDirection: 'column', gap: 8, borderBottom: '1px solid #1e2a3a', paddingBottom: 12 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+            <span>CANALES</span>
+            <button
+              onClick={() => setShowCreateChannel(true)}
+              style={{
+                background: 'none', border: 'none', color: '#00d4ff',
+                cursor: 'pointer', fontSize: 16, fontWeight: 'bold', padding: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center'
+              }}
+              title="Crear nuevo canal"
+            >
+              +
+            </button>
+          </div>
+          <select
+            value={activeChannel}
+            onChange={(e) => activateChannel(e.target.value)}
+            style={{
+              width: '100%',
+              padding: '6px 8px',
+              borderRadius: 4,
+              backgroundColor: '#060910',
+              border: '1px solid #1e2a3a',
+              color: '#00d4ff',
+              fontSize: 12,
+              fontWeight: 700,
+              outline: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            {channels.map(c => (
+              <option key={c.id} value={c.id}>{c.name}</option>
+            ))}
+          </select>
+        </div>
         <button style={S.newBtn} onClick={() => { setShowNew(true); setSelected(null); }}>
           + Nuevo proyecto
         </button>
@@ -1661,6 +1766,46 @@ export default function App() {
               )}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Modal para crear canal */}
+      {showCreateChannel && (
+        <div style={{
+          position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
+          backgroundColor: '#000000bb', backdropFilter: 'blur(6px)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 100000
+        }}>
+          <div style={{
+            width: 320, backgroundColor: '#0d1117', border: '1px solid #1e2a3a',
+            borderRadius: 10, padding: 20, boxShadow: '0 8px 32px rgba(0,0,0,0.6)'
+          }}>
+            <div style={{ ...S.cardTitle, marginBottom: 12 }}>Crear Nuevo Canal</div>
+            <input
+              style={{ ...S.input, marginBottom: 16 }}
+              placeholder="Nombre del canal (ej. Finanzas)"
+              value={newChannelName}
+              onChange={(e) => setNewChannelName(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') handleCreateChannel();
+              }}
+              autoFocus
+            />
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8 }}>
+              <button
+                style={{ ...S.btn('#1e2a3a', '#94a3b8'), fontSize: 11 }}
+                onClick={() => { setShowCreateChannel(false); setNewChannelName(''); }}
+              >
+                Cancelar
+              </button>
+              <button
+                style={{ ...S.btn('#00d4ff'), fontSize: 11 }}
+                onClick={handleCreateChannel}
+              >
+                Crear
+              </button>
+            </div>
+          </div>
         </div>
       )}
 

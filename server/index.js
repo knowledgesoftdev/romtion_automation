@@ -7,7 +7,7 @@ const WebSocket = require('ws');
 const { exec, spawn } = require('child_process');
 const { parseScript }     = require('./utils/parser');
 const { parseWithOllama } = require('./utils/ollamaProvider');
-const { readMemory, saveMemory, recordParseInsights, recordVisualStyle, computeInsights } = require('../utils/memory');
+const { readMemory, saveMemory, recordParseInsights, recordVisualStyle, computeInsights, getActiveChannelId } = require('../utils/memory');
 const { parseScriptSmart } = require('./utils/smartParser');
 
 const app  = express();
@@ -34,7 +34,12 @@ wss.on('connection', (ws) => {
   ws.send(JSON.stringify({ type: 'status', message: 'Conectado al servidor de logs en tiempo real' }));
 });
 
-const PROJECTS_DIR  = path.join(__dirname, '..', 'public', 'projects');
+const getProjectsDir = () => {
+  const channelId = getActiveChannelId();
+  const dir = path.join(__dirname, '..', 'public', 'projects', channelId);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  return dir;
+};
 const ACTIVE_FILE   = path.join(__dirname, 'active-project.json');
 
 // ── Streaming helper ──────────────────────────────────────────────────────────
@@ -43,7 +48,7 @@ function runCommandStream(cmd, args, taskType, projectId, res, successMessage, e
   let totalScenes = 0;
   if (projectId) {
     try {
-      const guionPath = path.join(PROJECTS_DIR, projectId, 'guion.json');
+      const guionPath = path.join(getProjectsDir(), projectId, 'guion.json');
       if (fs.existsSync(guionPath)) {
         totalParagraphs = JSON.parse(fs.readFileSync(guionPath, 'utf8')).length;
       }
@@ -169,7 +174,7 @@ function saveActiveProject(projectId) {
 }
 
 function projectStatus(projectId) {
-  const dir     = path.join(PROJECTS_DIR, projectId);
+  const dir     = path.join(getProjectsDir(), projectId);
   const hasGuion    = fs.existsSync(path.join(dir, 'guion.json'));
   const hasTiming   = fs.existsSync(path.join(dir, 'timing.json'));
   const hasPlan     = fs.existsSync(path.join(dir, 'scene-plan.json'));
@@ -188,13 +193,13 @@ function projectStatus(projectId) {
 
 // ── 1. List all projects ──────────────────────────────────────────────────────
 app.get('/api/projects', (req, res) => {
-  if (!fs.existsSync(PROJECTS_DIR)) return res.json([]);
+  if (!fs.existsSync(getProjectsDir())) return res.json([]);
 
   const activeId = readActiveProject();
-  const projects = fs.readdirSync(PROJECTS_DIR)
-    .filter(d => fs.statSync(path.join(PROJECTS_DIR, d)).isDirectory())
+  const projects = fs.readdirSync(getProjectsDir())
+    .filter(d => fs.statSync(path.join(getProjectsDir(), d)).isDirectory())
     .map(id => {
-      const stat = fs.statSync(path.join(PROJECTS_DIR, id));
+      const stat = fs.statSync(path.join(getProjectsDir(), id));
       return {
         id,
         active: id === activeId,
@@ -210,7 +215,7 @@ app.get('/api/projects', (req, res) => {
 // ── 2. Get single project detail ──────────────────────────────────────────────
 app.get('/api/projects/:id', (req, res) => {
   const { id } = req.params;
-  const dir = path.join(PROJECTS_DIR, id);
+  const dir = path.join(getProjectsDir(), id);
   if (!fs.existsSync(dir)) return res.status(404).json({ error: 'Proyecto no encontrado' });
 
   const status = projectStatus(id);
@@ -229,7 +234,7 @@ app.post('/api/projects', async (req, res) => {
   if (!name || !rawScript) return res.status(400).json({ error: 'Nombre y guion son requeridos' });
 
   const projectId  = name.toLowerCase().trim().replace(/\s+/g, '-');
-  const projectDir = path.join(PROJECTS_DIR, projectId);
+  const projectDir = path.join(getProjectsDir(), projectId);
   if (!fs.existsSync(projectDir)) fs.mkdirSync(projectDir, { recursive: true });
 
   fs.writeFileSync(path.join(projectDir, 'full_script.txt'), rawScript);
@@ -255,7 +260,7 @@ app.post('/api/projects', async (req, res) => {
 // ── 3b. Re-parse determinista (parser original) ───────────────────────────────
 app.post('/api/projects/:id/reparse', (req, res) => {
   const { id } = req.params;
-  const dir = path.join(PROJECTS_DIR, id);
+  const dir = path.join(getProjectsDir(), id);
   const scriptPath = path.join(dir, 'full_script.txt');
 
   if (!fs.existsSync(scriptPath)) {
@@ -273,7 +278,7 @@ app.post('/api/projects/:id/reparse', (req, res) => {
 // ── 3c. Smart re-parse con Claude ─────────────────────────────────────────────
 app.post('/api/projects/:id/smart-reparse', async (req, res) => {
   const { id } = req.params;
-  const dir = path.join(PROJECTS_DIR, id);
+  const dir = path.join(getProjectsDir(), id);
   const scriptPath = path.join(dir, 'full_script.txt');
 
   if (!fs.existsSync(scriptPath)) {
@@ -336,7 +341,7 @@ app.post('/api/projects/:id/render-hyperframes', (req, res) => {
 // ── 7. Activate existing project ─────────────────────────────────────────────
 app.post('/api/projects/:id/activate', (req, res) => {
   const { id } = req.params;
-  const dir    = path.join(PROJECTS_DIR, id);
+  const dir    = path.join(getProjectsDir(), id);
 
   if (!fs.existsSync(dir)) return res.status(404).json({ error: 'Proyecto no encontrado' });
 
@@ -350,7 +355,7 @@ app.get('/api/active-project', (req, res) => {
   const projectId = readActiveProject();
   if (!projectId) return res.status(404).json({ error: 'No hay proyecto activo' });
 
-  const dir = path.join(PROJECTS_DIR, projectId);
+  const dir = path.join(getProjectsDir(), projectId);
   const guionPath  = path.join(dir, 'guion.json');
   const timingPath = path.join(dir, 'timing.json');
   const planPath   = path.join(dir, 'scene-plan.json');
@@ -385,7 +390,7 @@ app.get('/api/active-project', (req, res) => {
 // ── 8. Generate word-level timing with Faster-Whisper ───────────────────────
 app.post('/api/projects/:id/whisper-timing', (req, res) => {
   const { id } = req.params;
-  const dir    = path.join(PROJECTS_DIR, id);
+  const dir    = path.join(getProjectsDir(), id);
 
   if (!fs.existsSync(dir)) {
     return res.status(404).json({ error: 'Proyecto no encontrado' });
@@ -403,7 +408,7 @@ app.post('/api/projects/:id/whisper-timing', (req, res) => {
 // ── 8b. Generate YouTube metadata (yt-metadata.txt) ─────────────────────────
 app.post('/api/projects/:id/generate-yt-metadata', (req, res) => {
   const { id } = req.params;
-  const dir    = path.join(PROJECTS_DIR, id);
+  const dir    = path.join(getProjectsDir(), id);
   if (!fs.existsSync(dir)) return res.status(404).json({ error: 'Proyecto no encontrado' });
 
   const scriptPath = path.join(dir, 'full_script.txt');
@@ -422,7 +427,7 @@ app.post('/api/projects/:id/generate-yt-metadata', (req, res) => {
 // GET /api/projects/:id/yt-metadata → devuelve el contenido si existe
 app.get('/api/projects/:id/yt-metadata', (req, res) => {
   const { id } = req.params;
-  const filePath = path.join(PROJECTS_DIR, id, 'yt-metadata.txt');
+  const filePath = path.join(getProjectsDir(), id, 'yt-metadata.txt');
   if (!fs.existsSync(filePath)) return res.json({ exists: false });
   res.json({ exists: true, content: fs.readFileSync(filePath, 'utf8') });
 });
@@ -430,7 +435,7 @@ app.get('/api/projects/:id/yt-metadata', (req, res) => {
 // ── 9. Delete project ─────────────────────────────────────────────────────────
 app.delete('/api/projects/:id', (req, res) => {
   const { id } = req.params;
-  const dir = path.join(PROJECTS_DIR, id);
+  const dir = path.join(getProjectsDir(), id);
   if (!fs.existsSync(dir)) return res.status(404).json({ error: 'Proyecto no encontrado' });
   fs.rmSync(dir, { recursive: true, force: true });
   if (readActiveProject() === id) saveActiveProject(null);
@@ -534,7 +539,7 @@ app.post('/api/projects/:id/analyze-comments', (req, res) => {
 
   console.log(`💬 Analizando comentarios de video ${videoId} para proyecto ${id}`);
   runCommandStream('node', ['scripts/analyze-comments.js', videoId], 'comments', id, res, 'Comentarios analizados con éxito', () => {
-    const reportFile = path.join(PROJECTS_DIR, id, `comments-analysis-${videoId}.md`);
+    const reportFile = path.join(getProjectsDir(), id, `comments-analysis-${videoId}.md`);
     let reportContent = '';
     if (fs.existsSync(reportFile)) {
       reportContent = fs.readFileSync(reportFile, 'utf8');
@@ -548,13 +553,92 @@ app.get('/api/projects/:id/comments-analysis', (req, res) => {
   const { videoId } = req.query;
   if (!videoId) return res.status(400).json({ error: 'Falta el videoId' });
 
-  const reportFile = path.join(PROJECTS_DIR, id, `comments-analysis-${videoId}.md`);
+  const reportFile = path.join(getProjectsDir(), id, `comments-analysis-${videoId}.md`);
   if (fs.existsSync(reportFile)) {
     const content = fs.readFileSync(reportFile, 'utf8');
     return res.json({ exists: true, report: content });
   }
 
   res.json({ exists: false });
+});
+
+const CHANNELS_DIR = path.join(__dirname, '..', 'channels');
+const ACTIVE_CHANNEL_FILE = path.join(__dirname, '..', 'active-channel.json');
+
+// Listar canales disponibles
+app.get('/api/channels', (req, res) => {
+  if (!fs.existsSync(CHANNELS_DIR)) {
+    return res.json([{ id: 'codigo-muerto', name: 'Código Muerto' }]);
+  }
+  const channels = fs.readdirSync(CHANNELS_DIR)
+    .filter(d => fs.statSync(path.join(CHANNELS_DIR, d)).isDirectory())
+    .map(id => {
+      // Intentar formatear el nombre
+      const name = id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+      return { id, name };
+    });
+  res.json(channels);
+});
+
+// Obtener canal activo
+app.get('/api/active-channel', (req, res) => {
+  res.json({ channelId: getActiveChannelId() });
+});
+
+// Cambiar canal activo
+app.post('/api/channels/activate', (req, res) => {
+  const { channelId } = req.body;
+  if (!channelId) return res.status(400).json({ error: 'Falta channelId' });
+  const channelDir = path.join(CHANNELS_DIR, channelId);
+  if (!fs.existsSync(channelDir)) {
+    return res.status(404).json({ error: 'Canal no encontrado' });
+  }
+  fs.writeFileSync(ACTIVE_CHANNEL_FILE, JSON.stringify({ channelId }, null, 2));
+  console.log(`🎬 Canal activo cambiado a: ${channelId}`);
+  res.json({ message: `Canal "${channelId}" activado`, channelId });
+});
+
+// Crear nuevo canal
+app.post('/api/channels', (req, res) => {
+  const { name } = req.body;
+  if (!name) return res.status(400).json({ error: 'Nombre es requerido' });
+  
+  const channelId = name.toLowerCase().trim()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-');
+    
+  const channelDir = path.join(CHANNELS_DIR, channelId);
+  if (fs.existsSync(channelDir)) {
+    return res.status(400).json({ error: 'Ya existe un canal con este nombre' });
+  }
+
+  // Crear directorios
+  fs.mkdirSync(channelDir, { recursive: true });
+  fs.mkdirSync(path.join(__dirname, '..', 'public', 'projects', channelId), { recursive: true });
+
+  // Crear channel-memory.json vacío
+  const defaultMemory = {
+    temas_usados: [],
+    palabras_clave_agotadas: [],
+    mejor_rendimiento: [],
+    estilo_hooks: [],
+    ultima_publicacion: '',
+    total_videos: 0
+  };
+  fs.writeFileSync(path.join(channelDir, 'channel-memory.json'), JSON.stringify(defaultMemory, null, 2), 'utf8');
+
+  // Copiar prompt.txt base (de codigo-muerto)
+  const basePromptPath = path.join(CHANNELS_DIR, 'codigo-muerto', 'prompt.txt');
+  const targetPromptPath = path.join(channelDir, 'prompt.txt');
+  if (fs.existsSync(basePromptPath)) {
+    fs.copyFileSync(basePromptPath, targetPromptPath);
+  } else {
+    fs.writeFileSync(targetPromptPath, '## ROL\nEscritor de guiones para el nuevo canal.', 'utf8');
+  }
+
+  console.log(`➕ Nuevo canal creado: ${name} (${channelId})`);
+  res.json({ message: `Canal "${name}" creado con éxito`, channelId });
 });
 
 server.listen(PORT, () => {

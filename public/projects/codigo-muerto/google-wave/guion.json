@@ -1,0 +1,2750 @@
+[
+  {
+    "id": "01",
+    "texto": "El protocolo de Google Wave no murió por confusión del usuario. Murió porque cada mensaje sincronizado en tiempo real generaba una cascada de operaciones XML que consumía el 100% de un núcleo de CPU en el navegador de 2009.",
+    "chapter_title": "Wave Collapse",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google Wave",
+          "text": "Google Wave"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "murió",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "100%",
+          "text": "100%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "CPU",
+          "icon_name": "flat-color-icons:sim-card-chip"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "2009",
+          "text": "2009"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "XML",
+          "icon_name": "flat-color-icons:flash-on"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "d",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "texto": "Google Wave se anunció en mayo de 2009 en Google I/O. Fue construido por Lars y Jens Rasmussen, los mismos ingenieros que diseñaron Google Maps.",
+    "chapter_title": "El Anuncio",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "mayo de 2009",
+          "text": "mayo 2009"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Google I/O",
+          "text": "Google I/O"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Rasmussen",
+          "text": "Rasmussen Bros"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Maps",
+          "icon_name": "flat-color-icons:globe"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "03",
+    "texto": "La promesa era técnicamente legítima: un sistema de comunicación unificada que fusionaba correo electrónico, mensajería instantánea, wikis colaborativos y edición en tiempo real dentro de un solo objeto llamado \"wave\". El lanzamiento público llegó en septiembre de 2009. En agosto de 2010, Google lo discontinuó.",
+    "chapter_title": "Ciclo Vital",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "legítima",
+          "icon_name": "flat-color-icons:ok"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "comunicación unificada",
+          "text": "Unified Comms"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "septiembre de 2009",
+          "text": "sept 2009"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "agosto de 2010",
+          "text": "ago 2010"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "discontinuó",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "04",
+    "texto": "Duró once meses en producción. No fue mala suerte. Fue una serie de decisiones de arquitectura que, razonables en un laboratorio, se volvieron insostenibles bajo carga real. Esto es la autopsia.",
+    "chapter_title": "La Realidad",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "once meses",
+          "text": "11 meses"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "arquitectura",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "insostenibles",
+          "icon_name": "flat-color-icons:factory-breakdown"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "autopsia",
+          "text": "Production Failure"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "05",
+    "texto": "DECISIÓN 1: El protocolo de extensiones XMPP como columna vertebral",
+    "chapter_title": "XMPP Base",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN 1",
+          "text": "DECISIÓN 1"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "XMPP",
+          "text": "XMPP Protocol"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "columna vertebral",
+          "icon_name": "flat-color-icons:link"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "06",
+    "texto": "Google Wave usaba una versión extendida de XMPP (Extensible Messaging and Presence Protocol) como transporte base. XMPP es un protocolo de mensajería basado en XML diseñado originalmente para chat en tiempo real, donde cada fragmento de datos viaja como un nodo XML completo.",
+    "chapter_title": "XMPP Base",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "extendida",
+          "text": "XMPP Extended"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "mensajería",
+          "icon_name": "flat-color-icons:cell-phone"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "XML",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "tiempo real",
+          "text": "Real-time Chat"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "07",
+    "texto": "En 2009, XMPP era el estándar abierto de facto para mensajería federada. Google ya lo usaba en Google Talk. Extenderlo para soportar waves parecía el camino natural hacia la interoperabilidad entre servidores de distintas organizaciones.",
+    "chapter_title": "XMPP Base",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "2009",
+          "text": "2009"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "estándar abierto",
+          "text": "Estándar Abierto"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "federada",
+          "icon_name": "flat-color-icons:globe"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Google Talk",
+          "name": "google"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "interoperabilidad",
+          "icon_name": "flat-color-icons:link"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "08",
+    "texto": "El problema no era XMPP. Era el modelo de extensión. Cada operación de edición colaborativa en tiempo real —cada tecla presionada por cada usuario— debía encapsularse como un bloque XML completo, parsearse en el servidor, validarse contra el esquema de Wave, enrutarse y retransmitirse.",
+    "chapter_title": "El Cuello de Botella",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "problema",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "XML completo",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "tecla presionada",
+          "text": "Cada keystroke"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "parsearse",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "validarse",
+          "text": "Validate-Route"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "09",
+    "texto": "El overhead por mensaje era desproporcionado. Un chat de diez personas editando simultáneamente generaba cientos de stanzas XML por minuto, cada una con su envoltura completa de namespaces, atributos y metadatos federados.",
+    "chapter_title": "El Cuello de Botella",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "overhead",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "diez personas",
+          "text": "10 users"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cientos",
+          "graphic": "contador_porcentaje",
+          "value": "100"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "stanzas",
+          "text": "XML stanzas"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "namespaces",
+          "icon_name": "flat-color-icons:flash-on"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "10",
+    "texto": "Los benchmarks internos de Google mostraron que el servidor de Wave requería significativamente más memoria por conexión activa que los sistemas de chat convencionales de la época.",
+    "chapter_title": "Carga Real",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "benchmarks",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "significativamente",
+          "graphic": "flecha_subiendo",
+          "value": "1.5"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "memoria",
+          "text": "More Memory"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "convencionales",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "11",
+    "texto": "La federación pública, que era el objetivo central del protocolo, nunca se activó a gran escala precisamente porque el costo de mantener esas conexiones XML persistentes entre servidores de terceros era prohibitivo. Sin federación, el protocolo perdía su razón de existir.",
+    "chapter_title": "Federación fallida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "federación",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "prohibitivo",
+          "text": "PROHIBITIVO"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "nunca",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "servidores",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "XML",
+          "text": "XML persistente"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "d",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "texto": "DECISIÓN 2: Operational Transformation como motor de concurrencia",
+    "chapter_title": "OT: decisión clave",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Transformation",
+          "text": "OT"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "motor",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "concurrencia",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "13",
+    "texto": "Operational Transformation (OT) es un algoritmo que permite que múltiples usuarios editen el mismo documento simultáneamente sin conflictos. Cuando dos usuarios modifican el mismo fragmento al mismo tiempo, OT transforma las operaciones para que el resultado final sea coherente en todos los clientes.",
+    "chapter_title": "Cómo funciona OT",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "algoritmo",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "múltiples",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "conflictos",
+          "text": "SIN"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "documento",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "coherente",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "texto": "Google Wave implementó su propia variante de OT, llamada \"Wave OT\".",
+    "chapter_title": "Wave OT",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "Wave",
+          "text": "Wave OT"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "variante",
+          "icon_name": "flat-color-icons:process"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "texto": "OT era la única solución técnicamente probada para edición colaborativa en tiempo real. El paper original de Ellis y Gibbs data de 1989. Google la usaba internamente en prototipos. Era la elección correcta para el problema correcto.",
+    "chapter_title": "OT: fundamentada",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1989",
+          "text": "1989"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "probada",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Ellis",
+          "text": "Ellis & Gibbs"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "paper",
+          "icon_name": "flat-color-icons:graduation-cap"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "correcta",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "texto": "La complejidad computacional de OT escala con el número de operaciones concurrentes. En un documento con dos usuarios, el árbol de transformaciones es manejable.",
+    "chapter_title": "Complejidad de OT",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "complejidad",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "dos",
+          "text": "2 usuarios"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "manejable",
+          "icon_name": "flat-color-icons:ok"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "operaciones",
+          "icon_name": "flat-color-icons:process"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "texto": "Con diez usuarios editando simultáneamente, el servidor debe calcular y mantener una matriz de transformaciones de orden cuadrático: O(n²) donde n es el número de operaciones en vuelo. En waves con muchos participantes activos, esto generaba latencias de respuesta medibles en segundos, no milisegundos.",
+    "chapter_title": "Escalabilidad rota",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "cuadrático",
+          "text": "O(n²)"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "diez",
+          "text": "10 usuarios"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "matriz",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "latencias",
+          "graphic": "flecha_subiendo",
+          "value": "1"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "segundos",
+          "text": "segundos"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "texto": "Un retraso de 500ms en una aplicación de chat no es un bug de UX. Es una rotura del contrato implícito que define qué es \"tiempo real\".",
+    "chapter_title": "Definición de tiempo real",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "500ms",
+          "text": "500ms"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "retraso",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "rotura",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "contrato",
+          "icon_name": "flat-color-icons:decision"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "a",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "texto": "Ingenieros que probaron Wave en producción reportaron que en waves con más de veinte participantes activos, el lag entre una pulsación de tecla y su aparición en pantalla llegaba a superar los 800ms bajo carga normal de red.",
+    "chapter_title": "Fallo en producción",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "800ms",
+          "text": "800ms"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "veinte",
+          "text": "20+ participantes"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "lag",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "pulsación",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "carga",
+          "icon_name": "flat-color-icons:wi-fi-logo"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "a",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "texto": "El sistema era técnicamente correcto, pero no era operativamente viable.",
+    "chapter_title": "Epílogo técnico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "correcto",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "viable",
+          "text": "NO VIABLE"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "pero",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "texto": "DECISIÓN 3: El cliente JavaScript monolítico en el navegador de 2009",
+    "chapter_title": "Cliente JS monolítico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2009",
+          "text": "2009"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "JavaScript",
+          "icon_name": "flat-color-icons:command-line"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "monolítico",
+          "text": "Cliente monolítico"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "navegador",
+          "icon_name": "flat-color-icons:display"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "22",
+    "texto": "La interfaz de Wave vivía completamente en el navegador como una aplicación JavaScript de alto peso.",
+    "chapter_title": "Cliente JS monolítico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "navegador",
+          "icon_name": "flat-color-icons:display"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "JavaScript",
+          "text": "JavaScript"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "aplicación",
+          "icon_name": "flat-color-icons:electronics"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "sm",
+          "trigger_word": "peso",
+          "text": "alto peso"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "23",
+    "texto": "El cliente debía mantener el estado local de todas las waves abiertas, ejecutar las transformaciones OT en el lado del cliente para previsualización inmediata, y sincronizar continuamente con el servidor mediante conexiones HTTP long-polling.",
+    "chapter_title": "Cliente JS monolítico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "transformaciones",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "sm",
+          "trigger_word": "OT",
+          "text": "OT (Operational Transf"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "sincronizar",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "sm",
+          "trigger_word": "long-polling",
+          "text": "Long-polling"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "estado",
+          "icon_name": "flat-color-icons:settings"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "24",
+    "texto": "La arquitectura de cliente rico (thick client) reducía la latencia percibida porque las operaciones de edición se reflejaban localmente antes de confirmarse en el servidor. Era la misma filosofía que haría famoso a Gmail: procesar en el navegador para parecer más rápido.",
+    "chapter_title": "Thick client",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "rico",
+          "text": "Thick Client"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "latencia",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "rápido",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Gmail",
+          "name": "google"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "navegador",
+          "text": "Procesar local"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "25",
+    "texto": "En 2009, V8 de Chrome tenía seis meses de vida. Firefox ejecutaba JavaScript con un intérprete sin JIT estable. El cliente de Wave llegaba a descargar entre 1.5 MB y 2.1 MB de JavaScript minificado antes de renderizar la primera pantalla.",
+    "chapter_title": "Overhead JS",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2009",
+          "text": "2009"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Chrome",
+          "name": "chrome"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "2.1 MB",
+          "text": "2.1 MB"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "descargar",
+          "icon_name": "flat-color-icons:download"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "26",
+    "texto": "En la máquina de escritorio promedio de 2009, con un procesador de un núcleo a 2 GHz y 1 GB de RAM, Wave consumía el 100% de un núcleo de CPU durante la sincronización inicial y entre el 30% y el 60% de forma sostenida",
+    "chapter_title": "Overhead JS",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "100%",
+          "text": "100%"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "sm",
+          "trigger_word": "procesador",
+          "text": "1 núcleo 2 GHz"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "CPU",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "consumía",
+          "graphic": "contador_porcentaje",
+          "value": "100"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "27",
+    "texto": "durante el uso normal. El navegador se congelaba de forma perceptible al abrir waves con más de cincuenta mensajes en el historial.",
+    "chapter_title": "Overhead JS",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "30",
+          "text": "30-60%"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "congelaba",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cincuenta",
+          "text": "50+"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "28",
+    "texto": "Las métricas de abandono durante el onboarding eran devastadoras. Usuarios con hardware moderno para la época reportaban tiempos de carga iniciales superiores a los 15 segundos en conexiones de banda ancha.",
+    "chapter_title": "Abandono",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "abandono",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "15",
+          "text": "15s+"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "carga",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "sm",
+          "trigger_word": "banda",
+          "text": "banda ancha"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "29",
+    "texto": "En pruebas controladas, el tiempo hasta primer mensaje legible (TTFMR, análogo al modern Time to Interactive) era de 12 a 18 segundos. Ningún usuario con una alternativa viable esperaba 18 segundos para leer un correo.",
+    "chapter_title": "Abandono",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "18",
+          "text": "18s"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "sm",
+          "trigger_word": "TTFMR",
+          "text": "TTFMR"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Ningún usuario",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "esperaba",
+          "graphic": "flecha_bajando",
+          "value": "1"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "30",
+    "texto": "DECISIÓN 4: La federación abierta como promesa diferida",
+    "chapter_title": "Federación abierta",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "federación",
+          "icon_name": "flat-color-icons:globe"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "abierta",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "federación",
+          "text": "Federación abierta"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "diferida",
+          "icon_name": "flat-color-icons:alarm-clock"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "31",
+    "texto": "La federación es la capacidad de un protocolo para que servidores de distintas organizaciones se comuniquen directamente, como el correo electrónico.",
+    "chapter_title": "Federación",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "federación",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "servidores",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "protocolo",
+          "text": "Protocolo abierto"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "correo",
+          "query": "email envelope communication"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "32",
+    "texto": "El diseño original de Wave especificaba que cualquier organización podría correr su propio servidor de Wave y que los usuarios de diferentes servidores podrían colaborar sin fricciones. Era, en papel, el protocolo abierto que reemplazaría al email.",
+    "chapter_title": "Diseño Wave",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Wave",
+          "text": "Wave"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "diseño",
+          "icon_name": "flat-color-icons:settings"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "fricciones",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "reemplazaría",
+          "text": "Reemplazar email"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "organización",
+          "icon_name": "flat-color-icons:businessman"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "33",
+    "texto": "La federación era la propuesta de valor de largo plazo. Un sistema de comunicación propietario es una red social más. Un protocolo federado es infraestructura. Google quería construir infraestructura.",
+    "chapter_title": "Propuesta de valor",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "federación",
+          "text": "Federación"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "largo plazo",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "infraestructura",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "propietario",
+          "text": "Red social"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "34",
+    "texto": "La federación requería que el servidor de Wave de cada organización mantuviera conexiones XMPP persistentes con todos los servidores de Wave con los que sus usuarios interactuaran.",
+    "chapter_title": "Requisitos técnicos",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "servidor",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "XMPP",
+          "text": "XMPP"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "conexiones",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "persistentes",
+          "text": "Persistentes"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "interactuaran",
+          "icon_name": "flat-color-icons:multiple-devices"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "35",
+    "texto": "Dado el overhead ya descrito del protocolo XML extendido, el costo de mantener esas conexiones entre servidores era cuadraticamente más caro que en un sistema centralizado. Google no activó la federación pública durante los once meses de vida del producto.",
+    "chapter_title": "Costos de escala",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "overhead",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "xl",
+          "trigger_word": "cuadraticamente",
+          "text": "O(n²)"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "no activó",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "once meses",
+          "text": "11 meses"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "36",
+    "texto": "La justificación oficial fue la estabilidad, pero los registros de los grupos de desarrolladores de la época muestran que el equipo no había resuelto el problema de escala de las conexiones federadas bajo carga real.",
+    "chapter_title": "Problema real",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "estabilidad",
+          "text": "Estabilidad"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "problema",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "escala",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "carga",
+          "text": "Carga real"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "resuelto",
+          "icon_name": "flat-color-icons:no-idea"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "37",
+    "texto": "Sin federación, Wave era una herramienta de colaboración más, compitiendo directamente con Google Docs en el ecosistema de Google, sin ventaja diferencial.",
+    "chapter_title": "Sin federación",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Sin",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Wave",
+          "text": "Wave"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "Docs",
+          "text": "Google Docs"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "diferencial",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "38",
+    "texto": "La decisión de no activar la federación eliminó la única razón por la que un equipo de IT corporativo habría justificado el costo de adopción. Las empresas que evaluaron Wave para uso interno concluyeron que su valor no justificaba la migración desde herramientas existentes.",
+    "chapter_title": "Impacto adopción",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "no activar",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "valor",
+          "text": "ROI 0"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "corporativo",
+          "icon_name": "flat-color-icons:business"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "adopción",
+          "text": "Sin adopción"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "39",
+    "texto": "La base de usuarios se estabilizó en early adopters técnicos que lo usaban por curiosidad, no por necesidad operativa.",
+    "chapter_title": "Usuario final",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "adopters",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "curiosidad",
+          "text": "Curiosidad"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "técnicos",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "operativa",
+          "text": "0 ROI"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "40",
+    "texto": "DECISIÓN 5: El modelo mental inexistente para el usuario",
+    "chapter_title": "Decisión 5",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "inexistente",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "modelo",
+          "text": "Modelo mental"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "41",
+    "texto": "Una \"wave\" no era un correo, ni un chat, ni un documento. Era un objeto de comunicación nuevo que mezclaba los tres.",
+    "chapter_title": "Qué era Wave",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "wave",
+          "text": "Wave"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "correo",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "chat",
+          "icon_name": "flat-color-icons:cell-phone"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "documento",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "mezclaba",
+          "icon_name": "flat-color-icons:process"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "e",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "c",
+          "to": "e",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "42",
+    "texto": "Los mensajes dentro de una wave podían responderse de forma anidada en cualquier punto del hilo, editarse retroactivamente y actualizarse en tiempo real en la pantalla de todos los participantes.",
+    "chapter_title": "Características técnicas",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "anidada",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "editarse",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "tiempo real",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "participantes",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "pantalla",
+          "text": "Colaborativo"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "43",
+    "texto": "El diseño respondía a una observación técnicamente válida: el correo electrónico es un protocolo de 1971 que no fue diseñado para conversaciones en tiempo real ni para edición colaborativa. Wave resolvía limitaciones reales del email.",
+    "chapter_title": "Por qué Wave",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1971",
+          "text": "1971"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "correo electrónico",
+          "query": "email protocol SMTP vintage"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "limitaciones",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "resolvía",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "protocolo",
+          "text": "Email antiguo"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Wave",
+          "text": "Wave nuevo"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "e",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "44",
+    "texto": "La decisión de crear un objeto nuevo, en lugar de parchear objetos existentes, era arquitectónicamente honesta.",
+    "chapter_title": "Arquitectura",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "crear",
+          "icon_name": "flat-color-icons:plus"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "parchear",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "objeto nuevo",
+          "text": "Nuevo"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "honesta",
+          "text": "Honesto"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "45",
+    "texto": "No existía ningún referente cognitivo previo para el usuario. La curva de aprendizaje no era empinada. Era vertical. Las sesiones de onboarding internas mostraban que usuarios no técnicos tardaban entre veinte y cuarenta minutos en completar su primera tarea básica sin ayuda.",
+    "chapter_title": "Curva de aprendizaje",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "referente cognitivo",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "b",
+          "type": "motion_graphic",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "vertical",
+          "graphic": "flecha_subiendo",
+          "value": "90"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cuarenta minutos",
+          "text": "20-40min"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "usuarios",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "ayuda",
+          "text": "Sin ayuda"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "46",
+    "texto": "El problema no era que Wave fuera difícil. Era que el usuario no tenía ningún mapa mental previo desde el que proyectar su experiencia. En producto, un modelo mental inexistente es más costoso que un modelo mental incorrecto. El usuario con un modelo incorrecto ajusta.",
+    "chapter_title": "Modelo mental",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "mapa mental",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "inexistente",
+          "text": "NO existe"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "más costoso",
+          "icon_name": "flat-color-icons:debt"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "incorrecto",
+          "text": "Incorrecto"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "ajusta",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "47",
+    "texto": "El usuario sin modelo abandona.",
+    "chapter_title": "Modelo mental",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "usuario",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "abandona",
+          "text": "ABANDONA"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "abandona",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "48",
+    "texto": "Google reportó que la tasa de retención a treinta días de usuarios invitados durante la beta era significativamente inferior a la de otros productos de Google de la época.",
+    "chapter_title": "Retención",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "treinta días",
+          "text": "30 días"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "inferior",
+          "graphic": "flecha_bajando",
+          "value": "50"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "beta",
+          "text": "Beta"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "49",
+    "texto": "Los datos de engagement mostraban que la mayoría de los usuarios que obtenían una invitación (el sistema de acceso era por invitación, como Gmail) ingresaban una o dos veces y no regresaban. El producto generaba curiosidad pero no hábito.",
+    "chapter_title": "Engagement",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "datos",
+          "icon_name": "flat-color-icons:area-chart"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "invitación",
+          "icon_name": "flat-color-icons:key"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "dos veces",
+          "text": "1-2 veces"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "curiosidad",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "hábito",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "d",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "50",
+    "texto": "Operational Transformation no murió con Wave. Vive en Google Docs, donde el mismo algoritmo gestiona la edición concurrente de millones de documentos diariamente.",
+    "chapter_title": "Legado",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Operational",
+          "text": "Op Transform"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "murió",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Vive",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "Google Docs",
+          "query": "Google Docs collaborative editing"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "millones",
+          "text": "Millones"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "51",
+    "texto": "La diferencia es que Docs lo aplica a un modelo de datos simple (texto con formato) y no a un protocolo de comunicación federado de propósito general. El protocolo base de Wave fue donado a la Apache Software Foundation como Apache Wave en 2012.",
+    "chapter_title": "Wave a Apache",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Wave",
+          "text": "Google Wave"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "texto",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "2012",
+          "text": "2012"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "protocolo",
+          "icon_name": "flat-color-icons:share"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "Apache",
+          "text": "Apache"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "c",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "52",
+    "texto": "El concepto de canales con threads anidados y edición en tiempo real sobrevivió en Slack y en la función de threads de Discord.",
+    "chapter_title": "Legado Wave",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "threads",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Slack",
+          "name": "slack"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "tiempo real",
+          "icon_name": "flat-color-icons:flash-on"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Discord",
+          "text": "Discord threads"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "sobrevivió",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "53",
+    "texto": "Wave llegó demasiado pronto, construyó demasiado a la vez, y apostó por una complejidad de protocolo que el hardware de su época no podía sostener.",
+    "chapter_title": "Por qué fracasó",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "pronto",
+          "icon_name": "flat-color-icons:alarm-clock"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "demasiado",
+          "text": "Demasiado"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "complejidad",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "hardware",
+          "query": "old computer hardware processor cpu"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "no podía",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "54",
+    "texto": "La próxima vez que diseñes un protocolo de comunicación en tiempo real, pregúntate si el costo computacional por operación escala linealmente o cuadráticamente con el número de participantes.",
+    "chapter_title": "Lección clave",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "diseñes",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "escala",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cuadráticamente",
+          "text": "O(n²)?"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "participantes",
+          "icon_name": "flat-color-icons:business"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "55",
+    "texto": "Eso es lo que separa un sistema que funciona en el laboratorio de uno que funciona en producción.",
+    "chapter_title": "Lección final",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "laboratorio",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "producción",
+          "icon_name": "flat-color-icons:factory"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "separa",
+          "text": "La diferencia"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "funciona",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  }
+]
