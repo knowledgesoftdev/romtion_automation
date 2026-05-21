@@ -961,12 +961,19 @@ function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
           {memory.estilo_hooks?.length === 0 && (
             <div style={{ color: '#334155', fontSize: 12 }}>Sin hooks registrados aún</div>
           )}
-          <div style={{ marginTop: 10, fontSize: 11, color: '#475569' }}>
-            Total videos: <strong style={{ color: '#e2e8f0' }}>{memory.total_videos || 0}</strong>
-            {memory.ultima_publicacion && (
-              <span style={{ marginLeft: 10 }}>
-                Último: {new Date(memory.ultima_publicacion).toLocaleDateString('es-ES')}
-              </span>
+          <div style={{ marginTop: 10, fontSize: 11, color: '#475569', display: 'flex', flexDirection: 'column', gap: 4 }}>
+            <div>
+              Total videos: <strong style={{ color: '#e2e8f0' }}>{memory.total_videos || 0}</strong>
+              {memory.ultima_publicacion && (
+                <span style={{ marginLeft: 10 }}>
+                  📅 Último Video: <strong style={{ color: '#e2e8f0' }}>{new Date(memory.ultima_publicacion).toLocaleDateString('es-ES')}</strong>
+                </span>
+              )}
+            </div>
+            {memory.ultima_sincronizacion && (
+              <div style={{ color: '#64748b' }}>
+                🔄 Sincronizado: <strong style={{ color: '#94a3b8' }}>{new Date(memory.ultima_sincronizacion).toLocaleString('es-ES')}</strong>
+              </div>
             )}
           </div>
         </div>
@@ -983,8 +990,14 @@ function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
                   overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 280 }}>
                   {v.tema}
                 </div>
-                <div style={{ fontSize: 11, color: '#475569', marginTop: 2 }}>
-                  {v.hook_style}
+                <div style={{ fontSize: 11, color: '#475569', marginTop: 2, display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+                  <span>{v.hook_style}</span>
+                  {v.published_at && <span style={{ color: '#334155' }}>•</span>}
+                  {v.published_at && (
+                    <span style={{ color: '#64748b', fontSize: 10 }}>
+                      📅 {new Date(v.published_at).toLocaleDateString('es-ES')}
+                    </span>
+                  )}
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 14, flexShrink: 0, marginLeft: 12 }}>

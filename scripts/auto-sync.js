@@ -244,6 +244,7 @@ async function main() {
       views,
       likes,
       hook_style: hookStyle,
+      published_at: item.snippet.publishedAt,
       fecha: new Date().toISOString()
     };
 
@@ -274,6 +275,7 @@ async function main() {
   if (items.length > 0) {
     memory.ultima_publicacion = items[0].snippet.publishedAt;
   }
+  memory.ultima_sincronizacion = new Date().toISOString();
 
   await saveMemory(memory);
   console.log(`\n🎉 Sincronización finalizada. Se procesaron ${updatedCount} videos.`);
