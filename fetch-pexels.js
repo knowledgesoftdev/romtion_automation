@@ -152,12 +152,36 @@ function pexelsRequest(urlString) {
   });
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function pexelsRequestWithRetry(urlString, retries = 5, delayMs = 10000) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      // Pequeño retraso obligatorio entre peticiones para ser gentiles con el rate limit
+      await sleep(250);
+      return await pexelsRequest(urlString);
+    } catch (err) {
+      const is429 = err.message.includes('429');
+      if (is429 && attempt < retries) {
+        const backoff = delayMs * attempt;
+        console.warn(`   ⚠️ [Pexels 429] Límite superado. Reintentando intento ${attempt}/${retries} en ${(backoff/1000).toFixed(0)}s...`);
+        await sleep(backoff);
+        continue;
+      }
+      throw err;
+    }
+  }
+}
+
 // Pexels IDs and final URLs already taken in this run — used to skip duplicate
 // assets even when distinct queries return the same item, or distinct items
 // share the same underlying file. Seeded from the URL cache below so reruns
 // over a partially-downloaded project still avoid collisions.
-const usedPexelsIds = new Set();
-const usedUrls      = new Set();
+const usedPexelsIds    = new Set();
+const usedUrls         = new Set();
+const usedWikimediaUrls = new Set(); // tracks Wikimedia URLs already downloaded
 
 function pickStartIndex(pick, total, paragraphIdx) {
   if (total <= 0) return -1;
@@ -190,8 +214,11 @@ function pickBestVideoFile(video) {
 }
 
 async function searchImage(query, orientation, pick, perPage, paragraphIdx) {
+  if (query.includes('force-fallback')) {
+    throw new Error(`Simulated Pexels failure for testing fallback: "${query}"`);
+  }
   const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=${orientation}`;
-  const data = await pexelsRequest(url);
+  const data = await pexelsRequestWithRetry(url);
   const photos = data.photos || [];
   if (photos.length === 0) throw new Error(`Sin resultados para "${query}"`);
 
@@ -212,7 +239,7 @@ async function searchImage(query, orientation, pick, perPage, paragraphIdx) {
 
 async function searchVideo(query, orientation, pick, perPage, paragraphIdx) {
   const url = `https://api.pexels.com/videos/search?query=${encodeURIComponent(query)}&per_page=${perPage}&orientation=${orientation}`;
-  const data = await pexelsRequest(url);
+  const data = await pexelsRequestWithRetry(url);
   const videos = data.videos || [];
   if (videos.length === 0) throw new Error(`Sin resultados para "${query}"`);
 
@@ -233,9 +260,102 @@ async function searchVideo(query, orientation, pick, perPage, paragraphIdx) {
   return { url: file.link, id: fallback.id };
 }
 
+// ─── Wikimedia Commons fallback ─────────────────────────────────────────────
+/**
+ * Search Wikimedia Commons for images matching `query`.
+ * Returns { url, title } of the first suitable result that hasn't been used yet.
+ * Filters:
+ *   - Only JPEG / PNG (no SVG, no GIF logos)
+ *   - Width >= 800px (real photos, not icons)
+ *   - Filename must not contain logo|icon|flag|coat_of_arms|wikipedia|wikimedia
+ */
+async function searchWikimedia(query, paragraphIdx) {
+  const WIKIMEDIA_USER_AGENT = 'PhantomDirective-VideoEngine/1.0 (https://github.com/knowledgesoftdev/romtion_automation; contact@phantomdirective.com)';
+  const BLOCKED_TERMS = /logo|icon|flag|coat_of_arms|wikipedia|wikimedia|seal_of|emblem/i;
+
+  const params = new URLSearchParams({
+    action:      'query',
+    generator:   'search',
+    gsrsearch:   query,
+    gsrnamespace:'6',       // File: namespace only
+    gsrlimit:    '20',
+    prop:        'imageinfo',
+    iiprop:      'url|mime|size|width',
+    format:      'json',
+    origin:      '*',
+  });
+
+  const apiUrl = `https://commons.wikimedia.org/w/api.php?${params.toString()}`;
+
+  const data = await new Promise((resolve, reject) => {
+    https.get(apiUrl, {
+      headers: {
+        'User-Agent': WIKIMEDIA_USER_AGENT,
+        'Accept': 'application/json',
+      },
+    }, (res) => {
+      let body = '';
+      res.on('data', (c) => (body += c));
+      res.on('end', () => {
+        if (res.statusCode !== 200)
+          return reject(new Error(`Wikimedia ${res.statusCode}: ${body.slice(0, 120)}`));
+        try { resolve(JSON.parse(body)); } catch (e) { reject(e); }
+      });
+    }).on('error', reject);
+  });
+
+  const pages = (data.query && data.query.pages) ? Object.values(data.query.pages) : [];
+  if (pages.length === 0) throw new Error(`Wikimedia: sin resultados para "${query}"`);
+
+  // Sort by page index so results are stable across runs
+  pages.sort((a, b) => (a.index || 0) - (b.index || 0));
+
+  // Rotate start index by paragraphIdx (same trick as Pexels)
+  const startIdx = paragraphIdx % pages.length;
+
+  for (let offset = 0; offset < pages.length; offset++) {
+    const page = pages[(startIdx + offset) % pages.length];
+    const info = page.imageinfo && page.imageinfo[0];
+    if (!info) continue;
+
+    const mime  = (info.mime || '').toLowerCase();
+    const width = info.width || 0;
+    const url   = info.url || '';
+    const title = (page.title || '').toLowerCase();
+
+    // Quality filters
+    if (!['image/jpeg', 'image/png'].includes(mime)) continue;
+    if (width < 800) continue;
+    if (BLOCKED_TERMS.test(title)) continue;
+    if (usedWikimediaUrls.has(url)) continue;
+
+    return { url, title: page.title || '' };
+  }
+
+  throw new Error(`Wikimedia: sin resultados válidos para "${query}" (todos filtrados o duplicados)`);
+}
+
+async function searchWikimediaWithFallback(query, paragraphIdx) {
+  try {
+    return await searchWikimedia(query, paragraphIdx);
+  } catch (err) {
+    console.warn(`   ⚠️  Wikimedia falló para "${query}". Probando búsqueda simplificada...`);
+    // Buscar palabras clave simples relacionadas a tecnología e informática como fallback
+    const keywords = ['computer', 'programming', 'source code', 'technology', 'server room', 'datacenter', 'internet'];
+    const fallbackQuery = keywords[paragraphIdx % keywords.length];
+    console.log(`   🔄 Wikimedia: buscando con término genérico: "${fallbackQuery}"`);
+    return await searchWikimedia(fallbackQuery, paragraphIdx);
+  }
+}
+
 function download(url, dest) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(dest);
+    const options = {
+      headers: {
+        'User-Agent': 'PhantomDirective-VideoEngine/1.0 (https://github.com/knowledgesoftdev/romtion_automation; contact@phantomdirective.com)'
+      }
+    };
     const handler = (res) => {
       if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
         file.close();
@@ -249,7 +369,7 @@ function download(url, dest) {
       res.pipe(file);
       file.on('finish', () => file.close(() => resolve()));
     };
-    https.get(url, handler).on('error', (err) => {
+    https.get(url, options, handler).on('error', (err) => {
       file.close();
       if (fs.existsSync(dest)) fs.unlinkSync(dest);
       reject(err);
@@ -286,6 +406,8 @@ function seedUsedIdsFromCache() {
       const obj = JSON.parse(fs.readFileSync(path.join(cacheDir, f), 'utf8'));
       if (obj.id)  usedPexelsIds.add(obj.id);
       if (obj.url) usedUrls.add(obj.url);
+      // Also seed Wikimedia URLs so reruns don't re-use them
+      if (obj.source === 'wikimedia' && obj.url) usedWikimediaUrls.add(obj.url);
     } catch (_) {}
   }
 }
@@ -339,11 +461,52 @@ async function main() {
       if (id)  usedPexelsIds.add(id);
       if (url) usedUrls.add(url);
       await download(url, outPath);
-      console.log(`   ✅ [${p.id}] ${type}/${filename}  ←  "${query}"`);
+      console.log(`   ✅ [${p.id}] ${type}/${filename}  ←  Pexels: "${query}"`);
       ok++;
-    } catch (e) {
-      console.log(`   ❌ [${p.id}] ${type}/${filename}  ←  "${query}"  :: ${e.message}`);
-      fail++;
+    } catch (pexelsErr) {
+      // ── Wikimedia Commons fallback (images only) ────────────────────────────
+      // Only attempt for images — Wikimedia has no video assets.
+      if (type === 'image') {
+        try {
+          process.stdout.write(`   🔄 [${p.id}] Pexels sin resultados, probando Wikimedia Commons...\n`);
+          const cleanedQuery = query.replace('force-fallback', '').trim();
+          const wikiResult = await searchWikimediaWithFallback(cleanedQuery, i);
+          usedWikimediaUrls.add(wikiResult.url);
+          // Cache the Wikimedia URL so reruns don't refetch it
+          saveCachedEntry(key + '-wiki', wikiResult.url, null);
+          // Patch the cache to mark source for seedUsedIdsFromCache
+          fs.writeFileSync(
+            path.join(cacheDir, key + '-wiki.json'),
+            JSON.stringify({ url: wikiResult.url, id: null, source: 'wikimedia', ts: Date.now() })
+          );
+          await download(wikiResult.url, outPath);
+          console.log(`   ✅ [${p.id}] ${type}/${filename}  ←  Wikimedia: "${cleanedQuery}"`);
+          ok++;
+        } catch (wikiErr) {
+          const cleanedQuery = query.replace('force-fallback', '').trim();
+          console.log(`   ❌ [${p.id}] ${type}/${filename}  ←  "${cleanedQuery}"`);
+          console.log(`        Pexels: ${pexelsErr.message}`);
+          console.log(`        Wikimedia: ${wikiErr.message}`);
+          fail++;
+        }
+      } else {
+        // Fallback para videos: buscar un video ya descargado con éxito en la carpeta de videos y copiarlo
+        try {
+          console.warn(`   ⚠️ [${p.id}] Video falló en Pexels. Buscando un video local como fallback...`);
+          const localVideos = fs.readdirSync(videosDir).filter(f => f.endsWith('.mp4') && f !== filename);
+          if (localVideos.length > 0) {
+            const fallbackSrc = path.join(videosDir, localVideos[0]);
+            fs.copyFileSync(fallbackSrc, outPath);
+            console.log(`   ✅ [${p.id}] ${type}/${filename}  ←  Copia Local (Fallback): "${localVideos[0]}"`);
+            ok++;
+          } else {
+            throw new Error('No hay videos locales para usar como fallback');
+          }
+        } catch (localErr) {
+          console.log(`   ❌ [${p.id}] ${type}/${filename}  ←  "${query}"  :: Pexels: ${pexelsErr.message} | Local: ${localErr.message}`);
+          fail++;
+        }
+      }
     }
   }
 

@@ -8,59 +8,72 @@
     "Flash",
     "Equifax",
     "Windows",
-    "Google"
+    "Google",
+    "Friendster",
+    "Kodak inventó la cámara digital y la enterró. Por qué perdió el 85% de su mercado",
+    "Por qué 9.000 tiendas no pudieron competir con Netflix"
   ],
   "palabras_clave_agotadas": [],
   "mejor_rendimiento": [
     {
       "tema": "Yahoo",
       "video_id": "UlaQgOTih74",
-      "retention": 0.251,
+      "retention": 0.229,
       "ctr": 0.012,
-      "views": 16,
+      "views": 17,
       "likes": 0,
       "hook_style": "afirmacion-tecnica-como-sentencia",
-      "fecha": "2026-05-20T06:35:25.644Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-16T20:17:07Z",
+      "fecha": "2026-05-23T04:00:27.117Z"
     },
     {
       "tema": "Internet Explorer",
       "video_id": "KsEVdfvrotA",
-      "retention": 0.308,
+      "retention": 0.321,
       "ctr": 0.009,
       "views": 60,
       "likes": 1,
       "hook_style": "dato-porcentaje-mas-consecuencia-escalada",
-      "fecha": "2026-05-20T06:35:26.440Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-15T23:15:12Z",
+      "fecha": "2026-05-23T04:00:28.031Z"
     },
     {
       "tema": "BlackBerry",
       "video_id": "r25SoTB4Umg",
       "retention": 0.242,
       "ctr": 0.01,
-      "views": 70,
+      "views": 72,
       "likes": 4,
       "hook_style": "causa-tecnica-como-condena",
-      "fecha": "2026-05-20T06:35:27.322Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-15T02:45:57Z",
+      "fecha": "2026-05-23T04:00:28.865Z"
     },
     {
-      "tema": "myspace",
+      "tema": "MySpace",
       "video_id": "YmMWg4JTE0E",
       "retention": 0,
       "ctr": 0.005,
       "views": 9,
       "likes": 0,
       "hook_style": "dato-tecnico-con-impacto-visual",
-      "fecha": "2026-05-20T06:35:28.209Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-14T06:15:34Z",
+      "fecha": "2026-05-23T04:00:29.660Z"
     },
     {
-      "tema": "nokia",
+      "tema": "Nokia",
       "video_id": "j7rbmgKSdnI",
       "retention": 0.109,
-      "ctr": 0.006,
-      "views": 42,
+      "ctr": 0.007,
+      "views": 43,
       "likes": 0,
       "hook_style": "dato-tecnico-con-impacto-visual",
-      "fecha": "2026-05-20T06:35:29.147Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-13T02:08:12Z",
+      "fecha": "2026-05-23T04:00:30.574Z"
     },
     {
       "tema": "Flash",
@@ -70,48 +83,105 @@
       "views": 63,
       "likes": 2,
       "hook_style": "mi-estilo",
-      "fecha": "2026-05-20T06:35:29.930Z"
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-12T13:12:23Z",
+      "fecha": "2026-05-23T04:00:31.765Z"
     },
     {
-      "tema": "equifax",
+      "tema": "Equifax",
       "video_id": "okJA5ALLYRY",
-      "retention": 0.225,
-      "ctr": 0.005,
-      "views": 15,
+      "retention": 0.228,
+      "ctr": 0.007,
+      "views": 16,
       "likes": 1,
       "hook_style": "estadistica-impactante-con-timeline",
-      "fecha": "2026-05-20T06:35:24.664Z"
+      "remotion_format": "VideoEngine",
+      "published_at": "2026-05-17T05:02:40Z",
+      "fecha": "2026-05-23T04:00:26.191Z"
     },
     {
-      "tema": "windows",
+      "tema": "Windows",
       "video_id": "HIwh6y4M9q4",
-      "retention": 0,
-      "ctr": 0,
-      "views": 0,
-      "likes": 0,
+      "retention": 0.224,
+      "ctr": 0.01,
+      "views": 24,
+      "likes": 2,
       "hook_style": "declaracion-contraintuitiva-con-cifra-exacta",
-      "fecha": "2026-05-20T06:35:23.810Z"
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-20T01:22:11Z",
+      "fecha": "2026-05-23T04:00:23.639Z"
     },
     {
-      "tema": "google",
+      "tema": "Google",
       "video_id": "wsxPDJdt2o8",
-      "retention": 0,
-      "ctr": 0,
-      "views": 0,
+      "retention": 0.209,
+      "ctr": 0.004,
+      "views": 28,
       "likes": 0,
       "hook_style": "dato-tecnico-con-impacto-visual",
-      "fecha": "2026-05-20T06:35:21.845Z"
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-20T06:27:22Z",
+      "fecha": "2026-05-23T04:00:22.727Z"
+    },
+    {
+      "tema": "Friendster",
+      "video_id": "URejoJ_PYSM",
+      "retention": 0,
+      "ctr": 0.005,
+      "views": 4,
+      "likes": 0,
+      "hook_style": "dato-tecnico-con-cifra-exacta",
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-21T10:12:16Z",
+      "fecha": "2026-05-23T04:00:20.376Z"
+    },
+    {
+      "tema": "Kodak inventó la cámara digital y la enterró. Por qué perdió el 85% de su mercado",
+      "video_id": "T7iVr9fI0Do",
+      "retention": 0,
+      "ctr": 0.007,
+      "views": 33,
+      "likes": 1,
+      "hook_style": "estadistica-numerica-con-contraste-temporal",
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-22T06:20:43Z",
+      "fecha": "2026-05-23T04:00:19.566Z"
+    },
+    {
+      "tema": "Por qué 9.000 tiendas no pudieron competir con Netflix",
+      "video_id": "J29nZVsWqIY",
+      "retention": 0,
+      "ctr": 0,
+      "views": 0,
+      "likes": 0,
+      "hook_style": "no-especificado",
+      "remotion_format": "WhiteboardVideo",
+      "published_at": "2026-05-23T03:42:03Z",
+      "fecha": "2026-05-23T04:00:18.695Z"
     }
   ],
-  "estilo_hooks": [],
-  "ultima_publicacion": "2026-05-20T06:27:22Z",
-  "total_videos": 9,
+  "estilo_hooks": [
+    "causa-tecnica-como-condena",
+    "mi-estilo",
+    "dato-porcentaje-mas-consecuencia-escalada",
+    "dato-tecnico-con-impacto-visual",
+    "estadistica-numerica-con-contraste-temporal",
+    "declaracion-contraintuitiva-con-cifra-exacta",
+    "afirmacion-tecnica-como-sentencia",
+    "estadistica-impactante-con-timeline",
+    "dato-tecnico-con-cifra-exacta"
+  ],
+  "ultima_publicacion": "2026-05-23T03:42:03Z",
+  "total_videos": 12,
   "estilo_titulo_historial": [
     "dato-oculto-con-numero-especifico",
     "estadistica-impactante-con-timeline",
     "declaracion-contraintuitiva-con-cifra-exacta",
     "dato-tecnico-con-impacto-visual",
-    "dato-tecnico-con-cifra-exacta"
+    "dato-tecnico-con-cifra-exacta",
+    "estadistica-temporal-con-numeros-exactos",
+    "estadistica-numerica-con-contraste-temporal",
+    "dato-tecnico-con-contraste-temporal"
   ],
   "miniatura_conceptos": [
     {
@@ -141,6 +211,27 @@
       "concepto": "Fondo dividido: mitad izquierda con el logo de Friendster en rojo oscuro desaturado con efecto de descomposición; mitad derecha con código rojo de error (tipo matriz). Texto superior en blanco: '40 SEGUNDOS' en fuente serif serif gruesa. Texto inferior: 'Friendster' en blanco con contorno negro. Esquina superior derecha: insignia roja con '2004' (año del colapso). Elemento visual adicional: reloj de arena cayéndose en la esquina inferior izquierda. Paleta: rojo sangre, negro profundo, blanco high-contrast. Diseño asimétrico, orientado a transmitir urgencia y decadencia tecnológica.",
       "estilo_titulo": "dato-tecnico-con-cifra-exacta",
       "fecha": "2026-05-20T07:12:23.591Z"
+    },
+    {
+      "projectId": "kodak-—-inventaron-la-cámara",
+      "titulo": "Kodak inventó la cámara digital y la enterró. Por qué perdió el 85% de su mercado",
+      "concepto": "Fondo: Kodak Brownie (cámara vintage amarilla/roja) pixelada/digitalizándose en la mitad derecha, efecto de desintegración hacia píxeles. Texto principal en blanco grande: '85% A CERO' con una flecha roja descendente. Subtítulo pequeño: 'Su propia invención'. Esquina inferior: logo pequeño de Código Muerto. Colores: rojo Kodak, gris digital, blanco alto contraste. Disposición asimétrica: imagen a la izquierda, texto a la derecha con énfasis en el número.",
+      "estilo_titulo": "estadistica-numerica-con-contraste-temporal",
+      "fecha": "2026-05-21T04:27:02.686Z"
+    },
+    {
+      "projectId": "blockbuster-—-el-día-que-rechazaron-comprar-netflix",
+      "titulo": "Blockbuster: La arquitectura que impidió adaptarse",
+      "concepto": "Fondo dividido en dos mitades: izquierda en color azul oscuro (Blockbuster clásico) con el logo de Blockbuster desaturado y roto por una línea vertical. Derecha en rojo Netflix con el logo nítido. En el centro, sobrepuesto, un diagrama simplificado de 9 cubos (bases de datos) desconectados en rojo, con una X grande encima. Texto blanco en la parte superior: '9.000 BASES DE DATOS' en letras gruesas. Abajo: 'QUE NO PODÍAN HABLAR ENTRE SÍ' en blanco con sombra. Esquina inferior derecha: '$150M en 3 años' en amarillo neón.",
+      "estilo_titulo": "dato-tecnico-con-contraste-temporal",
+      "fecha": "2026-05-23T03:37:00.402Z"
+    },
+    {
+      "projectId": "twitter-x-—-el-código-de-2006",
+      "titulo": "Twitter: Por qué sobrevivió sin 8 de cada 10 ingenieros",
+      "concepto": "Fondo dividido en dos mitades: izquierda con logo de Twitter en gris desaturado y grietas digitales; derecha con código rojo descompuesto. Centro: número '80%' en blanco grande con subtítulo rojo 'Despidos'. Esquina superior: pequeño icono de calavera técnica. Tipografía sans-serif agresiva, contraste alto blanco-rojo-gris oscuro.",
+      "estilo_titulo": "dato-oculto-con-numero-especifico",
+      "fecha": "2026-05-23T06:27:29.724Z"
     }
   ],
   "parse_insights": {
@@ -439,6 +530,129 @@
         "user experience loading time frustration"
       ],
       "recorded_at": "2026-05-20T07:28:25.822Z"
+    },
+    "kodak-—-inventaron-la-cámara": {
+      "motion_elements_used": [
+        "donut_chart",
+        "flecha_subiendo",
+        "contador_porcentaje",
+        "timeline_barras"
+      ],
+      "color_moods": [
+        "urgente",
+        "positivo",
+        "neutro",
+        "nostalgia"
+      ],
+      "asset_types": {
+        "logo": 27,
+        "pexels_image": 21,
+        "icon": 191,
+        "label_black": 62,
+        "label_red": 70,
+        "motion_graphic": 7
+      },
+      "pexels_queries": [
+        "digital camera prototype early 1970s",
+        "film photography rolls analog camera",
+        "Rochester New York vintage factory 1880s",
+        "film camera rolls photography supplies",
+        "engineer electronics laboratory 1970s",
+        "vintage digital camera electronics prototype",
+        "laboratory research scientist documents",
+        "photographic sensor technology semiconductor",
+        "film photography chemical process lab",
+        "Sony Mavica digital camera vintage 1981",
+        "patent document certificate legal rights",
+        "sensor photosensitive detector chip electronic",
+        "factory film production manufacturing Kodak",
+        "vintage digital camera 1990s kodak",
+        "computer monitor display 1990s"
+      ],
+      "recorded_at": "2026-05-21T03:36:30.848Z"
+    },
+    "blockbuster-—-el-día-que-rechazaron-comprar-netflix": {
+      "motion_elements_used": [
+        "donut_chart",
+        "flecha_subiendo",
+        "contador_porcentaje",
+        "timeline_barras",
+        "flecha_bajando"
+      ],
+      "color_moods": [
+        "urgente",
+        "positivo",
+        "neutro",
+        "nostalgia"
+      ],
+      "asset_types": {
+        "logo": 44,
+        "icon": 420,
+        "label_black": 133,
+        "label_red": 111,
+        "pexels_image": 31,
+        "motion_graphic": 16
+      },
+      "pexels_queries": [
+        "blockbuster video store rental counter",
+        "home entertainment television living room",
+        "business meeting handshake negotiation",
+        "blockbuster video store shelves dvd",
+        "dallas texas city 1985 retro",
+        "video cassette tape collection shelf",
+        "videotape VHS cassette dust storage",
+        "video rental store shelf blockbuster",
+        "retail store physical location storefront",
+        "blockbuster video store entrance",
+        "VHS tape cassette 1990s",
+        "DVD movie disc physical media",
+        "North America map geography",
+        "blockbuster video store sign",
+        "compact disc DVD stack"
+      ],
+      "recorded_at": "2026-05-21T10:28:15.718Z"
+    },
+    "twitter/x-—-el-código-de-2006": {
+      "motion_elements_used": [
+        "flecha_bajando",
+        "contador_porcentaje",
+        "flecha_subiendo",
+        "donut_chart",
+        "timeline_barras"
+      ],
+      "color_moods": [
+        "urgente",
+        "nostalgia",
+        "neutro",
+        "positivo"
+      ],
+      "asset_types": {
+        "pexels_image": 17,
+        "label_red": 149,
+        "icon": 484,
+        "label_black": 173,
+        "motion_graphic": 22,
+        "logo": 28
+      },
+      "pexels_queries": [
+        "elon musk twitter office",
+        "twitter first launch jack dorsey 2006",
+        "podcast microphone recording studio",
+        "people typing messages social media",
+        "warning sign danger caution",
+        "twitter fail whale error message",
+        "snowflake crystal ice unique pattern",
+        "engineers team working server room",
+        "social media followers network diagram",
+        "server room data center 2008",
+        "crowd sports event stadium",
+        "twitter logo social media",
+        "social media influencer celebrity followers",
+        "elon musk businessman portrait",
+        "person thinking engineer professional"
+      ],
+      "recorded_at": "2026-05-23T04:34:06.845Z"
     }
-  }
+  },
+  "ultima_sincronizacion": "2026-05-23T04:00:31.765Z"
 }

@@ -1,0 +1,4139 @@
+[
+  {
+    "id": "01",
+    "texto": "El ingeniero que inventó la cámara digital trabajaba en Kodak. Su propio jefe archivó el prototipo porque amenazaba el negocio de los rollos de película.",
+    "chapter_title": "El Invento Archivado",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "cámara digital",
+          "query": "digital camera prototype early 1970s"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "archivó",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "prototipo",
+          "text": "Prototipo"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "película",
+          "query": "film photography rolls analog camera"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "02",
+    "texto": "Kodak fundó su primer laboratorio en Rochester, Nueva York, en 1880. Durante casi un siglo dominó el mercado global de fotografía química. En 1976, controlaba el 90% de las ventas de película en Estados Unidos y el 85% de las cámaras.",
+    "chapter_title": "Dominio de Mercado",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1880",
+          "text": "1880"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Rochester",
+          "query": "Rochester New York vintage factory 1880s"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "90%",
+          "graphic": "donut_chart",
+          "value": "90"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "controlaba",
+          "text": "90%"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "1976",
+          "text": "1976"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "global",
+          "icon_name": "flat-color-icons:globe"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "03",
+    "texto": "Su modelo de negocio era una trampa de doble ingreso: vendías la cámara barata y comprabas rollos de película para siempre. Cada foto revelada dejaba margen. Cada impresión, otro margen. La fotografía digital no solo amenazaba un producto.",
+    "chapter_title": "Modelo Económico",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "negocio",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "doble ingreso",
+          "text": "Doble Margen"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "rollos",
+          "query": "film camera rolls photography supplies"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "margen",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "amenazaba",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "04",
+    "texto": "Amenazaba toda la arquitectura económica de la empresa. Eso explica lo que vino después.",
+    "chapter_title": "Disyuntiva Estratégica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "empresa",
+          "icon_name": "flat-color-icons:factory"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Amenazaba",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "arquitectura",
+          "text": "Arquitectura"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "05",
+    "texto": "DECISIÓN 1: Archivar la cámara digital inventada internamente",
+    "chapter_title": "Decisión Crítica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 1"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Archivar",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "inventada",
+          "text": "Archivo Interno"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "06",
+    "texto": "En 1975, el ingeniero Steven Sasson construyó dentro de los laboratorios de Kodak el primer prototipo funcional de cámara digital del mundo.",
+    "chapter_title": "Steven Sasson",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1975",
+          "text": "1975"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "ingeniero",
+          "query": "engineer electronics laboratory 1970s"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Sasson",
+          "text": "Steven Sasson"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "prototipo",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "funcional",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "07",
+    "texto": "Pesaba 3,6 kilogramos, capturaba imágenes en blanco y negro a una resolución de 0,01 megapíxeles y tardaba 23 segundos en grabar una imagen en una cinta de casete. No era un producto comercial.",
+    "chapter_title": "Especificaciones",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Pesaba",
+          "text": "3,6 kg"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "capturaba",
+          "query": "vintage digital camera electronics prototype"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "megapíxeles",
+          "text": "0,01 MP"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "tardaba",
+          "text": "23 seg"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "comercial",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "08",
+    "texto": "Era una prueba de concepto que demostraba que la fotografía sin película química era técnicamente posible.",
+    "chapter_title": "Prueba de Concepto",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "prueba",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "película",
+          "text": "Sin Película"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "posible",
+          "icon_name": "flat-color-icons:checkmark"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "demostraba",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "09",
+    "texto": "La dirección de Kodak evaluó el prototipo de Sasson y llegó a una conclusión que, dentro de su lógica de negocio del momento, era coherente. La fotografía digital canibaliza directamente la venta de rollos y el servicio de revelado.",
+    "chapter_title": "Lógica de Negocio",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "dirección",
+          "icon_name": "flat-color-icons:business"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "canibaliza",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "rollos",
+          "text": "Rollos + Revelado"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "coherente",
+          "icon_name": "flat-color-icons:decision"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "texto": "Ambos representaban márgenes de entre el 60% y el 70% sobre el precio de venta. Lanzar una cámara digital propia equivalía a destruir la fuente de ingresos más rentable de la empresa.",
+    "chapter_title": "Márgenes de Ganancia",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "motion_graphic",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "márgenes",
+          "graphic": "donut_chart",
+          "value": "65"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "60%",
+          "text": "60-70%"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "precio",
+          "icon_name": "flat-color-icons:currency-exchange"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "destruir",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "rentable",
+          "text": "Rentabilidad"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "11",
+    "texto": "La decisión fue archivar el proyecto, clasificarlo como confidencial y no comunicarlo al mercado. Sasson continuó investigando internamente, pero sin presupuesto para desarrollo comercial.",
+    "chapter_title": "Archivo y Silencio",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "confidencial",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "archivar",
+          "text": "ARCHIVADO"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "sin presupuesto",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Sasson",
+          "text": "Sasson investigando"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "internamente",
+          "query": "laboratory research scientist documents"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "texto": "El error no fue archivar el prototipo en 1975. Ese movimiento era defensivo y tenía sentido a corto plazo. El error fue no construir ningún plan de transición durante los diez años siguientes, cuando la tecnología de sensores fotográficos maduró a velocidad exponencial.",
+    "chapter_title": "La Brecha Fatal",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1975",
+          "text": "1975"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "diez años",
+          "text": "10 años sin plan"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "error",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "motion_graphic",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "velocidad exponencial",
+          "graphic": "flecha_subiendo",
+          "value": "1"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "sensores fotográficos",
+          "query": "photographic sensor technology semiconductor"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "texto": "Kodak disponía de la patente, el talento y el capital. Eligió usar ese tiempo para extraer el máximo de la fotografía química en lugar de preparar la infraestructura para el cambio de medio.",
+    "chapter_title": "Recursos Malgastados",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "patente",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "Eligió",
+          "text": "SIN CAMBIO"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "fotografía química",
+          "query": "film photography chemical process lab"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "capital",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "extraer",
+          "text": "Extraer máximo"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "14",
+    "texto": "Cuando Sony lanzó la Mavica en 1981, la primera cámara digital para el mercado de consumo, Kodak no tenía ningún producto listo para competir. Había tenido seis años de ventaja y los había quemado defendiendo el modelo viejo.",
+    "chapter_title": "Sony Mavica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Sony",
+          "name": "sony"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "1981",
+          "text": "1981"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Mavica",
+          "query": "Sony Mavica digital camera vintage 1981"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "primera cámara digital",
+          "text": "Primera digital"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "seis años",
+          "text": "6 AÑOS"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "quemado",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "e",
+          "to": "f",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "texto": "Entre 1981 y 1991, Sony, Canon y Nikon construyeron sus propias divisiones de imagen digital mientras Kodak seguía optimizando químicos. En 1990, la cuota de mercado de Kodak en cámaras había caído del 85% al 67%.",
+    "chapter_title": "Década Perdida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Entre 1981 y 1991",
+          "text": "1981-1991"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "divisiones",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "cuota de mercado",
+          "graphic": "donut_chart",
+          "value": "67"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "caído",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "85% al 67%",
+          "text": "85%→67%"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "texto": "No era una caída catastrófica todavía, pero la brecha tecnológica ya era irreversible. Las patentes de Sasson expiraron sin haberse convertido en productos. Kodak cedió el terreno técnico que había ganado por ser primero.",
+    "chapter_title": "Point of No Return",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "expiraron",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "irreversible",
+          "text": "IRREVERSIBLE"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "patentes de Sasson",
+          "query": "patent document certificate legal rights"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "brecha",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "cedió",
+          "text": "Cedió terreno"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "17",
+    "texto": "DECISIÓN 2: Patentar para proteger, no para construir",
+    "chapter_title": "Estrategia Fallida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "DECISIÓN 2"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "proteger",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Patentar",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "no para construir",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "18",
+    "texto": "A lo largo de los años ochenta y noventa, Kodak acumuló más de mil patentes relacionadas con tecnologías de imagen digital. Sensores fotoeléctricos, algoritmos de compresión de imágenes, circuitos de conversión analógico-digital.",
+    "chapter_title": "Mil Patentes",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "mil patentes",
+          "text": "+1000"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "años ochenta y noventa",
+          "text": "1980s-1990s"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "patentes",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Sensores fotoeléctricos",
+          "query": "sensor photosensitive detector chip electronic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "circuitos",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "algoritmos",
+          "text": "Algoritmos compresión"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "19",
+    "texto": "La estrategia era clara: rodear el territorio técnico de la fotografía digital con propiedad intelectual propia para que cualquier competidor que quisiera entrar tuviera que negociar licencias con Kodak. Era una defensa perimetral construida con derechos legales en lugar de con productos.",
+    "chapter_title": "Defensa Perimetral",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "propiedad intelectual",
+          "icon_name": "flat-color-icons:copyright"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "rodear",
+          "text": "RODEAR"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "competidor",
+          "icon_name": "flat-color-icons:business-contact"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "negociar licencias",
+          "text": "Licencias Kodak"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "derechos legales",
+          "icon_name": "flat-color-icons:rules"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "20",
+    "texto": "La lógica financiera era atractiva. Las licencias generan ingresos pasivos sin necesidad de fabricar ni distribuir nada. Si la fotografía digital iba a crecer de todas formas, Kodak cobraría peaje por cada cámara digital vendida en el mundo sin abandonar su negocio principal de película.",
+    "chapter_title": "Lógica Financiera",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "ingresos pasivos",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Las licencias",
+          "text": "Licencias=Ingresos"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "crecer",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "peaje",
+          "text": "PEAJE"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "película",
+          "query": "factory film production manufacturing Kodak"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "21",
+    "texto": "Era una forma de participar en el futuro sin apostar por él. Entre 1990 y 2000, los ingresos por licencias de patentes llegaron a representar cientos de millones de dólares anuales para Kodak.",
+    "chapter_title": "Licencias de Patentes",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Entre 1990 y 2000",
+          "text": "1990-2000"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "ingresos",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "patentes",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "e",
+          "type": "motion_graphic",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "millones",
+          "graphic": "contador_porcentaje",
+          "value": "100"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "futuro",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "22",
+    "texto": "El modelo de licencias funcionó mientras las patentes eran recientes y los tribunales las respaldaban. Pero las patentes tienen fecha de caducidad.",
+    "chapter_title": "Caducidad de Patentes",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "fecha",
+          "icon_name": "flat-color-icons:calendar"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "caducidad",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "tribunales",
+          "text": "Protección Legal"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "funcionó",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "23",
+    "texto": "Y las empresas que pagaban licencias a Kodak en los noventa —Sony, Canon, Nikon, Casio— estaban usando ese tiempo para construir capacidades propias de fabricación, distribución y marca en imagen digital.",
+    "chapter_title": "Competidores",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Sony",
+          "name": "sony"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Canon",
+          "name": "canon"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "fabricación",
+          "icon_name": "flat-color-icons:factory"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "construir",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "tiempo",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "digital",
+          "icon_name": "flat-color-icons:image-file"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "24",
+    "texto": "Cuando las patentes clave de Kodak comenzaron a expirar a partir de 2007, esas empresas ya no necesitaban pagar peaje. Habían construido sus propias carreteras. Kodak había elegido cobrar en lugar de construir. Cuando terminó el cobro, no había nada construido.",
+    "chapter_title": "El Colapso",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2007",
+          "text": "2007"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "expirar",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "elegido",
+          "text": "Cobrar vs Construir"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "terminó",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "nada",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "25",
+    "texto": "DÓNDE FALLÓ — DATOS: En 2012, cuando Kodak se declaró en quiebra, intentó vender su cartera de patentes de imagen digital como activo principal. La valoración inicial era de 2.600 millones de dólares. La cartera se vendió finalmente por 525 millones.",
+    "chapter_title": "Quiebra",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2012",
+          "text": "2012"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "quiebra",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "valoración",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "525",
+          "text": "$525M"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "finalmente",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "26",
+    "texto": "Un consorcio formado por Apple, Google y otras empresas tecnológicas la compró, no para usarla como negocio, sino para neutralizarla como amenaza legal. El activo más valioso que le quedaba a Kodak fue comprado para ser archivado.",
+    "chapter_title": "Activos Neutralizados",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Apple",
+          "name": "apple"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Google",
+          "name": "google"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "neutralizarla",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "amenaza",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "archivado",
+          "icon_name": "flat-color-icons:safe"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "27",
+    "texto": "La dependencia de ingresos por licencias creó una ilusión de estabilidad financiera durante dos décadas. Los estados financieros de Kodak mostraban márgenes aceptables hasta bien entrado el año 2000.",
+    "chapter_title": "Ilusión Financiera",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "ilusión",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "décadas",
+          "text": "2 Décadas"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "márgenes",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "financieros",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "lg",
+          "trigger_word": "2000",
+          "text": "2000"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "28",
+    "texto": "Pero ese dinero no se estaba reinvirtiendo en producción de cámaras digitales, en sensores, ni en software de gestión de imágenes. Se usaba para sostener el margen operativo de un negocio de película en declive.",
+    "chapter_title": "Mal Uso de Ingresos",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "no",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "cámaras",
+          "text": "Cámaras Digitales"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "sensores",
+          "icon_name": "flat-color-icons:electronics"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "declive",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "película",
+          "icon_name": "flat-color-icons:film-reel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "29",
+    "texto": "Cuando las licencias se agotaron, no había ninguna línea de producto digital que las reemplazara.",
+    "chapter_title": "Sin Alternativa",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "licencias",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "no había",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "digital",
+          "text": "Producto Digital"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "agotaron",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "30",
+    "texto": "DECISIÓN 3: Lanzar cámaras digitales tarde y sin ecosistema",
+    "chapter_title": "Decisión 3",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "cámaras",
+          "icon_name": "flat-color-icons:image-file"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "tarde",
+          "text": "Tarde"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ecosistema",
+          "text": "Sin Ecosistema"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "31",
+    "texto": "En 1995, veinte años después del prototipo de Sasson, Kodak lanzó su primera cámara digital para el mercado masivo: la DC40.",
+    "chapter_title": "Kodak DC40",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "1995",
+          "text": "1995"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "DC40",
+          "query": "vintage digital camera 1990s kodak"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "cámara digital",
+          "text": "Primera cámara digital"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "mercado",
+          "icon_name": "flat-color-icons:picture"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "32",
+    "texto": "Tenía una resolución de 756 × 504 píxeles, costaba 995 dólares en Estados Unidos y no incluía ningún software de edición o gestión de fotografías.",
+    "chapter_title": "Especificaciones",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "resolución",
+          "text": "756×504px"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "995",
+          "text": "$995"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "resolución",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "no incluía",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "software",
+          "text": "Sin software"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "33",
+    "texto": "Era un dispositivo que capturaba imágenes en formato propietario que solo podía visualizarse con herramientas específicas de Kodak, en un momento en que los formatos abiertos ya estaban estableciéndose como estándar.",
+    "chapter_title": "Formato Propietario",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "propietario",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "propietario",
+          "text": "Formato cerrado"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "herramientas",
+          "icon_name": "flat-color-icons:document"
+        },
+        {
+          "id": "d",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "visualizarse",
+          "query": "computer monitor display 1990s"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "estándar",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "34",
+    "texto": "Kodak interpretó que su fortaleza de marca era suficiente para ganar en el mercado digital. Décadas de confianza del consumidor en el nombre Kodak para la fotografía debían traducirse en preferencia natural cuando el mismo consumidor comprara su primera cámara digital.",
+    "chapter_title": "Error Estratégico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "confianza",
+          "icon_name": "flat-color-icons:like"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "primera",
+          "icon_name": "flat-color-icons:dislike"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "suficiente",
+          "text": "NO BASTA"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "preferencia",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "35",
+    "texto": "El razonamiento era que la transición sería gradual y que la lealtad de marca actuaría como ventaja competitiva durante el período de adopción.",
+    "chapter_title": "Transición Gradual",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "gradual",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "b",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "transición",
+          "graphic": "flecha_subiendo",
+          "value": "1"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ventaja",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "sm",
+          "trigger_word": "período",
+          "text": "Adopción lenta"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "36",
+    "texto": "La fotografía digital no era solo un cambio de soporte físico. Era un cambio de paradigma completo en cómo se gestionan, comparten y almacenan las imágenes.",
+    "chapter_title": "Cambio de Paradigma",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "pexels_image",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "soporte",
+          "query": "film roll camera analog photography"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "paradigma",
+          "icon_name": "flat-color-icons:next"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "cambio",
+          "text": "CAMBIO"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "comparten",
+          "icon_name": "flat-color-icons:share"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "almacenan",
+          "icon_name": "flat-color-icons:gallery"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "37",
+    "texto": "Una cámara digital sin software de edición, sin capacidad de compartir, sin integración con ordenadores personales era tan útil como un rollo de película sin laboratorio de revelado.",
+    "chapter_title": "Ecosistema Incompleto",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "cámara",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "sin software",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "útil",
+          "text": "INCOMPLETO"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "compartir",
+          "icon_name": "flat-color-icons:share"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "ordenadores",
+          "icon_name": "flat-color-icons:display"
+        },
+        {
+          "id": "f",
+          "type": "pexels_image",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "laboratorio",
+          "query": "film roll photography development"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "38",
+    "texto": "Kodak entendía el hardware de captura pero no comprendió que el valor de la fotografía digital estaba en el flujo completo: desde la captura hasta la visualización, pasando por la edición y el almacenamiento. Sony y Apple construyeron ese flujo completo.",
+    "chapter_title": "Flujo Completo",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "no comprendió",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "motion_graphic",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "flujo",
+          "graphic": "timeline_barras",
+          "value": "captura,edición,almacenamiento"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Sony",
+          "name": "sony"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "Apple",
+          "name": "apple"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "39",
+    "texto": "Kodak construyó solo el inicio del tubo. DÓNDE FALLÓ — DATOS TÉCNICOS: El formato propietario de la DC40 obligaba a usar software de Kodak para ver las fotos. Cuando el formato JPEG ya era un estándar abierto y libre.",
+    "chapter_title": "Fallo Técnico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "FALLÓ",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "propietario",
+          "text": "PROPIETARIO"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "JPEG",
+          "text": "JPEG abierto"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "obligaba",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "libre",
+          "icon_name": "flat-color-icons:unlock"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "d",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "40",
+    "texto": "Los competidores adoptaron JPEG de forma inmediata. Kodak tardó tres generaciones de producto en alinearse con el estándar, durante las cuales los usuarios que compraban cámaras Kodak quedaban atrapados en un ecosistema cerrado sin interoperabilidad.",
+    "chapter_title": "Atraso de Adopción",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "adoptaron",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "tres",
+          "text": "3 AÑOS"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "cerrado",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "interoperabilidad",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "atrapados",
+          "text": "Atrapados"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "41",
+    "texto": "En ingeniería de software, a esto se le llama cierre de plataforma sin red: el peor escenario posible, porque tienes el costo del cierre sin los beneficios de la red.",
+    "chapter_title": "Trampa de plataforma",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "cierre",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "beneficios",
+          "text": "Sin beneficios"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "cierre",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "peor",
+          "text": "PEOR"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "costo",
+          "icon_name": "flat-color-icons:business"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "42",
+    "texto": "En 1999, el mercado global de cámaras digitales creció un 75% respecto al año anterior. Kodak capturó el 27% de ese mercado. Sony capturó el 18%. Parecía que Kodak iba ganando. Pero la cuota de mercado en cámaras era solo una métrica.",
+    "chapter_title": "Falsa victoria",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1999",
+          "text": "1999"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "creció",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "27",
+          "text": "27%"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Sony",
+          "name": "sony"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "18",
+          "text": "18%"
+        },
+        {
+          "id": "g",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "cuota",
+          "icon_name": "flat-color-icons:pie-chart"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "solid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "43",
+    "texto": "El margen bruto por cámara digital era del 15%, frente al 60% del rollo de película. Kodak estaba creciendo en volumen y hundiéndose en rentabilidad. Cada cámara digital vendida bajo la marca Kodak sustituía la venta de varios rollos sin compensar el margen perdido.",
+    "chapter_title": "Margen desastroso",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "15",
+          "text": "15%"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "60",
+          "text": "60%"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "hundiéndose",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "rentabilidad",
+          "icon_name": "flat-color-icons:line-chart"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "rollo",
+          "query": "film roll photography vintage"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "sm",
+          "trigger_word": "margen",
+          "text": "Margen perdido"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "44",
+    "texto": "DECISIÓN 4: Apostar por Ofoto en lugar de construir la plataforma",
+    "chapter_title": "La apuesta Ofoto",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "xl",
+          "trigger_word": "DECISIÓN",
+          "text": "4"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Ofoto",
+          "text": "Ofoto"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Apostar",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "lugar",
+          "icon_name": "flat-color-icons:next"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "construir",
+          "icon_name": "flat-color-icons:engineering"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "45",
+    "texto": "En 2001, Kodak adquirió Ofoto, un servicio en línea que permitía a los usuarios subir fotografías digitales, almacenarlas y encargar impresiones físicas. Era técnicamente sólido, tenía una base de usuarios creciente y funcionaba sobre una infraestructura de servidores escalable.",
+    "chapter_title": "La apuesta Ofoto",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2001",
+          "text": "2001"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "subir",
+          "icon_name": "flat-color-icons:download"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "Ofoto",
+          "text": "Ofoto"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "sólido",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "servidores",
+          "icon_name": "flat-color-icons:factory"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "d",
+          "style": "solid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "46",
+    "texto": "Kodak pagó por Ofoto y lo integró en su estrategia digital como la apuesta principal para el mercado de imagen en línea.",
+    "chapter_title": "La apuesta Ofoto",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "pagó",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Ofoto",
+          "text": "Ofoto"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "integró",
+          "icon_name": "flat-color-icons:link"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "línea",
+          "icon_name": "flat-color-icons:globe"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "47",
+    "texto": "Ofoto parecía el puente perfecto entre los dos mundos. Capturabas la foto en digital, la subías a la plataforma y encargabas impresiones en papel. Kodak mantenía así su negocio de impresión con margen alto, pero adaptado al nuevo medio de captura.",
+    "chapter_title": "Puente digital",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Ofoto",
+          "text": "Ofoto"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "puente",
+          "icon_name": "flat-color-icons:next"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "foto",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "plataforma",
+          "icon_name": "flat-color-icons:upload"
+        },
+        {
+          "id": "e",
+          "type": "pexels_image",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "papel",
+          "query": "photo print paper"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        },
+        {
+          "from": "d",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "48",
+    "texto": "Era una estrategia de transición que preservaba la rentabilidad conocida mientras abrazaba la distribución digital. En el año de la adquisición, el servicio de impresión de fotografías en línea generaba ingresos reales.",
+    "chapter_title": "Puente digital",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "estrategia",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "rentabilidad",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "distribución",
+          "icon_name": "flat-color-icons:globe"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "ingresos",
+          "text": "Ingresos"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "reales",
+          "icon_name": "flat-color-icons:approve"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "49",
+    "texto": "La premisa de Ofoto era que los usuarios de fotografía digital querrían imprimir sus fotos. Esa premisa se evaporó en menos de cinco años.",
+    "chapter_title": "Premisa fallida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "premisa",
+          "text": "Premisa"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "evaporó",
+          "icon_name": "flat-color-icons:no-idea"
+        },
+        {
+          "id": "c",
+          "type": "pexels_image",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "imprimir",
+          "query": "digital photo printing user"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "cinco",
+          "text": "5 años"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "evaporó",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "50",
+    "texto": "La irrupción de las redes sociales, empezando por Friendster en 2002 y acelerando con Facebook en 2004, cambió el destino de las fotografías digitales. Las fotos ya no se imprimían. Se compartían en pantalla.",
+    "chapter_title": "Las redes sociales",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2002",
+          "text": "2002"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2004",
+          "text": "2004"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "redes",
+          "icon_name": "flat-color-icons:share"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "cambió",
+          "text": "Cambio total"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "pantalla",
+          "icon_name": "flat-color-icons:display"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "imprimían",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "solid"
+        }
+      ]
+    }
+  },
+  {
+    "id": "51",
+    "texto": "El valor no estaba en el papel fotográfico sino en la visibilidad social. Ofoto quedó atrapado en un modelo de negocio cuyo supuesto central era falso.",
+    "chapter_title": "Ofoto fracasa",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "papel fotográfico",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Ofoto",
+          "text": "Ofoto"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "falso",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "modelo de negocio",
+          "text": "Modelo fallido"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "visibilidad social",
+          "icon_name": "flat-color-icons:share"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "52",
+    "texto": "DÓNDE FALLÓ — DATO CRÍTICO: En 2005, cuando Facebook todavía era una red universitaria, Flickr ya tenía millones de fotografías compartidas sin ninguna intención de impresión. En 2006, Flickr procesaba más de un millón de fotos nuevas al día.",
+    "chapter_title": "Competencia Flickr",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2005",
+          "text": "2005"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "Flickr",
+          "text": "Flickr"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "red universitaria",
+          "icon_name": "flat-color-icons:multiple-devices"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "millón de fotos",
+          "text": "1M fotos/día"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "fotografías",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "f",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "2006",
+          "text": "2006"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "53",
+    "texto": "Kodak respondió en 2012 vendiendo Ofoto —renombrado Kodak Gallery— a Shutterfly por 23,8 millones de dólares. Había pagado mucho más por él en 2001.",
+    "chapter_title": "Venta Ofoto",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2012",
+          "text": "2012"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "23,8 millones",
+          "text": "$23.8M"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "vendiendo",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "mucho más",
+          "text": "Pérdida valor"
+        },
+        {
+          "id": "f",
+          "type": "label_red",
+          "slot": "bottom-right",
+          "size": "lg",
+          "trigger_word": "2001",
+          "text": "2001"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "f",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "54",
+    "texto": "El servicio que debía ser la plataforma digital de Kodak fue vendido como activo menor mientras la empresa se preparaba para declararse en quiebra.",
+    "chapter_title": "Quiebra Kodak",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "quiebra",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "vendido como",
+          "text": "Activo menor"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "plataforma digital",
+          "icon_name": "flat-color-icons:download"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "preparaba",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "55",
+    "texto": "El tiempo y el capital invertidos en Ofoto fueron recursos que no fueron a construir capacidades en sensores, en software de edición o en integración con los ecosistemas móviles que comenzaban a emerger. En 2007, Apple lanzó el iPhone con cámara integrada.",
+    "chapter_title": "Oportunidad perdida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "sensores",
+          "icon_name": "flat-color-icons:sim-card-chip"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "2007",
+          "text": "2007"
+        },
+        {
+          "id": "c",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "Apple",
+          "name": "apple"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "iPhone",
+          "text": "iPhone"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "cámara",
+          "icon_name": "flat-color-icons:iphone"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "no fueron",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "g",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "capital",
+          "icon_name": "flat-color-icons:no-idea"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "56",
+    "texto": "En ese momento, Kodak no tenía ninguna posición relevante en la cadena de valor de la imagen móvil: ni en el sensor, ni en el software, ni en la plataforma de distribución. La ventana había cerrado.",
+    "chapter_title": "Ventana cerrada",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "ninguna posición",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "cadena de valor",
+          "icon_name": "flat-color-icons:process"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "ventana",
+          "text": "CERRADO"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "cerrado",
+          "icon_name": "flat-color-icons:lock"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "había cerrado",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "57",
+    "texto": "DECISIÓN 5: Gestión financiera que priorizó dividendos sobre reinversión",
+    "chapter_title": "Gestión financiera",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "DECISIÓN 5",
+          "text": "5"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Gestión financiera",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "dividendos",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "priorizó",
+          "text": "Dividendos > Inversión"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "reinversión",
+          "icon_name": "flat-color-icons:cancel"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "e",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "58",
+    "texto": "Durante los años noventa, Kodak distribuía dividendos consistentes a sus accionistas mientras sus ingresos por película seguían siendo altos. Entre 1990 y 2000, Kodak pagó más de 5.000 millones de dólares en dividendos.",
+    "chapter_title": "Dividendos pagados",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_black",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "noventa",
+          "text": "Años 90"
+        },
+        {
+          "id": "b",
+          "type": "logo",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "5.000 millones",
+          "text": "$5B+"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "pagó",
+          "icon_name": "flat-color-icons:donate"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "ingresos",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "g",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "película",
+          "icon_name": "flat-color-icons:film-reel"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "59",
+    "texto": "Era una empresa que generaba caja y la devolvía al mercado como señal de solidez financiera. Las métricas de rentabilidad sobre capital eran sólidas.",
+    "chapter_title": "Señal de solidez",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "empresa",
+          "icon_name": "flat-color-icons:briefcase"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "generaba",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "solidez",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "métricas",
+          "text": "Rentabilidad sólida"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "sólidas",
+          "icon_name": "flat-color-icons:checkmark"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "60",
+    "texto": "En términos de gobierno corporativo de la época, era exactamente lo que se esperaba de una empresa madura con posición dominante. Los accionistas institucionales valoraban los dividendos. El mercado premiaba la estabilidad.",
+    "chapter_title": "Gobierno corporativo",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "gobierno corporativo",
+          "icon_name": "flat-color-icons:business"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "época",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "accionistas",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "premiaba",
+          "icon_name": "flat-color-icons:like"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "estabilidad",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "sm",
+          "trigger_word": "madura",
+          "text": "Empresa madura"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "61",
+    "texto": "Y los estados financieros de Kodak mostraban una empresa sana con márgenes altos, aunque esos márgenes dependían de un producto en transición hacia la obsolescencia. Los ejecutivos que tomaban estas decisiones tenían incentivos alineados con resultados a corto plazo.",
+    "chapter_title": "Márgenes frágiles",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "márgenes",
+          "icon_name": "flat-color-icons:area-chart"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "altos",
+          "text": "ALTOS"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "obsolescencia",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "corto",
+          "text": "Corto plazo"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "ejecutivos",
+          "icon_name": "flat-color-icons:businessman"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "62",
+    "texto": "Intel, durante el mismo período, reinvertía entre el 20% y el 25% de sus ingresos en investigación y desarrollo de forma sistemática. Microsoft reinvertía proporciones similares. Kodak reinvertía en I+D alrededor del 5% de sus ingresos. La diferencia no era de visión estratégica únicamente.",
+    "chapter_title": "I+D invertida",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "Intel",
+          "name": "intel"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "25%",
+          "text": "25%"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "5%",
+          "text": "5%"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "diferencia",
+          "icon_name": "flat-color-icons:bar-chart"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "text": "Kodak"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "b",
+          "to": "c",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "63",
+    "texto": "Era aritmética: 5% de reinversión no genera suficiente acumulación de capacidad técnica para sobrevivir una disrupción tecnológica de la magnitud que representaba el cambio de fotografía química a digital.",
+    "chapter_title": "Disrupción digital",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "aritmética",
+          "icon_name": "flat-color-icons:calculator"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "lg",
+          "trigger_word": "5%",
+          "text": "5%"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "fotografía",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "disrupción",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "digital",
+          "text": "Digital"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "64",
+    "texto": "El capital que se pagó como dividendo fue el capital que no se convirtió en sensores, en software ni en ingenieros.",
+    "chapter_title": "Costo de dividendos",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "dividendo",
+          "icon_name": "flat-color-icons:money-transfer"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "capital",
+          "text": "Capital"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "sensores",
+          "icon_name": "flat-color-icons:sim-card-chip"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "software",
+          "icon_name": "flat-color-icons:command-line"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "ingenieros",
+          "icon_name": "flat-color-icons:businessman"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "65",
+    "texto": "DÓNDE FALLÓ — CONSECUENCIA TÉCNICA: Cuando Kodak intentó acelerar su transformación digital a mediados de los años dos mil, no tenía los equipos técnicos internos para hacerlo.",
+    "chapter_title": "Fallo técnico",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "FALLÓ",
+          "text": "FALLO"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "TÉCNICA",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "dos mil",
+          "text": "2000s"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "equipos técnicos",
+          "icon_name": "flat-color-icons:engineering"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "no tenía",
+          "icon_name": "flat-color-icons:no-idea"
+        }
+      ],
+      "arrows": []
+    }
+  },
+  {
+    "id": "66",
+    "texto": "Tuvo que adquirir tecnología externa, contratar talento a precios elevados y construir capacidades desde cero en un momento en que la ventana competitiva ya estaba cerrándose. La deuda técnica no es solo código malo.",
+    "chapter_title": "Deuda técnica",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "adquirir",
+          "icon_name": "flat-color-icons:download"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "elevados",
+          "text": "Precios altos"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "ventana",
+          "icon_name": "flat-color-icons:expired"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "deuda",
+          "text": "DEUDA"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "código",
+          "icon_name": "flat-color-icons:command-line"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "67",
+    "texto": "También es conocimiento institucional que no se acumula porque no se invierte en él durante años.",
+    "chapter_title": "Acumulación",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "md",
+          "trigger_word": "conocimiento",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "años",
+          "icon_name": "flat-color-icons:timeline"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "invierte",
+          "text": "No invierte"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "acumula",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "68",
+    "texto": "En enero de 2012, Kodak se declaró en quiebra bajo el Capítulo 11 de la ley de insolvencia de Estados Unidos. La empresa que había valido 31.000 millones de dólares en 1996 entró en bancarrota con deudas que superaban sus activos.",
+    "chapter_title": "Quiebra",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2012",
+          "text": "2012"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "quiebra",
+          "icon_name": "flat-color-icons:cancel"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "mid-left",
+          "size": "lg",
+          "trigger_word": "31.000",
+          "text": "$31B"
+        },
+        {
+          "id": "d",
+          "type": "label_red",
+          "slot": "mid-right",
+          "size": "lg",
+          "trigger_word": "1996",
+          "text": "1996"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "deudas",
+          "icon_name": "flat-color-icons:debt"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "bancarrota",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "c",
+          "to": "a",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "69",
+    "texto": "Salió de la quiebra en 2013 convertida en una empresa de impresión comercial e industrial, sin ninguna presencia en fotografía de consumo. El nombre sobrevivió. El negocio que lo hizo grande, no.",
+    "chapter_title": "Reinvención fallida",
+    "visual": {
+      "color_mood": "nostalgia",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "2013",
+          "text": "2013"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "Salió",
+          "icon_name": "flat-color-icons:approve"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "impresión",
+          "text": "Impresión"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "fotografía",
+          "icon_name": "flat-color-icons:picture"
+        },
+        {
+          "id": "e",
+          "type": "label_black",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "nombre",
+          "text": "El nombre"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "no",
+          "icon_name": "flat-color-icons:dislike"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "e",
+          "to": "f",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "70",
+    "texto": "El sensor CCD que Sasson utilizó en 1975 es el ancestro directo de los sensores CMOS que hay en cada teléfono móvil actual. La investigación que Kodak archivó siguió existiendo en patentes académicas y en los laboratorios de sus competidores.",
+    "chapter_title": "Legado digital",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "label_red",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "1975",
+          "text": "1975"
+        },
+        {
+          "id": "b",
+          "type": "label_black",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "CCD",
+          "text": "CCD"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "sensores",
+          "icon_name": "flat-color-icons:sim-card-chip"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "center",
+          "size": "md",
+          "trigger_word": "teléfono",
+          "icon_name": "flat-color-icons:multiple-smartphones"
+        },
+        {
+          "id": "e",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "patentes",
+          "icon_name": "flat-color-icons:trademark"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "competidores",
+          "icon_name": "flat-color-icons:business-contact"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "d",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "71",
+    "texto": "Sony construyó su división de semiconductores de imagen sobre principios técnicos que Kodak había desarrollado primero. Hoy, Sony Semiconductor fabrica los sensores de imagen de la mayoría de los teléfonos de alta gama del mercado, incluyendo los de Apple.",
+    "chapter_title": "Sony's Sensor Empire",
+    "visual": {
+      "color_mood": "positivo",
+      "elements": [
+        {
+          "id": "a",
+          "type": "logo",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "Sony",
+          "name": "sony"
+        },
+        {
+          "id": "b",
+          "type": "pexels_image",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sensores",
+          "query": "image sensor camera chip semiconductor"
+        },
+        {
+          "id": "c",
+          "type": "label_red",
+          "slot": "center",
+          "size": "xl",
+          "trigger_word": "mayoría",
+          "text": "90%"
+        },
+        {
+          "id": "d",
+          "type": "logo",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "Kodak",
+          "name": "kodak"
+        },
+        {
+          "id": "e",
+          "type": "logo",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "Apple",
+          "name": "apple"
+        },
+        {
+          "id": "f",
+          "type": "icon",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "fabrica",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "g",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "división",
+          "text": "Imagen Digital"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "d",
+          "to": "a",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  },
+  {
+    "id": "72",
+    "texto": "El conocimiento no murió con la empresa. Migró hacia quienes estaban dispuestos a usarlo.",
+    "chapter_title": "Knowledge Transfer",
+    "visual": {
+      "color_mood": "neutro",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "conocimiento",
+          "icon_name": "flat-color-icons:idea"
+        },
+        {
+          "id": "b",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "quienes",
+          "icon_name": "flat-color-icons:businessman"
+        },
+        {
+          "id": "c",
+          "type": "label_black",
+          "slot": "center",
+          "size": "lg",
+          "trigger_word": "Migró",
+          "text": "Migración"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "usarlo",
+          "icon_name": "flat-color-icons:businesswoman"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "c",
+          "style": "dashed_straight"
+        },
+        {
+          "from": "c",
+          "to": "d",
+          "style": "dashed_straight"
+        }
+      ]
+    }
+  },
+  {
+    "id": "73",
+    "texto": "La próxima vez que tu producto más rentable amenace ser reemplazado por tu propia innovación, pregúntate si estás invirtiendo el margen que genera para construir su sucesor o para prolongar su agonía. Eso es lo que separa una transición gestionada de una quiebra anunciada.",
+    "chapter_title": "Innovation Dilemma",
+    "visual": {
+      "color_mood": "urgente",
+      "elements": [
+        {
+          "id": "a",
+          "type": "icon",
+          "slot": "top-left",
+          "size": "lg",
+          "trigger_word": "pregúntate",
+          "icon_name": "flat-color-icons:make-decision"
+        },
+        {
+          "id": "b",
+          "type": "label_red",
+          "slot": "top-right",
+          "size": "md",
+          "trigger_word": "sucesor",
+          "text": "Camino A"
+        },
+        {
+          "id": "c",
+          "type": "icon",
+          "slot": "mid-left",
+          "size": "md",
+          "trigger_word": "transición",
+          "icon_name": "flat-color-icons:positive-dynamic"
+        },
+        {
+          "id": "d",
+          "type": "icon",
+          "slot": "mid-right",
+          "size": "md",
+          "trigger_word": "quiebra",
+          "icon_name": "flat-color-icons:negative-dynamic"
+        },
+        {
+          "id": "e",
+          "type": "label_red",
+          "slot": "bottom-left",
+          "size": "md",
+          "trigger_word": "agonía",
+          "text": "Camino B"
+        },
+        {
+          "id": "f",
+          "type": "label_black",
+          "slot": "bottom-right",
+          "size": "md",
+          "trigger_word": "innovación",
+          "text": "Innovación o Declive"
+        }
+      ],
+      "arrows": [
+        {
+          "from": "a",
+          "to": "b",
+          "style": "dashed_curve"
+        },
+        {
+          "from": "a",
+          "to": "e",
+          "style": "dashed_curve"
+        }
+      ]
+    }
+  }
+]

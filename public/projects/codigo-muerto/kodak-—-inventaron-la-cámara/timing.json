@@ -1,0 +1,294 @@
+{
+  "parrafo-01": {
+    "start": 0,
+    "duration": 8.78
+  },
+  "parrafo-02": {
+    "start": 8.78,
+    "duration": 18.26
+  },
+  "parrafo-03": {
+    "start": 27.04,
+    "duration": 14.5
+  },
+  "parrafo-04": {
+    "start": 41.53,
+    "duration": 5.93
+  },
+  "parrafo-05": {
+    "start": 47.46,
+    "duration": 4.65
+  },
+  "parrafo-06": {
+    "start": 52.11,
+    "duration": 9.98
+  },
+  "parrafo-07": {
+    "start": 62.09,
+    "duration": 13.04
+  },
+  "parrafo-08": {
+    "start": 75.13,
+    "duration": 6.09
+  },
+  "parrafo-09": {
+    "start": 81.21,
+    "duration": 13.74
+  },
+  "parrafo-10": {
+    "start": 94.96,
+    "duration": 11.6
+  },
+  "parrafo-11": {
+    "start": 106.55,
+    "duration": 10.32
+  },
+  "parrafo-12": {
+    "start": 116.87,
+    "duration": 17.71
+  },
+  "parrafo-13": {
+    "start": 134.58,
+    "duration": 9.48
+  },
+  "parrafo-14": {
+    "start": 144.07,
+    "duration": 14.16
+  },
+  "parrafo-15": {
+    "start": 158.22,
+    "duration": 18.13
+  },
+  "parrafo-16": {
+    "start": 176.35,
+    "duration": 12.41
+  },
+  "parrafo-17": {
+    "start": 188.76,
+    "duration": 3.71
+  },
+  "parrafo-18": {
+    "start": 192.47,
+    "duration": 14.03
+  },
+  "parrafo-19": {
+    "start": 206.5,
+    "duration": 15.78
+  },
+  "parrafo-20": {
+    "start": 222.28,
+    "duration": 17.82
+  },
+  "parrafo-21": {
+    "start": 240.09,
+    "duration": 11.89
+  },
+  "parrafo-22": {
+    "start": 251.98,
+    "duration": 7.76
+  },
+  "parrafo-23": {
+    "start": 259.74,
+    "duration": 10.81
+  },
+  "parrafo-24": {
+    "start": 270.55,
+    "duration": 14.29
+  },
+  "parrafo-25": {
+    "start": 284.84,
+    "duration": 18.23
+  },
+  "parrafo-26": {
+    "start": 303.07,
+    "duration": 14.71
+  },
+  "parrafo-27": {
+    "start": 317.78,
+    "duration": 10.58
+  },
+  "parrafo-28": {
+    "start": 328.36,
+    "duration": 11.7
+  },
+  "parrafo-29": {
+    "start": 340.06,
+    "duration": 5.43
+  },
+  "parrafo-30": {
+    "start": 345.5,
+    "duration": 5.09
+  },
+  "parrafo-31": {
+    "start": 350.59,
+    "duration": 10.34
+  },
+  "parrafo-32": {
+    "start": 360.93,
+    "duration": 12.62
+  },
+  "parrafo-33": {
+    "start": 373.55,
+    "duration": 10.92
+  },
+  "parrafo-34": {
+    "start": 384.47,
+    "duration": 13.92
+  },
+  "parrafo-35": {
+    "start": 398.39,
+    "duration": 7.52
+  },
+  "parrafo-36": {
+    "start": 405.92,
+    "duration": 8.18
+  },
+  "parrafo-37": {
+    "start": 414.09,
+    "duration": 9.01
+  },
+  "parrafo-38": {
+    "start": 423.11,
+    "duration": 14.26
+  },
+  "parrafo-39": {
+    "start": 437.37,
+    "duration": 14.16
+  },
+  "parrafo-40": {
+    "start": 451.53,
+    "duration": 14.86
+  },
+  "parrafo-41": {
+    "start": 466.39,
+    "duration": 10.27
+  },
+  "parrafo-42": {
+    "start": 476.66,
+    "duration": 17.35
+  },
+  "parrafo-43": {
+    "start": 494,
+    "duration": 15.93
+  },
+  "parrafo-44": {
+    "start": 509.94,
+    "duration": 4.78
+  },
+  "parrafo-45": {
+    "start": 514.72,
+    "duration": 15.96
+  },
+  "parrafo-46": {
+    "start": 530.68,
+    "duration": 6.77
+  },
+  "parrafo-47": {
+    "start": 537.44,
+    "duration": 13.37
+  },
+  "parrafo-48": {
+    "start": 550.82,
+    "duration": 12.07
+  },
+  "parrafo-49": {
+    "start": 562.89,
+    "duration": 8.02
+  },
+  "parrafo-50": {
+    "start": 570.91,
+    "duration": 12.54
+  },
+  "parrafo-51": {
+    "start": 583.44,
+    "duration": 9.38
+  },
+  "parrafo-52": {
+    "start": 592.82,
+    "duration": 14.99
+  },
+  "parrafo-53": {
+    "start": 607.82,
+    "duration": 10.92
+  },
+  "parrafo-54": {
+    "start": 618.74,
+    "duration": 7.89
+  },
+  "parrafo-55": {
+    "start": 626.63,
+    "duration": 14.11
+  },
+  "parrafo-56": {
+    "start": 640.73,
+    "duration": 11.78
+  },
+  "parrafo-57": {
+    "start": 652.51,
+    "duration": 4.96
+  },
+  "parrafo-58": {
+    "start": 657.48,
+    "duration": 15.28
+  },
+  "parrafo-59": {
+    "start": 672.76,
+    "duration": 9.09
+  },
+  "parrafo-60": {
+    "start": 681.85,
+    "duration": 13.43
+  },
+  "parrafo-61": {
+    "start": 695.28,
+    "duration": 14.63
+  },
+  "parrafo-62": {
+    "start": 709.9,
+    "duration": 21.26
+  },
+  "parrafo-63": {
+    "start": 731.17,
+    "duration": 13.51
+  },
+  "parrafo-64": {
+    "start": 744.67,
+    "duration": 6.56
+  },
+  "parrafo-65": {
+    "start": 751.23,
+    "duration": 10.95
+  },
+  "parrafo-66": {
+    "start": 762.17,
+    "duration": 11.47
+  },
+  "parrafo-67": {
+    "start": 773.64,
+    "duration": 5.33
+  },
+  "parrafo-68": {
+    "start": 778.97,
+    "duration": 14.81
+  },
+  "parrafo-69": {
+    "start": 793.78,
+    "duration": 11.36
+  },
+  "parrafo-70": {
+    "start": 805.15,
+    "duration": 15.65
+  },
+  "parrafo-71": {
+    "start": 820.79,
+    "duration": 13.92
+  },
+  "parrafo-72": {
+    "start": 834.72,
+    "duration": 4.96
+  },
+  "parrafo-73": {
+    "start": 839.68,
+    "duration": 14.34
+  }
+}

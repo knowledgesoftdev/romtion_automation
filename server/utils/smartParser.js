@@ -11,14 +11,84 @@
  */
 
 require('dotenv').config();
+const fs   = require('fs');
+const path = require('path');
 const { parseScript } = require('./parser');
 
 let Anthropic;
 try { Anthropic = require('@anthropic-ai/sdk'); } catch (_) { Anthropic = null; }
 
-const MAX_WORDS_PER_FRAGMENT = 45;
-const CHUNK_SIZE             = 10;   // párrafos por petición (menos que antes porque cada uno genera más JSON)
+// 25 words ≈ 9-10 seconds at ~160 wpm speaking speed
+const MAX_WORDS_PER_FRAGMENT = 25;
+const CHUNK_SIZE             = 10;   // párrafos por petición
 const ANTHROPIC_MODEL        = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
+
+// ── Active channel detection ─────────────────────────────────────────────────
+function getActiveChannelId() {
+  try {
+    const activeFile = path.join(__dirname, '..', '..', 'active-channel.json');
+    if (fs.existsSync(activeFile)) {
+      return JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || '';
+    }
+  } catch (_) {}
+  return '';
+}
+
+// ── Robust sentence-aware text splitter (preserves ALL words) ────────────────
+/**
+ * Splits `text` into fragments of at most `maxWords` words each.
+ * Prefers natural break points in this order:
+ *   1. Sentence ends  (. ! ?)
+ *   2. Clause breaks  (, ; : — –)
+ *   3. Hard word-count cut
+ * Every word from the original text appears in exactly one fragment.
+ */
+function splitTextIntoFragments(text, maxWords) {
+  maxWords = maxWords || MAX_WORDS_PER_FRAGMENT;
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  if (words.length <= maxWords) return [text.trim()];
+
+  const fragments = [];
+  let i = 0;
+
+  while (i < words.length) {
+    const remaining = words.length - i;
+    if (remaining <= maxWords) {
+      // Last chunk — take everything
+      fragments.push(words.slice(i).join(' '));
+      break;
+    }
+
+    // Look for the best cut point within [i+5 .. i+maxWords]
+    const lo = Math.max(i + 5, i);        // minimum fragment size
+    const hi = Math.min(i + maxWords, words.length - 1);
+
+    // Priority 1: sentence boundary (.  !  ?) anywhere in window
+    let cut = -1;
+    for (let j = hi; j >= lo; j--) {
+      if (/[.!?]$/.test(words[j])) { cut = j + 1; break; }
+    }
+
+    // Priority 2: clause boundary (, ; : — –) anywhere in window
+    if (cut === -1) {
+      for (let j = hi; j >= lo; j--) {
+        if (/[,;:—–]$/.test(words[j])) { cut = j + 1; break; }
+      }
+    }
+
+    // Priority 3: hard cut at maxWords
+    if (cut === -1) cut = i + maxWords;
+
+    // Safety: never produce an empty fragment
+    if (cut <= i) cut = i + maxWords;
+    cut = Math.min(cut, words.length);
+
+    fragments.push(words.slice(i, cut).join(' '));
+    i = cut;
+  }
+
+  return fragments.filter(f => f.trim().length > 0);
+}
 
 // ── Constantes de validación ─────────────────────────────────────────────────
 const VALID_SLOTS = [
@@ -176,7 +246,7 @@ EJEMPLO de una escena con texto "BlackBerry dominaba el 40% del mercado smartpho
     return `${base}
 
 ADICIONALMENTE, tu tarea es FRAGMENTAR el guion completo:
-- Divide el texto en fragmentos de 20-45 palabras (NUNCA mas de 45).
+- Divide el texto en fragmentos de 20-28 palabras (NUNCA mas de 28) para que duren entre 8 y 10 segundos de audio.
 - Cada fragmento debe tener sentido semantico completo.
 - Los titulos de seccion (ej: "DECISION UNO:", "QUE ERA:") como fragmentos solos de 1 linea.
 - Elimina lineas [ANIMACION N:] y la seccion [ANIMACIONES - LISTA COMPLETA].
@@ -751,34 +821,18 @@ function splitLongParagraphs(paragraphs, projectName) {
   const result = [];
   let counter = 1;
   for (const p of paragraphs) {
-    const words = p.texto.trim().split(/\s+/).filter(Boolean);
     const chapter_title = defaultChapterTitle(p.texto, projectName);
-    if (words.length <= MAX_WORDS_PER_FRAGMENT) {
-      result.push({
-        id:            String(counter++).padStart(2, '0'),
-        texto:         p.texto,
-        chapter_title,
-        visual:        defaultVisual(),
-      });
-      continue;
-    }
-    let i = 0;
-    while (i < words.length) {
-      let end = Math.min(i + MAX_WORDS_PER_FRAGMENT, words.length);
-      let cut = end;
-      for (let j = end - 1; j >= i + 15; j--) {
-        if (/[.!?]$/.test(words[j])) { cut = j + 1; break; }
-      }
-      const fragment = words.slice(i, cut).join(' ');
-      if (fragment.trim().length > 10) {
+    // Use the robust splitter which preserves ALL words
+    const fragments = splitTextIntoFragments(p.texto, MAX_WORDS_PER_FRAGMENT);
+    for (const fragment of fragments) {
+      if (fragment.trim().length > 5) {
         result.push({
           id:            String(counter++).padStart(2, '0'),
-          texto:         fragment,
+          texto:         fragment.trim(),
           chapter_title,
           visual:        defaultVisual(),
         });
       }
-      i = cut;
     }
   }
   return result;
@@ -839,6 +893,21 @@ async function enrichInChunks(rawScript, projectName) {
 // ── Función principal exportada ──────────────────────────────────────────────
 async function parseScriptSmart(rawScript, opts = {}) {
   const projectName = opts.projectName || '';
+
+  // ── Phantom-directive: skip Claude entirely ──────────────────────────────
+  // For full-bleed B-roll channels the visual.elements field is not used by
+  // the VideoEngine / scene-plan renderer, so Claude enrichment is unnecessary.
+  // We only need a clean word-capped partition of the script.
+  const channelId = getActiveChannelId();
+  if (channelId === 'phantom-directive') {
+    console.log(`⚡ [smartParser] Canal phantom-directive → partición determinista directa (sin Claude)`);
+    const deterministicParagraphs = parseScript(rawScript);
+    const result = splitLongParagraphs(deterministicParagraphs, projectName);
+    console.log(`✅ [smartParser] ${result.length} fragmentos (≤${MAX_WORDS_PER_FRAGMENT} palabras c/u)`);
+    return result;
+  }
+
+  // ── codigo-muerto (and other visual niches): use Claude as before ────────
   const wordCount = rawScript.split(/\s+/).filter(Boolean).length;
   const estimatedScenes = Math.ceil(wordCount / 30);
   const useChunkMode = estimatedScenes > 20;

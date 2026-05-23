@@ -150,7 +150,7 @@ function extractKeyPoints(guion, timing, maxPoints = 5) {
 }
 
 // ── Prompt de Claude para metadata ────────────────────────────────────────────
-function buildMetadataPrompt(rawScript, titlesUsed, bestTitles, chapters, keyPoints) {
+function buildMetadataPrompt(channelId, rawScript, titlesUsed, bestTitles, chapters, keyPoints) {
   let contextBlock = '';
   if (titlesUsed && titlesUsed.length > 0) {
     contextBlock += `\nTÍTULOS YA USADOS EN EL CANAL (no repitas este patrón exacto):\n${titlesUsed.map(t => `  - ${t}`).join('\n')}\n`;
@@ -167,6 +167,27 @@ function buildMetadataPrompt(rawScript, titlesUsed, bestTitles, chapters, keyPoi
     ? `\nFRASES CLAVE DEL GUION (usa estas ideas en la descripción):\n${keyPoints.map(k => `  - "${k}"`).join('\n')}\n`
     : '';
 
+  if (channelId === 'phantom-directive') {
+    return `You are an expert in YouTube SEO and growth, specialized in military history, declassified operations, and classified programs.
+The channel is called "Phantom Directive" — focusing on declassified operations, US military secret units, and compartmented programs.
+Tone: Calm, authoritative, slightly ominous, investigative, fact-based. No cheap clickbait.
+${contextBlock}${chaptersBlock}${keyPointsBlock}
+VIDEO SCRIPT:
+${rawScript.substring(0, 3000)}${rawScript.length > 3000 ? '\n[...script continues...]' : ''}
+
+Generate a JSON with exactly this structure (no markdown, just raw JSON). All values MUST be written in English:
+{
+  "titulo_principal": "The main title optimized for CTR (max 80 chars)",
+  "titulo_alternativo": "An alternative title variation (different pattern)",
+  "descripcion_corta": "2-3 hook sentences before the 'show more' fold. Impactful. Max 200 chars.",
+  "descripcion_con_capitulos": "Full description ready to paste. Must include:\n1) An introductory paragraph of 3-4 lines with the key concepts of the video.\n2) A blank line.\n3) The chapters EXACTLY as received in CAPÍTULOS REALES, one per line with its timestamp.\n4) A blank line.\n5) A short Call To Action (subscribe, comment on which secret unit or classified program should be covered next).\nTotal length: 400-600 chars without counting chapters.",
+  "hashtags": "List of hashtags separated by spaces, max 500 characters total including spaces",
+  "etiquetas": ["array", "of", "SEO", "tags", "between", "5", "and", "12", "keywords"],
+  "miniatura_concepto": "Detailed description of the ideal thumbnail: background image/footage, text overlay, colors, composition. Specific and actionable.",
+  "estilo_titulo": "One word describing the title pattern (e.g., classified-unit, secret-operation, declassified-file, mysterious-program)"
+}`;
+  }
+
   return `Eres un experto en SEO y crecimiento de canal de YouTube especializado en tecnología y programación.
 El canal se llama "Código Muerto" — autopsia técnica de arquitecturas de software que fallaron.
 Tono: periodístico, técnico, sin clickbait barato. Hooks que prometan información real.
@@ -174,7 +195,7 @@ ${contextBlock}${chaptersBlock}${keyPointsBlock}
 GUION DEL VIDEO:
 ${rawScript.substring(0, 3000)}${rawScript.length > 3000 ? '\n[...guion continúa...]' : ''}
 
-Genera un JSON con exactamente esta estructura (sin markdown, solo JSON):
+Genera un JSON con exactamente esta estructura (sin markdown, solo JSON). Todos los valores DEBEN estar en español:
 {
   "titulo_principal": "El título principal optimizado para CTR (máx 80 chars)",
   "titulo_alternativo": "Una variación del título (diferente patrón)",
@@ -188,7 +209,7 @@ Genera un JSON con exactamente esta estructura (sin markdown, solo JSON):
 }
 
 // ── Llamada a Claude ───────────────────────────────────────────────────────────
-async function generateMetadataWithClaude(rawScript, memory, chapters, keyPoints) {
+async function generateMetadataWithClaude(channelId, rawScript, memory, chapters, keyPoints) {
   if (!Anthropic || !process.env.ANTHROPIC_API_KEY) {
     throw new Error('Anthropic no disponible. Configura ANTHROPIC_API_KEY.');
   }
@@ -202,7 +223,7 @@ async function generateMetadataWithClaude(rawScript, memory, chapters, keyPoints
     .map(v => ({ titulo: v.tema, views: v.views }))
     .slice(0, 3);
 
-  const prompt = buildMetadataPrompt(rawScript, titlesUsed, bestTitles, chapters, keyPoints);
+  const prompt = buildMetadataPrompt(channelId, rawScript, titlesUsed, bestTitles, chapters, keyPoints);
 
   const res = await client.messages.create({
     model: ANTHROPIC_MODEL,
@@ -223,25 +244,27 @@ async function generateMetadataWithClaude(rawScript, memory, chapters, keyPoints
 }
 
 // ── Formatear archivo de texto de salida ──────────────────────────────────────
-function formatOutputFile(metadata, chapters) {
+function formatOutputFile(channelId, metadata, chapters) {
   const lines = [];
   const sep = '═'.repeat(60);
 
+  const isPD = channelId === 'phantom-directive';
+  const channelLabel = isPD ? 'PHANTOM DIRECTIVE' : 'CÓDIGO MUERTO';
   lines.push(sep);
-  lines.push('  📺 METADATA YOUTUBE — CÓDIGO MUERTO');
+  lines.push(`  📺 METADATA YOUTUBE — ${channelLabel}`);
   lines.push(sep);
   lines.push('');
 
-  lines.push('【 TÍTULOS 】');
-  lines.push(`Principal:     ${metadata.titulo_principal}`);
-  lines.push(`Alternativo:   ${metadata.titulo_alternativo}`);
+  lines.push(isPD ? '【 TITLES 】' : '【 TÍTULOS 】');
+  lines.push(`${isPD ? 'Main' : 'Principal'}:     ${metadata.titulo_principal}`);
+  lines.push(`${isPD ? 'Alternative' : 'Alternativo'}:   ${metadata.titulo_alternativo}`);
   lines.push('');
 
-  lines.push('【 DESCRIPCIÓN CORTA (antes del ver más) 】');
+  lines.push(isPD ? '【 SHORT DESCRIPTION 】' : '【 DESCRIPCIÓN CORTA (antes del ver más) 】');
   lines.push(metadata.descripcion_corta);
   lines.push('');
 
-  lines.push('【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】');
+  lines.push(isPD ? '【 FULL DESCRIPTION WITH CHAPTERS 】' : '【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】');
   lines.push('─'.repeat(60));
   lines.push(metadata.descripcion_con_capitulos || metadata.descripcion_completa || '');
   lines.push('─'.repeat(60));
@@ -249,7 +272,7 @@ function formatOutputFile(metadata, chapters) {
 
   // Capítulos en bloque separado para referencia
   if (chapters.length > 1) {
-    lines.push('【 CAPÍTULOS (referencia) 】');
+    lines.push(isPD ? '【 CHAPTERS (reference) 】' : '【 CAPÍTULOS (referencia) 】');
     for (const ch of chapters) {
       lines.push(`${ch.time} ${ch.title}`);
     }
@@ -258,19 +281,19 @@ function formatOutputFile(metadata, chapters) {
 
   lines.push('【 HASHTAGS 】');
   lines.push(metadata.hashtags);
-  lines.push(`(${(metadata.hashtags || '').length} caracteres)`);
+  lines.push(`(${(metadata.hashtags || '').length} ${isPD ? 'characters' : 'caracteres'})`);
   lines.push('');
 
-  lines.push('【 ETIQUETAS SEO 】');
+  lines.push(isPD ? '【 SEO TAGS 】' : '【 ETIQUETAS SEO 】');
   lines.push((metadata.etiquetas || []).join(', '));
   lines.push('');
 
-  lines.push('【 CONCEPTO DE MINIATURA 】');
+  lines.push(isPD ? '【 THUMBNAIL CONCEPT 】' : '【 CONCEPTO DE MINIATURA 】');
   lines.push(metadata.miniatura_concepto);
   lines.push('');
 
   lines.push(sep);
-  lines.push(`Generado: ${new Date().toLocaleString('es-ES')}`);
+  lines.push(`${isPD ? 'Generated' : 'Generado'}: ${new Date().toLocaleString(isPD ? 'en-US' : 'es-ES')}`);
   lines.push('');
 
   return lines.join('\n');
@@ -302,7 +325,7 @@ async function main() {
   let metadata;
   try {
     console.log('🧠 Generando con Claude...');
-    metadata = await generateMetadataWithClaude(rawScript, memory, chapters, keyPoints);
+    metadata = await generateMetadataWithClaude(channelId, rawScript, memory, chapters, keyPoints);
     console.log(`✅ Metadata generada`);
   } catch (err) {
     console.error(`❌ Error: ${err.message}`);
@@ -310,7 +333,7 @@ async function main() {
   }
 
   // Guardar archivo de texto
-  const output = formatOutputFile(metadata, chapters);
+  const output = formatOutputFile(channelId, metadata, chapters);
   fs.writeFileSync(outputPath, output, 'utf8');
   console.log(`\n✅ Guardado en: ${outputPath}`);
 

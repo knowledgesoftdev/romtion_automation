@@ -8,12 +8,15 @@ interface Props {
   unit?: string;
   label: string;
   accent?: string;
+  channelId?: string;
 }
 
-export const StatBlock: React.FC<Props> = ({ value, unit, label, accent = CYAN }) => {
+export const StatBlock: React.FC<Props> = ({ value, unit, label, accent = CYAN, channelId }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const scale = springIn(frame, 10, fps, { damping: 12, stiffness: 90 });
+  const isCinematic = channelId === 'phantom-directive';
+  const statColor = isCinematic ? '#ffffff' : accent;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 6 }}>
@@ -24,13 +27,13 @@ export const StatBlock: React.FC<Props> = ({ value, unit, label, accent = CYAN }
         transformOrigin: 'left center',
       }}>
         <span style={{
-          fontFamily: FONT_SANS, color: accent, fontSize: 168, fontWeight: 800,
+          fontFamily: FONT_SANS, color: statColor, fontSize: 168, fontWeight: 800,
           lineHeight: 0.95, letterSpacing: -3,
-          textShadow: `0 0 48px ${accent}55`,
+          textShadow: isCinematic ? 'none' : `0 0 48px ${accent}55`,
         }}>{value}</span>
         {unit && (
           <span style={{
-            fontFamily: FONT_MONO, color: accent, fontSize: 42, fontWeight: 600,
+            fontFamily: FONT_MONO, color: statColor, fontSize: 42, fontWeight: 600,
             opacity: 0.85,
           }}>{unit}</span>
         )}

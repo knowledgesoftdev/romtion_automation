@@ -4,7 +4,47 @@
  * [GANCHO] → [CONTEXTO] → [AUTOPSIA] (DECISIÓN N + sub-bloques) → [LEGADO] → [CRITERIO FINAL]
  * Ignora todas las líneas de [ANIMACIÓN] y la sección [ANIMACIONES] completa.
  */
+function hasSectionHeaders(rawText) {
+  return /\[GANCHO\]|\[CONTEXTO\]|\[AUTOPSIA\]|\[LEGADO\]|\[CRITERIO FINAL\]/i.test(rawText);
+}
+
 function parseScript(rawText) {
+  if (!hasSectionHeaders(rawText)) {
+    // Plain-text parser for new niches (e.g. phantom-directive)
+    const lines = rawText.split(/\r?\n/);
+    const paragraphs = [];
+    let counter = 1;
+    let paragraphBuffer = '';
+
+    const flushParagraph = () => {
+      const pText = paragraphBuffer.trim().replace(/\s+/g, ' ');
+      if (pText.length > 5) {
+        paragraphs.push({ id: String(counter++).padStart(2, '0'), texto: pText });
+      }
+      paragraphBuffer = '';
+    };
+
+    for (const rawLine of lines) {
+      const line = rawLine.trim();
+      // Skip animations list section if it starts
+      if (/^\[ANIMACIONES/i.test(line)) break;
+      // Skip inline animations
+      if (/^\[?ANIMACI[OÓ]N\s*\d+/i.test(line)) continue;
+      // Skip generic bracket lines
+      if (/^\[.+\]/.test(line)) continue;
+
+      if (!line) {
+        // Empty line splits paragraphs
+        flushParagraph();
+      } else {
+        paragraphBuffer += (paragraphBuffer ? ' ' : '') + line;
+      }
+    }
+    flushParagraph();
+    return paragraphs;
+  }
+
+  // Original Código Muerto parsing logic
   const lines = rawText.split('\n');
   const paragraphs = [];
   let counter = 1;

@@ -13,18 +13,16 @@ interface Props {
 }
 
 export const SceneRenderer: React.FC<Props> = ({ projectId, channelId, paragraph, durationInFrames }) => {
-  const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
-
   switch (paragraph.layout) {
     case 'fullBleedMedia':
-      return <FullBleedMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <FullBleedMedia projectId={projectId} channelId={channelId} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'splitMedia':
-      return <SplitMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <SplitMedia projectId={projectId} channelId={channelId} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'dataSplit':
-      return <DataSplit projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <DataSplit projectId={projectId} channelId={channelId} paragraph={paragraph} durationInFrames={durationInFrames} />;
     case 'keywordOnly':
-      return <KeywordOnly projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <KeywordOnly projectId={projectId} channelId={channelId} paragraph={paragraph} durationInFrames={durationInFrames} />;
     default:
-      return <FullBleedMedia projectId={projectPath} paragraph={paragraph} durationInFrames={durationInFrames} />;
+      return <FullBleedMedia projectId={projectId} channelId={channelId} paragraph={paragraph} durationInFrames={durationInFrames} />;
   }
 };

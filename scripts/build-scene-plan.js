@@ -71,7 +71,7 @@ function hasNumbers(text) { return ALL_NUMBER_RE.test(text); }
 function wordCount(text) { return text.trim().split(/\s+/).filter(Boolean).length; }
 function deburr(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, ''); }
 
-// ─── Schema for structured output ─────────────────────────────────────────────
+// ─── Schema for structured output — SPANISH (codigo-muerto) ──────────────────
 const PLAN_SCHEMA = {
   type: 'object',
   additionalProperties: false,
@@ -129,6 +129,66 @@ Reglas estrictas:
 - Para temas históricos (Nokia, BlackBerry, MySpace, etc.) usa queries específicas: "nokia 3310", "blackberry phone keyboard", "old computer crt monitor".
 - Devuelve SOLO el JSON. Nada de texto adicional, sin markdown, sin comentarios.`;
 
+// ─── Schema for structured output — ENGLISH (phantom-directive) ───────────────
+const PLAN_SCHEMA_EN = {
+  type: 'object',
+  additionalProperties: false,
+  required: ['mainQuery','subQueries','keywords','eyebrow','headline','bullets','stat','hasNumbers'],
+  properties: {
+    mainQuery:  { type: 'string', description: '2-5 word ENGLISH query for Pexels. Must be concrete and filmable. Examples: "military helicopter night operation", "classified documents folder", "special forces soldier urban", "surveillance equipment tech".' },
+    subQueries: {
+      type: 'array',
+      items: { type: 'string' },
+      description: '1-2 alternative ENGLISH Pexels queries from different visual angles. Return between 1 and 2 items.',
+    },
+    keywords: {
+      type: 'array',
+      items: { type: 'string' },
+      description: '1-3 SHORT ENGLISH keywords in UPPERCASE (≤3 words each), no articles, no punctuation. These are corner label overlays on the video. Must be strong conceptual terms, not filler words. Examples: ["CLASSIFIED", "1980", "DELTA FORCE"]. Return between 1 and 3 items.',
+    },
+    eyebrow:  { type: 'string', description: '1-3 word English category label in UPPERCASE. Examples: "CLASSIFIED", "COVERT OPS", "INTELLIGENCE", "DECLASSIFIED".' },
+    headline: { type: 'string', description: 'English factual summary ≤10 words. No trailing punctuation. Must be a specific fact, not philosophy. Example: "The most secret unit inside the US Army".' },
+    bullets: {
+      type: 'array',
+      items: { type: 'string' },
+      description: '0-3 key English ideas, each ≤6 words, no trailing punctuation. Empty array if none.',
+    },
+    stat: {
+      anyOf: [
+        { type: 'null' },
+        {
+          type: 'object', additionalProperties: false,
+          required: ['value','unit','label'],
+          properties: {
+            value: { type: 'string', description: 'Numeric value as displayed (e.g. "40", "1980", "30")' },
+            unit:  { type: 'string', description: 'English unit or empty string (e.g. "%", "years", "billion", "")' },
+            label: { type: 'string', description: 'Short English caption ≤8 words' },
+          },
+        },
+      ],
+      description: 'Most salient numeric fact in the paragraph (year, count, percentage), or null if none.',
+    },
+    hasNumbers: { type: 'boolean' },
+  },
+};
+
+const SYSTEM_PROMPT_EN = `You are the art director for a cinematic English-language documentary channel in the style of Vice / Netflix documentaries about classified military and intelligence operations.
+
+Your job: analyze ONE paragraph (which may be in Spanish) and return ONE structured visual description. ALL output fields must be in ENGLISH — no Spanish words anywhere.
+
+Your JSON output powers:
+- Pexels searches → mainQuery and subQueries must be concrete and filmable in ENGLISH. NOT abstract like "secrecy" or "power". YES: "military helicopter night", "classified documents manila folder", "special forces soldier patrol", "surveillance camera street". Think: what exact footage would a documentary editor search for?
+- On-screen corner labels → keywords in ENGLISH UPPERCASE, max 3 words each, ≤3 keywords. Must be conceptually powerful proper nouns or key facts. For "The unit was created in 1980 after Operation Eagle Claw" → ["OPERATION EAGLE CLAW", "1980", "CLASSIFIED"]. NOT ["UNIT", "AFTER", "OPERATION"].
+- Headline = factual English summary ≤10 words, no period. Specific fact, not description. Example: "The Ghost Unit with no official name or rank".
+- Bullets (0-3) = concrete English key ideas ≤6 words each, no period.
+- Stat: ONLY if there is ONE dominant number (year, percentage, amount). If the paragraph has multiple numbers, pick the most impactful. If no clear number, stat = null.
+
+Strict rules:
+- EVERYTHING must be in ENGLISH. If the source paragraph is in Spanish, translate/extract the key information into English.
+- mainQuery and subQueries always in ENGLISH.
+- eyebrow, headline, keywords, bullets, stat.label ALL in ENGLISH.
+- Return ONLY the JSON. No extra text, no markdown, no comments.`;
+
 // ─── Anthropic Claude provider ────────────────────────────────────────────────
 const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5';
 let anthropicClient = null;
@@ -143,8 +203,12 @@ function initAnthropic() {
   return anthropicClient;
 }
 
-async function callAnthropic(paragraphText, systemPrompt = SYSTEM_PROMPT) {
+async function callAnthropic(paragraphText, systemPrompt = SYSTEM_PROMPT, schema = PLAN_SCHEMA) {
   const client = initAnthropic();
+  const isEnglish = schema === PLAN_SCHEMA_EN;
+  const userMsg = isEnglish
+    ? `Paragraph:\n"""${paragraphText}"""\n\nReturn the JSON in English.`
+    : `Párrafo:\n"""${paragraphText}"""\n\nDevuelve el JSON.`;
   const res = await client.messages.create({
     model: ANTHROPIC_MODEL,
     max_tokens: 1024,
@@ -152,10 +216,10 @@ async function callAnthropic(paragraphText, systemPrompt = SYSTEM_PROMPT) {
       { type: 'text', text: systemPrompt, cache_control: { type: 'ephemeral' } },
     ],
     output_config: {
-      format: { type: 'json_schema', schema: PLAN_SCHEMA },
+      format: { type: 'json_schema', schema },
     },
     messages: [
-      { role: 'user', content: `Párrafo:\n"""${paragraphText}"""\n\nDevuelve el JSON.` },
+      { role: 'user', content: userMsg },
     ],
   });
 
@@ -280,7 +344,30 @@ async function selectProvider() {
   return 'fallback';
 }
 
-async function analyzeParagraph(paragraph, provider, systemPrompt = SYSTEM_PROMPT) {
+// ── Concurrent map helper ────────────────────────────────────────────────
+/**
+ * Runs `fn` on each item in `array`, keeping at most `limit` in-flight.
+ * Preserves the original order of results.
+ */
+async function mapConcurrent(array, limit, fn) {
+  const results = new Array(array.length);
+  let nextIdx = 0;
+
+  async function worker() {
+    while (true) {
+      const idx = nextIdx++;
+      if (idx >= array.length) break;
+      results[idx] = await fn(array[idx], idx);
+    }
+  }
+
+  const workers = [];
+  for (let w = 0; w < Math.min(limit, array.length); w++) workers.push(worker());
+  await Promise.all(workers);
+  return results;
+}
+
+async function analyzeParagraph(paragraph, provider, systemPrompt = SYSTEM_PROMPT, schema = PLAN_SCHEMA) {
   const cacheFile = path.join(cacheDir, `${paragraph.id}.json`);
   if (!FORCE && fs.existsSync(cacheFile)) {
     try { return { ...JSON.parse(fs.readFileSync(cacheFile, 'utf8')), _source: 'cache' }; }
@@ -291,7 +378,7 @@ async function analyzeParagraph(paragraph, provider, systemPrompt = SYSTEM_PROMP
 
   if (provider === 'anthropic') {
     try {
-      analysis = await callAnthropic(paragraph.texto, systemPrompt);
+      analysis = await callAnthropic(paragraph.texto, systemPrompt, schema);
       analysis._source = 'anthropic';
     } catch (e) {
       console.log(`   ⚠️  [${paragraph.id}] Anthropic falló: ${e.message}`);
@@ -320,13 +407,19 @@ async function analyzeParagraph(paragraph, provider, systemPrompt = SYSTEM_PROMP
     analysis = { ...fallbackAnalyze(paragraph.texto), _source: 'fallback' };
   }
 
-  // Hard layout heuristic — el LLM solo provee material, el layout lo decide JS
-  const wc = wordCount(paragraph.texto);
-  const hn = hasNumbers(paragraph.texto);
-  if (wc <= 15)        analysis.suggestedLayout = 'keywordOnly';
-  else if (hn)         analysis.suggestedLayout = 'dataSplit';
-  else if (wc <= 60)   analysis.suggestedLayout = 'splitMedia';
-  else                 analysis.suggestedLayout = 'fullBleedMedia';
+  // ── Layout heuristic ──────────────────────────────────────────────────────
+  // phantom-directive: always fullBleedMedia — full-screen B-roll with text overlay
+  if (channelId === 'phantom-directive') {
+    analysis.suggestedLayout = 'fullBleedMedia';
+  } else {
+    // codigo-muerto heuristic: numbers → dataSplit, short → keywordOnly, etc.
+    const wc = wordCount(paragraph.texto);
+    const hn = hasNumbers(paragraph.texto);
+    if (wc <= 15)        analysis.suggestedLayout = 'keywordOnly';
+    else if (hn)         analysis.suggestedLayout = 'dataSplit';
+    else if (wc <= 60)   analysis.suggestedLayout = 'splitMedia';
+    else                 analysis.suggestedLayout = 'fullBleedMedia';
+  }
 
   fs.writeFileSync(cacheFile, JSON.stringify(analysis, null, 2));
   return analysis;
@@ -411,18 +504,51 @@ async function main() {
     process.exit(0);
   }
 
-  // ── Leer memoria del canal e inyectarla en el prompt ──────────────────────
-  let effectiveSystemPrompt = SYSTEM_PROMPT;
-  try {
-    const memory = await readMemory();
-    const channelCtx = buildChannelContext(memory);
-    effectiveSystemPrompt = `${channelCtx}\n\n${SYSTEM_PROMPT}`;
-    if (memory.temas_usados.length > 0) {
-      console.log(`🧠 Memoria del canal cargada: ${memory.temas_usados.length} temas previos, ${memory.mejor_rendimiento.length} métricas de retención.`);
+  // ── Select schema and prompt based on active channel ─────────────────────
+  const isPhantom = channelId === 'phantom-directive';
+  const activeSchema = isPhantom ? PLAN_SCHEMA_EN : PLAN_SCHEMA;
+  const activeSystemPrompt = isPhantom ? SYSTEM_PROMPT_EN : SYSTEM_PROMPT;
+
+  // Patch callAnthropic to use the active schema for this run
+  const _callAnthropicWithSchema = async (text, sysPrompt) => {
+    const client = initAnthropic();
+    const res = await client.messages.create({
+      model: ANTHROPIC_MODEL,
+      max_tokens: 1024,
+      system: [
+        { type: 'text', text: sysPrompt, cache_control: { type: 'ephemeral' } },
+      ],
+      output_config: {
+        format: { type: 'json_schema', schema: activeSchema },
+      },
+      messages: [
+        { role: 'user', content: `Paragraph:\n"""${text}"""\n\nReturn the JSON.` },
+      ],
+    });
+    let text2 = '';
+    for (const block of res.content || []) {
+      if (block.type === 'text') text2 += block.text;
     }
-  } catch (memErr) {
-    console.warn(`⚠️  No se pudo leer channel-memory.json: ${memErr.message}. Continuando sin contexto de canal.`);
+    return JSON.parse(text2);
+  };
+
+  // ── Leer memoria del canal e inyectarla en el prompt ──────────────────────
+  let effectiveSystemPrompt = activeSystemPrompt;
+  if (!isPhantom) {
+    // Only inject channel memory for codigo-muerto (memory is in Spanish)
+    try {
+      const memory = await readMemory();
+      const channelCtx = buildChannelContext(memory);
+      effectiveSystemPrompt = `${channelCtx}\n\n${activeSystemPrompt}`;
+      if (memory.temas_usados.length > 0) {
+        console.log(`🧠 Memoria del canal cargada: ${memory.temas_usados.length} temas previos, ${memory.mejor_rendimiento.length} métricas de retención.`);
+      }
+    } catch (memErr) {
+      console.warn(`⚠️  No se pudo leer channel-memory.json: ${memErr.message}. Continuando sin contexto de canal.`);
+    }
   }
+
+  // Schema is threaded directly into analyzeParagraph — no monkey-patch needed
 
   const provider = await selectProvider();
   const label = {
@@ -433,15 +559,18 @@ async function main() {
   console.log(`🤖 Provider: ${label}`);
   console.log(`📝 Analizando ${guion.length} párrafos para "${projectId}"\n`);
 
-  const paragraphs = [];
-  for (let i = 0; i < guion.length; i++) {
-    const p = guion[i];
+  const concurrency = provider === 'anthropic' ? 5 : 1;
+  console.log(`🔄 Procesando ${guion.length} párrafos (concurrencia: ${concurrency})\n`);
+
+  const paragraphs = await mapConcurrent(guion, concurrency, async (p, i) => {
     process.stdout.write(`   [${p.id}] `);
-    const analysis = await analyzeParagraph(p, provider, effectiveSystemPrompt);
+    const analysis = await analyzeParagraph(p, provider, effectiveSystemPrompt, activeSchema);
     const media = buildMedia(i, p.id, analysis);
     const sideContent = buildSideContent(analysis);
 
-    paragraphs.push({
+    console.log(`${analysis.suggestedLayout.padEnd(15)} | ${media.type.padEnd(5)} | "${analysis.mainQuery}" (${analysis._source})`);
+
+    return {
       id: p.id,
       layout: analysis.suggestedLayout,
       media,
@@ -449,10 +578,8 @@ async function main() {
       headline: analysis.headline || undefined,
       keywords: Array.isArray(analysis.keywords) ? analysis.keywords.slice(0, 3) : [],
       sideContent,
-    });
-
-    console.log(`${analysis.suggestedLayout.padEnd(15)} | ${media.type.padEnd(5)} | "${analysis.mainQuery}" (${analysis._source})`);
-  }
+    };
+  });
 
   const plan = { version: 1, projectId, paragraphs };
   fs.writeFileSync(planPath, JSON.stringify(plan, null, 2));

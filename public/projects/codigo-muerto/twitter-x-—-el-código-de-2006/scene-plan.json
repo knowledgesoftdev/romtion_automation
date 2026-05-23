@@ -1,0 +1,6514 @@
+{
+  "version": 1,
+  "projectId": "twitter-x-—-el-código-de-2006",
+  "paragraphs": [
+    {
+      "id": "01",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server data center",
+        "filename": "parrafo-01.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PARADOJA TÉCNICA",
+      "headline": "Twitter perdió 80% ingenieros sin colapsar",
+      "keywords": [
+        "80% DESPIDOS",
+        "TWITTER COLAPSO",
+        "INGENIEROS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "80",
+          "unit": "%",
+          "label": "ingenieros despedidos sin colapso del sistema"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "failed engineering project ruins",
+        "filename": "parrafo-02.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VEREDICTO TÉCNICO",
+      "headline": "Eso no es una victoria de ingeniería",
+      "keywords": [
+        "INGENIERÍA FALLIDA",
+        "SIN VICTORIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Fracaso sistémico sin redención",
+            "Derrota técnica irreversible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "03",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "autopsy surgical examination",
+        "filename": "parrafo-03.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "SENTENCIA",
+      "headline": "Empresa muerta por dentro antes del colapso",
+      "keywords": [
+        "AUTOPSIA",
+        "EMPRESA MUERTA",
+        "DENTRO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Deterioro interno invisible externamente",
+            "Sistemas fallidos sin remedio posible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "04",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter bird logo 2006 early internet",
+        "filename": "parrafo-04.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN TÉCNICO",
+      "headline": "Twitter nació en 2006 como app de mensajería pública",
+      "keywords": [
+        "TWITTER",
+        "2006",
+        "RUBY ON RAILS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "",
+          "label": "Año de fundación de Twitter"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "rapid prototype development laptop",
+        "filename": "parrafo-05.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Tecnología de prototipo no aguanta millones usuarios",
+      "keywords": [
+        "PROTOTIPO",
+        "ESCALA MILLONES",
+        "FALLA ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "millones",
+          "unit": "usuarios",
+          "label": "Límite de crecimiento no soportado"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter bird logo social media",
+        "filename": "parrafo-06.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Twitter procesaba 400 millones de mensajes diarios en 2012",
+      "keywords": [
+        "TWITTER",
+        "400M MENSAJES",
+        "2012"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "400",
+          "unit": "millones",
+          "label": "mensajes por día en 2012"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "elon musk twitter takeover 2022",
+        "filename": "parrafo-07.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO ADQUISICIÓN",
+      "headline": "Musk compra Twitter con 500 millones de usuarios diarios",
+      "keywords": [
+        "MUSK",
+        "500M DIARIOS",
+        "2022"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "500",
+          "unit": "millones diarios",
+          "label": "Usuarios activos en el momento de adquisición"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "smartphone messaging interface overflow",
+        "filename": "parrafo-08.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA CENTRAL",
+      "headline": "El problema no era la cantidad de mensajes",
+      "keywords": [
+        "MENSAJERÍA",
+        "SOBRECARGA",
+        "LÍMITE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La raíz estaba en otro lugar",
+            "Exceso de volumen ocultaba el verdadero fallo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "09",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "data center server architecture",
+        "filename": "parrafo-09.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA TÉCNICA",
+      "headline": "El núcleo donde se guardaban todos los perfiles",
+      "keywords": [
+        "ARQUITECTURA CENTRAL",
+        "ALMACENAMIENTO PERFILES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema centralizado de almacenamiento de datos",
+            "Base de datos como punto crítico único"
+          ]
+        }
+      }
+    },
+    {
+      "id": "10",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "social media feed algorithm timeline",
+        "filename": "parrafo-10.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA CONGELADA",
+      "headline": "El flujo de publicaciones no evolucionó desde 2006",
+      "keywords": [
+        "ALGORITMO ESTÁTICO",
+        "DESDE 2006",
+        "FLUJO USUARIOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "año",
+          "label": "Última evolución del flujo de publicaciones"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "old computer server maintenance patches",
+        "filename": "parrafo-11.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO INEVITABLE",
+      "headline": "Dieciséis años de reparaciones sobre base quebrada",
+      "keywords": [
+        "16 AÑOS",
+        "PARCHES PERPETUOS",
+        "BASE FRÁGIL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "16",
+          "unit": "años",
+          "label": "De parches sobre fundación defectuosa"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "elon musk tesla factory production line",
+        "filename": "parrafo-12.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO FUNDACIONAL",
+      "headline": "Musk heredó una fábrica, no startup tech",
+      "keywords": [
+        "HERENCIA",
+        "NO TECH",
+        "FABRICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Activos físicos por encima de código",
+            "Producción industrial masiva requerida",
+            "Infraestructura manufacturera pesada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "13",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "hospital equipment critical care monitors",
+        "filename": "parrafo-13.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRÍTICO SISTÉMICO",
+      "headline": "Sistema médico sobreviviendo con parches de emergencia",
+      "keywords": [
+        "SOPORTE VITAL",
+        "PARCHES EMERGENCIA",
+        "COLAPSO INMINENTE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "dependencia de mitigación reactiva versus mantenimiento planificado"
+        }
+      }
+    },
+    {
+      "id": "14",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "ruby on rails development laptop",
+        "filename": "parrafo-14.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Rails sin definir la salida desde inicio",
+      "keywords": [
+        "RAILS",
+        "SIN SALIDA",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Framework elegido antes de objetivo claro",
+            "Arquitectura construida sin requisitos finales",
+            "Deuda técnica acumulada sin rumbo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "ruby on rails code editor laptop",
+        "filename": "parrafo-15.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TECNOLOGÍA",
+      "headline": "Framework que acelera lanzamiento de aplicaciones web",
+      "keywords": [
+        "RUBY ON RAILS",
+        "DESARROLLO RÁPIDO",
+        "APLICACIONES WEB"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reduce tiempo de desarrollo significativamente",
+            "Facilita construcción de proyectos complejos",
+            "Comunidad activa de desarrolladores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "16",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "startup office 2000s tech",
+        "filename": "parrafo-16.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ERA DIGITAL",
+      "headline": "Tecnología favorita de startups en 2005-2010",
+      "keywords": [
+        "STARTUPS",
+        "2005-2010",
+        "TECNOLOGÍA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2005",
+          "unit": "año",
+          "label": "Inicio de la era de adopción masiva"
+        }
+      }
+    },
+    {
+      "id": "17",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "database relational schema diagram",
+        "filename": "parrafo-17.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Modelo asume base de datos relacional centralizada",
+      "keywords": [
+        "BASE DE DATOS",
+        "RELACIONAL",
+        "ESQUEMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dependencia de estructura centralizada",
+            "Rigidez en escalabilidad distribuida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "18",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "database server central hub network",
+        "filename": "parrafo-18.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA TÉCNICA",
+      "headline": "Un punto central que conecta toda la información",
+      "keywords": [
+        "FUENTE ÚNICA",
+        "ARQUITECTURA CENTRALIZADA",
+        "CONEXIÓN TOTAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "fuente",
+          "label": "Punto central de verdad en sistemas distribuidos"
+        }
+      }
+    },
+    {
+      "id": "19",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter bird social media logo",
+        "filename": "parrafo-19.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INICIO TÉCNICO",
+      "headline": "Twitter comenzó con una única base de datos MySQL",
+      "keywords": [
+        "TWITTER",
+        "MYSQL",
+        "BASE DATOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "base de datos",
+          "label": "Punto de partida de Twitter"
+        }
+      }
+    },
+    {
+      "id": "20",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "social media network server center",
+        "filename": "parrafo-20.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA CRÍTICA",
+      "headline": "Toda interacción social pasaba por sistemas centralizados",
+      "keywords": [
+        "DATOS FLUJO",
+        "REDES SOCIALES",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Tráfico dependiente de arquitectura centralizada"
+        }
+      }
+    },
+    {
+      "id": "21",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter early development 2006",
+        "filename": "parrafo-21.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN",
+      "headline": "Twitter nació como proyecto secundario en Odeo",
+      "keywords": [
+        "TWITTER 2006",
+        "ODEO",
+        "PODCASTS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "",
+          "label": "Año de nacimiento de Twitter"
+        }
+      }
+    },
+    {
+      "id": "22",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "person typing smartphone social media",
+        "filename": "parrafo-22.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO ORIGINAL",
+      "headline": "El primer objetivo no era crecer, solo probar si funcionaba",
+      "keywords": [
+        "MENSAJES CORTOS",
+        "VALIDACIÓN",
+        "PÚBLICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Validar demanda antes de escalar",
+            "Publicar contenido breve en público"
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "ruby on rails development laptop code",
+        "filename": "parrafo-23.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "Rails permitió iterar en horas para prototipos",
+      "keywords": [
+        "RAILS",
+        "PROTOTIPO RÁPIDO",
+        "ITERACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Velocidad inicial fue elección correcta",
+            "Desarrollo acelerado en primeras fases"
+          ]
+        }
+      }
+    },
+    {
+      "id": "24",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter social media platform evolution",
+        "filename": "parrafo-24.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO ARQUITECTÓNICO",
+      "headline": "Twitter quedó atrapado en fase prototipo sin escala",
+      "keywords": [
+        "TWITTER",
+        "PROTOTIPO",
+        "NUNCA EVOLUCIONAR"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura débil nunca rediseñada para millones",
+            "Decisiones tempranas se convirtieron en deuda técnica",
+            "Creció sin resolver problemas fundamentales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "25",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "server infrastructure scaling growth",
+        "filename": "parrafo-25.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Tráfico creció pero arquitectura no fue rediseñada",
+      "keywords": [
+        "TRÁFICO CRECIENTE",
+        "ARQUITECTURA FRÁGIL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Mantuvieron sistema obsoleto",
+            "Crecimiento sin preparación"
+          ]
+        }
+      }
+    },
+    {
+      "id": "26",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software architecture layers diagram",
+        "filename": "parrafo-26.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "El equipo comenzó a agregar capas",
+      "keywords": [
+        "CAPAS",
+        "ARQUITECTURA",
+        "COMPLEJIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Fragmentación incremental de la arquitectura",
+            "Cada capa añadía latencia y deuda técnica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "27",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "database cache memory optimization",
+        "filename": "parrafo-27.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "Cachés de memoria redujeron consultas a base datos",
+      "keywords": [
+        "CACHÉ MEMORIA",
+        "BASE DATOS",
+        "OPTIMIZACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Acelera acceso a datos frecuentes",
+            "Reduce latencia en consultas repetidas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "28",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "queue management system distributed load",
+        "filename": "parrafo-28.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistemas de colas para distribuir la carga entre servidores",
+      "keywords": [
+        "COLAS DISTRIBUIDAS",
+        "BALANCEO CARGA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Evita sobrecargar un único servidor",
+            "Procesa solicitudes en orden",
+            "Mejora la disponibilidad del sistema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "29",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "legacy system core architecture database",
+        "filename": "parrafo-29.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN ARQUITECTÓNICA",
+      "headline": "El núcleo nunca cambió pese a duplicaciones",
+      "keywords": [
+        "NÚCLEO INMUTABLE",
+        "DUPLICACIÓN DATOS",
+        "ARQUITECTURA HEREDADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Servicios independientes replicaban datos",
+            "Evitaban modificar sistema central",
+            "Arquitectura congelada por miedo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "30",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "legacy code codebase tangled wires",
+        "filename": "parrafo-30.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Código tan frágil que nadie se atreve tocarlo",
+      "keywords": [
+        "CÓDIGO HEREDADO",
+        "MIEDO AL CAMBIO",
+        "ZONA PROHIBIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura tan enmarañada que cualquier cambio arriesga cascada de fallos",
+            "Sistema convertido en caja negra por falta de documentación"
+          ]
+        }
+      }
+    },
+    {
+      "id": "31",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "code technical debt computer screen",
+        "filename": "parrafo-31.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Deuda técnica acumulada en ingeniería de software",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "ACUMULADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Decisiones rápidas generan costos futuros",
+            "Complejidad crece exponencialmente con el tiempo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "32",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "technical debt code legacy system",
+        "filename": "parrafo-32.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONSECUENCIA",
+      "headline": "El precio oculto de las decisiones tomadas sin pensar",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "DECISIONES RÁPIDAS",
+        "COSTO DIFERIDO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "exponencial",
+          "unit": "",
+          "label": "Crecimiento del costo con el tiempo"
+        }
+      }
+    },
+    {
+      "id": "33",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter office building debt documents",
+        "filename": "parrafo-33.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO FINANCIERO",
+      "headline": "Twitter acumuló deuda sin pagarla durante diez años",
+      "keywords": [
+        "TWITTER",
+        "DEUDA 10 AÑOS",
+        "INSOLVENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "años",
+          "label": "Acumulación de deuda sin saldar"
+        }
+      }
+    },
+    {
+      "id": "34",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter fail whale error page",
+        "filename": "parrafo-34.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Twitter sufría caídas rutinarias en 2008 y 2009",
+      "keywords": [
+        "TWITTER",
+        "CORTES 2008-2009",
+        "FALLO SERVICIO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2008-2009",
+          "unit": "período",
+          "label": "Años de colapsos rutinarios en Twitter"
+        }
+      }
+    },
+    {
+      "id": "35",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "whale error screen collapse",
+        "filename": "parrafo-35.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MOMENTO TÉCNICO",
+      "headline": "La ballena falla que simbolizó el colapso del sistema",
+      "keywords": [
+        "BALLENA FALLA",
+        "COLAPSO SISTEMA",
+        "ERROR ICÓNICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Imagen icónica de error y pánico digital",
+            "Símbolo visual del fracaso técnico inevitable"
+          ]
+        }
+      }
+    },
+    {
+      "id": "36",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server outage downtime",
+        "filename": "parrafo-36.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO TÉCNICO",
+      "headline": "Twitter enfrentó caídas masivas que se viralizaron como meme",
+      "keywords": [
+        "TWITTER CAÍDA",
+        "DISPONIBILIDAD BAJA",
+        "MEME CULTURAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "baja",
+          "unit": "disponibilidad",
+          "label": "Estado crítico de infraestructura"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server outage fail",
+        "filename": "parrafo-37.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Twitter fallaba más del 40% en 2009",
+      "keywords": [
+        "TWITTER",
+        "40% FALLOS",
+        "2009"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "40",
+          "unit": "%",
+          "label": "de fallos en el servicio"
+        }
+      }
+    },
+    {
+      "id": "38",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "bank server infrastructure datacenter",
+        "filename": "parrafo-38.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Infraestructura bancaria con 40% fallaría regulación",
+      "keywords": [
+        "40% PICO",
+        "CLAUSURA",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "40",
+          "unit": "%",
+          "label": "capacidad saturada en horas pico"
+        }
+      }
+    },
+    {
+      "id": "39",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "unfinished construction site abandoned",
+        "filename": "parrafo-39.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 2",
+      "headline": "La migración que nunca terminó atrapó la arquitectura",
+      "keywords": [
+        "MIGRACIÓN INCOMPLETA",
+        "ARQUITECTURA ATRAPADA",
+        "DEUDA TÉCNICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistemas legados coexisten indefinidamente",
+            "Costo de mantenimiento dual exponencial",
+            "Equipos paralizados en transición permanente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "40",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter server infrastructure 2009",
+        "filename": "parrafo-40.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISION TECNICA",
+      "headline": "Twitter abandona Rails en componentes críticos",
+      "keywords": [
+        "TWITTER",
+        "RAILS ABANDONADO",
+        "2009"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2009",
+          "unit": "",
+          "label": "Año del abandono de Rails"
+        }
+      }
+    },
+    {
+      "id": "41",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "Java virtual machine bytecode",
+        "filename": "parrafo-41.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TRANSICIÓN TÉCNICA",
+      "headline": "Migración hacia la Máquina Virtual de Java",
+      "keywords": [
+        "MÁQUINA VIRTUAL",
+        "JAVA",
+        "MIGRACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Plataforma multiplataforma para ejecutar código",
+            "Abstracción de hardware subyacente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "42",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "java virtual machine processor",
+        "filename": "parrafo-42.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "La JVM ejecuta Java y Scala en máquina virtual",
+      "keywords": [
+        "JVM",
+        "JAVA",
+        "ENTORNO EJECUCIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Abstracción entre código y procesador",
+            "Portabilidad write once run anywhere"
+          ]
+        }
+      }
+    },
+    {
+      "id": "43",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "distributed system architecture diagram",
+        "filename": "parrafo-43.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INFRAESTRUCTURA TÉCNICA",
+      "headline": "Lenguajes optimizados para sistemas distribuidos",
+      "keywords": [
+        "SISTEMAS DISTRIBUIDOS",
+        "ALTO RENDIMIENTO",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Procesamiento paralelo escalable",
+            "Baja latencia en redes",
+            "Sincronización eficiente entre nodos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "44",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "concurrent processes server threads",
+        "filename": "parrafo-44.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VENTAJA TÉCNICA",
+      "headline": "Miles de procesos paralelos sin overhead de memoria",
+      "keywords": [
+        "PROCESOS PARALELOS",
+        "MEMORIA EFICIENTE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "miles",
+          "unit": "procesos paralelos",
+          "label": "Sin impacto en consumo de memoria"
+        }
+      }
+    },
+    {
+      "id": "45",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "snowflake identifier generation code",
+        "filename": "parrafo-45.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROYECTO INTERNO",
+      "headline": "Snowflake: sistema generador de identificadores únicos",
+      "keywords": [
+        "SNOWFLAKE",
+        "IDENTIFICADORES ÚNICOS",
+        "GENERACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura de identificadores distribuida",
+            "Generación de IDs únicos en escala"
+          ]
+        }
+      }
+    },
+    {
+      "id": "46",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "finagle twitter network service communication",
+        "filename": "parrafo-46.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Finagle: capa de comunicación entre servicios distribuidos",
+      "keywords": [
+        "FINAGLE",
+        "SERVICIOS",
+        "COMUNICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Abstracción de protocolo de red",
+            "Framework de Twitter para RPC",
+            "Manejo robusto de fallos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "47",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "scala programming code syntax",
+        "filename": "parrafo-47.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Ambos sistemas construidos en lenguaje Scala sobre JVM",
+      "keywords": [
+        "SCALA",
+        "JVM",
+        "COMPILACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Scala compila a bytecode JVM",
+            "Lenguaje funcional híbrido"
+          ]
+        }
+      }
+    },
+    {
+      "id": "48",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "code editor syntax highlighting",
+        "filename": "parrafo-48.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CARACTERÍSTICA TÉCNICA",
+      "headline": "Sintaxis más compacta mejora eficiencia",
+      "keywords": [
+        "SINTAXIS",
+        "COMPACTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reduce líneas de código necesarias",
+            "Facilita lectura y mantenimiento"
+          ]
+        }
+      }
+    },
+    {
+      "id": "49",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "technical decision diagram",
+        "filename": "parrafo-49.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS TÉCNICO",
+      "headline": "La decisión se basó en principios técnicos robustos",
+      "keywords": [
+        "DECISIÓN TÉCNICA",
+        "FUNDAMENTO SÓLIDO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura validada por expertos",
+            "Implementación respaldada en datos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "50",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "rails web framework request process",
+        "filename": "parrafo-50.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Rails ejecutaba un proceso por cada solicitud HTTP",
+      "keywords": [
+        "RAILS",
+        "PROCESO",
+        "SOLICITUD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modelo de concurrencia basado en procesos independientes",
+            "Cada request generaba overhead de recursos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "51",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server processing queue load",
+        "filename": "parrafo-51.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Cada mensaje consumía un proceso completo del servidor",
+      "keywords": [
+        "PROCESO SERVIDOR",
+        "MENSAJE COLA",
+        "CARGA SISTEMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin pool de conexiones ni threads reutilizables",
+            "Escalabilidad limitada por recursos del servidor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "52",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "data center server room massive",
+        "filename": "parrafo-52.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INFRAESTRUCTURA",
+      "headline": "Millones de mensajes simultáneos exigían miles de servidores",
+      "keywords": [
+        "SERVIDORES",
+        "COLAPSO",
+        "MENSAJES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "miles",
+          "unit": "",
+          "label": "Servidores necesarios para procesar mensajes simultáneos"
+        }
+      }
+    },
+    {
+      "id": "53",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "java virtual machine code editor",
+        "filename": "parrafo-53.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "JVM habilita modelo multihilo eficiente",
+      "keywords": [
+        "JVM",
+        "HILOS EJECUCIÓN",
+        "JAVA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Abstracción de threads independientes",
+            "Gestión automática de concurrencia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "54",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "concurrent processes shared resources",
+        "filename": "parrafo-54.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Múltiples solicitudes en un proceso ahorraban recursos exponencialmente",
+      "keywords": [
+        "PROCESOS CONCURRENTES",
+        "RECURSOS COMPARTIDOS",
+        "EFICIENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "órdenes",
+          "unit": "de magnitud",
+          "label": "Mejora de eficiencia con concurrencia"
+        }
+      }
+    },
+    {
+      "id": "55",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter server migration infrastructure",
+        "filename": "parrafo-55.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO TECNICO",
+      "headline": "Twitter operó años en transición incompleta",
+      "keywords": [
+        "MIGRACION INCOMPLETA",
+        "MODO HIBRIDO",
+        "TWITTER"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema híbrido por falta de finalización",
+            "Migración técnica nunca se resolvió"
+          ]
+        }
+      }
+    },
+    {
+      "id": "56",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "java virtual machine server architecture",
+        "filename": "parrafo-56.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Arquitectura fragmentada entre JVM y Rails legacy",
+      "keywords": [
+        "JVM",
+        "RAILS LEGACY",
+        "ARQUITECTURA MIXTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Código crítico en máquinas virtuales Java",
+            "Sistemas antiguos aún en Rails sin migrar",
+            "Integración entre tecnologías incompatibles"
+          ]
+        }
+      }
+    },
+    {
+      "id": "57",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "adapter layer software architecture",
+        "filename": "parrafo-57.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Capa intermedia tradujo entre dos sistemas incompatibles",
+      "keywords": [
+        "CAPA ADAPTADORA",
+        "TRADUCCIÓN DATOS",
+        "INTERFAZ"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Adaptadores convertían formatos de datos",
+            "Permitía comunicación entre mundos separados"
+          ]
+        }
+      }
+    },
+    {
+      "id": "58",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software architecture layer failure",
+        "filename": "parrafo-58.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DIAGNÓSTICO CRÍTICO",
+      "headline": "La capa intermedia: el punto débil del sistema",
+      "keywords": [
+        "CAPA INTERMEDIA",
+        "PUNTO FALLA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Donde convergen máximos puntos de estrés",
+            "Sin redundancia ni respaldo efectivo",
+            "Propagaba fallos a cascada completa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "59",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "scala programming language code",
+        "filename": "parrafo-59.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CAUSA TÉCNICA",
+      "headline": "Scala: lenguaje demasiado complejo para su propio bien",
+      "keywords": [
+        "SCALA",
+        "LENGUAJE COMPLEJO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "null",
+          "unit": "",
+          "label": ""
+        }
+      }
+    },
+    {
+      "id": "60",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "java virtual machine garbage collection",
+        "filename": "parrafo-60.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO TÉCNICO",
+      "headline": "JVM ejecuta recolección automática de basura",
+      "keywords": [
+        "JVM",
+        "RECOLECCIÓN BASURA",
+        "MEMORIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Libera memoria no utilizada periódicamente",
+            "Pausas impredecibles en aplicaciones",
+            "Impacto en rendimiento en tiempo real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "61",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "garbage collector memory allocation",
+        "filename": "parrafo-61.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Recolector de basura causa pausas impredecibles bajo carga",
+      "keywords": [
+        "GARBAGE COLLECTOR",
+        "PAUSA IMPREDECIBLE",
+        "MEMORIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "impredecibles",
+          "unit": "",
+          "label": "Pausas durante picos de rendimiento extremo"
+        }
+      }
+    },
+    {
+      "id": "62",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server outage monitoring",
+        "filename": "parrafo-62.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LECCIÓN TÉCNICA",
+      "headline": "Twitter aprendió en vivo con usuarios reales durante cortes",
+      "keywords": [
+        "PRODUCCIÓN",
+        "USUARIOS REALES",
+        "CORTES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Debugging en producción bajo presión",
+            "Usuarios expuestos a errores en tiempo real",
+            "Crisis como laboratorio involuntario"
+          ]
+        }
+      }
+    },
+    {
+      "id": "63",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server data center code",
+        "filename": "parrafo-63.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CÓDIGO HEREDADO",
+      "headline": "Twitter reconoce crisis interna en base Scala",
+      "keywords": [
+        "TWITTER",
+        "SCALA",
+        "2015"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2015",
+          "unit": "",
+          "label": "Año del reconocimiento interno"
+        }
+      }
+    },
+    {
+      "id": "64",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "large codebase server room complexity",
+        "filename": "parrafo-64.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OBSTACULO TECNICO",
+      "headline": "Código tan complejo que entrenar ingenieros duraba un año",
+      "keywords": [
+        "COMPLEJIDAD",
+        "6-12 MESES",
+        "INGENIEROS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "6-12",
+          "unit": "meses",
+          "label": "Tiempo para integrar ingeniero nuevo"
+        }
+      }
+    },
+    {
+      "id": "65",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "developer onboarding training",
+        "filename": "parrafo-65.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROCESO",
+      "headline": "Seis a doce meses para dominar componentes críticos",
+      "keywords": [
+        "INDUCCIÓN",
+        "TIEMPO PRODUCTIVO",
+        "CRÍTICO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "6-12",
+          "unit": "meses",
+          "label": "Tiempo de inducción para productividad"
+        }
+      }
+    },
+    {
+      "id": "66",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "programming language barrier syntax",
+        "filename": "parrafo-66.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO CLAVE",
+      "headline": "Un lenguaje de programación como mecanismo de exclusión",
+      "keywords": [
+        "BARRERA ENTRADA",
+        "LENGUAJE CÓDIGO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Complejidad sintáctica como filtro institucional",
+            "Control de acceso al desarrollo técnico"
+          ]
+        }
+      }
+    },
+    {
+      "id": "67",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy code refactoring migration",
+        "filename": "parrafo-67.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "La deuda técnica mutó en lugar de desaparecer",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "MIGRACIÓN",
+        "TRANSFORMACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Migración trasladó problemas heredados",
+            "Nueva arquitectura mantuvo defectos",
+            "Deuda solo cambió de forma"
+          ]
+        }
+      }
+    },
+    {
+      "id": "68",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "programmer frustrated confused code",
+        "filename": "parrafo-68.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO ARQUITECTÓNICO",
+      "headline": "De deuda técnica a deuda de conocimiento",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "CONOCIMIENTO PERDIDO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema sin documentación legible",
+            "Desarrolladores clave abandonan el proyecto"
+          ]
+        }
+      }
+    },
+    {
+      "id": "69",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "Twitter office employee layoff 2022",
+        "filename": "parrafo-69.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Twitter funcionó tras despedir 80% del personal técnico",
+      "keywords": [
+        "80% DESPIDOS",
+        "TWITTER 2022",
+        "INFRAESTRUCTURA SOBREVIVE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "80",
+          "unit": "%",
+          "label": "Personal técnico despedido en 2022"
+        }
+      }
+    },
+    {
+      "id": "70",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "person operating machinery safely",
+        "filename": "parrafo-70.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CRÍTICO",
+      "headline": "Desapareció cómo operarlo de forma segura",
+      "keywords": [
+        "CONOCIMIENTO PERDIDO",
+        "OPERACIÓN SEGURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El conocimiento técnico se perdió",
+            "Operación sin protocolos de seguridad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "71",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy code server room",
+        "filename": "parrafo-71.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DEUDA TÉCNICA",
+      "headline": "Heredaron un sistema funcionando pero incomprendido",
+      "keywords": [
+        "CÓDIGO HEREDADO",
+        "SIN DOCUMENTACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Nadie dominaba la arquitectura completa",
+            "Sistema operativo sin mapeo mental"
+          ]
+        }
+      }
+    },
+    {
+      "id": "72",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "dangerous system failure risk alert",
+        "filename": "parrafo-72.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADVERTENCIA TÉCNICA",
+      "headline": "Un fallo controlado es menos peligroso que un sistema que funciona mal",
+      "keywords": [
+        "PELIGRO SISTÉMICO",
+        "FALLO CATASTRÓFICO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "",
+          "label": "Sistema funcionando incorrectamente vs fallo abierto"
+        }
+      }
+    },
+    {
+      "id": "73",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "monolithic architecture server structure",
+        "filename": "parrafo-73.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 3",
+      "headline": "Monolito distribuido: cuando la arquitectura se vuelve contradicción",
+      "keywords": [
+        "MONOLITO",
+        "ARQUITECTURA",
+        "DISTRIBUIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Un sistema que no es verdaderamente distribuido",
+            "Mantiene la rigidez del monolito original",
+            "Escalabilidad y mantenimiento comprometidos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "74",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "microservices architecture diagram",
+        "filename": "parrafo-74.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Twitter migró a microservicios entre 2012 y 2015",
+      "keywords": [
+        "MICROSERVICIOS",
+        "2012-2015",
+        "TWITTER"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2012-2015",
+          "unit": "período",
+          "label": "Años de adopción de microservicios"
+        }
+      }
+    },
+    {
+      "id": "75",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "microservices architecture separate",
+        "filename": "parrafo-75.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Microservicios: servicios pequeños independientes especializados",
+      "keywords": [
+        "MICROSERVICIOS",
+        "INDEPENDIENTES",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada servicio realiza una única función específica",
+            "Los servicios operan de forma independiente entre sí"
+          ]
+        }
+      }
+    },
+    {
+      "id": "76",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software architecture diagram server",
+        "filename": "parrafo-76.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA TÉCNICA",
+      "headline": "Cada componente controlado por equipos separados",
+      "keywords": [
+        "ARQUITECTURA MODULAR",
+        "SISTEMAS DISTRIBUIDOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Escalabilidad mediante especialización",
+            "Gestión independiente de módulos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "77",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "microservices architecture diagram",
+        "filename": "parrafo-77.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Cada componente actúa de forma completamente independiente",
+      "keywords": [
+        "MICROSERVICIOS",
+        "INDEPENDENCIA",
+        "ESCALABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Se actualizan sin afectar otros servicios",
+            "Fallos aislados sin cascada del sistema",
+            "Escala solo lo que necesita crecer"
+          ]
+        }
+      }
+    },
+    {
+      "id": "78",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "large scale system architecture diagram",
+        "filename": "parrafo-78.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PRINCIPIO TÉCNICO",
+      "headline": "En papel es la arquitectura más robusta para sistemas",
+      "keywords": [
+        "ARQUITECTURA",
+        "GRAN ESCALA",
+        "ROBUSTEZ"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Diseño teórico superior a implementación",
+            "Escalabilidad documentada en planos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "79",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix amazon server infrastructure",
+        "filename": "parrafo-79.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA GANADORA",
+      "headline": "Las empresas que mejor escalan controlan infraestructura",
+      "keywords": [
+        "ESCALABILIDAD",
+        "NETFLIX AMAZON"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Netflix y Amazon dominan streaming mediante servidores distribuidos",
+            "Escalabilidad técnica genera ventaja competitiva sostenida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "80",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "model architecture diagram",
+        "filename": "parrafo-80.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PATRÓN TÉCNICO",
+      "headline": "Usan variantes de este modelo arquitectónico",
+      "keywords": [
+        "MODELO",
+        "VARIANTES",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Múltiples implementaciones del mismo patrón",
+            "Flexibilidad en la estructura base",
+            "Adaptación según contexto específico"
+          ]
+        }
+      }
+    },
+    {
+      "id": "81",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "microservices architecture diagram",
+        "filename": "parrafo-81.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Un componente falla sin derribar todo",
+      "keywords": [
+        "AISLAMIENTO",
+        "COMPONENTES",
+        "RESILIENCIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Diseño modular evita fallos en cascada",
+            "Aislamiento previene propagación de errores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "82",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "search server infrastructure scaling",
+        "filename": "parrafo-82.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Escalar solo el servicio afectado",
+      "keywords": [
+        "ESCALADO",
+        "BÚSQUEDA",
+        "VOLUMEN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Aislamiento de componentes críticos",
+            "Eficiencia de recursos bajo demanda"
+          ]
+        }
+      }
+    },
+    {
+      "id": "83",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter platform architecture components",
+        "filename": "parrafo-83.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Twitter necesitaba independencia de componentes",
+      "keywords": [
+        "ARQUITECTURA MODULAR",
+        "COMPONENTES INDEPENDIENTES",
+        "ESCALABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modularidad permite evolucionar sin romper",
+            "Desacoplamiento reduce dependencias críticas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "84",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software deployment pipeline server",
+        "filename": "parrafo-84.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Escalar sin que cada cambio sea una operación de riesgo",
+      "keywords": [
+        "RIESGO OPERACIONAL",
+        "CAMBIOS CRÍTICOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Automatización de despliegues reduce errores humanos",
+            "Infraestructura resiliente absorbe cambios sin caídas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "85",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "microservices architecture server database",
+        "filename": "parrafo-85.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Twitter escaló microservicios ignorando su crisis de datos",
+      "keywords": [
+        "MICROSERVICIOS",
+        "DATOS SIN RESOLVER",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "Anterior investigación del canal",
+          "unit": "",
+          "label": "Decisión que aceleró su colapso arquitectónico"
+        }
+      }
+    },
+    {
+      "id": "86",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "relational database server 2006",
+        "filename": "parrafo-86.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Base de datos relacional del 2006 como núcleo del sistema",
+      "keywords": [
+        "BASE DATOS",
+        "2006",
+        "RELACIONAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "año",
+          "label": "Arquitectura original del sistema"
+        }
+      }
+    },
+    {
+      "id": "87",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "shared data server network",
+        "filename": "parrafo-87.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "El código seguía disperso entre docenas de servicios",
+      "keywords": [
+        "DATOS COMPARTIDOS",
+        "MÚLTIPLES SERVICIOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Fragmentación extrema de la lógica",
+            "Sin propietario claro del sistema",
+            "Imposible mantener coherencia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "88",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "monolithic distributed system architecture diagram",
+        "filename": "parrafo-88.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA ARQUITECTÓNICA",
+      "headline": "El peor anti-patrón de la arquitectura de software",
+      "keywords": [
+        "MONOLITO DISTRIBUIDO",
+        "SERVICIOS INDEPENDIENTES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Combina complejidad monolítica con problemas distribuidos",
+            "Servicios sin verdadera independencia ni beneficios"
+          ]
+        }
+      }
+    },
+    {
+      "id": "89",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "data source dependency architecture",
+        "filename": "parrafo-89.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VULNERABILIDAD TÉCNICA",
+      "headline": "Un único punto de fallo en la arquitectura",
+      "keywords": [
+        "DEPENDENCIA DATOS",
+        "FUENTE ÚNICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin la fuente de datos, todo colapsa",
+            "Interdependencia que genera fragilidad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "90",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "microservices architecture database diagram",
+        "filename": "parrafo-90.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO ARQUITECTÓNICO",
+      "headline": "Twitter violó el principio fundamental de microservicios",
+      "keywords": [
+        "MICROSERVICIOS",
+        "BASE DE DATOS COMPARTIDA",
+        "TWITTER"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada microservicio debe tener su propia base de datos",
+            "Compartir BD crea acoplamiento y punto único de fallo",
+            "Limitó escalabilidad y flexibilidad de la plataforma"
+          ]
+        }
+      }
+    },
+    {
+      "id": "91",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "database server failure cascade",
+        "filename": "parrafo-91.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO SISTÉMICO",
+      "headline": "Un fallo de base de datos derribaba todos los servicios simultáneamente",
+      "keywords": [
+        "BASE DE DATOS",
+        "FALLO EN CASCADA",
+        "TODOS AFECTADOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Servicios caídos simultáneamente por un fallo"
+        }
+      }
+    },
+    {
+      "id": "92",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "microservices architecture diagram server",
+        "filename": "parrafo-92.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALSO POSITIVO",
+      "headline": "Complejidad microservicios sin beneficios aislamiento",
+      "keywords": [
+        "MICROSERVICIOS",
+        "SIN AISLAMIENTO",
+        "COMPLEJIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Costo arquitectónico sin ganancia operacional",
+            "Dependencias cruzadas entre componentes",
+            "Escalabilidad comprometida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "93",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "microservices communication network diagram",
+        "filename": "parrafo-93.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "La comunicación entre servicios consumía recursos no presupuestados",
+      "keywords": [
+        "SOBRECOSTO",
+        "MICROSERVICIOS",
+        "COMUNICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Overhead de red entre componentes distribuidos",
+            "Latencia acumulativa en cada transacción",
+            "Costos de infraestructura subestimados"
+          ]
+        }
+      }
+    },
+    {
+      "id": "94",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "facebook feed loading posts",
+        "filename": "parrafo-94.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Cada publicación requería múltiples llamadas al servidor",
+      "keywords": [
+        "LLAMADAS API",
+        "ARQUITECTURA",
+        "RENDIMIENTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura ineficiente consumía recursos",
+            "Escalabilidad limitada con crecimiento de usuarios"
+          ]
+        }
+      }
+    },
+    {
+      "id": "95",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "interconnected services chain architecture",
+        "filename": "parrafo-95.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA TECNICA",
+      "headline": "Seis a doce servicios encadenados en arquitectura",
+      "keywords": [
+        "SERVICIOS EN CADENA",
+        "ARQUITECTURA DISTRIBUIDA",
+        "INTEGRACION"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "12",
+          "unit": "servicios",
+          "label": "máximo en cadena de integración"
+        }
+      }
+    },
+    {
+      "id": "96",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "website loading delay latency",
+        "filename": "parrafo-96.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Latencia: el tiempo que tardaba la plataforma en responder",
+      "keywords": [
+        "LATENCIA",
+        "TIEMPO RESPUESTA",
+        "USUARIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Métrica crítica de experiencia del usuario",
+            "Retraso entre acción y resultado visual"
+          ]
+        }
+      }
+    },
+    {
+      "id": "97",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "computer server processing latency",
+        "filename": "parrafo-97.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Milisegundos acumulados causaban fallos en cadena",
+      "keywords": [
+        "MILISEGUNDOS",
+        "ACUMULACIÓN",
+        "LATENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "milisegundo",
+          "label": "Unidad mínima que destruye sistemas"
+        }
+      }
+    },
+    {
+      "id": "98",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software engineering documentation metrics",
+        "filename": "parrafo-98.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HALLAZGO TÉCNICO",
+      "headline": "Equipo documentó métrica crítica en 2014",
+      "keywords": [
+        "2014",
+        "INGENIERÍA",
+        "MÉTRICAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2014",
+          "unit": "",
+          "label": "Año del descubrimiento interno"
+        }
+      }
+    },
+    {
+      "id": "99",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "social media feed smartphone screen",
+        "filename": "parrafo-99.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Publicación visible cinco minutos en feed de seguidores",
+      "keywords": [
+        "CINCO MINUTOS",
+        "ALGORITMO FEED",
+        "VIRALIDAD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5",
+          "unit": "minutos",
+          "label": "Tiempo de visibilidad en feed relevante"
+        }
+      }
+    },
+    {
+      "id": "100",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "messaging app network overload",
+        "filename": "parrafo-100.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Cinco minutos en red mensajería tiempo real",
+      "keywords": [
+        "ALTA CARGA",
+        "TIEMPO REAL",
+        "5 MINUTOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5",
+          "unit": "minutos",
+          "label": "Ventana crítica en red mensajería"
+        }
+      }
+    },
+    {
+      "id": "101",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "circuit board design failure",
+        "filename": "parrafo-101.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DEFECTO CRÍTICO",
+      "headline": "Un fallo de diseño fundamental compromete todo",
+      "keywords": [
+        "FALLO DISEÑO",
+        "ARQUITECTURA ROTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La arquitectura no soporta el crecimiento",
+            "El error original infecta cada decisión"
+          ]
+        }
+      }
+    },
+    {
+      "id": "102",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter microservices architecture diagram",
+        "filename": "parrafo-102.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Microservicios de Twitter nunca lograron independencia prometida",
+      "keywords": [
+        "MICROSERVICIOS",
+        "TWITTER",
+        "INTERDEPENDENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "promesa",
+          "label": "arquitectura modular que nunca se concretó"
+        }
+      }
+    },
+    {
+      "id": "103",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server infrastructure complexity layers",
+        "filename": "parrafo-103.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Agregó una capa de complejidad operativa masiva",
+      "keywords": [
+        "COMPLEJIDAD OPERATIVA",
+        "CAPAS SISTEMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistemas internos más difíciles de mantener",
+            "Aumento exponencial en puntos de fallo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "104",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "microservices architecture diagram",
+        "filename": "parrafo-104.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Twitter mantenía 1.000 microservicios en 2022",
+      "keywords": [
+        "1.000 MICROSERVICIOS",
+        "MANTENIMIENTO CONSTANTE",
+        "2022"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1.000",
+          "unit": "microservicios",
+          "label": "operando simultáneamente en 2022"
+        }
+      }
+    },
+    {
+      "id": "105",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "empty office cubicles abandoned workplace",
+        "filename": "parrafo-105.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CRÍTICO",
+      "headline": "Los servicios sobrevivieron pero quedaron abandonados",
+      "keywords": [
+        "SIN DUEÑO",
+        "SERVICIOS HUÉRFANOS",
+        "COLAPSO ORGANIZACIONAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Equipos reducidos dejaron infraestructura sin responsables",
+            "Sistemas siguieron funcionando sin mantenimiento",
+            "Caos operacional en infraestructura desatendida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "106",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server maintenance engineer responsibility",
+        "filename": "parrafo-106.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Servicio sin responsable falla cuando algo cambia",
+      "keywords": [
+        "SIN INGENIERO",
+        "CAMBIO CRÍTICO",
+        "FALLA LATENTE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "Ingenieros responsables del sistema"
+        }
+      }
+    },
+    {
+      "id": "107",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "distributed system server network",
+        "filename": "parrafo-107.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "En sistemas distribuidos siempre cambia algo",
+      "keywords": [
+        "SISTEMAS DISTRIBUIDOS",
+        "CAMBIO CONSTANTE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ningún nodo permanece estable",
+            "La consistencia es ilusión temporal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "108",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "algorithm code terminal screen",
+        "filename": "parrafo-108.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 4",
+      "headline": "El algoritmo que nadie podía cambiar",
+      "keywords": [
+        "ALGORITMO",
+        "INMUTABLE",
+        "DECISIÓN 4"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema técnico bloqueado sin solución",
+            "Decisión arquitectónica irreversible",
+            "Consecuencias a largo plazo inevitables"
+          ]
+        }
+      }
+    },
+    {
+      "id": "109",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter feed interface screen",
+        "filename": "parrafo-109.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INTERFAZ",
+      "headline": "Pantalla principal donde aparecen publicaciones",
+      "keywords": [
+        "TWITTER",
+        "FEED",
+        "INICIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Centro de interacción usuario plataforma",
+            "Algoritmo define orden contenido mostrado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "110",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "content delivery network architecture",
+        "filename": "parrafo-110.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO TÉCNICO",
+      "headline": "Sistema fanout distribuía contenido en red",
+      "keywords": [
+        "FANOUT",
+        "CONTENT DELIVERY",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Replicaba datos hacia múltiples servidores",
+            "Escalaba entregas simultáneas sin cuello botella"
+          ]
+        }
+      }
+    },
+    {
+      "id": "111",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "social media feed inbox notification",
+        "filename": "parrafo-111.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO FALLIDO",
+      "headline": "Sistema copiaba publicaciones automáticamente en bandejas",
+      "keywords": [
+        "PUBLICACIÓN",
+        "BANDEJA ENTRADA",
+        "COPIA AUTOMÁTICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Duplicaba contenido sin filtrar",
+            "Saturaba la experiencia de usuario",
+            "Diseño arquitectónico problemático"
+          ]
+        }
+      }
+    },
+    {
+      "id": "112",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "incomplete text fragment",
+        "filename": "parrafo-112.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Fragmento de texto incompleto sin contexto",
+      "keywords": [
+        "TEXTO"
+      ]
+    },
+    {
+      "id": "113",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "social media followers count screen",
+        "filename": "parrafo-113.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Un millón de seguidores como métrica de éxito",
+      "keywords": [
+        "MILLÓN",
+        "SEGUIDORES",
+        "MÉTRICA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "millón",
+          "label": "Seguidores como umbral de relevancia"
+        }
+      }
+    },
+    {
+      "id": "114",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "email spam server network",
+        "filename": "parrafo-114.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA CRÍTICA",
+      "headline": "Sistema replicó un millón de copias del mismo mensaje",
+      "keywords": [
+        "UN MILLÓN COPIAS",
+        "SPAM MASIVO",
+        "DISTRIBUCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "millón",
+          "label": "copias del mismo mensaje generadas"
+        }
+      }
+    },
+    {
+      "id": "115",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "mobile app notification background",
+        "filename": "parrafo-115.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO OCULTO",
+      "headline": "La aplicación actuaba antes que el usuario",
+      "keywords": [
+        "NOTIFICACIÓN",
+        "ANTICIPADA",
+        "APLICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Proceso ejecutado sin intervención visible",
+            "Sincronización previa al acceso activo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "116",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "smartphone inbox notifications",
+        "filename": "parrafo-116.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ILUSIÓN ÓPTICA",
+      "headline": "Bandeja llena aceleraba carga percibida",
+      "keywords": [
+        "BANDEJA LLENA",
+        "CARGA RÁPIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Menos contenido a cargar visualmente",
+            "Interface ya poblada reduce espera percibida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "117",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "background process cpu usage",
+        "filename": "parrafo-117.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO FATAL",
+      "headline": "El costo real se pagaba en procesamiento continuo",
+      "keywords": [
+        "PROCESAMIENTO CONTINUO",
+        "SEGUNDO PLANO",
+        "COSTO OCULTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ejecución constante consumía recursos del sistema",
+            "Ineficiencia invisible que degradaba rendimiento"
+          ]
+        }
+      }
+    },
+    {
+      "id": "118",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software architecture diagram 2008",
+        "filename": "parrafo-118.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "Fanout anticipado fue decisión lógica en 2008",
+      "keywords": [
+        "FANOUT",
+        "2008",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2008",
+          "unit": "",
+          "label": "Año del diseño de fanout"
+        }
+      }
+    },
+    {
+      "id": "119",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "person phone followers social media",
+        "filename": "parrafo-119.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO INICIAL",
+      "headline": "Época cuando usuarios tenían menos mil seguidores",
+      "keywords": [
+        "SEGUIDORES",
+        "RED SOCIAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1000",
+          "unit": "seguidores",
+          "label": "Límite típico de usuarios en redes iniciales"
+        }
+      }
+    },
+    {
+      "id": "120",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "computer server processing calculation",
+        "filename": "parrafo-120.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Precálculo total para lectura sin latencia",
+      "keywords": [
+        "PRECALCULADO",
+        "INSTANTÁNEO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema anticipaba demanda de contenido",
+            "Eliminaba delay entre request y respuesta"
+          ]
+        }
+      }
+    },
+    {
+      "id": "121",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person writing desk computer",
+        "filename": "parrafo-121.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PARADOJA PRODUCTIVA",
+      "headline": "Más escritura compensa menos lectura requerida",
+      "keywords": [
+        "ESCRITURA",
+        "COMPENSACIÓN",
+        "LECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Intercambio explícito de esfuerzo",
+            "Lógica de eficiencia inversamente proporcional"
+          ]
+        }
+      }
+    },
+    {
+      "id": "122",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "social media server infrastructure overload",
+        "filename": "parrafo-122.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Sistema nunca preparado para escala masiva",
+      "keywords": [
+        "ARQUITECTURA LIMITADA",
+        "MILLONES SEGUIDORES",
+        "COLAPSO SISTEMA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "decenas de millones",
+          "unit": "seguidores",
+          "label": "Magnitud no prevista en diseño original"
+        }
+      }
+    },
+    {
+      "id": "123",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "social media viral post millions followers",
+        "filename": "parrafo-123.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "IMPACTO DIGITAL",
+      "headline": "Cuenta masiva amplificaba mensajes a decenas de millones",
+      "keywords": [
+        "50 MILLONES",
+        "VIRALIDAD",
+        "ALCANCE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "50",
+          "unit": "millones",
+          "label": "Seguidores alcanzados por publicación"
+        }
+      }
+    },
+    {
+      "id": "124",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "data replication server farm",
+        "filename": "parrafo-124.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESCALA MASIVA",
+      "headline": "Sistema generaba 50 millones de copias simultáneamente",
+      "keywords": [
+        "50 MILLONES COPIAS",
+        "TIEMPO REAL",
+        "REPLICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "50",
+          "unit": "millones",
+          "label": "copias generadas en tiempo real"
+        }
+      }
+    },
+    {
+      "id": "125",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "queue bottleneck server processing",
+        "filename": "parrafo-125.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "El procesamiento se atascaba durante horas",
+      "keywords": [
+        "COLAS SATURADAS",
+        "PROCESAMIENTO LENTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "minutos u horas",
+          "unit": "",
+          "label": "Tiempo de espera en colas saturadas"
+        }
+      }
+    },
+    {
+      "id": "126",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server queue delay overload",
+        "filename": "parrafo-126.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "EFECTO SISTÉMICO",
+      "headline": "Un usuario ralentiza toda la plataforma",
+      "keywords": [
+        "RETRASO",
+        "COLA SERVIDORES",
+        "CASCADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Un proceso lento bloquea otros usuarios",
+            "El cuello de botella collapsa la cola"
+          ]
+        }
+      }
+    },
+    {
+      "id": "127",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "engineering problem diagram whiteboard",
+        "filename": "parrafo-127.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DESAFÍO ARQUITECTÓNICO",
+      "headline": "El problema de ingeniería de usuarios alto volumen",
+      "keywords": [
+        "PROBLEMA TÉCNICO",
+        "ALTO VOLUMEN",
+        "INGENIERÍA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistemas no escalan con demanda masiva",
+            "Arquitectura debe repensar flujos datos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "128",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "Twitter bird logo social media",
+        "filename": "parrafo-128.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA CONOCIDA",
+      "headline": "Twitter conocía el problema desde 2010",
+      "keywords": [
+        "TWITTER",
+        "CUENTAS CALIENTES",
+        "2010"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2010",
+          "unit": "",
+          "label": "Año en que Twitter detectó el problema"
+        }
+      }
+    },
+    {
+      "id": "129",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "leaked internal documents computer screen",
+        "filename": "parrafo-129.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "REVELACIÓN TÉCNICA",
+      "headline": "Documentos internos filtrados confirmaron soluciones propuestas",
+      "keywords": [
+        "DOCUMENTOS FILTRADOS",
+        "2022",
+        "SOLUCIONES INTERNAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2022",
+          "unit": "",
+          "label": "Año de filtración de documentos internos"
+        }
+      }
+    },
+    {
+      "id": "130",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "server architecture system diagram",
+        "filename": "parrafo-130.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Sistema de fanout bloqueó cambios arquitectónicos",
+      "keywords": [
+        "FANOUT SYSTEM",
+        "ARQUITECTURA",
+        "IMPLEMENTACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modificación requería tocar núcleo crítico",
+            "Ninguna solución se implementó completamente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "131",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software architecture dependency diagram",
+        "filename": "parrafo-131.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Modificar un componente rompía todo el sistema",
+      "keywords": [
+        "ACOPLAMIENTO",
+        "COMPONENTES",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dependencias cruzadas sin control",
+            "Cambios en cascada impredecibles",
+            "Arquitectura frágil y rígida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "132",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "hybrid system architecture diagram",
+        "filename": "parrafo-132.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "SOLUCIÓN TÉCNICA",
+      "headline": "Adoptaron un sistema híbrido como solución parcial",
+      "keywords": [
+        "SISTEMA HÍBRIDO",
+        "ARQUITECTURA"
+      ]
+    },
+    {
+      "id": "133",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "social media followers algorithm feed",
+        "filename": "parrafo-133.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistemas de bajo alcance usan distribución anticipada",
+      "keywords": [
+        "FANOUT",
+        "SEGUIDORES",
+        "ALGORITMO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Optimización para cuentas pequeñas",
+            "Caché de feed pre-generado",
+            "Reducción de latencia en lectura"
+          ]
+        }
+      }
+    },
+    {
+      "id": "134",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "database query performance real-time",
+        "filename": "parrafo-134.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OPTIMIZACIÓN",
+      "headline": "Cálculo al momento de la lectura para cuentas grandes",
+      "keywords": [
+        "CÁLCULO EN TIEMPO REAL",
+        "LECTURA DE DATOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Procesamiento instantáneo sin precálculo",
+            "Escalabilidad bajo demanda",
+            "Reducción de almacenamiento intermedio"
+          ]
+        }
+      }
+    },
+    {
+      "id": "135",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "legacy system server infrastructure",
+        "filename": "parrafo-135.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CAUSA TÉCNICA",
+      "headline": "Sistema híbrido tan complejo que cualquier cambio era imposible",
+      "keywords": [
+        "SISTEMA HIBRIDO",
+        "COMPLEJIDAD MANTENIMIENTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura heredada difícil de modificar",
+            "Cambios generaban cascadas de errores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "136",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "algorithm recommendation system code",
+        "filename": "parrafo-136.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO TÉCNICO",
+      "headline": "Algoritmo de recomendación exigía sincronizar dos rutas",
+      "keywords": [
+        "ALGORITMO",
+        "SINCRONIZACIÓN",
+        "DOS RUTAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "rutas",
+          "label": "Dependencias sincronizadas del algoritmo"
+        }
+      }
+    },
+    {
+      "id": "137",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software development team frustrated",
+        "filename": "parrafo-137.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OBSTÁCULO TÉCNICO",
+      "headline": "Ralentización del equipo de producto por años",
+      "keywords": [
+        "RALENTIZADO",
+        "EQUIPO PRODUCTO",
+        "AÑOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Mejoras bloqueadas por arquitectura",
+            "Ciclos de desarrollo lentos",
+            "Deuda técnica acumulada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "138",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "crowded stadium event crowd",
+        "filename": "parrafo-138.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Momentos críticos que concentran masas de personas",
+      "keywords": [
+        "EVENTOS MASIVOS",
+        "MULTITUDES",
+        "CRISIS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Finales deportivas generan picos de atención",
+            "Elecciones movilizan votantes simultáneamente",
+            "Catástrofes naturales crean emergencias colectivas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "139",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "system collapse network failure",
+        "filename": "parrafo-139.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Sistema de fanout colapsaba de forma predecible",
+      "keywords": [
+        "FANOUT",
+        "COLAPSO",
+        "PREDECIBLE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "punto crítico",
+          "label": "Fallo predecible sin redundancia"
+        }
+      }
+    },
+    {
+      "id": "140",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter server data center traffic",
+        "filename": "parrafo-140.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Twitter expone métricas internas de alto tráfico",
+      "keywords": [
+        "TWITTER",
+        "ALTO TRÁFICO",
+        "MÉTRICAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "alto",
+          "unit": "",
+          "label": "Tráfico en eventos pico de la plataforma"
+        }
+      }
+    },
+    {
+      "id": "141",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server response time lag",
+        "filename": "parrafo-141.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA CRÍTICO",
+      "headline": "La latencia de entrega se multiplicaba por diez",
+      "keywords": [
+        "LATENCIA",
+        "10X",
+        "ENTREGA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "x",
+          "label": "Aumento de latencia de entrega"
+        }
+      }
+    },
+    {
+      "id": "142",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "smartphone notification delay loading",
+        "filename": "parrafo-142.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Mensajes que tardaban minutos en llegar",
+      "keywords": [
+        "RETARDO",
+        "MENSAJES",
+        "SEGUNDOS A MINUTOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "minutos",
+          "unit": "",
+          "label": "Tiempo de entrega en lugar de segundos"
+        }
+      }
+    },
+    {
+      "id": "143",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "messaging app notification delay",
+        "filename": "parrafo-143.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ENGAÑO TÉCNICO",
+      "headline": "Servicio de mensajería en tiempo real no era real",
+      "keywords": [
+        "MENSAJERÍA",
+        "TIEMPO REAL",
+        "FALSO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Promesa de velocidad instantánea incumplida",
+            "Latencia oculta en la arquitectura del sistema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "144",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "justin bieber concert stage lights",
+        "filename": "parrafo-144.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ALCANCE VIRAL",
+      "headline": "Justin Bieber alcanzó 100 millones de seguidores",
+      "keywords": [
+        "JUSTIN BIEBER",
+        "100M SEGUIDORES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "millones",
+          "label": "Seguidores de Justin Bieber"
+        }
+      }
+    },
+    {
+      "id": "145",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "server alert notifications dashboard",
+        "filename": "parrafo-145.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Alertas automáticas notificaban al equipo de ingeniería en tiempo real",
+      "keywords": [
+        "ALERTAS AUTOMÁTICAS",
+        "INGENIERÍA",
+        "HORARIO PICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema de monitoreo detectaba picos de tráfico",
+            "Notificaciones instantáneas al equipo técnico"
+          ]
+        }
+      }
+    },
+    {
+      "id": "146",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server crash cascading failure",
+        "filename": "parrafo-146.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Una cuenta degrada servicio para todos los usuarios",
+      "keywords": [
+        "FALLO EN CASCADA",
+        "PUNTO ÚNICO FALLO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "cuenta",
+          "label": "podía colapsar toda la plataforma"
+        }
+      }
+    },
+    {
+      "id": "147",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "library archive darkness abandoned",
+        "filename": "parrafo-147.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 5",
+      "headline": "El conocimiento desaparece cuando las instituciones colapsan",
+      "keywords": [
+        "APAGÓN",
+        "CONOCIMIENTO",
+        "PÉRDIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Archivos digitales sin mantenimiento se corrompen",
+            "Servidores apagados borran información irreversible",
+            "Generaciones pierden acceso a su propia historia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "148",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "elon musk twitter acquisition deal",
+        "filename": "parrafo-148.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADQUISICIÓN HISTÓRICA",
+      "headline": "Musk compra Twitter por 44 mil millones",
+      "keywords": [
+        "ELON MUSK",
+        "44 MIL MILLONES",
+        "TWITTER 2022"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "44",
+          "unit": "mil millones",
+          "label": "Precio de compra de Twitter"
+        }
+      }
+    },
+    {
+      "id": "149",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "mass layoffs office exit",
+        "filename": "parrafo-149.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO LABORAL",
+      "headline": "Despidió el 80% de la plantilla en días",
+      "keywords": [
+        "80% DESPIDOS",
+        "MASIVO",
+        "PLANTILLA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "80",
+          "unit": "%",
+          "label": "de la plantilla despedida"
+        }
+      }
+    },
+    {
+      "id": "150",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "office layoffs empty workplace",
+        "filename": "parrafo-150.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO LABORAL",
+      "headline": "Empresa redujo plantilla de 7.500 a 1.500 empleados",
+      "keywords": [
+        "DESPIDOS",
+        "7.500 A 1.500",
+        "80% REDUCCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "80",
+          "unit": "%",
+          "label": "de empleados perdidos en reestructuración"
+        }
+      }
+    },
+    {
+      "id": "151",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server room data center infrastructure",
+        "filename": "parrafo-151.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Equipo de infraestructura conocía el sistema real",
+      "keywords": [
+        "INFRAESTRUCTURA",
+        "SISTEMA CRÍTICO",
+        "INGENIEROS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ingenieros dominaban comportamiento del sistema",
+            "Conocimiento técnico profundo y práctico",
+            "Infraestructura crítica bajo su responsabilidad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "152",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server overload extreme load",
+        "filename": "parrafo-152.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Sistema colapsó bajo carga extrema",
+      "keywords": [
+        "SOBRECARGA",
+        "COLAPSO SISTEMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Rendimiento degradado irreversiblemente",
+            "Arquitectura no escaló proporcionalmente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "153",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "corporate office meeting room",
+        "filename": "parrafo-153.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "La eficiencia económica como justificación",
+      "keywords": [
+        "EFICIENCIA",
+        "JUSTIFICACIÓN PÚBLICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Argumento corporativo para decisiones difíciles",
+            "Narrativa que oculta otras motivaciones"
+          ]
+        }
+      }
+    },
+    {
+      "id": "154",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter office building interior",
+        "filename": "parrafo-154.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "GASTO OPERATIVO",
+      "headline": "Twitter gastaba más de mil millones anuales en personal",
+      "keywords": [
+        "TWITTER",
+        "1.000M USD",
+        "COSTES PERSONAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1.000",
+          "unit": "millones USD",
+          "label": "Costes anuales de personal en Twitter"
+        }
+      }
+    },
+    {
+      "id": "155",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "debt financial burden spreadsheet",
+        "filename": "parrafo-155.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO FINANCIERO",
+      "headline": "Deuda de compra fuerza reducción inmediata de gastos",
+      "keywords": [
+        "DEUDA",
+        "GASTOS OPERATIVOS",
+        "NECESIDAD FINANCIERA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Pasivos abruman la estructura operativa",
+            "Presión financiera acelera decisiones de corte",
+            "Supervivencia económica depende de eficiencia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "156",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "elon musk tesla factory automation",
+        "filename": "parrafo-156.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA FALLIDA",
+      "headline": "Musk apostó a automatizar Tesla con menos empleados",
+      "keywords": [
+        "AUTOMATIZACIÓN",
+        "MUSK",
+        "MENOS PERSONAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "40",
+          "unit": "%",
+          "label": "Caída de productividad en Model 3 2018"
+        }
+      }
+    },
+    {
+      "id": "157",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server data center systems",
+        "filename": "parrafo-157.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INFRAESTRUCTURA",
+      "headline": "El sistema continuó operativo enviando publicaciones",
+      "keywords": [
+        "SISTEMA FUNCIONANDO",
+        "PUBLICACIONES ENVIADAS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La infraestructura técnica persistió a pesar de fallos",
+            "Las comunicaciones digitales se mantuvieron activas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "158",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server lights blinking data center",
+        "filename": "parrafo-158.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PARADOJA TÉCNICA",
+      "headline": "Usuarios activos mientras infraestructura colapsa silenciosa",
+      "keywords": [
+        "USUARIOS LEYENDO",
+        "SERVIDORES ENCENDIDOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Servicio disponible pero disfuncional",
+            "Fallo invisible para el cliente final"
+          ]
+        }
+      }
+    },
+    {
+      "id": "159",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "disappearing data dashboard red alert",
+        "filename": "parrafo-159.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PUNTO CIEGO",
+      "headline": "Lo invisible en el tablero de control no se ve venir",
+      "keywords": [
+        "INVISIBLE",
+        "TABLERO FALLIDO",
+        "SIN ALERTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Métricas ausentes permiten desastres silenciosos",
+            "Falsa seguridad de monitoreo incompleto"
+          ]
+        }
+      }
+    },
+    {
+      "id": "160",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "legacy code documentation abandoned",
+        "filename": "parrafo-160.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO INSTITUCIONAL",
+      "headline": "Desapareció el saber por qué los parámetros estaban configurados así",
+      "keywords": [
+        "CONOCIMIENTO TÁCITO",
+        "PARÁMETROS OLVIDADOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin documentación, nadie supo por qué funcionaba",
+            "La memoria técnica muere con los programadores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "161",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server architecture diagram database",
+        "filename": "parrafo-161.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Servicios con dependencias ocultas colapsaban en horarios críticos",
+      "keywords": [
+        "DEPENDENCIAS OCULTAS",
+        "ARQUITECTURA FRÁGIL",
+        "HORAS PICO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "Documentación de dependencias críticas"
+        }
+      }
+    },
+    {
+      "id": "162",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server room data center legacy code",
+        "filename": "parrafo-162.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "El conocimiento nunca fue guardado en repositorio",
+      "keywords": [
+        "CÓDIGO PERDIDO",
+        "CONOCIMIENTO NO DOCUMENTADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Información técnica desaparece sin documentación",
+            "Sin backup, sin recuperación posible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "163",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person layoff severance office exit",
+        "filename": "parrafo-163.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONSECUENCIA HUMANA",
+      "headline": "El despido dejó marca psicológica profunda",
+      "keywords": [
+        "DESPIDOS",
+        "IMPACTO MENTAL",
+        "PÉRDIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "generación",
+          "label": "Marcada por experiencia de masivos despidos"
+        }
+      }
+    },
+    {
+      "id": "164",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software documentation code comments",
+        "filename": "parrafo-164.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO CLAVE",
+      "headline": "Deuda de documentación en ingeniería de sistemas",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "DOCUMENTACIÓN",
+        "INGENIERÍA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Código sin documentar acumula pasivos técnicos",
+            "Genera fricciones en mantenimiento futuro"
+          ]
+        }
+      }
+    },
+    {
+      "id": "165",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software documentation code mismatch",
+        "filename": "parrafo-165.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "BRECHA TÉCNICA",
+      "headline": "La realidad del código nunca coincide con los manuales",
+      "keywords": [
+        "DOCUMENTACIÓN OBSOLETA",
+        "CÓDIGO REAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Los desarrolladores actualizan código pero olvidan documentación",
+            "Los manuales desajustados generan bugs y tiempo perdido"
+          ]
+        }
+      }
+    },
+    {
+      "id": "166",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "messy code documentation cluttered desk",
+        "filename": "parrafo-166.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA TÉCNICA",
+      "headline": "Twitter acumuló deuda de documentación masiva",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "DOCUMENTACIÓN",
+        "TWITTER"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "deuda",
+          "unit": "",
+          "label": "documentación más grande del sector tecnológico"
+        }
+      }
+    },
+    {
+      "id": "167",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy code debugging computer screen",
+        "filename": "parrafo-167.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Código acumulado por crisis, no diseño",
+      "keywords": [
+        "CÓDIGO LEGADO",
+        "CRISIS ITERATIVA",
+        "DEUDA TÉCNICA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "años",
+          "unit": "",
+          "label": "de iteración urgente sin arquitectura"
+        }
+      }
+    },
+    {
+      "id": "168",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "undecipherable code cryptic text",
+        "filename": "parrafo-168.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LEGADO TÉCNICO",
+      "headline": "Código tan confuso que nadie más lo entiende",
+      "keywords": [
+        "CÓDIGO ILEGIBLE",
+        "SIN DOCUMENTACIÓN",
+        "INCOMPRENSIBLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta documentación externa clara",
+            "Barrera para futuros mantenedores",
+            "Riesgo de colapso cuando autor se va"
+          ]
+        }
+      }
+    },
+    {
+      "id": "169",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "legacy code server room dark",
+        "filename": "parrafo-169.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Sistema funcionaba pero nadie sabía por qué",
+      "keywords": [
+        "CÓDIGO HEREDADO",
+        "OPACIDAD",
+        "INGENIEROS PERDIDOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Herederos sin documentación ni explicación",
+            "Arquitectura opaca genera parálisis técnica",
+            "Deuda invisible que crece silenciosamente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "170",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "computer system failure error screen",
+        "filename": "parrafo-170.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CERTEZA TÉCNICA",
+      "headline": "El fallo es certeza, no posibilidad",
+      "keywords": [
+        "FALLO INEVITABLE",
+        "CUANDO NO SI"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Diseño reconoce inevitabilidad del colapso",
+            "Mentalidad ingenieril pesimista pero realista"
+          ]
+        }
+      }
+    },
+    {
+      "id": "171",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "legacy code spaghetti developer confused",
+        "filename": "parrafo-171.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA TÉCNICO",
+      "headline": "Código tan frágil que nadie se atreve a tocarlo",
+      "keywords": [
+        "CÓDIGO LEGADO",
+        "SIN SOLUCIÓN",
+        "RUPTURA GARANTIZADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cualquier cambio rompía otras funciones",
+            "Documentación perdida o inexistente",
+            "Deuda técnica acumulada años"
+          ]
+        }
+      }
+    },
+    {
+      "id": "172",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter server outage downtime",
+        "filename": "parrafo-172.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO TÉCNICO",
+      "headline": "Twitter sufrió múltiples caídas tras despidos masivos",
+      "keywords": [
+        "TWITTER",
+        "INTERRUPCIONES",
+        "DESPIDOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "múltiples",
+          "unit": "interrupciones",
+          "label": "Caídas de servicio documentadas post-despido"
+        }
+      }
+    },
+    {
+      "id": "173",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "authentication system update security",
+        "filename": "parrafo-173.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Actualización menor de autenticación causó colapso",
+      "keywords": [
+        "DICIEMBRE 2022",
+        "AUTENTICACIÓN",
+        "ACTUALIZACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "diciembre",
+          "unit": "2022",
+          "label": "Fecha del fallo de autenticación"
+        }
+      }
+    },
+    {
+      "id": "174",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "biometric authentication fingerprint scan",
+        "filename": "parrafo-174.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO CRÍTICO",
+      "headline": "Verificación de identidad del usuario en sistemas",
+      "keywords": [
+        "AUTENTICACIÓN",
+        "IDENTIDAD",
+        "VERIFICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Confirma quién accede realmente",
+            "Barrera de seguridad esencial",
+            "Protege datos y acceso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "175",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "server outage data center downtime",
+        "filename": "parrafo-175.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Millones sin acceso durante horas por caída",
+      "keywords": [
+        "CAÍDA SERVICIO",
+        "MILLONES USUARIOS",
+        "HORAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "millones",
+          "unit": "usuarios afectados",
+          "label": "Pérdida de acceso simultáneo"
+        }
+      }
+    },
+    {
+      "id": "176",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "engineer debugging code computer",
+        "filename": "parrafo-176.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Ingenieros sin experiencia ralentizan diagnostico",
+      "keywords": [
+        "DIAGNÓSTICO",
+        "COMPONENTE DESCONOCIDO",
+        "DEUDA TÉCNICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta de documentacion en componentes antiguos",
+            "Personal no capacitado en arquitectura especifica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "177",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter verification system collapse",
+        "filename": "parrafo-177.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA CRÍTICA",
+      "headline": "Sistema de verificación colapsó en enero 2023",
+      "keywords": [
+        "VERIFICACIÓN CAÍDA",
+        "ENERO 2023"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "enero",
+          "unit": "2023",
+          "label": "Mes del colapso del sistema"
+        }
+      }
+    },
+    {
+      "id": "178",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "subscription model transition business",
+        "filename": "parrafo-178.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA COMERCIAL",
+      "headline": "Transición a nuevo modelo de suscripción",
+      "keywords": [
+        "SUSCRIPCIÓN",
+        "MIGRACIÓN",
+        "MODELO NUEVO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cambio de estructura de pagos recurrentes",
+            "Adopción de SaaS como estrategia",
+            "Migración de base de usuarios existente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "179",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "legacy code server room dusty",
+        "filename": "parrafo-179.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLA TÉCNICA",
+      "headline": "Servicio de 2014 con dependencia no documentada causó colapso",
+      "keywords": [
+        "SERVICIO HEREDADO",
+        "DEPENDENCIA OCULTA",
+        "2014"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2014",
+          "unit": "",
+          "label": "Año del servicio que no fue documentado"
+        }
+      }
+    },
+    {
+      "id": "180",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "system server maintenance technical",
+        "filename": "parrafo-180.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OPERACIÓN EXITOSA",
+      "headline": "El sistema continuó operativo tras implementar el cambio identificado",
+      "keywords": [
+        "SISTEMA FUNCIONANDO",
+        "CAMBIO TÉCNICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin interrupciones en servicio",
+            "Cambio fue bien planificado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "181",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "code bug error red",
+        "filename": "parrafo-181.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LA PARADOJA",
+      "headline": "Toda mejora aumentaba el riesgo de colapso",
+      "keywords": [
+        "CADA CAMBIO",
+        "RIESGO FALLO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Correcciones generaban nuevas vulnerabilidades",
+            "Sistema frágil se quebraba con cambios"
+          ]
+        }
+      }
+    },
+    {
+      "id": "182",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "old machinery rust gears",
+        "filename": "parrafo-182.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PRINCIPIO TÉCNICO",
+      "headline": "Los sistemas que funcionan por inercia no son robustos",
+      "keywords": [
+        "INERCIA",
+        "SISTEMA FRÁGIL",
+        "COLAPSO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La inercia oculta problemas hasta el quiebre",
+            "Sin retroalimentación activa falla inevitablemente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "183",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "financial system crisis collapse",
+        "filename": "parrafo-183.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADVERTENCIA",
+      "headline": "Sistema financiero al borde del colapso",
+      "keywords": [
+        "SISTEMA FRÁGIL",
+        "PRÓXIMA CRISIS",
+        "ESPERA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "",
+          "label": "Sistema esperando su próxima crisis"
+        }
+      }
+    },
+    {
+      "id": "184",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "abandoned code repository dark",
+        "filename": "parrafo-184.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 6",
+      "headline": "El proyecto de reescritura que nunca se completó",
+      "keywords": [
+        "REESCRITURA FALLIDA",
+        "DEUDA TÉCNICA",
+        "CÓDIGO MUERTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "líneas ejecutadas",
+          "label": "Del código reescrito que llegó a producción"
+        }
+      }
+    },
+    {
+      "id": "185",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter office workspace collaboration",
+        "filename": "parrafo-185.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Twitter construyó en secreto un proyecto que nunca despegó",
+      "keywords": [
+        "TWITTER SERVICE",
+        "2019",
+        "PROYECTO INTERNO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Iniciativa paralela dentro de la empresa",
+            "Trabajo aislado sin impacto público",
+            "Síntoma de ineficiencia organizacional"
+          ]
+        }
+      }
+    },
+    {
+      "id": "186",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "mesh network service architecture",
+        "filename": "parrafo-186.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Mesh: red descentralizada de servicios interconectados",
+      "keywords": [
+        "MESH",
+        "RED SERVICIOS",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Distribuye carga entre múltiples nodos",
+            "Elimina punto único de fallo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "187",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "microservices architecture communication",
+        "filename": "parrafo-187.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Modernización de infraestructura de comunicación entre servicios",
+      "keywords": [
+        "INFRAESTRUCTURA",
+        "SERVICIOS",
+        "OBSERVABLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reemplazo de arquitectura legacy por sistemas observables",
+            "Mayor visibilidad en comunicación distribuida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "188",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "computer code debug monitoring screen",
+        "filename": "parrafo-188.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Observable permite ver en tiempo real internals",
+      "keywords": [
+        "OBSERVABLE",
+        "TIEMPO REAL",
+        "COMPONENTE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Visibilidad inmediata de estado componente",
+            "Debugging facilitado sin caja negra",
+            "Monitoreo activo de flujo datos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "189",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "server monitoring dashboard",
+        "filename": "parrafo-189.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA TÉCNICA",
+      "headline": "Identificar dónde falla la arquitectura",
+      "keywords": [
+        "CARGA ACUMULADA",
+        "FALLO SERVICIO",
+        "DIAGNÓSTICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Localizar punto de acumulación de carga",
+            "Detectar servicio degradado o caído",
+            "Entender raíz del colapso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "190",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "distributed database migration",
+        "filename": "parrafo-190.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "Propuesta para migrar a arquitectura distribuida moderna",
+      "keywords": [
+        "BASE DE DATOS",
+        "SISTEMA DISTRIBUIDO",
+        "MIGRACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Abandon del sistema monolítico centralizado",
+            "Escalabilidad mediante distribución de datos",
+            "Modernización de infraestructura heredada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "191",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server cluster nodes network",
+        "filename": "parrafo-191.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "El cuello de botella del nodo único en 2006",
+      "keywords": [
+        "ESCALABILIDAD",
+        "CUELLO BOTELLA",
+        "2006"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "",
+          "label": "Año del problema de arquitectura única"
+        }
+      }
+    },
+    {
+      "id": "192",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "engineers meeting whiteboard problem",
+        "filename": "parrafo-192.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DIAGNÓSTICO ACERTADO",
+      "headline": "Ingenieros identificaron exactamente el problema",
+      "keywords": [
+        "SOLUCIÓN TÉCNICA",
+        "PROBLEMA IDENTIFICADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Propuestas técnicamente correctas",
+            "Conocimiento profundo del equipo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "193",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "document approval workflow process",
+        "filename": "parrafo-193.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROCESO ADMINISTRATIVO",
+      "headline": "Solución documentada pero atrapada en burocracia",
+      "keywords": [
+        "DOCUMENTADO",
+        "APROBACIÓN PRESUPUESTARIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Prioridad asignada en la hoja de ruta",
+            "Requisitos de aprobación presupuestaria pendientes"
+          ]
+        }
+      }
+    },
+    {
+      "id": "194",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "incomplete migration data transfer",
+        "filename": "parrafo-194.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Las migraciones nunca terminaron antes de la adquisición",
+      "keywords": [
+        "MIGRACIONES INCOMPLETAS",
+        "ADQUISICIÓN",
+        "NO TÉCNICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El problema no fue de arquitectura",
+            "Causas no técnicas frenaron el proceso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "195",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter bird logo stock exchange",
+        "filename": "parrafo-195.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CORPORATIVO",
+      "headline": "Twitter se convirtió en empresa pública en 2013",
+      "keywords": [
+        "TWITTER",
+        "EMPRESA PÚBLICA",
+        "2013"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2013",
+          "unit": "",
+          "label": "Año de salida a bolsa de Twitter"
+        }
+      }
+    },
+    {
+      "id": "196",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "investor pressure business growth",
+        "filename": "parrafo-196.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Presionado por inversores para mostrar crecimiento",
+      "keywords": [
+        "PRESIÓN INVERSORES",
+        "CRECIMIENTO INGRESOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Demanda constante de resultados financieros",
+            "Métricas de ingresos como prioridad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "197",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server data center migration infrastructure",
+        "filename": "parrafo-197.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Migraciones infraestructura no generan valor usuario",
+      "keywords": [
+        "MIGRACIONES",
+        "SIN RETORNO",
+        "COSTO OCULTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Costo operacional puro sin beneficio funcional",
+            "Recursos desviados de desarrollo real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "198",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "stock market trading floor data",
+        "filename": "parrafo-198.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Las métricas trimestrales no muestran mejora",
+      "keywords": [
+        "WALL STREET",
+        "MÉTRICAS FALLIDAS",
+        "TRIMESTRAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "Mejora en métricas trimestrales"
+        }
+      }
+    },
+    {
+      "id": "199",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software engineering debt",
+        "filename": "parrafo-199.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "El equipo pedía recursos para pagar la deuda técnica",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "INGENIERÍA"
+      ]
+    },
+    {
+      "id": "200",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "product team competing resources",
+        "filename": "parrafo-200.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONFLICTO INTERNO",
+      "headline": "Equipos compitiendo por recursos para features visibles",
+      "keywords": [
+        "COMPETENCIA RECURSOS",
+        "EQUIPO PRODUCTO",
+        "FUNCIONALIDADES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Lucha interna por presupuesto técnico",
+            "Prioridad en lo visible sobre lo estructural",
+            "Fricción entre arquitectura y producto"
+          ]
+        }
+      }
+    },
+    {
+      "id": "201",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "product team office meeting",
+        "filename": "parrafo-201.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DINÁMICAS DE PODER",
+      "headline": "El equipo de producto ganaba casi siempre",
+      "keywords": [
+        "EQUIPO PRODUCTO",
+        "GANABA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dominaba decisiones estratégicas",
+            "Priorizaba su visión sobre otros"
+          ]
+        }
+      }
+    },
+    {
+      "id": "202",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "business report metrics dashboard",
+        "filename": "parrafo-202.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Resultados medibles en informe trimestral",
+      "keywords": [
+        "RESULTADOS MEDIBLES",
+        "INFORME TRIMESTRAL",
+        "MÉTRICAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3",
+          "unit": "meses",
+          "label": "Período de medición de resultados"
+        }
+      }
+    },
+    {
+      "id": "203",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "infrastructure server maintenance",
+        "filename": "parrafo-203.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FUNDAMENTO TÉCNICO",
+      "headline": "La infraestructura previene colapsos futuros",
+      "keywords": [
+        "INFRAESTRUCTURA",
+        "PREVENCIÓN",
+        "DESASTRES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Mantenimiento evita fallos catastróficos",
+            "Anticipación supera crisis posterior"
+          ]
+        }
+      }
+    },
+    {
+      "id": "204",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "hidden risk disaster waiting",
+        "filename": "parrafo-204.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADVERTENCIA CRÍTICA",
+      "headline": "Los desastres permanecen invisibles hasta ocurrir",
+      "keywords": [
+        "RIESGO OCULTO",
+        "DESASTRE LATENTE",
+        "SIN VISIBILIDAD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "%",
+          "label": "visibilidad del riesgo en reportes"
+        }
+      }
+    },
+    {
+      "id": "205",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "twitter server infrastructure collapse",
+        "filename": "parrafo-205.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO OPERATIVO",
+      "headline": "Twitter no financió su infraestructura técnica bajo presión",
+      "keywords": [
+        "TWITTER",
+        "SUPERVIVENCIA TÉCNICA",
+        "FINANCIAMIENTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "X",
+          "unit": "",
+          "label": "Plataforma sin viabilidad económica sostenida"
+        }
+      }
+    },
+    {
+      "id": "206",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "public company stock market",
+        "filename": "parrafo-206.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "No fue error técnico sino decisión empresarial",
+      "keywords": [
+        "EMPRESA PÚBLICA",
+        "MODELO NEGOCIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La arquitectura falló por razones organizacionales",
+            "El cambio de modelo impactó la estructura"
+          ]
+        }
+      }
+    },
+    {
+      "id": "207",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "broken organizational chart structure",
+        "filename": "parrafo-207.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RAÍZ DEL PROBLEMA",
+      "headline": "El colapso comienza en los incentivos mal alineados",
+      "keywords": [
+        "INCENTIVOS FALLIDOS",
+        "ESTRUCTURA ROTA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "de los colapsos tienen raíces en incentivos"
+        }
+      }
+    },
+    {
+      "id": "208",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "frustrated programmer desk error",
+        "filename": "parrafo-208.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RESPONSABILIDAD",
+      "headline": "Ingenieros y usuarios cargan con las consecuencias",
+      "keywords": [
+        "INGENIEROS",
+        "USUARIOS",
+        "CONSECUENCIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Los desarrolladores heredan código roto",
+            "Los usuarios sufren fallos en producción",
+            "El costo técnico recae en quién lo mantiene"
+          ]
+        }
+      }
+    },
+    {
+      "id": "209",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "Twitter X rebrand logo",
+        "filename": "parrafo-209.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PLATAFORMA DIGITAL",
+      "headline": "Twitter se rebautiza como X en 2024",
+      "keywords": [
+        "TWITTER",
+        "REBRAND X",
+        "2024"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2024",
+          "unit": "año",
+          "label": "Año del rebautizo de Twitter a X"
+        }
+      }
+    },
+    {
+      "id": "210",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "old legacy code server 2006",
+        "filename": "parrafo-210.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DEUDA TÉCNICA",
+      "headline": "Sistema ejecutándose en arquitectura de 2006",
+      "keywords": [
+        "LEGACY CODE",
+        "2006",
+        "18 AÑOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "18",
+          "unit": "años",
+          "label": "sin actualización de arquitectura base"
+        }
+      }
+    },
+    {
+      "id": "211",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server room infrastructure upgrade",
+        "filename": "parrafo-211.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "El sector rediseñó sus infraestructuras dos o tres veces",
+      "keywords": [
+        "INFRAESTRUCTURA",
+        "REDISEÑO MÚLTIPLE",
+        "SECTOR TECH"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ciclos de renovación completa en tecnología",
+            "Transformación acelerada de arquitecturas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "212",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "amazon web services server datacenter",
+        "filename": "parrafo-212.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA PIVOTE",
+      "headline": "Dos gigantes reinventaron sus sistemas core",
+      "keywords": [
+        "AWS REDISEÑO",
+        "GOOGLE BÚSQUEDA",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "",
+          "label": "empresas que redefinieron infraestructura"
+        }
+      }
+    },
+    {
+      "id": "213",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix cloud migration server transition",
+        "filename": "parrafo-213.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PIVOTE TÉCNICO",
+      "headline": "Netflix abandonó sus centros de datos por la nube",
+      "keywords": [
+        "NETFLIX",
+        "MIGRACIÓN NUBE",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Migración completa a servicios cloud",
+            "Fin de infraestructura propia y costos operativos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "214",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "old server room legacy infrastructure",
+        "filename": "parrafo-214.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Twitter enfrentó IA con infraestructura del siglo pasado",
+      "keywords": [
+        "INFRAESTRUCTURA ANTIGUA",
+        "TWITTER",
+        "IA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "20",
+          "unit": "años",
+          "label": "Diferencia entre infraestructura y tecnología de IA"
+        }
+      }
+    },
+    {
+      "id": "215",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "web browser modern internet",
+        "filename": "parrafo-215.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Los ingenieros sabían qué hacer con internet",
+      "keywords": [
+        "INTERNET MODERNO",
+        "INGENIERÍA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El problema no fue técnico sino estratégico",
+            "La falta de acción selló el fracaso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "216",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "corporate meeting decision making",
+        "filename": "parrafo-216.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CAUSA RAÍZ",
+      "headline": "El sistema de incentivos bloqueó la acción",
+      "keywords": [
+        "INCENTIVOS",
+        "SISTEMA",
+        "ESPACIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Estructura organizacional impidió innovación",
+            "Recompensas no alineadas con objetivos",
+            "Cultura corporativa limitó decisiones"
+          ]
+        }
+      }
+    },
+    {
+      "id": "217",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "Apache Kafka message queue system",
+        "filename": "parrafo-217.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA TÉCNICA",
+      "headline": "Twitter construyó Kafka para sobrevivir ante colas masivas",
+      "keywords": [
+        "KAFKA",
+        "SYSTEM COLAS",
+        "TWITTER"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2010",
+          "unit": "año",
+          "label": "Kafka nace como solución interna de Twitter"
+        }
+      }
+    },
+    {
+      "id": "218",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter platform algorithm feed",
+        "filename": "parrafo-218.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Twitter creó estándar que adoptó toda industria",
+      "keywords": [
+        "TWITTER",
+        "ESTÁNDAR SECTOR"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Tecnología propia dominó el mercado",
+            "Competidores replicaron su arquitectura"
+          ]
+        }
+      }
+    },
+    {
+      "id": "219",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "payment processing system server",
+        "filename": "parrafo-219.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INFRAESTRUCTURA ACTUAL",
+      "headline": "Opera en pagos, video y logística global",
+      "keywords": [
+        "SISTEMAS PAGO",
+        "TRANSMISIÓN VIDEO",
+        "LOGÍSTICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Procesa transacciones financieras diarias",
+            "Potencia plataformas de streaming masivo",
+            "Gestiona cadenas de suministro mundial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "220",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software architecture pattern diagram",
+        "filename": "parrafo-220.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PATRÓN TÉCNICO",
+      "headline": "El patrón fanout y sus limitaciones arquitectónicas",
+      "keywords": [
+        "FANOUT PATTERN",
+        "ARQUITECTURA FALLIDA",
+        "ESCALABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Causa cuellos de botella en sistemas distribuidos",
+            "Complejidad exponencial con múltiples suscriptores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "221",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "algorithm recommendation feed social media",
+        "filename": "parrafo-221.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LEGADO TÉCNICO",
+      "headline": "Inspiró sistemas de recomendación de TikTok Instagram YouTube",
+      "keywords": [
+        "ALGORITMO RECOMENDACIÓN",
+        "REDES SOCIALES",
+        "CONTENIDO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3",
+          "unit": "plataformas",
+          "label": "utilizan sistemas derivados"
+        }
+      }
+    },
+    {
+      "id": "222",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "Twitter social media platform interface",
+        "filename": "parrafo-222.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA DIGITAL",
+      "headline": "Twitter nunca solucionó lo que persigue a todas",
+      "keywords": [
+        "TWITTER",
+        "PROBLEMA SIN RESOLVER",
+        "PLATAFORMAS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Moderación y control de contenido fallido",
+            "Escala masiva genera caos sin control",
+            "Problema estructural no arquitectónico"
+          ]
+        }
+      }
+    },
+    {
+      "id": "223",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "twitter bird logo social media",
+        "filename": "parrafo-223.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA TÉCNICA",
+      "headline": "La lección de Twitter no está en su código",
+      "keywords": [
+        "TWITTER",
+        "LECCIÓN TÉCNICA",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El problema fue arquitectónico, no técnico",
+            "Decisiones de diseño fallaron antes del deployment"
+          ]
+        }
+      }
+    },
+    {
+      "id": "224",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "decision making process flowchart",
+        "filename": "parrafo-224.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Está en sus ciclos de decisión",
+      "keywords": [
+        "DECISIÓN",
+        "CICLOS",
+        "PROCESO"
+      ]
+    },
+    {
+      "id": "225",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software code debt technical",
+        "filename": "parrafo-225.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA ARQUITECTURA",
+      "headline": "Presiones de negocio deciden qué deuda técnica se resuelve",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "PRESIÓN NEGOCIO",
+        "PRIORIDADES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Lucro inmediato supera mantenimiento",
+            "Código obsoleto se acumula",
+            "Fracaso técnico es inevitable"
+          ]
+        }
+      }
+    },
+    {
+      "id": "226",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "warning light dashboard red alert",
+        "filename": "parrafo-226.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADVERTENCIA",
+      "headline": "Ignorar señales críticas hasta punto de no retorno",
+      "keywords": [
+        "IGNORANCIA",
+        "PUNTO CRITICO",
+        "DEMASIADO TARDE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La negación prolonga el daño",
+            "El colapso llega sin aviso previo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "227",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy system server maintenance",
+        "filename": "parrafo-227.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADVERTENCIA TÉCNICA",
+      "headline": "Posponer migraciones cuesta más que hacerlas",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "MIGRACIÓN INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistemas antiguos acumulan riesgo exponencial",
+            "El colapso es inevitable sin actualización"
+          ]
+        }
+      }
+    },
+    {
+      "id": "228",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person thinking question mark",
+        "filename": "parrafo-228.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PREGUNTA CLAVE",
+      "headline": "¿Funciona el sistema o el conocimiento humano?",
+      "keywords": [
+        "SISTEMA",
+        "CONOCIMIENTO",
+        "PERSONAS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Diferenciar entre arquitectura y competencia",
+            "El talento oculta fallos estructurales",
+            "Sistemas frágiles dependen de expertos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "229",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "old legacy code computer screen",
+        "filename": "parrafo-229.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONCEPTO TÉCNICO",
+      "headline": "Deuda heredada versus deuda técnica gestionada",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "HEREDADA vs GESTIONADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Deuda gestionada: controlada y documentada",
+            "Deuda heredada: abandono acumulado"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -14,16 +14,18 @@
  */
 
 require('dotenv').config();
-const { readMemory, saveMemory } = require('../utils/memory');
+const { readMemory, saveMemory, getActiveChannelId } = require('../utils/memory');
 
 // ── Args / Config ──────────────────────────────────────────────────────────────
-const channelId = process.argv[2] || process.env.YOUTUBE_CHANNEL_ID;
+const activeChannelId = getActiveChannelId();
+const channelEnvKey = `YOUTUBE_CHANNEL_ID_${activeChannelId.toUpperCase().replace(/[^A-Z0-9_]/g, '_')}`;
+const channelId = process.argv[2] || process.env[channelEnvKey] || process.env.YOUTUBE_CHANNEL_ID;
 const API_KEY   = process.env.YOUTUBE_API_KEY;
 
 if (!channelId) {
   console.error('❌ Debes proveer el Channel ID de YouTube.');
   console.error('   Uso: node scripts/import-channel-history.js UCxxxxxxxxxxxxxxxxxxxxx');
-  console.error('   O agrega YOUTUBE_CHANNEL_ID en tu .env');
+  console.error(`   O agrega YOUTUBE_CHANNEL_ID (o ${channelEnvKey}) en tu .env`);
   process.exit(1);
 }
 

@@ -1,0 +1,5492 @@
+{
+  "version": 1,
+  "projectId": "blockbuster-—-el-día-que-rechazaron-comprar-netflix",
+  "paragraphs": [
+    {
+      "id": "01",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store interior",
+        "filename": "parrafo-01.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Netflix no fue quien mató Blockbuster",
+      "keywords": [
+        "STREAMING",
+        "BLOCKBUSTER",
+        "VIDEO RENTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cambio tecnológico precedió al colapso",
+            "Múltiples factores convergentes destruyeron modelo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "02",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "warehouse inventory management system",
+        "filename": "parrafo-02.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistema de gestión de inventario fue clave",
+      "keywords": [
+        "INVENTARIO",
+        "GESTIÓN",
+        "SISTEMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Automatización del control de stock",
+            "Integración de datos en tiempo real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "03",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "smartphone evolution failure",
+        "filename": "parrafo-03.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Incapacidad para evolucionar ante cambios del mercado",
+      "keywords": [
+        "ADAPTACIÓN",
+        "FRACASO TECNOLÓGICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Rigidez estratégica frente a innovación",
+            "Desconexión con demandas del usuario"
+          ]
+        }
+      }
+    },
+    {
+      "id": "04",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store 2000s",
+        "filename": "parrafo-04.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "APOGEO COMERCIAL",
+      "headline": "Blockbuster dominaba con 9 mil tiendas en 2000",
+      "keywords": [
+        "BLOCKBUSTER",
+        "9000 TIENDAS",
+        "AÑO 2000"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "9000",
+          "unit": "tiendas",
+          "label": "Blockbuster operaba en 2000"
+        }
+      }
+    },
+    {
+      "id": "05",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "revenue metrics business growth",
+        "filename": "parrafo-05.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESCALA COMERCIAL",
+      "headline": "Empresa con ingresos de seis mil millones y millones de usuarios",
+      "keywords": [
+        "6 MIL MILLONES USD",
+        "60 MILLONES CLIENTES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "6",
+          "unit": "mil millones USD",
+          "label": "Ingresos anuales"
+        }
+      }
+    },
+    {
+      "id": "06",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "vintage home entertainment system",
+        "filename": "parrafo-06.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Empresa líder mundial en entretenimiento para casa",
+      "keywords": [
+        "ENTRETENIMIENTO",
+        "HOGAR",
+        "LÍDER"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dominaba mercado de consumo doméstico",
+            "Referente en tecnología del hogar"
+          ]
+        }
+      }
+    },
+    {
+      "id": "07",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix founders meeting business proposal",
+        "filename": "parrafo-07.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HISTORIA",
+      "headline": "Los fundadores de Netflix llegan a Dallas",
+      "keywords": [
+        "NETFLIX",
+        "FUNDADORES",
+        "PROPUESTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Presentan propuesta revolucionaria de distribución",
+            "Era el modelo de negocio del streaming"
+          ]
+        }
+      }
+    },
+    {
+      "id": "08",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-08.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FATAL",
+      "headline": "Blockbuster rechazó oferta de 50 millones de dólares",
+      "keywords": [
+        "BLOCKBUSTER",
+        "50 MILLONES",
+        "RECHAZÓ"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "50",
+          "unit": "millones de dólares",
+          "label": "Oferta rechazada por Blockbuster"
+        }
+      }
+    },
+    {
+      "id": "09",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-09.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA DE MARCA",
+      "headline": "Ignoró el cambio, Blockbuster colapsó en doce años",
+      "keywords": [
+        "BLOCKBUSTER",
+        "QUIEBRA",
+        "NICHO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "12",
+          "unit": "años",
+          "label": "Del desprecio a la quiebra"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix logo streaming service",
+        "filename": "parrafo-10.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Netflix alcanzó valuación de cuatro mil millones",
+      "keywords": [
+        "NETFLIX",
+        "4 MIL MILLONES",
+        "VALORACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "4",
+          "unit": "mil millones",
+          "label": "Valoración de Netflix en dólares"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-11.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FALLIDA",
+      "headline": "Blockbuster rechazó la oportunidad de adquirir Netflix",
+      "keywords": [
+        "BLOCKBUSTER",
+        "NETFLIX",
+        "OPORTUNIDAD PERDIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Momento clave en historia empresarial",
+            "Falta de visión estratégica",
+            "Cambio de paradigma digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "12",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "broken robot mechanical parts",
+        "filename": "parrafo-12.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS TÉCNICO",
+      "headline": "Qué impedía el movimiento interno del sistema",
+      "keywords": [
+        "MECANISMO BLOQUEADO",
+        "IMPOSIBILIDAD DE MOVIMIENTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Componentes internos dañados o atascados",
+            "Fallo mecánico irreversible",
+            "Imposibilidad funcional estructural"
+          ]
+        }
+      }
+    },
+    {
+      "id": "13",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "decentralized inventory system network",
+        "filename": "parrafo-13.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Arquitectura de inventario completamente descentralizada",
+      "keywords": [
+        "ARQUITECTURA DESCENTRALIZADA",
+        "INVENTARIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Elimina punto único de fallo central",
+            "Distribuye datos entre múltiples nodos",
+            "Mejora velocidad de consultas locales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "14",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video store shelves inventory",
+        "filename": "parrafo-14.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA FALLIDA",
+      "headline": "Blockbuster usó bases de datos desconectadas sin sincronización",
+      "keywords": [
+        "BLOCKBUSTER",
+        "BASES DATOS AISLADAS",
+        "INVENTARIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada tienda tenía su propio sistema independiente",
+            "Imposible ver inventario en tiempo real entre sucursales",
+            "Generó ineficiencias operativas y pérdida de ventas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store shelves inventory",
+        "filename": "parrafo-15.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO OPERATIVO",
+      "headline": "Cada sucursal conocía su inventario exacto",
+      "keywords": [
+        "INVENTARIO",
+        "TIENDA",
+        "ESTANTES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Control descentralizado por ubicación",
+            "Visibilidad clara de existencias en tiempo real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "16",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person isolation alone dark room",
+        "filename": "parrafo-16.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA CRÍTICO",
+      "headline": "No podía ver ni coordinar con otras áreas",
+      "keywords": [
+        "AISLAMIENTO",
+        "SIN COORDINACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta de visibilidad entre componentes",
+            "Imposibilidad de comunicación efectiva"
+          ]
+        }
+      }
+    },
+    {
+      "id": "17",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store 1985 Dallas",
+        "filename": "parrafo-17.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN",
+      "headline": "Blockbuster abre su primera tienda en Dallas",
+      "keywords": [
+        "BLOCKBUSTER",
+        "1985",
+        "DALLAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1985",
+          "unit": "",
+          "label": "Año de fundación de Blockbuster"
+        }
+      }
+    },
+    {
+      "id": "18",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "old network infrastructure cables",
+        "filename": "parrafo-18.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Infraestructura de red cara y poco confiable",
+      "keywords": [
+        "INFRAESTRUCTURA CARA",
+        "RED INESTABLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Costos elevados de mantenimiento",
+            "Fallos frecuentes del sistema"
+          ]
+        }
+      }
+    },
+    {
+      "id": "19",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "point of sale terminal cashier retail",
+        "filename": "parrafo-19.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DESAFÍO TÉCNICO",
+      "headline": "Miles de puntos de venta en tiempo real inviable",
+      "keywords": [
+        "POS EN TIEMPO REAL",
+        "CONECTIVIDAD",
+        "ESCALABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Limitaciones de infraestructura de red antiguamente",
+            "Latencia prohibitiva entre sistemas dispersos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "20",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store database server",
+        "filename": "parrafo-20.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN ARQUITECTÓNICA",
+      "headline": "Cada tienda tenía base de datos completamente aislada",
+      "keywords": [
+        "BASE DE DATOS AISLADA",
+        "TIENDA RETAIL",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Aislamiento total por ubicación física",
+            "Complejidad operativa en cada sucursal",
+            "Sincronización entre sistemas crítica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "21",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server architecture diagram blueprint",
+        "filename": "parrafo-21.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "SOLUCIÓN TÉCNICA",
+      "headline": "Única arquitectura viable con presupuesto disponible",
+      "keywords": [
+        "ARQUITECTURA",
+        "ESCALA",
+        "PRESUPUESTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Funcionaba a escala requerida",
+            "Ajustada a recursos limitados"
+          ]
+        }
+      }
+    },
+    {
+      "id": "22",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store inventory management system",
+        "filename": "parrafo-22.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OPERACIÓN",
+      "headline": "Cada tienda manejaba catálogos y tarifas independientes",
+      "keywords": [
+        "CATÁLOGO",
+        "TARIFAS DEVOLUCIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Gestión descentralizada de inventarios",
+            "Penalizaciones por devolución variaban entre locales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "local community campaign promotional material",
+        "filename": "parrafo-23.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistema descentralizado por diseño estratégico",
+      "keywords": [
+        "DESCENTRALIZADO",
+        "CAMPAÑAS LOCALES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada región manejaba sus propias campañas",
+            "Estructura planificada no accidental"
+          ]
+        }
+      }
+    },
+    {
+      "id": "24",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "empty digital screen error message",
+        "filename": "parrafo-24.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO HISTÓRICO",
+      "headline": "El fallo no apareció en 1985",
+      "keywords": [
+        "FALLO",
+        "1985",
+        "AUSENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1985",
+          "unit": "",
+          "label": "Año sin aparición del fallo"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster store video rental",
+        "filename": "parrafo-25.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO DIGITAL",
+      "headline": "Blockbuster tardó quince años en intentar alquiler online",
+      "keywords": [
+        "BLOCKBUSTER",
+        "ALQUILER EN LÍNEA",
+        "2000s"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "15",
+          "unit": "años",
+          "label": "Retraso en transformación digital"
+        }
+      }
+    },
+    {
+      "id": "26",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "streaming video service interface",
+        "filename": "parrafo-26.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Plataformas de alquiler en línea compiten con Netflix",
+      "keywords": [
+        "STREAMING",
+        "ALQUILER EN LÍNEA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Distribución digital de contenido audiovisual",
+            "Modelos de suscripción y pago por uso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "27",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "network server real time monitoring",
+        "filename": "parrafo-27.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Acceso inmediato a datos disponibles en la red",
+      "keywords": [
+        "TIEMPO REAL",
+        "RED DISTRIBUIDA",
+        "DISPONIBILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sincronización constante entre servidores",
+            "Visibilidad total del estado del sistema",
+            "Consultas sin latencia crítica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "28",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "database server architecture diagram",
+        "filename": "parrafo-28.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Arquitectura rígida bloqueó integración de bases datos",
+      "keywords": [
+        "ARQUITECTURA",
+        "DIALECTO BD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada base de datos usaba lenguaje propio",
+            "Imposible comunicación entre sistemas",
+            "Diseño monolítico sin estándares"
+          ]
+        }
+      }
+    },
+    {
+      "id": "29",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "warehouse inventory database storage",
+        "filename": "parrafo-29.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Datos de inventario sin formato unificado",
+      "keywords": [
+        "INVENTARIO SIN FORMATO",
+        "DATOS FRAGMENTADOS",
+        "DESORGANIZACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Información dispersa en múltiples sistemas",
+            "Incompatibilidad entre fuentes de datos",
+            "Imposible integración y análisis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "30",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "data center server nodes",
+        "filename": "parrafo-30.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DESAFÍO TÉCNICO",
+      "headline": "Nueve mil nodos requieren reescritura arquitectónica",
+      "keywords": [
+        "NODOS DATOS",
+        "COORDINACIÓN",
+        "ESCALABILIDAD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "9000",
+          "unit": "nodos",
+          "label": "Escala de la infraestructura afectada"
+        }
+      }
+    },
+    {
+      "id": "31",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "server architecture system core",
+        "filename": "parrafo-31.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROYECTO FALLIDO",
+      "headline": "Integración de núcleo duró tres años",
+      "keywords": [
+        "NÚCLEO SISTEMA",
+        "3 AÑOS",
+        "INTEGRACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3",
+          "unit": "años",
+          "label": "Duración del proyecto de integración"
+        }
+      }
+    },
+    {
+      "id": "32",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "money cash stacks hundred dollar bills",
+        "filename": "parrafo-32.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COSTO",
+      "headline": "La inversión costó ciento cincuenta millones de dólares",
+      "keywords": [
+        "150 MILLONES USD",
+        "INVERSIÓN FALLIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "150",
+          "unit": "millones USD",
+          "label": "Costo total de la inversión"
+        }
+      }
+    },
+    {
+      "id": "33",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "streaming video buffering slow",
+        "filename": "parrafo-33.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO CRÍTICO",
+      "headline": "Demasiado lento para competir con Netflix",
+      "keywords": [
+        "LENTITUD",
+        "COMPETENCIA STREAMING"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Velocidad insuficiente frente a competidor",
+            "Incapacidad técnica para mantener ritmo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "34",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-34.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO HISTÓRICO",
+      "headline": "Blockbuster incursionó en alquiler en línea 2004",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2004",
+        "STREAMING"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2004",
+          "unit": "",
+          "label": "Año del lanzamiento del servicio en línea"
+        }
+      }
+    },
+    {
+      "id": "35",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix streaming service interface",
+        "filename": "parrafo-35.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO EMPRESARIAL",
+      "headline": "Netflix alcanzó rentabilidad tras cuatro años",
+      "keywords": [
+        "NETFLIX",
+        "RENTABILIDAD",
+        "CUATRO AÑOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "4",
+          "unit": "años",
+          "label": "Tiempo hasta alcanzar rentabilidad"
+        }
+      }
+    },
+    {
+      "id": "36",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix streaming service interface",
+        "filename": "parrafo-36.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Netflix alcanzó dos millones de suscriptores",
+      "keywords": [
+        "NETFLIX",
+        "2 MILLONES",
+        "SUSCRIPTORES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "millones",
+          "label": "Suscriptores de Netflix"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-37.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Blockbuster Online nunca sostuvo millón y medio",
+      "keywords": [
+        "BLOCKBUSTER",
+        "1.5 MILLONES",
+        "FRACASO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1.5",
+          "unit": "millones",
+          "label": "Suscriptores máximos nunca sostenidos"
+        }
+      }
+    },
+    {
+      "id": "38",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "empty wallet money desk",
+        "filename": "parrafo-38.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "El retraso no fue por falta de dinero",
+      "keywords": [
+        "NO DINERO",
+        "RETRASO",
+        "CAUSA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Otro factor causó el problema",
+            "La economía no era la barrera"
+          ]
+        }
+      }
+    },
+    {
+      "id": "39",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "legacy code technical debt",
+        "filename": "parrafo-39.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA ESTRUCTURAL",
+      "headline": "Quince años de deuda técnica hundieron el proyecto",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "15 AÑOS",
+        "AISLADO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "15",
+          "unit": "años",
+          "label": "de deuda técnica acumulada"
+        }
+      }
+    },
+    {
+      "id": "40",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "project timeline gantt chart",
+        "filename": "parrafo-40.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Proyectos que se extienden de meses a años",
+      "keywords": [
+        "PROYECTO",
+        "TIMELINE",
+        "AÑOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ciclos de desarrollo prolongados",
+            "Planificación a largo plazo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "41",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "penalty fine business contract",
+        "filename": "parrafo-41.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 2",
+      "headline": "Modelo negocio con penalizaciones por retraso",
+      "keywords": [
+        "PENALIZACIONES",
+        "RETRASO",
+        "MODELO NEGOCIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Incentiva cumplimiento de plazos",
+            "Transfiere riesgo al proveedor",
+            "Define consecuencias contractuales claras"
+          ]
+        }
+      }
+    },
+    {
+      "id": "42",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-42.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Blockbuster ganaba 300-400 millones anuales en multas",
+      "keywords": [
+        "BLOCKBUSTER",
+        "CARGOS DEVOLUCIÓN",
+        "300-400 MILLONES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "300-400",
+          "unit": "millones USD",
+          "label": "Ingresos anuales por cargos de devolución tardía"
+        }
+      }
+    },
+    {
+      "id": "43",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "business financial chart growth",
+        "filename": "parrafo-43.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MÉTRICA CLAVE",
+      "headline": "Representaba el dieciséis por ciento ingresos totales",
+      "keywords": [
+        "16%",
+        "INGRESOS",
+        "PROPORCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "16",
+          "unit": "%",
+          "label": "de ingresos totales"
+        }
+      }
+    },
+    {
+      "id": "44",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "business profit money strategy",
+        "filename": "parrafo-44.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "REVELACIÓN",
+      "headline": "Negocio planificado activamente, no accidental",
+      "keywords": [
+        "INGRESOS DISEÑADOS",
+        "ESTRATEGIA DELIBERADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Línea de ingresos intencional",
+            "Defendida desde la estructura empresarial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "45",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "film reels vintage cinema storage",
+        "filename": "parrafo-45.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO COMERCIAL",
+      "headline": "Las películas físicas eran activos con vida útil limitada",
+      "keywords": [
+        "PELÍCULAS FÍSICAS",
+        "ACTIVOS LIMITADOS",
+        "FORMATO OBSOLETO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "limitada",
+          "unit": "",
+          "label": "Vida útil del formato físico"
+        }
+      }
+    },
+    {
+      "id": "46",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "videotape reel storage archive",
+        "filename": "parrafo-46.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TECNICO",
+      "headline": "Cinta sin rotación era inventario muerto",
+      "keywords": [
+        "CINTA VIDEO",
+        "INVENTARIO MUERTO",
+        "NO ROTABA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "rotaciones = pérdida total"
+        }
+      }
+    },
+    {
+      "id": "47",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "late fee penalty notice",
+        "filename": "parrafo-47.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO FINANCIERO",
+      "headline": "Cargos por retraso como penalización al cliente",
+      "keywords": [
+        "CARGOS RETRASO",
+        "PENALIZACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cobro adicional por pagos tardíos",
+            "Incentivo para cumplir plazos",
+            "Fuente de ingresos empresarial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "48",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "rotating catalog mechanism display",
+        "filename": "parrafo-48.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FUNCIÓN CLAVE",
+      "headline": "Mecanismo que garantizaba la rotación del catálogo",
+      "keywords": [
+        "ROTACIÓN",
+        "CATÁLOGO",
+        "MECANISMO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sistema de rotación automática de inventario",
+            "Exposición dinámica de contenido"
+          ]
+        }
+      }
+    },
+    {
+      "id": "49",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "empty store shelves books",
+        "filename": "parrafo-49.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "La demanda obliga a mantener libros en estantes",
+      "keywords": [
+        "PRESIÓN DEMANDA",
+        "ESTANTES VACÍOS",
+        "TÍTULOS POPULARES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin presión los títulos desaparecen semanas",
+            "La competencia mantiene inventario constante"
+          ]
+        }
+      }
+    },
+    {
+      "id": "50",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "financial data analytics charts",
+        "filename": "parrafo-50.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS FINANCIERO",
+      "headline": "Modelo financiero eficiente y rentable",
+      "keywords": [
+        "EFICIENCIA",
+        "FINANCIERO",
+        "MODELO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Eficiencia operacional del modelo"
+        }
+      }
+    },
+    {
+      "id": "51",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "warehouse inventory cost management",
+        "filename": "parrafo-51.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO FINANCIERO",
+      "headline": "Las penalizaciones financiaban la adquisición de inventario",
+      "keywords": [
+        "PENALIZACIONES",
+        "MÁRGENES OPERATIVOS",
+        "INVENTARIO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "+",
+          "unit": "",
+          "label": "Márgenes operativos positivos"
+        }
+      }
+    },
+    {
+      "id": "52",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "rental business tight budget cash flow",
+        "filename": "parrafo-52.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Negocio de alquiler con márgenes financieros muy estrechos",
+      "keywords": [
+        "ALQUILER",
+        "PRESUPUESTO AJUSTADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Flujo de caja limitado y vulnerable",
+            "Dependencia crítica de pagos puntuales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "53",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix dvd rental service",
+        "filename": "parrafo-53.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO DISRUPTIVO",
+      "headline": "Netflix eliminó cargos por devolución tardía en 2000",
+      "keywords": [
+        "NETFLIX",
+        "2000",
+        "SIN CARGOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año de eliminación de cargos por retraso"
+        }
+      }
+    },
+    {
+      "id": "54",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "friction point mechanism",
+        "filename": "parrafo-54.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS",
+      "headline": "La fricción fue el punto central entendido",
+      "keywords": [
+        "FRICCIÓN",
+        "PUNTO CLAVE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Fricción no era obstáculo sino esencial",
+            "Comprensión profunda del mecanismo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "55",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-55.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "REACCIÓN",
+      "headline": "Blockbuster intentó responder al dolor del cliente",
+      "keywords": [
+        "BLOCKBUSTER",
+        "RESPUESTA MERCADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Estrategia defensiva ante competencia emergente",
+            "Adaptación tardía a nuevos modelos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "56",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store interior 2000s",
+        "filename": "parrafo-56.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PUNTO INFLEXIÓN",
+      "headline": "CEO Antioco toma decisión estratégica en Blockbuster 2004",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2004",
+        "DECISIÓN CEO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2004",
+          "unit": "",
+          "label": "Año de decisión ejecutiva clave"
+        }
+      }
+    },
+    {
+      "id": "57",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "customer satisfaction metrics dashboard",
+        "filename": "parrafo-57.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RESULTADO POSITIVO",
+      "headline": "Penalidades mejoraron satisfacción y suscripciones",
+      "keywords": [
+        "SATISFACCIÓN",
+        "SUSCRIPCIONES",
+        "CRECIMIENTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Impacto inmediato en satisfacción"
+        }
+      }
+    },
+    {
+      "id": "58",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster dvd rental store interior",
+        "filename": "parrafo-58.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA INTERNA",
+      "headline": "Blockbuster Online ganó terreno pero fracasó internamente",
+      "keywords": [
+        "BLOCKBUSTER",
+        "PROBLEMA INTERNO",
+        "RENTAL VIDEO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Conflicto entre unidades de negocio",
+            "Resistencia organizacional al cambio digital",
+            "Infraestructura legacy incompatible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "59",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "carl icahn businessman portrait",
+        "filename": "parrafo-59.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Accionistas mayoritarios liderados por Carl Icahn",
+      "keywords": [
+        "CARL ICAHN",
+        "ACCIONISTAS",
+        "CONTROL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Icahn ejerce control sobre decisiones corporativas",
+            "Concentración de poder en inversores clave"
+          ]
+        }
+      }
+    },
+    {
+      "id": "60",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "business graph decline chart",
+        "filename": "parrafo-60.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "IMPACTO ECONÓMICO",
+      "headline": "Eliminación de penalizaciones como destrucción de valor",
+      "keywords": [
+        "PENALIZACIONES",
+        "VALOR",
+        "DESTRUCCIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Perspectiva de pérdida financiera inmediata",
+            "Erosión de valor accionarial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "61",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "financial report document data",
+        "filename": "parrafo-61.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS FINANCIERO",
+      "headline": "Los ingresos desaparecieron de los reportes",
+      "keywords": [
+        "INGRESOS",
+        "REPORTES",
+        "AUSENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "ingresos",
+          "label": "La línea que dejó de existir"
+        }
+      }
+    },
+    {
+      "id": "62",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "corporate boardroom executive meeting",
+        "filename": "parrafo-62.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Icahn presionó y empresa revirtió decisión parcial",
+      "keywords": [
+        "ICAHN",
+        "CEO CAMBIO",
+        "REVERSIÓN PARCIAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reemplazo de director ejecutivo",
+            "Cambio de rumbo corporativo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "63",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-63.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA COMERCIAL",
+      "headline": "Blockbuster atrapado entre dos modelos incompatibles",
+      "keywords": [
+        "BLOCKBUSTER",
+        "MODELO INCOMPATIBLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Transición entre formatos obsoletos",
+            "Resistencia al cambio digital",
+            "Colapso por inflexibilidad"
+          ]
+        }
+      }
+    },
+    {
+      "id": "64",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "businessman client leaving office",
+        "filename": "parrafo-64.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA COMERCIAL",
+      "headline": "Los clientes abandonaban el modelo antiguo",
+      "keywords": [
+        "CLIENTES ABANDONAN",
+        "MODELO ANTIGUO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La defensa del sistema se volvía imposible",
+            "Los usuarios migraban a alternativas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "65",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "financial contract debt obligation",
+        "filename": "parrafo-65.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO ECONÓMICO",
+      "headline": "Dependencia de ingresos en obligaciones financieras",
+      "keywords": [
+        "COMPROMISO FINANCIERO",
+        "INGRESOS DEPENDIENTES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Compromisos financieros atados a flujos de ingresos",
+            "Imposibilidad de transición sin riesgo económico"
+          ]
+        }
+      }
+    },
+    {
+      "id": "66",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "delete button computer screen",
+        "filename": "parrafo-66.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ACCIÓN",
+      "headline": "El modelo eliminaba los datos",
+      "keywords": [
+        "ELIMINACIÓN",
+        "MODELO"
+      ]
+    },
+    {
+      "id": "67",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store rental",
+        "filename": "parrafo-67.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Blockbuster perdió 400 millones por penalizaciones",
+      "keywords": [
+        "BLOCKBUSTER",
+        "400 MILLONES",
+        "PENALIZACIONES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "400",
+          "unit": "millones de dólares",
+          "label": "Costo de eliminar y revertir penalizaciones"
+        }
+      }
+    },
+    {
+      "id": "68",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "business revenue decline chart",
+        "filename": "parrafo-68.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CRÍTICO",
+      "headline": "Ingresos en caída sin plan de recuperación",
+      "keywords": [
+        "INGRESOS",
+        "ESTRATEGIA FALLIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta de estrategia de sustitución",
+            "Ausencia de modelo alternativo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "69",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "debt financial crisis graph",
+        "filename": "parrafo-69.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CRÍTICO",
+      "headline": "En 2007 la deuda alcanzaba mil millones de dólares",
+      "keywords": [
+        "DEUDA CORPORATIVA",
+        "2007",
+        "MIL MILLONES USD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "mil millones USD",
+          "label": "Deuda acumulada en 2007"
+        }
+      }
+    },
+    {
+      "id": "70",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "internal business failure collapse",
+        "filename": "parrafo-70.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS",
+      "headline": "El fracaso fue resultado de decisiones internas",
+      "keywords": [
+        "FRACASO INTERNO",
+        "CAUSA DIRECTA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "No fue culpa de competidores externos",
+            "Las causas vinieron desde adentro"
+          ]
+        }
+      }
+    },
+    {
+      "id": "71",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "corporate structure collapse revenue model",
+        "filename": "parrafo-71.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA ESTRUCTURAL",
+      "headline": "Incapacidad de transformar modelo sin quebrar compromisos",
+      "keywords": [
+        "ESTRUCTURA INTERNA",
+        "COLAPSO INGRESOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Rigidez en estructura de ingresos",
+            "Riesgo de colapso operacional"
+          ]
+        }
+      }
+    },
+    {
+      "id": "72",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "investor trading stock market",
+        "filename": "parrafo-72.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO FINANCIERO",
+      "headline": "Inversores atrapados en modelo de negocio fallido",
+      "keywords": [
+        "INVERSORES",
+        "MODELO FALLIDO",
+        "DEPENDENCIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dependencia de arquitectura defectuosa",
+            "Pérdida de confianza en sistema",
+            "Impacto económico irreversible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "73",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store interior shelves products",
+        "filename": "parrafo-73.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 3",
+      "headline": "La tienda física como núcleo estratégico",
+      "keywords": [
+        "TIENDA FÍSICA",
+        "RETAIL",
+        "NEGOCIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Espacio físico genera experiencia única",
+            "Interacción directa con clientes",
+            "Inventario visible y accesible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "74",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-74.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO OPERATIVO",
+      "headline": "Blockbuster apostó todo a la proximidad física",
+      "keywords": [
+        "PROXIMIDAD FÍSICA",
+        "BLOCKBUSTER",
+        "MODELO OPERATIVO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "proximidad",
+          "unit": "",
+          "label": "Fundamento fallido del modelo"
+        }
+      }
+    },
+    {
+      "id": "75",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store shopping mall entrance",
+        "filename": "parrafo-75.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA COMERCIAL",
+      "headline": "Ubicaron tiendas a menos de diez minutos en auto",
+      "keywords": [
+        "TIENDAS CERCANAS",
+        "CONVENIENCIA UBICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "minutos",
+          "label": "Distancia máxima en automóvil"
+        }
+      }
+    },
+    {
+      "id": "76",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "global market expansion map",
+        "filename": "parrafo-76.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Presencia geográfica como ventaja competitiva declarada",
+      "keywords": [
+        "MERCADOS GLOBALES",
+        "VENTAJA COMPETITIVA",
+        "DESPLIEGUE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Operación en múltiples mercados simultáneos",
+            "Distribución territorial diferenciaba del rival"
+          ]
+        }
+      }
+    },
+    {
+      "id": "77",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "1990s home entertainment vhs dvd physical media",
+        "filename": "parrafo-77.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Los noventa exigían medios físicos para entretenimiento hogareño",
+      "keywords": [
+        "AÑOS 90",
+        "ENTRETENIMIENTO FÍSICO",
+        "SOPORTE TANGIBLE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1990",
+          "unit": "década",
+          "label": "Era de entretenimiento basado en soporte físico"
+        }
+      }
+    },
+    {
+      "id": "78",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "film reel vintage projector",
+        "filename": "parrafo-78.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO HISTÓRICO",
+      "headline": "Las películas requerían objetos físicos para llegar al cliente",
+      "keywords": [
+        "PELÍCULAS FÍSICAS",
+        "DISTRIBUCIÓN TANGIBLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El cine dependía de soportes materiales",
+            "La proximidad física era requisito comercial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "79",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video store interior",
+        "filename": "parrafo-79.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO DE ESTUDIO",
+      "headline": "Blockbuster fue imperio de tiendas físicas de alquiler",
+      "keywords": [
+        "BLOCKBUSTER",
+        "TIENDA FÍSICA",
+        "IMPERIO RETAIL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "9000",
+          "unit": "tiendas",
+          "label": "Máximo de sucursales en apogeo"
+        }
+      }
+    },
+    {
+      "id": "80",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "home entertainment distribution network infrastructure",
+        "filename": "parrafo-80.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "Infraestructura de distribución de entretenimiento en hogares norteamericanos",
+      "keywords": [
+        "DISTRIBUCIÓN",
+        "ENTRETENIMIENTO DOMÉSTICO",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Redes de cable y transmisión televisiva",
+            "Servidores y centros de datos globales",
+            "Conexión última milla al consumidor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "81",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "network expansion infrastructure 1990s",
+        "filename": "parrafo-81.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN ESTRATÉGICA",
+      "headline": "Expansión de red era racional a finales noventa",
+      "keywords": [
+        "EXPANSIÓN",
+        "AÑOS 90",
+        "RED"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Infraestructura creciente justificaba inversión",
+            "Demanda de conectividad acelerada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "82",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store expansion commercial",
+        "filename": "parrafo-82.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA COMERCIAL",
+      "headline": "Más tiendas generaba más ingresos y alcance",
+      "keywords": [
+        "COBERTURA",
+        "CLIENTES",
+        "INGRESOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Expansión de sucursales aumentaba cobertura geográfica",
+            "Mayor presencia física atraía más clientes",
+            "Modelo de negocio basado en volumen"
+          ]
+        }
+      }
+    },
+    {
+      "id": "83",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store lease contract",
+        "filename": "parrafo-83.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA FINANCIERA",
+      "headline": "Tiendas físicas generaban pasivos fijos de años",
+      "keywords": [
+        "PASIVO FIJO",
+        "ARRENDAMIENTO LARGO PLAZO",
+        "TIENDA FÍSICA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5-10",
+          "unit": "años",
+          "label": "Duración típica de contratos de arrendamiento"
+        }
+      }
+    },
+    {
+      "id": "84",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "digital distribution warehouse logistics",
+        "filename": "parrafo-84.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TRANSICIÓN COMERCIAL",
+      "headline": "Mercado migraba a distribución digital",
+      "keywords": [
+        "DISTRIBUCIÓN DIGITAL",
+        "INVENTARIO",
+        "MERCADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Infraestructura física quedaba obsoleta",
+            "Inventario inmovilizado se convirtió en pasivo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "85",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "contract document legal binding",
+        "filename": "parrafo-85.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Contratos que no podían cancelarse en 2008",
+      "keywords": [
+        "CONTRATO",
+        "CANCELACIÓN",
+        "2008"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2008",
+          "unit": "",
+          "label": "Año de crisis financiera global"
+        }
+      }
+    },
+    {
+      "id": "86",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-86.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FALLIDA",
+      "headline": "Blockbuster intentó reducir tiendas para financiar transformación digital",
+      "keywords": [
+        "BLOCKBUSTER",
+        "CIERRE TIENDAS",
+        "TRANSICIÓN DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Estrategia de liberación de capital fracasó",
+            "Demasiado tarde para la transición digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "87",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "contract legal documents binding",
+        "filename": "parrafo-87.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CRÍTICO",
+      "headline": "Atrapada en obligaciones contractuales de cientos de millones",
+      "keywords": [
+        "CONTRATO",
+        "MILLONES DÓLARES",
+        "OBLIGACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "cientos",
+          "unit": "millones de dólares",
+          "label": "Obligaciones contractuales totales"
+        }
+      }
+    },
+    {
+      "id": "88",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store closed shuttered commercial",
+        "filename": "parrafo-88.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA FINANCIERO",
+      "headline": "Cerrar tiendas implicaba pagar ruptura de contrato",
+      "keywords": [
+        "ARRENDAMIENTO",
+        "CIERRE TIENDA",
+        "COSTO FIJO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arrendamientos a largo plazo generaban pasivos",
+            "Costos fijos impedían decisiones rápidas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "89",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix streaming service logo",
+        "filename": "parrafo-89.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO DIFERENTE",
+      "headline": "Netflix eliminó la tienda física del modelo de negocio",
+      "keywords": [
+        "NETFLIX",
+        "SIN TIENDAS",
+        "STREAMING"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Distribución digital eliminó intermediarios",
+            "Acceso directo al consumidor desde casa",
+            "Revolucionó cómo se consume contenido"
+          ]
+        }
+      }
+    },
+    {
+      "id": "90",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "cd distribution center warehouse",
+        "filename": "parrafo-90.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INFRAESTRUCTURA",
+      "headline": "Centros distribución CD y servidores desde 2007",
+      "keywords": [
+        "DISTRIBUCIÓN",
+        "SERVIDORES 2007"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2007",
+          "unit": "",
+          "label": "Año expansión a servidores"
+        }
+      }
+    },
+    {
+      "id": "91",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "warehouse distribution center",
+        "filename": "parrafo-91.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO ECONÓMICO",
+      "headline": "Costos fijos ligados al crecimiento, no ubicaciones",
+      "keywords": [
+        "COSTOS FIJOS",
+        "CRECIMIENTO ESCALABLE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Estructura de gastos proporcional al volumen",
+            "Eficiencia operativa sin expansión física"
+          ]
+        }
+      }
+    },
+    {
+      "id": "92",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "business competition flexibility contrast",
+        "filename": "parrafo-92.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Competidor escalaba mientras Blockbuster se quedaba atrás",
+      "keywords": [
+        "AGILIDAD",
+        "BLOQUEO COMPETITIVO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Flexibilidad operativa versus rigidez corporativa",
+            "Capacidad de adaptación a mercados cambiantes"
+          ]
+        }
+      }
+    },
+    {
+      "id": "93",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-93.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO HISTÓRICO",
+      "headline": "Blockbuster declara quiebra en 2010",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2010",
+        "QUIEBRA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2010",
+          "unit": "",
+          "label": "Año del colapso de Blockbuster"
+        }
+      }
+    },
+    {
+      "id": "94",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "office building lease contract",
+        "filename": "parrafo-94.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Compromisos de arrendamiento sin cancelar por novecientos millones",
+      "keywords": [
+        "ARRENDAMIENTO",
+        "900 MILLONES USD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "900",
+          "unit": "millones USD",
+          "label": "Compromisos de arrendamiento no cancelables"
+        }
+      }
+    },
+    {
+      "id": "95",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "debt financial comparison chart",
+        "filename": "parrafo-95.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "La cifra superó toda la deuda consolidada",
+      "keywords": [
+        "DEUDA FINANCIERA",
+        "CIFRA MAYOR"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Magnitud comparativa de la obligación",
+            "Impacto financiero corporativo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "96",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store network decline",
+        "filename": "parrafo-96.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO COMERCIAL",
+      "headline": "La red minorista que fue fortaleza se tornó debilidad",
+      "keywords": [
+        "RED TIENDAS",
+        "VENTAJA PERDIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sobrecapacidad de locales físicos",
+            "Costos operativos insostenibles",
+            "Transición al e-commerce acelerada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "97",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person paralyzed immobile",
+        "filename": "parrafo-97.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "La parálisis impedía cualquier movimiento",
+      "keywords": [
+        "PARÁLISIS",
+        "INMÓVIL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Pérdida total de capacidad motora",
+            "Cuerpo completamente inmovilizado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "98",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "Netflix DVD rental service 2000",
+        "filename": "parrafo-98.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 4",
+      "headline": "Rechazo a comprar Netflix cuando era startup incipiente",
+      "keywords": [
+        "NETFLIX 2000",
+        "RECHAZO COMPRA",
+        "DVD"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año del rechazo de adquisición"
+        }
+      }
+    },
+    {
+      "id": "99",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix dvd rental store 2000",
+        "filename": "parrafo-99.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN",
+      "headline": "Netflix nace en 2000 de mano de Hastings y Randolph",
+      "keywords": [
+        "NETFLIX",
+        "AÑO 2000",
+        "COFUNDADORES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año de fundación de Netflix"
+        }
+      }
+    },
+    {
+      "id": "100",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-100.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Viajaron a Dallas para reunirse con ejecutivos de Blockbuster",
+      "keywords": [
+        "BLOCKBUSTER",
+        "DALLAS",
+        "EJECUTIVOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reunión corporativa en sede Blockbuster",
+            "Viaje de negocios a Dallas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "101",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix dvd rental history",
+        "filename": "parrafo-101.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OPORTUNIDAD PERDIDA",
+      "headline": "Netflix se ofreció en venta por cincuenta millones dólares",
+      "keywords": [
+        "NETFLIX",
+        "50 MILLONES",
+        "VENTA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "50",
+          "unit": "millones de dólares",
+          "label": "Precio ofrecido de Netflix en venta"
+        }
+      }
+    },
+    {
+      "id": "102",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix early streaming service",
+        "filename": "parrafo-102.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MOMENTO CRÍTICO",
+      "headline": "Netflix con 300 mil suscriptores y pérdidas económicas",
+      "keywords": [
+        "NETFLIX",
+        "300K SUSCRIPTORES",
+        "PÉRDIDAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "300",
+          "unit": "mil suscriptores",
+          "label": "Base inicial de Netflix en crisis"
+        }
+      }
+    },
+    {
+      "id": "103",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "computer screen data 2000s",
+        "filename": "parrafo-103.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN RACIONAL",
+      "headline": "Rechazar oferta tenía justificación con datos disponibles entonces",
+      "keywords": [
+        "RECHAZO OFERTA",
+        "DATA 2000",
+        "DECISIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año de la decisión"
+        }
+      }
+    },
+    {
+      "id": "104",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "dvd mail rental service",
+        "filename": "parrafo-104.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN",
+      "headline": "Netflix comenzó como servicio postal de alquiler DVD",
+      "keywords": [
+        "NETFLIX",
+        "ALQUILER DVD",
+        "CORREO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modelo de negocio: envío por correo",
+            "Operaba con pérdidas iniciales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "105",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "home network server streaming",
+        "filename": "parrafo-105.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DESAFÍO TÉCNICO",
+      "headline": "Streaming de video era inviable en redes domésticas",
+      "keywords": [
+        "RED DOMÉSTICA",
+        "STREAMING VIDEO",
+        "ESCALA TÉCNICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ancho de banda limitado en routers antiguos",
+            "Infraestructura insuficiente para múltiples usuarios",
+            "Tecnología de compresión inadecuada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "106",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "dial up modem computer 2000s",
+        "filename": "parrafo-106.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Velocidad internet promedio en EE.UU. año 2000",
+      "keywords": [
+        "AÑO 2000",
+        "VELOCIDAD INTERNET",
+        "ESTADOS UNIDOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "56",
+          "unit": "kbps",
+          "label": "Velocidad máxima teórica dial-up"
+        }
+      }
+    },
+    {
+      "id": "107",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "slow internet connection buffering",
+        "filename": "parrafo-107.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Un megabyte por segundo insuficiente para video",
+      "keywords": [
+        "1 MB/S",
+        "VIDEO BUFFERING",
+        "VELOCIDAD INSUFICIENTE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "MB/s",
+          "label": "Velocidad insuficiente para video"
+        }
+      }
+    },
+    {
+      "id": "108",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-108.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Blockbuster no erró en análisis técnico año 2000",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2000",
+        "MERCADO TÉCNICO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año de evaluación del mercado"
+        }
+      }
+    },
+    {
+      "id": "109",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "crystal ball fortune teller dark",
+        "filename": "parrafo-109.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PREDICCIÓN FALLIDA",
+      "headline": "Subestimaron la rapidez del cambio",
+      "keywords": [
+        "ERROR",
+        "VELOCIDAD",
+        "CAMBIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Pronóstico incorrecto sobre transformación",
+            "Velocidad real superó expectativas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "110",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "business handshake negotiation",
+        "filename": "parrafo-110.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS",
+      "headline": "El error no fue rechazar la oferta",
+      "keywords": [
+        "ERROR",
+        "DECISIÓN",
+        "RECHAZO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La oferta misma no era el problema",
+            "El verdadero fallo fue otro"
+          ]
+        }
+      }
+    },
+    {
+      "id": "111",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "corporate boardroom meeting decision",
+        "filename": "parrafo-111.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS RAÍZ",
+      "headline": "Falta mecanismo interno para revisar decisiones",
+      "keywords": [
+        "MECANISMO REVISIÓN",
+        "DECISIÓN FIJA",
+        "CAMBIO CONDICIONES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin flexibilidad ante cambios del mercado",
+            "Decisiones se mantienen sin evaluación periódica",
+            "Rigidez organizacional selló el fracaso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "112",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software development environment 2000s",
+        "filename": "parrafo-112.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Técnicas del entorno entre 2000 y 2005",
+      "keywords": [
+        "ENTORNO TÉCNICO",
+        "2000-2005"
+      ]
+    },
+    {
+      "id": "113",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "internet speed home connection",
+        "filename": "parrafo-113.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Velocidad internet hogares creció ocho veces",
+      "keywords": [
+        "VELOCIDAD CONEXIÓN",
+        "8X CRECIMIENTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "8",
+          "unit": "x",
+          "label": "Crecimiento velocidad conexión promedio"
+        }
+      }
+    },
+    {
+      "id": "114",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "video streaming server technology",
+        "filename": "parrafo-114.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO TÉCNICO",
+      "headline": "En 2005 el streaming de video en calidad estándar era viable",
+      "keywords": [
+        "STREAMING VIDEO",
+        "2005",
+        "CALIDAD ESTÁNDAR"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2005",
+          "unit": "",
+          "label": "Año del primer streaming viable"
+        }
+      }
+    },
+    {
+      "id": "115",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix streaming platform 2006",
+        "filename": "parrafo-115.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO HISTÓRICO",
+      "headline": "Netflix inicia desarrollo de plataforma streaming",
+      "keywords": [
+        "NETFLIX",
+        "2006",
+        "STREAMING"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "",
+          "label": "Año de inicio del desarrollo streaming"
+        }
+      }
+    },
+    {
+      "id": "116",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store rental",
+        "filename": "parrafo-116.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO ESTRATÉGICO",
+      "headline": "Blockbuster lanzó sin revisar cambios estratégicos",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2007",
+        "ESTRATEGIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2007",
+          "unit": "",
+          "label": "Año del lanzamiento sin estrategia integrada"
+        }
+      }
+    },
+    {
+      "id": "117",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "network infrastructure server cables",
+        "filename": "parrafo-117.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Infraestructura de red con decisiones comerciales definidas",
+      "keywords": [
+        "INFRAESTRUCTURA RED",
+        "DECISIONES NEGOCIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura establecida según objetivos",
+            "Soporte técnico a estrategia empresarial"
+          ]
+        }
+      }
+    },
+    {
+      "id": "118",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "audit document review folder",
+        "filename": "parrafo-118.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Evaluación del 2000 nunca fue revisada",
+      "keywords": [
+        "EVALUACIÓN",
+        "2000",
+        "SIN REVISIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin verificación en 2003",
+            "Sin verificación en 2005"
+          ]
+        }
+      }
+    },
+    {
+      "id": "119",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "video streaming server infrastructure",
+        "filename": "parrafo-119.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO TÉCNICO",
+      "headline": "La viabilidad técnica del streaming cambió el panorama",
+      "keywords": [
+        "STREAMING",
+        "VIABILIDAD TÉCNICA",
+        "INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Infraestructura de servidores mejoró exponencialmente",
+            "Ancho de banda se volvió económicamente accesible"
+          ]
+        }
+      }
+    },
+    {
+      "id": "120",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-120.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO ORGANIZACIONAL",
+      "headline": "Blockbuster ignoró la amenaza competitiva",
+      "keywords": [
+        "AMENAZA NO EVALUADA",
+        "COMPLACENCIA CORPORATIVA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta de responsabilidad estratégica",
+            "Ejecutivos desconectados del mercado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "121",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix streaming service 2007",
+        "filename": "parrafo-121.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO FUNDACIONAL",
+      "headline": "Netflix lanzó servicio streaming en 2007",
+      "keywords": [
+        "NETFLIX",
+        "2007",
+        "STREAMING"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2007",
+          "unit": "",
+          "label": "Año del lanzamiento del streaming"
+        }
+      }
+    },
+    {
+      "id": "122",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "subscription numbers growth chart",
+        "filename": "parrafo-122.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "7.5 millones de suscriptores al cierre de 2007",
+      "keywords": [
+        "7.5 MILLONES",
+        "SUSCRIPTORES",
+        "2007"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "7.5",
+          "unit": "millones",
+          "label": "Suscriptores al cierre de 2007"
+        }
+      }
+    },
+    {
+      "id": "123",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-123.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Blockbuster lanzó servicio de streaming recién en 2008",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2008",
+        "TRANSMISIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2008",
+          "unit": "año",
+          "label": "Lanzamiento del servicio de transmisión"
+        }
+      }
+    },
+    {
+      "id": "124",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "fragmented architecture server diagram",
+        "filename": "parrafo-124.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Plataforma construida sobre arquitectura fragmentada",
+      "keywords": [
+        "ARQUITECTURA FRAGMENTADA",
+        "PLATAFORMA TÉCNICA",
+        "CATÁLOGO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Catálogo limitado por diseño",
+            "Sistema heredado sin modernizar"
+          ]
+        }
+      }
+    },
+    {
+      "id": "125",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "warehouse inventory system warehouse",
+        "filename": "parrafo-125.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Sistema de inventario quedó obsoleto para 2010",
+      "keywords": [
+        "INVENTARIO",
+        "2010",
+        "OBSOLETO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2010",
+          "unit": "",
+          "label": "Año en que se volvió irrelevante"
+        }
+      }
+    },
+    {
+      "id": "126",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "Netflix DVD rental service 2000",
+        "filename": "parrafo-126.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FALLIDA",
+      "headline": "El costo real de rechazar Netflix superó 50 millones",
+      "keywords": [
+        "NETFLIX 2000",
+        "COSTO OPORTUNIDAD",
+        "ADQUISICIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "50",
+          "unit": "millones USD",
+          "label": "Precio inicial rechazado por Blockbuster"
+        }
+      }
+    },
+    {
+      "id": "127",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "acquisition deal tech innovation loss",
+        "filename": "parrafo-127.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CLAVE",
+      "headline": "La adquisición sin años de desarrollo tecnológico",
+      "keywords": [
+        "ADQUISICIÓN",
+        "DESARROLLO PERDIDO",
+        "INNOVACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Pérdida de innovación acumulada",
+            "Oportunidad estratégica fallida",
+            "Brecha tecnológica no cubierta"
+          ]
+        }
+      }
+    },
+    {
+      "id": "128",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "code review debugging laptop screen",
+        "filename": "parrafo-128.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 5",
+      "headline": "Acumulación de deuda técnica en sistema recomendación",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "SISTEMA RECOMENDACIÓN",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Código heredado sin refactorización",
+            "Mantenimiento y escalabilidad comprometidos",
+            "Errores y fallos en cascada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "129",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video rental store shelf",
+        "filename": "parrafo-129.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Recomendaciones manuales basadas en experiencia del personal",
+      "keywords": [
+        "RECOMENDACIÓN MANUAL",
+        "BLOCKBUSTER",
+        "EXPERIENCIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin algoritmos ni análisis de datos",
+            "Dependía de conocimiento humano directo",
+            "Escalaba lentamente con crecimiento"
+          ]
+        }
+      }
+    },
+    {
+      "id": "130",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "rental store employee computer system",
+        "filename": "parrafo-130.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO TÉCNICO",
+      "headline": "Sin algoritmo centralizado para analizar historiales de alquiler",
+      "keywords": [
+        "ALGORITMO CENTRALIZADO",
+        "HISTORIAL ALQUILER"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada empleado operaba sin datos consolidados",
+            "Imposible identificar patrones de cliente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "131",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "shopkeeper suggesting products customer",
+        "filename": "parrafo-131.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO COMERCIAL",
+      "headline": "Vendedor local sugería títulos según cliente",
+      "keywords": [
+        "VENDEDOR LOCAL",
+        "CONOCIMIENTO CLIENTE",
+        "INTERACCIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Cada venta dependía de conocimiento local",
+            "Interacción directa entre vendedor y cliente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "132",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store physical shop interior",
+        "filename": "parrafo-132.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Decisión razonable en modelo tienda física",
+      "keywords": [
+        "TIENDA FÍSICA",
+        "MODELO TRADICIONAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Lógica aplicable a comercio presencial",
+            "Estrategia válida antes digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "133",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "shopkeeper familiar customer service",
+        "filename": "parrafo-133.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HUMANO",
+      "headline": "El empleado recordaba preferencias de clientes",
+      "keywords": [
+        "CLIENTE HABITUAL",
+        "RELACIÓN PERSONAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Conocimiento personal de cada cliente",
+            "Servicio diferenciado y personalizado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "134",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "recommendation algorithm visualization",
+        "filename": "parrafo-134.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CARACTERÍSTICA",
+      "headline": "Sistema hacía recomendaciones personalizadas de forma natural",
+      "keywords": [
+        "RECOMENDACIONES",
+        "PERSONALIZADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Algoritmo adaptaba sugerencias al usuario",
+            "Experiencia más intuitiva y fluida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "135",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "team collaboration office discussion",
+        "filename": "parrafo-135.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistema de recomendación basado en capital humano distribuido",
+      "keywords": [
+        "RECOMENDACIÓN HUMANA",
+        "DISTRIBUIDO",
+        "SIN CÓDIGO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "No depende de código centralizado",
+            "Conocimiento repartido entre personas",
+            "Decisiones colaborativas y descentralizadas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "136",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "knowledge transfer documentation",
+        "filename": "parrafo-136.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "El conocimiento no se registraba ni documentaba",
+      "keywords": [
+        "CONOCIMIENTO NO CAPTURADO",
+        "PÉRDIDA DE DATOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La información se perdía sin dejar rastro",
+            "Falta de sistemas para preservar aprendizajes"
+          ]
+        }
+      }
+    },
+    {
+      "id": "137",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "data storage server offline",
+        "filename": "parrafo-137.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LIMITACIÓN TÉCNICA",
+      "headline": "Datos sin almacenamiento ni portabilidad entre canales",
+      "keywords": [
+        "SIN ALMACENAMIENTO",
+        "CANAL ÚNICO",
+        "DATOS ATRAPADOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Información confinada a una plataforma",
+            "Imposible migrar a otros sistemas",
+            "Pérdida de datos al cambio"
+          ]
+        }
+      }
+    },
+    {
+      "id": "138",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix recommendation algorithm data",
+        "filename": "parrafo-138.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA CLAVE",
+      "headline": "Netflix fundó su éxito en datos",
+      "keywords": [
+        "NETFLIX",
+        "RECOMENDACIÓN",
+        "DATOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "día",
+          "label": "Netflix implementó recomendaciones desde su primer día"
+        }
+      }
+    },
+    {
+      "id": "139",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "machine learning data flow",
+        "filename": "parrafo-139.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Cada interacción del usuario entrenaba mejor el algoritmo",
+      "keywords": [
+        "DATOS USUARIO",
+        "MODELO MEJORA",
+        "PATRÓN COMPORTAMIENTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Alquileres generaban información para mejorar predicciones",
+            "Calificaciones refinaban los modelos de recomendación",
+            "Patrones de comportamiento aceleraban aprendizaje automático"
+          ]
+        }
+      }
+    },
+    {
+      "id": "140",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix prize competition 2006",
+        "filename": "parrafo-140.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO HISTÓRICO",
+      "headline": "Netflix lanzó su premio de predicción en 2006",
+      "keywords": [
+        "NETFLIX PRIZE",
+        "2006",
+        "COMPETENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2006",
+          "unit": "año",
+          "label": "Lanzamiento del Netflix Prize"
+        }
+      }
+    },
+    {
+      "id": "141",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "machine learning competition prize",
+        "filename": "parrafo-141.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DESAFÍO TÉCNICO",
+      "headline": "Competencia con premio de un millón de dólares",
+      "keywords": [
+        "COMPETENCIA",
+        "MILLÓN DÓLARES",
+        "ALGORITMO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "millón de dólares",
+          "label": "Premio a la competencia"
+        }
+      }
+    },
+    {
+      "id": "142",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "data center server farm",
+        "filename": "parrafo-142.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Más de cuarenta mil equipos participaron",
+      "keywords": [
+        "40 MIL EQUIPOS",
+        "RECOMENDACIÓN",
+        "PARTICIPACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "40",
+          "unit": "mil",
+          "label": "equipos que participaron"
+        }
+      }
+    },
+    {
+      "id": "143",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "algorithm optimization code screen",
+        "filename": "parrafo-143.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Algoritmo de recomendación como desafío ingenieril público",
+      "keywords": [
+        "ALGORITMO",
+        "INGENIERÍA",
+        "RECOMENDACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Mejora transformada en problema de ingeniería",
+            "Solución pública y documentada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "144",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video store interior",
+        "filename": "parrafo-144.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA TÉCNICO",
+      "headline": "Blockbuster carecía de datos históricos de clientes",
+      "keywords": [
+        "SIN DATOS",
+        "CLIENTE",
+        "HISTÓRICO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Nunca capturó información sistemáticamente",
+            "Perdió ventaja competitiva por falta",
+            "No adaptó estrategia a preferencias"
+          ]
+        }
+      }
+    },
+    {
+      "id": "145",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "recommendation algorithm data visualization",
+        "filename": "parrafo-145.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistema de recomendación en plataforma online",
+      "keywords": [
+        "ALGORITMO",
+        "RECOMENDACIÓN",
+        "PLATAFORMA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Algoritmo selecciona contenido personalizado",
+            "Procesa datos de usuario masivamente"
+          ]
+        }
+      }
+    },
+    {
+      "id": "146",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "streaming service data algorithm analysis",
+        "filename": "parrafo-146.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "VENTAJA COMPETITIVA",
+      "headline": "Netflix poseía ocho años de datos validados",
+      "keywords": [
+        "NETFLIX",
+        "ALGORITMO",
+        "DATOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "8",
+          "unit": "años",
+          "label": "ventaja de datos sobre competidores"
+        }
+      }
+    },
+    {
+      "id": "147",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "software engineers team coding",
+        "filename": "parrafo-147.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Miles de ingenieros externos colaboran",
+      "keywords": [
+        "INGENIEROS",
+        "EXTERNOS",
+        "EQUIPO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Recursos humanos especializados externos",
+            "Escalado de capacidad técnica",
+            "Equipos distribuidos y temporales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "148",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix recommendation algorithm interface",
+        "filename": "parrafo-148.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Netflix recomendación generaba setenta y cinco por ciento impacto",
+      "keywords": [
+        "NETFLIX",
+        "RECOMENDACIÓN",
+        "75%"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "75",
+          "unit": "%",
+          "label": "del impacto generado por recomendaciones"
+        }
+      }
+    },
+    {
+      "id": "149",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "YouTube video platform 2008",
+        "filename": "parrafo-149.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO HISTÓRICO",
+      "headline": "YouTube dominaba elecciones de contenido en 2008",
+      "keywords": [
+        "YOUTUBE",
+        "2008",
+        "SUSCRIPTORES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2008",
+          "unit": "",
+          "label": "Año de dominio de YouTube"
+        }
+      }
+    },
+    {
+      "id": "150",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "netflix streaming service acquisition",
+        "filename": "parrafo-150.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA",
+      "headline": "Netflix adquiría catálogos pequeños con certeza",
+      "keywords": [
+        "NETFLIX",
+        "CATÁLOGOS PEQUEÑOS",
+        "CERTEZA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Menor riesgo en compras de contenido",
+            "Catálogos desconocidos rentables",
+            "Control sobre contenido original"
+          ]
+        }
+      }
+    },
+    {
+      "id": "151",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-151.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Blockbuster pagaba más por títulos sin negociación",
+      "keywords": [
+        "BLOCKBUSTER",
+        "TÍTULOS POPULARES",
+        "PAGO MAYOR"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "No podía competir en costos de adquisición",
+            "Dependencia de catálogo popular limitaba poder"
+          ]
+        }
+      }
+    },
+    {
+      "id": "152",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "demand forecasting graph analytics",
+        "filename": "parrafo-152.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS PREDICTIVO",
+      "headline": "Predecir demanda de títulos nicho con precisión",
+      "keywords": [
+        "DEMANDA NICHO",
+        "PREDICCIÓN PRECISA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modelos adaptan decisiones a mercados segmentados",
+            "Algoritmos mejoran exactitud en productos especializados"
+          ]
+        }
+      }
+    },
+    {
+      "id": "153",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "data center server room infrastructure",
+        "filename": "parrafo-153.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN TÉCNICA",
+      "headline": "El costo de no tener datos superaba construir infraestructura",
+      "keywords": [
+        "COSTO DATOS",
+        "INFRAESTRUCTURA",
+        "CONSTRUCCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "",
+          "label": "Inflexión en estrategia de almacenamiento"
+        }
+      }
+    },
+    {
+      "id": "154",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "recommendation algorithm interface",
+        "filename": "parrafo-154.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MECANISMO",
+      "headline": "El corazón del sistema de recomendación",
+      "keywords": [
+        "ALGORITMO",
+        "RECOMENDACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Personaliza contenido según comportamiento usuario",
+            "Optimiza engagement y retención de audiencia"
+          ]
+        }
+      }
+    },
+    {
+      "id": "155",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store physical digital separation",
+        "filename": "parrafo-155.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 6",
+      "headline": "No separar digital del negocio físico fracasó",
+      "keywords": [
+        "DIGITAL vs FÍSICO",
+        "SEPARACIÓN NEGOCIOS",
+        "INTEGRACIÓN FALLIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "estrategias",
+          "label": "contradictorias en paralelo sin coordinación"
+        }
+      }
+    },
+    {
+      "id": "156",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store",
+        "filename": "parrafo-156.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO DE ESTUDIO",
+      "headline": "Blockbuster fracasó en su transición al comercio digital",
+      "keywords": [
+        "BLOCKBUSTER",
+        "VIDEO ONLINE",
+        "FRACASO DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "",
+          "label": "Iniciativa fallida de transformación digital"
+        }
+      }
+    },
+    {
+      "id": "157",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store management structure",
+        "filename": "parrafo-157.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN OPERATIVA",
+      "headline": "Integró plataforma digital en estructura organizativa existente",
+      "keywords": [
+        "INTEGRACIÓN",
+        "ESTRUCTURA",
+        "TIENDAS FÍSICAS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Misma gestión financiera para canales",
+            "Unificó operaciones retail y digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "158",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster store rental video",
+        "filename": "parrafo-158.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Blockbuster Online fue división integrada de matriz",
+      "keywords": [
+        "BLOCKBUSTER",
+        "UNIDAD INTEGRADA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "No operaba como negocio autónomo separado",
+            "Dependía de infraestructura corporativa central"
+          ]
+        }
+      }
+    },
+    {
+      "id": "159",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store department manager",
+        "filename": "parrafo-159.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRUCTURA",
+      "headline": "Departamento diseñado para operar tiendas físicas",
+      "keywords": [
+        "DEPARTAMENTO",
+        "TIENDA FÍSICA",
+        "EMPRESA RETAIL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Organización interna de empresa minorista",
+            "Gestión de operaciones de locales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "160",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "computer server room integration",
+        "filename": "parrafo-160.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS TÉCNICO",
+      "headline": "Integración parecía lógica en aprovechamiento recursos",
+      "keywords": [
+        "INTEGRACIÓN",
+        "RECURSOS",
+        "ARQUITECTURA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Decisión basada en eficiencia operativa",
+            "Perspectiva técnica sin visión completa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "161",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-161.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Blockbuster poseía ventajas estructurales clave",
+      "keywords": [
+        "BLOCKBUSTER",
+        "CATÁLOGO PELÍCULAS",
+        "RETAIL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Marca reconocida a nivel global",
+            "Relaciones establecidas con estudios",
+            "Base amplia de clientes leales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "162",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "computer server data center",
+        "filename": "parrafo-162.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Lanzar servicio en línea con activos existentes",
+      "keywords": [
+        "SERVICIO EN LÍNEA",
+        "ACTIVOS DIGITALES"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Reutilizar recursos técnicos previos",
+            "Modelo teórico de aprovechamiento"
+          ]
+        }
+      }
+    },
+    {
+      "id": "163",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "corporate conflict business meeting",
+        "filename": "parrafo-163.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONFLICTO ESTRATÉGICO",
+      "headline": "Objetivos contradictorios entre unidades",
+      "keywords": [
+        "NETFLIX",
+        "OBJETIVOS CONTRADICTORIOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ventaja competitiva anulada por conflicto interno",
+            "Estrategias opuestas en misma empresa"
+          ]
+        }
+      }
+    },
+    {
+      "id": "164",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "retail store customers shopping",
+        "filename": "parrafo-164.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO COMERCIAL",
+      "headline": "Tiendas físicas obtenían ingresos del tráfico presencial",
+      "keywords": [
+        "TIENDA FÍSICA",
+        "TRÁFICO PRESENCIAL",
+        "INGRESOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dependencia total de clientes físicos",
+            "Modelos sin diversificación digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "165",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster store interior video rental",
+        "filename": "parrafo-165.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CANIBALIZACIÓN",
+      "headline": "Blockbuster Online desviaba clientes de tiendas físicas",
+      "keywords": [
+        "BLOCKBUSTER",
+        "TIENDA FÍSICA",
+        "COMPETENCIA DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Estrategia digital canibalizó sus propios ingresos",
+            "Crecimiento online no compensó pérdida de sucursales"
+          ]
+        }
+      }
+    },
+    {
+      "id": "166",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "person video call laptop",
+        "filename": "parrafo-166.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "IMPACTO ECONÓMICO",
+      "headline": "Disminución de ingresos por servicios presenciales",
+      "keywords": [
+        "INGRESOS REDUCIDOS",
+        "ALQUILER VIRTUAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Migración forzada a modelos remotos",
+            "Pérdida de ingresos en alquileres físicos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "167",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "manager office desk meeting",
+        "filename": "parrafo-167.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONFLICTO INTERNO",
+      "headline": "Gerentes impedían que clientes usaran servicios en línea",
+      "keywords": [
+        "INCENTIVOS",
+        "SERVICIO EN LÍNEA",
+        "GERENTES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "conflicto",
+          "label": "incentivo inverso al progreso digital"
+        }
+      }
+    },
+    {
+      "id": "168",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "businessman crossroads decision difficult",
+        "filename": "parrafo-168.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA",
+      "headline": "Contradicción de incentivos en decisiones concretas",
+      "keywords": [
+        "INCENTIVOS",
+        "CONTRADICCIÓN",
+        "DECISIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Objetivos conflictivos guían las acciones",
+            "Presiones opuestas generan dilemas irresolubles"
+          ]
+        }
+      }
+    },
+    {
+      "id": "169",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video store rental",
+        "filename": "parrafo-169.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA COMERCIAL",
+      "headline": "Blockbuster Online no podía competir por precios sin destruir sus tiendas",
+      "keywords": [
+        "BLOCKBUSTER",
+        "DESCUENTOS CONFLICTO",
+        "TIENDA FISICA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "-",
+          "unit": "",
+          "label": "Trampa estratégica: no podía bajar precios online"
+        }
+      }
+    },
+    {
+      "id": "170",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "delivery service logistics",
+        "filename": "parrafo-170.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA COMERCIAL",
+      "headline": "No podía promocionar convenencia del servicio domiciliario",
+      "keywords": [
+        "SERVICIO DOMICILIO",
+        "CONVENIENCIA",
+        "ANUNCIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Restricción en messaging publicitario",
+            "Limitación en propuesta de valor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "171",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix streaming service laptop screen",
+        "filename": "parrafo-171.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO DIGITAL",
+      "headline": "Netflix revolucionó el comercio sin tiendas físicas",
+      "keywords": [
+        "NETFLIX",
+        "SIN TIENDA FÍSICA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Distribución completamente en línea",
+            "Eliminó intermediarios tradicionales",
+            "Acceso directo al consumidor"
+          ]
+        }
+      }
+    },
+    {
+      "id": "172",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "digital channel optimization screen",
+        "filename": "parrafo-172.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA",
+      "headline": "Optimización total del canal digital sin sacrificar ingresos",
+      "keywords": [
+        "CANAL DIGITAL",
+        "OPTIMIZACIÓN",
+        "INGRESOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Optimización sin compromisos"
+        }
+      }
+    },
+    {
+      "id": "173",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video store interior",
+        "filename": "parrafo-173.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Blockbuster tenía limitaciones estructurales insuperables",
+      "keywords": [
+        "BLOCKBUSTER",
+        "ESTRUCTURA FIJA",
+        "LIMITACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Modelo de negocio obsoleto ante cambio digital",
+            "Infraestructura física costosa y inflexible",
+            "No podía adaptarse rápidamente como competidores"
+          ]
+        }
+      }
+    },
+    {
+      "id": "174",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster dvd rental store",
+        "filename": "parrafo-174.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Blockbuster Online tenía dos millones de suscriptores en 2007",
+      "keywords": [
+        "BLOCKBUSTER",
+        "2 MILLONES",
+        "2007"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "millones",
+          "label": "Suscriptores de Blockbuster Online en 2007"
+        }
+      }
+    },
+    {
+      "id": "175",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "ceo businessman office desk",
+        "filename": "parrafo-175.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN ESTRATÉGICA",
+      "headline": "Nuevo CEO reduce inversión en canal digital",
+      "keywords": [
+        "CEO",
+        "INVERSIÓN DIGITAL",
+        "REDUCCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "Jim Keyes",
+          "unit": "",
+          "label": "Nuevo director ejecutivo implementa cambios"
+        }
+      }
+    },
+    {
+      "id": "176",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "retail store interior shopping",
+        "filename": "parrafo-176.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA",
+      "headline": "Recuperar enfoque en tiendas físicas",
+      "keywords": [
+        "TIENDA FÍSICA",
+        "ENFOQUE"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Retorno a ventas presenciales",
+            "Experiencia cliente en tienda"
+          ]
+        }
+      }
+    },
+    {
+      "id": "177",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "Blockbuster video store rental VHS",
+        "filename": "parrafo-177.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FATAL",
+      "headline": "Blockbuster subestimó a Netflix como amenaza",
+      "keywords": [
+        "BLOCKBUSTER",
+        "NETFLIX",
+        "NEGACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Ignoró el modelo de negocio streaming",
+            "Confianza excesiva en tiendas físicas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "178",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "netflix streaming service interface",
+        "filename": "parrafo-178.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Netflix alcanzaba siete punto cinco millones de suscriptores",
+      "keywords": [
+        "NETFLIX",
+        "7.5 MILLONES",
+        "SUSCRIPTORES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "7.5",
+          "unit": "millones",
+          "label": "suscriptores de Netflix"
+        }
+      }
+    },
+    {
+      "id": "179",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "financial growth chart increase",
+        "filename": "parrafo-179.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Decisión de Keyes con impacto anual del cuarenta por ciento",
+      "keywords": [
+        "40% ANUAL",
+        "KEYES DECISION",
+        "ANÁLISIS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "40",
+          "unit": "%",
+          "label": "Crecimiento anual"
+        }
+      }
+    },
+    {
+      "id": "180",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "corporate office hierarchy meeting",
+        "filename": "parrafo-180.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ANÁLISIS ESTRUCTURAL",
+      "headline": "Estructura organizativa impidió priorizar lo digital",
+      "keywords": [
+        "ESTRUCTURA ORGANIZATIVA",
+        "CANAL DIGITAL",
+        "FRACASO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Jerarquía corporativa bloqueó innovación",
+            "Canales legacy dominaron decisiones",
+            "Resultado predecible del diseño"
+          ]
+        }
+      }
+    },
+    {
+      "id": "181",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "fiber optic cable infrastructure network",
+        "filename": "parrafo-181.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO CRÍTICO",
+      "headline": "Canal físico como dependencia financiera clave",
+      "keywords": [
+        "CANAL FÍSICO",
+        "DEPENDENCIA FINANCIERA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Infraestructura física genera ingresos",
+            "Destruirla arriesga viabilidad económica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "182",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "distributed system architecture diagram",
+        "filename": "parrafo-182.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LECCIÓN HISTÓRICA",
+      "headline": "Arquitectura distribuida sin coordinación hundió a Blockbuster",
+      "keywords": [
+        "ARQUITECTURA DISTRIBUIDA",
+        "SIN COORDINACIÓN",
+        "BLOCKBUSTER"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "miles",
+          "unit": "sistemas actuales",
+          "label": "Arquitecturas defectuosas activas hoy"
+        }
+      }
+    },
+    {
+      "id": "183",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy system mainframe computer",
+        "filename": "parrafo-183.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Empresas operan bajo nombres de sistemas heredados",
+      "keywords": [
+        "SISTEMAS HEREDADOS",
+        "CÓDIGO ANTIGUO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Infraestructura antigua mantiene operaciones críticas",
+            "Deuda técnica acumulada en décadas"
+          ]
+        }
+      }
+    },
+    {
+      "id": "184",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "data center server room",
+        "filename": "parrafo-184.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Silos de datos sin integración cuestan caro",
+      "keywords": [
+        "SILOS DE DATOS",
+        "INTEGRACIÓN CENTRALIZADA",
+        "COSTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Dispersión reduce eficiencia operativa",
+            "Centralización mejora flujo información"
+          ]
+        }
+      }
+    },
+    {
+      "id": "185",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "blockbuster video store dvd rental",
+        "filename": "parrafo-185.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO HISTÓRICO",
+      "headline": "Blockbuster enfrentó deuda masiva entre 2001 y 2004",
+      "keywords": [
+        "BLOCKBUSTER",
+        "DEUDA",
+        "2001-2004"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2001",
+          "unit": "año inicio",
+          "label": "Comienzo de período de endeudamiento"
+        }
+      }
+    },
+    {
+      "id": "186",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "microservices architecture diagram",
+        "filename": "parrafo-186.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "SOLUCIÓN TÉCNICA",
+      "headline": "Microservicios resuelven problemas arquitectónicos",
+      "keywords": [
+        "MICROSERVICIOS",
+        "ARQUITECTURA MODULAR",
+        "SERVICIOS DISTRIBUIDOS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Servicios independientes y escalables",
+            "Comunicación asincrónica entre componentes",
+            "Desacoplamiento de módulos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "187",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "decentralized network nodes communication",
+        "filename": "parrafo-187.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ARQUITECTURA",
+      "headline": "Sistemas descentralizados con interfaz comunicativa única",
+      "keywords": [
+        "DESCENTRALIZADO",
+        "INTERFAZ UNIFICADA",
+        "COMUNICACIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Nodos independientes mantienen conexión coordinada",
+            "Abstracción centralizada sobre infraestructura distribuida"
+          ]
+        }
+      }
+    },
+    {
+      "id": "188",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "blockbuster video rental store interior",
+        "filename": "parrafo-188.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MITO DESMENTIDO",
+      "headline": "Blockbuster no fracasó por falta de capital",
+      "keywords": [
+        "BLOCKBUSTER",
+        "FRACASO",
+        "DINERO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La empresa tenía recursos financieros suficientes",
+            "Otros factores causaron su colapso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "189",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "rigid architecture design blueprint",
+        "filename": "parrafo-189.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Arquitectura diseñada sin capacidad de adaptación",
+      "keywords": [
+        "ARQUITECTURA RÍGIDA",
+        "FRACASO",
+        "CAMBIO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin flexibilidad para evolucionar",
+            "Diseño cerrado al cambio futuro",
+            "Rigidez estructural causó colapso"
+          ]
+        }
+      }
+    },
+    {
+      "id": "190",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software architecture design blueprint",
+        "filename": "parrafo-190.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Diseñar sistemas que funcionan bien hoy",
+      "keywords": [
+        "DISEÑO",
+        "SISTEMA",
+        "HOY"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Arquitectura de software robusta",
+            "Soluciones que resisten el tiempo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "191",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "software architecture collapse failure",
+        "filename": "parrafo-191.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "REFLEXIÓN CLAVE",
+      "headline": "La arquitectura debe adaptarse cuando cambian los supuestos",
+      "keywords": [
+        "ARQUITECTURA FRÁGIL",
+        "SUPUESTO FALLIDO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Rigidez arquitectónica causa colapso empresarial",
+            "Diseño inflexible no sobrevive cambios de mercado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "192",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "computer server room infrastructure",
+        "filename": "parrafo-192.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DIFERENCIA CLAVE",
+      "headline": "Lo que separa sistemas duraderos del colapso",
+      "keywords": [
+        "DURABILIDAD",
+        "ARQUITECTURA",
+        "FALLO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Diseño escalable versus monolítico",
+            "Mantenimiento proactivo frente abandono"
+          ]
+        }
+      }
+    },
+    {
+      "id": "193",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "legacy code tangled architecture",
+        "filename": "parrafo-193.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PROBLEMA CRÍTICO",
+      "headline": "Deuda técnica que ya no se puede resolver",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "IRREVERSIBLE",
+        "COLAPSO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "del sistema comprometido sin retorno"
+        }
+      }
+    }
+  ]
+}

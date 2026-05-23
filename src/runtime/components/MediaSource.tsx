@@ -5,6 +5,7 @@ import type { MediaSpec } from '../types';
 
 interface Props {
   projectId: string;
+  channelId?: string;
   media: MediaSpec;
   durationInFrames: number;
   /** Apply Ken Burns zoom (images and videos). Default true for images, false for videos. */
@@ -24,14 +25,15 @@ function focalToPosition(focal: MediaSpec['focal']): string {
 }
 
 export const MediaSource: React.FC<Props> = ({
-  projectId, media, durationInFrames,
+  projectId, channelId, media, durationInFrames,
   kenBurnsEnabled, objectPosition, fill = true,
 }) => {
   const frame = useCurrentFrame();
   const dir = media.type === 'video' ? 'videos' : 'images';
-  const src = staticFile(`projects/${projectId}/${dir}/${media.filename}`);
+  const projectPath = channelId ? `${channelId}/${projectId}` : projectId;
+  const src = staticFile(`projects/${projectPath}/${dir}/${media.filename}`);
 
-  const enableKB = kenBurnsEnabled ?? media.type === 'image';
+  const enableKB = kenBurnsEnabled ?? (channelId === 'phantom-directive' ? true : media.type === 'image');
   const scale = enableKB ? kenBurns(frame, durationInFrames, 1.06) : 1;
   const position = objectPosition || focalToPosition(media.focal);
 

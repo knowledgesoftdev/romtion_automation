@@ -154,6 +154,14 @@ const calculateMetadataVideoEngine = async ({
     });
     if (res.ok) {
       const data: VideoEngineProps = await res.json();
+      
+      // Notificar composición activa al backend
+      fetch("http://localhost:5000/api/active-project/set-composition", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ compositionId: "VideoEngine" }),
+      }).catch(() => {});
+
       return { durationInFrames: calcDuration(data.timing), props: data };
     }
   } catch (_) {
@@ -182,6 +190,14 @@ const calculateMetadataWhiteboard = async ({
     });
     if (res.ok) {
       const data: ActiveProjectData = await res.json();
+      
+      // Notificar composición activa al backend
+      fetch("http://localhost:5000/api/active-project/set-composition", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ compositionId: "WhiteboardVideo" }),
+      }).catch(() => {});
+
       const props: WhiteboardVideoProps = {
         projectId:  data.projectId,
         channelId:  data.channelId,

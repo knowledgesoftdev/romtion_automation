@@ -14,7 +14,7 @@
  */
 
 require('dotenv').config();
-const { readMemory, saveMemory } = require('../utils/memory');
+const { readMemory, saveMemory, getActiveChannelId, detectRemotionFormat } = require('../utils/memory');
 
 // ── Argumentos ─────────────────────────────────────────────────────────────────
 const argv      = process.argv.slice(2);
@@ -229,18 +229,37 @@ async function main() {
   const existingIdx = memory.mejor_rendimiento.findIndex(
     (v) => v.video_id === videoId
   );
+  const existingEntry = existingIdx >= 0 ? memory.mejor_rendimiento[existingIdx] : null;
 
   // Intentar deducir el tema desde el título del video
   const tema = stats.title;
 
+  const activeChannelId = getActiveChannelId();
+
+  // Preservar la composición de Remotion seleccionada manualmente en el Dashboard si ya existía
+  const finalFormat = existingEntry?.remotion_format || detectRemotionFormat(tema, null, activeChannelId);
+
+  // Preservar el tema si el usuario lo editó o simplificó manualmente
+  const finalTema = existingEntry?.tema || tema;
+
+  // Preservar valores manuales o previos si la API devuelve 0
+  const finalRetention = (retention > 0) ? parseFloat(retention.toFixed(4)) : (existingEntry?.retention || 0);
+  const finalCtr = (ctr > 0) ? parseFloat(ctr.toFixed(4)) : (existingEntry?.ctr || 0);
+
+  // Preservar el estilo de hook si ya estaba especificado a mano
+  const finalHookStyle = (existingEntry?.hook_style && existingEntry.hook_style !== 'no-especificado' && existingEntry.hook_style !== 'no especificado')
+    ? existingEntry.hook_style
+    : (hookStyle !== 'no especificado' && hookStyle !== 'no-especificado' ? hookStyle : 'no-especificado');
+
   const perfEntry = {
-    tema,
+    tema:       finalTema,
     video_id:   videoId,
-    retention:  parseFloat(retention.toFixed(4)),
-    ctr:        parseFloat(ctr.toFixed(4)),
+    retention:  finalRetention,
+    ctr:        finalCtr,
     views:      stats.views,
     likes:      stats.likes,
-    hook_style: hookStyle,
+    hook_style: finalHookStyle,
+    remotion_format: finalFormat,
     fecha:      new Date().toISOString(),
   };
 

@@ -108,7 +108,7 @@ const UNIT_TABLE = [
   [/(\d+)\s*ms\b/g,  '$1 milisegundos'],
 ];
 
-function normalizeForTTS(input) {
+function normalizeForTTS(input, isEnglish = false) {
   if (!input) return '';
   let t = String(input);
 
@@ -118,6 +118,12 @@ function normalizeForTTS(input) {
 
   // Unicode ellipsis → period+space
   t = t.replace(/…/g, '. ');
+
+  if (isEnglish) {
+    // English-specific cleanup:
+    // Just normalize whitespace
+    return t.replace(/\s+/g, ' ').trim();
+  }
 
   // Acronyms (word-boundary, case-sensitive on first letter for safety)
   for (const [acr, spaced] of Object.entries(ACRONYM_TABLE)) {
@@ -311,20 +317,11 @@ async function ttsWithRetries(session, text, voiceId) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   const apiKey  = process.env.FISH_AUDIO_API_KEY;
-  const voiceId = process.env.FISH_AUDIO_VOICE_ID;
   const projectId = process.argv[2];
 
   if (!projectId) {
     console.error('Error: Debes especificar un nombre de proyecto. Ej: node generate-audio.js test-pipeline');
     process.exit(1);
-  }
-  if (!apiKey || !voiceId) {
-    console.error('Error: FISH_AUDIO_API_KEY y FISH_AUDIO_VOICE_ID deben estar en .env');
-    process.exit(1);
-  }
-  if (!HAS_FFMPEG) {
-    console.warn('⚠️  ffmpeg no detectado en PATH — concat y loudnorm deshabilitados.');
-    console.warn('   Los párrafos largos no se podrán dividir/concatenar. Instala ffmpeg para usar el pipeline completo.');
   }
 
   let channelId = 'codigo-muerto';
@@ -334,6 +331,18 @@ async function main() {
       channelId = JSON.parse(fs.readFileSync(activeFile, 'utf8')).channelId || 'codigo-muerto';
     }
   } catch (_) {}
+
+  const channelEnvVoiceKey = `FISH_AUDIO_VOICE_ID_${channelId.toUpperCase().replace(/[^A-Z0-9_]/g, '_')}`;
+  const voiceId = process.env[channelEnvVoiceKey] || process.env.FISH_AUDIO_VOICE_ID;
+
+  if (!apiKey || !voiceId) {
+    console.error(`Error: FISH_AUDIO_API_KEY y FISH_AUDIO_VOICE_ID (o ${channelEnvVoiceKey}) deben estar en .env`);
+    process.exit(1);
+  }
+  if (!HAS_FFMPEG) {
+    console.warn('⚠️  ffmpeg no detectado en PATH — concat y loudnorm deshabilitados.');
+    console.warn('   Los párrafos largos no se podrán dividir/concatenar. Instala ffmpeg para usar el pipeline completo.');
+  }
 
   let projectDir = path.join(__dirname, 'public', 'projects', channelId, projectId);
   if (!fs.existsSync(projectDir)) {
@@ -365,7 +374,8 @@ async function main() {
   try {
     for (const parrafo of guion) {
       const outPath  = path.join(audioDir, `parrafo-${parrafo.id}.mp3`);
-      const normText = normalizeForTTS(parrafo.texto);
+      const isEnglish = channelId === 'phantom-directive';
+      const normText = normalizeForTTS(parrafo.texto, isEnglish);
       const key      = cacheKey(normText, voiceId, FISH_MODEL);
       const cachePath = path.join(cacheDir, `${key}.mp3`);
 

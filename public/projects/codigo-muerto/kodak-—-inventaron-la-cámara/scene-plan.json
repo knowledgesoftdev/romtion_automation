@@ -1,0 +1,2076 @@
+{
+  "version": 1,
+  "projectId": "kodak-—-inventaron-la-cámara",
+  "paragraphs": [
+    {
+      "id": "01",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "digital camera prototype vintage lab",
+        "filename": "parrafo-01.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INVENCIÓN ENTERRADA",
+      "headline": "Kodak ignoró su propia innovación digital",
+      "keywords": [
+        "CÁMARA DIGITAL",
+        "KODAK",
+        "PELÍCULA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "",
+          "label": "Año del primer prototipo de cámara digital"
+        }
+      }
+    },
+    {
+      "id": "02",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak camera film vintage 1970s",
+        "filename": "parrafo-02.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "IMPERIO FOTOGRÁFICO",
+      "headline": "Kodak dominaba 90% mercado películas en 1976",
+      "keywords": [
+        "KODAK",
+        "90% MERCADO",
+        "1976"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "90",
+          "unit": "%",
+          "label": "Ventas de película en Estados Unidos 1976"
+        }
+      }
+    },
+    {
+      "id": "03",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "vintage film camera roll",
+        "filename": "parrafo-03.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MODELO NEGOCIO",
+      "headline": "Cámara barata, ganancias infinitas en rollos revelados",
+      "keywords": [
+        "DOBLE INGRESO",
+        "ROLLOS PELÍCULA",
+        "MARGEN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2",
+          "unit": "",
+          "label": "Fuentes de margen por cada foto"
+        }
+      }
+    },
+    {
+      "id": "04",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "corporate crisis office meeting",
+        "filename": "parrafo-04.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "La crisis amenazaba la estructura económica completa",
+      "keywords": [
+        "AMENAZA ECONÓMICA",
+        "ARQUITECTURA EMPRESARIAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "El colapso afectaba toda la arquitectura",
+            "Consecuencias inmediatas y devastadoras"
+          ]
+        }
+      }
+    },
+    {
+      "id": "05",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "digital camera internal prototype abandoned",
+        "filename": "parrafo-05.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 1",
+      "headline": "Empresa archiva cámara digital inventada internamente",
+      "keywords": [
+        "CÁMARA DIGITAL",
+        "DECISIÓN INTERNA",
+        "ARCHIVO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Tecnología desarrollada no llegó al mercado",
+            "Decisión estratégica de abandono de proyecto"
+          ]
+        }
+      }
+    },
+    {
+      "id": "06",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak camera digital 1975 prototype",
+        "filename": "parrafo-06.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INVENCIÓN CLAVE",
+      "headline": "Kodak construyó primer prototipo cámara digital",
+      "keywords": [
+        "KODAK",
+        "1975",
+        "CÁMARA DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "",
+          "label": "Año del primer prototipo digital funcional"
+        }
+      }
+    },
+    {
+      "id": "07",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "first digital camera prototype 1975",
+        "filename": "parrafo-07.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ORIGEN TECNOLÓGICO",
+      "headline": "Primera cámara digital: 3,6 kg, blanco y negro, 23 segundos",
+      "keywords": [
+        "PRIMER DIGITAL",
+        "0.01 MEGAPÍXELES",
+        "23 SEGUNDOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3,6",
+          "unit": "kilogramos",
+          "label": "Peso de la primera cámara digital"
+        }
+      }
+    },
+    {
+      "id": "08",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "digital camera sensor electronics",
+        "filename": "parrafo-08.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INVENCIÓN CLAVE",
+      "headline": "Fotografía sin película química era posible",
+      "keywords": [
+        "SENSOR DIGITAL",
+        "SIN PELÍCULA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Prueba de concepto revolucionaria",
+            "Tecnología de sensor electrónico",
+            "Fin de era analógica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "09",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak camera film rolls vintage",
+        "filename": "parrafo-09.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FATAL",
+      "headline": "Kodak rechazó la fotografía digital por proteger rollos",
+      "keywords": [
+        "KODAK",
+        "FOTOGRAFÍA DIGITAL",
+        "CANIBALIZACIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "año",
+          "label": "Cuando Sasson inventó la cámara digital"
+        }
+      }
+    },
+    {
+      "id": "10",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "camera film roll vintage photography",
+        "filename": "parrafo-10.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA ESTRATÉGICO",
+      "headline": "Márgenes de 60-70% amenazados por innovación digital",
+      "keywords": [
+        "60-70% MARGEN",
+        "CÁMARA DIGITAL",
+        "DISRUPCIÓN INTERNA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "60-70",
+          "unit": "%",
+          "label": "Margen sobre precio de venta"
+        }
+      }
+    },
+    {
+      "id": "11",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "classified document archive confidential",
+        "filename": "parrafo-11.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN",
+      "headline": "Proyecto archivado confidencial sin presupuesto comercial",
+      "keywords": [
+        "SECRETO",
+        "SIN PRESUPUESTO",
+        "ARCHIVO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "presupuesto",
+          "label": "Asignación para desarrollo comercial"
+        }
+      }
+    },
+    {
+      "id": "12",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "camera sensor technology evolution",
+        "filename": "parrafo-12.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ERROR ESTRATÉGICO",
+      "headline": "Diez años sin plan transición tecnológica",
+      "keywords": [
+        "SENSOR FOTOGRÁFICO",
+        "1975",
+        "TRANSICIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "10",
+          "unit": "años",
+          "label": "período sin estrategia de transición"
+        }
+      }
+    },
+    {
+      "id": "13",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak camera film vintage",
+        "filename": "parrafo-13.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FATAL",
+      "headline": "Kodak priorizó film químico sobre digital",
+      "keywords": [
+        "KODAK",
+        "FOTOGRAFÍA QUÍMICA",
+        "OPORTUNIDAD PERDIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "-",
+          "unit": "",
+          "label": "Oportunidad histórica desperdiciada"
+        }
+      }
+    },
+    {
+      "id": "14",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "Mavica Sony digital camera 1981",
+        "filename": "parrafo-14.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO INNOVADOR",
+      "headline": "Sony lanzó primera cámara digital, Kodak sin respuesta",
+      "keywords": [
+        "SONY MAVICA",
+        "KODAK RETRASO",
+        "1981"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "6",
+          "unit": "años",
+          "label": "Ventaja que Kodak no aprovechó"
+        }
+      }
+    },
+    {
+      "id": "15",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "kodak film camera vintage 1980s",
+        "filename": "parrafo-15.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CAÍDA DE IMPERIO",
+      "headline": "Kodak perdió dominio mientras ignoraba lo digital",
+      "keywords": [
+        "KODAK",
+        "85% A 67%",
+        "1981-1991"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "85",
+          "unit": "%",
+          "label": "Cuota de mercado Kodak en 1981"
+        }
+      }
+    },
+    {
+      "id": "16",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak digital camera patent",
+        "filename": "parrafo-16.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECLIVE CORPORATIVO",
+      "headline": "Kodak perdió liderazgo al no monetizar sus patentes digitales",
+      "keywords": [
+        "KODAK",
+        "PATENTES EXPIRADAS",
+        "BRECHA TECNOLÓGICA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "año",
+          "label": "Primer sensor digital de Kodak sin impacto comercial"
+        }
+      }
+    },
+    {
+      "id": "17",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "patent office legal documents",
+        "filename": "parrafo-17.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 2",
+      "headline": "Patentar como escudo defensivo, no como herramienta productiva",
+      "keywords": [
+        "PATENTES",
+        "PROTECCIÓN",
+        "ESTRATEGIA LEGAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Las patentes bloqueaban competencia más que innovación",
+            "Defensas legales reemplazaban desarrollo técnico",
+            "Monopolio protegido sin avance real"
+          ]
+        }
+      }
+    },
+    {
+      "id": "18",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak camera vintage film",
+        "filename": "parrafo-18.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INNOVACIÓN PERDIDA",
+      "headline": "Kodak acumuló mil patentes de imagen digital",
+      "keywords": [
+        "KODAK",
+        "MIL PATENTES",
+        "IMAGEN DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1000",
+          "unit": "patentes",
+          "label": "Tecnologías de imagen digital acumuladas"
+        }
+      }
+    },
+    {
+      "id": "19",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak patent document legal agreement",
+        "filename": "parrafo-19.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA FALLIDA",
+      "headline": "Kodak cercó la fotografía digital con patentes propias",
+      "keywords": [
+        "KODAK",
+        "PATENTES",
+        "DEFENSA PERIMETRAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Monopolio legal sobre tecnología fotográfica",
+            "Competidores necesitaban licencias Kodak",
+            "Protección técnica vs. innovación de producto"
+          ]
+        }
+      }
+    },
+    {
+      "id": "20",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak camera film vintage",
+        "filename": "parrafo-20.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA FALLIDA",
+      "headline": "Kodak apostó a cobrar peaje por cámaras digitales",
+      "keywords": [
+        "KODAK",
+        "LICENCIAS",
+        "PELÍCULA VS DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "del mercado fotográfico que Kodak esperaba monetizar"
+        }
+      }
+    },
+    {
+      "id": "21",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak film camera patent license",
+        "filename": "parrafo-21.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Kodak ganó cientos de millones en licencias de patentes",
+      "keywords": [
+        "KODAK",
+        "PATENTES",
+        "1990-2000"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "cientos",
+          "unit": "millones USD",
+          "label": "Ingresos anuales por licencias 1990-2000"
+        }
+      }
+    },
+    {
+      "id": "22",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "patent expiration document legal",
+        "filename": "parrafo-22.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO LEGAL",
+      "headline": "Las patentes expiran y pierden validez legal",
+      "keywords": [
+        "PATENTES",
+        "CADUCIDAD",
+        "LICENCIAS"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Los tribunales respaldaron patentes recientes",
+            "Las licencias se basaban en protección temporal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "23",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "camera manufacturers digital technology 1990s",
+        "filename": "parrafo-23.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Competidores construyeron capacidades digitales bajo licencias Kodak",
+      "keywords": [
+        "KODAK",
+        "LICENCIAS DIGITALES",
+        "COMPETENCIA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sony, Canon, Nikon aprovecharon acuerdos",
+            "Desarrollaron fabricación y marca propia",
+            "Kodak perdió ventaja tecnológica"
+          ]
+        }
+      }
+    },
+    {
+      "id": "24",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "kodak camera vintage film",
+        "filename": "parrafo-24.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA ESTRATÉGICA",
+      "headline": "Kodak cobró peaje en lugar de construir futuro",
+      "keywords": [
+        "KODAK",
+        "PATENTES EXPIRARON",
+        "SIN INFRAESTRUCTURA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2007",
+          "unit": "",
+          "label": "Año en que comenzaron a expirar patentes clave"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "kodak camera film manufacturing",
+        "filename": "parrafo-25.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Kodak vendió patentes por 525M de dólares en 2012",
+      "keywords": [
+        "KODAK",
+        "PATENTES IMAGEN",
+        "525 MILLONES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "525",
+          "unit": "millones de dólares",
+          "label": "Precio final de venta de patentes"
+        }
+      }
+    },
+    {
+      "id": "26",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak camera vintage patent",
+        "filename": "parrafo-26.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Consorcio tecnológico compró Kodak para neutralizar amenaza legal",
+      "keywords": [
+        "KODAK",
+        "PATENTES",
+        "NEUTRALIZAR"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "consorcio",
+          "label": "Empresas tecnológicas compran patentes de Kodak"
+        }
+      }
+    },
+    {
+      "id": "27",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak film camera vintage",
+        "filename": "parrafo-27.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ILUSIÓN FINANCIERA",
+      "headline": "Kodak ocultó crisis con ingresos de licencias",
+      "keywords": [
+        "LICENCIAS",
+        "KODAK",
+        "MÁRGENES ACEPTABLES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2000",
+          "unit": "",
+          "label": "Año en que se visibilizó el colapso"
+        }
+      }
+    },
+    {
+      "id": "28",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "film roll photographic decline",
+        "filename": "parrafo-28.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FATAL",
+      "headline": "Dinero destinado a sostener negocio de película en decline",
+      "keywords": [
+        "PELÍCULA DECLIVE",
+        "MARGEN OPERATIVO",
+        "SIN REINVERSIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "declive",
+          "unit": "",
+          "label": "Estado del negocio de película fotográfica"
+        }
+      }
+    },
+    {
+      "id": "29",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "software license expiration digital transition",
+        "filename": "parrafo-29.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CRISIS PRODUCTO",
+      "headline": "Sin licencias digitales para reemplazar el legado",
+      "keywords": [
+        "LICENCIAS AGOTADAS",
+        "SIN REEMPLAZO DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Falta de estrategia de transición digital",
+            "Productos obsoletos sin alternativa moderna"
+          ]
+        }
+      }
+    },
+    {
+      "id": "30",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "digital camera vintage kodak",
+        "filename": "parrafo-30.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 3",
+      "headline": "Kodak llegó tarde al mercado digital sin ecosistema",
+      "keywords": [
+        "CÁMARAS DIGITALES",
+        "RETRASO LANZAMIENTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Enfoque en película fotográfica analógica rentable",
+            "Competencia asiática capturó liderazgo tecnológico",
+            "Falta de software y plataforma integrada"
+          ]
+        }
+      }
+    },
+    {
+      "id": "31",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak dc40 digital camera 1995",
+        "filename": "parrafo-31.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "HITO TÉCNICO",
+      "headline": "Kodak lanzó su primera cámara digital masiva",
+      "keywords": [
+        "KODAK DC40",
+        "1995",
+        "CÁMARA DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1995",
+          "unit": "",
+          "label": "Año de lanzamiento de la DC40"
+        }
+      }
+    },
+    {
+      "id": "32",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "vintage digital camera 1990s lcd screen",
+        "filename": "parrafo-32.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESPECIFICACIÓN TÉCNICA",
+      "headline": "Cámara digital primitiva con resolución limitada",
+      "keywords": [
+        "756 × 504 PÍXELES",
+        "995 DÓLARES",
+        "SIN SOFTWARE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "995",
+          "unit": "dólares",
+          "label": "Precio inicial en Estados Unidos"
+        }
+      }
+    },
+    {
+      "id": "33",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak digital camera vintage 1990s",
+        "filename": "parrafo-33.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TECNOLOGÍA CERRADA",
+      "headline": "Kodak apostó a formatos propietarios cuando la industria optaba por estándares abiertos",
+      "keywords": [
+        "KODAK",
+        "FORMATO PROPIETARIO",
+        "ESTÁNDAR ABIERTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "año",
+          "label": "Primera cámara digital de Kodak"
+        }
+      }
+    },
+    {
+      "id": "34",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak camera vintage film",
+        "filename": "parrafo-34.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FALLIDA",
+      "headline": "Kodak apostó su marca en lugar de innovar digital",
+      "keywords": [
+        "KODAK",
+        "MARCA FORTALEZA",
+        "DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "décadas",
+          "unit": "",
+          "label": "Ventaja de marca que no se tradujo"
+        }
+      }
+    },
+    {
+      "id": "35",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "brand loyalty customer retention",
+        "filename": "parrafo-35.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA DE MERCADO",
+      "headline": "Lealtad de marca como ventaja durante transición",
+      "keywords": [
+        "LEALTAD DE MARCA",
+        "ADOPCIÓN GRADUAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Adopción gradual del mercado",
+            "Retención de clientes existentes"
+          ]
+        }
+      }
+    },
+    {
+      "id": "36",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "digital camera sensor technology",
+        "filename": "parrafo-36.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TRANSFORMACIÓN TECNOLÓGICA",
+      "headline": "La fotografía digital revolucionó gestión y almacenamiento de imágenes",
+      "keywords": [
+        "FOTOGRAFÍA DIGITAL",
+        "PARADIGMA",
+        "ALMACENAMIENTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Cambio paradigmático en captura fotográfica"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "digital camera early 2000s standalone",
+        "filename": "parrafo-37.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO HISTÓRICO",
+      "headline": "Cámara digital aislada equivalía a película sin laboratorio",
+      "keywords": [
+        "CÁMARA DIGITAL",
+        "SIN SOFTWARE",
+        "INÚTIL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin edición de imágenes integrada",
+            "Desconectada de ordenadores personales",
+            "Incomparable a laboratorio de revelado"
+          ]
+        }
+      }
+    },
+    {
+      "id": "38",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak camera digital photography",
+        "filename": "parrafo-38.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO ESTRATÉGICO",
+      "headline": "Kodak dominó hardware pero perdió la cadena completa",
+      "keywords": [
+        "FLUJO COMPLETO",
+        "CAPTURA A ALMACENAMIENTO",
+        "KODAK vs DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sony y Apple integraron captura, edición y almacenamiento",
+            "Kodak se enfocó solo en cámaras, no en ecosistema",
+            "El valor estaba en la experiencia integral, no en dispositivos"
+          ]
+        }
+      }
+    },
+    {
+      "id": "39",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "vintage kodak camera digital",
+        "filename": "parrafo-39.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Kodak bloqueó fotos con formato propietario mientras JPEG era libre",
+      "keywords": [
+        "KODAK DC40",
+        "FORMATO PROPIETARIO",
+        "JPEG ABIERTO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1994",
+          "unit": "año",
+          "label": "Lanzamiento DC40 vs. estándar JPEG ya establecido"
+        }
+      }
+    },
+    {
+      "id": "40",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak camera film roll vintage",
+        "filename": "parrafo-40.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO ESTRATÉGICO",
+      "headline": "Kodak ignoró JPEG mientras competidores avanzaban",
+      "keywords": [
+        "KODAK",
+        "JPEG ESTÁNDAR",
+        "ECOSISTEMA CERRADO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "3",
+          "unit": "generaciones",
+          "label": "retraso en adopción del estándar JPEG"
+        }
+      }
+    },
+    {
+      "id": "41",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "server shutdown data center power off",
+        "filename": "parrafo-41.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO ARQUITECTÓNICO",
+      "headline": "Cierre sin red: costos sin beneficios",
+      "keywords": [
+        "CIERRE PLATAFORMA",
+        "SIN RED",
+        "COSTO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Pérdida total de valor red",
+            "Gastos de infraestructura persistentes"
+          ]
+        }
+      }
+    },
+    {
+      "id": "42",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "digital camera 1999 vintage",
+        "filename": "parrafo-42.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Kodak lideraba cámaras digitales pero ignoró su declive",
+      "keywords": [
+        "KODAK 27%",
+        "CRECIMIENTO 75%",
+        "1999"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "75",
+          "unit": "%",
+          "label": "Crecimiento del mercado de cámaras digitales"
+        }
+      }
+    },
+    {
+      "id": "43",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak digital camera film roll",
+        "filename": "parrafo-43.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN COMERCIAL",
+      "headline": "Kodak sacrificaba margen digital sobre rollo fotográfico",
+      "keywords": [
+        "15% DIGITAL",
+        "60% PELÍCULA",
+        "MARGEN PERDIDO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "15",
+          "unit": "%",
+          "label": "Margen bruto por cámara digital Kodak"
+        }
+      }
+    },
+    {
+      "id": "44",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "image",
+        "query": "camera photo platform digital",
+        "filename": "parrafo-44.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 4",
+      "headline": "Apuesta por Ofoto en lugar de construir plataforma propia",
+      "keywords": [
+        "OFOTO",
+        "PLATAFORMA",
+        "DECISIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Evitar inversión en desarrollo interno",
+            "Riesgos de depender de terceros",
+            "Oportunidad perdida de control"
+          ]
+        }
+      }
+    },
+    {
+      "id": "45",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "kodak digital photo service server",
+        "filename": "parrafo-45.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADQUISICIÓN CLAVE",
+      "headline": "Kodak compró Ofoto, plataforma digital de fotos y impresiones",
+      "keywords": [
+        "KODAK",
+        "OFOTO",
+        "2001"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2001",
+          "unit": "",
+          "label": "Año de la adquisición de Ofoto"
+        }
+      }
+    },
+    {
+      "id": "46",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak digital camera vintage film",
+        "filename": "parrafo-46.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ADQUISICIÓN",
+      "headline": "Kodak adquirió Ofoto para dominar fotografía digital",
+      "keywords": [
+        "KODAK",
+        "OFOTO",
+        "IMAGEN DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Integración en estrategia de transición digital",
+            "Apuesta principal para fotos en línea"
+          ]
+        }
+      }
+    },
+    {
+      "id": "47",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "digital photo printing service computer screen",
+        "filename": "parrafo-47.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA FALLIDA",
+      "headline": "Ofoto buscaba unir captura digital con impresión física",
+      "keywords": [
+        "OFOTO",
+        "FOTO DIGITAL",
+        "IMPRESIÓN PAPEL"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Usuarios subían fotos digitales a plataforma",
+            "Kodak mantenía márgenes altos en impresiones"
+          ]
+        }
+      }
+    },
+    {
+      "id": "48",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "online photo printing service business",
+        "filename": "parrafo-48.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "ESTRATEGIA COMERCIAL",
+      "headline": "Servicio de impresión digital generaba ingresos reales",
+      "keywords": [
+        "IMPRESIÓN DIGITAL",
+        "INGRESOS REALES",
+        "TRANSICIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "año",
+          "unit": "adquisición",
+          "label": "Período clave de ingresos en impresión fotográfica"
+        }
+      }
+    },
+    {
+      "id": "49",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "digital camera printing photos",
+        "filename": "parrafo-49.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO DE PREMISA",
+      "headline": "Ofoto subestimó el fin de la fotografía impresa",
+      "keywords": [
+        "OFOTO",
+        "FOTOGRAFÍA DIGITAL",
+        "IMPRESIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5",
+          "unit": "años",
+          "label": "Tiempo hasta el colapso del negocio"
+        }
+      }
+    },
+    {
+      "id": "50",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "friendster facebook social media early 2000s",
+        "filename": "parrafo-50.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "PUNTO DE QUIEBRE",
+      "headline": "Las redes sociales transformaron las fotos digitales en contenido compartido",
+      "keywords": [
+        "FRIENDSTER 2002",
+        "REDES SOCIALES",
+        "FOTO DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2004",
+          "unit": "año",
+          "label": "Facebook revoluciona el intercambio fotográfico"
+        }
+      }
+    },
+    {
+      "id": "51",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "photo printing service store",
+        "filename": "parrafo-51.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FRACASO COMERCIAL",
+      "headline": "Ofoto atrapado en modelo negocio fundamentalmente falso",
+      "keywords": [
+        "MODELO NEGOCIO",
+        "OFOTO",
+        "VISIBILIDAD"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Valor no estaba en papel fotográfico",
+            "Subestimó poder de visibilidad digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "52",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "flickr photo sharing website 2006",
+        "filename": "parrafo-52.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CRÍTICO",
+      "headline": "Flickr procesaba millón fotos diarias en 2006",
+      "keywords": [
+        "FLICKR",
+        "2006",
+        "MILLÓN FOTOS/DÍA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1",
+          "unit": "millón fotos/día",
+          "label": "Volumen procesado por Flickr en 2006"
+        }
+      }
+    },
+    {
+      "id": "53",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak camera vintage film photography",
+        "filename": "parrafo-53.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Kodak vendió Ofoto a Shutterfly por 23,8 millones dólares",
+      "keywords": [
+        "KODAK",
+        "OFOTO",
+        "23.8 MILLONES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "23,8",
+          "unit": "millones de dólares",
+          "label": "Precio de venta de Kodak Gallery a Shutterfly"
+        }
+      }
+    },
+    {
+      "id": "54",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak camera film vintage",
+        "filename": "parrafo-54.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO CORPORATIVO",
+      "headline": "Kodak vendió su plataforma digital antes de quebrar",
+      "keywords": [
+        "KODAK",
+        "QUIEBRA",
+        "PLATAFORMA DIGITAL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "-",
+          "unit": "",
+          "label": "Kodak no aprovechó su transición digital"
+        }
+      }
+    },
+    {
+      "id": "55",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "smartphone camera evolution mobile device",
+        "filename": "parrafo-55.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "OPORTUNIDAD PERDIDA",
+      "headline": "Kodak invirtió en Ofoto en lugar de innovación móvil",
+      "keywords": [
+        "OFOTO",
+        "iPhone 2007",
+        "CÁMARA MÓVIL"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2007",
+          "unit": "",
+          "label": "Año del lanzamiento del iPhone con cámara"
+        }
+      }
+    },
+    {
+      "id": "56",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak camera film vintage",
+        "filename": "parrafo-56.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "COLAPSO ESTRATÉGICO",
+      "headline": "Kodak perdió posición en toda la cadena móvil",
+      "keywords": [
+        "KODAK",
+        "SENSOR",
+        "DISTRIBUCIÓN"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Sin sensor propio en smartphones",
+            "Ausente en software de procesamiento",
+            "Sin plataforma de distribución digital"
+          ]
+        }
+      }
+    },
+    {
+      "id": "57",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "company executive meeting boardroom",
+        "filename": "parrafo-57.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN 5",
+      "headline": "Priorizar dividendos sobre reinversión debilitó futuro",
+      "keywords": [
+        "DIVIDENDOS",
+        "REINVERSIÓN",
+        "CORTOPLACISMO"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "100",
+          "unit": "%",
+          "label": "Capital destinado a dividendos accionistas"
+        }
+      }
+    },
+    {
+      "id": "58",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak film camera vintage",
+        "filename": "parrafo-58.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "Kodak distribuyó 5 mil millones en dividendos entre 1990 y 2000",
+      "keywords": [
+        "KODAK",
+        "5 MIL MILLONES",
+        "DIVIDENDOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5,000",
+          "unit": "millones USD",
+          "label": "Dividendos pagados 1990-2000"
+        }
+      }
+    },
+    {
+      "id": "59",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "corporate financial performance graph",
+        "filename": "parrafo-59.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "MÉTRICA FINANCIERA",
+      "headline": "Empresa rentable devuelve capital al mercado",
+      "keywords": [
+        "RENTABILIDAD",
+        "CASH FLOW",
+        "SOLIDEZ FINANCIERA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "Métricas de rentabilidad sobre capital sólidas",
+            "Generaba caja y la redistribuía"
+          ]
+        }
+      }
+    },
+    {
+      "id": "60",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "corporate boardroom meeting executives",
+        "filename": "parrafo-60.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO EMPRESARIAL",
+      "headline": "Empresa madura priorizaba dividendos sobre innovación",
+      "keywords": [
+        "DIVIDENDOS",
+        "ESTABILIDAD CORPORATIVA",
+        "ACCIONISTAS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "dominante",
+          "unit": "",
+          "label": "Posición de mercado valorada por accionistas"
+        }
+      }
+    },
+    {
+      "id": "61",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "kodak financial statements decline",
+        "filename": "parrafo-61.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CASO KODAK",
+      "headline": "Márgenes altos ocultaban transición hacia obsolescencia",
+      "keywords": [
+        "KODAK",
+        "MÁRGENES ALTOS",
+        "OBSOLESCENCIA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "Márgenes",
+          "unit": "altos",
+          "label": "Estados financieros saludables ocultaban realidad"
+        }
+      }
+    },
+    {
+      "id": "62",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "corporate research development laboratory",
+        "filename": "parrafo-62.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "INVERSIÓN FALLIDA",
+      "headline": "Kodak invirtió cinco veces menos en I+D que Intel",
+      "keywords": [
+        "20-25% INGRESOS",
+        "I+D INTEL",
+        "KODAK 5%"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5",
+          "unit": "%",
+          "label": "Proporción de ingresos que Kodak reinvertía en I+D"
+        }
+      }
+    },
+    {
+      "id": "63",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "digital camera sensor technology",
+        "filename": "parrafo-63.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DATO CLAVE",
+      "headline": "5% reinversión insuficiente contra disrupción digital",
+      "keywords": [
+        "5% REINVERSIÓN",
+        "FOTOGRAFÍA DIGITAL",
+        "DISRUPCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "5",
+          "unit": "%",
+          "label": "Reinversión insuficiente para supervivencia"
+        }
+      }
+    },
+    {
+      "id": "64",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "money dividends shareholders profit",
+        "filename": "parrafo-64.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DECISIÓN FINANCIERA",
+      "headline": "Capital pagado como dividendo no financió innovación",
+      "keywords": [
+        "DIVIDENDOS",
+        "CAPITAL NO INVERTIDO",
+        "OPORTUNIDAD PERDIDA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "-1",
+          "unit": "oportunidad",
+          "label": "Costo de innovación no realizada"
+        }
+      }
+    },
+    {
+      "id": "65",
+      "layout": "splitMedia",
+      "media": {
+        "type": "image",
+        "query": "kodak film camera digital transition",
+        "filename": "parrafo-65.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "FALLO TÉCNICO",
+      "headline": "Kodak carecía de equipos técnicos para transformación digital",
+      "keywords": [
+        "KODAK",
+        "TRANSFORMACIÓN DIGITAL",
+        "EQUIPOS TÉCNICOS"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "mediados",
+          "unit": "años 2000",
+          "label": "Período de intento de transformación"
+        }
+      }
+    },
+    {
+      "id": "66",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "legacy code technical debt computer screen",
+        "filename": "parrafo-66.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Adquirir tecnología externa cuando ya pierde competitividad",
+      "keywords": [
+        "DEUDA TÉCNICA",
+        "COSTO ELEVADO",
+        "VENTANA COMPETITIVA"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "elevados",
+          "unit": "",
+          "label": "Costo de talento especializado en recuperación"
+        }
+      }
+    },
+    {
+      "id": "67",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "office documents files storage",
+        "filename": "parrafo-67.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CONTEXTO",
+      "headline": "Conocimiento institucional se pierde sin inversión continua",
+      "keywords": [
+        "CONOCIMIENTO INSTITUCIONAL",
+        "SIN INVERSIÓN",
+        "PÉRDIDA"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "No se acumula sin respaldo sistemático",
+            "Falta de documentación causa deterioro",
+            "Requiere mantenimiento activo"
+          ]
+        }
+      }
+    },
+    {
+      "id": "68",
+      "layout": "dataSplit",
+      "media": {
+        "type": "video",
+        "query": "kodak camera vintage film",
+        "filename": "parrafo-68.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "CAÍDA EMPRESARIAL",
+      "headline": "Kodak se declaró en quiebra tras perder valor",
+      "keywords": [
+        "KODAK",
+        "QUIEBRA 2012",
+        "31 MIL MILLONES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "31",
+          "unit": "mil millones USD",
+          "label": "Valor de Kodak en 1996"
+        }
+      }
+    },
+    {
+      "id": "69",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "commercial industrial printing equipment",
+        "filename": "parrafo-69.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "RESURGIMIENTO FALLIDO",
+      "headline": "Kodak renació en impresión industrial sin su core fotográfico",
+      "keywords": [
+        "KODAK IMPRESIÓN",
+        "QUIEBRA 2013",
+        "REINVENCIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "2013",
+          "unit": "",
+          "label": "Año de salida de quiebra y reinvención empresarial"
+        }
+      }
+    },
+    {
+      "id": "70",
+      "layout": "dataSplit",
+      "media": {
+        "type": "image",
+        "query": "CCD CMOS sensor chip close-up",
+        "filename": "parrafo-70.jpg",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "TECNOLOGÍA ORIGEN",
+      "headline": "El primer sensor CCD de 1975 es ancestro de CMOS móvil",
+      "keywords": [
+        "CCD CMOS",
+        "SASSON 1975",
+        "KODAK PATENTES"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "1975",
+          "unit": "",
+          "label": "Año del primer sensor CCD"
+        }
+      }
+    },
+    {
+      "id": "71",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "Sony image sensor smartphone camera",
+        "filename": "parrafo-71.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "AUTOPSIA TÉCNICA",
+      "headline": "Sony domina sensores de imagen en smartphones premium",
+      "keywords": [
+        "SONY SENSORES",
+        "KODAK ORIGEN",
+        "APPLE IPHONE"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "mayoría",
+          "unit": "",
+          "label": "Sensores de imagen en teléfonos de alta gama"
+        }
+      }
+    },
+    {
+      "id": "72",
+      "layout": "keywordOnly",
+      "media": {
+        "type": "video",
+        "query": "knowledge transfer digital migration",
+        "filename": "parrafo-72.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "LECCIÓN FINAL",
+      "headline": "El conocimiento migró a quien supo aprovecharlo",
+      "keywords": [
+        "MIGRACIÓN",
+        "CONOCIMIENTO",
+        "LEGADO"
+      ],
+      "sideContent": {
+        "kind": "bullets",
+        "payload": {
+          "items": [
+            "La técnica sobrevive a las compañías",
+            "El talento se redistribuye en la industria"
+          ]
+        }
+      }
+    },
+    {
+      "id": "73",
+      "layout": "splitMedia",
+      "media": {
+        "type": "video",
+        "query": "businessman at laptop analyzing graphs",
+        "filename": "parrafo-73.mp4",
+        "orientation": "landscape",
+        "pick": "first",
+        "perPage": 15,
+        "focal": "center"
+      },
+      "eyebrow": "DILEMA EMPRESARIAL",
+      "headline": "Invertir en sucesor o prolongar producto rentable",
+      "keywords": [
+        "INNOVACIÓN DISRUPTIVA",
+        "MARGEN RENTABLE",
+        "TRANSICIÓN"
+      ],
+      "sideContent": {
+        "kind": "stat",
+        "payload": {
+          "value": "0",
+          "unit": "",
+          "label": "inversión en innovación = quiebra garantizada"
+        }
+      }
+    }
+  ]
+}

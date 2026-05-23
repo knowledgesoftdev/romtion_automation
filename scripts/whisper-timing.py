@@ -72,9 +72,32 @@ def build_scene_timing_index(timing_data):
 
 def transcribe_with_timing(project_name):
     base_dir    = Path(__file__).parent.parent  # raiz del proyecto
-    audio_path  = base_dir / 'public' / 'projects' / project_name / 'audio.mp3'
-    timing_path = base_dir / 'public' / 'projects' / project_name / 'timing.json'
-    output_path = base_dir / 'public' / 'projects' / project_name / 'word-timing.json'
+
+    # ── Channel-aware path resolution ────────────────────────────────────────
+    # Reads active-channel.json (same logic as server/index.js getActiveChannelId)
+    channel_id = None
+    active_channel_file = base_dir / 'active-channel.json'
+    if active_channel_file.exists():
+        try:
+            with open(active_channel_file, 'r', encoding='utf-8') as f:
+                channel_id = json.load(f).get('channelId')
+        except Exception:
+            pass
+
+    # Try channel-scoped path first, then fall back to legacy flat path
+    if channel_id:
+        project_dir = base_dir / 'public' / 'projects' / channel_id / project_name
+        if not project_dir.exists():
+            project_dir = base_dir / 'public' / 'projects' / project_name
+    else:
+        project_dir = base_dir / 'public' / 'projects' / project_name
+
+    audio_path  = project_dir / 'audio.mp3'
+    timing_path = project_dir / 'timing.json'
+    output_path = project_dir / 'word-timing.json'
+
+    print(f"  Canal activo : {channel_id or '(legacy/ninguno)'}")
+    print(f"  Directorio   : {project_dir}")
 
     # Validaciones
     if not audio_path.exists():
@@ -84,6 +107,7 @@ def transcribe_with_timing(project_name):
     if not timing_path.exists():
         print(f"ERROR: No se encontro timing.json en {timing_path}", file=sys.stderr)
         sys.exit(1)
+
 
     # Cargar timing.json y normalizar
     with open(timing_path, 'r', encoding='utf-8') as f:

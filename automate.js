@@ -16,12 +16,20 @@ require('dotenv').config();
 const fs   = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const { isTopicUsed, updateAfterPublish } = require('./utils/memory');
+const { isTopicUsed, updateAfterPublish, getActiveChannelId } = require('./utils/memory');
 
 // ── Configuración ──────────────────────────────────────────────────────────────
-const PROJECTS_DIR   = path.join(__dirname, 'public', 'projects');
+const channelId      = getActiveChannelId();
 const SERVER_BASE    = 'http://localhost:5000';
 const MAX_DURATION_S = 720; // 12 minutos máximo
+
+function getProjectDir(projectId) {
+  const channelDir = path.join(__dirname, 'public', 'projects', channelId, projectId);
+  if (fs.existsSync(channelDir)) return channelDir;
+  const fallbackDir = path.join(__dirname, 'public', 'projects', projectId);
+  if (fs.existsSync(fallbackDir)) return fallbackDir;
+  return channelDir;
+}
 
 // ── Helpers de consola ─────────────────────────────────────────────────────────
 const log = {
@@ -113,7 +121,7 @@ async function stepCreateProject(projectId, rawScript) {
   const data = await res.json();
 
   // Validar que guion.json existe
-  const guionPath = path.join(PROJECTS_DIR, projectId, 'guion.json');
+  const guionPath = path.join(getProjectDir(projectId), 'guion.json');
   const guion = requireJson(guionPath);
   if (!Array.isArray(guion) || guion.length === 0) {
     throw new Error('guion.json está vacío o no es un array. Revisa el script de entrada.');
@@ -141,7 +149,7 @@ async function stepGenerateAudio(projectId) {
   }
 
   // Validar timing.json
-  const timingPath = path.join(PROJECTS_DIR, projectId, 'timing.json');
+  const timingPath = path.join(getProjectDir(projectId), 'timing.json');
   const timing = requireJson(timingPath);
 
   const durationSec = totalDuration(timing);
@@ -177,7 +185,7 @@ async function stepBuildScenePlan(projectId) {
   }
 
   // Validar scene-plan.json
-  const planPath = path.join(PROJECTS_DIR, projectId, 'scene-plan.json');
+  const planPath = path.join(getProjectDir(projectId), 'scene-plan.json');
   const plan = requireJson(planPath);
   if (!plan.paragraphs || plan.paragraphs.length === 0) {
     throw new Error('scene-plan.json no contiene párrafos. Algo falló en el análisis.');
@@ -203,7 +211,7 @@ async function stepFetchMedia(projectId) {
     throw new Error(`Error descargando media: ${body.error || res.statusText}`);
   }
 
-  const projectDir  = path.join(PROJECTS_DIR, projectId);
+  const projectDir  = getProjectDir(projectId);
   const imagesCount = countMediaFiles(path.join(projectDir, 'images'));
   const videosCount = countMediaFiles(path.join(projectDir, 'videos'));
   const total = imagesCount + videosCount;
@@ -260,7 +268,7 @@ async function automate(topic) {
   }
 
   // ── Verificar que existe el guion raw ─────────────────────────────────────
-  const rawScriptPath = path.join(PROJECTS_DIR, projectId, 'full_script.txt');
+  const rawScriptPath = path.join(getProjectDir(projectId), 'full_script.txt');
   let rawScript = '';
   if (fs.existsSync(rawScriptPath)) {
     rawScript = fs.readFileSync(rawScriptPath, 'utf8');

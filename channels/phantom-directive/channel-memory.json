@@ -1,0 +1,52 @@
+{
+  "temas_usados": [
+    "Secret Units Delta Force Doesn't Know Exist | Declassified"
+  ],
+  "palabras_clave_agotadas": [],
+  "mejor_rendimiento": [
+    {
+      "tema": "Secret Units Delta Force Doesn't Know Exist | Declassified",
+      "video_id": "WaIhem3V94Q",
+      "retention": 0,
+      "ctr": 0,
+      "views": 0,
+      "likes": 0,
+      "hook_style": "compartmented-authority",
+      "published_at": "2026-05-22T07:43:24Z",
+      "fecha": "2026-05-22T07:43:52.063Z"
+    }
+  ],
+  "estilo_hooks": [],
+  "ultima_publicacion": "2026-05-22T07:43:24Z",
+  "total_videos": 1,
+  "visual_styles": {
+    "most-secretive-unit": {
+      "motion_elements_used": [],
+      "color_moods": [],
+      "asset_types": {},
+      "pexels_queries": [],
+      "recorded_at": "2026-05-21T08:15:53.033Z"
+    },
+    "the-us-military's-most-secretive-unit-—-more-hidden-than-delta-force": {
+      "motion_elements_used": [],
+      "color_moods": [],
+      "asset_types": {},
+      "pexels_queries": [],
+      "recorded_at": "2026-05-21T08:20:33.416Z"
+    }
+  },
+  "estilo_titulo_historial": [
+    "contraintuicion-autoridad",
+    "compartmented-authority"
+  ],
+  "miniatura_conceptos": [
+    {
+      "projectId": "the-us-military's-most-secretive-unit-—-more-hidden-than-delta-force",
+      "titulo": "Secret Units Delta Force Doesn't Know Exist | Declassified",
+      "concepto": "Split-screen composition: Left side shows a silhouetted special operations soldier in tactical gear with thermal/night vision effect (green and black tones). Right side features a heavily redacted/censored classified document with bold black redaction bars across text, visible 'CLASSIFIED' stamp. Center overlay: large bold white text reading 'UNITS THEY DON'T KNOW EXIST' with a thin red line accent underneath. Top corner: small red circle with 'DECLASSIFIED' marking. Background: dark military steel texture. Overall color palette: deep blacks, dark greens, blood red accents, and white text for maximum contrast and authority.",
+      "estilo_titulo": "compartmented-authority",
+      "fecha": "2026-05-21T09:57:01.307Z"
+    }
+  ],
+  "ultima_sincronizacion": "2026-05-22T07:43:52.063Z"
+}

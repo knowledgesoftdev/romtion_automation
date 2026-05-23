@@ -292,6 +292,76 @@ async function recordVisualStyle(projectId, guion) {
   }
 }
 
+function slugify(text) {
+  if (!text) return '';
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-');
+}
+
+/**
+ * Deduce si un proyecto fue renderizado con WhiteboardVideo o VideoEngine.
+ * Primero busca el archivo 'rendered-composition.txt', y si no, analiza el guion.json.
+ */
+function detectRemotionFormat(temaOrTitle, projectId, channelId = null) {
+  const activeChannel = channelId || getActiveChannelId();
+  
+  // Lista de posibles nombres de directorios a comprobar
+  const candidates = [];
+  if (projectId) candidates.push(projectId);
+  if (temaOrTitle) {
+    candidates.push(slugify(temaOrTitle));
+    const marcas = ['Yahoo', 'Internet Explorer', 'BlackBerry', 'MySpace', 'Nokia', 'Flash', 'Equifax', 'Google', 'Windows'];
+    const encontrada = marcas.find(m => temaOrTitle.toLowerCase().includes(m.toLowerCase()));
+    if (encontrada) candidates.push(slugify(encontrada));
+  }
+
+  for (const cand of candidates) {
+    if (!cand) continue;
+    const projectDir = path.join(__dirname, '..', 'public', 'projects', activeChannel, cand);
+    const fallbackDir = path.join(__dirname, '..', 'public', 'projects', cand);
+    const targetDir = fs.existsSync(projectDir) ? projectDir : (fs.existsSync(fallbackDir) ? fallbackDir : null);
+    
+    if (targetDir) {
+      // 1. Intentar leer la composición explícita guardada por el gancho de calculateMetadata
+      const compFile = path.join(targetDir, 'rendered-composition.txt');
+      if (fs.existsSync(compFile)) {
+        try {
+          const content = fs.readFileSync(compFile, 'utf8').trim();
+          if (content === 'VideoEngine' || content === 'WhiteboardVideo') {
+            return content;
+          }
+        } catch (_) {}
+      }
+
+      // 2. Fallback estructural: si tiene guion.json, ver si tiene visual.elements o visual.arrows
+      const guionPath = path.join(targetDir, 'guion.json');
+      if (fs.existsSync(guionPath)) {
+        try {
+          const guion = JSON.parse(fs.readFileSync(guionPath, 'utf8'));
+          if (Array.isArray(guion) && guion.length > 0) {
+            const firstItem = guion[0];
+            if (firstItem.visual && (firstItem.visual.elements || firstItem.visual.arrows)) {
+              return 'WhiteboardVideo';
+            }
+          }
+        } catch (_) {}
+      }
+      
+      // 3. Fallback: si tiene scene-plan.json es VideoEngine
+      if (fs.existsSync(path.join(targetDir, 'scene-plan.json'))) {
+        return 'VideoEngine';
+      }
+    }
+  }
+
+  return 'WhiteboardVideo'; // Fallback por defecto
+}
+
 /**
  * computeInsights() → deriva conclusiones útiles de toda la memoria.
  * Pura agregación estadística, no ML.
@@ -302,12 +372,27 @@ async function recordVisualStyle(projectId, guion) {
  *     topics_agotados: [string],
  *     visual_winners: [{ element, samples, avg_views }],
  *     mood_performance: [{ mood, samples, avg_views }],
+ *     format_performance: [{ format, avg_views, avg_retention, samples }],
  *     recommendations: [string]
  *   }
  */
 async function computeInsights() {
   const memory = await readMemory();
+  
+  // Auto-migración en tiempo real de entradas antiguas
+  let memoryChanged = false;
   const performance = memory.mejor_rendimiento || [];
+  
+  for (const v of performance) {
+    if (!v.remotion_format) {
+      v.remotion_format = detectRemotionFormat(v.tema, v.video_id);
+      memoryChanged = true;
+    }
+  }
+  
+  if (memoryChanged) {
+    await saveMemory(memory);
+  }
 
   // Hook patterns ordenados por views promedio (cuando hay más de 1 sample, ponderado)
   const hookStats = {};
@@ -378,8 +463,45 @@ async function computeInsights() {
     }))
     .sort((a, b) => b.avg_views - a.avg_views);
 
+  // Formatos de Remotion: VideoEngine vs WhiteboardVideo
+  const formatStats = {
+    VideoEngine: { sum_views: 0, sum_retention: 0, count: 0 },
+    WhiteboardVideo: { sum_views: 0, sum_retention: 0, count: 0 }
+  };
+  for (const v of performance) {
+    const fmt = v.remotion_format === 'VideoEngine' ? 'VideoEngine' : 'WhiteboardVideo';
+    formatStats[fmt].sum_views += v.views || 0;
+    formatStats[fmt].sum_retention += v.retention || 0;
+    formatStats[fmt].count++;
+  }
+  const format_performance = Object.entries(formatStats).map(([format, s]) => ({
+    format,
+    avg_views: s.count > 0 ? Math.round(s.sum_views / s.count) : 0,
+    avg_retention: s.count > 0 ? +(s.sum_retention / s.count).toFixed(2) : 0,
+    samples: s.count
+  }));
+
   // Recomendaciones automáticas en lenguaje natural
   const recommendations = [];
+  
+  const whiteboardStats = formatStats.WhiteboardVideo;
+  const explainerStats = formatStats.VideoEngine;
+  if (whiteboardStats.count > 0 && explainerStats.count > 0) {
+    const wbAvg = Math.round(whiteboardStats.sum_views / whiteboardStats.count);
+    const exAvg = Math.round(explainerStats.sum_views / explainerStats.count);
+    if (wbAvg > exAvg * 1.1) {
+      recommendations.push(`📈 El formato "WhiteboardVideo" (Pizarra) rinde mejor con ${wbAvg.toLocaleString()} views promedio frente a "VideoEngine" (Explainer) con ${exAvg.toLocaleString()} views promedio. ¡Prioriza el estilo Whiteboard!`);
+    } else if (exAvg > wbAvg * 1.1) {
+      recommendations.push(`📈 El formato "VideoEngine" (Explainer) rinde mejor con ${exAvg.toLocaleString()} views promedio frente a "WhiteboardVideo" (Pizarra) con ${wbAvg.toLocaleString()} views promedio. ¡Prioriza el estilo Explainer!`);
+    } else {
+      recommendations.push(`⚖️ Rendimiento similar entre formatos de Remotion: Whiteboard (${wbAvg.toLocaleString()} v) vs Explainer (${exAvg.toLocaleString()} v). ¡Ambos funcionan muy bien!`);
+    }
+  } else if (whiteboardStats.count > 0 && explainerStats.count === 0) {
+    recommendations.push(`ℹ️ Has publicado ${whiteboardStats.count} videos con el formato Whiteboard (promedio: ${Math.round(whiteboardStats.sum_views / whiteboardStats.count).toLocaleString()} views). Prueba el formato Explainer (VideoEngine) para comparar su rendimiento.`);
+  } else if (explainerStats.count > 0 && whiteboardStats.count === 0) {
+    recommendations.push(`ℹ️ Todos tus videos actuales (${explainerStats.count}) usan el formato Explainer (VideoEngine). ¡Prueba a renderizar tu próximo video con el formato Whiteboard para ver si rinde mejor!`);
+  }
+
   if (best_hook_patterns.length > 0) {
     const top = best_hook_patterns[0];
     recommendations.push(`📈 El hook "${top.pattern}" rinde mejor (${top.avg_views} views promedio, ${top.uses} muestras). Considéralo para el próximo guion.`);
@@ -409,6 +531,7 @@ async function computeInsights() {
     topics_agotados,
     visual_winners,
     mood_performance,
+    format_performance,
     recommendations,
     last_publication:  memory.ultima_publicacion || null,
   };
@@ -418,4 +541,5 @@ module.exports = {
   readMemory, saveMemory, isTopicUsed, updateAfterPublish,
   recordParseInsights, recordVisualStyle, computeInsights,
   lightSentiment, extractKeywords, getActiveChannelId,
+  detectRemotionFormat, slugify,
 };

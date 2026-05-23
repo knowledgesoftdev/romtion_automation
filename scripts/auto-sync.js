@@ -9,14 +9,19 @@
 require('dotenv').config();
 const fs   = require('fs');
 const path = require('path');
-const { readMemory, saveMemory } = require('../utils/memory');
+const { readMemory, saveMemory, getActiveChannelId, detectRemotionFormat } = require('../utils/memory');
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
-const RETENTION_THRESHOLD = 0.6; // 60%
+
+// Resolver el ID del canal dinámicamente según el canal activo
+const activeChannelId = getActiveChannelId();
+const channelEnvKey = `YOUTUBE_CHANNEL_ID_${activeChannelId.toUpperCase().replace(/[^A-Z0-9_]/g, '_')}`;
+const CHANNEL_ID = process.env[channelEnvKey] || process.env.YOUTUBE_CHANNEL_ID;
+
+const RETENTION_THRESHOLD = 0.20; // 20% — umbral realista para canal nuevo (top plataformas tienen 25-40%)
 
 if (!YOUTUBE_API_KEY || !CHANNEL_ID) {
-  console.error('❌ Falta YOUTUBE_API_KEY o YOUTUBE_CHANNEL_ID en el archivo .env');
+  console.error(`❌ Falta YOUTUBE_API_KEY o CHANNEL_ID (${channelEnvKey} o YOUTUBE_CHANNEL_ID) en el archivo .env`);
   process.exit(1);
 }
 
@@ -236,23 +241,31 @@ async function main() {
     const finalRetention = (retention > 0) ? parseFloat(retention.toFixed(4)) : (existingEntry?.retention || 0);
     const finalCtr = (ctr > 0) ? parseFloat(ctr.toFixed(4)) : (existingEntry?.ctr || 0);
 
+    // Preservar la composición de Remotion seleccionada manualmente en el Dashboard si ya existía
+    const finalFormat = existingEntry?.remotion_format || detectRemotionFormat(cleanTema, null, activeChannelId);
+
+    // Preservar el tema si el usuario lo editó o simplificó manualmente
+    const finalTema = existingEntry?.tema || cleanTema;
+
+    // Preservar el estilo de hook si ya estaba especificado a mano
+    const finalHookStyle = (existingEntry?.hook_style && existingEntry.hook_style !== 'no-especificado')
+      ? existingEntry.hook_style
+      : (hookStyle !== 'no-especificado' ? hookStyle : 'no-especificado');
+
     const perfEntry = {
-      tema: cleanTema,
+      tema: finalTema,
       video_id: videoId,
       retention: finalRetention,
       ctr: finalCtr,
       views,
       likes,
-      hook_style: hookStyle,
+      hook_style: finalHookStyle,
+      remotion_format: finalFormat,
       published_at: item.snippet.publishedAt,
       fecha: new Date().toISOString()
     };
 
     if (existingIdx >= 0) {
-      // Preservar hook_style original si ya estaba especificado a mano
-      if (memory.mejor_rendimiento[existingIdx].hook_style !== 'no-especificado' && hookStyle === 'no-especificado') {
-        perfEntry.hook_style = memory.mejor_rendimiento[existingIdx].hook_style;
-      }
       memory.mejor_rendimiento[existingIdx] = perfEntry;
     } else {
       memory.mejor_rendimiento.push(perfEntry);
@@ -277,8 +290,20 @@ async function main() {
   }
   memory.ultima_sincronizacion = new Date().toISOString();
 
+  // Consolidar hooks en estilo_hooks (todos los hooks que tuvieron vistas > 0)
+  const allHooks = (memory.mejor_rendimiento || [])
+    .filter(v => v.views > 0 && v.hook_style && v.hook_style !== 'no-especificado')
+    .sort((a, b) => b.views - a.views)
+    .map(v => v.hook_style);
+  for (const h of allHooks) {
+    if (!memory.estilo_hooks.includes(h)) {
+      memory.estilo_hooks.push(h);
+    }
+  }
+
   await saveMemory(memory);
   console.log(`\n🎉 Sincronización finalizada. Se procesaron ${updatedCount} videos.`);
+
 }
 
 main().catch(err => {

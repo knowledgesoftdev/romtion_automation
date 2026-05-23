@@ -1,0 +1,51 @@
+════════════════════════════════════════════════════════════
+  📺 METADATA YOUTUBE — CÓDIGO MUERTO
+════════════════════════════════════════════════════════════
+
+【 TÍTULOS 】
+Principal:     Blockbuster: La arquitectura que impidió adaptarse
+Alternativo:   Por qué 9.000 tiendas no pudieron competir con Netflix
+
+【 DESCRIPCIÓN CORTA (antes del ver más) 】
+Netflix ofreció comprar Blockbuster por $50M en 2000. Lo rechazaron. Pero no fue arrogancia: fue su sistema de inventario descentralizado, congelado en decisiones de 1985, que tardó 3 años y $150M en intentar modernizar.
+
+【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】
+────────────────────────────────────────────────────────────
+Blockbuster no murió por Netflix. Murió por su propia arquitectura de software: nueve mil bases de datos aisladas, una por tienda, que nunca pudieron sincronizarse en tiempo real. Una decisión técnica correcta en 1985 se convirtió en deuda técnica irreversible 15 años después.
+
+En el año 2000, Blockbuster operaba 9.000 tiendas en 12 países. Facturaba $6 mil millones al año. Tenía 60 millones de clientes. Era la empresa de entretenimiento en casa más grande del mundo. Ese mismo año rechazó una oferta de Netflix por $50 millones. Doce años después, Netflix valía $4 mil millones y Blockbuster declaraba quiebra.
+
+Esta es la autopsia técnica de cómo la infraestructura que las hizo grandes las congeló en el pasado.
+
+00:00 Introducción
+00:50 Decisión 1: Arquitectura de inventario descentralizada
+02:55 Decisión 2
+05:30 Decisión 3
+07:38 Decisión 4
+10:07 Decisión 5
+12:16 Decisión 6
+
+¿Cuál es la próxima arquitectura muerta que debería autopsiar? Comenta abajo.
+────────────────────────────────────────────────────────────
+
+【 CAPÍTULOS (referencia) 】
+0:00 Introducción
+0:50 Decisión 1
+2:55 Decisión 2
+5:30 Decisión 3
+7:38 Decisión 4
+10:07 Decisión 5
+12:16 Decisión 6
+
+【 HASHTAGS 】
+#Blockbuster #Netflix #Arquitectura #DeudaTécnica #SoftwareEngineering #HistoriaTecnológica #YouTube #Programación #Tecnología #Startup #FailureAnalysis
+(152 caracteres)
+
+【 ETIQUETAS SEO 】
+Blockbuster, Netflix, arquitectura de software, deuda técnica, failure analysis, historia de tecnología, base de datos, software engineering, caso de estudio
+
+【 CONCEPTO DE MINIATURA 】
+Fondo dividido en dos mitades: izquierda en color azul oscuro (Blockbuster clásico) con el logo de Blockbuster desaturado y roto por una línea vertical. Derecha en rojo Netflix con el logo nítido. En el centro, sobrepuesto, un diagrama simplificado de 9 cubos (bases de datos) desconectados en rojo, con una X grande encima. Texto blanco en la parte superior: '9.000 BASES DE DATOS' en letras gruesas. Abajo: 'QUE NO PODÍAN HABLAR ENTRE SÍ' en blanco con sombra. Esquina inferior derecha: '$150M en 3 años' en amarillo neón.
+
+════════════════════════════════════════════════════════════
+Generado: 22/5/2026, 22:37:00

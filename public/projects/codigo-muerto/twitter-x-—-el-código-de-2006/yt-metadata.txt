@@ -1,0 +1,49 @@
+════════════════════════════════════════════════════════════
+  📺 METADATA YOUTUBE — CÓDIGO MUERTO
+════════════════════════════════════════════════════════════
+
+【 TÍTULOS 】
+Principal:     Twitter: Por qué sobrevivió sin 8 de cada 10 ingenieros
+Alternativo:   La arquitectura fantasma de Twitter: 16 años de parches sobre ruinas
+
+【 DESCRIPCIÓN CORTA (antes del ver más) 】
+Elon Musk despidió al 80% de los ingenieros de Twitter. El sistema no colapsó. Eso no es victoria de ingeniería: es la autopsia de una empresa muerta por dentro.
+
+【 DESCRIPCIÓN COMPLETA CON CAPÍTULOS (pegar en YouTube) 】
+────────────────────────────────────────────────────────────
+Twitter nació en 2006 sobre Ruby on Rails. En 2022 procesaba 500 millones de mensajes diarios. Pero la arquitectura central seguía siendo la misma de dieciséis años atrás: parches, caches, y alertas de emergencia.
+
+Cuando Musk despidió al 80% del personal técnico, el sistema no desapareció. No porque fuera resiliente. Porque ya estaba en soporte vital. Esta es la autopsia técnica de cómo una empresa puede funcionar años mientras muere por dentro.
+
+0:00 Introducción
+1:00 Decisión 1
+2:59 Decisión 2
+5:39 Decisión 3
+8:28 Decisión 4
+11:27 Decisión 5
+14:28 Decisión 6
+
+¿Qué arquitectura fallida debería ser la próxima autopsia? Comenta abajo.
+────────────────────────────────────────────────────────────
+
+【 CAPÍTULOS (referencia) 】
+0:00 Introducción
+1:00 Decisión 1
+2:59 Decisión 2
+5:39 Decisión 3
+8:28 Decisión 4
+11:27 Decisión 5
+14:28 Decisión 6
+
+【 HASHTAGS 】
+#Twitter #ArquitecturaDeSoftware #DeudaTecnica #Ingenieria #Programacion #CodigoMuerto #TecnologiaFallida #ElonMusk #RubyOnRails #SistemasDsoftware #AnalisisTecnico #DesarrolloWeb
+(179 caracteres)
+
+【 ETIQUETAS SEO 】
+Twitter, arquitectura de software, deuda técnica, ingeniería, Ruby on Rails, escalabilidad, colapso del sistema, análisis técnico, programación, infraestructura
+
+【 CONCEPTO DE MINIATURA 】
+Fondo dividido en dos mitades: izquierda con logo de Twitter en gris desaturado y grietas digitales; derecha con código rojo descompuesto. Centro: número '80%' en blanco grande con subtítulo rojo 'Despidos'. Esquina superior: pequeño icono de calavera técnica. Tipografía sans-serif agresiva, contraste alto blanco-rojo-gris oscuro.
+
+════════════════════════════════════════════════════════════
+Generado: 23/5/2026, 1:27:29

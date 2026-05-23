@@ -182,13 +182,16 @@ function projectStatus(projectId) {
   const hasMetadata = fs.existsSync(path.join(dir, 'yt-metadata.txt'));
   const hasHyperframes = fs.existsSync(path.join(dir, 'hyperframes', 'index.html'));
 
+  const compFile = path.join(dir, 'rendered-composition.txt');
+  const renderedComposition = fs.existsSync(compFile) ? fs.readFileSync(compFile, 'utf8').trim() : null;
+
   let paragraphCount = 0;
   if (hasGuion) {
     try { paragraphCount = JSON.parse(fs.readFileSync(path.join(dir, 'guion.json'), 'utf8')).length; }
     catch (_) {}
   }
 
-  return { hasGuion, hasTiming, hasPlan, hasMedia, hasMetadata, hasHyperframes, paragraphCount };
+  return { hasGuion, hasTiming, hasPlan, hasMedia, hasMetadata, hasHyperframes, renderedComposition, paragraphCount };
 }
 
 // ── 1. List all projects ──────────────────────────────────────────────────────
@@ -233,7 +236,13 @@ app.post('/api/projects', async (req, res) => {
   const { name, rawScript } = req.body;
   if (!name || !rawScript) return res.status(400).json({ error: 'Nombre y guion son requeridos' });
 
-  const projectId  = name.toLowerCase().trim().replace(/\s+/g, '-');
+  // Sanitizar el nombre del proyecto para evitar subdirectorios con barras '/' o caracteres extraños
+  const projectId  = name.toLowerCase()
+    .trim()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\/\\:\*\?\"<>\|]/g, '-')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
   const projectDir = path.join(getProjectsDir(), projectId);
   if (!fs.existsSync(projectDir)) fs.mkdirSync(projectDir, { recursive: true });
 
@@ -388,6 +397,29 @@ app.get('/api/active-project', (req, res) => {
   });
 });
 
+// POST /api/active-project/set-composition → registra qué composición se está renderizando/previsualizando
+app.post('/api/active-project/set-composition', (req, res) => {
+  const { compositionId } = req.body;
+  const projectId = readActiveProject();
+  if (!projectId || !compositionId) {
+    return res.status(400).json({ error: 'Falta active project o compositionId' });
+  }
+
+  const channelId = getActiveChannelId();
+  const projectDir = path.join(getProjectsDir(), projectId);
+  const fallbackDir = path.join(__dirname, '..', 'public', 'projects', projectId);
+  const targetDir = fs.existsSync(projectDir) ? projectDir : (fs.existsSync(fallbackDir) ? fallbackDir : projectDir);
+
+  if (!fs.existsSync(targetDir)) {
+    fs.mkdirSync(targetDir, { recursive: true });
+  }
+
+  fs.writeFileSync(path.join(targetDir, 'rendered-composition.txt'), compositionId, 'utf8');
+  console.log(`📝 [Server] Registrado formato Remotion: "${compositionId}" para el proyecto activo: ${projectId}`);
+
+  res.json({ ok: true, projectId, compositionId });
+});
+
 // ── 8. Generate word-level timing with Faster-Whisper ───────────────────────
 app.post('/api/projects/:id/whisper-timing', (req, res) => {
   const { id } = req.params;
@@ -525,6 +557,46 @@ app.get('/api/memory/performance', async (req, res) => {
   }
 });
 
+// PATCH /api/memory/video-format → asigna remotion_format manualmente a un video
+app.patch('/api/memory/video-format', async (req, res) => {
+  try {
+    const { video_id, tema, remotion_format } = req.body;
+    const allowed = ['VideoEngine', 'WhiteboardVideo'];
+    if (!remotion_format || !allowed.includes(remotion_format)) {
+      return res.status(400).json({ error: `remotion_format debe ser uno de: ${allowed.join(', ')}` });
+    }
+    if (!video_id && !tema) {
+      return res.status(400).json({ error: 'Se necesita video_id o tema para identificar el video' });
+    }
+
+    const memory = await readMemory();
+    const list   = memory.mejor_rendimiento || [];
+    let updated  = false;
+
+    for (const v of list) {
+      const matchId   = video_id && v.video_id === video_id;
+      const matchTema = tema     && v.tema      === tema;
+      if (matchId || matchTema) {
+        v.remotion_format = remotion_format;
+        updated = true;
+      }
+    }
+
+    if (!updated) {
+      return res.status(404).json({ error: 'No se encontró el video en memoria' });
+    }
+
+    memory.mejor_rendimiento = list;
+    await saveMemory(memory);
+    res.json({ ok: true, updated_count: list.filter(v =>
+      (video_id && v.video_id === video_id) || (tema && v.tema === tema)
+    ).length });
+  } catch (err) {
+    res.status(500).json({ error: 'Error al actualizar formato', detail: err.message });
+  }
+});
+
+
 // POST /api/memory/sync → ejecuta el script scripts/auto-sync.js
 app.post('/api/memory/sync', (req, res) => {
   const scriptPath = path.join(__dirname, '..', 'scripts', 'auto-sync.js');
@@ -642,7 +714,93 @@ app.post('/api/channels', (req, res) => {
   res.json({ message: `Canal "${name}" creado con éxito`, channelId });
 });
 
+// ── Claude: Sugeridor de temas basado en memoria ──────────────────────────────
+app.post('/api/memory/suggest-topics', async (req, res) => {
+  try {
+    const Anthropic = require('@anthropic-ai/sdk');
+    const client    = new Anthropic.default({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+    const memory   = await readMemory();
+    const insights = computeInsights(memory);
+
+    const perf = (memory.mejor_rendimiento || [])
+      .filter(v => v.views > 0)
+      .sort((a, b) => b.views - a.views);
+
+    const topVideos = perf.slice(0, 5).map(v =>
+      `- "${v.tema}" → ${v.views} views, ret ${v.retention ? (v.retention*100).toFixed(0)+'%' : 'n/d'}, CTR ${v.ctr ? (v.ctr*100).toFixed(1)+'%' : 'n/d'}, hook: ${v.hook_style}, formato: ${v.remotion_format || 'n/d'}`
+    ).join('\n');
+
+    const usedTopics = (memory.temas_usados || []).join(', ');
+    const bestHooks  = (insights.best_hook_patterns || []).slice(0, 4).map(h =>
+      `${h.pattern} (${h.avg_views} views avg, ${(h.avg_retention*100).toFixed(0)}% ret)`
+    ).join(' | ');
+    const fmtWinner = insights.format_performance?.[0]?.format || 'VideoEngine';
+
+    const systemPrompt = `Eres un estratega de contenido para el canal de YouTube "Código Muerto".
+El canal cubre historias de empresas tecnológicas que dominaron su industria y fracasaron dramáticamente.
+El tono es técnico-analítico, con datos precisos, narrativa de tensión y un cierre con lección aplicable.
+Nunca repites temas ya cubiertos.`;
+
+    const userPrompt = `Analiza estos datos del canal y propón 5 nuevos temas de video.
+
+## Videos más exitosos (top 5):
+${topVideos}
+
+## Temas YA cubiertos (NO repetir):
+${usedTopics}
+
+## Hooks que mejor funcionan:
+${bestHooks}
+
+## Formato ganador: ${fmtWinner}
+
+## Lo que busca la audiencia:
+- Historias de caída tecnológica con datos duros
+- Paradojas ("tenían X pero hicieron Y")
+- Consecuencias técnicas concretas
+
+Para cada tema propón:
+1. **Título del video** (formato: "X tenía Y — y Z")
+2. **Hook de apertura** (1 oración, máx 25 palabras, con dato numérico)
+3. **Tipo de hook** (usa la nomenclatura que funciona: dato-porcentaje-mas-consecuencia-escalada, causa-tecnica-como-condena, etc.)
+4. **Por qué funcionará** (1 línea basada en los datos del canal)
+5. **Formato recomendado** (VideoEngine o WhiteboardVideo)
+
+Responde SOLO con JSON válido, sin markdown, sin explicaciones fuera del JSON:
+{
+  "temas": [
+    {
+      "titulo": "...",
+      "hook": "...",
+      "tipo_hook": "...",
+      "razon": "...",
+      "formato": "VideoEngine|WhiteboardVideo"
+    }
+  ]
+}`;
+
+    const message = await client.messages.create({
+      model: 'claude-3-5-sonnet-20241022',
+      max_tokens: 1500,
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userPrompt }],
+    });
+
+    let raw = message.content[0]?.text || '{}';
+    // Limpiar posibles bloques de markdown
+    raw = raw.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+    const parsed = JSON.parse(raw);
+
+    res.json({ ok: true, suggestions: parsed.temas || [], model: message.model });
+  } catch (err) {
+    console.error('❌ Claude suggest-topics error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 server.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
+
 

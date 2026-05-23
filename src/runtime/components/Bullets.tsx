@@ -8,11 +8,14 @@ interface Props {
   accent?: string;
   baseDelay?: number;
   stagger?: number;
+  channelId?: string;
 }
 
-export const Bullets: React.FC<Props> = ({ items, accent = CYAN, baseDelay = 20, stagger = 11 }) => {
+export const Bullets: React.FC<Props> = ({ items, accent = CYAN, baseDelay = 20, stagger = 11, channelId }) => {
   const frame = useCurrentFrame();
   const capped = items.slice(0, 4);
+  const isCinematic = channelId === 'phantom-directive';
+
   return (
     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 20 }}>
       {capped.map((item, i) => {
@@ -24,10 +27,10 @@ export const Bullets: React.FC<Props> = ({ items, accent = CYAN, baseDelay = 20,
             transform: `translateY(${slideUp(frame, d, 18)}px)`,
           }}>
             <span style={{
-              minWidth: 10, width: 10, height: 10, borderRadius: 2,
-              background: accent, marginTop: 14,
+              minWidth: 10, width: 10, height: 10, borderRadius: isCinematic ? '50%' : 2,
+              background: isCinematic ? '#ffffff' : accent, marginTop: 14,
               transform: `scale(${popIn(frame, d, 22)})`,
-              boxShadow: `0 0 14px ${accent}aa`,
+              boxShadow: isCinematic ? 'none' : `0 0 14px ${accent}aa`,
             }} />
             <span style={{
               fontFamily: FONT_SANS, color: TEXT,

@@ -7,12 +7,14 @@ interface Props {
   bars: Array<{ label: string; value: number }>;
   max?: number;
   accent?: string;
+  channelId?: string;
 }
 
-export const BarChart: React.FC<Props> = ({ bars, max, accent = CYAN }) => {
+export const BarChart: React.FC<Props> = ({ bars, max, accent = CYAN, channelId }) => {
   const frame = useCurrentFrame();
   const ceiling = max ?? Math.max(...bars.map(b => b.value));
   const capped = bars.slice(0, 5);
+  const isCinematic = channelId === 'phantom-directive';
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 22, width: '100%' }}>
@@ -29,7 +31,7 @@ export const BarChart: React.FC<Props> = ({ bars, max, accent = CYAN }) => {
               <span style={{ fontFamily: FONT_SANS, color: TEXT, fontSize: 22, fontWeight: 500 }}>
                 {b.label}
               </span>
-              <span style={{ fontFamily: FONT_MONO, color: accent, fontSize: 22, fontWeight: 600 }}>
+              <span style={{ fontFamily: FONT_MONO, color: isCinematic ? '#ffffff' : accent, fontSize: 22, fontWeight: 600 }}>
                 {b.value}
               </span>
             </div>
@@ -40,8 +42,8 @@ export const BarChart: React.FC<Props> = ({ bars, max, accent = CYAN }) => {
             }}>
               <div style={{
                 width: `${drawn}%`, height: '100%',
-                background: `linear-gradient(90deg, ${accent}aa, ${accent})`,
-                boxShadow: `0 0 16px ${accent}66`,
+                background: isCinematic ? '#ffffff' : `linear-gradient(90deg, ${accent}aa, ${accent})`,
+                boxShadow: isCinematic ? 'none' : `0 0 16px ${accent}66`,
                 borderRadius: 7,
                 transition: 'none',
               }} />

@@ -132,13 +132,19 @@ function StepRow({ num, label, done }) {
 }
 
 // ── New Project Form ──────────────────────────────────────────────────────────
-function NewProjectPanel({ onCreated, setStatus }) {
+function NewProjectPanel({ onCreated, setStatus, initialTopic }) {
   const [name,   setName]   = useState('');
   const [script, setScript] = useState('');
   const [loading, setLoading] = useState(false);
-  const [topicForPrompt, setTopicForPrompt] = useState('');
+  const [topicForPrompt, setTopicForPrompt] = useState(initialTopic || '');
   const [enrichedPrompt, setEnrichedPrompt] = useState(null);
   const [loadingPrompt, setLoadingPrompt] = useState(false);
+
+  useEffect(() => {
+    if (initialTopic) {
+      setTopicForPrompt(initialTopic);
+    }
+  }, [initialTopic]);
 
   const handleCreate = async () => {
     if (!name.trim() || !script.trim()) return;
@@ -342,8 +348,10 @@ function ProjectDetail({ project, onRefresh, setStatus, memory, renderEngine, se
   const [loadingComments, setLoadingComments] = useState(false);
 
   const matchedVideo = memory?.mejor_rendimiento?.find(v => {
-    return project.id.toLowerCase().startsWith(v.tema.toLowerCase()) || 
-           v.tema.toLowerCase().startsWith(project.id.split('-')[0]);
+    if (!v || !v.tema || !project?.id) return false;
+    const pId = project.id.toLowerCase();
+    const vTema = v.tema.toLowerCase();
+    return pId.startsWith(vTema) || vTema.startsWith(pId.split('-')[0]);
   });
 
   // Comprobar si ya existe word-timing.json para este proyecto
@@ -488,7 +496,12 @@ function ProjectDetail({ project, onRefresh, setStatus, memory, renderEngine, se
       setHasWordTiming(true);
       setStatus('✅ word-timing.json generado — sincronización por palabra lista');
     } catch (err) {
-      setStatus(`❌ Error en Whisper: ${err.message}`);
+      if (err.message === 'Failed to fetch') {
+        // En caso de que el navegador corte la conexión por timeout (muy común en procesos pesados de Whisper)
+        setStatus('ℹ️ El navegador superó el tiempo de espera, pero la transcripción de Whisper sigue ejecutándose en el servidor en segundo plano. Abre la terminal del Dashboard abajo para ver el progreso real.');
+      } else {
+        setStatus(`❌ Error en Whisper: ${err.message}`);
+      }
     } finally {
       setLoadingWordTiming(false);
     }
@@ -912,16 +925,57 @@ function ProjectDetail({ project, onRefresh, setStatus, memory, renderEngine, se
 }
 
 // ── Channel Memory Panel ─────────────────────────────────────────────────────
-function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
+function ChannelMemoryPanel({ memory, onSync, isSyncing, onFormatChange, onSelectSuggestedTopic }) {
+  const [saving, setSaving] = useState({});
+  const [page,   setPage]   = useState(0);
+  const [suggestions, setSuggestions] = useState([]);
+  const [loadingSuggestions, setLoadingSuggestions] = useState(false);
+  const [suggestError, setSuggestError] = useState(null);
+  const PAGE_SIZE = 5;
+
+  const handleSuggestTopics = async () => {
+    setLoadingSuggestions(true);
+    setSuggestError(null);
+    try {
+      const res = await fetch(`${API}/api/memory/suggest-topics`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error al conectar con la API de Claude');
+      setSuggestions(data.suggestions || []);
+    } catch (err) {
+      setSuggestError(err.message);
+    } finally {
+      setLoadingSuggestions(false);
+    }
+  };
+
   if (!memory) return (
     <div style={{ ...S.card, textAlign: 'center', color: '#334155', fontSize: 13 }}>
       Cargando memoria del canal...
     </div>
   );
 
-  const topPerf = [...(memory.mejor_rendimiento || [])]
-    .sort((a, b) => b.views - a.views)
-    .slice(0, 6);
+  const allPerf = [...(memory.mejor_rendimiento || [])]
+    .sort((a, b) => b.views - a.views);
+
+  const totalPages = Math.ceil(allPerf.length / PAGE_SIZE);
+  const topPerf    = allPerf.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  const handleToggleFormat = async (v) => {
+    const next = v.remotion_format === 'VideoEngine' ? 'WhiteboardVideo' : 'VideoEngine';
+    setSaving(s => ({ ...s, [v.video_id || v.tema]: true }));
+    try {
+      const res = await fetch(`${API}/api/memory/video-format`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ video_id: v.video_id, tema: v.tema, remotion_format: next }),
+      });
+      if (res.ok && onFormatChange) await onFormatChange();
+    } catch (_) {}
+    setSaving(s => ({ ...s, [v.video_id || v.tema]: false }));
+  };
 
   return (
     <div>
@@ -980,57 +1034,258 @@ function ChannelMemoryPanel({ memory, onSync, isSyncing }) {
       </div>
 
       {/* Rendimiento */}
-      {topPerf.length > 0 && (
-        <div style={S.card}>
-          <div style={S.cardTitle}>Rendimiento por video</div>
-          {topPerf.map(v => (
-            <div key={v.video_id} style={S.perfRow}>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: 12, color: '#e2e8f0', whiteSpace: 'nowrap',
-                  overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 280 }}>
-                  {v.tema}
+      {allPerf.length > 0 && (
+        <div style={{ ...S.card, marginTop: 16 }}>
+          {/* Cabecera con info de paginación */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div style={S.cardTitle}>Rendimiento por video</div>
+              <div style={{
+                fontSize: 10, padding: '2px 8px', borderRadius: 12,
+                background: '#1e2a3a', color: '#64748b', fontWeight: 600,
+              }}>
+                {page * PAGE_SIZE + 1}–{Math.min((page + 1) * PAGE_SIZE, allPerf.length)} de {allPerf.length}
+              </div>
+            </div>
+            <div style={{ fontSize: 10, color: '#475569', fontStyle: 'italic' }}>
+              Click en el badge para cambiar la composición
+            </div>
+          </div>
+
+          {/* Lista de videos */}
+          {topPerf.map(v => {
+            const key      = v.video_id || v.tema;
+            const isSav    = saving[key];
+            const fmt      = v.remotion_format;
+            const isEngine = fmt === 'VideoEngine';
+            const accent   = fmt ? (isEngine ? '#8b5cf6' : '#f59e0b') : '#334155';
+            const fmtLabel = fmt ? (isEngine ? '⚗️ Engine' : '🖊️ Whiteboard') : '❓ Sin asignar';
+
+            return (
+              <div key={key} style={S.perfRow}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontSize: 12, color: '#e2e8f0', whiteSpace: 'nowrap',
+                    overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 280 }}>
+                    {v.tema}
+                  </div>
+                  <div style={{ fontSize: 11, color: '#475569', marginTop: 4, display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span>{v.hook_style}</span>
+                    {/* Toggle de composición */}
+                    <button
+                      onClick={() => handleToggleFormat(v)}
+                      disabled={isSav}
+                      title="Click para cambiar composición"
+                      style={{
+                        fontSize: 9, padding: '2px 8px', borderRadius: 4, fontWeight: 700,
+                        background: isSav ? '#1e2a3a' : accent + '22',
+                        color: isSav ? '#475569' : accent,
+                        border: `1px solid ${isSav ? '#1e2a3a' : accent + '55'}`,
+                        cursor: isSav ? 'wait' : 'pointer',
+                        transition: 'all 0.2s',
+                        outline: 'none',
+                        letterSpacing: '0.04em',
+                      }}
+                    >
+                      {isSav ? '⏳ guardando…' : fmtLabel}
+                    </button>
+                    {v.published_at && <span style={{ color: '#334155' }}>•</span>}
+                    {v.published_at && (
+                      <span style={{ color: '#64748b', fontSize: 10 }}>
+                        📅 {new Date(v.published_at).toLocaleDateString('es-ES')}
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <div style={{ fontSize: 11, color: '#475569', marginTop: 2, display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap' }}>
-                  <span>{v.hook_style}</span>
-                  {v.published_at && <span style={{ color: '#334155' }}>•</span>}
-                  {v.published_at && (
-                    <span style={{ color: '#64748b', fontSize: 10 }}>
-                      📅 {new Date(v.published_at).toLocaleDateString('es-ES')}
+                <div style={{ display: 'flex', gap: 14, flexShrink: 0, marginLeft: 12 }}>
+                  <span style={{ color: '#94a3b8', fontSize: 11 }}>
+                    👁 <strong style={{ color: '#e2e8f0' }}>{v.views.toLocaleString()}</strong>
+                  </span>
+                  <span style={{ color: '#94a3b8', fontSize: 11 }}>
+                    👍 <strong style={{ color: '#e2e8f0' }}>{v.likes}</strong>
+                  </span>
+                  {v.retention > 0 && (
+                    <span style={{ color: v.retention >= 0.6 ? '#22c55e' : '#f59e0b', fontSize: 11, fontWeight: 700 }}>
+                      {(v.retention * 100).toFixed(0)}% ret.
+                    </span>
+                  )}
+                  {v.ctr > 0 && (
+                    <span style={{ color: '#00d4ff', fontSize: 11, fontWeight: 700 }}>
+                      {(v.ctr * 100).toFixed(1)}% CTR
                     </span>
                   )}
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: 14, flexShrink: 0, marginLeft: 12 }}>
-                <span style={{ color: '#94a3b8', fontSize: 11 }}>
-                  👁 <strong style={{ color: '#e2e8f0' }}>{v.views.toLocaleString()}</strong>
-                </span>
-                <span style={{ color: '#94a3b8', fontSize: 11 }}>
-                  👍 <strong style={{ color: '#e2e8f0' }}>{v.likes}</strong>
-                </span>
-                {v.retention > 0 && (
-                  <span style={{ color: v.retention >= 0.6 ? '#22c55e' : '#f59e0b', fontSize: 11, fontWeight: 700 }}>
-                    {(v.retention * 100).toFixed(0)}% ret.
-                  </span>
-                )}
-                {v.ctr > 0 && (
-                  <span style={{ color: '#00d4ff', fontSize: 11, fontWeight: 700 }}>
-                    {(v.ctr * 100).toFixed(1)}% CTR
-                  </span>
-                )}
+            );
+          })}
+
+          {/* Controles de paginación */}
+          {totalPages > 1 && (
+            <div style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              gap: 8, marginTop: 16, paddingTop: 14,
+              borderTop: '1px solid #1e2a3a',
+            }}>
+              <button
+                onClick={() => setPage(p => Math.max(0, p - 1))}
+                disabled={page === 0}
+                style={{
+                  padding: '5px 14px', borderRadius: 6, fontSize: 11, fontWeight: 700,
+                  border: '1px solid #1e2a3a',
+                  background: page === 0 ? 'transparent' : '#1e2a3a',
+                  color: page === 0 ? '#334155' : '#94a3b8',
+                  cursor: page === 0 ? 'not-allowed' : 'pointer',
+                  transition: 'all 0.15s',
+                }}
+              >
+                ← Anterior
+              </button>
+
+              {/* Indicadores de página */}
+              <div style={{ display: 'flex', gap: 4 }}>
+                {Array.from({ length: totalPages }).map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setPage(i)}
+                    style={{
+                      width: 26, height: 26, borderRadius: 6, fontSize: 11, fontWeight: 700,
+                      border: `1px solid ${i === page ? '#00d4ff' : '#1e2a3a'}`,
+                      background: i === page ? '#00d4ff22' : 'transparent',
+                      color: i === page ? '#00d4ff' : '#475569',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s',
+                    }}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
               </div>
+
+              <button
+                onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+                disabled={page === totalPages - 1}
+                style={{
+                  padding: '5px 14px', borderRadius: 6, fontSize: 11, fontWeight: 700,
+                  border: '1px solid #1e2a3a',
+                  background: page === totalPages - 1 ? 'transparent' : '#1e2a3a',
+                  color: page === totalPages - 1 ? '#334155' : '#94a3b8',
+                  cursor: page === totalPages - 1 ? 'not-allowed' : 'pointer',
+                  transition: 'all 0.15s',
+                }}
+              >
+                Siguiente →
+              </button>
             </div>
-          ))}
+          )}
         </div>
       )}
+      {/* ── Claude Topic Suggestions Card ── */}
+      <div style={{ ...S.card, marginTop: 16, border: '1px dashed #8b5cf6', boxShadow: '0 0 15px rgba(139, 92, 246, 0.05)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
+          <div>
+            <div style={{ ...S.cardTitle, color: '#a78bfa', marginBottom: 4 }}>🔮 Sugerencias de Temas Inteligentes (Claude IA)</div>
+            <div style={{ fontSize: 11, color: '#64748b' }}>
+              Genera nuevas ideas de videos analizando la memoria histórica del canal y buscando los hooks que mejor funcionan.
+            </div>
+          </div>
+          <button
+            style={loadingSuggestions ? S.btnDisabled : S.btn('#8b5cf6', '#fff')}
+            onClick={handleSuggestTopics}
+            disabled={loadingSuggestions}
+          >
+            {loadingSuggestions ? '🧠 Analizando y Generando...' : '🔮 Sugerir con Claude'}
+          </button>
+        </div>
+
+        {suggestError && (
+          <div style={{ padding: 10, background: '#ef444422', border: '1px solid #ef444455', color: '#f87171', borderRadius: 6, fontSize: 12, marginBottom: 12 }}>
+            ❌ Error: {suggestError}
+          </div>
+        )}
+
+        {suggestions.length > 0 && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 14 }}>
+            {suggestions.map((s, idx) => {
+              const accent = s.formato === 'VideoEngine' ? '#8b5cf6' : '#f59e0b';
+              const fmtLabel = s.formato === 'VideoEngine' ? '⚗️ Engine' : '🖊️ Whiteboard';
+              return (
+                <div key={idx} style={{
+                  padding: 14,
+                  borderRadius: 8,
+                  background: '#0d1117',
+                  border: '1px solid #1e2a3a',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 8,
+                  position: 'relative'
+                }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: '#00d4ff' }}>
+                      {s.titulo}
+                    </div>
+                    <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+                      <span style={{
+                        fontSize: 9, padding: '2px 8px', borderRadius: 4, fontWeight: 700,
+                        background: accent + '22', color: accent, border: `1px solid ${accent}44`
+                      }}>
+                        {fmtLabel}
+                      </span>
+                      {s.tipo_hook && (
+                        <span style={{
+                          fontSize: 9, padding: '2px 8px', borderRadius: 4, fontWeight: 700,
+                          background: '#0ea5e922', color: '#38bdf8', border: '1px solid #0ea5e944'
+                        }}>
+                          🪝 {s.tipo_hook}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  <div style={{ fontSize: 12, color: '#e2e8f0', background: '#060910', padding: 10, borderRadius: 6, borderLeft: '3px solid #8b5cf6', fontStyle: 'italic' }}>
+                    &ldquo;{s.hook}&rdquo;
+                  </div>
+
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 4, gap: 12 }}>
+                    <div style={{ fontSize: 11, color: '#94a3b8', flex: 1 }}>
+                      💡 <strong style={{ color: '#cbd5e1' }}>Por qué funcionará:</strong> {s.razon}
+                    </div>
+                    <button
+                      onClick={() => onSelectSuggestedTopic && onSelectSuggestedTopic(s.titulo)}
+                      style={{
+                        padding: '6px 12px',
+                        borderRadius: 6,
+                        border: 'none',
+                        background: '#10b981',
+                        color: '#060910',
+                        fontWeight: 700,
+                        fontSize: 11,
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 4,
+                        transition: 'background 0.2s',
+                        boxShadow: '0 2px 5px rgba(16, 185, 129, 0.2)'
+                      }}
+                    >
+                      ➕ Usar este tema
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
+
 
 // ── Main App ──────────────────────────────────────────────────────────────────
 export default function App() {
   const [projects,      setProjects]      = useState([]);
   const [selected,      setSelected]      = useState(null);
   const [showNew,       setShowNew]       = useState(false);
+  const [initialTopic,  setInitialTopic]  = useState('');
   const [status,        setStatus]        = useState('Listo');
   const [statusType,    setStatusType]    = useState('idle'); // idle | ok | err | loading
   const [memory,        setMemory]        = useState(null);
@@ -1096,6 +1351,12 @@ export default function App() {
       setInsights(data);
     } catch (_) {}
   }, []);
+
+  const handleSelectSuggestedTopic = (topic) => {
+    setInitialTopic(topic);
+    setShowNew(true);
+    setSelected(null);
+  };
 
   const loadChannels = useCallback(async () => {
     try {
@@ -1333,7 +1594,7 @@ export default function App() {
             ))}
           </select>
         </div>
-        <button style={S.newBtn} onClick={() => { setShowNew(true); setSelected(null); }}>
+        <button style={S.newBtn} onClick={() => { setShowNew(true); setSelected(null); setInitialTopic(''); }}>
           + Nuevo proyecto
         </button>
         <div style={S.projectList}>
@@ -1389,7 +1650,7 @@ export default function App() {
 
         <div style={S.content}>
           {showNew && (
-            <NewProjectPanel onCreated={onProjectCreated} setStatus={setSt} />
+            <NewProjectPanel onCreated={onProjectCreated} setStatus={setSt} initialTopic={initialTopic} />
           )}
           {!showNew && selected && (
             <ProjectDetail
@@ -1470,7 +1731,13 @@ export default function App() {
                 </div>
               </div>
 
-              <ChannelMemoryPanel memory={memory} onSync={syncMemory} isSyncing={loadingSync} />
+              <ChannelMemoryPanel
+                memory={memory}
+                onSync={syncMemory}
+                isSyncing={loadingSync}
+                onFormatChange={async () => { await loadMemory(); await loadInsights(); }}
+                onSelectSuggestedTopic={handleSelectSuggestedTopic}
+              />
 
               {/* ── Red de Memoria Neuronal ──────────────────────────────── */}
               <div style={{ ...S.card, marginTop: 20 }}>
@@ -1592,6 +1859,72 @@ export default function App() {
                             </span>
                           </div>
                         ))}
+                      </div>
+                    )}
+
+                    {/* Remotion Format comparison */}
+                    {insights.format_performance?.length > 0 && (
+                      <div style={{ gridColumn: '1 / -1' }}>
+                        <div style={{
+                          fontSize: 11, fontWeight: 700, color: '#64748b',
+                          letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 10,
+                        }}>
+                          🎞️ Composición Remotion — comparativa
+                        </div>
+                        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                          {insights.format_performance.map(f => {
+                            const isEngine = f.format === 'VideoEngine';
+                            const accent   = isEngine ? '#8b5cf6' : '#f59e0b';
+                            const icon     = isEngine ? '⚗️' : '🖊️';
+                            return (
+                              <div key={f.format} style={{
+                                flex: 1, minWidth: 160,
+                                padding: '14px 18px',
+                                background: accent + '0d',
+                                border: `1px solid ${accent}33`,
+                                borderRadius: 10,
+                              }}>
+                                <div style={{ fontSize: 13, fontWeight: 700, color: accent, marginBottom: 10 }}>
+                                  {icon} {f.format}
+                                </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <span style={{ fontSize: 11, color: '#64748b' }}>Videos</span>
+                                    <span style={{ fontSize: 12, fontWeight: 700, color: '#e2e8f0' }}>{f.count}</span>
+                                  </div>
+                                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <span style={{ fontSize: 11, color: '#64748b' }}>Avg. Vistas</span>
+                                    <span style={{ fontSize: 12, fontWeight: 700, color: '#00d4ff' }}>{f.avg_views.toLocaleString()}</span>
+                                  </div>
+                                  {f.avg_retention > 0 && (
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                      <span style={{ fontSize: 11, color: '#64748b' }}>Retención</span>
+                                      <span style={{ fontSize: 12, fontWeight: 700, color: '#22c55e' }}>{(f.avg_retention * 100).toFixed(0)}%</span>
+                                    </div>
+                                  )}
+                                  {f.avg_ctr > 0 && (
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                      <span style={{ fontSize: 11, color: '#64748b' }}>CTR</span>
+                                      <span style={{ fontSize: 12, fontWeight: 700, color: '#f59e0b' }}>{(f.avg_ctr * 100).toFixed(1)}%</span>
+                                    </div>
+                                  )}
+                                  {/* Mini bar retención */}
+                                  {f.avg_retention > 0 && (
+                                    <div style={{ marginTop: 6 }}>
+                                      <div style={{ height: 4, background: '#1e2a3a', borderRadius: 2 }}>
+                                        <div style={{
+                                          height: '100%', borderRadius: 2,
+                                          width: `${Math.min(f.avg_retention * 100, 100)}%`,
+                                          background: `linear-gradient(90deg, ${accent}, ${accent}88)`,
+                                        }} />
+                                      </div>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
 

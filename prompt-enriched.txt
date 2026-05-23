@@ -12,8 +12,8 @@ o de negocio lo condenó, y qué criterio concreto se lleva
 el espectador para no repetirlo.
 
 ## CONTEXTO DEL CANAL — APRENDIZAJE ACUMULADO
-Total de videos publicados: 9
-Última publicación: 2026-05-20T06:27:22Z
+Total de videos publicados: 12
+Última publicación: 2026-05-23T03:42:03Z
 
 ### TEMAS YA CUBIERTOS — NO REPETIR:
   - Yahoo
@@ -25,34 +25,41 @@ Total de videos publicados: 9
   - Equifax
   - Windows
   - Google
+  - Friendster
+  - Kodak inventó la cámara digital y la enterró. Por qué perdió el 85% de su mercado
+  - Por qué 9.000 tiendas no pudieron competir con Netflix
 
 ### HOOKS POR RENDIMIENTO HISTÓRICO (replicá el patrón ganador):
-  ✅ FUNCIONA "causa-tecnica-como-condena" → 70 views promedio (n=1)
+  ✅ FUNCIONA "causa-tecnica-como-condena" → 72 views promedio (n=1)
   ✅ FUNCIONA "mi-estilo" → 63 views promedio (n=1)
   ✅ FUNCIONA "dato-porcentaje-mas-consecuencia-escalada" → 60 views promedio (n=1)
-  🚫 EVITAR "dato-tecnico-con-impacto-visual" → 17 views promedio (n=3)
-  🚫 EVITAR "afirmacion-tecnica-como-sentencia" → 16 views promedio (n=1)
-  🚫 EVITAR "estadistica-impactante-con-timeline" → 15 views promedio (n=1)
-  🚫 EVITAR "declaracion-contraintuitiva-con-cifra-exacta" → 0 views promedio (n=1)
+  ⚠ MEDIO "estadistica-numerica-con-contraste-temporal" → 33 views promedio (n=1)
+  ⚠ MEDIO "dato-tecnico-con-impacto-visual" → 27 views promedio (n=3)
+  ⚠ MEDIO "declaracion-contraintuitiva-con-cifra-exacta" → 24 views promedio (n=1)
+  🚫 EVITAR "afirmacion-tecnica-como-sentencia" → 17 views promedio (n=1)
+  🚫 EVITAR "estadistica-impactante-con-timeline" → 16 views promedio (n=1)
+  🚫 EVITAR "dato-tecnico-con-cifra-exacta" → 4 views promedio (n=1)
+  🚫 EVITAR "no-especificado" → 0 views promedio (n=1)
 
 ### MOTION GRAPHICS QUE CORRELACIONAN CON VIEWS:
-  - timeline_barras: 31 views promedio (n=5)
-  - donut_chart: 28 views promedio (n=6)
-  - flecha_bajando: 24 views promedio (n=7)
-  - flecha_subiendo: 17 views promedio (n=5)
-  - contador_porcentaje: 17 views promedio (n=4)
+  - timeline_barras: 31 views promedio (n=7)
+  - donut_chart: 29 views promedio (n=8)
+  - flecha_bajando: 29 views promedio (n=8)
+  - contador_porcentaje: 26 views promedio (n=6)
+  - flecha_subiendo: 25 views promedio (n=7)
 
 ### COLOR MOODS GANADORES:
-  - nostalgia: 26 views promedio (n=6)
-  - urgente: 24 views promedio (n=7)
-  - neutro: 24 views promedio (n=7)
-  - positivo: 24 views promedio (n=7)
+  - nostalgia: 31 views promedio (n=8)
+  - urgente: 29 views promedio (n=9)
+  - neutro: 29 views promedio (n=9)
+  - positivo: 29 views promedio (n=9)
 
 ### RECOMENDACIONES ESTRATÉGICAS:
-  📈 El hook "causa-tecnica-como-condena" rinde mejor (70 views promedio, 1 muestras). Considéralo para el próximo guion.
-  ⚠️ El hook "declaracion-contraintuitiva-con-cifra-exacta" tuvo bajo desempeño (0 views). Evítalo o cámbialo.
+  📈 El formato "VideoEngine" (Explainer) rinde mejor con 36 views promedio frente a "WhiteboardVideo" (Pizarra) con 25 views promedio. ¡Prioriza el estilo Explainer!
+  📈 El hook "causa-tecnica-como-condena" rinde mejor (72 views promedio, 1 muestras). Considéralo para el próximo guion.
+  ⚠️ El hook "no-especificado" tuvo bajo desempeño (0 views). Evítalo o cámbialo.
   🎨 Motion graphic "timeline_barras" correlaciona con 31 views promedio. Úsalo en datos clave.
-  🎭 Color mood "nostalgia" funciona mejor en este canal (26 views promedio).
+  🎭 Color mood "nostalgia" funciona mejor en este canal (31 views promedio).
   🚫 Temas ya cubiertos (no repitas): Yahoo, Internet Explorer, BlackBerry, MySpace, Nokia, Flash, Equifax, Windows.
 
 ### CÓMO USAR ESTE CONTEXTO:
@@ -64,7 +71,7 @@ Total de videos publicados: 9
 ────────────────────────────────────────────────────────────────────
 
 ## TEMA DEL VIDEO
-Friendster — la red social que murió de éxito  "Tenían más usuarios que Facebook en 2004. Su base de datos tardaba 40 segundos en cargar un perfil. Los usuarios se fueron."
+Twitter/X — el código de 2006 que todavía corre en 2024  "Elon Musk despidió al 80% de los ingenieros. El sistema siguió funcionando. Eso no es buena noticia — es una advertencia."
 
 
 ## TONO Y ESTILO
@@ -156,5 +163,5 @@ React. Usa este vocabulario al describir:
   de arquitectura, fragmentos de código real
 
 ## GENERA AHORA
-El guión completo del video sobre Friendster con exactamente 
+El guión completo del video sobre Twitter/X con exactamente 
 12,000 caracteres, respetando toda la estructura anterior.
